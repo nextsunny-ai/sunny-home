@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sunny Home</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --orange: #FF8C42;
+  --deep-orange: #DC4B24;
+  --bg: #1a1a1a;
+  --bg-panel: #111111;
+  --card-bg: #222222;
+  --card-hover: #2a2a2a;
+  --text: #f0f0f0;
+  --text-dim: #888;
+  --blue: #0078D4;
+  --green: #00C853;
+  --purple: #9B59B6;
+  --teal: #00BCD4;
+  --pink: #E91E63;
+  --yellow: #FFC107;
+}
+
+html { font-size: 16px; scroll-behavior: smooth; }
+body {
+  font-family: 'Pretendard Variable', 'Pretendard', -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* ─── 한 페이지 모드 (대표 결정 2026-04-26): panorama 분할 X = 위→아래 한 페이지 길게 ─── */
+.panorama {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: auto;
+}
+
+.panorama-scroll {
+  overflow-x: hidden;
+  overflow-y: visible;
+  scroll-snap-type: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ─── PANEL (각 카테고리 섹션, 위→아래 stack) ─── */
+.panel {
+  width: 100%;
+  min-height: auto;
+  scroll-snap-align: none;
+  padding: 40px 60px 40px 60px;
+  position: relative;
+  flex-shrink: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel::-webkit-scrollbar { width: 4px; }
+.panel::-webkit-scrollbar-thumb { background: rgba(255,140,66,0.3); border-radius: 2px; }
+
+/* ─── PANEL HEADERS (giant sans-serif) ─── */
+.panel-header {
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  font-weight: 200;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 8px;
+  color: var(--text);
+  opacity: 0.95;
+}
+
+.panel-sub-nav {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 36px;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--text-dim);
+}
+.panel-sub-nav span { cursor: pointer; transition: color 0.2s; }
+.panel-sub-nav span:hover, .panel-sub-nav span.active { color: var(--orange); }
+
+/* ─── TODAY PANEL ─── */
+.today-panel {
+  background: linear-gradient(135deg, #111 0%, #1a1a1a 50%, #0d0d0d 100%);
+  justify-content: center;
+  padding-left: 80px;
+}
+
+.today-time {
+  font-size: clamp(6rem, 18vw, 14rem);
+  font-weight: 100;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+  background: linear-gradient(135deg, var(--orange), var(--deep-orange));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.today-date {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: 300;
+  color: var(--text-dim);
+  margin-top: 8px;
+  letter-spacing: 0.05em;
+}
+
+.today-greeting {
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  font-weight: 300;
+  margin-top: 32px;
+  color: rgba(255,255,255,0.7);
+}
+
+.today-weather {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+  padding: 12px 24px;
+  background: rgba(255,140,66,0.1);
+  border: 1px solid rgba(255,140,66,0.2);
+  border-radius: 16px;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.today-weather .temp {
+  font-size: 2rem;
+  font-weight: 200;
+  color: var(--orange);
+}
+
+.today-english {
+  margin-top: 40px;
+  padding: 24px 32px;
+  background: rgba(255,255,255,0.04);
+  border-left: 3px solid var(--orange);
+  border-radius: 0 12px 12px 0;
+  max-width: 560px;
+}
+.today-english .label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--orange);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.today-english .phrase {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text);
+}
+.today-english .translation {
+  font-size: 0.95rem;
+  color: var(--text-dim);
+  margin-top: 6px;
+}
+
+/* ─── NAV DOTS ─── */
+.nav-dots {
+  position: fixed;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 100;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(12px);
+  padding: 10px 20px;
+  border-radius: 24px;
+}
+.nav-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.25);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.nav-dot.active {
+  background: var(--orange);
+  width: 28px;
+  border-radius: 4px;
+}
+.nav-dot-label {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s;
+  padding-bottom: 6px;
+  pointer-events: none;
+}
+.nav-dot:hover .nav-dot-label { opacity: 1; }
+
+/* ─── NAV ARROWS ─── */
+.nav-arrow {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px; height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: rgba(255,255,255,0.3);
+  cursor: pointer;
+  z-index: 100;
+  transition: all 0.3s;
+  border: none;
+  background: rgba(0,0,0,0.2);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+}
+.nav-arrow:hover { color: var(--orange); background: rgba(0,0,0,0.5); }
+.nav-arrow.left { left: 12px; }
+.nav-arrow.right { right: 12px; }
+
+/* ─── TOOLS GRID ─── */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+  flex: 1;
+}
+
+.tool-tile {
+  aspect-ratio: 1;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  text-decoration: none;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+.tool-tile::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.tool-tile:hover { transform: scale(1.03); }
+.tool-tile:hover::after { opacity: 1; }
+
+.tool-tile .icon {
+  font-size: 2.2rem;
+  line-height: 1;
+}
+.tool-tile .name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.tool-tile .desc {
+  font-size: 0.7rem;
+  opacity: 0.7;
+  font-weight: 300;
+}
+
+/* tile colors */
+.tile-orange { background: linear-gradient(135deg, #FF8C42, #DC4B24); }
+.tile-blue { background: linear-gradient(135deg, #0078D4, #005A9E); }
+.tile-green { background: linear-gradient(135deg, #00C853, #009624); }
+.tile-purple { background: linear-gradient(135deg, #9B59B6, #6C3483); }
+.tile-teal { background: linear-gradient(135deg, #00BCD4, #00838F); }
+.tile-pink { background: linear-gradient(135deg, #E91E63, #AD1457); }
+.tile-dark { background: linear-gradient(135deg, #333, #1a1a1a); border: 1px solid rgba(255,255,255,0.08); }
+.tile-yellow { background: linear-gradient(135deg, #FFC107, #FF8F00); color: #1a1a1a; }
+
+/* wide tile = 2 columns */
+.tool-tile.wide {
+  grid-column: span 2;
+  aspect-ratio: 2/1;
+}
+
+/* ─── PROJECTS ─── */
+.projects-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.project-group {
+  margin-bottom: 8px;
+}
+.project-group-header {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--text-dim);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.project-group-header .count {
+  font-size: 0.75rem;
+  background: rgba(255,140,66,0.15);
+  color: var(--orange);
+  padding: 2px 10px;
+  border-radius: 10px;
+}
+
+.project-tiles {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.project-tile {
+  padding: 12px 20px;
+  background: var(--card-bg);
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid transparent;
+}
+.project-tile:hover {
+  background: var(--card-hover);
+  border-color: rgba(255,140,66,0.3);
+  color: var(--orange);
+}
+.project-tile .ver {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  margin-top: 2px;
+}
+
+/* commits */
+.commits-section { margin-top: 8px; }
+.commits-section h3 {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+
+.commit-item {
+  display: flex;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  font-size: 0.85rem;
+  align-items: flex-start;
+}
+.commit-dot {
+  width: 6px; height: 6px;
+  background: var(--orange);
+  border-radius: 50%;
+  margin-top: 7px;
+  flex-shrink: 0;
+}
+.commit-msg { color: var(--text); font-weight: 400; flex: 1; line-height: 1.4; }
+.commit-repo { color: var(--text-dim); font-size: 0.75rem; }
+.commit-time { color: var(--text-dim); font-size: 0.75rem; white-space: nowrap; }
+
+/* ─── NEWS (Flipboard style) ─── */
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 14px;
+  flex: 1;
+}
+
+.news-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--text);
+}
+.news-card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,0,0,0.4); }
+
+.news-card.featured {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.news-card-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+  position: relative;
+}
+.news-card.featured .news-card-img { aspect-ratio: 4/3; }
+
+.news-card-img-placeholder {
+  width: 100%;
+  aspect-ratio: 16/9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+.news-card.featured .news-card-img-placeholder { aspect-ratio: 4/3; font-size: 4rem; }
+
+.news-card-body {
+  padding: 16px 18px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card .category-tag {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.tag-ai { color: var(--blue); }
+.tag-performance { color: var(--pink); }
+.tag-exhibition { color: var(--teal); }
+
+.news-card .title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.news-card.featured .title { font-size: 1.5rem; }
+
+.news-card .excerpt {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  line-height: 1.5;
+  flex: 1;
+}
+.news-card .meta {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  margin-top: 10px;
+}
+
+/* ─── NOTICE / ALERTS ─── */
+.notice-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.notice-card {
+  display: flex;
+  gap: 16px;
+  padding: 20px 24px;
+  background: var(--card-bg);
+  border-radius: 12px;
+  border-left: 4px solid var(--orange);
+  transition: all 0.2s;
+  align-items: flex-start;
+}
+.notice-card:hover { background: var(--card-hover); }
+
+.notice-sender {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.sender-rian { background: rgba(255,140,66,0.15); color: var(--orange); }
+.sender-teo { background: rgba(0,120,212,0.15); color: var(--blue); }
+.sender-hana { background: rgba(0,188,212,0.15); color: var(--teal); }
+.sender-sera { background: rgba(233,30,99,0.15); color: var(--pink); }
+.sender-genie { background: rgba(155,89,182,0.15); color: var(--purple); }
+
+.notice-body { flex: 1; }
+.notice-body .msg { font-size: 0.9rem; line-height: 1.5; }
+.notice-body .time { font-size: 0.7rem; color: var(--text-dim); margin-top: 4px; }
+
+/* ─── PANEL-SPECIFIC BG ─── */
+.panel-tools { background: #0d0d0d; }
+.panel-projects { background: #111; }
+.panel-news { background: #0f0f0f; }
+.panel-notice { background: #111; }
+
+/* ─── PAGE NUMBER (corner) ─── */
+.page-num {
+  position: absolute;
+  bottom: 20px;
+  right: 28px;
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.15);
+  font-weight: 300;
+}
+
+/* ─── CATEGORY NAV BAR (top bookmarks) ─── */
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  height: 44px;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  gap: 4px;
+}
+
+.top-bar-item {
+  padding: 8px 16px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgba(255,255,255,0.5);
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+.top-bar-item:hover { color: var(--text); background: rgba(255,255,255,0.05); }
+.top-bar-item.active { color: var(--orange); }
+
+.top-bar-logo {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--orange);
+  margin-right: 20px;
+  letter-spacing: 0.05em;
+}
+
+.top-bar-spacer { flex: 1; }
+
+.top-bar-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.08);
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+.top-bar-search:hover { border-color: rgba(255,140,66,0.3); }
+.top-bar-search input {
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.8rem;
+  width: 160px;
+}
+.top-bar-search input::placeholder { color: rgba(255,255,255,0.3); }
+.top-bar-search .search-icon { color: rgba(255,255,255,0.3); font-size: 0.85rem; }
+
+/* ─── MOBILE ─── */
+@media (max-width: 768px) {
+  .panorama-scroll { overflow-x: hidden; overflow-y: auto; scroll-snap-type: none; }
+  .panorama { flex-direction: column; width: 100%; }
+  .panel {
+    width: 100%;
+    min-height: auto;
+    scroll-snap-align: none;
+    padding: 80px 20px 40px;
+  }
+  .today-panel { padding: 80px 24px 40px; min-height: 100vh; }
+  .panel-header { font-size: 2.8rem; }
+  .today-time { font-size: 5rem; }
+  .today-date { font-size: 1.3rem; }
+  .tools-grid { grid-template-columns: repeat(2, 1fr); }
+  .tool-tile.wide { grid-column: span 2; }
+  .news-grid { grid-template-columns: 1fr; }
+  .news-card.featured { grid-column: span 1; grid-row: span 1; }
+  .nav-dots, .nav-arrow { display: none; }
+  .top-bar-search { display: none; }
+  .top-bar { overflow-x: auto; scrollbar-width: none; }
+  .top-bar::-webkit-scrollbar { display: none; }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .tools-grid { grid-template-columns: repeat(3, 1fr); }
+  .news-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* ─── ANIMATIONS ─── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.panel-header, .today-time, .today-date, .today-greeting {
+  animation: fadeInUp 0.8s ease-out both;
+}
+.today-date { animation-delay: 0.1s; }
+.today-greeting { animation-delay: 0.2s; }
+.today-weather { animation-delay: 0.3s; }
+.today-english { animation-delay: 0.4s; }
+
+/* loading shimmer for live data */
+@keyframes shimmer {
+  0% { background-position: -200px 0; }
+  100% { background-position: 200px 0; }
+}
+.loading-shimmer {
+  background: linear-gradient(90deg, var(--card-bg) 25%, #2a2a2a 50%, var(--card-bg) 75%);
+  background-size: 400px 100%;
+  animation: shimmer 1.5s infinite;
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <span class="top-bar-logo">SUNNY</span>
+  <span class="top-bar-item active" data-panel="0">Today</span>
+  <span class="top-bar-item" data-panel="1">Tools</span>
+  <span class="top-bar-item" data-panel="2">Projects</span>
+  <span class="top-bar-item" data-panel="3">News</span>
+  <span class="top-bar-item" data-panel="4">Notice</span>
+  <span class="top-bar-spacer"></span>
+  <div class="top-bar-search">
+    <span class="search-icon">&#128269;</span>
+    <input type="text" placeholder="Search Google..." id="searchInput">
+  </div>
+</div>
+
+<!-- NAV ARROWS -->
+<button class="nav-arrow left" id="navLeft">&#8249;</button>
+<button class="nav-arrow right" id="navRight">&#8250;</button>
+
+<!-- NAV DOTS -->
+<div class="nav-dots" id="navDots">
+  <div class="nav-dot active" data-panel="0"><span class="nav-dot-label">Today</span></div>
+  <div class="nav-dot" data-panel="1"><span class="nav-dot-label">Tools</span></div>
+  <div class="nav-dot" data-panel="2"><span class="nav-dot-label">Projects</span></div>
+  <div class="nav-dot" data-panel="3"><span class="nav-dot-label">News</span></div>
+  <div class="nav-dot" data-panel="4"><span class="nav-dot-label">Notice</span></div>
+</div>
+
+<!-- PANORAMA -->
+<div class="panorama-scroll" id="panorama">
+  <div class="panorama">
+
+    <!-- ═══ PANEL 0: TODAY ═══ -->
+    <section class="panel today-panel" id="panel-0">
+      <div class="today-time" id="timeDisplay">--:--</div>
+      <div class="today-date" id="dateDisplay"></div>
+      <div class="today-greeting" id="greeting"></div>
+      <div class="today-weather">
+        <span style="font-size:1.6rem">&#9925;</span>
+        <span class="temp" id="weatherTemp">--&#176;</span>
+        <span id="weatherDesc">Loading...</span>
+      </div>
+      <div class="today-english">
+        <div class="label">Today's English</div>
+        <div class="phrase" id="englishPhrase">"The best way to predict the future is to create it."</div>
+        <div class="translation" id="englishTranslation">미래를 예측하는 가장 좋은 방법은 그것을 만드는 것이다. - Peter Drucker</div>
+      </div>
+      <span class="page-num">1</span>
+    </section>
+
+    <!-- ═══ PANEL 1: TOOLS ═══ -->
+    <section class="panel panel-tools" id="panel-1">
+      <div class="panel-header">Tools</div>
+      <div class="panel-sub-nav">
+        <span class="active">pinned</span>
+        <span>all</span>
+      </div>
+      <div class="tools-grid" id="toolsGrid">
+        <!-- filled by JS -->
+      </div>
+      <span class="page-num">2</span>
+    </section>
+
+    <!-- ═══ PANEL 2: PROJECTS ═══ -->
+    <section class="panel panel-projects" id="panel-2">
+      <div class="panel-header">Projects</div>
+      <div class="panel-sub-nav">
+        <span class="active">sites</span>
+        <span>recent commits</span>
+      </div>
+      <div class="projects-content" id="projectsContent">
+        <div style="color:var(--text-dim);font-size:0.9rem;">Loading GitHub repos...</div>
+      </div>
+      <div class="commits-section" id="commitsSection">
+        <h3>Recent Commits</h3>
+        <div id="commitsList"></div>
+      </div>
+      <span class="page-num">3</span>
+    </section>
+
+    <!-- ═══ PANEL 3: NEWS ═══ -->
+    <section class="panel panel-news" id="panel-3">
+      <div class="panel-header">News</div>
+      <div class="panel-sub-nav">
+        <span class="active">AI trends</span>
+        <span>performances</span>
+        <span>exhibitions</span>
+      </div>
+      <div class="news-grid" id="newsGrid">
+        <!-- filled by JS -->
+      </div>
+      <span class="page-num">4</span>
+    </section>
+
+    <!-- ═══ PANEL 4: NOTICE ═══ -->
+    <section class="panel panel-notice" id="panel-4">
+      <div class="panel-header">Notice</div>
+      <div class="panel-sub-nav">
+        <span class="active">all</span>
+        <span>action required</span>
+      </div>
+      <div class="notice-list" id="noticeList">
+        <!-- filled by JS -->
+      </div>
+      <span class="page-num">5</span>
+    </section>
+
+  </div>
+</div>
+
+<script>
+// ═══ TIME & DATE ═══
+function updateTime() {
+  const now = new Date();
+  const h = String(now.getHours()).padStart(2,'0');
+  const m = String(now.getMinutes()).padStart(2,'0');
+  document.getElementById('timeDisplay').textContent = h + ':' + m;
+
+  const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  document.getElementById('dateDisplay').textContent =
+    days[now.getDay()] + ', ' + months[now.getMonth()] + ' ' + now.getDate() + ', ' + now.getFullYear();
+
+  const hour = now.getHours();
+  let greet = 'Good evening, Sunny';
+  if (hour < 6) greet = 'Still up, Sunny?';
+  else if (hour < 12) greet = 'Good morning, Sunny';
+  else if (hour < 18) greet = 'Good afternoon, Sunny';
+  document.getElementById('greeting').textContent = greet;
+}
+updateTime();
+setInterval(updateTime, 30000);
+
+// ═══ WEATHER (placeholder — replace with real API) ═══
+document.getElementById('weatherTemp').innerHTML = '18&#176;';
+document.getElementById('weatherDesc').textContent = 'Seoul, partly cloudy';
+
+// ═══ PANORAMA NAV ═══
+const panorama = document.getElementById('panorama');
+const panels = document.querySelectorAll('.panel');
+const dots = document.querySelectorAll('.nav-dot');
+const topItems = document.querySelectorAll('.top-bar-item');
+let currentPanel = 0;
+const isMobile = window.innerWidth <= 768;
+
+function goToPanel(idx) {
+  if (idx < 0 || idx >= panels.length) return;
+  currentPanel = idx;
+
+  if (isMobile) {
+    panels[idx].scrollIntoView({ behavior: 'smooth' });
+  } else {
+    panorama.scrollTo({ left: idx * window.innerWidth, behavior: 'smooth' });
+  }
+
+  dots.forEach((d,i) => d.classList.toggle('active', i === idx));
+  topItems.forEach((t,i) => t.classList.toggle('active', i === idx));
+}
+
+document.getElementById('navLeft').onclick = () => goToPanel(currentPanel - 1);
+document.getElementById('navRight').onclick = () => goToPanel(currentPanel + 1);
+
+dots.forEach(d => d.onclick = () => goToPanel(+d.dataset.panel));
+topItems.forEach(t => t.onclick = () => goToPanel(+t.dataset.panel));
+
+// scroll snap detection (desktop)
+if (!isMobile) {
+  let scrollTimer;
+  panorama.addEventListener('scroll', () => {
+    clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(() => {
+      const idx = Math.round(panorama.scrollLeft / window.innerWidth);
+      if (idx !== currentPanel) {
+        currentPanel = idx;
+        dots.forEach((d,i) => d.classList.toggle('active', i === idx));
+        topItems.forEach((t,i) => t.classList.toggle('active', i === idx));
+      }
+    }, 80);
+  });
+}
+
+// keyboard
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight') goToPanel(currentPanel + 1);
+  if (e.key === 'ArrowLeft') goToPanel(currentPanel - 1);
+});
+
+// search
+document.getElementById('searchInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter' && e.target.value.trim()) {
+    window.open('https://www.google.com/search?q=' + encodeURIComponent(e.target.value.trim()), '_blank');
+    e.target.value = '';
+  }
+});
+
+// ═══ TOOLS DATA ═══
+const tools = [
+  { name: 'InterBuild', desc: 'DDP Catchwin', icon: '🏗️', color: 'tile-orange', url: 'https://nextsunny-ai.github.io/ddp-catchwin/', wide: false },
+  { name: 'Catch Game', desc: 'Museum Master', icon: '🎮', color: 'tile-blue', url: 'https://nextsunny-ai.github.io/museum-master/', wide: false },
+  { name: 'Visual Maker', desc: 'AI Image Gen', icon: '🎨', color: 'tile-purple', url: 'https://visual.sunnytoon.com', wide: true },
+  { name: 'Sunny Team', desc: 'Team Dashboard', icon: '⚡', color: 'tile-orange', url: 'https://team.sunnytoon.com', wide: false },
+  { name: 'IMG Cut', desc: 'Image Editor', icon: '✂️', color: 'tile-teal', url: '#', wide: false },
+  { name: 'NORY AR', desc: 'AR Experience', icon: '📱', color: 'tile-pink', url: '#', wide: false },
+  { name: 'Google Drive', desc: 'Files & Docs', icon: '📁', color: 'tile-yellow', url: 'https://drive.google.com', wide: false },
+  { name: 'Calendar', desc: 'Schedule', icon: '📅', color: 'tile-green', url: 'https://calendar.google.com', wide: false },
+  { name: 'Gmail', desc: 'Email', icon: '✉️', color: 'tile-dark', url: 'https://mail.google.com', wide: false },
+  { name: 'GitHub', desc: 'Repositories', icon: '🐙', color: 'tile-dark', url: 'https://github.com/nextsunny-ai', wide: false },
+];
+
+const grid = document.getElementById('toolsGrid');
+tools.forEach(t => {
+  const a = document.createElement('a');
+  a.className = 'tool-tile ' + t.color + (t.wide ? ' wide' : '');
+  a.href = t.url;
+  a.target = '_blank';
+  a.rel = 'noopener';
+  a.innerHTML = '<div class="icon">' + t.icon + '</div><div><div class="name">' + t.name + '</div><div class="desc">' + t.desc + '</div></div>';
+  grid.appendChild(a);
+});
+
+// ═══ GITHUB REPOS ═══
+async function loadRepos() {
+  try {
+    const res = await fetch('https://api.github.com/users/nextsunny-ai/repos?per_page=100&sort=updated');
+    const repos = await res.json();
+    if (!Array.isArray(repos)) throw new Error('Not array');
+
+    // group by base name
+    const groups = {};
+    repos.forEach(r => {
+      if (r.fork) return;
+      const base = r.name.replace(/-\d+$/, '').replace(/-[a-z]$/, '').replace(/-preview$/, '').replace(/-web-\d+$/, (m) => { return ''; });
+      // simpler: group by first segment before version suffixes
+      const cleanBase = r.name.replace(/[-_]?(v?\d+|preview|web-\d+|web-[a-z])$/i, '');
+      const key = cleanBase || r.name;
+      if (!groups[key]) groups[key] = [];
+      groups[key].push(r);
+    });
+
+    const container = document.getElementById('projectsContent');
+    container.innerHTML = '';
+
+    // sort groups by most recent update
+    const sortedGroups = Object.entries(groups).sort((a,b) => {
+      const aDate = Math.max(...a[1].map(r => new Date(r.updated_at).getTime()));
+      const bDate = Math.max(...b[1].map(r => new Date(r.updated_at).getTime()));
+      return bDate - aDate;
+    });
+
+    sortedGroups.slice(0, 12).forEach(([key, repos]) => {
+      const div = document.createElement('div');
+      div.className = 'project-group';
+      const reposSorted = repos.sort((a,b) => new Date(b.updated_at) - new Date(a.updated_at));
+      div.innerHTML = '<div class="project-group-header">' + key +
+        (repos.length > 1 ? ' <span class="count">' + repos.length + ' versions</span>' : '') + '</div>' +
+        '<div class="project-tiles">' +
+        reposSorted.slice(0,5).map(r =>
+          '<a class="project-tile" href="https://nextsunny-ai.github.io/' + r.name + '/" target="_blank">' +
+          r.name + '<div class="ver">' + timeAgo(r.updated_at) + '</div></a>'
+        ).join('') + '</div>';
+      container.appendChild(div);
+    });
+  } catch(e) {
+    document.getElementById('projectsContent').innerHTML =
+      '<div style="color:var(--text-dim)">Could not load repos. Check connection.</div>';
+  }
+}
+
+async function loadCommits() {
+  try {
+    const res = await fetch('https://api.github.com/users/nextsunny-ai/events/public?per_page=15');
+    const events = await res.json();
+    if (!Array.isArray(events)) return;
+
+    const pushes = events.filter(e => e.type === 'PushEvent').slice(0, 6);
+    const list = document.getElementById('commitsList');
+    list.innerHTML = '';
+
+    pushes.forEach(ev => {
+      const commits = ev.payload.commits || [];
+      commits.slice(0,1).forEach(c => {
+        const div = document.createElement('div');
+        div.className = 'commit-item';
+        div.innerHTML = '<div class="commit-dot"></div>' +
+          '<div style="flex:1"><div class="commit-msg">' + escHtml(c.message.split('\n')[0]) + '</div>' +
+          '<div class="commit-repo">' + ev.repo.name + '</div></div>' +
+          '<div class="commit-time">' + timeAgo(ev.created_at) + '</div>';
+        list.appendChild(div);
+      });
+    });
+  } catch(e) { /* silent */ }
+}
+
+loadRepos();
+loadCommits();
+
+// ═══ NEWS (placeholder) ═══
+const newsData = [
+  { cat: 'AI', tag: 'tag-ai', title: 'Claude 4.6 Released — Opus & Sonnet Models Available', excerpt: 'Anthropic releases Claude 4.6 family with enhanced reasoning, longer context, and improved tool use capabilities.', img: '🤖', featured: true },
+  { cat: 'AI', tag: 'tag-ai', title: 'Sora 2.0: OpenAI Video Generation Leap', excerpt: 'New video generation model produces cinematic quality at 4K resolution.', img: '🎬' },
+  { cat: 'Performance', tag: 'tag-performance', title: '서울 공연예술 페스티벌 2026 개최', excerpt: '5월 서울 전역에서 열리는 대규모 공연 축제.', img: '🎭' },
+  { cat: 'AI', tag: 'tag-ai', title: 'ComfyUI 3.0 Major Update', excerpt: 'Node-based workflow engine gets native video support and cloud rendering.', img: '🔧' },
+  { cat: 'Exhibition', tag: 'tag-exhibition', title: '국립현대미술관 미디어아트 특별전', excerpt: 'AI와 인간 창작의 경계를 탐구하는 전시 5월 개관.', img: '🖼️' },
+  { cat: 'Performance', tag: 'tag-performance', title: 'Phantom Light Festival 2026 Lineup', excerpt: 'Global music festival announces headliners for summer edition.', img: '🎵' },
+  { cat: 'Exhibition', tag: 'tag-exhibition', title: 'Venice Biennale 2026 Korean Pavilion', excerpt: '한국관 AI 인터랙티브 설치작 화제.', img: '🌊' },
+  { cat: 'AI', tag: 'tag-ai', title: 'Flux 2.0 Image Model Release', excerpt: 'Next generation of Flux brings improved coherence and text rendering.', img: '✨' },
+];
+
+const newsGrid = document.getElementById('newsGrid');
+newsData.forEach((n, i) => {
+  const card = document.createElement('div');
+  card.className = 'news-card' + (i === 0 ? ' featured' : '');
+  const colors = { 'tag-ai': 'linear-gradient(135deg,#0a1628,#0d2137)', 'tag-performance': 'linear-gradient(135deg,#1a0a14,#2a0f1f)', 'tag-exhibition': 'linear-gradient(135deg,#0a1a1a,#0f2a2a)' };
+  card.innerHTML =
+    '<div class="news-card-img-placeholder" style="background:' + (colors[n.tag]||colors['tag-ai']) + '">' + n.img + '</div>' +
+    '<div class="news-card-body">' +
+    '<div class="category-tag ' + n.tag + '">' + n.cat + '</div>' +
+    '<div class="title">' + n.title + '</div>' +
+    '<div class="excerpt">' + n.excerpt + '</div>' +
+    '<div class="meta">Today</div></div>';
+  newsGrid.appendChild(card);
+});
+
+// ═══ NOTICE (placeholder) ═══
+const notices = [
+  { sender: 'HANA', cls: 'sender-hana', msg: 'sunny_home_data.json 데이터 수집 중. AI 트렌드 5건 + 공연 뉴스 5건 완료. 전시 뉴스 작업 중.', time: '10분 전' },
+  { sender: 'TEO', cls: 'sender-teo', msg: 'team.sunnytoon.com Phase 3 백엔드 — 단체방 API 구현 완료. 프론트 연동 대기.', time: '25분 전' },
+  { sender: 'RIAN', cls: 'sender-rian', msg: 'Phase 3 UI 시안 3종 (어드민/단체방/게스트) 완료. Drive 07_디자인/ 저장.', time: '40분 전' },
+  { sender: 'SERA', cls: 'sender-sera', msg: 'KOFIC 지원사업 서류 마감 D-12. IR 표지 시안 필요.', time: '1시간 전' },
+  { sender: 'GENIE', cls: 'sender-genie', msg: '금일 에이전트 가동 현황: 8/11명 활성. 맥미니 워커 정상.', time: '2시간 전' },
+];
+
+const noticeList = document.getElementById('noticeList');
+notices.forEach(n => {
+  const div = document.createElement('div');
+  div.className = 'notice-card';
+  div.innerHTML = '<span class="notice-sender ' + n.cls + '">' + n.sender + '</span>' +
+    '<div class="notice-body"><div class="msg">' + n.msg + '</div><div class="time">' + n.time + '</div></div>';
+  noticeList.appendChild(div);
+});
+
+// ═══ HELPERS ═══
+function timeAgo(dateStr) {
+  const diff = Date.now() - new Date(dateStr).getTime();
+  const mins = Math.floor(diff / 60000);
+  if (mins < 60) return mins + 'm ago';
+  const hours = Math.floor(mins / 60);
+  if (hours < 24) return hours + 'h ago';
+  const days = Math.floor(hours / 24);
+  return days + 'd ago';
+}
+
+function escHtml(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+// ═══ DATA FETCH (sunny_home_data.json — when available) ═══
+async function loadExternalData() {
+  try {
+    const res = await fetch('sunny_home_data.json');
+    if (!res.ok) return;
+    const data = await res.json();
+    // Apply data when available
+    if (data.english) {
+      document.getElementById('englishPhrase').textContent = '"' + data.english.phrase + '"';
+      document.getElementById('englishTranslation').textContent = data.english.translation;
+    }
+    if (data.weather) {
+      document.getElementById('weatherTemp').innerHTML = data.weather.temp + '&#176;';
+      document.getElementById('weatherDesc').textContent = data.weather.desc;
+    }
+  } catch(e) { /* fallback to inline placeholders */ }
+}
+loadExternalData();
+</script>
+</body>
+</html>

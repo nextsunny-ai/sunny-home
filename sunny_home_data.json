@@ -1,0 +1,349 @@
+{
+  "updated": "2026-04-26T14:00:00+09:00",
+  "categories": [
+    {
+      "id": "ai",
+      "name": "AI 트렌드",
+      "items": [
+        {
+          "title": "오픈AI, 에이전트 능력서 GPT-5.5 출시…세계 1위 탈환",
+          "url": "https://www.aitimes.com/news/articleView.html?idxno=209681",
+          "source": "AI타임스",
+          "summary": "오픈AI가 에이전트 성능에서 미소스를 능가하는 GPT-5.5를 공개하며 모델 성능 순위 1위 탈환",
+          "published": "2026-04-25",
+          "image": "https://cdn.aitimes.com/news/photo/202604/209681_212136_528.jpg"
+        },
+        {
+          "title": "구글, 앤트로픽에 최대 59조 추가 투자 예정…5GW 컴퓨팅 자원 제공",
+          "url": "https://www.aitimes.com/news/articleView.html?idxno=209736",
+          "source": "AI타임스",
+          "summary": "구글이 앤트로픽에 대규모 추가 투자와 5GW 규모 컴퓨팅 자원을 제공하기로 결정",
+          "published": "2026-04-25",
+          "image": "https://cdn.aitimes.com/news/photo/202604/209736_212213_011.jpg"
+        },
+        {
+          "title": "딥시크-V4, 세계 10위에 그쳐…기대 이하 성능",
+          "url": "https://www.aitimes.com/news/articleView.html?idxno=209735",
+          "source": "AI타임스",
+          "summary": "딥시크의 V4 모델이 예상보다 낮은 성능을 보이며 세계 10위 수준 기록",
+          "published": "2026-04-25",
+          "image": "https://cdn.aitimes.com/news/photo/202604/209735_212211_4437.jpg"
+        },
+        {
+          "title": "메타, AI 에이전트 구현 위해 아마존 CPU 대규모 도입",
+          "url": "https://www.aitimes.com/news/articleView.html?idxno=209737",
+          "source": "AI타임스",
+          "summary": "메타가 AI 에이전트 개발을 위해 아마존 자체 설계 CPU를 대규모로 도입",
+          "published": "2026-04-25",
+          "image": "https://cdn.aitimes.com/news/photo/202604/209737_212226_5214.png"
+        },
+        {
+          "title": "SK하이닉스 1분기 매출 52.6조…AI HBM 초호황으로 역대 최대",
+          "url": "https://www.cliktoday.com/2026/04/20260423-today-news.html",
+          "source": "오늘의클릭",
+          "summary": "AI 서버 수요 급증에 따른 HBM·eSSD 초호황으로 SK하이닉스 창사 이래 최대 실적",
+          "published": "2026-04-23",
+          "image": "https://lh3.googleusercontent.com/blogger_img_proxy/AEn0k_vs7-8frDD856hH4YXFSdQpKVovBxZUH6WdwHMXEbfRBP4N2AS0M9UTy6v3aXQPL9KnEugkE6nhBV5S9MGFs9QlqSl1kbz5BrX18VBCkOAwBB-CSxHRiSCREtOYjzWdIv-Gy2GSIihbKUnsSkHBdPZS_oYRuWxWnPhQ9t_gqfm3URw7SeesSXP9Zow"
+        }
+      ]
+    },
+    {
+      "id": "performance",
+      "name": "공연",
+      "items": [
+        {
+          "title": "뮤지컬 <빌리 엘리어트> 4번째 시즌 (4월~7월)",
+          "url": "https://www.themusical.co.kr/Magazine/Detail?num=5553",
+          "source": "더뮤지컬",
+          "summary": "한국 프로덕션 4번째 시즌. 4대 빌리: 김승주, 박지후, 김우진, 조윤우",
+          "published": "2026-04-01",
+          "image": "https://image.yes24.com/themusical/upFiles/StageTalkV2/Magazine/20251224/2025122413793979705213352cf4c263eb3b049c53f7459a.jpg"
+        },
+        {
+          "title": "뮤지컬 <서편제> 4년 만에 재공연",
+          "url": "https://www.themusical.co.kr/Magazine/Detail?num=5553",
+          "source": "더뮤지컬",
+          "summary": "이청준 원작, 윤일상 작곡 '살다 보면'. 예술의 본질과 가족 이야기를 서정적으로 풀어낸 작품",
+          "published": "2026-04-01",
+          "image": "https://image.yes24.com/themusical/upFiles/StageTalkV2/Magazine/20251224/2025122413793979705213352cf4c263eb3b049c53f7459a.jpg"
+        },
+        {
+          "title": "뮤지컬 <몽유도원> 샤롯데씨어터 공연",
+          "url": "https://www.charlottetheater.co.kr/m/performence/current.asp",
+          "source": "샤롯데씨어터",
+          "summary": "국립극장 해오름극장 공연 후 샤롯데씨어터로 이전. 한국 창작 뮤지컬",
+          "published": "2026-04-01",
+          "image": "https://www.charlottetheater.co.kr"
+        },
+        {
+          "title": "서울시오페라단 <나부코> 40년 만에 재공연",
+          "url": "https://www.sac.or.kr/site/main/program/schedule",
+          "source": "예술의전당",
+          "summary": "베르디 오페라. 바빌로니아 왕국의 거대한 서사, 압도적 무대 스케일",
+          "published": "2026-04-01",
+          "image": "https://www.sac.or.kr/design/theme/sac/images/logo-200x200.gif"
+        },
+        {
+          "title": "연극 <말벌>(THE WASP) — 세종S씨어터",
+          "url": "https://news.seoul.go.kr/gov/archives/576815",
+          "source": "서울시",
+          "summary": "영국 햄스테드 극장 공동 제작. 이항나 연출. 3~4월 세종S씨어터",
+          "published": "2026-04-01",
+          "image": "https://news.seoul.go.kr/gov/files/2026/03/69cb7ff421c518.29127613-200x101.jpg"
+        }
+      ]
+    },
+    {
+      "id": "exhibition",
+      "name": "전시",
+      "items": [
+        {
+          "title": "2026 화랑미술제 (Galleries Art Fair) — 코엑스",
+          "url": "https://www.artworldnews.co.kr/news/articleView.html?idxno=4779",
+          "source": "아트월드뉴스",
+          "summary": "169개 갤러리 참여. 4/8 VIP 프리뷰~4/12. 코엑스 C·D홀. ART&ARTIST TALK 병행",
+          "published": "2026-04-08",
+          "image": "https://cdn.artworldnews.co.kr/news/thumbnail/202604/4779_100223_5155_v150.jpg"
+        },
+        {
+          "title": "데미안 허스트 대규모 회고전 — 국립현대미술관",
+          "url": "https://monthlyart.com/portfolio-item/2026%EB%85%84-%EA%B5%AD%EB%A6%BD%ED%98%84%EB%8C%80%EB%AF%B8%EC%88%A0%EA%B4%80-%EC%A3%BC%EC%9A%94-%EA%B3%84%ED%9A%8D-%EB%B0%8F-%EC%A0%84%EC%8B%9C-%EB%B0%9C%ED%91%9C/",
+          "source": "월간미술",
+          "summary": "국립현대미술관 서울. 2026년 3~6월. 영국 현대미술 거장 데미안 허스트 회고전",
+          "published": "2026-03-01",
+          "image": "https://monthlyart.com/wp-content/uploads/2026/01/썸네일-이미지_2026년-주요-사업을-발표중인-국립현대미술관-관장-김성희-e1767688103986.jpg"
+        },
+        {
+          "title": "서울사진축제 <컴백홈> — 13번째 축제",
+          "url": "https://www.d-art.co.kr/news/articleView.html?idxno=4571",
+          "source": "데일리아트",
+          "summary": "20여 명 작가 참여. 전시·콘테스트·영화상영회·심포지엄 등 시민참여 프로그램",
+          "published": "2026-04-01",
+          "image": "https://cdn.d-art.co.kr/news/thumbnail/202512/4571_13848_4950_v150.jpg"
+        },
+        {
+          "title": "북서울미술관 <글쓰는 예술> — 매체 포커스 전시",
+          "url": "https://culture.seoul.go.kr/culture/bbs/B0000001/view.do?nttId=15480&menuNo=200051&pageIndex=1",
+          "source": "서울문화포털",
+          "summary": "서울시립미술관 북서울관. 글과 예술의 교차점을 탐구하는 매체 중심 전시",
+          "published": "2026-04-01",
+          "image": "https://culture.seoul.go.kr/resources/culture/img/sub/culturePotalImg2.jpg"
+        }
+      ]
+    },
+    {
+      "id": "english",
+      "name": "비즈니스 영어회화",
+      "items": [
+        {
+          "phrase": "I'd like to propose we revisit the timeline.",
+          "meaning": "일정을 다시 검토할 것을 제안합니다.",
+          "example": "회의에서 프로젝트 일정 조정이 필요할 때, 직접 '바꾸자'보다 정중한 제안 표현",
+          "category": "meeting"
+        },
+        {
+          "phrase": "We're open to finding a middle ground on this.",
+          "meaning": "이 건에 대해 절충안을 찾을 의향이 있습니다.",
+          "example": "협상에서 양보 의지를 보이되 주도권을 유지하는 유연한 표현",
+          "category": "negotiation"
+        },
+        {
+          "phrase": "Just following up on my previous email regarding the contract.",
+          "meaning": "계약 건 관련 이전 메일에 대해 후속 확인드립니다.",
+          "example": "답장이 늦을 때 재촉하되 압박감 없이 리마인드하는 이메일 표현",
+          "category": "email"
+        },
+        {
+          "phrase": "Could you walk me through the numbers one more time?",
+          "meaning": "수치를 한 번 더 설명해 주시겠어요?",
+          "example": "컨퍼런스 콜에서 재무 데이터를 재확인할 때, '모르겠다' 대신 쓰는 프로 표현",
+          "category": "call"
+        },
+        {
+          "phrase": "I appreciate the effort, but I think we can sharpen the messaging.",
+          "meaning": "노력은 감사하지만, 메시지를 더 다듬을 수 있을 것 같습니다.",
+          "example": "팀원 산출물에 수정 피드백을 줄 때, 긍정 먼저 + 개선점을 부드럽게 전달",
+          "category": "feedback"
+        }
+      ]
+    },
+    {
+      "id": "content_ip",
+      "name": "콘텐츠/IP 산업",
+      "items": [
+        {
+          "title": "K-웹툰, '스낵 컬처' 넘어 슈퍼 IP 전초기지로 성장",
+          "url": "https://v.daum.net/v/20260119092926003",
+          "source": "다음뉴스",
+          "summary": "국내 웹툰 매출 2.3조 안착. 플랫폼이 단순 중개 넘어 '토털 IP 솔루션' 기업으로 전환 중",
+          "published": "2026-01-19",
+          "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202601/19/akn/20260119092927958wpoa.jpg"
+        },
+        {
+          "title": "웹툰 IP 애니메이션화 확대 — 신의탑·나혼렙 이후 장르 다변화",
+          "url": "https://www.issueinsight.co.kr/news/articleView.html?idxno=2674",
+          "source": "이슈인사이트",
+          "summary": "대형 액션·판타지에서 로맨스·스릴러·일상물까지 애니메이션화 대상 장르 확대",
+          "published": "2026-04-01",
+          "image": "https://cdn.issueinsight.co.kr/news/thumbnail/202603/2674_1045_4040_v150.jpg"
+        },
+        {
+          "title": "2026년 콘텐츠 시장 위기 벗어날까 — PD저널 특집",
+          "url": "https://www.pdjournal.com/news/articleView.html?idxno=81088",
+          "source": "PD저널",
+          "summary": "OTT 경쟁 심화·제작비 증가 속 한국 콘텐츠 산업의 구조적 과제와 전망 분석",
+          "published": "2026-04-01",
+          "image": "https://cdn.pdjournal.com/news/thumbnail/202512/81088_81710_1648_v150.jpg"
+        },
+        {
+          "title": "텐센트 비디오 협력 구조 개편 — 한국 기업 숏폼 드라마 수익 모델",
+          "url": "https://www.e-biztimes.com/news/425347",
+          "source": "이비즈타임즈",
+          "summary": "텐센트가 숏폼 드라마 중심으로 협력 구조를 개편. 한국 기업의 새 수익 기회",
+          "published": "2026-04-01",
+          "image": "https://www.ehom.kr/news/2026/04/16/ead239fb2856810e2a85d36d5ccac4e7151018.jpg"
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "name": "디자인 트렌드",
+      "items": [
+        {
+          "title": "2026 UI·UX 디자인 트렌드 9가지 — 미니멀 이후의 세계",
+          "url": "https://www.designdb.com/?menuno=1278&bbsno=3012&siteno=15&act=view&ztag=rO0ABXQAOTxjYWxsIHR5cGU9ImJvYXJkIiBubz0iOTg4IiBza2luPSJwaG90b19iYnNfMjAxOSI+PC9jYWxsPg%3D%3D",
+          "source": "디자인DB",
+          "summary": "안티 디자인, 텍스처 질감, 타이포그래피 주역화, 공간 컴퓨팅, 아날로그 회귀",
+          "published": "2026-01-01",
+          "image": "http://www.designdb.com/usr/upload/board_thumb/zboardphotogallery236/20260102094410039_2501.0.jpg"
+        },
+        {
+          "title": "2026 그래픽 디자인 핵심 트렌드: '의도된 과잉'의 시대",
+          "url": "https://letspl.me/quest/2302/",
+          "source": "렛츠플",
+          "summary": "미니멀리즘 이후, 강렬한 색상·비대칭 레이아웃·CGI 텍스처가 비주얼 중심으로",
+          "published": "2026-01-01",
+          "image": "https://letspl.s3.ap-northeast-2.amazonaws.com/user/1/images/_f4b00c42-45a2-4d29-b16d-4e2d7f0f229b-1767745595340.jpeg"
+        },
+        {
+          "title": "2026년 비주얼 디자인의 미래 예측",
+          "url": "https://vectosolve.com/ko/blog/new-year-2026-design-trends-predictions",
+          "source": "Vectosolve",
+          "summary": "AR/공간 컴퓨팅 성장에 따른 Z축 레이어링, 인간 중심 아날로그 디자인 부상",
+          "published": "2026-01-01",
+          "image": "https://vectosolve.com/blog/new-year-2026-design-trends-predictions.webp"
+        }
+      ]
+    },
+    {
+      "id": "grants",
+      "name": "지원사업 마감",
+      "items": [
+        {
+          "title": "KOCCA 2026년 공예청년 인턴십 지원사업 참여기관 모집",
+          "url": "https://www.kocca.kr/kocca/bbs/view/B0000204/1965204.do",
+          "source": "한국콘텐츠진흥원",
+          "summary": "문체부·공예디자인문화진흥원 공동. 공예 분야 청년 인턴십 참여기관 모집",
+          "published": "2026-04-01",
+          "image": "https://kocca.kr/logoK.jpg"
+        },
+        {
+          "title": "2026년 한국문학 해외진출 패키지 지원사업 모집",
+          "url": "https://www.kocca.kr/kocca/bbs/view/B0000204/1965369.do",
+          "source": "한국문학번역원",
+          "summary": "민간 부문 한국문학 저작권 거래 활성화 및 해외 진출 지원",
+          "published": "2026-04-01",
+          "image": "https://kocca.kr/logoK.jpg"
+        },
+        {
+          "title": "2026년 국내전시회 바이어유치 지원사업 (KOTRA)",
+          "url": "https://jpn.kocca.kr/kocca/bbs/view/B0000204/1964884.do",
+          "source": "KOTRA",
+          "summary": "국내 전시회 해외 바이어 유치 지원. 전시회 모집 및 선정",
+          "published": "2026-04-01",
+          "image": "https://kocca.kr/logoK.jpg"
+        }
+      ]
+    },
+    {
+      "id": "festival",
+      "name": "뮤직 페스티벌",
+      "items": [
+        {
+          "title": "PEAK Festival 2026 — 난지한강공원 (5/23~24)",
+          "url": "https://festivallife.kr/festival",
+          "source": "페스티벌라이프",
+          "summary": "자우림, 십센치, 쏜애플, 이디오테잎, 로맨틱펀치, 원위 등 출연",
+          "published": "2026-05-23",
+          "image": "https://cdn.imweb.me/upload/S20200106a105fd03f4b57/16befd8599473.png"
+        },
+        {
+          "title": "RAPBEAT 2026 — 문화비축기지 (6/20~21)",
+          "url": "https://festivallife.kr/festival",
+          "source": "페스티벌라이프",
+          "summary": "힙합/R&B 중심 페스티벌. 6월 개최. 라인업 추후 공개",
+          "published": "2026-06-20",
+          "image": "https://cdn.imweb.me/upload/S20200106a105fd03f4b57/16befd8599473.png"
+        },
+        {
+          "title": "워터밤 서울 2026 — 키넥스 (7/24~26)",
+          "url": "https://www.waterbombfestival.com/en/2026-seoul-lineup",
+          "source": "워터밤",
+          "summary": "K-Pop·힙합·EDM. 3일간 키넥스 야외 글로벌 스테이지. 라인업 추후 공개",
+          "published": "2026-07-24"
+        },
+        {
+          "title": "인천 펜타포트 록 페스티벌 2026 — 송도 (7/31~8/2)",
+          "url": "https://tournwine.com/entry/2026-%EB%AE%A4%EC%A7%81-%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C-%EC%9D%BC%EC%A0%95-%EB%B0%8F-%EB%9D%BC%EC%9D%B8%EC%97%85-%EC%B4%9D%EC%A0%95%EB%A6%AC",
+          "source": "Themed Tours",
+          "summary": "송도 달빛축제공원. 스콜피온스 등 해외 밴드 라인업 논의 중",
+          "published": "2026-07-31",
+          "image": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F7VzmT%2FdJMcafekasg%2FAAAAAAAAAAAAAAAAAAAAANo38Fl47uwa3wBngraL_Aed0b4UD4rQI94V6lfIfEAC%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1777561199%26allow_ip%3D%26allow_referer%3D%26signature%3D3cBV3%252FcJe0AOAEVppBIgJX%252F9m%252Fk%253D"
+        }
+      ]
+    }
+  ],
+  "sources_definition": {
+    "ai": [
+      "https://www.aitimes.com",
+      "https://news.ycombinator.com",
+      "https://www.ibm.com/think/news"
+    ],
+    "performance": [
+      "https://www.themusical.co.kr",
+      "https://www.sac.or.kr/site/main/program/schedule",
+      "https://ticket.interpark.com/TPGoodsList.asp?Ca=Mus"
+    ],
+    "exhibition": [
+      "https://www.mmca.go.kr/exhibitions/progressList.do",
+      "https://culture.seoul.go.kr/culture/culture/cultureEvent/list.do?searchCate=EXHIBITION",
+      "https://www.artworldnews.co.kr"
+    ],
+    "english": [
+      "https://pumble.com/blog/phrases-for-business-meetings/",
+      "https://www.englishclub.com/efl/articles/vocabulary/9-useful-expressions-for-business-negotiations-in-english/",
+      "https://learningenglishwithoxford.com/2023/10/02/useful-business-english-phrases-for-negotiation/",
+      "https://genesislanguageschool.com/essential-business-english-phrases-for-meetings-and-emails/"
+    ],
+    "content_ip": [
+      "https://www.pdjournal.com",
+      "https://www.issueinsight.co.kr",
+      "https://www.e-biztimes.com"
+    ],
+    "design": [
+      "https://www.designdb.com",
+      "https://design.co.kr",
+      "https://ko.wix.com/blog"
+    ],
+    "grants": [
+      "https://www.kocca.kr/kocca/pims/list.do",
+      "https://www.mcst.go.kr",
+      "https://www.ggcf.kr"
+    ],
+    "festival": [
+      "https://festivallife.kr/festival",
+      "https://www.waterbombfestival.com",
+      "https://www.musicfestivalwizard.com"
+    ]
+  }
+}
