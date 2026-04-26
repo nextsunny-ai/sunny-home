@@ -679,7 +679,8 @@ function buildNewsItems(data) {
         url: item.url || '#',
         source: item.source || '',
         summary: item.summary || '',
-        published: item.published || ''
+        published: item.published || '',
+        image: item.image || ''
       });
     });
   });
@@ -698,7 +699,7 @@ function renderNews(filter) {
     const icon = catIcons[n.cat] || "\uD83D\uDCF0";
     const bg = catColors[n.cat] || catColors.ai;
     card.innerHTML =
-      '<div class="news-card-img" style="background:' + bg + '">' + icon + '</div>' +
+      (n.image ? '<div class="news-card-img" style="background:#1a1a2e center/cover no-repeat url(' + JSON.stringify(n.image) + ')"></div>' : '<div class="news-card-img" style="background:' + bg + '">' + icon + '</div>') +
       '<div class="news-card-body">' +
       '<div class="cat-tag cat-' + n.cat + '">' + n.catName + '</div>' +
       '<div class="title">' + escHtml(n.title) + '</div>' +
@@ -722,12 +723,12 @@ function renderNewsPick() {
     return (pa === -1 ? 99 : pa) - (pb === -1 ? 99 : pb);
   });
 
-  // Pick up to 6, trying to get variety
+  // Pick up to 12, trying to get variety
   const picked = [];
   const usedCats = new Set();
   // First pass: one per category
   sorted.forEach(n => {
-    if (picked.length >= 6) return;
+    if (picked.length >= 12) return;
     if (!usedCats.has(n.cat)) {
       picked.push(n);
       usedCats.add(n.cat);
@@ -735,7 +736,7 @@ function renderNewsPick() {
   });
   // Second pass: fill remaining
   sorted.forEach(n => {
-    if (picked.length >= 6) return;
+    if (picked.length >= 12) return;
     if (!picked.includes(n)) picked.push(n);
   });
 
