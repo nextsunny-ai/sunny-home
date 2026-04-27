@@ -1,0 +1,26 @@
+{
+  "updated": "2026-04-28T04:00:00+09:00",
+  "curator": "HANA",
+  "pages": [
+    {
+      "kind": "책",
+      "quote": "디자인은 단순함이 아니라, 단순해 보이게 만드는 일이다.",
+      "attribution": "— 디터 람스, 《Less but Better》"
+    },
+    {
+      "kind": "영상",
+      "quote": "진짜 만든 사람의 손길은 30초 안에 드러난다.",
+      "attribution": "— Apple Design Stories, 2026"
+    },
+    {
+      "kind": "전시",
+      "quote": "미디어아트는 관객을 작품의 일부로 만드는 순간 완성된다.",
+      "attribution": "— 국립현대미술관 미디어아트 특별전 도록"
+    },
+    {
+      "kind": "한 줄",
+      "quote": "브랜드는 매일 흘리는 작은 흔적의 총합이다.",
+      "attribution": "— 하나(HANA), 오늘의 큐레이션"
+    }
+  ]
+}

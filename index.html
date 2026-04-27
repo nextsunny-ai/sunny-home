@@ -356,6 +356,181 @@ body {
 .cat-grants { color: var(--green); }
 .cat-festival { color: var(--orange); }
 
+/* ─── DEADLINES SECTION ─── */
+.deadlines-section {
+  padding: 56px 48px;
+  background: var(--bg);
+  border-top: 1px solid rgba(255,255,255,0.04);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.deadlines-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+  margin-top: 24px;
+}
+.deadline-card {
+  display: flex; flex-direction: column;
+  padding: 18px 20px;
+  background: rgba(255,255,255,0.02);
+  border-radius: 12px;
+  border-left: 3px solid var(--orange);
+  transition: all 0.2s;
+}
+.deadline-card:hover { background: rgba(255,140,66,0.06); transform: translateY(-2px); }
+.deadline-card.urgent { border-left-color: var(--pink); }
+.deadline-card.soon { border-left-color: var(--yellow); }
+.deadline-card .dday {
+  font-family: 'JetBrains Mono', 'SF Mono', monospace;
+  font-size: 1.4rem; font-weight: 600; color: var(--orange);
+  letter-spacing: -0.02em;
+}
+.deadline-card.urgent .dday { color: var(--pink); }
+.deadline-card.soon .dday { color: var(--yellow); }
+.deadline-card .title {
+  font-size: 0.92rem; font-weight: 500; margin-top: 6px; line-height: 1.35;
+}
+.deadline-card .meta {
+  font-size: 0.68rem; color: var(--text-faint); margin-top: 8px;
+  text-transform: uppercase; letter-spacing: 0.08em;
+}
+
+/* ─── RECENT OUTPUTS (visual-maker) ─── */
+.outputs-section {
+  padding: 56px 48px;
+  background: var(--bg-alt);
+}
+.outputs-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  margin-top: 24px;
+}
+.output-tile {
+  aspect-ratio: 1/1; border-radius: 12px; overflow: hidden;
+  background: #1a1a1a; cursor: pointer;
+  position: relative; transition: all 0.25s;
+  display: flex; align-items: center; justify-content: center;
+}
+.output-tile:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 12px 32px rgba(0,0,0,0.6); }
+.output-tile img { width: 100%; height: 100%; object-fit: cover; }
+.output-tile .placeholder {
+  font-size: 2.4rem; color: rgba(255,140,66,0.25); font-weight: 100;
+}
+.output-tile .label {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  padding: 8px 10px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.85));
+  font-size: 0.62rem; color: var(--text);
+  opacity: 0; transition: opacity 0.25s;
+  letter-spacing: 0.04em;
+}
+.output-tile:hover .label { opacity: 1; }
+
+/* ─── FLIPBOOK ─── */
+.flipbook-section {
+  padding: 56px 48px 80px;
+  background: linear-gradient(180deg, var(--bg) 0%, #0c0c0c 100%);
+  border-top: 1px solid rgba(255,255,255,0.04);
+}
+.flipbook-stage {
+  margin-top: 28px;
+  perspective: 2400px;
+  display: flex; justify-content: center;
+}
+.flipbook {
+  position: relative;
+  width: min(900px, 92vw);
+  height: 480px;
+  transform-style: preserve-3d;
+}
+.flip-page {
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  background: #161616;
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 6px;
+  padding: 36px 44px;
+  transform-origin: left center;
+  transform-style: preserve-3d;
+  transition: transform 0.85s cubic-bezier(0.4, 0.0, 0.2, 1);
+  backface-visibility: hidden;
+  overflow: hidden;
+  display: flex; flex-direction: column;
+}
+.flip-page.flipped { transform: rotateY(-180deg); }
+.flip-page::before {
+  content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 18px;
+  background: linear-gradient(90deg, rgba(0,0,0,0.5), transparent);
+  pointer-events: none;
+}
+.flip-page-num {
+  position: absolute; right: 24px; bottom: 18px;
+  font-family: 'JetBrains Mono', 'SF Mono', monospace;
+  font-size: 0.62rem; color: var(--text-faint); letter-spacing: 0.16em;
+}
+.flip-page h3 {
+  font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.2em;
+  color: var(--orange); font-weight: 700; margin-bottom: 16px;
+}
+.flip-page .quote {
+  font-size: 1.6rem; font-weight: 200; line-height: 1.4; color: var(--text);
+  margin-bottom: 20px; flex: 1;
+}
+.flip-page .attribution {
+  font-size: 0.82rem; color: var(--text-dim); font-weight: 300;
+}
+.flip-controls {
+  display: flex; gap: 14px; justify-content: center; margin-top: 28px;
+}
+.flip-btn {
+  padding: 10px 22px;
+  background: rgba(255,140,66,0.06);
+  border: 1px solid rgba(255,140,66,0.2);
+  border-radius: 22px;
+  color: var(--orange);
+  font-family: inherit; font-size: 0.78rem; font-weight: 500;
+  cursor: pointer; transition: all 0.2s;
+  letter-spacing: 0.04em;
+}
+.flip-btn:hover:not(:disabled) {
+  background: rgba(255,140,66,0.12); transform: translateY(-1px);
+}
+.flip-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+.flip-progress {
+  display: flex; gap: 6px; align-items: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem; color: var(--text-dim);
+  padding: 8px 14px;
+}
+
+/* ─── FOOTER ─── */
+.footer {
+  padding: 36px 48px 48px;
+  background: #0a0a0a;
+  border-top: 1px solid rgba(255,255,255,0.04);
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 12px;
+}
+.footer-brand {
+  font-size: 0.72rem; letter-spacing: 0.18em; font-weight: 600;
+  background: linear-gradient(135deg, var(--orange), var(--deep-orange));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.footer-meta {
+  font-family: 'JetBrains Mono', 'SF Mono', monospace;
+  font-size: 0.66rem; color: var(--text-faint);
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 900px) {
+  .deadlines-section, .outputs-section, .flipbook-section { padding: 40px 20px; }
+  .outputs-grid { grid-template-columns: repeat(3, 1fr); }
+  .flipbook { height: 360px; }
+  .flip-page { padding: 24px 28px; }
+  .flip-page .quote { font-size: 1.1rem; }
+  .footer { padding: 28px 20px; }
+}
+
 .news-card .title {
   font-size: 0.92rem; font-weight: 500; line-height: 1.4; margin-bottom: 8px;
 }
@@ -428,6 +603,9 @@ body {
   <span class="top-bar-item active" data-section="hero">Today</span>
   <span class="top-bar-item" data-section="mid">Tools</span>
   <span class="top-bar-item" data-section="news-section">News</span>
+  <span class="top-bar-item" data-section="deadlines-section">Deadlines</span>
+  <span class="top-bar-item" data-section="outputs-section">Outputs</span>
+  <span class="top-bar-item" data-section="flipbook-section">Pages</span>
   <span class="top-bar-spacer"></span>
   <div class="top-bar-search">
     <span style="color:rgba(255,255,255,0.25);font-size:0.82rem">&#128269;</span>
@@ -507,6 +685,40 @@ body {
     <div class="news-grid" id="newsGrid"><!-- filled by JS --></div>
   </section>
 
+  <!-- ═══ THIS WEEK DEADLINES ═══ -->
+  <section class="deadlines-section" id="deadlines-section">
+    <div class="section-header">This Week</div>
+    <div style="color:var(--text-dim);font-size:0.82rem;margin-top:-18px;">지원사업 · 납품 · 계약 · 마감</div>
+    <div class="deadlines-grid" id="deadlinesGrid"><!-- filled by JS --></div>
+  </section>
+
+  <!-- ═══ RECENT OUTPUTS (visual-maker) ═══ -->
+  <section class="outputs-section" id="outputs-section">
+    <div class="section-header">Recent Outputs</div>
+    <div style="color:var(--text-dim);font-size:0.82rem;margin-top:-18px;">visual-maker 최근 결과물</div>
+    <div class="outputs-grid" id="outputsGrid"><!-- filled by JS --></div>
+  </section>
+
+  <!-- ═══ FLIPBOOK (하나 일일 큐레이션) ═══ -->
+  <section class="flipbook-section" id="flipbook-section">
+    <div class="section-header">Hana's Daily Pages</div>
+    <div style="color:var(--text-dim);font-size:0.82rem;margin-top:-18px;">하나가 매일 큐레이션하는 한 줄 — 책 · 영상 · 전시</div>
+    <div class="flipbook-stage">
+      <div class="flipbook" id="flipbook"><!-- filled by JS --></div>
+    </div>
+    <div class="flip-controls">
+      <button class="flip-btn" id="flipPrev" aria-label="이전 페이지">&larr; Prev</button>
+      <div class="flip-progress" id="flipProgress">1 / 1</div>
+      <button class="flip-btn" id="flipNext" aria-label="다음 페이지">Next &rarr;</button>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="footer-brand">SUNNY HOME</div>
+    <div class="footer-meta" id="buildMeta">build &middot; loading...</div>
+  </footer>
+
 </div>
 
 <script>
@@ -564,7 +776,7 @@ document.querySelectorAll('.top-bar-item').forEach(item => {
 });
 
 // scroll spy
-const sections = ['hero', 'mid', 'news-section'];
+const sections = ['hero', 'mid', 'news-section', 'deadlines-section', 'outputs-section', 'flipbook-section'];
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY + 200;
   let active = 'hero';
@@ -834,6 +1046,169 @@ async function loadExternalData() {
   renderNews('all');
 }
 loadExternalData();
+
+// ═══ DEADLINES (data/deadlines.json) ═══
+async function loadDeadlines() {
+  const grid = document.getElementById('deadlinesGrid');
+  let items = [];
+  try {
+    const res = await fetch('data/deadlines.json', { cache: 'no-store' });
+    if (res.ok) items = (await res.json()).items || [];
+  } catch(e) { /* fallback */ }
+
+  if (!items.length) {
+    items = [
+      { title: 'KOFIC 2026 하반기 지원사업 서류', due: '2026-05-10', category: '지원사업', org: 'KOFIC' },
+      { title: '굿즈모먼트 화산귀환 콜라보 1차 납품', due: '2026-05-04', category: '납품', org: 'MORI' },
+      { title: '버치사운드 NORY CITY 본계약 검토', due: '2026-05-08', category: '계약', org: 'BIRCH' },
+      { title: '넥스트아트 김감독 외주 1차 컷 회신', due: '2026-05-02', category: '회신', org: 'NEA' },
+    ];
+  }
+
+  const today = new Date(); today.setHours(0,0,0,0);
+  const enriched = items.map(d => {
+    const due = new Date(d.due);
+    const diff = Math.ceil((due - today) / 86400000);
+    let urgency = '';
+    if (diff <= 2) urgency = 'urgent';
+    else if (diff <= 5) urgency = 'soon';
+    return { ...d, diff, urgency };
+  }).sort((a,b) => a.diff - b.diff);
+
+  grid.innerHTML = '';
+  enriched.forEach(d => {
+    const card = document.createElement('div');
+    card.className = 'deadline-card ' + d.urgency;
+    const dday = d.diff <= 0 ? 'TODAY' : ('D-' + d.diff);
+    card.innerHTML =
+      '<div class="dday">' + dday + '</div>' +
+      '<div class="title">' + escHtml(d.title) + '</div>' +
+      '<div class="meta">' + escHtml(d.category || '') + (d.org ? ' &middot; ' + escHtml(d.org) : '') + '</div>';
+    grid.appendChild(card);
+  });
+}
+loadDeadlines();
+
+// ═══ RECENT OUTPUTS (data/outputs.json) ═══
+async function loadOutputs() {
+  const grid = document.getElementById('outputsGrid');
+  let items = [];
+  try {
+    const res = await fetch('data/outputs.json', { cache: 'no-store' });
+    if (res.ok) items = (await res.json()).items || [];
+  } catch(e) {}
+
+  // Always render 6 tiles. Fill with placeholders if missing.
+  for (let i = 0; i < 6; i++) {
+    const tile = document.createElement('a');
+    tile.className = 'output-tile';
+    tile.target = '_blank'; tile.rel = 'noopener';
+    const item = items[i];
+    if (item && item.image) {
+      tile.href = item.url || item.image;
+      tile.innerHTML =
+        '<img src="' + item.image + '" alt="' + escHtml(item.title || 'output') + '" loading="lazy">' +
+        (item.title ? '<div class="label">' + escHtml(item.title) + '</div>' : '');
+    } else {
+      tile.href = 'https://visual.sunnytoon.com';
+      tile.innerHTML = '<div class="placeholder">+</div>';
+    }
+    grid.appendChild(tile);
+  }
+}
+loadOutputs();
+
+// ═══ FLIPBOOK (하나 일일 큐레이션) ═══
+async function loadFlipbook() {
+  const stage = document.getElementById('flipbook');
+  let pages = [];
+  try {
+    const res = await fetch('data/curation.json', { cache: 'no-store' });
+    if (res.ok) pages = (await res.json()).pages || [];
+  } catch(e) {}
+
+  if (!pages.length) {
+    pages = [
+      { kind: '책', quote: '디자인은 단순함이 아니라, 단순해 보이게 만드는 일이다.', attribution: '— 디터 람스, 《Less but Better》' },
+      { kind: '영상', quote: '진짜 만든 사람의 손길은 30초 안에 드러난다.', attribution: '— Apple Design Stories, 2026' },
+      { kind: '전시', quote: '미디어아트는 관객을 작품의 일부로 만드는 순간 완성된다.', attribution: '— 국립현대미술관 기획전 도록' },
+      { kind: '말', quote: '브랜드는 매일 흘리는 작은 흔적의 총합이다.', attribution: '— 하나(HANA), 오늘의 큐레이션' },
+    ];
+  }
+
+  stage.innerHTML = '';
+  pages.forEach((p, i) => {
+    const page = document.createElement('div');
+    page.className = 'flip-page';
+    page.style.zIndex = (pages.length - i);
+    page.innerHTML =
+      '<h3>' + escHtml(p.kind || 'Curation') + '</h3>' +
+      '<div class="quote">' + escHtml(p.quote || '') + '</div>' +
+      '<div class="attribution">' + escHtml(p.attribution || '') + '</div>' +
+      '<div class="flip-page-num">' + String(i+1).padStart(2,'0') + ' / ' + String(pages.length).padStart(2,'0') + '</div>';
+    stage.appendChild(page);
+  });
+
+  let cursor = 0;
+  const total = pages.length;
+  const progress = document.getElementById('flipProgress');
+  const prevBtn = document.getElementById('flipPrev');
+  const nextBtn = document.getElementById('flipNext');
+
+  function render() {
+    const ps = stage.querySelectorAll('.flip-page');
+    ps.forEach((el, idx) => {
+      el.classList.toggle('flipped', idx < cursor);
+    });
+    progress.textContent = (cursor + 1) + ' / ' + total;
+    prevBtn.disabled = cursor === 0;
+    nextBtn.disabled = cursor >= total - 1;
+  }
+  render();
+
+  nextBtn.addEventListener('click', () => { if (cursor < total - 1) { cursor++; render(); } });
+  prevBtn.addEventListener('click', () => { if (cursor > 0) { cursor--; render(); } });
+
+  // Touch swipe
+  let startX = 0;
+  stage.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
+  stage.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - startX;
+    if (dx < -50 && cursor < total - 1) { cursor++; render(); }
+    else if (dx > 50 && cursor > 0) { cursor--; render(); }
+  });
+
+  // Keyboard arrows when section is in viewport
+  document.addEventListener('keydown', e => {
+    const rect = document.getElementById('flipbook-section').getBoundingClientRect();
+    const inView = rect.top < window.innerHeight && rect.bottom > 0;
+    if (!inView) return;
+    if (e.key === 'ArrowRight' && cursor < total - 1) { cursor++; render(); }
+    else if (e.key === 'ArrowLeft' && cursor > 0) { cursor--; render(); }
+  });
+}
+loadFlipbook();
+
+// ═══ BUILD META (footer) ═══
+async function loadBuildMeta() {
+  let meta = null;
+  try {
+    const res = await fetch('data/build.json', { cache: 'no-store' });
+    if (res.ok) meta = await res.json();
+  } catch(e) {}
+
+  const el = document.getElementById('buildMeta');
+  const now = new Date();
+  const stamp = now.getFullYear() + '-' +
+    String(now.getMonth()+1).padStart(2,'0') + '-' +
+    String(now.getDate()).padStart(2,'0') + ' ' +
+    String(now.getHours()).padStart(2,'0') + ':' +
+    String(now.getMinutes()).padStart(2,'0');
+
+  const built = meta && meta.built_at ? meta.built_at : 'no auto-build yet';
+  el.textContent = 'build · ' + built + '  ·  rendered ' + stamp + ' KST';
+}
+loadBuildMeta();
 
 // ═══ HELPERS ═══
 function timeAgo(dateStr) {
