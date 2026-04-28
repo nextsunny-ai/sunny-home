@@ -17,7 +17,7 @@
   --card-bg: #1a1a1a;
   --card-hover: #222222;
   --text: #f0f0f0;
-  --text-dim: #777;
+  --text-dim: #999;
   --text-faint: #444;
   --blue: #0078D4;
   --green: #00C853;
@@ -55,7 +55,8 @@ body {
 .top-bar-item {
   padding: 8px 14px; font-size: 0.78rem; font-weight: 400;
   color: rgba(255,255,255,0.4); cursor: pointer; transition: all 0.2s;
-  border-radius: 6px; white-space: nowrap;
+  border-radius: 6px; white-space: nowrap; min-height: 44px;
+  display: inline-flex; align-items: center;
 }
 .top-bar-item:hover { color: var(--text); background: rgba(255,255,255,0.04); }
 .top-bar-item.active { color: var(--orange); }
@@ -96,7 +97,7 @@ body {
 
 .hero-time {
   font-size: clamp(5.5rem, 12vw, 9rem);
-  font-weight: 100; letter-spacing: -0.05em; line-height: 0.85;
+  font-weight: 200; letter-spacing: -0.05em; line-height: 0.85;
   background: linear-gradient(135deg, var(--orange), var(--deep-orange));
   -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
 }
@@ -319,7 +320,8 @@ body {
 
 .news-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
   gap: 16px;
 }
 .news-card {
@@ -483,7 +485,7 @@ body {
   display: flex; gap: 14px; justify-content: center; margin-top: 28px;
 }
 .flip-btn {
-  padding: 10px 22px;
+  padding: 10px 22px; min-height: 44px; min-width: 44px;
   background: rgba(255,140,66,0.06);
   border: 1px solid rgba(255,140,66,0.2);
   border-radius: 22px;
@@ -543,6 +545,41 @@ body {
   font-size: 0.65rem; color: var(--text-faint); margin-top: 10px;
 }
 
+/* ─── FOCUS & ACCESSIBILITY ─── */
+:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+a:focus-visible, button:focus-visible, input:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 2px;
+}
+
+/* ─── REDUCED MOTION ─── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ─── EMPTY STATE ─── */
+.empty-state {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: 48px 24px; text-align: center; min-height: 200px;
+}
+.empty-state .empty-icon { font-size: 2.4rem; margin-bottom: 16px; opacity: 0.3; }
+.empty-state .empty-msg { font-size: 0.88rem; color: var(--text-dim); margin-bottom: 16px; line-height: 1.5; }
+.empty-state .empty-btn {
+  padding: 8px 20px; border-radius: 20px; border: 1px solid rgba(255,140,66,0.3);
+  background: rgba(255,140,66,0.08); color: var(--orange); font-size: 0.78rem;
+  font-family: inherit; cursor: pointer; transition: all 0.2s;
+}
+.empty-state .empty-btn:hover { background: rgba(255,140,66,0.15); }
+
 /* ─── ANIMATIONS ─── */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(24px); }
@@ -574,14 +611,29 @@ body {
   .mid-col { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.04); padding: 40px 24px; min-height: auto; }
   .tools-grid { grid-template-columns: repeat(2, 1fr); }
   .news-section { padding: 40px 20px 60px; }
-  .news-grid { grid-template-columns: 1fr; }
+  .news-grid { grid-template-columns: 1fr; gap: 12px; }
   .news-card.featured { grid-column: span 1; grid-row: span 1; }
+  .pick-list { grid-template-columns: 1fr; }
   .top-bar { padding: 0 16px; }
   .top-bar-search { display: none; }
   .top-bar { overflow-x: auto; scrollbar-width: none; }
   .top-bar::-webkit-scrollbar { display: none; }
   .section-header { font-size: 2.4rem; }
   .pick-img { width: 72px; min-height: 48px; }
+}
+
+@media (max-width: 480px) {
+  .hero-time { font-size: 3.5rem; font-weight: 300; }
+  .hero-left { padding: 72px 16px 24px; }
+  .hero-right { padding: 24px 16px; }
+  .tools-grid { grid-template-columns: 1fr; }
+  .tool-tile.wide { grid-column: span 1; }
+  .outputs-grid { grid-template-columns: repeat(2, 1fr); }
+  .section-header { font-size: 1.8rem; }
+  .flipbook { height: 300px; width: 96vw; }
+  .flip-page { padding: 20px 16px; }
+  .flip-page .quote { font-size: 0.95rem; }
+  .deadlines-grid { grid-template-columns: 1fr; }
 }
 
 @media (min-width: 901px) and (max-width: 1200px) {
@@ -775,18 +827,25 @@ document.querySelectorAll('.top-bar-item').forEach(item => {
   });
 });
 
-// scroll spy
+// scroll spy (throttled with rAF)
 const sections = ['hero', 'mid', 'news-section', 'deadlines-section', 'outputs-section', 'flipbook-section'];
+let scrollTicking = false;
 window.addEventListener('scroll', () => {
-  const scrollY = window.scrollY + 200;
-  let active = 'hero';
-  sections.forEach(id => {
-    const el = document.getElementById(id);
-    if (el && el.offsetTop <= scrollY) active = id;
-  });
-  document.querySelectorAll('.top-bar-item').forEach(t => {
-    t.classList.toggle('active', t.dataset.section === active);
-  });
+  if (!scrollTicking) {
+    requestAnimationFrame(() => {
+      const scrollY = window.scrollY + 200;
+      let active = 'hero';
+      sections.forEach(id => {
+        const el = document.getElementById(id);
+        if (el && el.offsetTop <= scrollY) active = id;
+      });
+      document.querySelectorAll('.top-bar-item').forEach(t => {
+        t.classList.toggle('active', t.dataset.section === active);
+      });
+      scrollTicking = false;
+    });
+    scrollTicking = true;
+  }
 });
 
 // ═══ TOOLS ═══
@@ -840,7 +899,7 @@ async function loadProjects() {
     }
   } catch(e) {
     document.getElementById('projectsList').innerHTML =
-      '<div style="color:var(--text-dim);font-size:0.82rem;">Could not load projects</div>';
+      '<div class="empty-state"><div class="empty-icon">📂</div><div class="empty-msg">프로젝트를 불러올 수 없습니다</div><button class="empty-btn" onclick="loadProjects()">다시 시도</button></div>';
   }
 }
 loadProjects();
@@ -908,6 +967,11 @@ function renderNews(filter) {
   const newsGrid = document.getElementById('newsGrid');
   newsGrid.innerHTML = '';
   const items = filter === 'all' ? allNewsItems : allNewsItems.filter(n => n.cat === filter);
+
+  if (!items.length) {
+    newsGrid.innerHTML = '<div class="empty-state" style="grid-column:1/-1"><div class="empty-icon">📰</div><div class="empty-msg">이 카테고리에 뉴스가 없습니다</div></div>';
+    return;
+  }
 
   items.forEach((n, i) => {
     const card = document.createElement('a');
