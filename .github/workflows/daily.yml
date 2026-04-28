@@ -18,6 +18,9 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Fetch news (8 categories)
+        run: python scripts/fetch_news.py
+
       - name: Refresh projects
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
