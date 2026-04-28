@@ -1,22 +1,22 @@
 {
-  "updated": "2026-04-28T15:07:36+09:00",
+  "updated": "2026-04-29T01:09:46+09:00",
   "categories": [
     {
       "id": "ai",
       "name": "AI 트렌드",
       "items": [
         {
-          "title": "오픈AI는 왜 스마트폰을 직접 만들려 할까... \"AI에이전트 때문\" - 디지털투데이",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1kQzhVN2l3ME1aR00wUkVxdFZCbGh6cFg2V3QxV3FsWVo1amFOYmtqUXFqSXgtTVltZVgtcy1ZTVBONUxUYXFQcHA2R04zaURueFhwRnc3TUYzNEdBUkRoMGp3UmJoeVVTalRuU0M5OWcwNFk?oc=5",
-          "source": "디지털투데이",
+          "title": "앱 없이 AI 에이전트가 척척... 오픈AI, 천지개벽 스마트폰? - 조선일보",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPaFdwclA2V2ViZ1JqeWc5TDlLaWdiRnhaY3kzVGJkVS1GYnpYTV9HMjdaelpjbU1wQVBrSFhQai1wVkFKRGpYN1JkaWN2NE9iX3V4cV9NVnhpSC1OakMzRFBIMEYxYlpqbmlVN3JiOEZJRTJDbS00Z1NzbHhjRE9DRmlYYw?oc=5",
+          "source": "조선일보",
           "summary": "",
-          "published": "2026-04-27",
+          "published": "2026-04-28",
           "image": ""
         },
         {
-          "title": "세일포인트 “80% 기업서 'AI 에이전트 이상행동'…통합 관리 필요” - 전자신문",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1CS3dKSGVqMV9tTExmLWI4UVNfRkdWWThZYXUtUF8xdGJVcU5saV94TG5QZklYTmdlMGpNNi1HNUlSZlFuNUxDWHczdHYyZw?oc=5",
-          "source": "전자신문",
+          "title": "AI에이전트가 9초 만에 회사 데이터 날려버린 사연 들었더니... - 디지털투데이",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE83d3Bjem5VajFEckZBY19xcjR6MGYwWWFmTURtOEZQUUFiZXdROVZPSVZ2WDl3ZDVGeFYxazJjVlhyTml6eDRRUnJqTUktUlFBZ0cwVkVGRWh1UmwwM2tjLWFQQUFyMmtCOURUSm1LUkJBeXM?oc=5",
+          "source": "디지털투데이",
           "summary": "",
           "published": "2026-04-27",
           "image": ""
@@ -30,19 +30,19 @@
           "image": ""
         },
         {
-          "title": "오픈AI 'GPT 이미지 2', 출시 일주일 만에 AI 이미지 시장 판도 흔들다 - 테크42",
-          "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxPOXFsM3FOVml1dDlCYXRlODgxSDZ0SjlHREtjeFlMT0tXUGYxckwzdlpDNDZtbkkyTm14blRhcGRIZ1ZVM1ZPcVFDc3YwcHBQQ1RaWGwyakV3WWNGN29INlNqaEFXSURkNGdXc0wyRWRnLVl3NkVmelJhMmxKbUV0Mzk5UnRycFYyaW92UE9iMkM1ZmNxb1hoa3BCX282aWVKWjI5OXlZdHJGV0hDS2dsZHE4QlNEdmNUbVZsbnBNTGhLdlJSMi0wcGlSR05aUXR2YzJ4ZER4X0xiNW12MzRYZFExaVJzc0tqc1BmckQwX3I3UTRERFh5MlN0cENOYm9UNTlXTXlTVm1hcUhyU09kS09RSU43dTZlNVBUZVA5RGgxd3BfaXUxNzlSa3N2VkZlM2J2MkwtR1lwbDg?oc=5",
-          "source": "테크42",
-          "summary": "",
-          "published": "2026-04-27",
-          "image": ""
-        },
-        {
           "title": "\"이미지 AI 판 바꿨다\"…오픈AI, 이미지 생성의 새로운 시대 '챗GPT 이미지 2.0' 공개 - 인공지능신문",
           "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5QOWM1SmNVRVpyRWxHUU54SGxQbEFtSEtzMTR6NEVRdHV3dFRDZlJXRFRYQ0pFV25tLVJxSGtmUWxESE9aSTRzN1R2QXdKaGdHM3dudjZuSWs5b25sUDU3U1ZvaVZ5MDQ?oc=5",
           "source": "인공지능신문",
           "summary": "",
           "published": "2026-04-22",
+          "image": ""
+        },
+        {
+          "title": "ChatGPT 이미지 2.0과 Claude Design의 등장 - 요즘IT",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ZS19xNW1CQUhhYjFpTWxSNFR1ZUdzdF9ISVdlbHdadEg3VVFfbzhmR0tDNUc4bkZ5akhxOXZ4TldGMlFPTEVyVV9RakZtWVpMcWhVeXZWZ1lHdw?oc=5",
+          "source": "요즘IT",
+          "summary": "",
+          "published": "2026-04-28",
           "image": ""
         }
       ]
@@ -68,11 +68,11 @@
           "image": ""
         },
         {
-          "title": "대전시 K-웹툰 도시 도약 '8부 능선' 넘었다 - 네이트",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBMOHB2ckVqQjZUOWdvS1hXMjhabHN2UktHYjZRN0lPXzRvMFhpTTVuMXRwYlpaVG9XY2UtaDUyZDlfaU5sZXB1cTdaUU9oNDk2NThB?oc=5",
-          "source": "네이트",
+          "title": "[단독]美 디즈니 손잡은 네이버웹툰…“K콘텐츠 IP 파이프라인으로 글로벌 플랫폼 도약”[테크챗] - 동아일보",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE53S09nR2g5TWxEU19JNG0xVlRjLWdEaVBjcVRacHB0WkQ0azVZY1hJYWw1T181ejVONGRPaHpxT2hBZTNDS3p2RVdEeXh4MXlzY0NQNGN1OVNybnVPazdxbXZ6ZTF3MFJkd3o2UVo5TXRadzdKV1HSAWZBVV95cUxPNFRkN3Y0REV0NTB4TGtjcHdubFFnOU1ya3lMNUhzZWdlekNYaFZhalRuakVOS2NMaWl6UDMwV0g2S0xQbThmTlpPTnVqWXdXak1JYy10UktvTUdVc2l2bjQzVzBnMWc?oc=5",
+          "source": "동아일보",
           "summary": "",
-          "published": "2026-04-21",
+          "published": "2025-12-21",
           "image": ""
         },
         {
@@ -130,9 +130,9 @@
           "image": ""
         },
         {
-          "title": "어린이날 연휴, 비행기 대신 서울 한 바퀴!… 체험·공연·축제까지 가족 문화행사 가득 - 세계환경신문",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9OaWE5VTVoNUdNZXlRelVmalAyZUZmQTJCamhWNXFaY21rSWs1WnB6T212V1pBblBpT0RuTWgwZGZBTzlCS21xQWU2aE1Sc1FnYS1sdUtWMDFnNUgtR1I0?oc=5",
-          "source": "세계환경신문",
+          "title": "어린이날 연휴, 비행기 대신 서울 한 바퀴!… 체험·공연·축제까지 가족 문화행사 가득 - 한국방송뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5FWXJVUUFXQ2gwMjBZQ29Nd2FOVFh1X2lBY0lHNWtUaEVIQktXN0RDMFYxdlRsUnpKaXBvcUwwbzJVQmV4c3B6R0xTOWY5TUliY2RqWHh3aExXdkdKV3c?oc=5",
+          "source": "한국방송뉴스",
           "summary": "",
           "published": "2026-04-28",
           "image": ""
@@ -144,19 +144,11 @@
       "name": "전시",
       "items": [
         {
-          "title": "문화비축기지, 미디어 아트전시 및 다양한 페스티벌 등 연간 100만 찾는 도심 복합문화거점으로 도약 - 환경감시일보",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5NSm1URnU5Y3hPVDRlcklKdTJ5Z0M1WGxHRUlQaUFJdnl2OWc0akZpM1NUMXg4ME1Ha0k0SWszV2w2blNrZEJmY1RSbXN1Q2s?oc=5",
-          "source": "환경감시일보",
+          "title": "문화비축기지, 미디어 아트전시 및 다양한 페스티벌 등 연간 100만 찾는 도심 복합문화거점으로 도약 - 국민기자뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA4MlRteGtDU0lWY3Y2TnV4cmhOMDAyQk1MM3NwWkJOQTZ3YWRFeTB1WXV5N1FlX0lkd0JIMjJHQnlpRUlHOGhaekduTDBQUlkxRDlpYjVWbzZZQ3Zpd1JNdkZfY9IBZ0FVX3lxTE13SjdZdzUzNmFqQzBFVjd5OHpfaG9KQ3pYNU8ydVd0YkIwempoM0VLMzNrb05wSlZxUVRLdnl4aFNYcWZhMUZPZi16SUswSHlfTUEzMnlqeDFKWm1sTC12ZFRLanJCRVk?oc=5",
+          "source": "국민기자뉴스",
           "summary": "",
           "published": "2026-04-28",
-          "image": ""
-        },
-        {
-          "title": "인천광역시교육청신트리도서관, 미디어아트 전시 ‘Hyper Fence: 아키비스트의 마당’ 개최 - 대한민국교육신문",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5TRUJEQmJSR2I5QVlLdGc1aW1mdHpLM3VmSzJQVUVmbzFOLTM0VmEwenZWWF83MTlvRk5lUElVV0t0bVhId2VnakowZTE4ekwxZlpWVy1KV3lsR1FiVlBKRmVhcw?oc=5",
-          "source": "대한민국교육신문",
-          "summary": "",
-          "published": "2026-04-27",
           "image": ""
         },
         {
@@ -168,19 +160,27 @@
           "image": ""
         },
         {
-          "title": "서울대학교미술관 개관 20주년 기념 전시 ‘안과 밖 Inside/Outside’ 개최 - BRIQUE MAGAZINE",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQN3dvZnNyVFY5WE1naWRlNUlTWFZFM0hVYmNnTjhjWGt4RS1BRWwzTWxUNTBHazV5bmRPQWplNVF3b1lvWjAtS0Y0d3M3NVZ2V2xzbWhibnJkMkZFQVlTRWwxMGhDQjY5aV9GVVhSNDczcDBubTVhcnlXUjJBZnJvTlpLYTRiUkd0Umw5cFhpMA?oc=5",
-          "source": "BRIQUE MAGAZINE",
+          "title": "추울 땐 실내로! 올겨울 꼭 가야 할 무료 전시 7곳 - 서울특별시",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9JVEV5OXJUVDRGT0tmNUpwam9LNnJrVlZhRWMtWklUTXZ6NGUwaHd0Tm5QQ00wU1lBX3hKVTJqV1Y3clZ5QWNXbTJJTFJ4NGZHYno5Zmlhd3E?oc=5",
+          "source": "서울특별시",
           "summary": "",
-          "published": "2026-04-23",
+          "published": "2026-01-08",
           "image": ""
         },
         {
-          "title": "추울 땐 실내로! 올겨울 꼭 가야 할 무료 전시 7곳 - 내 손안에 서울",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9JVEV5OXJUVDRGT0tmNUpwam9LNnJrVlZhRWMtWklUTXZ6NGUwaHd0Tm5QQ00wU1lBX3hKVTJqV1Y3clZ5QWNXbTJJTFJ4NGZHYno5Zmlhd3E?oc=5",
-          "source": "내 손안에 서울",
+          "title": "MMCA서울이 어린이들에게 전하는 '그래도 해보던 날들' - d-art.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1DR01ZZEx4MjF1MXZ0dWdKejdFa2hOTms0VXpwQ3h5NnRaYkhZRGk5T0pCRk1Sa0g0ektTWEZkeTFsRGpDU0hvVEx6b3plLWZ0RjFtVzQ5dzM2QzBKVm1HQllpSWY1cTQ?oc=5",
+          "source": "d-art.co.kr",
           "summary": "",
-          "published": "2026-01-08",
+          "published": "2026-04-17",
+          "image": ""
+        },
+        {
+          "title": "현대미술 뒤집는 ‘악동’ 허스트, 서울 왔다 - 문화일보",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFA3cmt1RGNGc0FXYmRQblc3NGVDU0RTc0VCOEhFNUdZSFZaSWpCb2trb3Bzb2RsZHdyRThaNDM3VUNVdHNZMzUxdTNBcVNlNHg2?oc=5",
+          "source": "문화일보",
+          "summary": "",
+          "published": "2026-03-18",
           "image": ""
         }
       ]
@@ -260,19 +260,19 @@
           "image": ""
         },
         {
-          "title": "GS건설, '자이 브랜드 굿즈' 디자인 어워드 수상 外 - 톱데일리",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE43VE9Hd0VHTmJQZUFwanhjOU4xWkNRallwY3ZSUGhjS1FZWWhmSzdTaWRpUE5PN19lLW42YW8zSkg4MEFTS3VfRnFDNVA0b1Q4?oc=5",
-          "source": "톱데일리",
-          "summary": "",
-          "published": "2026-04-22",
-          "image": ""
-        },
-        {
           "title": "GS건설 ‘자이’ 브랜드 굿즈, 2026 레드닷 디자인 어워드 본상 수상 - 나눔경제뉴스",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5SU0tqcVQweTJHb1dybTYxdGFiYm1PTEFpRndmUmYwYjZKTUdGWm1XNkRuOGdLSE5iU3hkWFJUeHZpRmg1SnAweGJiMDdKcnh0XzcyQ1JJbXpqY0dwVDNsam45S1g1c19LOXEyUg?oc=5",
           "source": "나눔경제뉴스",
           "summary": "",
           "published": "2026-04-27",
+          "image": ""
+        },
+        {
+          "title": "GS건설, '자이 브랜드 굿즈' 디자인 어워드 수상 外 - 톱데일리",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE43VE9Hd0VHTmJQZUFwanhjOU4xWkNRallwY3ZSUGhjS1FZWWhmSzdTaWRpUE5PN19lLW42YW8zSkg4MEFTS3VfRnFDNVA0b1Q4?oc=5",
+          "source": "톱데일리",
+          "summary": "",
+          "published": "2026-04-22",
           "image": ""
         }
       ]
@@ -282,11 +282,11 @@
       "name": "페스티벌",
       "items": [
         {
-          "title": "2026 어썸뮤직페스티벌 완벽 가이드 - esquirekorea.co.kr",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAybEJ5M2hUYWhTQ01waXJFem55T0tuVkZiazQycWtmOVZMek9vbTNVT2ZIa3hCRHM5UzVhZFRuUEFxT1VlVGtWTmxFN0xmbllTVHV0SG90cFB4dw?oc=5",
-          "source": "esquirekorea.co.kr",
+          "title": "‘국내 페스티벌 첫 출연’ 즛토마요→페퍼톤스·김종현…‘사플페 2026’ 2차 라인업 - 스포츠월드",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE02ZU5DR2lRaF9hRFFLREg4QmRuRHRJQXNwT1JPM0p2aWZORjNxMk1tVHhUdnRnR1dZbkI0Z0IyN0RYRFVmdU5NMFVOMU1OamUtX0h2NzdrVkNEcmZYeFdrdHdB?oc=5",
+          "source": "스포츠월드",
           "summary": "",
-          "published": "2026-04-21",
+          "published": "2026-04-28",
           "image": ""
         },
         {
@@ -298,11 +298,11 @@
           "image": ""
         },
         {
-          "title": "2026 상반기 가기 좋은 페스티벌 6개 총정리 🎪🎶 - 뉴닉",
-          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE50OHhYVXA5MTRqaV9DS25uMHpBaENuODdiTTF6d3VkTzQtMWhxOWVHQWVuYjduT0pCNEtlSVViRFVqT1g5QTl6eW5EQWNOdW5oVHpodEk4WQ?oc=5",
-          "source": "뉴닉",
+          "title": "2026 어썸뮤직페스티벌 완벽 가이드 - esquirekorea.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAybEJ5M2hUYWhTQ01waXJFem55T0tuVkZiazQycWtmOVZMek9vbTNVT2ZIa3hCRHM5UzVhZFRuUEFxT1VlVGtWTmxFN0xmbllTVHV0SG90cFB4dw?oc=5",
+          "source": "esquirekorea.co.kr",
           "summary": "",
-          "published": "2026-03-22",
+          "published": "2026-04-21",
           "image": ""
         },
         {
