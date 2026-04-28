@@ -1,14 +1,25 @@
 {
-  "updated": "2026-04-27T15:41:12.850196+00:00",
+  "updated": "2026-04-28T05:35:08.445718+00:00",
   "source": "github.com/nextsunny-ai",
   "repos": [
+    {
+      "name": "nextart-home",
+      "description": "NEXTART Home — AI/XR/VFX Magazine (Editorial Light + Emerald)",
+      "html_url": "https://github.com/nextsunny-ai/nextart-home",
+      "homepage": "",
+      "language": "HTML",
+      "pushed_at": "2026-04-28T05:34:50Z",
+      "has_pages": true,
+      "pages_url": "https://nextsunny-ai.github.io/nextart-home/",
+      "stars": 0
+    },
     {
       "name": "sunny-home",
       "description": "Sunny personal home",
       "html_url": "https://github.com/nextsunny-ai/sunny-home",
       "homepage": "",
       "language": "HTML",
-      "pushed_at": "2026-04-26T05:36:00Z",
+      "pushed_at": "2026-04-28T05:34:43Z",
       "has_pages": true,
       "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
       "stars": 0
