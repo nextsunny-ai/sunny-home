@@ -27,6 +27,7 @@
   --pink: #E91E63;
   --yellow: #FFC107;
   --radius: 14px;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* ─── FOCUS VISIBLE ─── */
@@ -125,9 +126,10 @@ body {
 
 .hero-time {
   font-size: clamp(5.5rem, 12vw, 9rem);
-  font-weight: 300; letter-spacing: -0.05em; line-height: 0.85;
-  background: linear-gradient(135deg, var(--orange), var(--deep-orange));
+  font-weight: 200; letter-spacing: -0.06em; line-height: 0.85;
+  background: linear-gradient(135deg, var(--orange) 20%, var(--deep-orange) 80%);
   -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  font-variant-numeric: tabular-nums;
 }
 .hero-date {
   font-size: clamp(1.1rem, 2.2vw, 1.6rem);
@@ -178,11 +180,18 @@ body {
   border: 1px solid rgba(255,255,255,0.06);
   border-radius: 12px;
   cursor: pointer; text-decoration: none; color: var(--text);
-  transition: all 0.2s; min-height: 0;
+  transition: all 0.25s cubic-bezier(0.16,1,0.3,1); min-height: 0;
 }
-.pick-card:hover { background: rgba(255,140,66,0.08); border-color: rgba(255,140,66,0.3); }
-.pick-card:hover { padding-left: 8px; }
+.pick-card:hover { background: rgba(255,140,66,0.08); border-color: rgba(255,140,66,0.3); transform: translateX(4px); }
 .pick-card:hover .pick-title { color: var(--orange); }
+/* First 2 cards span full width = featured */
+.pick-card:first-child {
+  grid-column: span 2;
+  padding: 14px 16px;
+  background: rgba(255,140,66,0.06);
+  border-color: rgba(255,140,66,0.15);
+}
+.pick-card:first-child .pick-title { font-size: 1rem; font-weight: 600; }
 
 .pick-img {
   width: 88px; min-height: 60px; border-radius: 10px; flex-shrink: 0;
@@ -253,6 +262,16 @@ body {
   font-weight: 200; letter-spacing: -0.03em; line-height: 1;
   margin-bottom: 28px; color: var(--text); opacity: 0.9;
 }
+.section-eyebrow {
+  font-size: 0.6rem; font-weight: 700; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--orange); margin-bottom: 8px;
+  display: flex; align-items: center; gap: 10px;
+}
+.section-eyebrow::before {
+  content: ''; width: 24px; height: 2px;
+  background: linear-gradient(90deg, var(--orange), var(--deep-orange));
+  border-radius: 1px;
+}
 
 /* Tools Grid */
 .tools-grid {
@@ -294,7 +313,7 @@ body {
   border-left: 3px solid rgba(255,140,66,0.25);
   transition: all 0.2s;
 }
-.project-card:hover { background: rgba(255,255,255,0.05); border-left-color: var(--orange); }
+.project-card:hover { background: rgba(255,255,255,0.05); border-left-color: var(--orange); transform: translateX(4px); }
 .project-card .repo-name {
   font-size: 0.85rem; font-weight: 600; margin-bottom: 3px;
 }
@@ -349,19 +368,29 @@ body {
 
 .news-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
   gap: 16px;
 }
 .news-card {
   background: var(--card-bg); border-radius: var(--radius);
-  overflow: hidden; cursor: pointer; transition: all 0.3s;
+  overflow: hidden; cursor: pointer;
+  transition: transform 0.3s var(--ease, cubic-bezier(0.16,1,0.3,1)), box-shadow 0.3s, border-color 0.3s;
   text-decoration: none; color: var(--text);
   display: flex; flex-direction: column;
+  border: 1px solid rgba(255,255,255,0.04);
 }
-.news-card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,0,0,0.5); }
+.news-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,140,66,0.15);
+  border-color: rgba(255,140,66,0.2);
+}
 .news-card.featured {
   grid-column: span 2; grid-row: span 2;
 }
+/* 2nd/3rd card emphasis */
+.news-card:nth-child(4) { grid-column: span 2; }
+.news-card:nth-child(7) { grid-column: span 2; }
 
 .news-card-img {
   width: 100%; aspect-ratio: 16/9;
@@ -407,7 +436,7 @@ body {
   border-left: 3px solid var(--orange);
   transition: all 0.2s;
 }
-.deadline-card:hover { background: rgba(255,140,66,0.06); transform: translateY(-2px); }
+.deadline-card:hover { background: rgba(255,140,66,0.06); transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
 .deadline-card.urgent { border-left-color: var(--pink); }
 .deadline-card.soon { border-left-color: var(--yellow); }
 .deadline-card .dday {
@@ -639,6 +668,7 @@ body {
   .news-section { padding: 40px 20px 60px; }
   .news-grid { grid-template-columns: 1fr; }
   .news-card.featured { grid-column: span 1; grid-row: span 1; }
+  .news-card:nth-child(4), .news-card:nth-child(7) { grid-column: span 1; }
   .top-bar { padding: 0 16px; }
   .top-bar-search { display: none; }
   .top-bar { overflow-x: auto; scrollbar-width: none; }
@@ -655,6 +685,7 @@ body {
   .mid { grid-template-columns: 1fr 1fr; }
   .mid-col:nth-child(3) { grid-column: span 2; }
   .news-grid { grid-template-columns: repeat(2, 1fr); }
+  .news-card:nth-child(4), .news-card:nth-child(7) { grid-column: span 2; }
 }
 </style>
 </head>
@@ -715,12 +746,14 @@ body {
   <section class="mid reveal" id="mid">
     <!-- COL 1: Tools -->
     <div class="mid-col">
+      <div class="section-eyebrow">Workspace</div>
       <div class="section-header">Tools</div>
       <div class="tools-grid" id="toolsGrid"><!-- filled by JS --></div>
     </div>
 
     <!-- COL 2: Recent Projects -->
     <div class="mid-col">
+      <div class="section-eyebrow">GitHub</div>
       <div class="section-header">Recent Projects</div>
       <div id="projectsList">
         <div style="color:var(--text-dim);font-size:0.82rem;">Loading projects...</div>
@@ -729,6 +762,7 @@ body {
 
     <!-- COL 3: Notice -->
     <div class="mid-col">
+      <div class="section-eyebrow">Team Activity</div>
       <div class="section-header">Notice</div>
       <div id="noticeList"><!-- filled by JS --></div>
     </div>
@@ -736,6 +770,7 @@ body {
 
   <!-- ═══ NEWS (full bottom) ═══ -->
   <section class="news-section reveal" id="news-section">
+    <div class="section-eyebrow">Daily Digest</div>
     <div class="section-header">News</div>
     <div class="news-tabs" id="newsTabs">
       <span class="news-tab active" data-cat="all">All</span>
@@ -752,6 +787,7 @@ body {
 
   <!-- ═══ THIS WEEK DEADLINES ═══ -->
   <section class="deadlines-section reveal" id="deadlines-section">
+    <div class="section-eyebrow">Upcoming</div>
     <div class="section-header">This Week</div>
     <div style="color:var(--text-dim);font-size:0.82rem;margin-top:-18px;">지원사업 · 납품 · 계약 · 마감</div>
     <div class="deadlines-grid" id="deadlinesGrid"><!-- filled by JS --></div>
@@ -759,6 +795,7 @@ body {
 
   <!-- ═══ RECENT OUTPUTS (visual-maker) ═══ -->
   <section class="outputs-section reveal" id="outputs-section">
+    <div class="section-eyebrow">Visual Maker</div>
     <div class="section-header">Recent Outputs</div>
     <div style="color:var(--text-dim);font-size:0.82rem;margin-top:-18px;">visual-maker 최근 결과물</div>
     <div class="outputs-grid" id="outputsGrid"><!-- filled by JS --></div>
