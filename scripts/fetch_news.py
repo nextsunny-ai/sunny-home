@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""써니홈 뉴스 자동 수집 — 8개 카테고리 Google News RSS + og:image 크롤링"""
+"""써니홈 뉴스 자동 수집 — 8개 카테고리 Google News RSS + 썸네일 이미지"""
 import json, os, re, urllib.request, ssl
 from datetime import datetime, timezone, timedelta
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -7,12 +7,11 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 KST = timezone(timedelta(hours=9))
 OUTPUT = os.path.join(os.path.dirname(__file__), "..", "sunny_home_data.json")
 
-# SSL 검증 완화 (일부 뉴스 사이트 인증서 문제 대비)
 CTX = ssl.create_default_context()
 CTX.check_hostname = False
 CTX.verify_mode = ssl.CERT_NONE
 
-HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
+HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
 
 CATEGORIES = [
     {"id": "ai", "name": "AI 트렌드", "queries": ["AI 에이전트", "AI 이미지 생성", "GPT 클로드"]},
@@ -26,47 +25,27 @@ CATEGORIES = [
 ]
 
 
-def fetch_og_image(url, timeout=8):
-    """기사 URL에서 og:image 추출."""
-    if not url or "google.com/rss" in url:
+def fetch_gnews_thumbnail(article_url, timeout=8):
+    """Google News article 페이지에서 lh3 썸네일 추출 → 400px 크기로."""
+    if not article_url or "news.google.com" not in article_url:
         return ""
     try:
-        req = urllib.request.Request(url, headers=HEADERS)
+        req = urllib.request.Request(article_url, headers=HEADERS)
         with urllib.request.urlopen(req, timeout=timeout, context=CTX) as r:
-            # 처음 50KB만 읽기 (og:image는 <head> 안에 있으므로)
-            html = r.read(50_000).decode("utf-8", errors="replace")
-        # og:image
-        m = re.search(r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']', html, re.I)
-        if not m:
-            m = re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']', html, re.I)
-        if m:
-            img = m.group(1).strip()
-            # 상대 URL 처리
-            if img.startswith("//"):
-                img = "https:" + img
+            html = r.read(30_000).decode("utf-8", errors="replace")
+        # lh3.googleusercontent.com 이미지 찾기 (가장 큰 것)
+        imgs = re.findall(r'(https://lh3\.googleusercontent\.com/[^\s"\'<>]+)', html)
+        if imgs:
+            # 크기 파라미터를 =s400으로 교체
+            img = imgs[0]
+            img = re.sub(r'=w\d+', '=s400', img)
+            img = re.sub(r'=s\d+', '=s400', img)
+            if '=s400' not in img:
+                img += '=s400'
             return img
     except Exception:
         pass
     return ""
-
-
-def resolve_google_news_url(gnews_url, timeout=5):
-    """Google News 리다이렉트 URL → 실제 기사 URL."""
-    if "news.google.com" not in gnews_url:
-        return gnews_url
-    try:
-        req = urllib.request.Request(gnews_url, headers=HEADERS, method="HEAD")
-        with urllib.request.urlopen(req, timeout=timeout, context=CTX) as r:
-            return r.url
-    except Exception:
-        # HEAD 실패 시 GET으로 리다이렉트 따라가기
-        try:
-            req = urllib.request.Request(gnews_url, headers=HEADERS)
-            with urllib.request.urlopen(req, timeout=timeout, context=CTX) as r:
-                return r.url
-        except Exception:
-            pass
-    return gnews_url
 
 
 def fetch_google_news_rss(query, max_items=5):
@@ -107,16 +86,13 @@ def fetch_google_news_rss(query, max_items=5):
     return items
 
 
-def enrich_with_images(items):
-    """병렬로 og:image 크롤링."""
+def enrich_with_thumbnails(items):
+    """병렬로 Google News 썸네일 크롤링."""
     def _process(item):
-        real_url = resolve_google_news_url(item["url"])
-        if real_url != item["url"]:
-            item["url"] = real_url
-        item["image"] = fetch_og_image(real_url)
+        item["image"] = fetch_gnews_thumbnail(item["url"])
         return item
 
-    with ThreadPoolExecutor(max_workers=8) as pool:
+    with ThreadPoolExecutor(max_workers=10) as pool:
         futures = {pool.submit(_process, it): it for it in items}
         for f in as_completed(futures):
             try:
@@ -147,11 +123,11 @@ def main():
                 unique.append(item)
         unique = unique[:5]
 
-        # og:image 크롤링
-        print(f"  [{cat['id']}] fetching images for {len(unique)} items...")
-        enrich_with_images(unique)
+        # 썸네일 크롤링
+        print(f"  [{cat['id']}] fetching thumbnails for {len(unique)} items...")
+        enrich_with_thumbnails(unique)
         img_count = sum(1 for it in unique if it["image"])
-        print(f"  [{cat['id']}] -> {img_count}/{len(unique)} images found")
+        print(f"  [{cat['id']}] -> {img_count}/{len(unique)} images")
 
         categories.append({"id": cat["id"], "name": cat["name"], "items": unique})
 
