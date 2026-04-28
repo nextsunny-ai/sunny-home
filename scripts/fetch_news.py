@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
-"""써니홈 뉴스 자동 수집 — 8개 카테고리 Google News RSS + 썸네일 이미지"""
+"""써니홈 뉴스 자동 수집 — 8개 카테고리 Google News RSS (이미지 없음, 하나가 큐레이션)"""
 import json, os, re, urllib.request, ssl
 from datetime import datetime, timezone, timedelta
-from concurrent.futures import ThreadPoolExecutor, as_completed
 
 KST = timezone(timedelta(hours=9))
 OUTPUT = os.path.join(os.path.dirname(__file__), "..", "sunny_home_data.json")
@@ -11,7 +10,7 @@ CTX = ssl.create_default_context()
 CTX.check_hostname = False
 CTX.verify_mode = ssl.CERT_NONE
 
-HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; SunnyHome/1.0)"}
 
 CATEGORIES = [
     {"id": "ai", "name": "AI 트렌드", "queries": ["AI 에이전트", "AI 이미지 생성", "GPT 클로드"]},
@@ -23,29 +22,6 @@ CATEGORIES = [
     {"id": "festival", "name": "페스티벌", "queries": ["음악 페스티벌 2026 한국", "아트 페스티벌 서울"]},
     {"id": "english", "name": "비즈니스 영어", "queries": ["business english phrases", "English negotiation tips"]},
 ]
-
-
-def fetch_gnews_thumbnail(article_url, timeout=8):
-    """Google News article 페이지에서 lh3 썸네일 추출 → 400px 크기로."""
-    if not article_url or "news.google.com" not in article_url:
-        return ""
-    try:
-        req = urllib.request.Request(article_url, headers=HEADERS)
-        with urllib.request.urlopen(req, timeout=timeout, context=CTX) as r:
-            html = r.read(30_000).decode("utf-8", errors="replace")
-        # lh3.googleusercontent.com 이미지 찾기 (가장 큰 것)
-        imgs = re.findall(r'(https://lh3\.googleusercontent\.com/[^\s"\'<>]+)', html)
-        if imgs:
-            # 크기 파라미터를 =s400으로 교체
-            img = imgs[0]
-            img = re.sub(r'=w\d+', '=s400', img)
-            img = re.sub(r'=s\d+', '=s400', img)
-            if '=s400' not in img:
-                img += '=s400'
-            return img
-    except Exception:
-        pass
-    return ""
 
 
 def fetch_google_news_rss(query, max_items=5):
@@ -86,22 +62,6 @@ def fetch_google_news_rss(query, max_items=5):
     return items
 
 
-def enrich_with_thumbnails(items):
-    """병렬로 Google News 썸네일 크롤링."""
-    def _process(item):
-        item["image"] = fetch_gnews_thumbnail(item["url"])
-        return item
-
-    with ThreadPoolExecutor(max_workers=10) as pool:
-        futures = {pool.submit(_process, it): it for it in items}
-        for f in as_completed(futures):
-            try:
-                f.result()
-            except Exception:
-                pass
-    return items
-
-
 def main():
     now = datetime.now(KST)
     categories = []
@@ -113,7 +73,6 @@ def main():
             all_items.extend(items)
             print(f"  [{cat['id']}] '{q}' -> {len(items)}")
 
-        # 중복 제거
         seen = set()
         unique = []
         for item in all_items:
@@ -121,15 +80,9 @@ def main():
             if key not in seen:
                 seen.add(key)
                 unique.append(item)
-        unique = unique[:5]
 
-        # 썸네일 크롤링
-        print(f"  [{cat['id']}] fetching thumbnails for {len(unique)} items...")
-        enrich_with_thumbnails(unique)
-        img_count = sum(1 for it in unique if it["image"])
-        print(f"  [{cat['id']}] -> {img_count}/{len(unique)} images")
-
-        categories.append({"id": cat["id"], "name": cat["name"], "items": unique})
+        categories.append({"id": cat["id"], "name": cat["name"], "items": unique[:5]})
+        print(f"  -> {cat['id']}: {len(unique[:5])}")
 
     payload = {
         "updated": now.strftime("%Y-%m-%dT%H:%M:%S+09:00"),
@@ -141,8 +94,7 @@ def main():
         json.dump(payload, f, ensure_ascii=False, indent=2)
 
     total = sum(len(c["items"]) for c in categories)
-    total_img = sum(1 for c in categories for it in c["items"] if it["image"])
-    print(f"\nDone: {total} news, {total_img} with images -> {OUTPUT}")
+    print(f"\nDone: {total} news -> {OUTPUT}")
 
 
 if __name__ == "__main__":

@@ -989,7 +989,7 @@ function renderNews(filter) {
     const icon = catIcons[n.cat] || "\uD83D\uDCF0";
     const bg = catColors[n.cat] || catColors.ai;
     card.innerHTML =
-      (n.image ? '<div class="news-card-img" style="background:#1a1a2e center/cover no-repeat url(' + JSON.stringify(n.image) + ')"></div>' : '<div class="news-card-img" style="background:' + bg + '"></div>') +
+      (n.image ? '<div class="news-card-img" style="background:#1a1a2e center/cover no-repeat url(' + JSON.stringify(n.image) + ')"></div>' : '<div class="news-card-img" style="background:' + bg + '">' + icon + '</div>') +
       '<div class="news-card-body">' +
       '<div class="cat-tag cat-' + n.cat + '">' + n.catName + '</div>' +
       '<div class="title">' + escHtml(n.title) + '</div>' +
@@ -1036,7 +1036,7 @@ function renderNewsPick() {
     const icon = catIcons[n.cat] || "\uD83D\uDCF0";
     const bg = catColors[n.cat] || catColors.ai;
     a.innerHTML =
-      (n.image ? '<div class="pick-img" style="background:#1a1a2e center/cover no-repeat url(' + JSON.stringify(n.image) + ')"></div>' : '<div class="pick-img" style="background:' + bg + '"></div>') +
+      (n.image ? '<div class="pick-img" style="background:#1a1a2e center/cover no-repeat url(' + JSON.stringify(n.image) + ')"></div>' : '<div class="pick-img" style="background:' + bg + '">' + icon + '</div>') +
       '<div class="pick-meta">' +
       '<div class="pick-cat cat-' + n.cat + '">' + n.catName + '</div>' +
       '<div class="pick-title">' + escHtml(n.title) + '</div>' +
