@@ -978,7 +978,7 @@ tools.forEach(t => {
 // ═══ GITHUB REPOS ═══
 async function loadProjects() {
   try {
-    const res = await fetch('https://api.github.com/users/nextsunny-ai/repos?sort=pushed&per_page=8');
+    const res = await fetch('https://api.github.com/users/nextsunny-ai/repos?sort=pushed&per_page=20');
     const repos = await res.json();
     if (!Array.isArray(repos)) return;
     const list = document.getElementById('projectsList');
