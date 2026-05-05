@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-06T00:55:59+09:00",
+  "updated": "2026-05-06T07:01:12+09:00",
   "categories": [
     {
       "id": "ai",
@@ -14,17 +14,25 @@
           "image": ""
         },
         {
-          "title": "오모션, '3D 디지털 휴먼' 기반 AI 에이전트 시장 공략 - 전자신문",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE40aGtBTzVrOExYNUVwX3Uxd2ZQc1MzLVFoWjVkdlNVZkxFN3Y0QWEtdVRycHRib0E1dFVuRGhCTVlZdjl3V1MyVFd5Nk5zUQ?oc=5",
-          "source": "전자신문",
+          "title": "국내 사이버 보안 기업들, AI 에이전트로 솔루션 고도화 속도 - IT조선",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE11Z1ZKT3NJcGtETTRZS2JsVHZibnh6UHpLOTJhcGc1Y1VmUVFFTy1zRURSSENLa0RRTmJBbS1QeVJIbXZ5ZFY5N0lRUE5uNVFCVWlidUhnSFhFaWdzNk92TVh1eUtrdXlVTFV1VEJxNlTSAXRBVV95cUxPZkoyOXZzY2lsaUFqQnVjWXpCbEpreGVTSGxIdHNRdDFfZVFzdEhER19CRUNkSGd1anphN3RGZFNEcXFha3BGb1p3bmJmVXllUTh6VVVkNWlBSzVCalpzMnZQQ0g4NGh0SUctekRlQlFvSGo4dQ?oc=5",
+          "source": "IT조선",
           "summary": "",
           "published": "2026-05-05",
           "image": ""
         },
         {
-          "title": "넥서스(Nexus): FTX의 교훈, AI 에이전트 시대에 다시 쓰다. - Tiger Research Reports",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQVW8xei10V19GdXYzcUY2N2EzRmNfbG5jWThzaTNqR2dRSWlLZDlKdmhRUkVaeklKWjIwNjRTR3ZLMzMzekhzZnNWWXVmODhCbHVHTFRJeTY2bzZoUDFGb05qaGU1aGV1S2lrRjRCS2UzNmxDRkl5NElxMTVqbG1HMg?oc=5",
-          "source": "Tiger Research Reports",
+          "title": "AI 에이전트 실행 위험, 한 줄 런타임 거버넌스로 실시간 차단 - 지티티코리아",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5HWUFuUDlqR01xZWRMMlVULXdXQ1NxYlMwSHV0Ry1wRnJLOE9GNG11bzVtZzQ5UjNYMG8wMEFpc1lkTVR6UWJQc2Z4bkJsenY5SjNXZlc3LXJJZ0dwX0hzY0twc1d2cDNRcFE?oc=5",
+          "source": "지티티코리아",
+          "summary": "",
+          "published": "2026-05-05",
+          "image": ""
+        },
+        {
+          "title": "\"진짜 야구장 온 커플같네\"… 현실감 넘치는 AI이미지에 깜짝 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE14Rm1XY3BoY0d6Z2pGRFNISkJ5ZnJ4a21FM0dZdDVLbDhrYjdnblFyVDh0N0ljZ0R2UU90TjVlSnBQNW5EOFZyQThfRlRoOTQ?oc=5",
+          "source": "v.daum.net",
           "summary": "",
           "published": "2026-05-05",
           "image": ""
@@ -35,14 +43,6 @@
           "source": "지디넷코리아",
           "summary": "",
           "published": "2026-05-01",
-          "image": ""
-        },
-        {
-          "title": "\"진짜 야구장 온 커플같네\"… 현실감 넘치는 AI이미지에 깜짝 - 파이낸셜뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1TRUQ3QUQ3UUgwYTh0RUdjeVhLcFVncDA5SEx0WXJqdWppR3I2OWhNUXlmWm0tM2FCUElwZGF3YVRKLUhEY0FJWjhQcjJTb0NON0tINjduNHpVUdIBXkFVX3lxTE90TlB1dnZFYWpfME84cmFocEh4YThIT1Z5MnRwYTZvN0J0Z1JsSk9TWDFGNDk3THRfLXU2NnMwYzUwOWtkaGdPbklaUWdYRXk4c1ZkWUdEa3lyNmJVamc?oc=5",
-          "source": "파이낸셜뉴스",
-          "summary": "",
-          "published": "2026-05-05",
           "image": ""
         }
       ]
@@ -122,17 +122,17 @@
           "image": ""
         },
         {
-          "title": "서울시, 시민과 함께 완성하는 리듬 축제…'서울드럼페스티벌' 16일~17일 DDP 개최 - 서울포커스",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBWdDd3U0NsN0YyU1JBeGFhcEE3bXFVY0F0SFBhWmRqTk5fNVp4NXRjaDFIUzRaM1RWSWtEaVA5NVV3SWJBVnNkMlc2dVFxdVpRME5PM1ZySng1US0zbmZUd25TNVhsbXZ5dkx4bg?oc=5",
-          "source": "서울포커스",
+          "title": "광화문부터 DDP-한강까지, 서울 전역이 ‘버스킹 무대’ - 동아일보",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBCbWRNekdDRGtNS0xwV1NwY1E5d2FKOG9vbHJacmxMYkxEYnpTSVRBMmdnX010eHZiVWdwaGhRS3RnM3FNSWttRmwyUC1DUDVialpXd2RGSlF2akZVbjdjVGV6N0JlZWxJTWRBNE1yWjZtMlJXa2fSAWZBVV95cUxPZXNHZElrNnNjNXdMUzZJSWtyRUdfTXB6X1ZNb2lRSTUwSHF1S3BGTVp3RlFGU0k1Nmo5YXpReF9vci0wUDV6TDROdGZQMmZaOU1vNDFVQTRuU2xWT19QSFUzQm9MZ0E?oc=5",
+          "source": "동아일보",
           "summary": "",
           "published": "2026-05-05",
           "image": ""
         },
         {
-          "title": "‘서울드럼페스티벌’ 16~17일 DDP 개최 - 해양레저신문",
-          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE00cHFqRFhUTkd4c0JRVjI5U1F0bnRIR3MzZXBVeXFqZ0VfWlJubS1ESXdDYUFpYVZCWURZX0l6N2diWjF2TWdvN09qM2VkWjBoNlo1ZEZfOA?oc=5",
-          "source": "해양레저신문",
+          "title": "서울시, 시민과 함께 완성하는 리듬 축제…'서울드럼페스티벌' 16일~17일 DDP 개최 - 서울포커스",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBWdDd3U0NsN0YyU1JBeGFhcEE3bXFVY0F0SFBhWmRqTk5fNVp4NXRjaDFIUzRaM1RWSWtEaVA5NVV3SWJBVnNkMlc2dVFxdVpRME5PM1ZySng1US0zbmZUd25TNVhsbXZ5dkx4bg?oc=5",
+          "source": "서울포커스",
           "summary": "",
           "published": "2026-05-05",
           "image": ""
@@ -160,11 +160,11 @@
           "image": ""
         },
         {
-          "title": "덱스터 미디어아트 전시 ‘플래시백 : 계림’, 가정의 달 맞이 프로모션 - 이뉴스투데이",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9FM1JneEJYR1h5MXUyR0Y4Y3NmR1U2ai1pN0g5bDN0TGRNZTB6V3lFcG52MnhvaFUwdXRnczZvUHQ5S3djeHhKX2ZLaWJLczl6dGdlODRSYkZmOUs3dlZMNEEydGF3azJOcEt2TzJybEbSAXRBVV95cUxNNThKTFNMX2ZrVkQwODU0cHJvY2hZcmJGdW0zUzZZODJUUlllekxVQW4wR0FNbVBPM2p4WTR1ZFJ4c2lVYmJZUTlmLXgxT2RpQlNBQUNaaUJybkFQc0duWHVNV2hvbVQwaWdUc3NFbXZORDhpZA?oc=5",
-          "source": "이뉴스투데이",
+          "title": "이화여대 140주년 기념 '이마프 2026', 기후변화 미디어아트 전시 및 백남준 20주기 특별 연계전 - K스피릿",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5icG9KSjgxUmVNX2FPbVdLenliLUJnOVA4eDNlTGd4UEE2T1Z4MF80NjZoOE55Q0gwY3pRRjExd09xQmZPajdYNXM3UjNCMFIxbGh4NS10QlA3bTB1bFdKUkVobXBiTXZOQS1fWmp4WEHSAXNBVV95cUxPdUhZZ1ZUNjM2dXZMUThYN1k3SkRVblYtZ3pSY3RRMWhabjZuOURKX3Q2MURlZi1JbUtKYVFxNmg4TFc2akUtLTRwU0R3TGczOE93T0FPazBFTHhCTXJJRklBQ19FZGt5NzRIZTV6RmJFUW80?oc=5",
+          "source": "K스피릿",
           "summary": "",
-          "published": "2026-04-30",
+          "published": "2026-05-04",
           "image": ""
         },
         {
@@ -222,9 +222,9 @@
           "image": ""
         },
         {
-          "title": "문체부, ‘K-콘텐츠 기업’ 육성전략 논의…창업부터 해외 진출까지 지원 - KBS 뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA2MXRSb0l1QkxWakZlNkNHdTlwSFR5LXVoQ2J3WXNrSnRmOGhZN19Mb2tNRmxiWGE4OVB5N2JrdV9DcmVQQkdpeXBGZHVmVmJZZlR6Rmlvb1FLcjA?oc=5",
-          "source": "KBS 뉴스",
+          "title": "문체부, 콘텐츠 기업육성 협의체 운영…지원 방식 전환 공감 - 뉴시스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE05bU5oZXBGOGNXd3VZQlBGR1ROWkNOOEd1VzJBUndkc2hoal83Wnd5eFpUXzlEbExkX3NpTGZMSklVMXFBN1pxZVdWckFlU01TUFFrZkxtb3VUX1k3SURqVNIBeEFVX3lxTE52LXZlcDlPb19lbGVERWt2OG5XR202RXR4b3IyZFRpekp5b2s1Q0tNTlZRSVVBTHZyZkFPcC1sT05FQTY3dlRaTWVHRFd1NnFVSy1sZExSOWtNN0p3VHg0aGt3Y3NLdDNDMEx1ME52clVfZDlWWFd2UA?oc=5",
+          "source": "뉴시스",
           "summary": "",
           "published": "2026-04-30",
           "image": ""
@@ -268,9 +268,9 @@
           "image": ""
         },
         {
-          "title": "2025년의 네이버를 빛낸 디자인 프로젝트 - design.co.kr",
+          "title": "2025년의 네이버를 빛낸 디자인 프로젝트 - 디자인플러스",
           "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE0wNktCdGxITXI2UFVkNjRua1VNUEQwLXQ0Rm1KcVhma2dzVVZzZzRmd2pEVE5yRlhOSGZ0RDU2S2xxMUlSS1NYcHpWZEc?oc=5",
-          "source": "design.co.kr",
+          "source": "디자인플러스",
           "summary": "",
           "published": "2025-12-03",
           "image": ""
