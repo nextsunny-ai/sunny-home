@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-08T01:08:10+09:00",
+  "updated": "2026-05-08T06:59:35+09:00",
   "categories": [
     {
       "id": "ai",
@@ -30,19 +30,19 @@
           "image": ""
         },
         {
-          "title": "AI로 이미지 생성 - 전자신문",
-          "url": "https://news.google.com/rss/articles/CBMipARBVV95cUxPTDJITDRGSkNXR0V3LTU0VWlOekV5SU9tZHg5OGx4ZjlCX2FILTY5QkNJb3JlcXZMMGUzeW1IM2hKV3RmbTYxOXg3MHlaU0duTk95a3Fudm9Nck5WWDZrN1VZZjIyVEltbkxpRHM4RUo4QUhaOEJKc0lpdjh4aWpIM2w3ZkFsUTNwN1duVzFSRmNlV182ZVJiVDBPa1ZNWGZzd2N3QjBRdnF3Q25iWDJfVlAzTHB2YmFsNVNtTWt5cm5BbHF2eUlhVEJEZEE4QXpFOFZOZjFEUG14X3dheWx0aDhtLUwzZjV5TUstRFBQYlp1ZWwxQ1lYNWNQd1cxUF9VejZqRUJ1M3dld2FNRFhCUDV2bmVlVkcxbVYyREJENTBlaUgtNnJVQVJiUnh4NHc1YWkyRGxzM0N5MW9CNjYyU0Q4OUJYRW11T3p6bmY4SzlaSXRNUkJudnU0MXFWdmplLXVzNjRpVGNNTGtxZjZMRlU2X244N2Znblp0RkNaN1hiWmF3bkRxY04xTUx5bkM3dTRab2dybGdMYWV6eDdPSVd3dk5Vbm44UU5qQmlHX0hEV1JDU3Z0RDRwNnpLampaOEFQMF9IVndBQVZLeWRBdEFkeDB2aFhhSHJNRXlCVXk1SFFMdG1PaWlENGpnZ1lmYTgtVEw4VmY2V2VTOGlPbzBXUllXUzI4bThYcW81bTMxY3J6UGR5ZFZxUzY2Ul90M1RRNA?oc=5",
-          "source": "전자신문",
-          "summary": "",
-          "published": "2026-05-06",
-          "image": ""
-        },
-        {
           "title": "\"AI 프사, 이 정도였어?\"…챗GPT 이미지 2.0, 출시 첫 주부터 난리 - 지디넷코리아",
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1VZkVQV0ktdkxsQVktM3RvN1pFMHVIdnd2UFVGUFAtaUw3LUlmVzhlYnExaFFQOTJVRHZFSmx0cWdGT1V0ejlpYUgtNGJPX0sxNTVGOGhn?oc=5",
           "source": "지디넷코리아",
           "summary": "",
           "published": "2026-05-01",
+          "image": ""
+        },
+        {
+          "title": "\"진짜 야구장 온 커플같네\"… 현실감 넘치는 AI이미지에 깜짝 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE14Rm1XY3BoY0d6Z2pGRFNISkJ5ZnJ4a21FM0dZdDVLbDhrYjdnblFyVDh0N0ljZ0R2UU90TjVlSnBQNW5EOFZyQThfRlRoOTQ?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-05-05",
           "image": ""
         }
       ]
@@ -98,6 +98,14 @@
       "name": "공연",
       "items": [
         {
+          "title": "2026년 5월 8일 주말 파리에서 꼭 봐야 할 공연 - Sortir à Paris",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQTlR0N2VBT1ZjR0V4OURFMUtxdzdpaDJDNDZjdGgtcGZ5QnYwMFVNUmR2NzhZUV8wTWVyVVdiWWVmbWtjamlKN1E2a2hUSldLYWc0YkJGTWo5R1NkSWtTcWFXWHAyS2FMR09ocmlNUS1qYXh4TTlXbjJ4N3F1V2pSekp1SVJuRC02WWxTNGt3eU5HSzhmSWJHd3hiS3RuRXg0ZGlXQlVrRmRFampwaXJjTmJKN0VuLU9LU2d2WDNzX09sUGdLa0VTZjA5TTU?oc=5",
+          "source": "Sortir à Paris",
+          "summary": "",
+          "published": "2026-05-07",
+          "image": ""
+        },
+        {
           "title": "아산문화재단, 2026 우수공연초청 뮤지컬 ‘김종욱 찾기’ - 도민연합뉴스",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB0ODBYMGlTWGJSOVN0U2RCYmgyLUV0bFZEQzZZRE8tcTN5NDR1Vk9ZZWo1SkJBbF9Vek1YRXc4R0VuSWFkdWQ5NE5Md1QxMDMxTmxRZkhpMVBkRC1wSGptV29rWl9kR2cyVkE?oc=5",
           "source": "도민연합뉴스",
@@ -106,19 +114,11 @@
           "image": ""
         },
         {
-          "title": "파리에서 2026년 5월에 꼭 봐야 할 뮤지컬 - Sortir à Paris",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOUGxLcDQ1ZVlMV0JXenUxWWdUQW5JSlBTZXRvUHkzXzkwdzNEQ3pGM3F2VVFnY2VHMDZhbkJEbDAtR04wNHhDUmNFQmFycVFJN1FGQ0RPNDBVNE12NXNZc05QZkJTUVgzSHFacENhcFF2bXg4LVBYMVk3Q05KUmFudGpqVTB5U1NKYXczcHRKUXJsSmtKUjlGNVRHT1dyYlBUaXhPb21DbnRIdFlEOTE1ZXRzOWJNLUFlRjBYOU14OTczU09QdkM3T25FZ3hqUQ?oc=5",
-          "source": "Sortir à Paris",
+          "title": "대전시교육청, 2026 찾아가는 유아 영양·위생교육 뮤지컬 개최 - 투데이플러스",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9hanQzRDZwUTFkRHBLV21IR2xQYkh3R2tTYmVCMGp0dFpZVjB6YlYxUVhwWVFnRXRxVktFX0wtWWNYWTNpRVBCRjVkVE85UTQ2SEpqX0ZwWVVhOURqR3k3bkVMbE1HbUY4Z1loNDJWd1hEZw?oc=5",
+          "source": "투데이플러스",
           "summary": "",
-          "published": "2026-05-01",
-          "image": ""
-        },
-        {
-          "title": "피처 | [2026 라인업] 더뮤지컬의 2026년 뮤지컬·연극 리스트 - 더뮤지컬",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1idkJsVkEzVVJoa0laOG1jbVNMMVNrU2JrZUZnclJZUkJwdnNPT2s5Wko2RU5lQWFVZ1Q0d21oTExkWDBRampjTUxRNUh3ZjJwYnU4bktsYk53d1pSYm1meHVRSQ?oc=5",
-          "source": "더뮤지컬",
-          "summary": "",
-          "published": "2025-12-24",
+          "published": "2026-05-07",
           "image": ""
         },
         {
@@ -130,8 +130,8 @@
           "image": ""
         },
         {
-          "title": "서울숲이 한 달간 공연장으로…주말마다 음악 흐르는 ‘정원 축제’ - 동아일보",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE4zRDVVVlU5bGZZN1h5NHdBQjl1TVd0N2RUTXQ3RTRNejhCbWc1eElETk5OcXR6T016RWl1ejEyQ2VYUGd6Q09YU1lhTmNpNzNjei1yNFN6WGhNcjlDbUhwLWJPSkFWWmlHUVhQaTRpaHVnSFRfVnfSAWZBVV95cUxQNEM2NjVUek9CdkJkN2Y1d0NuaVhYblcxMG4wdk4zaVExb1FhT05XMkl6UFZndzBfM0hfRk9vOHlFbWR3STlPQUNWMFZfWDBWNmE3RXVBOTJXMmUzMDBDbFRNVG1EaEE?oc=5",
+          "title": "서울숲, 한 달간 ‘음악이 흐르는 정원’ - 동아일보",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9IWkgxOXpuUHM1WnNIRXFERFJXUjRzd3JOT2pWNzM2R2NRNkZrckFVT3hVNEh4QjlFMk9idk9jVHduejJydVh2M2tDMmFndzdnSFIzU1dOUlRZTFI0cDY5S0JWX3J5WGxvWENZdlY5ZTh2NmIyaVHSAWZBVV95cUxPUDV5ZWlabWtiNXpKU1lJeVRlOElRRG0yTFFhODNDOGhDbk5VekhvWDdWczZnNkdLS3lHaWpWOVF3eDhlcWlCNkxSc294MDI3blhoUHhqVVVyYTdQQVRJZVJPRkZZUkE?oc=5",
           "source": "동아일보",
           "summary": "",
           "published": "2026-05-06",
@@ -144,35 +144,27 @@
       "name": "전시",
       "items": [
         {
-          "title": "포레스텔라, 정규 4집 미디어 아트 전시 개최 - 내외뉴스통신",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB2WDRjbHVQLXFoeWNkV2JUbmFCeTVoMkk1REZEQlVUM1lfMDVpeE9xaVZHeURDeGhLcHktbFQyS3BVNXV1MFpicGU5T3VjVG04S1JoRFQ2RGpQTXRUeXlldy1mLWxzVkI1Z1lsV9IBcEFVX3lxTE9ELXU0Xzk3RkVMVUVDcEtxbDVFaldYeklLMUVYb0Y4cDE1SDU4a191V1h4cDgwaDNHWk1lS0RFVzNrdDJia0RkUWlRaGpaMHhCYXd5RlhZSlBPbHk1RWdJLXV3SVRmX1J6dXh2NEpzanE?oc=5",
-          "source": "내외뉴스통신",
+          "title": "광주미디어아트플랫폼, 5·18 주제 첫 특별전 개최 - 시사의창",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5pS2RTbG5pa2p6QlFVaVZWZnVoLXhLVlNLeGxSWHlMYTI3U0RaNjQxamN1YnRydG9vR1F2dzFCX09IR1dDVEU0a0gzaUNnVExmSXJLVQ?oc=5",
+          "source": "시사의창",
           "summary": "",
           "published": "2026-05-07",
           "image": ""
         },
         {
-          "title": "'커하' 포레스텔라, 정규 4집 전시 스케일 확장…미디어 아트 전시 개최 - iMBC 연예",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5lcVQ5NmU5ODZLY1hPTF9nMXlOQWJzN2hmYUM3eF9iVC1jNGRtc0p2ckxWSVhxSFd5Z21CYnF2MGY5VS15OGs4S1RPSWRldmNfQWlIb2dCQ0I4T2dBVWdHdQ?oc=5",
-          "source": "iMBC 연예",
-          "summary": "",
-          "published": "2026-05-06",
-          "image": ""
-        },
-        {
-          "title": "포레스텔라, 정규 4집 미디어 아트 전시 진행…색다른 경험 선사 - 비즈엔터",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBxck9VU1lnLWlJVzAwWVl1cGd1eXpmcTNUWDNYdldWRHE2VnB4UWJZMjBySTRBekdxaUhfY1dzQlNVd0lNdk5ZWGxDUHl0cmxGcElhaVFn?oc=5",
-          "source": "비즈엔터",
+          "title": "포레스텔라, 6일~17일 정규 4집 미디어 아트 전시 [공식] - 스타뉴스",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1IaF9VTUpzQlhyM3FqMjV6dkVRU1FSeVBZQkNocXlJWG9qWXlrMnBaMDgzS0xtWmg0SkRhT2VieUdkRTJ0dGlhejRJOTRVSUNUZXFHc0ppWHY4aHhuQlYzWnVhX0U3MUEtdF8tTUk3OVJLUjd4?oc=5",
+          "source": "스타뉴스",
           "summary": "",
           "published": "2026-05-05",
           "image": ""
         },
         {
-          "title": "서울에서 열린 제1회 일본현대미술작가전, Gallery HANNAM 657에서 개관전으로 열려 - 경인종합일보",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5EeHgyeVJVeWZvYlpmcnplek05dXliRG16b1BVUGlUZEJydkZKVmplbVNqSjFoNFhZU252LUFueEJUUXZVV1otZlk4LTVaLUEtdG9WNDQxS0F2cVo2V0VwUGlsVVNBQUtyQWg0a1VR0gFyQVVfeXFMT0pGWWhkZ0c3RWlCN3JRSEJoN1F1aWVpendjZ2hka1hyamR0T2dfTW5OY0hvSnRrbVBZY1gtY2MtUFk3eUJ2V0N6V3BoZG9qM2o0WmdnVWpfYnluaWJCS0Q2UUJ3dS1GSW5hMGlWRnpqeVN3?oc=5",
-          "source": "경인종합일보",
+          "title": "부당함에 맞선 저항정신 미디어아트로 조명 &gt; 뉴스 - 더코리아",
+          "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE5LdF9vTFpSc3N5RjVWODBmTlp3MTZab0hlV0t0cHNFZEVjU0Ewbml4LWd4OWQ4VVpYallQcnVRZHZ4V00?oc=5",
+          "source": "더코리아",
           "summary": "",
-          "published": "2026-05-05",
+          "published": "2026-05-07",
           "image": ""
         },
         {
@@ -181,6 +173,14 @@
           "source": "서울특별시",
           "summary": "",
           "published": "2026-04-30",
+          "image": ""
+        },
+        {
+          "title": "[현장] 다시 찾은 데이미언 허스트전…서울에서 마주한 삶과 죽음의 미학 - issueon.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5yUi1Fd3c5N2FKeFp0d01tQ0JoY3VZLWh6U2RMcEpIamw3R05NNzVkbHFHTWUwMXNPTDQ4eU9rcDBITHlMckREQl9BUjFrM0w3WG1RVWZHVmE2aHg5WXkxRlVNY2cwTy1sdUpB?oc=5",
+          "source": "issueon.co.kr",
+          "summary": "",
+          "published": "2026-05-03",
           "image": ""
         }
       ]
@@ -268,11 +268,11 @@
           "image": ""
         },
         {
-          "title": "[기업탐방] “한의약 패키지의 가치를 디자인하다” - ‘박스박사’, 프리미엄 패키지 제작 기업 - 재개발재건축매거진",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5NckFFWHF2UmJJVWpLZ0RtTkVzMkUxeVRiMUtrazZKUjg0R1pjZUNVQm5aVHpjLTRfV3BoX3dRUGYxMzlUVTM3YmlZWlRnQjlITHhiMUdnOXVlR29XeHZCZlpNMVJjZnBpQmtJ?oc=5",
-          "source": "재개발재건축매거진",
+          "title": "2025년의 네이버를 빛낸 디자인 프로젝트 - 디자인플러스",
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE0wNktCdGxITXI2UFVkNjRua1VNUEQwLXQ0Rm1KcVhma2dzVVZzZzRmd2pEVE5yRlhOSGZ0RDU2S2xxMUlSS1NYcHpWZEc?oc=5",
+          "source": "디자인플러스",
           "summary": "",
-          "published": "2026-05-06",
+          "published": "2025-12-03",
           "image": ""
         }
       ]
@@ -281,6 +281,14 @@
       "id": "festival",
       "name": "페스티벌",
       "items": [
+        {
+          "title": "2026 서울 국제 시각장애예술인 음악 페스티벌(SIMB), 8월 25~27일 서울서 개최:장애인인식개선신문 - 장애인인식개선신문",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9PeEpXZ0h5YW5Bb2s0WjhMejNKeThtWmxVdW92Z2V1N0V6aFM1V1FFZFFEbzc2ZGYyY1lqUUR4eEVnUUlzMTlsV0EtUTBHc1nSAV9BVV95cUxOYnY3Wmt6QXZoSWJ0SEJBWUkzX2E2ejNqck94WVF0dTRMOVBRdHBzVHVLUDlfR2dxa1lTUW9KbXJSSDFnSkt1LWU5VVA0U0t5Q0pha1ZZUFFkbHpTSFdPQQ?oc=5",
+          "source": "장애인인식개선신문",
+          "summary": "",
+          "published": "2026-05-07",
+          "image": ""
+        },
         {
           "title": "야마하뮤직코리아, ‘2026 서울드럼페스티벌’ 참가… 공연·체험 프로그램 확대 - 하이뉴스",
           "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBNN0lzNXdVdjVWdTdpd05QeEJxRVR3VGZ4cWZDMEprbXpJN3pPbmoxNmFxU01yVWFzemdEVEd5eUplUllBWW1MLXRxWkpkTjlxcHBMSWc0V29BaWl6c2NkbkF0VXdRdGFSRHV2YzQ5X2NQNG1ZVG80?oc=5",
@@ -293,14 +301,6 @@
           "title": "'2026 영주 한국선비문화축제'...서원에 깃든 고요의 풍류음악 - 경북신문",
           "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE13eF80NXF2Q0pJNktNSmg4eWxPTjRSSi1zenVEN1dQRW5EMm5nZWN4bEZESVdIVUNOSTJMSzJQUWE3LW1TOFVKZXdIYlR6cnZzcWtWQjcyRUU?oc=5",
           "source": "경북신문",
-          "summary": "",
-          "published": "2026-05-06",
-          "image": ""
-        },
-        {
-          "title": "한국 대중음악의 다양성을 증명한 무대 - 오마이스타",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1xSVRfSV9NYmtqZ1hhWFltTGpSOUlkVm1FSzNpUUFZWVk4cnhXaFBZSHhHUklqbVl6NmJpNUJQLTgzTG5sbm5HVG1LSUExWGFNM1JCNm45c0trNkJGS3pvZmFnS3BrblpuaG4yNG1zS1Q1TXVXOEwtZ3NDZHNMZw?oc=5",
-          "source": "오마이스타",
           "summary": "",
           "published": "2026-05-06",
           "image": ""
