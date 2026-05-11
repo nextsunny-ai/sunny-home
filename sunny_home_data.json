@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-12T01:34:16+09:00",
+  "updated": "2026-05-12T07:08:34+09:00",
   "categories": [
     {
       "id": "ai",
@@ -14,17 +14,17 @@
           "image": ""
         },
         {
-          "title": "AI 에이전트 띄운 네카오…하반기 ‘돈 버는 AI’로 간다 - 지디넷코리아",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9kZXZnZ21oUnFNcThKWVJRaUFITlEzQW5JN3F1bGdqQlg2cW40M1J3U1Q3N3Jvc2R4TFkwLThJTHJfWTNaUWlyc3FyZ1IzQmpsVEh4Q3hR?oc=5",
-          "source": "지디넷코리아",
-          "summary": "",
-          "published": "2026-05-08",
-          "image": ""
-        },
-        {
           "title": "스타트업 발굴부터 평가까지…‘신입 심사역’ 자리 차지하는 AI 에이전트 - 조선일보",
           "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQMTJodER0cXdKaDhaOXZTQm5TaTBkME1yQnpfaVh2M09EVlppRVVIdWlpXzc5amNiaU5yRDZBVzB2WHpDd3ZrdUpYUVFLQWxqVGVmX21tbzdhN09acFFubXVCTWdoc3ozbnd4T0x3WmpkOG1NTnd3SFFHZDI2dEFlbUpwNA?oc=5",
           "source": "조선일보",
+          "summary": "",
+          "published": "2026-05-11",
+          "image": ""
+        },
+        {
+          "title": "검증 모델 부족해 확산 제약…정부, AI 에이전트·MCP 안전망 만든다 - 지디넷코리아",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4zS0Y5Q1dzLTVQQTVKdHlCOG9RTWpYUzFQYzNQLVhOa2c0dXM0Zm1KZ0pGUVBJQnd0SzN2clBDeU42aV9INjFRNnhHbmV3cENhaTlIMkRR?oc=5",
+          "source": "지디넷코리아",
           "summary": "",
           "published": "2026-05-11",
           "image": ""
@@ -160,11 +160,11 @@
           "image": ""
         },
         {
-          "title": "포레스텔라, 정규 4집 기념 미디어 아트 전시 ‘Legacy ; Second Resonance’ 개최 - CBC뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5iUl9KYXNHMm1xV0FRc1BZS2dpMVhuVmo2QndHZDMwbHVaYjNWU05kOTE3WnV5OWVXVGFreEFoYXVueW9yU2hzN0VEU2kzYVNEdGxwYlNLVVRheXJBTXJqcU1KT0U4Vjhu?oc=5",
-          "source": "CBC뉴스",
+          "title": "[문화엿보기] '모두모두 어린이' 김포미디어아트센터 전시 - 김포신문",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBTSjgzcFdjM0lzWi15NV9tNlB0MnRjcGxOeEx0c0o1T3JuOTVDRmp0MnpoRzJFRkluazNEQk1PaWo5Um03Vnlxa1cxcWhqZ3ozTjBjc2pLVmR3Z2htTVpZNG9wMUJmaE3SAWtBVV95cUxNWHhVUWpSNmJfdGJBTzItUGxyRzRzUUM4ZzhPMFZibTN4ZHROTmdFMDFfY1VnSTVzbEt1bnZVVHR4RWNDQ3czbWNNcVdDTUU1NWl5WUtlanJaZ0RyZUFiSHlBTWpBX2MtRmRFaw?oc=5",
+          "source": "김포신문",
           "summary": "",
-          "published": "2026-05-05",
+          "published": "2026-05-06",
           "image": ""
         },
         {
@@ -190,6 +190,14 @@
       "name": "지원사업",
       "items": [
         {
+          "title": "한국콘텐츠진흥원, 한국-베트남 게임산업 협력 확대…K-게임 글로벌 기반 넓힌다 - 시사의창",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5TV3F4NW5zalV0a2JSOFhsb2RIWjBYUWpSRURudXUwdC1rRzZVc1hLbmQyVmgwa2trNzNzWHVrbnVwRUFtZXRMLUlkOTJkWVhNMFlmcw?oc=5",
+          "source": "시사의창",
+          "summary": "",
+          "published": "2026-05-11",
+          "image": ""
+        },
+        {
           "title": "한국콘텐츠진흥원, 2026 콘텐츠 스타트업 지원사업 공고 - 인디게임닷컴",
           "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE55UF90V193cXJmdDdqSi1JTEdQMWZFSlZMZ1kwVFJTaUgtSGtfdlBncUVGQjYtek04VlNVcE53d2tFMkdjZE9QQm9TQm_SAVRBVV95cUxObjdEWE1OUGVFbUVjc1pxcVhhZ2kzY1hfSkdBNmhMblFxNTUtUDVBdDA2b3NDVVl3WnVyMUZoQ1ZCYXhfemM0RWNxNlZtQ0ZnY1BIS1Y?oc=5",
           "source": "인디게임닷컴",
@@ -203,14 +211,6 @@
           "source": "beSUCCESS",
           "summary": "",
           "published": "2026-05-06",
-          "image": ""
-        },
-        {
-          "title": "투니온, ‘만화·웹툰분야 창업기업 육성지원 사업’ 선정 - IT조선",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBFN0Y0MWlnWW9pWmcxLVAtVU02OWxac01xZVU4UEhPWjAta1NRZmpydWxXMEdYbFljM0JRdXpKdlRKVlRIejdhalI3TVM2U0ZpNllRSXJVbGVRRllFVVZKTVZreVNnbFBIWDBKLVNWTlPSAXRBVV95cUxPSjJ5dzZYWk9hMDRwcU04RVRzQ0dMY3loNGY1UUJYaGc3R3Z1STBlaXdncjYzR3o2aWVoR2Yyb19YVWdSQ0NBalRQQ19VcXZIUDJKN1p0TlhDRko4S09qMmxRZTY2VlNBTElwMEJCTmxONFlLcg?oc=5",
-          "source": "IT조선",
-          "summary": "",
-          "published": "2026-05-04",
           "image": ""
         },
         {
@@ -260,19 +260,19 @@
           "image": ""
         },
         {
+          "title": "[현창석의 문화광장] ‘브랜드 제주’ 6시간의 제주 체험 디자인 - 한라일보",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1NRWhJYlRoVW1OcGhVVkNUYk5KMFNXclh1c2ZkM25RVUFuMHFDVDZYUW9xaW40eXE4T3RGdlloSF9zcXY3U2NGTnUtS1o3RzRIdVRSNjFaYnRvdGd1QUFRVHFMbml5c0xFMFE?oc=5",
+          "source": "한라일보",
+          "summary": "",
+          "published": "2026-05-11",
+          "image": ""
+        },
+        {
           "title": "유한킴벌리 ‘좋은 느낌’ 리브랜딩 - 디자인 나침반",
           "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNalBIYnIzdTNZZ18zamp5dTAtZlhXSkpqQXlrbEp1SXZqYVJsYlVTQ2ZlUWJjaGlOTXAwSkIwWG9pcTlOMl9VM1FPM2c3ek1SRHg3aFhwS3NXd1hpTktwZXJKTm55TzV6NElGZzNhNWFFTFVzYmNmOGVoY1JMYklJa3ZPZmZxekVaRmY4VXp3?oc=5",
           "source": "디자인 나침반",
           "summary": "",
           "published": "2026-05-03",
-          "image": ""
-        },
-        {
-          "title": "[iF 디자인 어워드 2026 수상작] 오세븐 - 디자인플러스",
-          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFB1dDV5RzNzV09WbHlIemE2WU9EOHlremdnUzZabkQ5d3JMTk1TR2hSWWRLZkN3R2VLc0pNbUVqVHNtM2ZFRk9jY2szQkY?oc=5",
-          "source": "디자인플러스",
-          "summary": "",
-          "published": "2026-03-31",
           "image": ""
         }
       ]
