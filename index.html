@@ -1209,6 +1209,18 @@ body {
   .pm-msg.sys { align-self:center; background: transparent; color: var(--text-mute); font-size: 0.74rem; font-family: var(--mono); border: 1px dashed var(--border); padding: 6px 12px; max-width: 92%; text-align: center; }
   .pm-typing { align-self:flex-start; color: var(--text-mute); font-size: 0.78rem; padding: 4px 8px; }
   .pm-input-area { padding: 14px 20px 16px; border-top: 1px solid var(--border); background: var(--bg-elevated); }
+  /* ★ 첨부·마이크 (2026-05-11) */
+  .pm-icon-btn { width: 40px; height: 44px; border-radius: 11px; border: 1px solid var(--border); background: var(--bg-card); cursor: pointer; display:flex; align-items:center; justify-content:center; font-size: 17px; flex-shrink: 0; transition: all 0.15s var(--ease); }
+  .pm-icon-btn:hover { background: var(--bg-card-hover); border-color: var(--orange); }
+  .pm-icon-btn.recording { background: #FFE5E0; border-color: #F03E3E; color: #F03E3E; animation: pmPulse 1.4s ease-in-out infinite; }
+  @keyframes pmPulse { 0%,100% { box-shadow: 0 0 0 0 rgba(240,62,62,0.4); } 50% { box-shadow: 0 0 0 6px rgba(240,62,62,0); } }
+  .pm-attach-bar { display:none; margin-bottom: 8px; flex-wrap: wrap; gap: 8px; }
+  .pm-attach-bar.show { display: flex; }
+  .pm-attach-thumb { position: relative; width: 60px; height: 60px; border-radius: 9px; background-size: cover; background-position: center; border: 1px solid var(--border); }
+  .pm-attach-thumb .pm-remove { position:absolute; top:-6px; right:-6px; width: 18px; height: 18px; border-radius: 50%; background: var(--text); color: #fff; font-size: 11px; font-weight: 700; line-height: 1; display:flex; align-items:center; justify-content:center; cursor: pointer; border: 2px solid var(--bg-elevated); }
+  .pm-attach-thumb .pm-remove:hover { background: #F03E3E; }
+  .pm-msg-img { display: block; max-width: 100%; border-radius: 9px; margin-bottom: 6px; }
+  .pm-msg.user .pm-msg-img { max-width: 200px; }
   .pm-input-row { display:flex; gap: 10px; align-items: flex-end; }
   .pm-input-row textarea { flex:1; background: var(--bg); border: 1px solid var(--border); border-radius: 12px; padding: 11px 14px; font-size: 0.9rem; line-height: 1.5; resize:none; outline:none; min-height: 44px; max-height: 130px; transition: all 0.15s var(--ease); color: var(--text); font-family: var(--font); }
   .pm-input-row textarea:focus { border-color: var(--border-accent); }
@@ -1398,6 +1410,12 @@ const TEAM_COMMON = `
 우선순위: 1.써니엔터 살리기 2.다른 회사 빨리 3.패시브 인컴.
 디자인: Pretendard 필수. 다크 자동 디폴트 X. 후진 디자인 X.
 호칭 "대표님" / "박다" 금지 / 모르면 모른다고 정직히.
+
+[★ 출력 형식 룰 (2026-05-11 대표님 명시)]
+- 마크다운 기호 사용 금지: **굵게**·*기울임*·__bold__·\`code\`·# 헤더 = 모두 X
+- 강조 = 일반 텍스트 그대로. 줄바꿈·문장 구조로 가독성 확보.
+- 리스트 = "- " 또는 "1. " 정도까지만.
+- 채팅창 = 일반 대화체 = 일반 텍스트로만 답변.
 `;
 
 const LS_KEY = 'sunny_team_apikey';
@@ -1406,7 +1424,25 @@ const teamHist = {};
 let currentTeamPersona = null;
 
 function loadTeamHist() { try { const h = localStorage.getItem(LS_HIST); if(h) Object.assign(teamHist, JSON.parse(h)); } catch(e){} }
-function saveTeamHist() { try { localStorage.setItem(LS_HIST, JSON.stringify(teamHist)); } catch(e){} }
+// ★ 이미지 base64 = localStorage 용량 큼 = 저장 시엔 텍스트만 (= 5MB 한계 보호)
+function saveTeamHist() {
+  try {
+    const clean = {};
+    for (const id in teamHist) {
+      clean[id] = teamHist[id].map(m => {
+        if (typeof m.content === 'string') return { role: m.role, content: m.content };
+        if (Array.isArray(m.content)) {
+          const txt = m.content.find(c => c.type === 'text');
+          const imgCount = m.content.filter(c => c.type === 'image').length;
+          const prefix = imgCount > 0 ? `[이미지 ${imgCount}개] ` : '';
+          return { role: m.role, content: prefix + (txt ? txt.text : '') };
+        }
+        return { role: m.role, content: String(m.content || '') };
+      });
+    }
+    localStorage.setItem(LS_HIST, JSON.stringify(clean));
+  } catch(e){ console.warn('saveTeamHist:', e); }
+}
 // ★ 쿠키 + localStorage 둘 다 = home·team 같은 .sunnytoon.com 공유 (= 한 번 박으면 둘 다 작동)
 function getCookieKey() {
   const m = document.cookie.match(/(?:^|; )sunny_team_apikey=([^;]+)/);
@@ -1583,14 +1619,26 @@ function openPersonaModal(id) {
     <div class="pm-msgs" id="pmMsgs">${
       msgs.length === 0
         ? `<div class="pm-msg sys">${p.name}와 대화 시작. 본인 ANTHROPIC_API_KEY 필요.</div>`
-        : msgs.map(m => `<div class="pm-msg ${m.role==='user'?'user':'agent'}">${escapeHtml(m.content)}</div>`).join('')
+        : msgs.map(m => {
+            let txt = '';
+            if (typeof m.content === 'string') txt = m.content;
+            else if (Array.isArray(m.content)) { const t = m.content.find(c => c.type === 'text'); txt = t ? t.text : ''; }
+            const attachUrls = m._attachUrls || [];
+            const imgsHtml = attachUrls.map(u => `<img class="pm-msg-img" src="${u}" alt="첨부">`).join('');
+            const display = m.role === 'assistant' ? stripMarkdown(txt) : txt;
+            return `<div class="pm-msg ${m.role==='user'?'user':'agent'}">${imgsHtml}<span style="white-space:pre-wrap">${escapeHtml(display)}</span></div>`;
+          }).join('')
     }</div>
     <div class="pm-input-area">
+      <div class="pm-attach-bar" id="pmAttachBar"></div>
       <div class="pm-input-row">
+        <button class="pm-icon-btn" type="button" onclick="pmPickImage()" title="이미지 첨부">🖼️</button>
+        <button class="pm-icon-btn" id="pmMicBtn" type="button" onclick="pmToggleMic()" title="음성 입력 (Chrome·Edge)">🎤</button>
         <textarea id="pmInp" placeholder="${p.name}에게 말하기..." rows="1" onkeydown="pmHandleKey(event)" oninput="pmAutoGrow(this)"></textarea>
         <button class="pm-send" id="pmSend" type="button" onclick="pmSend()">↑</button>
       </div>
-      <div class="pm-input-hint">Enter 보내기 · Shift+Enter 줄바꿈 · BYOK · ${getApiKey()?'키 저장됨':'키 미설정 → 먼저 키 설정 필요'}</div>
+      <input type="file" id="pmFileInp" accept="image/*" style="display:none" onchange="pmOnImagePicked(this)">
+      <div class="pm-input-hint">Enter 보내기 · 🖼️ 이미지 · 🎤 음성 · BYOK · ${getApiKey()?'키 저장됨':'키 미설정 → 먼저 키 설정 필요'}</div>
     </div>
   `;
   document.getElementById('personaModal').classList.add('show');
@@ -1600,23 +1648,119 @@ function closePersonaModal() { document.getElementById('personaModal').classList
 function pmHandleKey(e) { if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();pmSend();} }
 function pmAutoGrow(el) { el.style.height='auto'; el.style.height=Math.min(el.scrollHeight,130)+'px'; }
 function pmScrollBottom() { const c=document.getElementById('pmMsgs'); if(c)c.scrollTop=c.scrollHeight; }
-function pmAppendMsg(role, text) {
+// ★ 마크다운 기호 제거 = 별표·언더스코어·헤더# = 일반 텍스트로 (2026-05-11)
+function stripMarkdown(s) {
+  if (!s) return s;
+  return s
+    .replace(/\*\*\*(.+?)\*\*\*/g, '$1')
+    .replace(/\*\*(.+?)\*\*/g, '$1')
+    .replace(/(?<!\*)\*([^*\n]+?)\*(?!\*)/g, '$1')
+    .replace(/__(.+?)__/g, '$1')
+    .replace(/(?<!_)_([^_\n]+?)_(?!_)/g, '$1')
+    .replace(/`([^`\n]+?)`/g, '$1')
+    .replace(/^#{1,6}\s+/gm, '')
+    .replace(/^[-*+]\s+/gm, '• ')
+    .replace(/\[(.+?)\]\((.+?)\)/g, '$1 ($2)');
+}
+
+function pmAppendMsg(role, text, attachUrls) {
   const c = document.getElementById('pmMsgs'); if(!c) return;
-  const d = document.createElement('div'); d.className = 'pm-msg ' + (role==='user'?'user':'agent'); d.textContent = text;
+  const d = document.createElement('div'); d.className = 'pm-msg ' + (role==='user'?'user':'agent');
+  if (attachUrls && attachUrls.length > 0) {
+    attachUrls.forEach(url => { const img = document.createElement('img'); img.src = url; img.className = 'pm-msg-img'; d.appendChild(img); });
+  }
+  if (text) {
+    const span = document.createElement('span');
+    span.style.whiteSpace = 'pre-wrap';
+    span.textContent = role === 'agent' ? stripMarkdown(text) : text;
+    d.appendChild(span);
+  }
   c.appendChild(d); pmScrollBottom();
+}
+
+// ★ 이미지 첨부 + 마이크 STT (2026-05-11)
+let pmAttachments = [];
+let pmRecognition = null;
+let pmIsRecording = false;
+
+function pmPickImage() { document.getElementById('pmFileInp').click(); }
+function pmOnImagePicked(input) {
+  const f = input.files[0]; if (!f) return;
+  if (!f.type.startsWith('image/')) { alert('이미지 파일만 가능'); return; }
+  if (f.size > 5 * 1024 * 1024) { alert('5MB 이하만'); return; }
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    const dataUrl = e.target.result; const base64 = dataUrl.split(',')[1];
+    pmAttachments.push({ type:'image', media_type: f.type, data: base64, dataUrl: dataUrl });
+    pmRenderAttachBar(); input.value = '';
+  };
+  reader.readAsDataURL(f);
+}
+function pmRemoveAttach(idx) { pmAttachments.splice(idx, 1); pmRenderAttachBar(); }
+function pmRenderAttachBar() {
+  const bar = document.getElementById('pmAttachBar'); if (!bar) return;
+  if (pmAttachments.length === 0) { bar.classList.remove('show'); bar.innerHTML = ''; return; }
+  bar.classList.add('show');
+  bar.innerHTML = pmAttachments.map((a, i) =>
+    `<div class="pm-attach-thumb" style="background-image:url('${a.dataUrl}')"><div class="pm-remove" onclick="pmRemoveAttach(${i})" title="제거">×</div></div>`
+  ).join('');
+}
+
+function pmToggleMic() {
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SR) { alert('이 브라우저는 음성 인식 미지원. Chrome·Edge 권장.'); return; }
+  const btn = document.getElementById('pmMicBtn'); if (!btn) return;
+  if (pmIsRecording && pmRecognition) { pmRecognition.stop(); return; }
+  pmRecognition = new SR();
+  pmRecognition.lang = 'ko-KR';
+  pmRecognition.interimResults = true;
+  pmRecognition.continuous = false;
+  let finalText = '';
+  pmRecognition.onstart = () => { pmIsRecording = true; btn.classList.add('recording'); btn.textContent = '⏹'; };
+  pmRecognition.onresult = (event) => {
+    let interim = '';
+    for (let i = event.resultIndex; i < event.results.length; i++) {
+      const r = event.results[i];
+      if (r.isFinal) finalText += r[0].transcript; else interim += r[0].transcript;
+    }
+    const inp = document.getElementById('pmInp');
+    if (inp) { inp.value = (finalText + interim).trim(); pmAutoGrow(inp); }
+  };
+  pmRecognition.onend = () => { pmIsRecording = false; btn.classList.remove('recording'); btn.textContent = '🎤'; };
+  pmRecognition.onerror = (e) => {
+    pmIsRecording = false; btn.classList.remove('recording'); btn.textContent = '🎤';
+    if (e.error && e.error !== 'no-speech' && e.error !== 'aborted') alert('음성 인식 오류: ' + e.error);
+  };
+  try { pmRecognition.start(); } catch(e) { alert('음성 인식 시작 실패: ' + e.message); }
 }
 
 async function pmSend() {
   if(!currentTeamPersona) return;
   const inp = document.getElementById('pmInp');
-  const t = inp.value.trim(); if(!t) return;
+  const t = inp.value.trim();
+  if(!t && pmAttachments.length === 0) return;
   const apiKey = getApiKey();
   if(!apiKey) { openKeyModal(); return; }
+
+  // 이미지 첨부 있으면 = content 배열 (Anthropic vision) / 없으면 = string
+  const currentAttach = pmAttachments.slice();
+  const attachUrls = currentAttach.map(a => a.dataUrl);
+  let userContentForAPI;
+  if (currentAttach.length > 0) {
+    userContentForAPI = [
+      ...currentAttach.map(a => ({ type:'image', source:{ type:'base64', media_type:a.media_type, data:a.data } })),
+      { type:'text', text: t || '이 이미지 봐주세요.' }
+    ];
+  } else {
+    userContentForAPI = t;
+  }
+
   inp.value=''; pmAutoGrow(inp);
+  pmAttachments = []; pmRenderAttachBar();
   teamHist[currentTeamPersona.id] = teamHist[currentTeamPersona.id] || [];
-  teamHist[currentTeamPersona.id].push({role:'user', content: t});
+  teamHist[currentTeamPersona.id].push({role:'user', content: userContentForAPI, _displayText: t, _attachUrls: attachUrls});
   saveTeamHist();
-  pmAppendMsg('user', t);
+  pmAppendMsg('user', t, attachUrls);
   const sendBtn = document.getElementById('pmSend'); sendBtn.disabled = true;
   const msgs = document.getElementById('pmMsgs');
   const ty = document.createElement('div'); ty.className = 'pm-typing'; ty.id='pmTyping';
