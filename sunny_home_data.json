@@ -1,6 +1,76 @@
 {
-  "updated": "2026-05-11T06:50:07+09:00",
+  "updated": "2026-05-11T14:30:00+09:00",
   "categories": [
+    {
+      "id": "claude",
+      "name": "Claude·Anthropic",
+      "items": [
+        {
+          "title": "앤트로픽, Claude Opus 4.7 정식 출시 — 코딩·고해상도 비전·장기 작업 강화",
+          "url": "https://www.anthropic.com/news/claude-opus-4-7",
+          "source": "Anthropic",
+          "summary": "SWE-bench Verified 87.6%, Terminal-Bench 2.0 69.4%. 이미지 해상도 3배 확대(최대 2,576px). 'xhigh' 추론 레벨 신설.",
+          "published": "2026-05-05",
+          "image": ""
+        },
+        {
+          "title": "Claude Design 출시 — 디자인·프로토타입·슬라이드 협업 도구 (Anthropic Labs)",
+          "url": "https://blog.mean.ceo/claude-design-news-may-2026/",
+          "source": "Anthropic Labs",
+          "summary": "Opus 4.7과 함께 발표. Adobe·Blender·Ableton·Affinity·Autodesk Fusion 커넥터 지원.",
+          "published": "2026-05-05",
+          "image": ""
+        },
+        {
+          "title": "Claude Code 데스크탑 앱 재설계 — 병렬 작업·세션 사이드바·Mac SSH 지원",
+          "url": "https://simonwillison.net/2026/May/6/code-w-claude-2026/",
+          "source": "Simon Willison's Weblog",
+          "summary": "드래그앤드롭 워크스페이스, 통합 터미널·파일 에디터, 빠른 diff, 확장 프리뷰. Code w/ Claude 2026 컨퍼런스에서 공개.",
+          "published": "2026-05-06",
+          "image": ""
+        },
+        {
+          "title": "Claude Managed Agents 3대 신기능 — Dreaming·멀티에이전트 오케스트레이션 추가",
+          "url": "https://9to5mac.com/2026/05/07/anthropic-updates-claude-managed-agents-with-three-new-features/",
+          "source": "9to5Mac",
+          "summary": "Dreaming = 과거 세션 review로 패턴 발굴·자가 개선. 리드 에이전트가 전문 에이전트에게 병렬 위임.",
+          "published": "2026-05-07",
+          "image": ""
+        },
+        {
+          "title": "Anthropic·SpaceX 컴퓨팅 파트너십 — Claude Code/API 사용 한도 2배 확대",
+          "url": "https://www.servethehome.com/anthropic-signs-spacex-colossus-1-data-center-to-boost-capacity/anthropic-new-claude-opus-api-limits-early-may-2026/",
+          "source": "ServeTheHome",
+          "summary": "Pro·Max·Team·Enterprise 한도 2배. 피크타임 감속 제거. Opus API 한도 상향.",
+          "published": "2026-05-06",
+          "image": ""
+        },
+        {
+          "title": "Claude Security 퍼블릭 베타 — Enterprise 고객 대상 코드 취약점 스캔",
+          "url": "https://www.securityweek.com/anthropic-unveils-claude-security-to-counter-ai-powered-exploit-surge/",
+          "source": "SecurityWeek",
+          "summary": "Opus 4.7 기반 취약점 자동 수정 제안. 스케줄/타겟 스캔, 트리아지 트래킹. 곧 Team·Max로 확대 예정.",
+          "published": "2026-04-30",
+          "image": ""
+        },
+        {
+          "title": "Amazon Bedrock, Claude Opus 4.7 정식 출시 — 미국·도쿄·아일랜드·스톡홀름",
+          "url": "https://aws.amazon.com/ko/blogs/korea/introducing-anthropics-claude-opus-4-7-model-in-amazon-bedrock/",
+          "source": "AWS 한국 블로그",
+          "summary": "API 가격 100만 토큰당 입력 $5 / 출력 $25 (변동 없음).",
+          "published": "2026-05-05",
+          "image": ""
+        },
+        {
+          "title": "앤트로픽, 월스트리트 진출 가속화 — Microsoft 365 통합·Moody's 데이터 제휴",
+          "url": "https://fortune.com/2026/05/05/anthropic-wall-street-financial-services-agents-jamie-dimon/",
+          "source": "Fortune",
+          "summary": "금융 서비스 전용 AI 에이전트 발표. JP모건 제이미 다이먼 회장 등 금융권 키맨 참석한 뉴욕 비공개 브리핑.",
+          "published": "2026-05-05",
+          "image": ""
+        }
+      ]
+    },
     {
       "id": "ai",
       "name": "AI 트렌드",
