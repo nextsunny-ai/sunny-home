@@ -1257,8 +1257,9 @@ body {
 <!-- API Key modal -->
 <div class="key-modal-bg" id="keyModalBg">
   <div class="key-modal">
-    <h3>Anthropic API 키 설정</h3>
-    <p class="km-sub">대표님 본인 키로 = Anthropic API 직접 호출 (BYOK). 키 = 이 브라우저 localStorage에만 저장 = 서버 전송 X.</p>
+    <h3>Anthropic API 키 설정 (BYOK)</h3>
+    <p class="km-sub">본인 ANTHROPIC_API_KEY로 = Anthropic API 직접 호출. 키 = 이 브라우저 localStorage에만 저장 = 서버 전송 X = 안전.</p>
+    <p class="km-sub" style="margin-bottom:12px;font-size:12px;background:#FFF0E2;padding:10px 12px;border-radius:8px;border-left:3px solid #FF8C42;">★ 키 발급 = <a href="https://console.anthropic.com/settings/keys" target="_blank" style="color:#E05A1B;font-weight:600">console.anthropic.com/settings/keys</a> → "Create Key" → 복사 → 아래 입력.<br><strong>키는 반드시 <code style="background:rgba(0,0,0,0.06);padding:1px 5px;border-radius:3px">sk-ant-api03-</code>로 시작</strong> (= OAuth 토큰 X). 비용 = 본인 키 본인 차감 = 종량제.</p>
     <label for="apiKeyInput">API Key</label>
     <input type="password" id="apiKeyInput" placeholder="sk-ant-api03-...">
     <div class="key-note">
