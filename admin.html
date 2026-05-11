@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SUNNY TEAM 어드민 — 페르소나 공개·비공개 관리</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+:root {
+  --bg: #FAF8F4;
+  --bg-elevated: #FFFFFF;
+  --bg-card-hover: #F5F1E6;
+  --border: rgba(20,18,15,0.08);
+  --text: #14120F;
+  --text-sub: #4F4A42;
+  --text-mute: #8A8278;
+  --orange: #FF8C42;
+  --deep-orange: #E05A1B;
+  --orange-soft: #FFF0E2;
+  --shadow-sm: 0 1px 2px rgba(20,18,15,0.04);
+  --shadow-md: 0 4px 16px rgba(20,18,15,0.06);
+  --font: 'Pretendard Variable', 'Pretendard', sans-serif;
+  --mono: 'SF Mono', 'JetBrains Mono', monospace;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+body { font-family: var(--font); background: var(--bg); color: var(--text); min-height: 100vh; padding: 32px 24px; }
+.wrap { max-width: 880px; margin: 0 auto; }
+.top { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+.back { font-size: 13px; color: var(--text-sub); padding: 8px 14px; border-radius: 999px; border: 1px solid var(--border); text-decoration: none; transition: all .15s var(--ease); }
+.back:hover { background: var(--bg-card-hover); color: var(--text); }
+h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.02em; }
+.eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 0.16em; color: var(--orange); text-transform: uppercase; font-family: var(--mono); margin-bottom: 6px; }
+.sub { color: var(--text-sub); font-size: 14px; line-height: 1.6; margin-bottom: 24px; }
+
+.actions { display: flex; gap: 8px; margin-bottom: 20px; }
+.btn { padding: 8px 14px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-elevated); cursor: pointer; font: inherit; font-size: 12px; color: var(--text-sub); font-family: var(--mono); letter-spacing: 0.04em; transition: all .15s var(--ease); }
+.btn:hover { border-color: var(--orange); color: var(--orange); }
+.btn.primary { background: var(--orange); color: #fff; border-color: var(--orange); }
+.btn.primary:hover { background: var(--deep-orange); border-color: var(--deep-orange); }
+
+.list { display: flex; flex-direction: column; gap: 8px; }
+.item { display: flex; align-items: center; gap: 14px; padding: 14px 16px; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 12px; transition: all .12s var(--ease); }
+.item:hover { box-shadow: var(--shadow-sm); }
+.item.off { opacity: 0.5; background: var(--bg); }
+.avatar { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 1.5px solid #fff; box-shadow: 0 1px 4px rgba(20,18,15,0.06); flex-shrink: 0; }
+.info { flex: 1; min-width: 0; }
+.name { font-size: 16px; font-weight: 700; letter-spacing: -0.01em; }
+.en { font-size: 11px; color: var(--text-mute); font-family: var(--mono); letter-spacing: 0.08em; margin-left: 6px; font-weight: 500; }
+.role { font-size: 12px; color: var(--text-sub); margin-top: 2px; }
+.co { font-size: 11px; font-family: var(--mono); padding: 3px 8px; border-radius: 999px; margin-top: 4px; display: inline-block; letter-spacing: 0.04em; }
+
+.toggle { position: relative; width: 50px; height: 28px; background: var(--text-mute); border-radius: 999px; cursor: pointer; transition: background .15s var(--ease); flex-shrink: 0; opacity: 0.4; }
+.toggle.on { background: var(--orange); opacity: 1; }
+.toggle::after { content: ""; position: absolute; top: 3px; left: 3px; width: 22px; height: 22px; background: #fff; border-radius: 50%; box-shadow: 0 1px 3px rgba(20,18,15,0.15); transition: left .15s var(--ease); }
+.toggle.on::after { left: 25px; }
+
+.status-bar { background: var(--orange-soft); border: 1px solid rgba(255,140,66,0.2); border-radius: 12px; padding: 14px 18px; margin-top: 20px; font-size: 13px; color: var(--text); display: flex; gap: 10px; align-items: center; }
+.status-bar strong { color: var(--deep-orange); }
+
+.section { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: var(--text-mute); text-transform: uppercase; font-family: var(--mono); padding: 16px 4px 8px; }
+
+.note { font-size: 12px; color: var(--text-mute); margin-top: 24px; padding: 14px 16px; background: var(--bg-elevated); border-radius: 10px; line-height: 1.7; border: 1px dashed var(--border); }
+.note strong { color: var(--text-sub); }
+.note code { background: var(--bg-card-hover); padding: 1px 6px; border-radius: 4px; font-family: var(--mono); font-size: 11px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a class="back" href="/">← 홈</a>
+    <a class="back" href="https://team.sunnytoon.com">팀 →</a>
+  </div>
+
+  <div class="eyebrow">Admin Console</div>
+  <h1>페르소나 공개·비공개 관리</h1>
+  <p class="sub">12명 페르소나 중 = 외부 회사·게스트에게 공개할 페르소나만 선택. 비공개 = home·team 페이지에서 자동 숨김. 설정 = 이 브라우저 localStorage에 저장.</p>
+
+  <div class="actions">
+    <button class="btn" onclick="setAll(true)">전부 공개</button>
+    <button class="btn" onclick="setAll(false)">전부 비공개</button>
+    <button class="btn primary" onclick="exportConfig()">설정 export</button>
+  </div>
+
+  <div id="list" class="list"></div>
+
+  <div class="status-bar" id="statusBar">
+    <strong id="visibleCount">12</strong>명 공개 / <strong id="hiddenCount">0</strong>명 비공개
+  </div>
+
+  <div class="note">
+    <strong>★ 외부 회사 공유 path</strong><br>
+    이 페이지에서 = 공개 페르소나 선택 → home·team 페이지 = 자동 반영 → 외부 회사에 URL 공유.<br>
+    외부 회사 = 본인 ANTHROPIC_API_KEY (= console.anthropic.com 발급) localStorage 박음 → 페르소나 호출. <strong>대표님 비용 0.</strong><br><br>
+    <strong>localStorage 키</strong>: <code>sunny_persona_visibility</code> = <code>{personaId: boolean}</code>
+  </div>
+</div>
+
+<script>
+const PERSONAS = [
+  { id:'genie', name:'지니', en:'GENIE', role:'대표님 개인 비서', co:'비서실',    avatar:'avatars/genie.jfif', color:'#34D399' },
+  { id:'sera',  name:'세라', en:'SERA',  role:'써니엔터 팀장',     co:'써니엔터',  avatar:'avatars/sera.png',   color:'#FF6B9D' },
+  { id:'nea',   name:'네아', en:'NEA',   role:'넥스트아트 팀장',    co:'넥스트아트', avatar:'avatars/nea.jfif',   color:'#6C63FF' },
+  { id:'mori',  name:'모리', en:'MORI',  role:'굿즈모먼트 팀장',    co:'굿즈모먼트', avatar:'avatars/mori.jfif',  color:'#3DDAB4' },
+  { id:'birch', name:'버치', en:'BIRCH', role:'버치사운드 팀장',    co:'버치사운드', avatar:'avatars/birch.jfif', color:'#FF3B30' },
+  { id:'teo',   name:'테오', en:'TEO',   role:'기술·개발',          co:'에이전시',  avatar:'avatars/teo.jfif',   color:'#34D399' },
+  { id:'rian',  name:'리안', en:'RIAN',  role:'디자인',             co:'에이전시',  avatar:'avatars/rian.jfif',  color:'#FF6B9D' },
+  { id:'lumi',  name:'루미', en:'LUMI',  role:'콘텐츠 PD',          co:'에이전시',  avatar:'avatars/lumi.jfif',  color:'#FBBF24' },
+  { id:'sori',  name:'소리', en:'SORI',  role:'시나리오 작가',       co:'에이전시',  avatar:'avatars/sori.jpeg',  color:'#E879F9' },
+  { id:'maru',  name:'마루', en:'MARU',  role:'마케팅',             co:'에이전시',  avatar:'avatars/maru.jfif',  color:'#38BDF8' },
+  { id:'hana',  name:'하나', en:'HANA',  role:'회계·법무·세무',     co:'에이전시',  avatar:'avatars/hana.png',   color:'#FB923C' },
+  { id:'kai',   name:'카이', en:'KAI',   role:'게임 디렉터',         co:'게임',     avatar:'avatars/kai.svg',    color:'#A78BFA' },
+];
+
+const LS_KEY = 'sunny_persona_visibility';
+
+function loadVis() {
+  try { return JSON.parse(localStorage.getItem(LS_KEY) || '{}'); } catch(e){ return {}; }
+}
+function saveVis(v) {
+  localStorage.setItem(LS_KEY, JSON.stringify(v));
+  updateCount();
+}
+function isOn(id) {
+  const v = loadVis();
+  return v[id] !== false; // 디폴트 = 공개
+}
+function toggle(id) {
+  const v = loadVis();
+  v[id] = !isOn(id);
+  saveVis(v);
+  render();
+}
+function setAll(on) {
+  const v = {};
+  PERSONAS.forEach(p => v[p.id] = on);
+  saveVis(v);
+  render();
+}
+function updateCount() {
+  const v = loadVis();
+  const visible = PERSONAS.filter(p => v[p.id] !== false).length;
+  document.getElementById('visibleCount').textContent = visible;
+  document.getElementById('hiddenCount').textContent = PERSONAS.length - visible;
+}
+function render() {
+  const list = document.getElementById('list');
+  list.innerHTML = PERSONAS.map(p => `
+    <div class="item ${isOn(p.id) ? '' : 'off'}">
+      <img class="avatar" src="${p.avatar}" alt="${p.name}" onerror="this.outerHTML='<div class=&quot;avatar&quot; style=&quot;background:${p.color};display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:16px&quot;>${p.name.charAt(0)}</div>'">
+      <div class="info">
+        <div class="name">${p.name} <span class="en">${p.en}</span></div>
+        <div class="role">${p.role}</div>
+        <span class="co" style="background:${p.color}1a;color:${p.color}">${p.co}</span>
+      </div>
+      <div class="toggle ${isOn(p.id) ? 'on' : ''}" onclick="toggle('${p.id}')" role="switch" aria-checked="${isOn(p.id)}" tabindex="0"></div>
+    </div>
+  `).join('');
+  updateCount();
+}
+
+function exportConfig() {
+  const v = loadVis();
+  const txt = JSON.stringify(v, null, 2);
+  navigator.clipboard.writeText(txt).then(() => alert('설정 = 클립보드 복사 완료\n\n' + txt));
+}
+
+render();
+</script>
+</body>
+</html>

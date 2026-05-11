@@ -1420,7 +1420,8 @@ function updateKeyBtnUI() {
 function renderTeamGrid() {
   const g = document.getElementById('teamGrid');
   if(!g) return;
-  g.innerHTML = TEAM.map(p => `
+  const visible = TEAM.filter(p => isPersonaVisible(p.id));
+  g.innerHTML = visible.map(p => `
     <div class="persona-card" onclick="openPersonaModal('${p.id}')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPersonaModal('${p.id}')}">
       <div class="pc-avatar"><img src="${p.avatar}" alt="${p.name}"></div>
       <div class="pc-name">${p.name}</div>
@@ -1519,10 +1520,19 @@ function renderQuickLinks() {
   `).join('');
 }
 
+function getVisibility() {
+  try { return JSON.parse(localStorage.getItem('sunny_persona_visibility') || '{}'); } catch(e){ return {}; }
+}
+function isPersonaVisible(id) {
+  const v = getVisibility();
+  return v[id] !== false;
+}
+
 function renderTeamQuick() {
   const g = document.getElementById('teamQuick');
   if(!g) return;
-  g.innerHTML = TEAM.map(p => `
+  const visible = TEAM.filter(p => isPersonaVisible(p.id));
+  g.innerHTML = visible.map(p => `
     <div class="tq-item" onclick="openPersonaModal('${p.id}')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPersonaModal('${p.id}')}">
       <img src="${p.avatar}" alt="${p.name}" class="tq-avatar" onerror="this.style.background='${p.color}';this.style.padding='0';this.outerHTML='<div class=&quot;tq-avatar&quot; style=&quot;background:${p.color};display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:13px&quot;>${p.name.charAt(0)}</div>'">
       <div class="tq-info">
