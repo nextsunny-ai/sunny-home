@@ -1,14 +1,69 @@
 {
-  "updated": "2026-05-10T21:50:16.102222+00:00",
+  "updated": "2026-05-11T16:34:25.466503+00:00",
   "source": "github.com/nextsunny-ai",
   "repos": [
+    {
+      "name": "agent-sunnytoon",
+      "description": "Agency Pro 1.0 — agency.sunnytoon.com (12명 페르소나 + 회사별 분기 + BYOK)",
+      "html_url": "https://github.com/nextsunny-ai/agent-sunnytoon",
+      "homepage": "http://agency.sunnytoon.com/",
+      "language": "HTML",
+      "pushed_at": "2026-05-11T16:25:25Z",
+      "has_pages": true,
+      "pages_url": "https://nextsunny-ai.github.io/agent-sunnytoon/",
+      "stars": 0
+    },
+    {
+      "name": "team-sunnytoon",
+      "description": "team.sunnytoon.com — 써니팀 12명 페르소나 채팅 풀화면 (BYOK)",
+      "html_url": "https://github.com/nextsunny-ai/team-sunnytoon",
+      "homepage": "",
+      "language": "HTML",
+      "pushed_at": "2026-05-11T15:21:15Z",
+      "has_pages": true,
+      "pages_url": "https://nextsunny-ai.github.io/team-sunnytoon/",
+      "stars": 0
+    },
+    {
+      "name": "haetal-company-v6-preview",
+      "description": "해탈 컴퍼니 v6 컨펌 시안 (모던 점집 · 키치 레트로 힙 · 어반 톤)",
+      "html_url": "https://github.com/nextsunny-ai/haetal-company-v6-preview",
+      "homepage": "",
+      "language": "HTML",
+      "pushed_at": "2026-05-11T14:17:00Z",
+      "has_pages": true,
+      "pages_url": "https://nextsunny-ai.github.io/haetal-company-v6-preview/",
+      "stars": 0
+    },
+    {
+      "name": "sunny-home",
+      "description": "Sunny personal home",
+      "html_url": "https://github.com/nextsunny-ai/sunny-home",
+      "homepage": "",
+      "language": "HTML",
+      "pushed_at": "2026-05-11T14:14:00Z",
+      "has_pages": true,
+      "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
+      "stars": 0
+    },
+    {
+      "name": "binding-club-v6-preview",
+      "description": "바인딩 클럽 v6 시안 (팝 키즈 + 어드민)",
+      "html_url": "https://github.com/nextsunny-ai/binding-club-v6-preview",
+      "homepage": "",
+      "language": "JavaScript",
+      "pushed_at": "2026-05-11T13:10:36Z",
+      "has_pages": true,
+      "pages_url": "https://nextsunny-ai.github.io/binding-club-v6-preview/",
+      "stars": 0
+    },
     {
       "name": "sunny-story-maker",
       "description": "한국 시나리오 작가용 AI 협업 도구 — 13매체 + 다중 타겟 리뷰 + 8종 산출물 + OSMU",
       "html_url": "https://github.com/nextsunny-ai/sunny-story-maker",
       "homepage": "https://sunny-story-maker.vercel.app",
       "language": "TypeScript",
-      "pushed_at": "2026-05-10T17:41:35Z",
+      "pushed_at": "2026-05-11T00:15:02Z",
       "has_pages": false,
       "pages_url": "",
       "stars": 0
@@ -25,17 +80,6 @@
       "stars": 0
     },
     {
-      "name": "binding-club-v6-preview",
-      "description": "바인딩 클럽 v6 시안 (팝 키즈 + 어드민)",
-      "html_url": "https://github.com/nextsunny-ai/binding-club-v6-preview",
-      "homepage": "",
-      "language": "JavaScript",
-      "pushed_at": "2026-05-09T02:09:13Z",
-      "has_pages": true,
-      "pages_url": "https://nextsunny-ai.github.io/binding-club-v6-preview/",
-      "stars": 0
-    },
-    {
       "name": "binding-club-v4-preview",
       "description": "바인딩 클럽 v4 시안 (모던 인디)",
       "html_url": "https://github.com/nextsunny-ai/binding-club-v4-preview",
@@ -44,17 +88,6 @@
       "pushed_at": "2026-05-09T02:08:51Z",
       "has_pages": true,
       "pages_url": "https://nextsunny-ai.github.io/binding-club-v4-preview/",
-      "stars": 0
-    },
-    {
-      "name": "sunny-home",
-      "description": "Sunny personal home",
-      "html_url": "https://github.com/nextsunny-ai/sunny-home",
-      "homepage": "",
-      "language": "HTML",
-      "pushed_at": "2026-05-08T15:26:39Z",
-      "has_pages": true,
-      "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
       "stars": 0
     },
     {
@@ -99,39 +132,6 @@
       "pushed_at": "2026-04-16T09:29:28Z",
       "has_pages": true,
       "pages_url": "https://nextsunny-ai.github.io/nory-eminem-ar-demo/",
-      "stars": 0
-    },
-    {
-      "name": "resonance",
-      "description": "RESONANCE MV Proposal",
-      "html_url": "https://github.com/nextsunny-ai/resonance",
-      "homepage": "",
-      "language": "HTML",
-      "pushed_at": "2026-04-13T07:27:09Z",
-      "has_pages": true,
-      "pages_url": "https://nextsunny-ai.github.io/resonance/",
-      "stars": 0
-    },
-    {
-      "name": "ddp-catchwin",
-      "description": "",
-      "html_url": "https://github.com/nextsunny-ai/ddp-catchwin",
-      "homepage": "",
-      "language": "HTML",
-      "pushed_at": "2026-04-11T16:36:36Z",
-      "has_pages": true,
-      "pages_url": "https://nextsunny-ai.github.io/ddp-catchwin/",
-      "stars": 0
-    },
-    {
-      "name": "birchsound-erp",
-      "description": "",
-      "html_url": "https://github.com/nextsunny-ai/birchsound-erp",
-      "homepage": "",
-      "language": "JavaScript",
-      "pushed_at": "2026-04-06T13:10:22Z",
-      "has_pages": true,
-      "pages_url": "https://nextsunny-ai.github.io/birchsound-erp/",
       "stars": 0
     }
   ]
