@@ -1407,8 +1407,25 @@ let currentTeamPersona = null;
 
 function loadTeamHist() { try { const h = localStorage.getItem(LS_HIST); if(h) Object.assign(teamHist, JSON.parse(h)); } catch(e){} }
 function saveTeamHist() { try { localStorage.setItem(LS_HIST, JSON.stringify(teamHist)); } catch(e){} }
-function getApiKey() { return localStorage.getItem(LS_KEY) || ''; }
-function setApiKey(k) { if(k) localStorage.setItem(LS_KEY, k); else localStorage.removeItem(LS_KEY); updateKeyBtnUI(); }
+// ★ 쿠키 + localStorage 둘 다 = home·team 같은 .sunnytoon.com 공유 (= 한 번 박으면 둘 다 작동)
+function getCookieKey() {
+  const m = document.cookie.match(/(?:^|; )sunny_team_apikey=([^;]+)/);
+  return m ? decodeURIComponent(m[1]) : '';
+}
+function setCookieKey(k) {
+  if (k) {
+    // 1년 보존 + .sunnytoon.com 도메인 = 모든 subdomain 공유
+    document.cookie = 'sunny_team_apikey=' + encodeURIComponent(k) + '; domain=.sunnytoon.com; path=/; max-age=31536000; SameSite=Strict' + (location.protocol === 'https:' ? '; Secure' : '');
+  } else {
+    document.cookie = 'sunny_team_apikey=; domain=.sunnytoon.com; path=/; max-age=0';
+  }
+}
+function getApiKey() { return localStorage.getItem(LS_KEY) || getCookieKey() || ''; }
+function setApiKey(k) {
+  if(k) { localStorage.setItem(LS_KEY, k); setCookieKey(k); }
+  else { localStorage.removeItem(LS_KEY); setCookieKey(''); }
+  updateKeyBtnUI();
+}
 function updateKeyBtnUI() {
   const b = document.getElementById('teamKeyBtn');
   const l = document.getElementById('teamKeyLabel');
