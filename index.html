@@ -14,23 +14,28 @@
   --orange: #FF8C42;
   --deep-orange: #E05A1B;
   --amber: #FFAB40;
-  --bg: #0C0C0C;
-  --bg-elevated: #141414;
-  --bg-card: #1A1A1A;
-  --bg-card-hover: #202020;
-  --border: rgba(255,255,255,0.06);
-  --border-accent: rgba(255,140,66,0.15);
-  --text: #F2F0ED;
-  --text-sub: #A09B93;
-  --text-mute: #5C5854;
-  --blue: #4A9EFF;
-  --green: #34D399;
-  --purple: #A78BFA;
-  --teal: #2DD4BF;
-  --pink: #F472B6;
-  --yellow: #FBBF24;
+  --bg: #FAF8F4;
+  --bg-elevated: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F5F1E6;
+  --border: rgba(20,18,15,0.08);
+  --border-accent: rgba(255,140,66,0.28);
+  --text: #14120F;
+  --text-sub: #4F4A42;
+  --text-mute: #8A8278;
+  --blue: #2563EB;
+  --green: #059669;
+  --purple: #7C3AED;
+  --teal: #0D9488;
+  --pink: #DB2777;
+  --yellow: #D97706;
+  --orange-soft: #FFF0E2;
+  --shadow-sm: 0 1px 2px rgba(20,18,15,0.04);
+  --shadow-md: 0 4px 16px rgba(20,18,15,0.06);
+  --shadow-lg: 0 12px 32px rgba(20,18,15,0.08);
   --r: 12px;
   --r-lg: 16px;
+  --r-pill: 999px;
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
   --font: 'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   --mono: 'SF Mono', 'JetBrains Mono', ui-monospace, monospace;
@@ -72,7 +77,7 @@ body {
   position: fixed; top: 0; left: 0; right: 0; z-index: 200;
   display: flex; align-items: center;
   padding: 0 40px; height: 52px;
-  background: rgba(12,12,12,0.82);
+  background: rgba(250,248,244,0.85);
   backdrop-filter: blur(24px) saturate(1.4);
   -webkit-backdrop-filter: blur(24px) saturate(1.4);
   border-bottom: 1px solid var(--border);
@@ -131,24 +136,41 @@ body {
   margin-bottom: 16px;
 }
 .hero-time {
-  font-size: clamp(6rem, 14vw, 10rem);
-  font-weight: 100; letter-spacing: -0.07em; line-height: 0.82;
+  font-size: clamp(3rem, 6.5vw, 4.6rem);
+  font-weight: 200; letter-spacing: -0.05em; line-height: 1;
   color: var(--text);
   font-variant-numeric: tabular-nums;
   position: relative;
 }
 .hero-time::after {
   content: '';
-  position: absolute; left: 0; bottom: -4px;
-  width: 64px; height: 3px;
+  position: absolute; left: 0; bottom: -6px;
+  width: 48px; height: 2px;
   background: linear-gradient(90deg, var(--orange), var(--deep-orange));
   border-radius: 2px;
 }
 .hero-date {
-  font-size: clamp(1rem, 2vw, 1.4rem);
-  font-weight: 300; color: var(--text-sub);
-  margin-top: 20px; letter-spacing: 0.02em;
+  font-size: clamp(0.85rem, 1.4vw, 1.05rem);
+  font-weight: 400; color: var(--text-sub);
+  margin-top: 14px; letter-spacing: 0.02em;
 }
+
+/* English in hero-left (= 시간 밑 통합) */
+.hero-english {
+  margin-top: 28px; padding: 14px 0 12px;
+  border-top: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--border);
+  display: flex; flex-direction: column; gap: 4px;
+}
+.hero-english .he-label {
+  font-size: 0.55rem; text-transform: uppercase; letter-spacing: 0.16em;
+  color: var(--orange); font-weight: 700;
+  padding: 3px 8px; background: var(--orange-soft); border-radius: 4px;
+  align-self: flex-start; margin-bottom: 4px;
+}
+.hero-english .he-phrase { font-size: 0.95rem; font-weight: 600; line-height: 1.45; }
+.hero-english .he-meaning { font-size: 0.78rem; color: var(--text-sub); }
+.hero-english .he-example { font-size: 0.72rem; color: var(--text-mute); font-style: italic; line-height: 1.5; margin-top: 4px; }
 .hero-greeting {
   font-size: 0.9rem;
   font-weight: 300; margin-top: 8px; color: var(--text-mute);
@@ -659,12 +681,12 @@ body {
 .hero-weather { animation-delay: 0.22s; }
 .hero-right-label { animation: fadeInUp 0.6s var(--ease) 0.1s both; }
 
-/* ─── SCROLL REVEAL ─── */
+/* ─── SCROLL REVEAL (= 디폴트 = 보임, 옛 observer = 단순화) ─── */
 .reveal {
-  opacity: 0; transform: translateY(24px);
+  opacity: 1; transform: translateY(0);
   transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
 }
-.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal.hidden { opacity: 0; transform: translateY(24px); }
 
 /* ═══ RESPONSIVE ═══ */
 
@@ -758,11 +780,9 @@ body {
 <nav class="nav" role="navigation" aria-label="메인 네비게이션">
   <span class="nav-logo">SUNNY</span>
   <span class="nav-item active" data-section="hero" role="button" tabindex="0" aria-label="Today 섹션으로 이동">Today</span>
-  <span class="nav-item" data-section="mid" role="button" tabindex="0" aria-label="Tools 섹션으로 이동">Tools</span>
+  <span class="nav-item" data-section="team-section" role="button" tabindex="0" aria-label="Team 섹션으로 이동" style="color:var(--orange);font-weight:600">Team</span>
   <span class="nav-item" data-section="news-section" role="button" tabindex="0" aria-label="News 섹션으로 이동">News</span>
   <span class="nav-item" data-section="deadlines-section" role="button" tabindex="0" aria-label="Deadlines 섹션으로 이동">Deadlines</span>
-  <span class="nav-item" data-section="outputs-section" role="button" tabindex="0" aria-label="Outputs 섹션으로 이동">Outputs</span>
-  <span class="nav-item" data-section="flipbook-section" role="button" tabindex="0" aria-label="Pages 섹션으로 이동">Pages</span>
   <span class="nav-spacer"></span>
   <div class="nav-search">
     <span style="color:var(--text-mute);font-size:0.78rem">&#128269;</span>
@@ -783,6 +803,14 @@ body {
         <span class="temp" id="weatherTemp">--&deg;</span>
         <span class="desc" id="weatherDesc">Loading...</span>
       </div>
+
+      <!-- English (= 시간 밑 통합, 옛 English Strip에서 이동) -->
+      <div class="hero-english">
+        <span class="he-label">Business English</span>
+        <span class="he-phrase" id="engPhrase">"Let's circle back on that."</span>
+        <span class="he-meaning" id="engMeaning">그 건은 나중에 다시 논의하죠.</span>
+        <span class="he-example" id="engExample">We're running out of time — let's circle back on the budget issue after lunch.</span>
+      </div>
     </div>
 
     <div class="hero-right">
@@ -791,35 +819,46 @@ body {
     </div>
   </section>
 
-  <!-- ═══ ENGLISH STRIP ═══ -->
-  <div class="english-strip" id="englishStrip">
-    <span class="label">Business English</span>
-    <span class="phrase" id="engPhrase">"Let's circle back on that."</span>
-    <span class="divider"></span>
-    <span class="meaning" id="engMeaning">그 건은 나중에 다시 논의하죠.</span>
-    <span class="divider"></span>
-    <span class="example" id="engExample">We're running out of time — let's circle back on the budget issue after lunch.</span>
-  </div>
 
-  <!-- ═══ MID ═══ -->
+  <!-- ═══ MID ═══ (★ col1 = Team / col2 = Tools / col3 = Projects) -->
   <section class="mid reveal" id="mid">
+    <div class="mid-col" id="team-section">
+      <div style="display:flex; align-items:baseline; gap:10px;">
+        <div class="section-eyebrow">12 Personas · BYOK</div>
+      </div>
+      <div class="section-header">Team</div>
+      <div class="team-quick" id="teamQuick"></div>
+      <button class="team-key-btn-mini" id="teamKeyBtn" type="button">
+        <span id="teamKeyIcon">🔑</span>
+        <span id="teamKeyLabel">API 키 설정</span>
+      </button>
+    </div>
     <div class="mid-col">
-      <div class="section-eyebrow">Workspace</div>
-      <div class="section-header">Tools</div>
-      <div class="tools-grid" id="toolsGrid"></div>
+      <div class="section-eyebrow">In Progress</div>
+      <div class="section-header">진행 중</div>
+      <div class="in-progress-list" id="inProgressList"></div>
     </div>
     <div class="mid-col">
       <div class="section-eyebrow">GitHub</div>
-      <div class="section-header">Projects</div>
+      <div class="section-header">Recent Projects</div>
       <div id="projectsList">
         <div style="color:var(--text-mute);font-size:0.78rem;">Loading...</div>
       </div>
     </div>
-    <div class="mid-col">
-      <div class="section-eyebrow">Team</div>
-      <div class="section-header">Activity</div>
-      <div id="noticeList"></div>
-    </div>
+  </section>
+
+  <!-- ═══ QUICK LINKS ═══ (자주 가는 사이트 · 옛 Tools 대체) -->
+  <section class="quick-links-section reveal" id="quick-links-section" style="padding: 56px 56px 64px; max-width: 1400px; margin: 0 auto;">
+    <div class="section-eyebrow">Bookmarks</div>
+    <div class="section-header">Quick Links</div>
+    <div class="quick-links-grid" id="quickLinksGrid"></div>
+  </section>
+
+  <!-- ═══ ACTIVITY ═══ (Team Activity · 옛 mid col3에서 분리) -->
+  <section class="activity-section reveal" id="activity-section" style="padding: 0 56px 40px; max-width: 1400px; margin: 0 auto;">
+    <div class="section-eyebrow">Team Activity</div>
+    <div class="section-header">Recent</div>
+    <div id="noticeList"></div>
   </section>
 
   <!-- ═══ NEWS ═══ -->
@@ -868,11 +907,371 @@ body {
     </div>
   </section>
 
+
+  <style>
+  /* Team quick (mid col1) — 3컬럼 카드 그리드 */
+  .team-quick {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .tq-item {
+    display: flex; flex-direction: column;
+    align-items: center; text-align: center;
+    padding: 12px 6px 11px;
+    border: 1px solid var(--border);
+    border-radius: 11px;
+    background: var(--bg-elevated);
+    cursor: pointer;
+    transition: all 0.15s var(--ease);
+    gap: 5px;
+  }
+  .tq-item:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--accent-line);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+  }
+  .tq-avatar {
+    width: 44px; height: 44px; border-radius: 50%;
+    object-fit: cover; flex-shrink: 0;
+    border: 1.5px solid #fff;
+    box-shadow: 0 1px 4px rgba(20,18,15,0.06);
+    margin-bottom: 2px;
+  }
+  .tq-info { width: 100%; min-width: 0; }
+  .tq-name { font-size: 0.78rem; font-weight: 700; letter-spacing: -0.005em; }
+  .tq-en { display: block; font-size: 0.54rem; color: var(--text-mute); font-family: var(--mono); margin-left: 0; margin-top: 2px; letter-spacing: 0.1em; font-weight: 600; opacity: 0.6; }
+  .tq-role { font-size: 0.65rem; color: var(--text-sub); white-space: normal; line-height: 1.25; margin-top: 4px; }
+  .tq-co { display: inline-block; font-size: 0.55rem; font-family: var(--mono); letter-spacing: 0.06em; padding: 2px 6px; border-radius: 999px; margin-top: 5px; }
+
+  /* ★ Outputs·Flipbook 섹션 = 숨김 (= 대표님 2026-05-11 "디스 위크 아래 다 지우자") */
+  #outputs-section, #flipbook-section { display: none !important; }
+
+  /* ★ 섹션 박스 (= 위아래 구분, 2026-05-11 대표님 명시) */
+  .mid,
+  .news-section,
+  .deadlines-section,
+  .outputs-section,
+  .flipbook-section,
+  .activity-section {
+    max-width: 1400px !important;
+    margin: 24px auto !important;
+    padding: 32px 36px !important;
+    background: var(--bg-elevated) !important;
+    border-radius: var(--r-lg);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border);
+  }
+  .mid { display: grid; grid-template-columns: 1.05fr 1fr 1fr; gap: 28px; }
+  body { background: var(--bg); }
+  main { padding-bottom: 40px; }
+  /* hero·english은 그대로 (배경 X = 통째 베이지) */
+  @media (max-width: 980px) {
+    .mid { grid-template-columns: 1fr; gap: 24px; }
+    .mid, .news-section, .deadlines-section, .outputs-section, .flipbook-section, .activity-section {
+      margin: 16px 12px !important; padding: 24px 20px !important;
+    }
+  }
+
+  /* News text list (= 이미지 X, 대표님 2026-05-11 명시) */
+  #newsPick, #newsGrid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+    grid-template-columns: none !important;
+  }
+  .news-text-item {
+    display: flex; align-items: center; gap: 12px;
+    padding: 11px 14px;
+    border-bottom: 1px solid var(--border);
+    text-decoration: none; color: inherit;
+    transition: background 0.12s var(--ease);
+  }
+  .news-text-item:hover { background: var(--bg-card-hover); }
+  .news-text-item:last-child { border-bottom: none; }
+  .nti-cat {
+    font-size: 0.55rem; font-family: var(--mono); font-weight: 700;
+    letter-spacing: 0.08em; padding: 3px 8px;
+    border-radius: 999px;
+    flex-shrink: 0; text-transform: uppercase;
+    min-width: 60px; text-align: center;
+  }
+  .nti-cat.cat-ai          { background: #DBEAFE; color: #1E40AF; }
+  .nti-cat.cat-content_ip  { background: #F3E8FF; color: #7C3AED; }
+  .nti-cat.cat-performance { background: #FCE7F3; color: #BE185D; }
+  .nti-cat.cat-exhibition  { background: #CCFBF1; color: #0F766E; }
+  .nti-cat.cat-grants      { background: #DCFCE7; color: #15803D; }
+  .nti-cat.cat-design      { background: #FEF3C7; color: #92400E; }
+  .nti-cat.cat-festival    { background: var(--orange-soft); color: var(--deep-orange); }
+  .nti-title {
+    flex: 1; font-size: 0.84rem; font-weight: 500;
+    line-height: 1.45; color: var(--text);
+    overflow: hidden; text-overflow: ellipsis;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  }
+  .nti-source {
+    font-size: 0.65rem; color: var(--text-mute);
+    flex-shrink: 0; font-family: var(--mono);
+    letter-spacing: 0.02em; max-width: 180px;
+    text-align: right;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  @media (max-width: 720px) {
+    .nti-source { display: none; }
+    .nti-cat { min-width: 50px; font-size: 0.5rem; padding: 2px 6px; }
+  }
+
+  /* Recent Projects (mid col3) */
+  #projectsList { display: flex; flex-direction: column; gap: 7px; }
+  .pj-item {
+    display: flex; align-items: center; gap: 10px;
+    padding: 9px 11px;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    background: var(--bg-elevated);
+    transition: all 0.12s var(--ease);
+    text-decoration: none;
+    color: inherit;
+  }
+  .pj-item:hover { border-color: var(--orange); background: var(--bg-card-hover); transform: translateY(-1px); box-shadow: var(--shadow-sm); }
+  .pj-icon { font-size: 1.1rem; color: var(--orange); flex-shrink: 0; width: 24px; text-align: center; }
+  .pj-body { flex: 1; min-width: 0; }
+  .pj-name { font-size: 0.82rem; font-weight: 600; letter-spacing: -0.005em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .pj-host { font-size: 0.62rem; color: var(--text-mute); font-family: var(--mono); letter-spacing: 0.02em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 2px; }
+  .pj-dead { opacity: 0.55; }
+  .pj-dead .pj-name::after { content: ' ✗'; color: #DC2626; font-weight: 700; }
+
+  /* In Progress (mid col2) */
+  .in-progress-list { display: flex; flex-direction: column; gap: 8px; }
+  .ip-item {
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--bg-elevated);
+    transition: all 0.12s var(--ease);
+  }
+  .ip-item:hover { border-color: var(--accent-line); box-shadow: var(--shadow-sm); }
+  .ip-row1 { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 4px; }
+  .ip-name { font-size: 0.84rem; font-weight: 600; letter-spacing: -0.005em; line-height: 1.3; }
+  .ip-state {
+    font-size: 0.52rem; font-family: var(--mono); font-weight: 700;
+    letter-spacing: 0.08em; padding: 3px 8px;
+    border-radius: 999px; text-transform: uppercase; flex-shrink: 0;
+    white-space: nowrap;
+  }
+  .ip-state-active, .ip-state-live { background: #DCFCE7; color: #15803D; }
+  .ip-state-in-dev, .ip-state-develop, .ip-state-setup { background: var(--orange-soft); color: var(--deep-orange); }
+  .ip-state-pending { background: #FEF3C7; color: #92400E; }
+  .ip-state-today { background: #DBEAFE; color: #1E40AF; }
+  .ip-state-opportunity { background: #F3E8FF; color: #7C3AED; }
+  .ip-state-watch { background: #F1F5F9; color: var(--text-mute); }
+  .ip-row2 { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+  .ip-co { font-size: 0.6rem; color: var(--text-mute); font-family: var(--mono); letter-spacing: 0.04em; flex-shrink: 0; }
+  .ip-note { font-size: 0.7rem; color: var(--text-sub); flex: 1; line-height: 1.45; }
+  .team-key-btn-mini {
+    padding: 9px 14px;
+    background: var(--bg-card-hover);
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 0.7rem; font-family: var(--mono); letter-spacing: 0.04em;
+    color: var(--text-sub);
+    display: flex; align-items: center; gap: 6px;
+    width: 100%; justify-content: center;
+    transition: all 0.15s var(--ease);
+  }
+  .team-key-btn-mini:hover { border-color: var(--orange); color: var(--orange); background: var(--bg-elevated); }
+  .team-key-btn-mini.has-key { background: var(--orange-soft); border-color: var(--border-accent); color: var(--deep-orange); }
+
+  /* Recent Chats (mid col2) */
+  .recent-chats { display:flex; flex-direction:column; gap: 6px; max-height: 460px; overflow-y: auto; }
+  .recent-chats::-webkit-scrollbar { width: 4px; }
+  .recent-chats::-webkit-scrollbar-thumb { background: var(--border); border-radius: 999px; }
+  .rc-item {
+    display:flex; gap: 11px; padding: 10px 12px;
+    background: var(--bg-card-hover); border: 1px solid transparent; border-radius: 10px;
+    cursor:pointer; transition: all 0.15s var(--ease);
+  }
+  .rc-item:hover { background: var(--bg-elevated); border-color: var(--border-accent); transform: translateY(-1px); box-shadow: var(--shadow-sm); }
+  .rc-avatar { width: 30px; height: 30px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 1.5px solid #fff; }
+  .rc-body { flex:1; min-width: 0; }
+  .rc-line1 { display:flex; align-items:center; gap: 6px; }
+  .rc-name { font-size: 0.78rem; font-weight: 600; }
+  .rc-time { font-size: 0.6rem; color: var(--text-mute); font-family: var(--mono); margin-left: auto; }
+  .rc-preview { font-size: 0.7rem; color: var(--text-sub); line-height: 1.4; margin-top: 2px;
+    overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; }
+
+  /* Quick Links */
+  .quick-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 10px;
+  }
+  .ql-tile {
+    display:flex; align-items:center; gap: 11px;
+    padding: 14px 16px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border); border-radius: 11px;
+    text-decoration: none; color: var(--text);
+    transition: all 0.18s var(--ease);
+    box-shadow: var(--shadow-sm);
+  }
+  .ql-tile:hover {
+    transform: translateY(-2px);
+    border-color: var(--border-accent);
+    box-shadow: var(--shadow-md);
+  }
+  .ql-icon { font-size: 1.3rem; line-height: 1; flex-shrink: 0; width: 30px; text-align: center; }
+  .ql-body { flex:1; min-width: 0; }
+  .ql-name { font-size: 0.82rem; font-weight: 600; letter-spacing: -0.005em; }
+  .ql-host { font-size: 0.62rem; color: var(--text-mute); font-family: var(--mono); margin-top: 1px;
+    overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+
+  /* Team grid (옛 풀세트 — 사용 X but CSS 보존) */
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+  .persona-card {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    padding: 18px 16px;
+    cursor: pointer;
+    transition: all 0.18s var(--ease);
+    display: flex; flex-direction: column; align-items: center; text-align: center;
+    box-shadow: var(--shadow-sm);
+    position: relative;
+  }
+  .persona-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--border-accent);
+  }
+  .persona-card .pc-avatar {
+    width: 64px; height: 64px; border-radius: 50%;
+    overflow: hidden; margin-bottom: 12px;
+    background: var(--bg-card-hover);
+    box-shadow: 0 2px 8px rgba(20,18,15,0.08);
+    border: 2px solid #fff;
+  }
+  .persona-card .pc-avatar img { width: 100%; height: 100%; object-fit: cover; }
+  .persona-card .pc-name { font-size: 0.95rem; font-weight: 700; letter-spacing:-0.01em; }
+  .persona-card .pc-en { font-size: 0.62rem; color: var(--text-mute); font-family: var(--mono); letter-spacing: 0.1em; margin: 2px 0 6px; }
+  .persona-card .pc-role { font-size: 0.72rem; color: var(--text-sub); line-height: 1.4; }
+  .persona-card .pc-co { position: absolute; top: 10px; right: 10px; font-size: 0.55rem; padding: 3px 8px; border-radius: 999px; font-family: var(--mono); letter-spacing: 0.06em; }
+  .team-key-bar {
+    display:flex; align-items:center; gap: 14px;
+    padding: 16px 20px; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: var(--r);
+  }
+  .team-key-btn {
+    display:flex; align-items:center; gap: 8px;
+    padding: 9px 16px; background: var(--bg); border: 1px solid var(--border); border-radius: var(--r-pill);
+    cursor:pointer; font-family: var(--mono); font-size: 0.72rem; color: var(--text-sub);
+    transition: all 0.15s var(--ease);
+  }
+  .team-key-btn:hover { border-color: var(--orange); color: var(--orange); }
+  .team-key-btn.has-key { background: var(--orange-soft); border-color: var(--border-accent); color: var(--deep-orange); }
+  .team-key-hint { font-size: 0.7rem; color: var(--text-mute); font-family: var(--mono); }
+
+  .team-body.collapsed { display:none; }
+
+  /* Persona modal (chat) */
+  .pm-bg { position: fixed; inset:0; background: rgba(20,18,15,0.42); display:none; align-items:center; justify-content:center; z-index: 300; padding: 0; }
+  .pm-bg.show { display:flex; }
+  .pm-box {
+    background: var(--bg-elevated);
+    width: 100%; max-width: 880px; height: 92vh; max-height: 760px;
+    border-radius: var(--r-lg);
+    box-shadow: var(--shadow-lg);
+    display:flex; flex-direction:column; overflow:hidden;
+    margin: 16px;
+  }
+  .pm-header {
+    padding: 18px 24px; border-bottom: 1px solid var(--border);
+    display:flex; align-items:center; gap: 14px;
+    background: var(--bg-elevated);
+  }
+  .pm-header .pc-avatar { width: 44px; height: 44px; border-radius: 50%; overflow:hidden; flex-shrink:0; border: 2px solid #fff; box-shadow: 0 2px 8px rgba(20,18,15,0.08); }
+  .pm-header .pc-avatar img { width:100%; height:100%; object-fit:cover; }
+  .pm-htitle { font-size: 1rem; font-weight: 700; letter-spacing:-0.01em; }
+  .pm-hsub { font-size: 0.72rem; color: var(--text-sub); margin-top: 2px; }
+  .pm-close { margin-left:auto; width: 36px; height: 36px; border-radius: 10px; border: 1px solid var(--border); background: var(--bg-card); cursor:pointer; font-size: 16px; color: var(--text-sub); transition: all 0.15s var(--ease); }
+  .pm-close:hover { background: var(--bg-card-hover); color: var(--text); }
+  .pm-msgs { flex:1; overflow-y:auto; padding: 20px 24px 12px; display:flex; flex-direction:column; gap: 12px; background: var(--bg); }
+  .pm-msg { max-width: 80%; padding: 11px 15px; border-radius: 13px; font-size: 0.92rem; line-height: 1.62; white-space: pre-wrap; word-break: break-word; }
+  .pm-msg.user { align-self:flex-end; background: var(--orange); color: #fff; border-bottom-right-radius: 4px; }
+  .pm-msg.agent { align-self:flex-start; background: var(--bg-elevated); border: 1px solid var(--border); border-bottom-left-radius: 4px; }
+  .pm-msg.sys { align-self:center; background: transparent; color: var(--text-mute); font-size: 0.74rem; font-family: var(--mono); border: 1px dashed var(--border); padding: 6px 12px; max-width: 92%; text-align: center; }
+  .pm-typing { align-self:flex-start; color: var(--text-mute); font-size: 0.78rem; padding: 4px 8px; }
+  .pm-input-area { padding: 14px 20px 16px; border-top: 1px solid var(--border); background: var(--bg-elevated); }
+  .pm-input-row { display:flex; gap: 10px; align-items: flex-end; }
+  .pm-input-row textarea { flex:1; background: var(--bg); border: 1px solid var(--border); border-radius: 12px; padding: 11px 14px; font-size: 0.9rem; line-height: 1.5; resize:none; outline:none; min-height: 44px; max-height: 130px; transition: all 0.15s var(--ease); color: var(--text); font-family: var(--font); }
+  .pm-input-row textarea:focus { border-color: var(--border-accent); }
+  .pm-send { width: 44px; height: 44px; border-radius: 11px; border:none; background: var(--orange); color:#fff; font-size: 15px; cursor:pointer; transition: all 0.15s var(--ease); flex-shrink:0; }
+  .pm-send:hover:not(:disabled) { background: var(--deep-orange); }
+  .pm-send:disabled { background: #DCD8D2; cursor:not-allowed; }
+  .pm-input-hint { font-size: 0.66rem; color: var(--text-mute); font-family: var(--mono); margin-top: 6px; letter-spacing: 0.04em; }
+
+  /* Key modal */
+  .key-modal-bg { position: fixed; inset:0; background: rgba(20,18,15,0.42); display:none; align-items:center; justify-content:center; z-index: 400; padding: 20px; }
+  .key-modal-bg.show { display:flex; }
+  .key-modal { background: var(--bg-elevated); border-radius: var(--r-lg); max-width: 480px; width:100%; padding: 26px; box-shadow: var(--shadow-lg); }
+  .key-modal h3 { font-size: 1.1rem; font-weight: 700; letter-spacing:-0.01em; margin-bottom: 6px; }
+  .key-modal .km-sub { font-size: 0.78rem; color: var(--text-sub); margin-bottom: 18px; line-height: 1.65; }
+  .key-modal label { display:block; font-size: 0.62rem; font-weight:600; letter-spacing: 0.12em; color: var(--text-mute); font-family: var(--mono); text-transform: uppercase; margin-bottom: 6px; }
+  .key-modal input { width:100%; padding: 11px 14px; background: var(--bg); border: 1px solid var(--border); border-radius: 10px; font-size: 0.78rem; font-family: var(--mono); outline:none; color: var(--text); }
+  .key-modal input:focus { border-color: var(--border-accent); }
+  .key-actions { display:flex; gap:8px; margin-top: 18px; justify-content: flex-end; }
+  .key-btn-m { padding: 9px 18px; border-radius: 10px; border: 1px solid var(--border); background: var(--bg-elevated); cursor:pointer; font-size: 0.78rem; font-weight: 500; }
+  .key-btn-m:hover { background: var(--bg-card-hover); }
+  .key-btn-m.primary { background: var(--orange); color:#fff; border-color: var(--orange); }
+  .key-btn-m.primary:hover { background: var(--deep-orange); border-color: var(--deep-orange); }
+  .key-note { font-size: 0.7rem; color: var(--text-mute); margin-top: 12px; line-height: 1.6; padding: 10px 12px; background: var(--bg); border-radius: 8px; }
+
+  @media (max-width: 720px) {
+    .team-section { padding: 40px 20px 60px !important; }
+    .team-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .persona-card { padding: 14px 10px; }
+    .persona-card .pc-avatar { width: 54px; height: 54px; }
+    .pm-box { height: 100vh; max-height: 100vh; margin: 0; border-radius: 0; }
+    .pm-msg { max-width: 90%; font-size: 0.88rem; }
+  }
+  </style>
+
   <footer class="footer">
     <div class="footer-brand">SUNNY HOME</div>
     <div class="footer-meta" id="buildMeta">build · loading...</div>
   </footer>
 </main>
+
+<!-- Persona chat modal -->
+<div class="pm-bg" id="personaModal" role="dialog" aria-modal="true">
+  <div class="pm-box" id="pmBox"></div>
+</div>
+
+<!-- API Key modal -->
+<div class="key-modal-bg" id="keyModalBg">
+  <div class="key-modal">
+    <h3>Anthropic API 키 설정</h3>
+    <p class="km-sub">대표님 본인 키로 = Anthropic API 직접 호출 (BYOK). 키 = 이 브라우저 localStorage에만 저장 = 서버 전송 X.</p>
+    <label for="apiKeyInput">API Key</label>
+    <input type="password" id="apiKeyInput" placeholder="sk-ant-api03-...">
+    <div class="key-note">
+      • console.anthropic.com에서 발급<br>
+      • 본인 키 = 본인 차감 (= 글로벌 룰 16 BYOK)<br>
+      • 키 삭제 = 빈 값 저장
+    </div>
+    <div class="key-actions">
+      <button class="key-btn-m" type="button" onclick="closeKeyModal()">취소</button>
+      <button class="key-btn-m primary" type="button" onclick="saveApiKey()">저장</button>
+    </div>
+  </div>
+</div>
 
 <script>
 // ═══ TIME & DATE ═══
@@ -931,8 +1330,347 @@ document.querySelectorAll('.nav-item').forEach(item => {
   });
 });
 
+// ═══ SUNNY TEAM ═══
+// 순서: 1.지니 비서 → 2~5.4사 팀장 → 6.테오·7.리안 (★ 자주) → 8~11.에이전시 → 12.카이
+const TEAM = [
+  { id:'genie', name:'지니', en:'GENIE',role:'대표님 개인 비서',        co:'비서실',    avatar:'avatars/genie.jfif', color:'#34D399',
+    sys:'당신은 SUNNY TEAM 지니(GENIE), 대표님 개인 비서. 일정·메일·뉴스·건강·자기개발·영어·브랜딩·개인 재무. 텔레그램 단일 창구. 자동 분배·총괄 X = 명시한 페르소나만 라우팅. 호칭 "대표님". "박다" 금지.' },
+  { id:'sera',  name:'세라', en:'SERA', role:'써니엔터 팀장',          co:'써니엔터',  avatar:'avatars/sera.png',   color:'#FF6B9D',
+    sys:'당신은 SUNNY TEAM 세라(SERA), 써니엔터테인먼트 팀장. 대표님 1순위 회사(= 살리기). 조선요괴전·귀문봉인기·PERO. 직원: 맹성인·김화령. AI 콘텐츠 컴퍼니 리브랜딩 미션. 호칭 "대표님". "박다" 금지.' },
+  { id:'nea',   name:'네아', en:'NEA',  role:'넥스트아트 팀장',         co:'넥스트아트', avatar:'avatars/nea.jfif',   color:'#6C63FF',
+    sys:'당신은 SUNNY TEAM 네아(NEA), 넥스트아트 팀장. 써니+김태훈 2인 체제(VFX 감독 출신). 서울링 모니터링. 외주·지원사업·AI 콘텐츠. 호칭 "대표님". "박다" 금지.' },
+  { id:'mori',  name:'모리', en:'MORI', role:'굿즈모먼트 팀장',         co:'굿즈모먼트', avatar:'avatars/mori.jfif',  color:'#3DDAB4',
+    sys:'당신은 SUNNY TEAM 모리(MORI), 굿즈모먼트 팀장. 국내 최초 웹툰 굿즈 백화점(연남동 4층). 지분 40%·공동대표. 현장 안 건드림 = 성장 전략(온라인몰·글로벌 팝업·투자유치). 화산귀환·전지적독자시점 팝업. 브랜드 민트 #3DDAB4. 호칭 "대표님". "박다" 금지.' },
+  { id:'birch', name:'버치', en:'BIRCH',role:'버치사운드 팀장',         co:'버치사운드', avatar:'avatars/birch.jfif', color:'#FF3B30',
+    sys:'당신은 SUNNY TEAM 버치(BIRCH), 버치사운드(Birch Sound Global Pte. Ltd.) 팀장. 대표 김한수. 대표님 = 외부 CD(연봉). NORY CITY 페스티벌 = 확정 X 디벨롭 중. Han 한국어 Brand Bible 수정본이 = 필립 영문 Creative Bible 위 최종. RAUKH(호흡) 백스테이지 철학 + 35~55 Anchor + 18~33 Active + 진사·쪽·황토 + NORY BELL 528Hz + Singapore 2027 May Flagship. 호칭 "대표님". "박다" 금지. "확정" 톤 X.' },
+  { id:'teo',   name:'테오', en:'TEO',  role:'기술·개발',            co:'에이전시',  avatar:'avatars/teo.jfif',   color:'#34D399',
+    sys:'당신은 SUNNY TEAM 테오(TEO), 기술·개발. 앱·웹·API·서버(Oracle Cloud)·자동화. GitHub nextsunny-ai. 먼저 동작하는 코드. 기존 버전 오버라이트 X. 호칭 "대표님". "박다" 금지.' },
+  { id:'rian',  name:'리안', en:'RIAN', role:'디자인',              co:'에이전시',  avatar:'avatars/rian.jfif',  color:'#FF6B9D',
+    sys:'당신은 SUNNY TEAM 리안(RIAN), 디자인. PPT·웹·UI·로고·CI/BI. 대표님 30년 디자인·VFX 베이스 = 후진 디자인 절대 X. 안티 템플릿. 슬라이드당 1메시지. Pretendard 필수. 디자인 시스템 v1 17부 의무. 다크 모드 자동 디폴트 X = 밝은 톤 디폴트. 호칭 "대표님". "박다" 금지.' },
+  { id:'lumi',  name:'루미', en:'LUMI', role:'콘텐츠 PD',           co:'에이전시',  avatar:'avatars/lumi.jfif',  color:'#FBBF24',
+    sys:'당신은 SUNNY TEAM 루미(LUMI), 콘텐츠 프로덕션 PD. IP 발굴·AI 영상·시리즈 기획·시나리오 디렉팅. 호칭 "대표님". "박다" 금지. 한국어. 미사여구 X. 풍부히.' },
+  { id:'sori',  name:'소리', en:'SORI', role:'시나리오 작가',         co:'에이전시',  avatar:'avatars/sori.jpeg',  color:'#E879F9',
+    sys:'당신은 SUNNY TEAM 소리(SORI), 시나리오 작가. 트리트먼트·캐릭터·대사·humanizer. AI스러운 표현 체크리스트(번역투 X, 격언체 X, 관념어 X). 호칭 "대표님". "박다" 금지. 한국어.' },
+  { id:'maru',  name:'마루', en:'MARU', role:'마케팅',              co:'에이전시',  avatar:'avatars/maru.jfif',  color:'#38BDF8',
+    sys:'당신은 SUNNY TEAM 마루(MARU), 마케팅. 제안서·보도자료·SNS·영업·이메일. 자기자랑 X. 기획 중심. 설득 톤. 호칭 "대표님". "박다" 금지.' },
+  { id:'hana',  name:'하나', en:'HANA', role:'회계·법무·세무',         co:'에이전시',  avatar:'avatars/hana.png',   color:'#FB923C',
+    sys:'당신은 SUNNY TEAM 하나(HANA), 회계·법무·세무(변호사·법무사·변리사·회계사). 4사 회계·재무·법무·세무·미수금·사기 방지·계약서 1차 검토. 대표님 = 계약서 없이 일하다 사기당한 이력 = 경고. 호칭 "대표님". "박다" 금지.' },
+  { id:'kai',   name:'카이', en:'KAI',  role:'게임 디렉터',           co:'게임',     avatar:'avatars/kai.jpg',    color:'#A78BFA',
+    sys:'당신은 SUNNY TEAM 카이(KAI), 12번째 페르소나 = 게임 디렉터 (2026-05-11 신설). Phaser·Godot 풀스택. 코드·디자인·사운드·시나리오·출시 = 1인 책임. 협업 매트릭스 X = 단독 풀스택. 디자인 시스템 v1 [15부 게임] 의무. 호칭 "대표님". "박다" 금지.' },
+];
+
+// 진행 중 프로젝트 (= mid col2)
+const IN_PROGRESS = [
+  { name: '써니홈 통합', co: '시스템', state: 'Today', note: '오늘 = 페르소나 채팅 통합 + 라이트 톤 리디자인' },
+  { name: '카이 게임 디렉터 셋업', co: '게임', state: 'Setup', note: '오늘 아침 = 맥서버 시킴 / 저녁 보고' },
+  { name: 'NORY CITY 브랜딩', co: '버치사운드', state: 'Develop', note: 'v7→v8 = Han 한국어 Brand Bible 수정 진행' },
+  { name: 'KOCCA 신기술영상', co: '버치사운드', state: 'Pending', note: '4/14 최종제출 = 결과 대기 (최대 2.2억)' },
+  { name: '조선요괴전', co: '써니엔터', state: 'Live', note: '체험전시 + 해외투어 협의 + 마리오아울렛' },
+  { name: '화산귀환 팝업', co: '굿즈모먼트', state: 'Live', note: '4/23~5/5' },
+  { name: '스토리메이커 V2.11.2', co: '에이전시', state: 'Active', note: '작가 BYOK + Tauri .exe 출시' },
+  { name: 'AI PRONOTE', co: '에이전시', state: 'In Dev', note: '회의록 + 받아쓰기 + AI 비서 통합' },
+  { name: 'Phenomenon JV', co: '버치사운드', state: 'Opportunity', note: 'HYBE·SM·JYP·YG 합작 = 2027.12 = 사운드 브랜딩 진입' },
+  { name: '서울링', co: '넥스트아트', state: 'Watch', note: '상암동 대관람차 = 시행사 리츠 = 예탁 (모니터링)' },
+];
+
+function renderInProgress() {
+  const g = document.getElementById('inProgressList');
+  if(!g) return;
+  g.innerHTML = IN_PROGRESS.map(p => `
+    <div class="ip-item">
+      <div class="ip-row1">
+        <span class="ip-name">${p.name}</span>
+        <span class="ip-state ip-state-${p.state.toLowerCase().replace(/\s/g,'-')}">${p.state}</span>
+      </div>
+      <div class="ip-row2">
+        <span class="ip-co">${p.co}</span>
+        <span class="ip-note">${p.note}</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+const TEAM_COMMON = `
+[SUNNY 공통]
+대표: 유희정(Sunny Ryu), 30년 CD, 한국 최초 여성 VFX 감독.
+운영: 써니엔터(대표 100%), 넥스트아트(공동 40%), 굿즈모먼트(공동 40%), 버치사운드(외부 CD).
+우선순위: 1.써니엔터 살리기 2.다른 회사 빨리 3.패시브 인컴.
+디자인: Pretendard 필수. 다크 자동 디폴트 X. 후진 디자인 X.
+호칭 "대표님" / "박다" 금지 / 모르면 모른다고 정직히.
+`;
+
+const LS_KEY = 'sunny_team_apikey';
+const LS_HIST = 'sunny_team_history';
+const teamHist = {};
+let currentTeamPersona = null;
+
+function loadTeamHist() { try { const h = localStorage.getItem(LS_HIST); if(h) Object.assign(teamHist, JSON.parse(h)); } catch(e){} }
+function saveTeamHist() { try { localStorage.setItem(LS_HIST, JSON.stringify(teamHist)); } catch(e){} }
+function getApiKey() { return localStorage.getItem(LS_KEY) || ''; }
+function setApiKey(k) { if(k) localStorage.setItem(LS_KEY, k); else localStorage.removeItem(LS_KEY); updateKeyBtnUI(); }
+function updateKeyBtnUI() {
+  const b = document.getElementById('teamKeyBtn');
+  const l = document.getElementById('teamKeyLabel');
+  const i = document.getElementById('teamKeyIcon');
+  if(!b) return;
+  if(getApiKey()) { b.classList.add('has-key'); l.textContent = '키 저장됨'; i.textContent = '✓'; }
+  else { b.classList.remove('has-key'); l.textContent = 'API 키 설정'; i.textContent = '🔑'; }
+}
+
+function renderTeamGrid() {
+  const g = document.getElementById('teamGrid');
+  if(!g) return;
+  g.innerHTML = TEAM.map(p => `
+    <div class="persona-card" onclick="openPersonaModal('${p.id}')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPersonaModal('${p.id}')}">
+      <div class="pc-avatar"><img src="${p.avatar}" alt="${p.name}"></div>
+      <div class="pc-name">${p.name}</div>
+      <div class="pc-en">${p.en}</div>
+      <div class="pc-role">${p.role}</div>
+      <span class="pc-co" style="background:${p.color}22;color:${p.color}">${p.co}</span>
+    </div>
+  `).join('');
+}
+
+function renderRecentChats() {
+  const c = document.getElementById('recentChats');
+  if(!c) return;
+  const items = [];
+  for(const pid in teamHist) {
+    const hist = teamHist[pid];
+    if(!hist || hist.length === 0) continue;
+    const persona = TEAM.find(p => p.id === pid);
+    if(!persona) continue;
+    const lastMsg = hist[hist.length - 1];
+    items.push({ persona, lastMsg, count: hist.length });
+  }
+  if(items.length === 0) {
+    c.innerHTML = `<div style="color:var(--text-mute);font-size:0.78rem;padding:12px 4px;line-height:1.6;">아직 대화 없음<br><span style="font-size:0.7rem;">← 왼쪽 Team에서 페르소나 선택</span></div>`;
+    return;
+  }
+  // 최근 = 마지막 메시지 기준 sort = 단순 = order 그대로
+  items.reverse();
+  c.innerHTML = items.slice(0, 8).map(({persona:p, lastMsg, count}) => `
+    <div class="rc-item" onclick="openPersonaModal('${p.id}')" role="button" tabindex="0">
+      <img class="rc-avatar" src="${p.avatar}" alt="${p.name}" onerror="this.outerHTML='<div class=&quot;rc-avatar&quot; style=&quot;background:${p.color};display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:11px&quot;>${p.name.charAt(0)}</div>'">
+      <div class="rc-body">
+        <div class="rc-line1">
+          <span class="rc-name">${p.name}</span>
+          <span class="rc-time">${count}턴</span>
+        </div>
+        <div class="rc-preview">${escapeHtml(lastMsg.content).slice(0, 110)}</div>
+      </div>
+    </div>
+  `).join('');
+}
+
+// 자주 가는 사이트 (= 도구만)
+const QUICK_LINKS = [
+  { name: 'Claude.ai',          host: 'claude.ai',                icon: '✦',  url: 'https://claude.ai' },
+  { name: 'Anthropic Console',  host: 'console.anthropic.com',    icon: '⚙',  url: 'https://console.anthropic.com' },
+  { name: 'GitHub (nextsunny)', host: 'github.com/nextsunny-ai',  icon: '⌨',  url: 'https://github.com/nextsunny-ai' },
+  { name: 'Vercel',             host: 'vercel.com',               icon: '▲',  url: 'https://vercel.com/dashboard' },
+  { name: 'Oracle Cloud',       host: 'cloud.oracle.com',         icon: '☁',  url: 'https://cloud.oracle.com' },
+  { name: 'Supabase',           host: 'supabase.com',             icon: '⚡', url: 'https://supabase.com/dashboard' },
+  { name: 'Google Drive',       host: 'drive.google.com',         icon: '◆',  url: 'https://drive.google.com' },
+  { name: 'Gmail',              host: 'gmail.com',                icon: '✉',  url: 'https://mail.google.com' },
+  { name: 'Calendar',           host: 'calendar.google.com',      icon: '📅', url: 'https://calendar.google.com' },
+  { name: 'KOCCA',              host: 'kocca.kr',                 icon: '◆',  url: 'https://www.kocca.kr' },
+  { name: 'KOFIC',              host: 'kofic.or.kr',              icon: '◆',  url: 'https://www.kofic.or.kr' },
+  { name: 'Notion',             host: 'notion.so',                icon: '✎',  url: 'https://notion.so' },
+];
+
+// 완성한 프로젝트 URL (= mid col3 = Recent Projects)
+const PROJECTS = [
+  { name: '써니홈 (개인)',       host: 'nextsunny-ai.github.io/sunny-home', icon: '★',  url: 'https://nextsunny-ai.github.io/sunny-home/' },
+  { name: '스토리메이커',         host: 'story.sunnytoon.com',      icon: '✎',  url: 'https://story.sunnytoon.com' },
+  { name: 'Visual Maker',       host: 'visual.sunnytoon.com',     icon: '◇',  url: 'https://visual.sunnytoon.com' },
+  { name: 'ComfyUI',            host: 'comfy.sunnytoon.com',      icon: '◈',  url: 'https://comfy.sunnytoon.com' },
+  { name: '굿즈모먼트 홈',        host: 'goodsmoment-preview',      icon: '◉',  url: 'https://nextsunny-ai.github.io/goodsmoment-preview/' },
+  { name: '버치사운드 ERP',       host: 'birchsound-erp',           icon: '◎',  url: 'https://nextsunny-ai.github.io/birchsound-erp/' },
+  { name: '넥스트아트 홈',        host: 'nextart-home',             icon: '◐',  url: 'https://nextsunny-ai.github.io/nextart-home/' },
+  { name: '써니팀 (옛 = wrapper 죽음)', host: 'team.sunnytoon.com', icon: '◐',  url: 'https://team.sunnytoon.com', dead: true },
+];
+
+function renderProjects() {
+  const g = document.getElementById('projectsList');
+  if(!g) return;
+  g.innerHTML = PROJECTS.map(p => `
+    <a class="pj-item${p.dead ? ' pj-dead' : ''}" href="${p.url}" target="_blank" rel="noopener" title="${p.name} — ${p.host}">
+      <span class="pj-icon">${p.icon}</span>
+      <div class="pj-body">
+        <div class="pj-name">${p.name}</div>
+        <div class="pj-host">${p.host}</div>
+      </div>
+    </a>
+  `).join('');
+}
+
+function renderQuickLinks() {
+  const g = document.getElementById('quickLinksGrid');
+  if(!g) return;
+  g.innerHTML = QUICK_LINKS.map(l => `
+    <a class="ql-tile" href="${l.url}" target="_blank" rel="noopener" title="${l.name} — ${l.host}">
+      <span class="ql-icon">${l.icon}</span>
+      <div class="ql-body">
+        <div class="ql-name">${l.name}</div>
+        <div class="ql-host">${l.host}</div>
+      </div>
+    </a>
+  `).join('');
+}
+
+function renderTeamQuick() {
+  const g = document.getElementById('teamQuick');
+  if(!g) return;
+  g.innerHTML = TEAM.map(p => `
+    <div class="tq-item" onclick="openPersonaModal('${p.id}')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPersonaModal('${p.id}')}">
+      <img src="${p.avatar}" alt="${p.name}" class="tq-avatar" onerror="this.style.background='${p.color}';this.style.padding='0';this.outerHTML='<div class=&quot;tq-avatar&quot; style=&quot;background:${p.color};display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:13px&quot;>${p.name.charAt(0)}</div>'">
+      <div class="tq-info">
+        <div class="tq-name">${p.name}<span class="tq-en">${p.en}</span></div>
+        <div class="tq-role">${p.role}</div>
+      </div>
+      <span class="tq-co" style="background:${p.color}1a;color:${p.color}">${p.co}</span>
+    </div>
+  `).join('');
+}
+
+function escapeHtml(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+function openPersonaModal(id) {
+  const p = TEAM.find(x => x.id === id);
+  if(!p) return;
+  currentTeamPersona = p;
+  const msgs = teamHist[id] || [];
+  const box = document.getElementById('pmBox');
+  box.innerHTML = `
+    <div class="pm-header">
+      <div class="pc-avatar"><img src="${p.avatar}" alt="${p.name}"></div>
+      <div>
+        <div class="pm-htitle">${p.name} <span style="font-family:var(--mono);font-size:0.66rem;color:var(--text-mute);font-weight:500;letter-spacing:0.08em;margin-left:4px">${p.en}</span></div>
+        <div class="pm-hsub">${p.role} · ${p.co}</div>
+      </div>
+      <button class="pm-close" type="button" onclick="closePersonaModal()" aria-label="닫기">✕</button>
+    </div>
+    <div class="pm-msgs" id="pmMsgs">${
+      msgs.length === 0
+        ? `<div class="pm-msg sys">${p.name}와 대화 시작. 본인 ANTHROPIC_API_KEY 필요.</div>`
+        : msgs.map(m => `<div class="pm-msg ${m.role==='user'?'user':'agent'}">${escapeHtml(m.content)}</div>`).join('')
+    }</div>
+    <div class="pm-input-area">
+      <div class="pm-input-row">
+        <textarea id="pmInp" placeholder="${p.name}에게 말하기..." rows="1" onkeydown="pmHandleKey(event)" oninput="pmAutoGrow(this)"></textarea>
+        <button class="pm-send" id="pmSend" type="button" onclick="pmSend()">↑</button>
+      </div>
+      <div class="pm-input-hint">Enter 보내기 · Shift+Enter 줄바꿈 · BYOK · ${getApiKey()?'키 저장됨':'키 미설정 → 먼저 키 설정 필요'}</div>
+    </div>
+  `;
+  document.getElementById('personaModal').classList.add('show');
+  setTimeout(() => { const i = document.getElementById('pmInp'); if(i) i.focus(); }, 50);
+}
+function closePersonaModal() { document.getElementById('personaModal').classList.remove('show'); currentTeamPersona = null; }
+function pmHandleKey(e) { if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();pmSend();} }
+function pmAutoGrow(el) { el.style.height='auto'; el.style.height=Math.min(el.scrollHeight,130)+'px'; }
+function pmScrollBottom() { const c=document.getElementById('pmMsgs'); if(c)c.scrollTop=c.scrollHeight; }
+function pmAppendMsg(role, text) {
+  const c = document.getElementById('pmMsgs'); if(!c) return;
+  const d = document.createElement('div'); d.className = 'pm-msg ' + (role==='user'?'user':'agent'); d.textContent = text;
+  c.appendChild(d); pmScrollBottom();
+}
+
+async function pmSend() {
+  if(!currentTeamPersona) return;
+  const inp = document.getElementById('pmInp');
+  const t = inp.value.trim(); if(!t) return;
+  const apiKey = getApiKey();
+  if(!apiKey) { openKeyModal(); return; }
+  inp.value=''; pmAutoGrow(inp);
+  teamHist[currentTeamPersona.id] = teamHist[currentTeamPersona.id] || [];
+  teamHist[currentTeamPersona.id].push({role:'user', content: t});
+  saveTeamHist();
+  pmAppendMsg('user', t);
+  const sendBtn = document.getElementById('pmSend'); sendBtn.disabled = true;
+  const msgs = document.getElementById('pmMsgs');
+  const ty = document.createElement('div'); ty.className = 'pm-typing'; ty.id='pmTyping';
+  ty.textContent = currentTeamPersona.name + ' 생각 중...';
+  msgs.appendChild(ty); pmScrollBottom();
+  try {
+    const reply = await callAnthropic(apiKey, currentTeamPersona, teamHist[currentTeamPersona.id]);
+    document.getElementById('pmTyping')?.remove();
+    teamHist[currentTeamPersona.id].push({role:'assistant', content: reply});
+    saveTeamHist();
+    pmAppendMsg('agent', reply);
+  } catch(e) {
+    document.getElementById('pmTyping')?.remove();
+    pmAppendMsg('agent', `⚠️ 호출 실패: ${e.message}\n\nconsole.anthropic.com에서 발급한 sk-ant-... 키 확인.`);
+  } finally { sendBtn.disabled = false; }
+}
+
+async function callAnthropic(apiKey, persona, hist) {
+  const systemPrompt = TEAM_COMMON + '\n\n' + persona.sys;
+  const messages = hist.slice(-20).map(m => ({role: m.role, content: m.content}));
+  // OAuth (sk-ant-oat01-...) = Bearer + anthropic-beta / API key (sk-ant-api03-...) = x-api-key
+  const isOAuth = apiKey.startsWith('sk-ant-oat');
+  const headers = {
+    'Content-Type': 'application/json',
+    'anthropic-version': '2023-06-01',
+    'anthropic-dangerous-direct-browser-access': 'true'
+  };
+  if (isOAuth) {
+    headers['Authorization'] = 'Bearer ' + apiKey;
+    headers['anthropic-beta'] = 'oauth-2025-04-20';
+  } else {
+    headers['x-api-key'] = apiKey;
+  }
+  const res = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers,
+    body: JSON.stringify({
+      model: 'claude-sonnet-4-5-20250929',
+      max_tokens: 2048,
+      system: systemPrompt,
+      messages: messages
+    })
+  });
+  if(!res.ok) {
+    const err = await res.json().catch(()=>({}));
+    throw new Error(err.error?.message || `HTTP ${res.status}`);
+  }
+  const data = await res.json();
+  return data.content[0].text;
+}
+
+function openKeyModal() {
+  document.getElementById('apiKeyInput').value = getApiKey();
+  document.getElementById('keyModalBg').classList.add('show');
+  setTimeout(() => document.getElementById('apiKeyInput').focus(), 50);
+}
+function closeKeyModal() { document.getElementById('keyModalBg').classList.remove('show'); }
+function saveApiKey() {
+  const v = document.getElementById('apiKeyInput').value.trim();
+  setApiKey(v); closeKeyModal();
+}
+
+// init team
+loadTeamHist();
+renderTeamGrid();
+renderTeamQuick();
+renderInProgress();
+renderProjects();
+if(typeof renderQuickLinks === 'function') renderQuickLinks();
+updateKeyBtnUI();
+document.getElementById('teamKeyBtn')?.addEventListener('click', openKeyModal);
+document.getElementById('keyModalBg')?.addEventListener('click', (e) => { if(e.target.id==='keyModalBg') closeKeyModal(); });
+document.getElementById('personaModal')?.addEventListener('click', (e) => { if(e.target.id==='personaModal') closePersonaModal(); });
+
+// Team section collapse
+document.getElementById('teamToggle')?.addEventListener('click', function() {
+  const body = document.getElementById('teamBody');
+  if(body.classList.contains('collapsed')) { body.classList.remove('collapsed'); this.textContent = '접기 ▴'; }
+  else { body.classList.add('collapsed'); this.textContent = '펼치기 ▾'; }
+});
+
 // scroll spy
-const sections = ['hero', 'mid', 'news-section', 'deadlines-section', 'outputs-section', 'flipbook-section'];
+const sections = ['hero', 'team-section', 'mid', 'news-section', 'deadlines-section'];
 let scrollTicking = false;
 window.addEventListener('scroll', () => {
   if (!scrollTicking) {
@@ -974,16 +1712,18 @@ const tools = [
 ];
 
 const grid = document.getElementById('toolsGrid');
-tools.forEach(t => {
-  const a = document.createElement('a');
-  a.className = 'tool-tile ' + t.color + (t.wide ? ' wide' : '');
-  a.href = t.url; a.target = '_blank'; a.rel = 'noopener';
-  a.innerHTML = '<div class="icon">' + t.icon + '</div><div><div class="name">' + t.name + '</div><div class="desc">' + t.desc + '</div></div>';
-  grid.appendChild(a);
-});
+if (grid) {
+  tools.forEach(t => {
+    const a = document.createElement('a');
+    a.className = 'tool-tile ' + t.color + (t.wide ? ' wide' : '');
+    a.href = t.url; a.target = '_blank'; a.rel = 'noopener';
+    a.innerHTML = '<div class="icon">' + t.icon + '</div><div><div class="name">' + t.name + '</div><div class="desc">' + t.desc + '</div></div>';
+    grid.appendChild(a);
+  });
+}
 
-// ═══ GITHUB REPOS ═══
-async function loadProjects() {
+// ═══ GITHUB REPOS (옛 = 자동 fetch, 현재 = 큐레이션된 PROJECTS로 교체 = 비활성) ═══
+async function loadProjects_DISABLED() {
   try {
     const res = await fetch('https://api.github.com/users/nextsunny-ai/repos?sort=pushed&per_page=20');
     const repos = await res.json();
@@ -1009,15 +1749,15 @@ async function loadProjects() {
       '<div class="empty-state"><div class="empty-icon">&#128230;</div><div class="empty-msg">프로젝트를 불러올 수 없습니다</div><button class="empty-btn" onclick="loadProjects()">다시 시도</button></div>';
   }
 }
-loadProjects();
+// loadProjects(); // 옛 GitHub API 자동 fetch = 비활성. PROJECTS 큐레이션 사용.
 
 // ═══ NOTICE ═══
 const notices = [
-  { sender: 'HANA', cls: 'sender-hana', msg: 'sunny_home_data.json 데이터 수집 완료. AI 트렌드 + 공연 + 전시 + 지원사업 적재.', time: '10분 전' },
-  { sender: 'TEO', cls: 'sender-teo', msg: 'team.sunnytoon.com Phase 3 백엔드 — 단체방 API 완료.', time: '25분 전' },
-  { sender: 'RIAN', cls: 'sender-rian', msg: 'sunny_home 디자인 리뉴얼 완료.', time: '방금' },
-  { sender: 'SERA', cls: 'sender-sera', msg: 'KOFIC 지원사업 서류 마감 D-12. IR 표지 시안 필요.', time: '1시간 전' },
-  { sender: 'GENIE', cls: 'sender-genie', msg: '금일 에이전트 가동: 8/11명 활성. 맥미니 워커 정상.', time: '2시간 전' },
+  { sender: 'GENIE', cls: 'sender-genie', msg: '뉴스·트렌드 큐레이션 (= AI / 콘텐츠IP / 공연 / 전시 / 지원사업) 데이터 수집 완료. (★ 2026-04-28 하나 → 지니로 역할 이전)', time: '10분 전' },
+  { sender: 'RIAN', cls: 'sender-rian', msg: 'sunny_home 라이트 톤 + Team 3컬럼 + 진행 중 + Recent Projects 통합 완료.', time: '방금' },
+  { sender: 'TEO', cls: 'sender-teo', msg: 'team.sunnytoon.com wrapper = 옛 (= 비치 잔존) = Oracle Console 점검 필요.', time: '오늘' },
+  { sender: 'BIRCH', cls: 'sender-birch', msg: 'NORY CITY v8 = Han 한국어 Brand Bible 수정본 = 필립 영문 위 최종. RAUKH 백스테이지 철학 + 35~55 Anchor.', time: '오늘' },
+  { sender: 'SERA', cls: 'sender-sera', msg: '조선요괴전 자료 정리·학습 = 다음 우선순위.', time: '대기' },
 ];
 const noticeList = document.getElementById('noticeList');
 notices.forEach(n => {
@@ -1047,20 +1787,34 @@ const catNames = {
   content_ip: '콘텐츠IP', design: '디자인', grants: '지원사업', festival: '페스티벌'
 };
 
-let allNewsItems = [];
+var allNewsItems = []; // var = hoisted = TDZ 회피 (옛 let = 실행 도달 전 에러 사고)
 
 function buildNewsItems(data) {
   allNewsItems = [];
   if (!data || !data.categories) return;
+  // ★ 당일~3일 이내만 (대표님 2026-05-11 명시 = "당일만 최고 2-3일")
+  const NEWS_DAYS = 3;
+  const cutoff = new Date(Date.now() - NEWS_DAYS * 24 * 60 * 60 * 1000);
   data.categories.forEach(cat => {
     if (cat.id === 'english') return;
     (cat.items || []).forEach(item => {
+      // 날짜 필터
+      if (item.published) {
+        const pubDate = new Date(item.published);
+        if (!isNaN(pubDate.getTime()) && pubDate < cutoff) return; // skip 옛 뉴스
+      }
       allNewsItems.push({
         cat: cat.id, catName: catNames[cat.id] || cat.name,
         title: item.title, url: item.url || '#', source: item.source || '',
         summary: item.summary || '', published: item.published || '', image: item.image || ''
       });
     });
+  });
+  // 최신순 정렬
+  allNewsItems.sort((a, b) => {
+    const da = a.published ? new Date(a.published).getTime() : 0;
+    const db = b.published ? new Date(b.published).getTime() : 0;
+    return db - da;
   });
 }
 
@@ -1075,17 +1829,14 @@ function renderNews(filter) {
   items.forEach((n, i) => {
     const card = document.createElement('a');
     const isFeatured = (filter === 'all' && i === 0);
-    card.className = 'news-card' + (isFeatured ? ' featured' : '');
+    card.className = 'news-text-item';
     card.href = n.url; card.target = '_blank'; card.rel = 'noopener';
     const icon = catIcons[n.cat] || "\uD83D\uDCF0";
     const bg = catColors[n.cat] || catColors.ai;
     card.innerHTML =
-      (n.image ? '<div class="news-card-img" style="background:#1a1a2e center/cover no-repeat url(' + JSON.stringify(n.image) + ')"></div>' : '<div class="news-card-img" style="background:' + bg + '">' + icon + '</div>') +
-      '<div class="news-card-body">' +
-      '<div class="cat-tag cat-' + n.cat + '">' + n.catName + '</div>' +
-      '<div class="title">' + escHtml(n.title) + '</div>' +
-      '<div class="excerpt">' + escHtml(n.summary) + '</div>' +
-      '<div class="meta">' + n.source + (n.published ? ' · ' + n.published : '') + '</div></div>';
+      '<span class="nti-cat cat-' + n.cat + '">' + n.catName + '</span>' +
+      '<span class="nti-title">' + escHtml(n.title) + '</span>' +
+      '<span class="nti-source">' + escHtml(n.source) + (n.published ? ' · ' + n.published : '') + '</span>';
     newsGrid.appendChild(card);
   });
 }
@@ -1107,15 +1858,12 @@ function renderNewsPick() {
 
   picked.forEach(n => {
     const a = document.createElement('a');
-    a.className = 'pick-card'; a.href = n.url; a.target = '_blank'; a.rel = 'noopener';
-    const icon = catIcons[n.cat] || "\uD83D\uDCF0";
-    const bg = catColors[n.cat] || catColors.ai;
+    a.className = 'news-text-item';
+    a.href = n.url; a.target = '_blank'; a.rel = 'noopener';
     a.innerHTML =
-      (n.image ? '<div class="pick-img" style="background:#1a1a2e center/cover no-repeat url(' + JSON.stringify(n.image) + ')"></div>' : '<div class="pick-img" style="background:' + bg + '">' + icon + '</div>') +
-      '<div class="pick-meta">' +
-      '<div class="pick-cat cat-' + n.cat + '">' + n.catName + '</div>' +
-      '<div class="pick-title">' + escHtml(n.title) + '</div>' +
-      '<div class="pick-source">' + n.source + '</div></div>';
+      '<span class="nti-cat cat-' + n.cat + '">' + n.catName + '</span>' +
+      '<span class="nti-title">' + escHtml(n.title) + '</span>' +
+      '<span class="nti-source">' + escHtml(n.source) + '</span>';
     pickContainer.appendChild(a);
   });
 }

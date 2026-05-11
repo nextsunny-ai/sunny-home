@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SUNNY TEAM — 11명 페르소나</title>
+<meta name="description" content="써니팀 11명 페르소나와 직접 대화. 본인 API 키로 호출.">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+:root {
+  --bg: #FAF8F4;
+  --bg-elevated: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F5F1E6;
+  --bg-input: #F5F1E6;
+  --border: rgba(20,18,15,0.08);
+  --border-strong: rgba(20,18,15,0.16);
+  --text: #14120F;
+  --text-sub: #4F4A42;
+  --text-mute: #8A8278;
+  --orange: #FF8C42;
+  --deep-orange: #E05A1B;
+  --orange-soft: #FFF0E2;
+  --accent-line: rgba(255,140,66,0.32);
+  --hairline: rgba(20,18,15,0.06);
+  --shadow-sm: 0 1px 2px rgba(20,18,15,0.04);
+  --shadow-md: 0 4px 16px rgba(20,18,15,0.06);
+  --shadow-lg: 0 12px 32px rgba(20,18,15,0.08);
+  --r: 12px;
+  --r-lg: 16px;
+  --r-pill: 999px;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --font: 'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --mono: 'SF Mono', 'JetBrains Mono', ui-monospace, monospace;
+}
+
+html, body { height:100%; }
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  font-feature-settings: "ss01","tnum";
+  font-size: 15px;
+  line-height: 1.55;
+  overflow:hidden;
+}
+
+a { color: inherit; text-decoration: none; }
+button, input, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--orange); outline-offset: 2px; border-radius: 4px; }
+
+/* ===== Top bar ===== */
+.topbar {
+  position: fixed; top:0; left:0; right:0; height:56px;
+  display:flex; align-items:center; gap:16px;
+  padding: 0 24px;
+  background: var(--bg-elevated);
+  border-bottom: 1px solid var(--border);
+  z-index: 50;
+}
+.brand { display:flex; align-items:center; gap:10px; font-weight: 700; letter-spacing:-0.01em; }
+.brand .dot { width:9px; height:9px; border-radius:50%; background: var(--orange); box-shadow: 0 0 0 4px var(--orange-soft); }
+.brand-label { font-size: 11px; font-weight:600; letter-spacing:0.14em; color: var(--text-mute); font-family: var(--mono); text-transform: uppercase; }
+.topbar .spacer { flex:1; }
+.back-home { font-size: 13px; color: var(--text-sub); padding: 8px 14px; border-radius: var(--r-pill); border: 1px solid var(--border); transition: all .15s var(--ease); }
+.back-home:hover { background: var(--bg-card-hover); color: var(--text); }
+.key-btn { font-size: 12px; padding: 8px 14px; border-radius: var(--r-pill); border: 1px solid var(--border); background: var(--bg-card); cursor:pointer; font-family: var(--mono); color: var(--text-sub); display:flex; align-items:center; gap:6px; transition: all .15s var(--ease); }
+.key-btn:hover { border-color: var(--orange); color: var(--orange); }
+.key-btn.has-key { color: var(--orange); border-color: var(--accent-line); background: var(--orange-soft); }
+
+/* ===== Shell ===== */
+.shell { padding-top: 56px; height: 100vh; display: grid; grid-template-columns: 280px 1fr; }
+
+/* ===== Sidebar — persona list ===== */
+.aside {
+  border-right: 1px solid var(--border);
+  background: var(--bg-elevated);
+  overflow-y: auto;
+  padding: 20px 12px 24px;
+}
+.aside-section { margin-bottom: 18px; }
+.aside-label { font-size: 10px; font-weight:600; letter-spacing:0.16em; color: var(--text-mute); padding: 0 12px 8px; font-family: var(--mono); text-transform: uppercase; }
+.persona-item {
+  display:flex; align-items:center; gap: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor:pointer;
+  transition: background .12s var(--ease);
+  margin-bottom: 2px;
+}
+.persona-item:hover { background: var(--bg-card-hover); }
+.persona-item.active { background: var(--orange-soft); }
+.persona-item.active .p-name { color: var(--deep-orange); }
+.p-avatar {
+  width: 36px; height: 36px; border-radius: 50%;
+  display:flex; align-items:center; justify-content:center;
+  font-weight: 700; font-size: 13px; color: #fff;
+  flex-shrink:0;
+}
+.p-info { flex:1; min-width: 0; }
+.p-name { font-size: 14px; font-weight: 600; letter-spacing:-0.01em; }
+.p-role { font-size: 11px; color: var(--text-mute); margin-top: 1px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+
+/* ===== Main — chat ===== */
+.main { display:flex; flex-direction:column; min-width:0; background: var(--bg); }
+.chat-header {
+  padding: 18px 28px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-elevated);
+  display:flex; align-items:center; gap: 14px;
+}
+.chat-header .p-avatar { width: 44px; height: 44px; font-size: 15px; }
+.chat-h-title { font-size: 17px; font-weight: 700; letter-spacing:-0.01em; }
+.chat-h-sub { font-size: 12px; color: var(--text-sub); margin-top: 2px; }
+.chat-h-meta { font-size: 10px; color: var(--text-mute); font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.12em; padding: 4px 10px; border: 1px solid var(--border); border-radius: var(--r-pill); margin-left: auto; }
+
+/* welcome */
+.welcome {
+  flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center;
+  padding: 40px 24px; text-align:center;
+}
+.welcome h2 {
+  font-size: 28px; font-weight:700; letter-spacing:-0.02em;
+  margin-bottom: 12px;
+}
+.welcome h2 span { color: var(--orange); }
+.welcome p { color: var(--text-sub); font-size: 14px; line-height: 1.7; max-width: 460px; }
+.welcome .hint { margin-top: 28px; font-size: 11px; color: var(--text-mute); font-family: var(--mono); letter-spacing: 0.1em; text-transform: uppercase; }
+
+/* messages */
+.msgs {
+  flex:1; overflow-y:auto;
+  padding: 24px 28px 16px;
+  display:flex; flex-direction:column; gap: 14px;
+}
+.msg { max-width: 78%; padding: 12px 16px; border-radius: 14px; font-size: 14.5px; line-height: 1.65; white-space: pre-wrap; word-break: break-word; }
+.msg.user { align-self: flex-end; background: var(--orange); color: #fff; border-bottom-right-radius: 4px; box-shadow: var(--shadow-sm); }
+.msg.agent { align-self: flex-start; background: var(--bg-card); border: 1px solid var(--border); border-bottom-left-radius: 4px; box-shadow: var(--shadow-sm); }
+.msg.system { align-self: center; background: transparent; color: var(--text-mute); font-size: 12px; font-family: var(--mono); border: 1px dashed var(--border); padding: 8px 14px; }
+.typing { align-self: flex-start; color: var(--text-mute); font-size: 13px; padding: 6px 8px; display:flex; align-items:center; gap: 6px; }
+.typing .d { width:6px; height:6px; border-radius:50%; background: var(--text-mute); animation: bounce 1.2s infinite; }
+.typing .d:nth-child(2) { animation-delay: .15s; } .typing .d:nth-child(3) { animation-delay: .3s; }
+@keyframes bounce { 0%,80%,100%{transform:translateY(0);opacity:.3} 40%{transform:translateY(-4px);opacity:1} }
+
+/* input */
+.input-area {
+  border-top: 1px solid var(--border);
+  background: var(--bg-elevated);
+  padding: 14px 28px 18px;
+}
+.input-row { display:flex; gap: 10px; align-items: flex-end; max-width: 920px; margin: 0 auto; }
+.input-row textarea {
+  flex:1; background: var(--bg-input); border: 1px solid transparent;
+  border-radius: 14px; padding: 12px 16px; font-size: 14.5px; line-height: 1.55;
+  resize: none; outline: none; min-height: 46px; max-height: 140px;
+  transition: all .15s var(--ease);
+}
+.input-row textarea:focus { background: var(--bg-elevated); border-color: var(--accent-line); }
+.input-row textarea::placeholder { color: var(--text-mute); }
+.send-btn {
+  width: 46px; height: 46px; border-radius: 12px; border: none;
+  background: var(--orange); color: #fff; font-size: 15px; cursor: pointer;
+  display:flex; align-items:center; justify-content:center;
+  transition: all .15s var(--ease); flex-shrink: 0;
+}
+.send-btn:hover:not(:disabled) { background: var(--deep-orange); transform: translateY(-1px); }
+.send-btn:disabled { background: #DCD8D2; cursor: not-allowed; }
+.input-hint { max-width: 920px; margin: 8px auto 0; font-size: 11px; color: var(--text-mute); font-family: var(--mono); letter-spacing: 0.04em; }
+
+/* ===== Modal — API key ===== */
+.modal-bg {
+  position: fixed; inset:0; background: rgba(20,18,15,0.4);
+  display:none; align-items:center; justify-content:center; z-index: 100;
+  padding: 20px;
+}
+.modal-bg.show { display:flex; }
+.modal {
+  background: var(--bg-elevated); border-radius: var(--r-lg);
+  max-width: 480px; width: 100%;
+  box-shadow: var(--shadow-lg);
+  padding: 28px;
+}
+.modal h3 { font-size: 18px; font-weight: 700; letter-spacing:-0.01em; margin-bottom: 4px; }
+.modal-sub { font-size: 13px; color: var(--text-sub); margin-bottom: 18px; line-height: 1.6; }
+.modal label { display:block; font-size: 11px; font-weight:600; letter-spacing: 0.1em; color: var(--text-mute); font-family: var(--mono); text-transform: uppercase; margin-bottom: 6px; }
+.modal input {
+  width: 100%; padding: 12px 14px; background: var(--bg-input);
+  border: 1px solid transparent; border-radius: 10px; font-size: 13px;
+  font-family: var(--mono); outline: none;
+}
+.modal input:focus { background: var(--bg-elevated); border-color: var(--accent-line); }
+.modal-actions { display:flex; gap: 8px; margin-top: 18px; justify-content: flex-end; }
+.modal-btn { padding: 10px 18px; border-radius: 10px; border: 1px solid var(--border); background: var(--bg-elevated); cursor: pointer; font-size: 13px; font-weight: 500; transition: all .15s var(--ease); }
+.modal-btn:hover { background: var(--bg-card-hover); }
+.modal-btn.primary { background: var(--orange); color: #fff; border-color: var(--orange); }
+.modal-btn.primary:hover { background: var(--deep-orange); border-color: var(--deep-orange); }
+.modal-note { font-size: 11px; color: var(--text-mute); margin-top: 12px; line-height: 1.6; padding: 10px 12px; background: var(--bg-input); border-radius: 8px; }
+
+/* ===== Mobile ===== */
+@media (max-width: 720px) {
+  .shell { grid-template-columns: 1fr; }
+  .aside { display: none; position: fixed; left:0; top:56px; bottom:0; width: 280px; z-index: 30; transform: translateX(-100%); transition: transform .25s var(--ease); }
+  .aside.show { display: block; transform: translateX(0); box-shadow: var(--shadow-lg); }
+  .menu-btn { display:flex !important; }
+  .chat-h-meta { display:none; }
+  .input-area { padding: 12px 14px 14px; }
+  .msgs { padding: 18px 14px 12px; }
+  .msg { max-width: 88%; font-size: 14px; }
+  .chat-header { padding: 14px 16px; }
+}
+.menu-btn { display: none; width: 38px; height: 38px; align-items:center; justify-content:center; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; cursor:pointer; }
+</style>
+</head>
+<body>
+
+<!-- Top bar -->
+<div class="topbar">
+  <button class="menu-btn" id="menuBtn" aria-label="메뉴">☰</button>
+  <a class="brand" href="./" aria-label="홈으로">
+    <span class="dot"></span>
+    <span>SUNNY <span style="color:var(--orange);font-weight:700">·</span> TEAM</span>
+  </a>
+  <span class="brand-label">11 personas</span>
+  <span class="spacer"></span>
+  <button class="key-btn" id="keyBtn" title="Anthropic API 키 설정">
+    <span id="keyIcon">🔑</span>
+    <span id="keyLabel">키 설정</span>
+  </button>
+  <a class="back-home" href="./">← 홈</a>
+</div>
+
+<div class="shell">
+
+  <!-- Sidebar -->
+  <aside class="aside" id="aside">
+    <div class="aside-section">
+      <div class="aside-label">에이전시 5팀</div>
+      <div id="agencyList"></div>
+    </div>
+    <div class="aside-section">
+      <div class="aside-label">4사 팀장</div>
+      <div id="companyList"></div>
+    </div>
+    <div class="aside-section">
+      <div class="aside-label">개인 비서</div>
+      <div id="genieList"></div>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <main class="main" id="main">
+    <div class="welcome" id="welcome">
+      <h2>안녕, <span>대표님</span></h2>
+      <p>왼쪽에서 페르소나를 선택해서 직접 일을 시킬 수 있습니다. 각 페르소나는 자기 분야의 누적 노하우를 바탕으로 응답합니다.</p>
+      <div class="hint">11 PERSONAS · BYOK · LOCAL HISTORY</div>
+    </div>
+  </main>
+
+</div>
+
+<!-- API Key Modal -->
+<div class="modal-bg" id="keyModal">
+  <div class="modal">
+    <h3>Anthropic API 키 설정</h3>
+    <p class="modal-sub">대표님 본인 키로 = Anthropic API 직접 호출. 키는 = 이 브라우저 localStorage에만 저장 = 서버 전송 X.</p>
+    <label for="apiKeyInput">API Key</label>
+    <input type="password" id="apiKeyInput" placeholder="sk-ant-api03-...">
+    <div class="modal-note">
+      <strong>BYOK (Bring Your Own Key)</strong> = 글로벌 룰 16번 정공법. 본인 키 = 본인 차감.<br>
+      • console.anthropic.com에서 발급<br>
+      • 키 = 브라우저에만 저장 = 다른 PC 사용 시 다시 입력 필요<br>
+      • 키 삭제 = 키 설정 → 빈 값 저장
+    </div>
+    <div class="modal-actions">
+      <button class="modal-btn" onclick="closeKeyModal()">취소</button>
+      <button class="modal-btn primary" onclick="saveKey()">저장</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ===== Personas =====
+const PERSONAS = [
+  // 에이전시 5팀
+  { id:'lumi',  name:'루미', en:'LUMI', role:'콘텐츠 PD', group:'agency', color:'#FBBF24',
+    sys:'당신은 SUNNY TEAM 루미(LUMI), 콘텐츠 프로덕션 PD. IP 발굴·AI 영상·시리즈 기획·시나리오 디렉팅. 대표님 30년 베테랑 CD·VFX 감독. 호칭 "대표님". "박다" 표현 금지(저장·기록·반영·추가 사용). 한국어. 미사여구 X. 풍부히. 모르면 "확인 필요" 정직히.' },
+  { id:'sori',  name:'소리', en:'SORI', role:'시나리오 작가', group:'agency', color:'#E879F9',
+    sys:'당신은 SUNNY TEAM 소리(SORI), 시나리오 작가. 트리트먼트·캐릭터·대사·humanizer. AI스러운 표현 체크리스트(번역투 X, 격언체 X, 관념어 X). 4사 IP 글쓰기. 호칭 "대표님". "박다" 금지. 한국어. 모르면 "확인 필요" 정직히.' },
+  { id:'maru',  name:'마루', en:'MARU', role:'마케팅', group:'agency', color:'#38BDF8',
+    sys:'당신은 SUNNY TEAM 마루(MARU), 마케팅. 제안서·보도자료·SNS·영업·이메일. 자기자랑 X. 기획 중심. 설득 톤. 상대방 모른다 가정. 호칭 "대표님". "박다" 금지. 한국어.' },
+  { id:'rian',  name:'리안', en:'RIAN', role:'디자인', group:'agency', color:'#FF6B9D',
+    sys:'당신은 SUNNY TEAM 리안(RIAN), 디자인. PPT·웹·UI·로고·CI/BI. 대표님 30년 디자인·VFX 베이스 = 후진 디자인 절대 X. 안티 템플릿. 슬라이드당 1메시지. Pretendard 필수. 디자인 시스템 v1 17부 의무(특히 13부 AI 슬롭 체크리스트). 다크 모드 자동 디폴트 X = 밝은 톤 디폴트. 호칭 "대표님". "박다" 금지.' },
+  { id:'teo',   name:'테오', en:'TEO',  role:'기술·개발', group:'agency', color:'#34D399',
+    sys:'당신은 SUNNY TEAM 테오(TEO), 기술·개발. 앱·웹·API·서버(Oracle Cloud)·자동화. GitHub nextsunny-ai. GitHub Pages·Vercel·Supabase. 먼저 동작하는 코드. HTML base64 내장. 기존 버전 오버라이트 X. 호칭 "대표님". "박다" 금지.' },
+  { id:'hana',  name:'하나', en:'HANA', role:'회계·법무·세무', group:'agency', color:'#FB923C',
+    sys:'당신은 SUNNY TEAM 하나(HANA), 회계·법무·세무(변호사·법무사·변리사·회계사 역할). 4사 회계·재무·법무·세무·미수금 L1~L5·사기 방지·계약서 1차 검토. 대표님 = 계약서 안 쓰고 일하다 사기당한 이력 = 계약서 없으면 경고. 호칭 "대표님". "박다" 금지.' },
+  // 4사 팀장
+  { id:'sera',  name:'세라', en:'SERA', role:'써니엔터 팀장', group:'company', color:'#FF6B9D',
+    sys:'당신은 SUNNY TEAM 세라(SERA), 써니엔터테인먼트 전담 팀장. 써니엔터 = 대표님 1순위(=대표님 살리기). 조선요괴전 체험전시 성공(예매율 2위·해외투어 협의 중·마리오아울렛 입점 제안), 귀문봉인기(고양산업진흥원 제출), PERO(아동애니 10부·KOCCA·EBS 제출). 직원: 맹성인 이사·김화령 본부장. 미션: AI 콘텐츠 컴퍼니 리브랜딩. 호칭 "대표님". "박다" 금지.' },
+  { id:'nea',   name:'네아', en:'NEA',  role:'넥스트아트 팀장', group:'company', color:'#6C63FF',
+    sys:'당신은 SUNNY TEAM 네아(NEA), 넥스트아트 팀장. 써니+김태훈 대표 2인 체제, 둘 다 VFX 감독 출신. 서울링 프로젝트(상암동 대관람차, 시행사 리츠, 예탁 중) 모니터링. 현재: 외주+지원사업+AI 콘텐츠 제작. KOCCA AI 콘텐츠 서류통과, Back to Mythology 고양산업진흥원 제출 완료. 호칭 "대표님". "박다" 금지.' },
+  { id:'mori',  name:'모리', en:'MORI', role:'굿즈모먼트 팀장', group:'company', color:'#3DDAB4',
+    sys:'당신은 SUNNY TEAM 모리(MORI), 굿즈모먼트 팀장. 국내 최초 웹툰 굿즈 백화점(연남동 4층). 써니 지분 40%, 공동대표. 현장 판매·수급 안 건드림. 성장 전략: 온라인몰·글로벌 팝업·투자유치·업무자동화. 전지적독자시점 팝업 전회 매진. 화산귀환 팝업 4/23~5/5. 브랜드: 민트 #3DDAB4. 호칭 "대표님". "박다" 금지.' },
+  { id:'birch', name:'버치', en:'BIRCH',role:'버치사운드 팀장', group:'company', color:'#FF3B30',
+    sys:'당신은 SUNNY TEAM 버치(BIRCH), 버치사운드(Birch Sound Global Pte. Ltd.) 팀장. 대표 김한수. 대표님 = 외부 CD(연봉). 글로벌 뮤직 페스티벌. NORY CITY 페스티벌 = 확정 X 디벨롭 중(2026-05-11). Han 대표 한국어 Brand Bible 수정본이 = 필립 영문 Creative Bible 위 최종. RAUKH(호흡) 백스테이지 철학 + 35~55 Anchor + 18~33 Active 이중 관객 + 진사·쪽·황토 한국 안료 톤 + NORY BELL 528Hz + 3-Track(Singapore Flagship 2027 May W2 + IP Licensing + Media Art Exhibition). 호칭 "대표님". "박다" 금지. "확정" 톤 X = "현재 제안 / 디벨롭 중".' },
+  // 개인 비서
+  { id:'genie', name:'지니', en:'GENIE',role:'대표님 개인 비서', group:'genie', color:'#34D399',
+    sys:'당신은 SUNNY TEAM 지니(GENIE), 대표님 개인 비서. 일정·메일·뉴스·건강·자기개발·영어·브랜딩·개인 재무. 텔레그램 단일 창구. 자동 분배·총괄 X = 대표님 명시한 페르소나에게만 라우팅. 모르는 건 모른다고. 호칭 "대표님". "박다" 금지.' },
+];
+
+const COMMON_CTX = `
+[SUNNY 공통 정보]
+대표: 유희정(Sunny Ryu), 30년 경력 크리에이티브 디렉터, 대한민국 최초 여성 VFX 감독, 국무총리 훈장.
+운영 회사: 써니엔터(대표 100%), 넥스트아트(공동운영 40%), 굿즈모먼트(공동대표 40%), 버치사운드(외부 CD 연봉).
+우선순위: 1.써니엔터 살리기 2.다른 회사 일 빨리 끝내기 3.패시브 인컴 구조.
+디자인: Pretendard 폰트 필수. 다크 모드 자동 디폴트 X. 디자인 시스템 마스터 v1 17부 의무. 디자인 후진 거 절대 불가.
+호칭 = "대표님" / "박다" 표현 금지 / 거짓말 금지(모르면 모른다고).
+`;
+
+// ===== State =====
+let currentPersona = null;
+const history = {}; // {personaId: [{role, content}]}
+const LS_KEY = 'sunny_team_apikey';
+const LS_HIST = 'sunny_team_history';
+
+function loadHistory() {
+  try { const h = localStorage.getItem(LS_HIST); if(h) Object.assign(history, JSON.parse(h)); } catch(e){}
+}
+function saveHistory() {
+  try { localStorage.setItem(LS_HIST, JSON.stringify(history)); } catch(e){}
+}
+function getKey() { return localStorage.getItem(LS_KEY) || ''; }
+function setKey(k) { if(k) localStorage.setItem(LS_KEY, k); else localStorage.removeItem(LS_KEY); updateKeyBtn(); }
+function updateKeyBtn() {
+  const btn = document.getElementById('keyBtn');
+  const lbl = document.getElementById('keyLabel');
+  const ico = document.getElementById('keyIcon');
+  if(getKey()) { btn.classList.add('has-key'); lbl.textContent = '키 저장됨'; ico.textContent = '✓'; }
+  else { btn.classList.remove('has-key'); lbl.textContent = '키 설정'; ico.textContent = '🔑'; }
+}
+
+// ===== Render sidebar =====
+function avatarBg(color) { return color; }
+function avatarInitial(p) { return p.name.charAt(0); }
+function renderSidebar() {
+  const groups = { agency: 'agencyList', company: 'companyList', genie: 'genieList' };
+  Object.keys(groups).forEach(g => {
+    const ul = document.getElementById(groups[g]);
+    ul.innerHTML = PERSONAS.filter(p => p.group === g).map(p => `
+      <div class="persona-item" data-id="${p.id}" onclick="selectPersona('${p.id}')">
+        <div class="p-avatar" style="background:${p.color}">${avatarInitial(p)}</div>
+        <div class="p-info">
+          <div class="p-name">${p.name} <span style="font-size:10px;color:var(--text-mute);font-family:var(--mono);font-weight:500">${p.en}</span></div>
+          <div class="p-role">${p.role}</div>
+        </div>
+      </div>
+    `).join('');
+  });
+}
+
+function selectPersona(id) {
+  const p = PERSONAS.find(x => x.id === id);
+  if(!p) return;
+  currentPersona = p;
+  document.querySelectorAll('.persona-item').forEach(el => el.classList.toggle('active', el.dataset.id === id));
+  if(window.innerWidth <= 720) document.getElementById('aside').classList.remove('show');
+  renderChat();
+}
+
+function renderChat() {
+  const p = currentPersona;
+  const main = document.getElementById('main');
+  if(!p) { main.innerHTML = ''; return; }
+  const msgs = (history[p.id] || []);
+  main.innerHTML = `
+    <div class="chat-header">
+      <div class="p-avatar" style="background:${p.color}">${avatarInitial(p)}</div>
+      <div>
+        <div class="chat-h-title">${p.name} <span style="font-family:var(--mono);font-size:11px;color:var(--text-mute);font-weight:500;letter-spacing:0.08em;margin-left:4px">${p.en}</span></div>
+        <div class="chat-h-sub">${p.role}</div>
+      </div>
+      <span class="chat-h-meta">CLAUDE SONNET</span>
+    </div>
+    <div class="msgs" id="msgs">${
+      msgs.length === 0
+        ? `<div class="msg system">${p.name}와 대화 시작. 본인 ANTHROPIC_API_KEY 박혀있어야 호출 가능.</div>`
+        : msgs.map(m => `<div class="msg ${m.role === 'user' ? 'user' : 'agent'}">${escapeHtml(m.content)}</div>`).join('')
+    }</div>
+    <div class="input-area">
+      <div class="input-row">
+        <textarea id="inp" placeholder="${p.name}에게 말하기..." rows="1" onkeydown="handleKey(event)" oninput="autoGrow(this)"></textarea>
+        <button class="send-btn" id="sendBtn" onclick="sendMessage()" title="보내기 (Enter)">↑</button>
+      </div>
+      <div class="input-hint">Enter 보내기 · Shift+Enter 줄바꿈 · 본인 키로 직접 호출 (BYOK)</div>
+    </div>
+  `;
+  const inp = document.getElementById('inp');
+  if(inp) inp.focus();
+  scrollBottom();
+}
+
+function escapeHtml(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function scrollBottom() { const c = document.getElementById('msgs'); if(c) c.scrollTop = c.scrollHeight; }
+function autoGrow(el) { el.style.height = 'auto'; el.style.height = Math.min(el.scrollHeight, 140) + 'px'; }
+function handleKey(e) { if(e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); } }
+
+async function sendMessage() {
+  if(!currentPersona) return;
+  const inp = document.getElementById('inp');
+  const text = inp.value.trim();
+  if(!text) return;
+
+  const apiKey = getKey();
+  if(!apiKey) { openKeyModal(); return; }
+
+  inp.value = ''; autoGrow(inp);
+  history[currentPersona.id] = history[currentPersona.id] || [];
+  history[currentPersona.id].push({role:'user', content: text});
+  saveHistory();
+  appendMsg('user', text);
+
+  const sendBtn = document.getElementById('sendBtn');
+  sendBtn.disabled = true;
+
+  const msgs = document.getElementById('msgs');
+  const ty = document.createElement('div');
+  ty.className = 'typing';
+  ty.innerHTML = `${currentPersona.name} 생각 중 <span class="d"></span><span class="d"></span><span class="d"></span>`;
+  msgs.appendChild(ty); scrollBottom();
+
+  try {
+    const reply = await callClaude(apiKey, currentPersona, history[currentPersona.id]);
+    ty.remove();
+    history[currentPersona.id].push({role:'assistant', content: reply});
+    saveHistory();
+    appendMsg('agent', reply);
+  } catch(e) {
+    ty.remove();
+    appendMsg('agent', `⚠️ 호출 실패: ${e.message}\n\n키 확인 → console.anthropic.com에서 발급한 sk-ant-... 키 박혔는지 확인`);
+  } finally {
+    sendBtn.disabled = false;
+  }
+}
+
+function appendMsg(role, text) {
+  const c = document.getElementById('msgs');
+  if(!c) return;
+  const d = document.createElement('div');
+  d.className = 'msg ' + (role === 'user' ? 'user' : 'agent');
+  d.textContent = text;
+  c.appendChild(d); scrollBottom();
+}
+
+async function callClaude(apiKey, persona, hist) {
+  const systemPrompt = COMMON_CTX + '\n\n' + persona.sys;
+  const messages = hist.slice(-20).map(m => ({role: m.role, content: m.content}));
+  const res = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'x-api-key': apiKey,
+      'anthropic-version': '2023-06-01',
+      'anthropic-dangerous-direct-browser-access': 'true'
+    },
+    body: JSON.stringify({
+      model: 'claude-sonnet-4-5-20250929',
+      max_tokens: 2048,
+      system: systemPrompt,
+      messages: messages
+    })
+  });
+  if(!res.ok) {
+    const err = await res.json().catch(() => ({}));
+    throw new Error(err.error?.message || `HTTP ${res.status}`);
+  }
+  const data = await res.json();
+  return data.content[0].text;
+}
+
+// ===== Modal =====
+function openKeyModal() {
+  document.getElementById('apiKeyInput').value = getKey();
+  document.getElementById('keyModal').classList.add('show');
+  setTimeout(() => document.getElementById('apiKeyInput').focus(), 50);
+}
+function closeKeyModal() { document.getElementById('keyModal').classList.remove('show'); }
+function saveKey() {
+  const v = document.getElementById('apiKeyInput').value.trim();
+  setKey(v);
+  closeKeyModal();
+}
+
+// ===== Mobile menu =====
+document.getElementById('menuBtn').addEventListener('click', () => {
+  document.getElementById('aside').classList.toggle('show');
+});
+
+// ===== Init =====
+document.getElementById('keyBtn').addEventListener('click', openKeyModal);
+document.getElementById('keyModal').addEventListener('click', (e) => { if(e.target.id === 'keyModal') closeKeyModal(); });
+loadHistory();
+renderSidebar();
+updateKeyBtn();
+
+// URL ?agent=birch 자동 선택
+const urlAgent = new URLSearchParams(location.search).get('agent');
+if(urlAgent && PERSONAS.find(p => p.id === urlAgent)) selectPersona(urlAgent);
+
+</script>
+</body>
+</html>
