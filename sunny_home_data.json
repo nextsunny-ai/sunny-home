@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-13T07:12:29+09:00",
+  "updated": "2026-05-14T01:22:31+09:00",
   "categories": [
     {
       "id": "ai",
@@ -14,11 +14,11 @@
           "image": ""
         },
         {
-          "title": "기업 문서 업무, AI 에이전트가 바꾼다… 솔루션 경쟁 본격화 - IT조선",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE92NEprWUdjdEFhUGVZOWlZZkpyMjcyV3pCQzdHMndLY0xURkZXeEpXYzdEaUtGc3EySGw1anJBTXA3MVVLUURyanlrU0pLNWRzWEdvUjk4MlQyMEJBdmpCaEVLcndoQmhjSWtJekhGTUTSAXRBVV95cUxNRl9XdXlOSjU2TjlqMWtwbDNhQnlVcmZFTGRQNjZMaEtYN1Z6Vm93dlB6OTA5RzVCcTgwZUx6dVd6UVRuS2tCNnRqVnBUeTl5MnlGNXlURzhOUmlzVk5lNFU3RlNDWkhJR3o5ZXk1c19mci0zQg?oc=5",
-          "source": "IT조선",
+          "title": "[AI 전환 커머스 2026 ⑥] AI 에이전트 앞에 선 한국 이커머스 - 바이라인네트워크",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE53dkQyUk5hLW1yX2NpcGVjb2ZGSVlyQmpHanZaeG5Lb3k2Q0pkSDY3NjJQemxlc1Z3dHR5RE1PVktidW9sTTdaS0gxdzZRdTVUcmpiVkRaRQ?oc=5",
+          "source": "바이라인네트워크",
           "summary": "",
-          "published": "2026-05-11",
+          "published": "2026-05-12",
           "image": ""
         },
         {
@@ -30,11 +30,11 @@
           "image": ""
         },
         {
-          "title": "한국, 생성형 AI 확산 속도 세계 1위…아시아가 새 성장 축 부상 - mstoday.co.kr",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBzaWNucVJIVzI5QmhTdUt4Z25FdTBZQWo2cnpLVUVweURkVVZZeUd2Sk5UbERGZ3QwaUlxYWpwSjI2NnB4YnZaME5hcnZFSkoyVk9oTkRCSHN4VXV1WnM4eFhyR2dyblJ2bmF5LQ?oc=5",
-          "source": "mstoday.co.kr",
+          "title": "“그림판인 줄 알았는데 AI였다”…챗GPT 이미지 2.0, 그림판 그림 열풍 이끌었다 - AI 매터스",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9DbVVaQ3Q1Y2JBZ1paVU9GZlpZbmdITGJ5V1FhNGd5dWlhdEk4dzlIbDkzLUpXcUdoMnpfQlU1SjhvYS11cmktd3dRM1ZXX2RrYnpkQg?oc=5",
+          "source": "AI 매터스",
           "summary": "",
-          "published": "2026-05-12",
+          "published": "2026-05-13",
           "image": ""
         },
         {
@@ -98,19 +98,11 @@
       "name": "공연",
       "items": [
         {
-          "title": "2026년 5월 8일 주말 파리에서 꼭 봐야 할 공연 - Sortir à Paris",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQTlR0N2VBT1ZjR0V4OURFMUtxdzdpaDJDNDZjdGgtcGZ5QnYwMFVNUmR2NzhZUV8wTWVyVVdiWWVmbWtjamlKN1E2a2hUSldLYWc0YkJGTWo5R1NkSWtTcWFXWHAyS2FMR09ocmlNUS1qYXh4TTlXbjJ4N3F1V2pSekp1SVJuRC02WWxTNGt3eU5HSzhmSWJHd3hiS3RuRXg0ZGlXQlVrRmRFampwaXJjTmJKN0VuLU9LU2d2WDNzX09sUGdLa0VTZjA5TTU?oc=5",
-          "source": "Sortir à Paris",
+          "title": "경기도극단 트로트뮤지컬, 2026년 5월 재공연…대표 레퍼토리로 자리매김 - 화성시민신문",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE82c04wZGJpRVJCTTl5NnRuMmZ3S0t4dE8xRU1mVjl4MDd1ZE9vcDJLUEdrVmhVYWI5Mm1uRkoyTmZMTGpJQkdVM3J2a09MVFA3bkZjSjFOX1QwbG1HbXV0ZjdDYmRaSkYta2xOVW50d3M?oc=5",
+          "source": "화성시민신문",
           "summary": "",
-          "published": "2026-05-07",
-          "image": ""
-        },
-        {
-          "title": "아산문화재단, 2026 우수공연초청 뮤지컬 ‘김종욱 찾기’ - 굿뉴스365",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1oWW9tbTBOM1MwTTRXZG9hMWxhMF9EYUtzbEJRY3hXTW9oc3M4R0xyTFZoV2kwc3o5UXluZldzeTdBZDMyd1NubTd3NU1nRmZrQWF4V29VN0o2Rk95a1JQV0JuWFF4enB0bUJGTW56NFdtSWM3Q3c?oc=5",
-          "source": "굿뉴스365",
-          "summary": "",
-          "published": "2026-05-07",
+          "published": "2026-05-13",
           "image": ""
         },
         {
@@ -122,6 +114,14 @@
           "image": ""
         },
         {
+          "title": "2026년 5월 8일 주말 파리에서 꼭 봐야 할 공연 - Sortir à Paris",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQTlR0N2VBT1ZjR0V4OURFMUtxdzdpaDJDNDZjdGgtcGZ5QnYwMFVNUmR2NzhZUV8wTWVyVVdiWWVmbWtjamlKN1E2a2hUSldLYWc0YkJGTWo5R1NkSWtTcWFXWHAyS2FMR09ocmlNUS1qYXh4TTlXbjJ4N3F1V2pSekp1SVJuRC02WWxTNGt3eU5HSzhmSWJHd3hiS3RuRXg0ZGlXQlVrRmRFampwaXJjTmJKN0VuLU9LU2d2WDNzX09sUGdLa0VTZjA5TTU?oc=5",
+          "source": "Sortir à Paris",
+          "summary": "",
+          "published": "2026-05-07",
+          "image": ""
+        },
+        {
           "title": "멜로망스·10CM 공연이 무료! 서울가든페스티벌 열린다 - 서울특별시",
           "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBCeVRvcVo4WFJFZHVad1g3NDJ1VEc2S3hFZ2NDcXdQbHI0czY2NzQzWGhOZkNZaFhfRENnRktjb2RfbW1FSGYzbU1GaTNKTkZDMzNBXzJ5R0o?oc=5",
           "source": "서울특별시",
@@ -130,11 +130,11 @@
           "image": ""
         },
         {
-          "title": "“두드림은 꿈이 된다” - 서울드럼페스티벌, DDP서 시민과 함께 울린다 - 고령자주택신문",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE8yZVhwallYS2MzZ2lfczZjZG1UbVVoMFZfQ2N0X1lRRWhIRUZCUEhVTnBkQktqUzNMeXBGODdoTGNKMjlrY3ZXTDJFTDRFVFBkdkNPNWdOb0VnUk9VWGhfWFV1RG5EQnRRRFVHMDVvUzhoQQ?oc=5",
-          "source": "고령자주택신문",
+          "title": "서울숲서 ‘2026 서울가든페스티벌’ 열린다…10㎝·멜로망스 공연 - 문화일보",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBWNy0xbmNINTh0ZVlUbVh4SE9xQl82VjFoV0RHSk1TQVU3NVBCZXoyd0l1eXU5SnhoLVVXeThVTkk1MGpUTDk3aHVpMTA5R29Y?oc=5",
+          "source": "문화일보",
           "summary": "",
-          "published": "2026-05-12",
+          "published": "2026-05-08",
           "image": ""
         }
       ]
@@ -144,27 +144,27 @@
       "name": "전시",
       "items": [
         {
+          "title": "MRAG, 포레스텔라 4집 협업 미디어아트 전시 선보여 - 조선비즈 - Chosunbiz",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUnZBbnFaelU0bkltamhPNnlqU0JtRkhudDVnc01PY29aQUhOdGQtTDRISXdQbExrRkxCUWdJMkxncEd6bzk4bkNCSWhNa25mNlF4YmpSLV9LQ2V3Y01odXJaZmdsLUkyTFVXZklPSzJJb1dtUWo1a3hrRkRWVjdpLWQ2WjA5dHAtWHdQU9IBoAFBVV95cUxPY0R1RnNtX2hhbkUyenBrRWNWY05jVmpza1U0SlVPdkQ2MTJRWWZsTkhfTlNERlk5VjF5X3Q2YlZ5ajZSU04zQ2U1WjdxeFgtQlhIVGQybF9BQi1RdmFPUjJlYV91RE9Cd2dWVUJ3cGxmckd2TGwwLUFhSF9xbVdUTlFGVmF3T25DODRpekQ5ZzRVa1lUWE1oR0V0cGNCcmh6?oc=5",
+          "source": "Chosunbiz",
+          "summary": "",
+          "published": "2026-05-13",
+          "image": ""
+        },
+        {
           "title": "대구 현대미술의 뿌리 달성습지, 정크미디어아트 전시 개최 - 자치행정신문",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOa1EzaXdIeXdJa1QwUThIc0hJMlFtdWxCdV9DRDBLUjU2SWVVQ3hkMXpYU1BSaHpkYm1JNU1xWUZhMEZwMHVQc1V0UmtrOTY2WFZBUFM1Si1tNktYTkZWLW02QjhreF9BVkxYZE4zZlgzNFVydnBzX0RRMmZfbVdHMVJfSXdNWXBwaHlDUTFiSzVPb1ZVVTg4aHltTFN1bGt2WlI5RmVpNnU?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQekt6aXp0RXFldmJGLWY2YUVmUmlCRDJZdEpabWlCWElPdWFjTjN5VnhqdkxhNEVrYk5oRW1DNDZ6a3JpUVZ1bHdQTTlVdHZ6TjRnUGUtODFxSlJoYld4VE1KTlVfdm5CQWZRTFJod2lUUF9Qblhoc0RQbUlXRUUzbHZoRjdhVjhESDhvWFo3NkRIUWgzdmhWanBfZTJrRWVKNEZRMklHTkgwWXByVWt3?oc=5",
           "source": "자치행정신문",
           "summary": "",
           "published": "2026-05-12",
           "image": ""
         },
         {
-          "title": "이번 주, 놓치면 아쉬울 이화여대 EMAP 미디어아트 축제 - 시크릿 서울",
-          "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5xaWExNlRSTmtNOW8xRDk2RmJNVWMzZ2ZpYTZBVnNhZGJnV3A2Xy1nM3NkRXE0eTJ3R09GQzNpaTdIcDFmOTFjN2xn?oc=5",
-          "source": "시크릿 서울",
+          "title": "이화여대 창립 140주년 기념 16일까지 미디어아트 축제 - 조선일보",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNTDdCUWQwc0JETGRSRTdCbDBFN2dHblVocVZYTUxSRlo3Vmd5SlcyQm5FSmlZR3dBdWVVOXBfZXczdGxGUy1wLVZCS2g5aEt5Q1FqcDMxUHhyWUt2NHB2a1FfTzg0SnVheFJ6S1NLbnNkRW5ZZTlidVBXYjBCeTJwQVQtcnFQb1d4Z3A3dk85VE1OR0x6?oc=5",
+          "source": "조선일보",
           "summary": "",
-          "published": "2026-05-12",
-          "image": ""
-        },
-        {
-          "title": "대구 달성습지, 정크미디어아트 융합 전시 개최 - 웹이코노미",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBuTjZzeTNRM3V1YVdHSjZaZ21uSUE4ZXpNSm5mMmw4UERxeGpndHcyREtYOGRuUFp1dXA3aDZGZTNwcjlmekcwU05hT3dsbUFtdDdhWjlUWGt6bEowRzF5Y1BiSW02Qktrb0Q1YTBjS3lOdw?oc=5",
-          "source": "웹이코노미",
-          "summary": "",
-          "published": "2026-05-12",
+          "published": "2026-05-13",
           "image": ""
         },
         {
@@ -214,9 +214,9 @@
           "image": ""
         },
         {
-          "title": "방미통위 VS 문체부 “크리에이터 지원, 내가 주무부처” 갈등 심화 조짐 - 전자신문",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5heS1HZ050eVFtdWtDZDZ0V0Y5RUhDN0x3YmI2aFpxdFJsdV9fY1U0bXdmRlpXOWZERV9MYS1DTlpzYWVVQ3UxcklFQml3QQ?oc=5",
-          "source": "전자신문",
+          "title": "문체부·콘진원, 우수 방송영상콘텐츠 제작 지원 공모 - 서울Pn",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNEF1Slhyd0hvSzR3dFZaa0lrUGtUQnBGc0RaRnRWYTNlQmhYVUVmaUt4R0pYY2xLaWJBdm8tU2pVR1d5WWdmR0l4QnF1NW00aE9pMGhQOWpsNE5xOUNpVENjbmh2dXVrVzJ0WDRvcVBvS0tJRUh5Z19sMm1vR0Z6c1hJd3g?oc=5",
+          "source": "서울Pn",
           "summary": "",
           "published": "2026-05-11",
           "image": ""
@@ -260,19 +260,19 @@
           "image": ""
         },
         {
-          "title": "브랜딩의 완성, 브랜드를 담은 디자인 - 디트릭스 박민환 대표 - 핸드메이커",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9BbTNRU3N0R2oxeTUyYU1kbmF6eFRmRE5lcy11UllqT29wQ0Zna0FRMVFZVkR4UHdRQUpzNGJFdW5WMllqT0k0dlZ4eDRrT0hfVmp4Q21IYWJkT1pXLXVhQTVOOFh6N2c?oc=5",
-          "source": "핸드메이커",
+          "title": "스레드 리브랜딩, 더 굵고 기울어진 새 로고 공개 - 디자인 나침반",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE93dzZEa1BzbW0tQW1TTjI1YXBLdng1MkhRQTdIWHJnNjlEb0R4QzROWEttbEtmdEkzY3VlV0tna1Z2X1dCeWZsdjVLNkVUNW01TTBkVU9SVEhta01wc1l6ZEN6UHEzcFdvR1VCZ0J2QQ?oc=5",
+          "source": "디자인 나침반",
           "summary": "",
           "published": "2026-05-12",
           "image": ""
         },
         {
-          "title": "[현창석의 문화광장] ‘브랜드 제주’ 6시간의 제주 체험 디자인 - 한라일보",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1NRWhJYlRoVW1OcGhVVkNUYk5KMFNXclh1c2ZkM25RVUFuMHFDVDZYUW9xaW40eXE4T3RGdlloSF9zcXY3U2NGTnUtS1o3RzRIdVRSNjFaYnRvdGd1QUFRVHFMbml5c0xFMFE?oc=5",
-          "source": "한라일보",
+          "title": "브랜딩의 완성, 브랜드를 담은 디자인 - 디트릭스 박민환 대표 - 핸드메이커",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9BbTNRU3N0R2oxeTUyYU1kbmF6eFRmRE5lcy11UllqT29wQ0Zna0FRMVFZVkR4UHdRQUpzNGJFdW5WMllqT0k0dlZ4eDRrT0hfVmp4Q21IYWJkT1pXLXVhQTVOOFh6N2c?oc=5",
+          "source": "핸드메이커",
           "summary": "",
-          "published": "2026-05-11",
+          "published": "2026-05-12",
           "image": ""
         }
       ]
@@ -281,6 +281,14 @@
       "id": "festival",
       "name": "페스티벌",
       "items": [
+        {
+          "title": "“페스티벌을 넘어 하나의 문화 플랫폼으로”···‘힙합플레이야 페스티벌 2026’ 2만 5000여 관객 동원 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1JejUtM3FYMGNJRGF3Z1FBOTZ5akYzZkEzUGhaVVBaUUdVV05CQmFIZGVOSHhSVnlEOFJIVmVSXzZ3V1VNUURtSU5ydllUZ2M?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-05-08",
+          "image": ""
+        },
         {
           "title": "음악의 축제 2026: 현대 한국 음악 신이 구에미 박물관으로 초대된다 - Sortir à Paris",
           "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNUkk5OVZOT1RST3dBX0xiLWJoYjJRSEU5d3BEYThHYmh5RGRKbWtuVFpfOHloREJ6RWozeWhXQW9UdDMtZzRTSjZkN1V0aGdOSUF5NFo0UWdIVlRtdWtzalhiaktQVXBBVDhyZE9MY3BGd0Vpb0EyeFAyQ1lDank0bXVZR3AyU3hpZGZrMXlHeFk0QkJTRDVtRlhHMmR6cmp3cXVveVJIaFliaTZhNUZnOHpfdkNlUG1HdmtlNkc4VWNjOUZIWV9xY1A2clNUbUFyZ2dGTmVYVF92YlludktlTmlMVFlsVFI0QmkwaDBQMjVybm9sU3VQV09JaVZLa2Z5OEpEbEg2bnhtTWN0?oc=5",
@@ -295,14 +303,6 @@
           "source": "네이트",
           "summary": "",
           "published": "2026-05-12",
-          "image": ""
-        },
-        {
-          "title": "“페스티벌을 넘어 하나의 문화 플랫폼으로”···‘힙합플레이야 페스티벌 2026’ 2만 5000여 관객 동원 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1JejUtM3FYMGNJRGF3Z1FBOTZ5akYzZkEzUGhaVVBaUUdVV05CQmFIZGVOSHhSVnlEOFJIVmVSXzZ3V1VNUURtSU5ydllUZ2M?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-05-08",
           "image": ""
         },
         {

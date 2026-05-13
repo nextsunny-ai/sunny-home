@@ -1,27 +1,27 @@
 {
-  "updated": "2026-05-12T22:12:38.315035+00:00",
+  "updated": "2026-05-13T16:22:42.647924+00:00",
   "source": "github.com/nextsunny-ai",
   "repos": [
-    {
-      "name": "sunny-story-maker",
-      "description": "한국 시나리오 작가용 AI 협업 도구 — 13매체 + 다중 타겟 리뷰 + 8종 산출물 + OSMU",
-      "html_url": "https://github.com/nextsunny-ai/sunny-story-maker",
-      "homepage": "https://sunny-story-maker.vercel.app",
-      "language": "TypeScript",
-      "pushed_at": "2026-05-12T18:56:14Z",
-      "has_pages": false,
-      "pages_url": "",
-      "stars": 0
-    },
     {
       "name": "sunny-home",
       "description": "Sunny personal home",
       "html_url": "https://github.com/nextsunny-ai/sunny-home",
       "homepage": "",
       "language": "HTML",
-      "pushed_at": "2026-05-12T16:22:54Z",
+      "pushed_at": "2026-05-13T16:20:05Z",
       "has_pages": true,
       "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
+      "stars": 0
+    },
+    {
+      "name": "sunny-story-maker",
+      "description": "한국 시나리오 작가용 AI 협업 도구 — 13매체 + 다중 타겟 리뷰 + 8종 산출물 + OSMU",
+      "html_url": "https://github.com/nextsunny-ai/sunny-story-maker",
+      "homepage": "https://sunny-story-maker.vercel.app",
+      "language": "TypeScript",
+      "pushed_at": "2026-05-13T14:43:47Z",
+      "has_pages": false,
+      "pages_url": "",
       "stars": 0
     },
     {
@@ -30,7 +30,7 @@
       "html_url": "https://github.com/nextsunny-ai/agent-sunnytoon",
       "homepage": "http://agency.sunnytoon.com/",
       "language": "HTML",
-      "pushed_at": "2026-05-12T12:55:03Z",
+      "pushed_at": "2026-05-13T00:44:50Z",
       "has_pages": true,
       "pages_url": "https://nextsunny-ai.github.io/agent-sunnytoon/",
       "stars": 0
