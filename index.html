@@ -1662,7 +1662,7 @@ function openPersonaModal(id) {
         <button class="pm-send" id="pmSend" type="button" onclick="pmSend()">↑</button>
       </div>
       <input type="file" id="pmFileInp" accept="image/*" style="display:none" onchange="pmOnImagePicked(this)">
-      <div class="pm-input-hint">Enter 보내기 · 🖼️ 이미지 · 🎤 음성 · BYOK · ${getApiKey()?'키 저장됨':'키 미설정 → 먼저 키 설정 필요'}</div>
+      <div class="pm-input-hint">Enter 보내기 · 🎤 음성 · 텔레그램 봇 자동 열림 · 비용 0 (v2)</div>
     </div>
   `;
   document.getElementById('personaModal').classList.add('show');
