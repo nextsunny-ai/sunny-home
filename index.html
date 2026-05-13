@@ -770,6 +770,41 @@ body {
 
   .footer { padding: 24px 16px; flex-direction: column; align-items: flex-start; }
 }
+
+/* ★ 2026-05-14: 달력·뉴스탭·Admin Hub */
+.hero-time-mini { font-family: var(--mono); font-size: 13px; color: var(--text-mute); letter-spacing: 0.04em; margin-bottom: 18px; }
+.time-sep { margin: 0 8px; opacity: 0.4; }
+
+.calendar-wrap { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 14px; padding: 14px 16px; }
+.cal-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+.cal-title { font-size: 16px; font-weight: 700; letter-spacing: -0.01em; }
+.cal-nav { width: 28px; height: 28px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-elevated); cursor: pointer; font-size: 16px; color: var(--text-sub); transition: all .12s var(--ease); }
+.cal-nav:hover { background: var(--orange-soft); color: var(--deep-orange); border-color: var(--orange); }
+.cal-weekdays { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; margin-bottom: 4px; }
+.cal-weekdays span { text-align: center; font-size: 10px; color: var(--text-mute); font-family: var(--mono); letter-spacing: 0.08em; padding: 4px 0; }
+.cal-weekdays span:first-child { color: #E05A1B; } /* 일요일 */
+.cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; }
+.cal-day { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; font-size: 12px; border-radius: 6px; color: var(--text); transition: all .1s var(--ease); position: relative; cursor: default; }
+.cal-day.empty { color: transparent; }
+.cal-day.other { color: var(--text-mute); opacity: 0.4; }
+.cal-day.sun { color: #E05A1B; }
+.cal-day.today { background: var(--orange); color: #fff; font-weight: 700; }
+.cal-day.has-event::after { content: ""; position: absolute; bottom: 3px; left: 50%; transform: translateX(-50%); width: 4px; height: 4px; border-radius: 50%; background: var(--orange); }
+.cal-day.today.has-event::after { background: #fff; }
+
+/* 뉴스 탭 (인트로 안) */
+.news-tabs { display: flex; flex-wrap: wrap; gap: 6px; }
+.news-tab { padding: 4px 10px; border-radius: 999px; font-size: 11px; color: var(--text-sub); background: var(--bg-elevated); border: 1px solid var(--border); cursor: pointer; font-family: var(--mono); letter-spacing: 0.04em; transition: all .12s var(--ease); }
+.news-tab:hover { color: var(--text); border-color: var(--text-mute); }
+.news-tab.active { background: var(--orange); color: #fff; border-color: var(--orange); }
+
+/* Admin Hub card hover */
+.admin-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); border-color: var(--orange) !important; }
+
+@media (max-width: 768px) {
+  .calendar-wrap { padding: 12px; }
+  .cal-day { font-size: 11px; }
+}
 </style>
 
 <!-- PWA v2 (2026-05-14): manifest + theme + service worker -->
@@ -811,27 +846,51 @@ body {
 
   <!-- ═══ HERO ═══ -->
   <section class="hero" id="hero">
+    <!-- ★ 2026-05-14: 인트로 = 왼쪽 달력 + 오른쪽 뉴스(탭) -->
     <div class="hero-left">
       <div class="hero-eyebrow" id="greeting">Good morning, Sunny</div>
-      <div class="hero-time" id="timeDisplay">--:--</div>
-      <div class="hero-date" id="dateDisplay"></div>
-      <div class="hero-weather">
-        <span style="font-size:1.2rem">&#9925;</span>
-        <span class="temp" id="weatherTemp">--&deg;</span>
-        <span class="desc" id="weatherDesc">Loading...</span>
+      <div class="hero-time-mini">
+        <span id="timeDisplay">--:--</span>
+        <span class="time-sep">·</span>
+        <span id="dateDisplay"></span>
+        <span class="time-sep">·</span>
+        <span style="font-size:0.9em">⛅ <span id="weatherTemp">--°</span> <span id="weatherDesc">Loading</span></span>
       </div>
 
-      <!-- English (= 시간 밑 통합, 옛 English Strip에서 이동) -->
-      <div class="hero-english">
+      <!-- ★ 달력 (= 한 달 view + 오늘 표시 + 마감 점) -->
+      <div class="calendar-wrap" id="calendarWrap">
+        <div class="cal-head">
+          <button class="cal-nav" id="calPrev" aria-label="이전 달">‹</button>
+          <div class="cal-title" id="calTitle">—</div>
+          <button class="cal-nav" id="calNext" aria-label="다음 달">›</button>
+        </div>
+        <div class="cal-weekdays">
+          <span>일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span>
+        </div>
+        <div class="cal-grid" id="calGrid"></div>
+      </div>
+
+      <!-- English = 작은 카드 (= 옛 위치 유지) -->
+      <div class="hero-english" style="margin-top:18px;">
         <span class="he-label">Business English</span>
         <span class="he-phrase" id="engPhrase">"Let's circle back on that."</span>
         <span class="he-meaning" id="engMeaning">그 건은 나중에 다시 논의하죠.</span>
-        <span class="he-example" id="engExample">We're running out of time — let's circle back on the budget issue after lunch.</span>
       </div>
     </div>
 
     <div class="hero-right">
-      <div class="hero-right-label">News Pick</div>
+      <div class="hero-right-label">News</div>
+      <!-- ★ 카테고리 탭 = 옛 NEWS 섹션에서 옮김 -->
+      <div class="news-tabs" id="newsTabs" style="margin-top:6px;margin-bottom:14px;">
+        <span class="news-tab active" data-cat="all">All</span>
+        <span class="news-tab" data-cat="ai">AI</span>
+        <span class="news-tab" data-cat="performance">공연</span>
+        <span class="news-tab" data-cat="exhibition">전시</span>
+        <span class="news-tab" data-cat="content_ip">콘텐츠IP</span>
+        <span class="news-tab" data-cat="design">디자인</span>
+        <span class="news-tab" data-cat="grants">지원사업</span>
+        <span class="news-tab" data-cat="festival">페스티벌</span>
+      </div>
       <div class="pick-list" id="newsPick"></div>
     </div>
   </section>
@@ -871,36 +930,76 @@ body {
     <div class="quick-links-grid" id="quickLinksGrid"></div>
   </section>
 
-  <!-- ═══ ACTIVITY ═══ (Team Activity · 옛 mid col3에서 분리) -->
-  <section class="activity-section reveal" id="activity-section" style="padding: 0 56px 40px; max-width: 1400px; margin: 0 auto;">
-    <div class="section-eyebrow">Team Activity</div>
-    <div class="section-header">Recent</div>
-    <div id="noticeList"></div>
-  </section>
 
-  <!-- ═══ NEWS ═══ -->
-  <section class="news-section reveal" id="news-section">
-    <div class="section-eyebrow">Daily Digest</div>
-    <div class="section-header">News</div>
-    <div class="news-tabs" id="newsTabs">
-      <span class="news-tab active" data-cat="all">All</span>
-      <span class="news-tab" data-cat="ai">AI</span>
-      <span class="news-tab" data-cat="performance">공연</span>
-      <span class="news-tab" data-cat="exhibition">전시</span>
-      <span class="news-tab" data-cat="content_ip">콘텐츠IP</span>
-      <span class="news-tab" data-cat="design">디자인</span>
-      <span class="news-tab" data-cat="grants">지원사업</span>
-      <span class="news-tab" data-cat="festival">페스티벌</span>
+  <!-- ★ 2026-05-14: 옛 NEWS·DEADLINES 섹션 제거 (= 달력·뉴스 = 인트로로 이동) -->
+
+  <!-- ═══ ADMIN HUB ═══ (= 3 프로그램 관리 진입 + 페르소나) -->
+  <section class="admin-section reveal" id="admin-section" style="padding: 56px 56px 48px; max-width: 1400px; margin: 0 auto;">
+    <div class="section-eyebrow">Admin Hub</div>
+    <div class="section-header">통합 관리</div>
+    <div style="color:var(--text-mute);font-size:0.78rem;margin-top:-22px;margin-bottom:18px;">SUNNY 3 프로그램 + 페르소나 공개 설정 · 한 곳 진입</div>
+
+    <div class="admin-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;">
+      <!-- Story Maker -->
+      <a href="https://story.sunnytoon.com" target="_blank" class="admin-card" style="background:var(--bg-elevated);border:1px solid var(--border);border-radius:14px;padding:18px;text-decoration:none;color:inherit;transition:all .15s var(--ease);display:flex;flex-direction:column;gap:10px;">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <div style="width:40px;height:40px;border-radius:10px;background:var(--orange-soft);display:flex;align-items:center;justify-content:center;font-size:20px;">📝</div>
+          <div>
+            <div style="font-size:15px;font-weight:700;">Story Maker</div>
+            <div style="font-size:10px;color:var(--text-mute);font-family:var(--mono);">story.sunnytoon.com</div>
+          </div>
+        </div>
+        <div style="font-size:12px;color:var(--text-sub);line-height:1.5;">시나리오·드라마·다큐·웹소설 작성 도구. V2.12 LIVE.</div>
+        <div style="display:flex;gap:6px;margin-top:auto;">
+          <a href="https://story.sunnytoon.com/manage" target="_blank" style="flex:1;padding:8px;background:var(--orange);color:#fff;border-radius:8px;text-align:center;font-size:12px;text-decoration:none;font-weight:600;">Admin →</a>
+        </div>
+      </a>
+
+      <!-- Agent Pro -->
+      <a href="https://agent.sunnytoon.com" target="_blank" class="admin-card" style="background:var(--bg-elevated);border:1px solid var(--border);border-radius:14px;padding:18px;text-decoration:none;color:inherit;transition:all .15s var(--ease);display:flex;flex-direction:column;gap:10px;">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <div style="width:40px;height:40px;border-radius:10px;background:var(--orange-soft);display:flex;align-items:center;justify-content:center;font-size:20px;">🤖</div>
+          <div>
+            <div style="font-size:15px;font-weight:700;">Agent Pro</div>
+            <div style="font-size:10px;color:var(--text-mute);font-family:var(--mono);">agent.sunnytoon.com</div>
+          </div>
+        </div>
+        <div style="font-size:12px;color:var(--text-sub);line-height:1.5;">12명 페르소나 + 회사별 분기 + BYOK. 데스크탑 앱 빌드 중.</div>
+        <div style="display:flex;gap:6px;margin-top:auto;">
+          <a href="https://agent.sunnytoon.com/admin.html" target="_blank" style="flex:1;padding:8px;background:var(--orange);color:#fff;border-radius:8px;text-align:center;font-size:12px;text-decoration:none;font-weight:600;">Admin →</a>
+        </div>
+      </a>
+
+      <!-- AI Pro Note -->
+      <a href="https://supabase.com/dashboard/project/pddasonkizwviwqzdhpu" target="_blank" class="admin-card" style="background:var(--bg-elevated);border:1px solid var(--border);border-radius:14px;padding:18px;text-decoration:none;color:inherit;transition:all .15s var(--ease);display:flex;flex-direction:column;gap:10px;opacity:0.85;">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <div style="width:40px;height:40px;border-radius:10px;background:var(--orange-soft);display:flex;align-items:center;justify-content:center;font-size:20px;">📓</div>
+          <div>
+            <div style="font-size:15px;font-weight:700;">AI Pro Note</div>
+            <div style="font-size:10px;color:var(--text-mute);font-family:var(--mono);">출시 대기 (DEV)</div>
+          </div>
+        </div>
+        <div style="font-size:12px;color:var(--text-sub);line-height:1.5;">회의록·메모 도구. Supabase ai-pronote 백엔드.</div>
+        <div style="display:flex;gap:6px;margin-top:auto;">
+          <span style="flex:1;padding:8px;background:var(--bg);color:var(--text-mute);border-radius:8px;text-align:center;font-size:12px;border:1px dashed var(--border);">출시 후 Admin</span>
+        </div>
+      </a>
+
+      <!-- Persona Sharing -->
+      <a href="/admin.html" class="admin-card" style="background:var(--bg-elevated);border:1px solid var(--border);border-radius:14px;padding:18px;text-decoration:none;color:inherit;transition:all .15s var(--ease);display:flex;flex-direction:column;gap:10px;">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <div style="width:40px;height:40px;border-radius:10px;background:var(--orange-soft);display:flex;align-items:center;justify-content:center;font-size:20px;">👥</div>
+          <div>
+            <div style="font-size:15px;font-weight:700;">페르소나 공개 설정</div>
+            <div style="font-size:10px;color:var(--text-mute);font-family:var(--mono);">home.sunnytoon.com/admin</div>
+          </div>
+        </div>
+        <div style="font-size:12px;color:var(--text-sub);line-height:1.5;">12명 페르소나 = 외부 회사·게스트 공개 토글.</div>
+        <div style="display:flex;gap:6px;margin-top:auto;">
+          <span style="flex:1;padding:8px;background:var(--orange);color:#fff;border-radius:8px;text-align:center;font-size:12px;font-weight:600;">토글 →</span>
+        </div>
+      </a>
     </div>
-    <div class="news-grid" id="newsGrid"></div>
-  </section>
-
-  <!-- ═══ DEADLINES ═══ -->
-  <section class="deadlines-section reveal" id="deadlines-section">
-    <div class="section-eyebrow">Upcoming</div>
-    <div class="section-header">This Week</div>
-    <div style="color:var(--text-mute);font-size:0.78rem;margin-top:-22px;margin-bottom:4px;">지원사업 · 납품 · 계약 · 마감</div>
-    <div class="deadlines-grid" id="deadlinesGrid"></div>
   </section>
 
   <!-- ═══ OUTPUTS ═══ -->
@@ -2129,46 +2228,101 @@ async function loadExternalData() {
 }
 loadExternalData();
 
-// ═══ DEADLINES ═══
+// ═══ DEADLINES → CALENDAR DOTS (= 2026-05-14: 옛 grid 제거, 달력에 점 표시) ═══
+let DEADLINE_ITEMS = [];
+
 async function loadDeadlines() {
-  const grid = document.getElementById('deadlinesGrid');
   let items = [];
   try {
     const res = await fetch('data/deadlines.json', { cache: 'no-store' });
     if (res.ok) items = (await res.json()).items || [];
   } catch(e) {}
-
   if (!items.length) {
-    items = [
-      { title: 'KOFIC 2026 하반기 지원사업 서류', due: '2026-05-10', category: '지원사업', org: 'KOFIC' },
-      { title: '굿즈모먼트 화산귀환 콜라보 1차 납품', due: '2026-05-04', category: '납품', org: 'MORI' },
-      { title: '버치사운드 NORY CITY 본계약 검토', due: '2026-05-08', category: '계약', org: 'BIRCH' },
-      { title: '넥스트아트 김감독 외주 1차 컷 회신', due: '2026-05-02', category: '회신', org: 'NEA' },
-    ];
+    // fallback = 빈 배열 (= 옛 회사·IP 자료 제거, 사장님이 박을 자료)
+    items = [];
   }
-
-  const today = new Date(); today.setHours(0,0,0,0);
-  const enriched = items.map(d => {
-    const due = new Date(d.due);
-    const diff = Math.ceil((due - today) / 86400000);
-    let urgency = '';
-    if (diff <= 2) urgency = 'urgent';
-    else if (diff <= 5) urgency = 'soon';
-    return { ...d, diff, urgency };
-  }).sort((a,b) => a.diff - b.diff);
-
-  grid.innerHTML = '';
-  enriched.forEach(d => {
-    const card = document.createElement('div');
-    card.className = 'deadline-card ' + d.urgency;
-    const dday = d.diff <= 0 ? 'TODAY' : ('D-' + d.diff);
-    card.innerHTML =
-      '<div class="dday">' + dday + '</div>' +
-      '<div class="title">' + escHtml(d.title) + '</div>' +
-      '<div class="meta">' + escHtml(d.category || '') + (d.org ? ' &middot; ' + escHtml(d.org) : '') + '</div>';
-    grid.appendChild(card);
-  });
+  DEADLINE_ITEMS = items;
+  renderCalendar(); // 데이터 박힌 후 달력 다시 렌더 (= 점 표시)
 }
+
+// ═══ CALENDAR (= 2026-05-14 신설) ═══
+let CAL_VIEW = new Date(); // 보고 있는 달 (= 오늘 디폴트)
+
+function renderCalendar() {
+  const titleEl = document.getElementById('calTitle');
+  const gridEl = document.getElementById('calGrid');
+  if (!titleEl || !gridEl) return;
+
+  const year = CAL_VIEW.getFullYear();
+  const month = CAL_VIEW.getMonth();
+  titleEl.textContent = year + '. ' + String(month+1).padStart(2,'0');
+
+  const firstDay = new Date(year, month, 1).getDay();
+  const lastDate = new Date(year, month+1, 0).getDate();
+  const prevLast = new Date(year, month, 0).getDate();
+
+  const today = new Date();
+  const isCurrentMonth = (today.getFullYear() === year && today.getMonth() === month);
+
+  // deadline 날짜 set (= 점 표시용)
+  const eventDays = new Set();
+  DEADLINE_ITEMS.forEach(d => {
+    const due = new Date(d.due);
+    if (due.getFullYear() === year && due.getMonth() === month) {
+      eventDays.add(due.getDate());
+    }
+  });
+
+  gridEl.innerHTML = '';
+  // 옛 달 = 빈칸으로 (= other-month 표시 없이 단순)
+  for (let i = 0; i < firstDay; i++) {
+    const d = document.createElement('div');
+    d.className = 'cal-day other';
+    d.textContent = prevLast - firstDay + i + 1;
+    gridEl.appendChild(d);
+  }
+  // 이번 달
+  for (let day = 1; day <= lastDate; day++) {
+    const d = document.createElement('div');
+    let cls = 'cal-day';
+    const dow = new Date(year, month, day).getDay();
+    if (dow === 0) cls += ' sun';
+    if (isCurrentMonth && today.getDate() === day) cls += ' today';
+    if (eventDays.has(day)) cls += ' has-event';
+    d.className = cls;
+    d.textContent = day;
+    // 이벤트 있는 날 = title 박음 (= hover 시 마감 내용)
+    if (eventDays.has(day)) {
+      const events = DEADLINE_ITEMS.filter(it => {
+        const due = new Date(it.due);
+        return due.getFullYear() === year && due.getMonth() === month && due.getDate() === day;
+      });
+      d.title = events.map(e => (e.title || '') + (e.org ? ' (' + e.org + ')' : '')).join('\n');
+    }
+    gridEl.appendChild(d);
+  }
+  // 다음 달 = 빈칸 (7배수 맞춤)
+  const totalCells = firstDay + lastDate;
+  const remain = (7 - (totalCells % 7)) % 7;
+  for (let i = 1; i <= remain; i++) {
+    const d = document.createElement('div');
+    d.className = 'cal-day other';
+    d.textContent = i;
+    gridEl.appendChild(d);
+  }
+}
+
+// 달력 네비게이션
+document.getElementById('calPrev')?.addEventListener('click', () => {
+  CAL_VIEW.setMonth(CAL_VIEW.getMonth() - 1);
+  renderCalendar();
+});
+document.getElementById('calNext')?.addEventListener('click', () => {
+  CAL_VIEW.setMonth(CAL_VIEW.getMonth() + 1);
+  renderCalendar();
+});
+
+renderCalendar();
 loadDeadlines();
 
 // ═══ OUTPUTS ═══
