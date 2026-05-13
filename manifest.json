@@ -1,0 +1,43 @@
+{
+  "name": "SUNNY HOME — 대표님 v2",
+  "short_name": "SUNNY",
+  "description": "12명 페르소나 + 텔레그램 봇 통합 PWA. 비용 0 (Pro/Max 정액 안).",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#FF8C42",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "지니",
+      "short_name": "지니",
+      "url": "/?persona=genie"
+    },
+    {
+      "name": "리안",
+      "short_name": "리안",
+      "url": "/?persona=rian"
+    },
+    {
+      "name": "테오",
+      "short_name": "테오",
+      "url": "/?persona=teo"
+    }
+  ],
+  "lang": "ko",
+  "categories": ["productivity", "business"]
+}

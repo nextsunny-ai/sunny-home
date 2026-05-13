@@ -771,6 +771,23 @@ body {
   .footer { padding: 24px 16px; flex-direction: column; align-items: flex-start; }
 }
 </style>
+
+<!-- PWA v2 (2026-05-14): manifest + theme + service worker -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#FF8C42">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="SUNNY">
+<link rel="apple-touch-icon" href="icon-192.png">
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('sw.js')
+        .then(function(reg) { console.log('[SW] registered:', reg.scope); })
+        .catch(function(err) { console.warn('[SW] register fail:', err); });
+    });
+  }
+</script>
 </head>
 <body>
 
@@ -824,13 +841,13 @@ body {
   <section class="mid reveal" id="mid">
     <div class="mid-col" id="team-section">
       <div style="display:flex; align-items:baseline; gap:10px;">
-        <div class="section-eyebrow">12 Personas · BYOK</div>
+        <div class="section-eyebrow">12 Personas · v2 텔레그램 봇 (비용 0)</div>
       </div>
       <div class="section-header">Team</div>
       <div class="team-quick" id="teamQuick"></div>
-      <button class="team-key-btn-mini" id="teamKeyBtn" type="button">
+      <button class="team-key-btn-mini" id="teamKeyBtn" type="button" style="display:none;">
         <span id="teamKeyIcon">🔑</span>
-        <span id="teamKeyLabel">API 키 설정</span>
+        <span id="teamKeyLabel">옛 BYOK (사용 X)</span>
       </button>
     </div>
     <div class="mid-col">
@@ -1741,49 +1758,43 @@ function pmToggleMic() {
   try { pmRecognition.start(); } catch(e) { alert('음성 인식 시작 실패: ' + e.message); }
 }
 
+// ★ v2 (2026-05-14): BYOK·API key 호출 제거 → 텔레그램 봇 deep link 모델
+// 대표님 비용 0 (= Pro/Max OAuth 정액 안에서 헤드리스 워커가 처리)
+// 흐름: 페르소나 선택 → 메시지 입력 → 텔레그램 봇 자동 열림 → '전송' → 워커 처리 → 텔레그램 알림
+const TG_BOT_USERNAME = 'NextSunnybot';
+
 async function pmSend() {
   if(!currentTeamPersona) return;
   const inp = document.getElementById('pmInp');
   const t = inp.value.trim();
-  if(!t && pmAttachments.length === 0) return;
-  const apiKey = getApiKey();
-  if(!apiKey) { openKeyModal(); return; }
+  if(!t) { alert('메시지를 입력해주세요. (음성 또는 키보드)'); return; }
 
-  // 이미지 첨부 있으면 = content 배열 (Anthropic vision) / 없으면 = string
-  const currentAttach = pmAttachments.slice();
-  const attachUrls = currentAttach.map(a => a.dataUrl);
-  let userContentForAPI;
-  if (currentAttach.length > 0) {
-    userContentForAPI = [
-      ...currentAttach.map(a => ({ type:'image', source:{ type:'base64', media_type:a.media_type, data:a.data } })),
-      { type:'text', text: t || '이 이미지 봐주세요.' }
-    ];
-  } else {
-    userContentForAPI = t;
-  }
+  // "리안야 IR 표지 시안 3개" 형식으로 페르소나 호출 자동 생성
+  const personaCall = currentTeamPersona.name + '야 ' + t;
+  const tgUrl = 'https://t.me/' + TG_BOT_USERNAME + '?text=' + encodeURIComponent(personaCall);
 
-  inp.value=''; pmAutoGrow(inp);
-  pmAttachments = []; pmRenderAttachBar();
+  // 텔레그램 앱·웹 자동 열기 (휴대폰=앱 / PC=웹)
+  window.open(tgUrl, '_blank');
+
+  // 채팅 UI에 기록
+  pmAppendMsg('user', t);
   teamHist[currentTeamPersona.id] = teamHist[currentTeamPersona.id] || [];
-  teamHist[currentTeamPersona.id].push({role:'user', content: userContentForAPI, _displayText: t, _attachUrls: attachUrls});
+  teamHist[currentTeamPersona.id].push({role:'user', content: t, _displayText: t});
   saveTeamHist();
-  pmAppendMsg('user', t, attachUrls);
-  const sendBtn = document.getElementById('pmSend'); sendBtn.disabled = true;
-  const msgs = document.getElementById('pmMsgs');
-  const ty = document.createElement('div'); ty.className = 'pm-typing'; ty.id='pmTyping';
-  ty.textContent = currentTeamPersona.name + ' 생각 중...';
-  msgs.appendChild(ty); pmScrollBottom();
-  try {
-    const reply = await callAnthropic(apiKey, currentTeamPersona, teamHist[currentTeamPersona.id]);
-    document.getElementById('pmTyping')?.remove();
-    teamHist[currentTeamPersona.id].push({role:'assistant', content: reply});
-    saveTeamHist();
-    pmAppendMsg('agent', reply);
-  } catch(e) {
-    document.getElementById('pmTyping')?.remove();
-    pmAppendMsg('agent', `⚠️ 호출 실패: ${e.message}\n\nconsole.anthropic.com에서 발급한 sk-ant-... 키 확인.`);
-  } finally { sendBtn.disabled = false; }
+  inp.value = '';
+  pmAutoGrow(inp);
+  pmAttachments = []; pmRenderAttachBar();
+
+  const guide = '✅ 텔레그램 봇으로 전달됨.\n\n'
+    + '휴대폰 = 텔레그램 앱이 열렸어요. "전송" 한 번 누르면 끝.\n'
+    + 'PC = 텔레그램 웹 열림. 같은 방식.\n\n'
+    + '결과 = 텔레그램 알림으로 도착 (= 15초~몇 분).\n'
+    + '비용 = 0원 (= Pro/Max 정액 안 헤드리스 워커 처리).';
+  pmAppendMsg('agent', guide);
 }
+
+// 옛 BYOK callAnthropic 함수 = 더 이상 호출 X (= 위 pmSend가 텔레그램 deep link 사용)
+// 단 = 옛 코드 그대로 보존 (= 글로벌 룰 17 = 옛 자료 보존)
 
 async function callAnthropic(apiKey, persona, hist) {
   const systemPrompt = TEAM_COMMON + '\n\n' + persona.sys;
