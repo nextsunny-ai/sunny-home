@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SUNNY 통합 관리 — 3 프로그램 + 페르소나</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+:root {
+  --bg: #FAF8F4;
+  --bg-elevated: #FFFFFF;
+  --bg-card-hover: #F5F1E6;
+  --border: rgba(20,18,15,0.08);
+  --text: #14120F;
+  --text-sub: #4F4A42;
+  --text-mute: #8A8278;
+  --orange: #FF8C42;
+  --deep-orange: #E05A1B;
+  --orange-soft: #FFF0E2;
+  --green: #1F4D3F;
+  --green-soft: #E8F0EC;
+  --shadow-sm: 0 1px 2px rgba(20,18,15,0.04);
+  --shadow-md: 0 4px 16px rgba(20,18,15,0.06);
+  --shadow-lg: 0 8px 32px rgba(20,18,15,0.08);
+  --font: 'Pretendard Variable', 'Pretendard', sans-serif;
+  --mono: 'SF Mono', 'JetBrains Mono', monospace;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+body { font-family: var(--font); background: var(--bg); color: var(--text); min-height: 100vh; padding: 32px 24px; }
+.wrap { max-width: 1100px; margin: 0 auto; }
+
+.top { display: flex; align-items: center; gap: 12px; margin-bottom: 32px; flex-wrap: wrap; }
+.back { font-size: 13px; color: var(--text-sub); padding: 8px 14px; border-radius: 999px; border: 1px solid var(--border); text-decoration: none; transition: all .15s var(--ease); }
+.back:hover { background: var(--bg-card-hover); color: var(--text); }
+h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.02em; }
+.eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 0.16em; color: var(--orange); text-transform: uppercase; font-family: var(--mono); margin-bottom: 6px; }
+.sub { color: var(--text-sub); font-size: 15px; line-height: 1.6; margin-bottom: 32px; max-width: 720px; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; margin-bottom: 32px; }
+.card { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 16px; padding: 24px; transition: all .2s var(--ease); display: flex; flex-direction: column; gap: 14px; }
+.card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); border-color: var(--orange); }
+.card-head { display: flex; align-items: center; gap: 12px; }
+.card-icon { width: 48px; height: 48px; border-radius: 12px; background: var(--orange-soft); display: flex; align-items: center; justify-content: center; font-size: 24px; flex-shrink: 0; }
+.card-title { font-size: 18px; font-weight: 700; letter-spacing: -0.01em; }
+.card-domain { font-size: 11px; color: var(--text-mute); font-family: var(--mono); }
+.card-desc { font-size: 13px; color: var(--text-sub); line-height: 1.5; }
+.card-stats { display: flex; gap: 16px; padding: 12px 14px; background: var(--bg); border-radius: 10px; }
+.stat { flex: 1; }
+.stat-num { font-size: 20px; font-weight: 700; font-family: var(--mono); }
+.stat-label { font-size: 10px; color: var(--text-mute); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 2px; font-family: var(--mono); }
+.card-actions { display: flex; gap: 8px; margin-top: auto; }
+.btn { padding: 10px 16px; border-radius: 10px; border: 1px solid var(--border); background: var(--bg-elevated); cursor: pointer; font: inherit; font-size: 13px; color: var(--text); text-decoration: none; transition: all .15s var(--ease); flex: 1; text-align: center; font-weight: 500; }
+.btn:hover { border-color: var(--orange); color: var(--orange); }
+.btn.primary { background: var(--orange); color: #fff; border-color: var(--orange); }
+.btn.primary:hover { background: var(--deep-orange); border-color: var(--deep-orange); }
+.status-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 6px; }
+.status-dot.live { background: #22C55E; }
+.status-dot.beta { background: #FFB020; }
+.status-dot.dev { background: var(--text-mute); }
+.status-label { font-size: 11px; font-family: var(--mono); letter-spacing: 0.04em; color: var(--text-sub); }
+
+.section-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 0.16em; color: var(--text-mute); text-transform: uppercase; font-family: var(--mono); margin-top: 32px; margin-bottom: 12px; }
+.section-h { font-size: 22px; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 16px; }
+
+.persona-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 8px; }
+.persona-card { padding: 14px; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 10px; text-align: center; transition: all .12s var(--ease); }
+.persona-card:hover { border-color: var(--orange); transform: translateY(-1px); }
+.persona-name { font-size: 14px; font-weight: 600; }
+.persona-en { font-size: 10px; color: var(--text-mute); font-family: var(--mono); letter-spacing: 0.08em; margin-top: 2px; }
+
+footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 12px; color: var(--text-mute); text-align: center; }
+@media (max-width: 640px) {
+  body { padding: 20px 14px; }
+  h1 { font-size: 24px; }
+  .card { padding: 18px; }
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="top">
+    <a href="/" class="back">← 홈으로</a>
+    <div>
+      <div class="eyebrow">Admin Hub</div>
+      <h1>통합 관리</h1>
+    </div>
+  </div>
+
+  <p class="sub">
+    SUNNY 3 프로그램 (= 스토리메이커 · 에이전트 프로 · AI 프로 노트) + 페르소나 공개 설정 = 한 곳에서 진입·관리.
+    각 카드 클릭 = 해당 서비스 admin 페이지로 이동 (= 본인 nextsunny@gmail.com 로그인 필수).
+  </p>
+
+  <!-- ════════════════ 3 프로그램 카드 ════════════════ -->
+  <div class="grid">
+
+    <!-- 1. 스토리메이커 -->
+    <div class="card">
+      <div class="card-head">
+        <div class="card-icon">📝</div>
+        <div>
+          <div class="card-title">Story Maker</div>
+          <div class="card-domain">story.sunnytoon.com</div>
+        </div>
+      </div>
+      <div class="card-desc">시나리오·드라마·다큐·웹소설 작성 도구. 작가용 데스크탑 앱 + 웹.</div>
+      <div class="card-stats">
+        <div class="stat">
+          <div class="stat-num" id="story-users">—</div>
+          <div class="stat-label">가입자</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" id="story-version">V2.12</div>
+          <div class="stat-label">버전</div>
+        </div>
+      </div>
+      <div>
+        <span class="status-dot live"></span><span class="status-label">LIVE</span>
+      </div>
+      <div class="card-actions">
+        <a href="https://story.sunnytoon.com" target="_blank" class="btn">사이트</a>
+        <a href="https://story.sunnytoon.com/manage" target="_blank" class="btn primary">Admin →</a>
+      </div>
+    </div>
+
+    <!-- 2. 에이전트 프로 -->
+    <div class="card">
+      <div class="card-head">
+        <div class="card-icon">🤖</div>
+        <div>
+          <div class="card-title">Agent Pro</div>
+          <div class="card-domain">agent.sunnytoon.com</div>
+        </div>
+      </div>
+      <div class="card-desc">12명 페르소나 + 회사별 분기 + BYOK. 데스크탑 앱 (= 맥 .dmg + 윈도우 .exe) 빌드 중.</div>
+      <div class="card-stats">
+        <div class="stat">
+          <div class="stat-num" id="agent-users">—</div>
+          <div class="stat-label">가입자</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" id="agent-version">V1.0</div>
+          <div class="stat-label">버전</div>
+        </div>
+      </div>
+      <div>
+        <span class="status-dot live"></span><span class="status-label">LIVE</span>
+      </div>
+      <div class="card-actions">
+        <a href="https://agent.sunnytoon.com" target="_blank" class="btn">사이트</a>
+        <a href="https://agent.sunnytoon.com/admin.html" target="_blank" class="btn primary">Admin →</a>
+      </div>
+    </div>
+
+    <!-- 3. AI 프로 노트 -->
+    <div class="card">
+      <div class="card-head">
+        <div class="card-icon">📓</div>
+        <div>
+          <div class="card-title">AI Pro Note</div>
+          <div class="card-domain">(미정 — 출시 대기)</div>
+        </div>
+      </div>
+      <div class="card-desc">회의록·메모 도구. Supabase ai-pronote 백엔드 박힘. 다음 출시 후보.</div>
+      <div class="card-stats">
+        <div class="stat">
+          <div class="stat-num" id="pronote-users">—</div>
+          <div class="stat-label">가입자</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" id="pronote-version">개발</div>
+          <div class="stat-label">상태</div>
+        </div>
+      </div>
+      <div>
+        <span class="status-dot dev"></span><span class="status-label">DEV</span>
+      </div>
+      <div class="card-actions">
+        <a href="https://supabase.com/dashboard/project/pddasonkizwviwqzdhpu" target="_blank" class="btn">Supabase</a>
+        <button class="btn primary" disabled style="opacity:0.5;cursor:not-allowed;">Admin (출시 후)</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ════════════════ 페르소나 공개 설정 ════════════════ -->
+  <div class="section-eyebrow">Persona Sharing</div>
+  <h2 class="section-h">페르소나 공개·비공개 설정</h2>
+  <p class="sub">옛 admin.html = 12명 페르소나 토글 = 외부 회사에 공유할 페르소나 선택.</p>
+  <div style="margin-top: 8px;">
+    <a href="/admin.html" class="btn primary" style="display: inline-block; max-width: 280px;">→ 페르소나 토글 페이지</a>
+  </div>
+
+  <!-- ════════════════ 빠른 진입 ════════════════ -->
+  <div class="section-eyebrow">Quick Links</div>
+  <h2 class="section-h">자주 쓰는 진입점</h2>
+  <div class="persona-grid">
+    <a href="https://supabase.com/dashboard/projects" target="_blank" class="persona-card">
+      <div class="persona-name">Supabase</div>
+      <div class="persona-en">DASHBOARD</div>
+    </a>
+    <a href="https://github.com/nextsunny-ai" target="_blank" class="persona-card">
+      <div class="persona-name">GitHub</div>
+      <div class="persona-en">REPOS</div>
+    </a>
+    <a href="https://console.cloud.google.com/apis/credentials?project=interbuilder" target="_blank" class="persona-card">
+      <div class="persona-name">Google Cloud</div>
+      <div class="persona-en">OAUTH</div>
+    </a>
+    <a href="https://console.anthropic.com/settings/billing" target="_blank" class="persona-card">
+      <div class="persona-name">Anthropic</div>
+      <div class="persona-en">BILLING</div>
+    </a>
+    <a href="https://resend.com/emails" target="_blank" class="persona-card">
+      <div class="persona-name">Resend</div>
+      <div class="persona-en">SMTP</div>
+    </a>
+    <a href="https://t.me/NextSunnybot" target="_blank" class="persona-card">
+      <div class="persona-name">Telegram</div>
+      <div class="persona-en">BOT</div>
+    </a>
+  </div>
+
+  <footer>
+    SUNNY 통합 관리 v1 · 2026-05-14 · home.sunnytoon.com/manage
+  </footer>
+</div>
+
+<script>
+// 가입자 수 = 비공개 정보 = 콘솔 로그 X. 미래 = Supabase Edge Function으로 = 인증 후 fetch
+// 현재 = placeholder. 실제 통계 = 각 admin 페이지에서 확인.
+</script>
+
+</body>
+</html>
