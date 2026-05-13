@@ -1,16 +1,16 @@
 {
-  "updated": "2026-05-13T16:22:42.647924+00:00",
+  "updated": "2026-05-13T22:13:18.147281+00:00",
   "source": "github.com/nextsunny-ai",
   "repos": [
     {
-      "name": "sunny-home",
-      "description": "Sunny personal home",
-      "html_url": "https://github.com/nextsunny-ai/sunny-home",
-      "homepage": "",
+      "name": "agent-sunnytoon",
+      "description": "Agency Pro 1.0 — agency.sunnytoon.com (12명 페르소나 + 회사별 분기 + BYOK)",
+      "html_url": "https://github.com/nextsunny-ai/agent-sunnytoon",
+      "homepage": "http://agency.sunnytoon.com/",
       "language": "HTML",
-      "pushed_at": "2026-05-13T16:20:05Z",
+      "pushed_at": "2026-05-13T20:49:09Z",
       "has_pages": true,
-      "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
+      "pages_url": "https://nextsunny-ai.github.io/agent-sunnytoon/",
       "stars": 0
     },
     {
@@ -19,20 +19,31 @@
       "html_url": "https://github.com/nextsunny-ai/sunny-story-maker",
       "homepage": "https://sunny-story-maker.vercel.app",
       "language": "TypeScript",
-      "pushed_at": "2026-05-13T14:43:47Z",
+      "pushed_at": "2026-05-13T20:35:21Z",
       "has_pages": false,
       "pages_url": "",
       "stars": 0
     },
     {
-      "name": "agent-sunnytoon",
-      "description": "Agency Pro 1.0 — agency.sunnytoon.com (12명 페르소나 + 회사별 분기 + BYOK)",
-      "html_url": "https://github.com/nextsunny-ai/agent-sunnytoon",
-      "homepage": "http://agency.sunnytoon.com/",
+      "name": "sunny-home",
+      "description": "Sunny personal home",
+      "html_url": "https://github.com/nextsunny-ai/sunny-home",
+      "homepage": "",
       "language": "HTML",
-      "pushed_at": "2026-05-13T00:44:50Z",
+      "pushed_at": "2026-05-13T18:57:58Z",
       "has_pages": true,
-      "pages_url": "https://nextsunny-ai.github.io/agent-sunnytoon/",
+      "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
+      "stars": 0
+    },
+    {
+      "name": "sunny-v2-pwa",
+      "description": "Sunny v2 PWA (휴대폰 홈화면 앱) - 비용 0 텔레그램 봇 deep link",
+      "html_url": "https://github.com/nextsunny-ai/sunny-v2-pwa",
+      "homepage": "",
+      "language": "HTML",
+      "pushed_at": "2026-05-13T16:28:16Z",
+      "has_pages": false,
+      "pages_url": "",
       "stars": 0
     },
     {
@@ -121,17 +132,6 @@
       "pushed_at": "2026-04-25T17:43:24Z",
       "has_pages": true,
       "pages_url": "https://nextsunny-ai.github.io/museum-master/",
-      "stars": 0
-    },
-    {
-      "name": "nory-eminem-ar-demo",
-      "description": "NORY CITY × EMINEM AR alpha demo — Enter the City / Become Eminem. Single-file WebAR.",
-      "html_url": "https://github.com/nextsunny-ai/nory-eminem-ar-demo",
-      "homepage": "",
-      "language": "HTML",
-      "pushed_at": "2026-04-16T09:29:28Z",
-      "has_pages": true,
-      "pages_url": "https://nextsunny-ai.github.io/nory-eminem-ar-demo/",
       "stars": 0
     }
   ]
