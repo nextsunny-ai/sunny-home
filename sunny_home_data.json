@@ -1,16 +1,16 @@
 {
-  "updated": "2026-05-15T01:11:09+09:00",
+  "updated": "2026-05-15T07:12:10+09:00",
   "categories": [
     {
       "id": "ai",
       "name": "AI 트렌드",
       "items": [
         {
-          "title": "'시리'의 대변신... 애플, iOS 27서 'AI 에이전트'로 전면 재설계 - AI타임스",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9DSW1adUZTRWJoanVTOWVMZlZ5Y29lSmtPeEp1YVdHMDJfWU1oMElWbFd0YXZrdFpNbENicU4zZ1pCWERYWENYaXMwRzdWWE9WV2xla3RnMTNQbXJkZEw1ZWk2eXRIdkVjX3c?oc=5",
+          "title": "애플, 앱스토어에 'AI 에이전트' 승인 검토...\"앱 사라져도 수익 구조 고수\" - AI타임스",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBDTGNXbkU0akFjS0hxamh5SnNzN2ZiYmxBOWhrRW9wMTVJTW11VWpnakhWM0hRVXg0aUtLZm9GYlBKTE0yX0YyME1DNjVzUm52dFhCUmlVaTFNNDZSdWVmUkRHcTJKS2VKQmc?oc=5",
           "source": "AI타임스",
           "summary": "",
-          "published": "2026-05-13",
+          "published": "2026-05-14",
           "image": ""
         },
         {
@@ -38,11 +38,11 @@
           "image": ""
         },
         {
-          "title": "이미지팩토리, AI 기반 배너 생성·리사이즈 자동화 기능 제공 - 경상일보",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA1UWVnOW5NX0NCVXZfdUVoVzBjXy1OT2ZQQmlUMEpHNVFpQXFISk9uQnVmRDRRcmRHYTlXRDMxTHdvbkRJMUlkX1pGWXBZbU5TWDhJaXBxTmo2ZHQwdXh4Q1VkWThYZUY2bEQ3dg?oc=5",
-          "source": "경상일보",
+          "title": "\"이미지 AI 판 바꿨다\"…오픈AI, 이미지 생성의 새로운 시대 '챗GPT 이미지 2.0' 공개 - 인공지능신문",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5QOWM1SmNVRVpyRWxHUU54SGxQbEFtSEtzMTR6NEVRdHV3dFRDZlJXRFRYQ0pFV25tLVJxSGtmUWxESE9aSTRzN1R2QXdKaGdHM3dudjZuSWs5b25sUDU3U1ZvaVZ5MDQ?oc=5",
+          "source": "인공지능신문",
           "summary": "",
-          "published": "2026-05-14",
+          "published": "2026-04-22",
           "image": ""
         }
       ]
@@ -98,6 +98,14 @@
       "name": "공연",
       "items": [
         {
+          "title": "경기도극단 트로트뮤지컬 ‘명랑가족’ 초연 호평 이어 2026년 가정의 달 레퍼토리로 귀환 - 와이뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9kSVpjTm1nYmhHR2p6ZWZRWGk5cldzMzB1bzVYbGwzdXRBc25HUzJFZEVtY3pQMXdzZW9PTTJ0dDdxU25oUFlwdWRhbHF4cUJ3VGs2S2w1TmtnaS1HVjJ1N3RqYw?oc=5",
+          "source": "와이뉴스",
+          "summary": "",
+          "published": "2026-05-14",
+          "image": ""
+        },
+        {
           "title": "2026년 Ascension 연휴 동안 파리에서 꼭 봐야 할 공연 - Sortir à Paris",
           "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNNFlYTGo3QkhrM2FQOWNBeXoxbGdodURqakVKV3F3d2tfdldPcEIzdzJYWkJXSzlGby1JX2VWOFNZcGFMOF9rWFdhaGhtTFU0NTk1TkVfTkJJOHNIZTZYakJkdF9LMmNEX2JHMTB2T3JPVVQxbGdkQWs5ZG9NV2Q5bTdxUzBrZlBmWDdYbk9Kc2h1T09uRXZ3bF9DeUYwVDBSLWlPTGRlcFRtQkpXLUNmMHM5TU9kVzlDbE4zSGtma2VkTHg3Z0w5aXB2eDlVcndrSmU2c2tUYUdfa0l0UWc?oc=5",
           "source": "Sortir à Paris",
@@ -106,19 +114,11 @@
           "image": ""
         },
         {
-          "title": "(재)아산문화재단, 2026 꿈의 오케스트라 ‘아산’ 기획공연 개최... 뮤지컬 배우 서범석・김소향 · 김동준 협연 - fnewstv.com",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0tbEo2NU9HS2N5Rk5yNVNCcl8teEkyLThLUzhnSEd5bDBTam14b3R1MlVhbE9FRWQ3c25aOTRMd2ZHakk2SXd2VnJtaDJqN3Ryb2p1RUtNcS1CY2hqUVBIanpzN3h2VEhsb0toZEdINFE?oc=5",
-          "source": "fnewstv.com",
+          "title": "경기도극단 트로트뮤지컬, 2026년 5월 재공연…대표 레퍼토리로 자리매김 - 화성시민신문",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE82c04wZGJpRVJCTTl5NnRuMmZ3S0t4dE8xRU1mVjl4MDd1ZE9vcDJLUEdrVmhVYWI5Mm1uRkoyTmZMTGpJQkdVM3J2a09MVFA3bkZjSjFOX1QwbG1HbXV0ZjdDYmRaSkYta2xOVW50d3M?oc=5",
+          "source": "화성시민신문",
           "summary": "",
-          "published": "2026-05-14",
-          "image": ""
-        },
-        {
-          "title": "SDG그룹·서울시, 공동 후원 ‘2026 고교 뮤지컬 콘테스트’ 개최 - 공감신문",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5ycXNtR3NLTGF0ZC13NXZwTzFGcjVrRVVrWUZRZ0YxZjZ5amxseWNYRDBOeXNlLTlCOFJJRVdWSm1BTVlCS3VBWWRuTzRUNVVYMTd4TjBmbGlnbWVJUEljU1VuUnQ0TDZX?oc=5",
-          "source": "공감신문",
-          "summary": "",
-          "published": "2026-05-14",
+          "published": "2026-05-13",
           "image": ""
         },
         {
@@ -160,11 +160,11 @@
           "image": ""
         },
         {
-          "title": "이번 주, 놓치면 아쉬울 이화여대 EMAP 미디어아트 축제 - 시크릿 서울",
-          "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5xaWExNlRSTmtNOW8xRDk2RmJNVWMzZ2ZpYTZBVnNhZGJnV3A2Xy1nM3NkRXE0eTJ3R09GQzNpaTdIcDFmOTFjN2xn?oc=5",
-          "source": "시크릿 서울",
+          "title": "MRAG, 포레스텔라 4집 협업 미디어아트 전시 선보여 - 조선비즈 - Chosunbiz",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUnZBbnFaelU0bkltamhPNnlqU0JtRkhudDVnc01PY29aQUhOdGQtTDRISXdQbExrRkxCUWdJMkxncEd6bzk4bkNCSWhNa25mNlF4YmpSLV9LQ2V3Y01odXJaZmdsLUkyTFVXZklPSzJJb1dtUWo1a3hrRkRWVjdpLWQ2WjA5dHAtWHdQU9IBoAFBVV95cUxPY0R1RnNtX2hhbkUyenBrRWNWY05jVmpza1U0SlVPdkQ2MTJRWWZsTkhfTlNERlk5VjF5X3Q2YlZ5ajZSU04zQ2U1WjdxeFgtQlhIVGQybF9BQi1RdmFPUjJlYV91RE9Cd2dWVUJ3cGxmckd2TGwwLUFhSF9xbVdUTlFGVmF3T25DODRpekQ5ZzRVa1lUWE1oR0V0cGNCcmh6?oc=5",
+          "source": "Chosunbiz",
           "summary": "",
-          "published": "2026-05-12",
+          "published": "2026-05-13",
           "image": ""
         },
         {
@@ -198,19 +198,19 @@
           "image": ""
         },
         {
-          "title": "콘진원, “AI콘텐츠 창작자 모여라”…양성 지원사업 - 문화일보",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE0xWmVkU010LVdtNGxJZjBZcnNjSVVsbVJoNUZaMXVKdWhYZ0s3d04tdVloM2V1c1dyYkNkc3Q0VnE5ZWhRUFpPU1ZHcVJJU0RZ?oc=5",
-          "source": "문화일보",
-          "summary": "",
-          "published": "2026-05-13",
-          "image": ""
-        },
-        {
           "title": "한국콘텐츠진흥원, 2026 콘텐츠 스타트업 지원사업 공고 - 인디게임닷컴",
           "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE55UF90V193cXJmdDdqSi1JTEdQMWZFSlZMZ1kwVFJTaUgtSGtfdlBncUVGQjYtek04VlNVcE53d2tFMkdjZE9QQm9TQm_SAVRBVV95cUxObjdEWE1OUGVFbUVjc1pxcVhhZ2kzY1hfSkdBNmhMblFxNTUtUDVBdDA2b3NDVVl3WnVyMUZoQ1ZCYXhfemM0RWNxNlZtQ0ZnY1BIS1Y?oc=5",
           "source": "인디게임닷컴",
           "summary": "",
           "published": "2026-03-23",
+          "image": ""
+        },
+        {
+          "title": "콘진원, “AI콘텐츠 창작자 모여라”…양성 지원사업 - 문화일보",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE0xWmVkU010LVdtNGxJZjBZcnNjSVVsbVJoNUZaMXVKdWhYZ0s3d04tdVloM2V1c1dyYkNkc3Q0VnE5ZWhRUFpPU1ZHcVJJU0RZ?oc=5",
+          "source": "문화일보",
+          "summary": "",
+          "published": "2026-05-13",
           "image": ""
         },
         {
@@ -283,18 +283,18 @@
       "items": [
         {
           "title": "K-클래식이 중심에 선 ‘베를린 아시안 뮤직 페스티벌 BAMF 2026’, 베를린 콘체르트하우스에서 열린다 - K-Classic News",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1SdHdEWVdfZkxyRE44Y3RQdE83c1VjM21zdkhPWEhPSHMzYjRxbmg2XzdpZGQ4QW9xV0hqYmRremNucGJQV2ptV2hnRi1iZC1TcWFwN2FBTU9nNGxTMzJPOUh3?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE40UkpGMXdkXzk4MUs2d0JHeGJacEFSS1RPWWNyQkpRLXdXWGxoZWwzQno0LTE2bldKN05RdEFQUzlZSWJVMGo1UTEtMC1PVDM1WHc3SGVTdWVnSUpUcTFCQTFjN29SUGs?oc=5",
           "source": "K-Classic News",
           "summary": "",
           "published": "2026-05-14",
           "image": ""
         },
         {
-          "title": "“페스티벌을 넘어 하나의 문화 플랫폼으로”···‘힙합플레이야 페스티벌 2026’ 2만 5000여 관객 동원 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1JejUtM3FYMGNJRGF3Z1FBOTZ5akYzZkEzUGhaVVBaUUdVV05CQmFIZGVOSHhSVnlEOFJIVmVSXzZ3V1VNUURtSU5ydllUZ2M?oc=5",
-          "source": "v.daum.net",
+          "title": "베를린에 퍼지는 아리랑…'BAMF 2026' - 뉴시스",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE83MDhhQ1N2WS1faHU5YkpYalc0U1N0Q2FyZ1RVU0YwdHV5WnNoUE0xb2JoVnVnVFVUSUJBRlU4Ylc2cXlFV0pkb3BCU0liZGtwZUxLbjlLcE4yZWV6ZFR1eXdCbnZZMEROMHhTN2NBaFhIZ0pOOUszdtIBeEFVX3lxTE83MDhhQ1N2WS1faHU5YkpYalc0U1N0Q2FyZ1RVU0YwdHV5WnNoUE0xb2JoVnVnVFVUSUJBRlU4Ylc2cXlFV0pkb3BCU0liZGtwZUxLbjlLcE4yZWV6ZFR1eXdCbnZZMEROMHhTN2NBaFhIZ0pOOUszdg?oc=5",
+          "source": "뉴시스",
           "summary": "",
-          "published": "2026-05-08",
+          "published": "2026-05-14",
           "image": ""
         },
         {
