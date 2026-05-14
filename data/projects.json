@@ -1,14 +1,25 @@
 {
-  "updated": "2026-05-13T22:13:18.147281+00:00",
+  "updated": "2026-05-14T16:11:19.900976+00:00",
   "source": "github.com/nextsunny-ai",
   "repos": [
+    {
+      "name": "sunny-home",
+      "description": "Sunny personal home",
+      "html_url": "https://github.com/nextsunny-ai/sunny-home",
+      "homepage": "",
+      "language": "HTML",
+      "pushed_at": "2026-05-14T16:04:59Z",
+      "has_pages": true,
+      "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
+      "stars": 0
+    },
     {
       "name": "agent-sunnytoon",
       "description": "Agency Pro 1.0 — agency.sunnytoon.com (12명 페르소나 + 회사별 분기 + BYOK)",
       "html_url": "https://github.com/nextsunny-ai/agent-sunnytoon",
       "homepage": "http://agency.sunnytoon.com/",
       "language": "HTML",
-      "pushed_at": "2026-05-13T20:49:09Z",
+      "pushed_at": "2026-05-14T13:00:45Z",
       "has_pages": true,
       "pages_url": "https://nextsunny-ai.github.io/agent-sunnytoon/",
       "stars": 0
@@ -19,20 +30,20 @@
       "html_url": "https://github.com/nextsunny-ai/sunny-story-maker",
       "homepage": "https://sunny-story-maker.vercel.app",
       "language": "TypeScript",
-      "pushed_at": "2026-05-13T20:35:21Z",
+      "pushed_at": "2026-05-14T12:35:15Z",
       "has_pages": false,
       "pages_url": "",
       "stars": 0
     },
     {
-      "name": "sunny-home",
-      "description": "Sunny personal home",
-      "html_url": "https://github.com/nextsunny-ai/sunny-home",
+      "name": "ai-pronote",
+      "description": "AI PRONOTE — 회의 녹음·받아쓰기·AI 회의록 자동 정리 (= 본인 Claude Pro/Max 구독 = 비용 0)",
+      "html_url": "https://github.com/nextsunny-ai/ai-pronote",
       "homepage": "",
       "language": "HTML",
-      "pushed_at": "2026-05-13T18:57:58Z",
-      "has_pages": true,
-      "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
+      "pushed_at": "2026-05-14T00:13:59Z",
+      "has_pages": false,
+      "pages_url": "",
       "stars": 0
     },
     {
@@ -121,17 +132,6 @@
       "pushed_at": "2026-04-28T14:22:52Z",
       "has_pages": true,
       "pages_url": "https://nextsunny-ai.github.io/nextart-home/",
-      "stars": 0
-    },
-    {
-      "name": "museum-master",
-      "description": "Museum Master - 3D Virtual Museum Game (Lego-style casual game)",
-      "html_url": "https://github.com/nextsunny-ai/museum-master",
-      "homepage": "",
-      "language": "HTML",
-      "pushed_at": "2026-04-25T17:43:24Z",
-      "has_pages": true,
-      "pages_url": "https://nextsunny-ai.github.io/museum-master/",
       "stars": 0
     }
   ]
