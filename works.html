@@ -495,9 +495,36 @@ document.querySelectorAll('.sb-filter').forEach(b => {
   });
 });
 
-// 첫 로드 + 5초마다 갱신
+// 첫 로드 + SSE 실시간 자체 (= 5초 polling 폐기 = 2026-05-15)
 fetchList();
-setInterval(fetchList, 5000);
+
+let sseSource = null;
+function startSSE() {
+  if (sseSource) sseSource.close();
+  sseSource = new EventSource(`${API_BASE}/api/works/stream`);
+
+  sseSource.addEventListener("works-update", (e) => {
+    try {
+      const data = JSON.parse(e.data);
+      if (data.items && data.items.length > 0) {
+        // 새 자체 자체 자체 = 전체 list 다시 fetch (= 자체 자체 자체)
+        fetchList();
+      }
+    } catch (err) {
+      console.error("SSE parse 사고:", err);
+    }
+  });
+
+  sseSource.addEventListener("error", (e) => {
+    console.warn("SSE 자체 자체 = 5초 후 자체");
+    sseSource.close();
+    setTimeout(startSSE, 5000);
+  });
+}
+startSSE();
+
+// fallback = 1분 자체 자체 (= SSE 자체 자체 자체 자체 자체)
+setInterval(fetchList, 60000);
 </script>
 </body>
 </html>
