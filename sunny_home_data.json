@@ -1,10 +1,118 @@
 {
-  "updated": "2026-05-17T18:32:24+09:00",
+  "updated": "2026-05-17T23:57:44+09:00",
   "categories": [
     {
       "id": "ai",
       "name": "AI 트렌드",
       "items": [
+        {
+          "title": "네이버 R&amp;D 6000억 첫 돌파…카카오는 비용 줄이고 AI 협력 강화 - 전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1JdlZUcXRveDhRc1VTa3FFVzdQV2FWeWZVU3ZBUF94YXdBZnlnZDAxU01MSTlDc2tld2J2WlY4RUJQYnRRY2JkeXpGZDl0dw?oc=5",
+          "source": "전자신문",
+          "summary": "",
+          "published": "2026-05-17",
+          "image": "",
+          "first_seen": "2026-05-17T23:57:44+09:00"
+        },
+        {
+          "title": "뉴욕 테크 기업서, AI 에이전트의 '돌발 폭주' 발생 - 초이스경제",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1XMUFyUFd6VzlSLVJnV1BPQjZTLVlMXzg5VG82T0lEcjVxaVFkblFRU1JuSm5EUGFUem9JbzNyS2tlTWp5VUFwR0dkWDBOYlF5SXlVcHBSSldwUDhNZVlLQVZVYVB2YWFXQXQyVXpTMNIBc0FVX3lxTE1iSlpQX2dIZk9aQWhWRkRqVDg2d3RWSGFDRmVyX3cwSFdFZGtId3V2ZXVFYk9EWld2VGR4SHdoUm5oOTRsV0loYU1iRUdPakRsWmtWSUxzRUY2U1hDb2xfR29uU0hoSDR1cmdGc1BKZlg0Tmc?oc=5",
+          "source": "초이스경제",
+          "summary": "",
+          "published": "2026-05-17",
+          "image": "",
+          "first_seen": "2026-05-17T23:57:44+09:00"
+        },
+        {
+          "title": "‘쓸수록 나아진다’는 그 AI, Hermes Agent 제대로 알아보기 - 요즘IT",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ZSUtaLUJBblFNVTJ0cVAyNExTT1VNZFk0dng4ZDlzeFh2bDFEWDcycnN2S0RWNUoweHRZQldncHFGYWpOZzR3bl9tcVBDSVViQnhIVUZESkZxQQ?oc=5",
+          "source": "요즘IT",
+          "summary": "",
+          "published": "2026-05-17",
+          "image": "",
+          "first_seen": "2026-05-17T23:57:44+09:00"
+        },
+        {
+          "title": "앤트로픽, AI 모델 ‘클로드’를 기본 운영체제로…“조직 운영 확 바꿨다” - 아이티데일리",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1zMkVjbnlaZG1uQmNVS1J6bXhKQVRkTVY1S3Y1a3Z6Nkx6dnNpbWppeXdJRzF5TUlaeHNEVWprYlFvLTlzRWtsbEZILWpobVJMRU1vVzExN2ZaMUR6bWtNMXVLNzlfcUk?oc=5",
+          "source": "아이티데일리",
+          "summary": "",
+          "published": "2026-04-15",
+          "image": "",
+          "first_seen": "2026-05-17T23:57:44+09:00"
+        },
+        {
+          "title": "앤트로픽 클로드 디자인 공개 - 디자인 나침반",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBEVVU0bHRONXNEQXpaRTRDazU0cDNwMVhlejdFZlZJcEptaHpyOWdpcUdCWmt5ZW9YY2VicWdmZlR6NkZucjVNSHdBeHBDTUtVbWl1Q1N2Y25qWjhLOEhyYnRRUVoxWUxMMk9ENnJR?oc=5",
+          "source": "디자인 나침반",
+          "summary": "",
+          "published": "2026-04-20",
+          "image": "",
+          "first_seen": "2026-05-17T23:57:44+09:00"
+        },
+        {
+          "title": "소식통에 따르면 골드만삭스가 홍콩 은행원들의 앤트로픽(Anthropic)의 ‘클로드(Claude)’ 이용 권한을 제한했다고 한다 - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1JYlhqX0dBRGhkRkh1NUViZDFybGlENWM5OVF0Mjkzd0tVRHRUWlVJR0FWbUhFZkE5MXJzMk95NFFkdW91YlF3WjM4T0FtQWpTdE9HaDdOMllfemkwZE9uUkpDZllybDdWUGtEQ2hjdWxXbE8zTUV3eA?oc=5",
+          "source": "TradingView",
+          "summary": "",
+          "published": "2026-04-28",
+          "image": "",
+          "first_seen": "2026-05-17T23:57:44+09:00"
+        },
+        {
+          "title": "해커가 탈옥시킨 클로드... 지킴이에서 해킹 조력자로 변한 AI - 보안뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1lbDg4NjdnLVVZUkpsdnNWMFFqNzF2eUZKMkRBenZiaDdlRGNiQ1ZTX05sc1FDdlByRHJtMVM1V2xUbmFYc3BpTnh0eGN3a3BYUHdZa0JvdlRjRG1laTBR?oc=5",
+          "source": "보안뉴스",
+          "summary": "",
+          "published": "2026-02-27",
+          "image": "",
+          "first_seen": "2026-05-17T23:57:44+09:00"
+        },
+        {
+          "title": "국방AX 속도 낸다…대신정보통신, 국방부 통합 AI 데이터센터 사업 낙찰 - 전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBPQXZmSGdzLXZ5d2dJWG5PMlNKdHZyQnFaRnJ3V0FvVm85a2JJVzFBMVkzcXFycmc1d1VNaFJZZUlyaUh6cVQ3QlJZS1JmZw?oc=5",
+          "source": "전자신문",
+          "summary": "",
+          "published": "2026-05-15",
+          "image": "",
+          "first_seen": "2026-05-17T23:57:44+09:00"
+        },
+        {
+          "title": "GPT-5.3 Instant: 더 자연스럽고 유용한 일상 대화 - OpenAI",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9FZklPQUM1MjF4UGdmY19URmx2OVZoaXJEWmFOVGg2MUdjUUw2Ql9hNzktc0xMNExGa1NnMEN0ZlZfRW9TNUlIR1Ytb0VLNkVqbTFJQXM5MlR6czg?oc=5",
+          "source": "OpenAI",
+          "summary": "",
+          "published": "2026-03-03",
+          "image": "",
+          "first_seen": "2026-05-17T23:57:44+09:00"
+        },
+        {
+          "title": "오픈AI ‘챗GPT 이미지 2.0’ 공개…한국어 텍스트·레이아웃 표현력 개선 - cio.com",
+          "url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxPaUlMdm95VFd6Nkw5MWFEMFIxSllFQTI0S1VCMnE1NGh6bFdYanpSQVBXNkZjRlJTa01xNXVxa0dwclFtWkRza1d5OURQNUpnOWJDanlFSnF5YUtSTWMtOUtIUUpzWDR0TjdpYl9jbDdKU2VIYUlSNWdBaU1DeElkQ3Fua0g4YmFJcEF6RE56eTllcks0NHVPQmFtOFFEdm54UmpkSEdYcFJuUUpQclZaQjNIVXNvVEI2cGE5aDdkdl91OUp2YW9aQmZGLXhsWUNsblVDQWVRZnJjSlFfUDJENEMzQ3J6bk1ZQ0plN2tyRzRBVV9VTlNreWgzY3dkMEpfVk9qMWdZMXhLVDc4M2hGNXRUUUZObFV3Mkt2MklHRVJvSlJhTHBGOC1wODdLRzVsNEUtUVZXNEU?oc=5",
+          "source": "cio.com",
+          "summary": "",
+          "published": "2026-04-22",
+          "image": "",
+          "first_seen": "2026-05-17T23:57:44+09:00"
+        },
+        {
+          "title": "어도비, 챗GPT에서 포토샵, 익스프레스, 애크로뱃 제공… 모두에게 크리에이티브 접근성 확대 - Adobe Newsroom",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPbzFfZ2F1Z1hJX2NzOU9YVVc1aGV2N01YeThnUW1vaE4xMG1sTVJ0M2F6UHctNXcwaE1qamVZLXFiRTI0OUlTMGRPazloNThjY2gteDZRLXVUTDg1bDJ6b0NBcFhncXI1SkpKeFBpQXc4b2x2a24wN29LRDUtblZSRktqaWU?oc=5",
+          "source": "Adobe Newsroom",
+          "summary": "",
+          "published": "2025-12-11",
+          "image": "",
+          "first_seen": "2026-05-17T23:57:44+09:00"
+        },
+        {
+          "title": "EP1. ChatGPT Enterprise – 기업용 AI의 새로운 기준 | 인사이트리포트 | 삼성SDS - Samsung SDS",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9TUFNDbWpTYmpwbWpQcWx0eXVPRm9NWHEzWG5fTUtiaWRKZW1BbElXWlFSdWxHTzhOa1ptbkNOSmlSS3NIUjd0UlNkb3UzSFlZZDQ0NlI4UTRRcDlMX3JmS0sxaTJ1dXZWclM1V2VoTQ?oc=5",
+          "source": "Samsung SDS",
+          "summary": "",
+          "published": "2025-12-01",
+          "image": "",
+          "first_seen": "2026-05-17T23:57:44+09:00"
+        },
         {
           "title": "\"AI 프사, 이 정도였어?\"…챗GPT 이미지 2.0, 출시 첫 주부터 난리 - 지디넷코리아",
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1VZkVQV0ktdkxsQVktM3RvN1pFMHVIdnd2UFVGUFAtaUw3LUlmVzhlYnExaFFQOTJVRHZFSmx0cWdGT1V0ejlpYUgtNGJPX0sxNTVGOGhn?oc=5",
@@ -137,6 +245,15 @@
       "id": "content_ip",
       "name": "콘텐츠·IP",
       "items": [
+        {
+          "title": "넷플릭스만 버텼다…국내 콘텐츠 제작 수요 정체 - 뉴스토마토",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9nOFg3bktXYmNCVm13ckFDTFMzd1pZbFM5c2s4QklSUHhQWmpvWi1JZW9wakdzMl9iWGo3blpCQWpqX1JYNkstN1U3UHJnN3NFOUpMWktiYTBOekJIWnV3Ng?oc=5",
+          "source": "뉴스토마토",
+          "summary": "",
+          "published": "2026-05-15",
+          "image": "",
+          "first_seen": "2026-05-17T23:57:44+09:00"
+        },
         {
           "title": "대전시, '웹툰 IP 첨단 클러스터' 중앙투자심사 통과…K-웹툰 거점 도약 본격화 - 전자신문",
           "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBBeDZPMzA4SDNfakF1czRRSVlocDRwelczRzFOUXVsYUF5RmlSQzlnZFNsZTlFTGNlMWk0M3p3YW1NeTh3NEVXTnJEemRHZw?oc=5",
