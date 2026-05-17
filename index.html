@@ -729,11 +729,29 @@ body {
 .cal-view-btn.active { background: var(--orange); color: #fff; }
 .cal-nav-group { display: flex; align-items: center; gap: 4px; }
 
-/* 주 뷰 — 7칸 한 줄, 칸을 크게 */
+/* 주 뷰 — 세로 7일 (요일별 한 행, 그 날 일정 칩) */
+.cal-grid.view-week { grid-template-columns: 1fr; gap: 5px; }
 .cal-grid.view-week .cal-day {
-  aspect-ratio: auto; min-height: 60px;
-  flex-direction: column; justify-content: flex-start; padding: 7px 0 0;
+  aspect-ratio: auto; min-height: 46px;
+  flex-direction: row; justify-content: flex-start; align-items: center;
+  gap: 12px; padding: 8px 12px; border: 1px solid var(--border);
 }
+.cal-wk-date { display: flex; flex-direction: column; align-items: center; width: 30px; flex-shrink: 0; }
+.cal-wk-dow { font-size: 0.52rem; color: var(--text-mute); font-family: var(--mono); }
+.cal-day.selected .cal-wk-dow { color: rgba(255,255,255,0.7); }
+.cal-wk-num { font-size: 0.95rem; font-weight: 700; line-height: 1.15; }
+.cal-wk-events { flex: 1; min-width: 0; display: flex; flex-wrap: wrap; gap: 4px; }
+.cal-wk-chip {
+  font-size: 0.58rem; padding: 2px 8px; border-radius: var(--r-pill);
+  max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.cal-wk-chip.meeting { background: rgba(13,148,136,0.14); color: var(--teal); }
+.cal-wk-chip.deadline { background: var(--orange-soft); color: var(--deep-orange); }
+.cal-day.selected .cal-wk-chip { background: rgba(255,255,255,0.22); color: #fff; }
+.cal-wk-more { font-size: 0.56rem; color: var(--text-mute); align-self: center; }
+.cal-day.selected .cal-wk-more { color: rgba(255,255,255,0.8); }
+.cal-wk-empty { font-size: 0.68rem; color: var(--text-mute); opacity: 0.55; }
+.cal-day.selected .cal-wk-empty { color: rgba(255,255,255,0.7); opacity: 1; }
 /* 일 뷰 — 하루 1칸 크게 */
 .cal-grid.view-day { grid-template-columns: 1fr; }
 .cal-grid.view-day .cal-day { aspect-ratio: auto; min-height: 76px; font-size: 1.5rem; }
@@ -771,21 +789,46 @@ body {
 .event-del:hover { color: var(--pink); }
 .event-empty { font-size: 0.74rem; color: var(--text-mute); padding: 8px 2px; line-height: 1.5; }
 .event-add {
-  display: flex; align-items: center; gap: 8px;
   margin-top: 8px; padding-top: 10px; border-top: 1px solid var(--border);
+  display: flex; flex-direction: column; gap: 6px;
 }
+.event-add-row { display: flex; align-items: center; gap: 6px; }
+.event-add-row input[type="text"] {
+  flex: 1; min-width: 0; background: var(--bg); border: 1px solid var(--border);
+  border-radius: 7px; outline: none; padding: 7px 10px;
+  font-family: inherit; font-size: 0.78rem; color: var(--text);
+}
+.event-add-row input[type="text"]:focus { border-color: var(--orange); }
+.event-add-row input::placeholder { color: var(--text-mute); }
+.event-time-input {
+  flex-shrink: 0; width: 100px; background: var(--bg); border: 1px solid var(--border);
+  border-radius: 7px; outline: none; padding: 6px 8px;
+  font-family: var(--mono); font-size: 0.74rem; color: var(--text);
+}
+.event-time-input:focus { border-color: var(--orange); }
 .event-add-icon {
-  flex-shrink: 0; width: 24px; height: 24px; padding: 0;
-  border: none; background: transparent; cursor: pointer;
-  color: var(--text-mute); font-size: 1.2rem; line-height: 1;
-  border-radius: 6px; transition: color .12s var(--ease), background .12s var(--ease);
+  flex-shrink: 0; padding: 7px 13px; border: none; cursor: pointer;
+  background: var(--orange); color: #fff; font-size: 0.72rem; font-weight: 700;
+  border-radius: 7px; white-space: nowrap;
+  transition: background .12s var(--ease);
 }
-.event-add-icon:hover { color: #fff; background: var(--orange); }
-.event-add input {
-  flex: 1; min-width: 0; background: transparent; border: none; outline: none;
-  font-family: inherit; font-size: 0.8rem; color: var(--text);
+.event-add-icon:hover { background: var(--deep-orange); }
+.event-main { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.event-meta { font-size: 0.62rem; color: var(--text-mute); font-family: var(--mono); letter-spacing: 0.02em; }
+/* 일 뷰 — 시간 스케줄 */
+.cal-grid.view-day { grid-template-columns: 1fr; gap: 5px; }
+.cal-day-empty { padding: 28px 12px; text-align: center; font-size: 0.78rem; color: var(--text-mute); }
+.cal-day-slot {
+  display: flex; align-items: flex-start; gap: 12px;
+  padding: 10px 12px; border: 1px solid var(--border); border-radius: 10px;
+  background: var(--bg);
 }
-.event-add input::placeholder { color: var(--text-mute); }
+.cal-day-time {
+  flex-shrink: 0; width: 54px; font-family: var(--mono);
+  font-size: 0.78rem; font-weight: 700; color: var(--deep-orange);
+}
+.cal-day-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px; align-items: flex-start; }
+.cal-day-slot-title { font-size: 0.84rem; line-height: 1.4; word-break: break-word; }
 .event-type-toggle {
   flex-shrink: 0; padding: 4px 9px; border-radius: var(--r-pill);
   border: 1px solid var(--border); background: var(--bg);
@@ -1122,9 +1165,15 @@ body {
         </div>
         <div class="event-list" id="eventList"></div>
         <div class="event-add">
-          <button class="event-add-icon" id="eventAddBtn" type="button" aria-label="일정 추가">+</button>
-          <input type="text" id="eventInput" placeholder="미팅·데드라인 입력 후 Enter" aria-label="일정 추가" maxlength="120">
-          <button class="event-type-toggle" id="eventTypeToggle" type="button" title="종류 전환 (미팅 ↔ 데드라인)">미팅</button>
+          <div class="event-add-row">
+            <input type="text" id="eventInput" placeholder="일정 내용 (예: 버치사운드 미팅)" aria-label="일정 내용" maxlength="120">
+            <button class="event-type-toggle" id="eventTypeToggle" type="button" title="종류 전환 (미팅 ↔ 데드라인)">미팅</button>
+          </div>
+          <div class="event-add-row">
+            <input type="time" id="eventTime" class="event-time-input" aria-label="시간 (선택)">
+            <input type="text" id="eventLocation" class="event-loc-input" placeholder="장소 (선택)" aria-label="장소" maxlength="60">
+            <button class="event-add-icon" id="eventAddBtn" type="button" aria-label="일정 추가">＋ 추가</button>
+          </div>
         </div>
       </div>
 
@@ -2830,7 +2879,7 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     }
 
     if (calViewMode === 'week') {
-      weekdaysEl.style.display = '';
+      weekdaysEl.style.display = 'none';
       const base = new Date(calView);
       base.setDate(base.getDate() - base.getDay());
       const end = new Date(base); end.setDate(end.getDate() + 6);
@@ -2838,12 +2887,82 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
         + ' – ' + (end.getMonth() + 1) + '/' + end.getDate();
       for (let i = 0; i < 7; i++) {
         const dd = new Date(base); dd.setDate(dd.getDate() + i);
-        dayCell(dd, false);
+        const dateStr = ymd(dd);
+        const row = document.createElement('div');
+        let cls = 'cal-day';
+        if (dd.getDay() === 0) cls += ' sun';
+        if (dateStr === todayStr) cls += ' today';
+        if (dateStr === selectedDate) cls += ' selected';
+        row.className = cls;
+        const dl = document.createElement('div');
+        dl.className = 'cal-wk-date';
+        const dow = ['일', '월', '화', '수', '목', '금', '토'][dd.getDay()];
+        dl.innerHTML = '<span class="cal-wk-dow">' + dow + '</span><span class="cal-wk-num">' + dd.getDate() + '</span>';
+        const ew = document.createElement('div');
+        ew.className = 'cal-wk-events';
+        const evs = EVENTS.filter((e) => e.date === dateStr);
+        if (evs.length) {
+          evs.slice(0, 4).forEach((ev) => {
+            const chip = document.createElement('span');
+            chip.className = 'cal-wk-chip ' + (ev.type === 'deadline' ? 'deadline' : 'meeting');
+            chip.textContent = ev.title;
+            ew.appendChild(chip);
+          });
+          if (evs.length > 4) {
+            const m = document.createElement('span');
+            m.className = 'cal-wk-more';
+            m.textContent = '+' + (evs.length - 4);
+            ew.appendChild(m);
+          }
+        } else {
+          const em = document.createElement('span');
+          em.className = 'cal-wk-empty';
+          em.textContent = '일정 없음';
+          ew.appendChild(em);
+        }
+        row.append(dl, ew);
+        row.setAttribute('role', 'button');
+        row.tabIndex = 0;
+        const pick = () => { selectedDate = dateStr; renderCalendar(); renderEventPanel(); };
+        row.addEventListener('click', pick);
+        row.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(); }
+        });
+        gridEl.appendChild(row);
       }
     } else if (calViewMode === 'day') {
       weekdaysEl.style.display = 'none';
-      titleEl.textContent = (calView.getMonth() + 1) + '월 ' + calView.getDate() + '일';
-      dayCell(new Date(calView), false);
+      const dow = ['일', '월', '화', '수', '목', '금', '토'][calView.getDay()];
+      titleEl.textContent = (calView.getMonth() + 1) + '월 ' + calView.getDate() + '일 (' + dow + ')';
+      selectedDate = ymd(calView);
+      const dateStr = ymd(calView);
+      const dayEvs = EVENTS.filter((e) => e.date === dateStr)
+        .sort((a, b) => (a.time || '99:99').localeCompare(b.time || '99:99'));
+      if (!dayEvs.length) {
+        const empty = document.createElement('div');
+        empty.className = 'cal-day-empty';
+        empty.textContent = '이 날 일정이 없어요. 아래에서 일정을 추가하세요.';
+        gridEl.appendChild(empty);
+      } else {
+        dayEvs.forEach((ev) => {
+          const slot = document.createElement('div');
+          slot.className = 'cal-day-slot';
+          const tm = document.createElement('span');
+          tm.className = 'cal-day-time';
+          tm.textContent = ev.time || '종일';
+          const body = document.createElement('div');
+          body.className = 'cal-day-body';
+          const bdg = document.createElement('span');
+          bdg.className = 'event-type-badge ' + (ev.type === 'deadline' ? 'deadline' : 'meeting');
+          bdg.textContent = ev.type === 'deadline' ? '데드라인' : '미팅';
+          const ti = document.createElement('span');
+          ti.className = 'cal-day-slot-title';
+          ti.textContent = ev.title + (ev.location ? '  ·  ' + ev.location : '');
+          body.append(bdg, ti);
+          slot.append(tm, body);
+          gridEl.appendChild(slot);
+        });
+      }
     } else {
       weekdaysEl.style.display = '';
       const year = calView.getFullYear(), month = calView.getMonth();
@@ -2904,16 +3023,25 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     const badge = document.createElement('span');
     badge.className = 'event-type-badge ' + (isDl ? 'deadline' : 'meeting');
     badge.textContent = isDl ? '데드라인' : '미팅';
-    const title = document.createElement('span');
+    const main = document.createElement('div');
+    main.className = 'event-main';
+    const title = document.createElement('div');
     title.className = 'event-title';
     title.textContent = ev.title || '';
+    main.appendChild(title);
+    if (ev.time || ev.location) {
+      const meta = document.createElement('div');
+      meta.className = 'event-meta';
+      meta.textContent = [ev.time, ev.location].filter(Boolean).join('  ·  ');
+      main.appendChild(meta);
+    }
     const del = document.createElement('button');
     del.className = 'event-del';
     del.type = 'button';
     del.textContent = '×';
     del.setAttribute('aria-label', '일정 삭제');
     del.addEventListener('click', () => deleteEvent(ev.id));
-    row.append(badge, title, del);
+    row.append(badge, main, del);
     return row;
   }
 
@@ -2932,7 +3060,8 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     label.innerHTML = escHtml((dObj.getMonth() + 1) + '월 ' + dObj.getDate() + '일 (' + dow + ')')
       + ' <span class="event-rel">' + escHtml(rel) + '</span>';
 
-    const dayEvs = EVENTS.filter((e) => e.date === selectedDate);
+    const dayEvs = EVENTS.filter((e) => e.date === selectedDate)
+      .sort((a, b) => (a.time || '99:99').localeCompare(b.time || '99:99'));
     list.innerHTML = '';
     if (!dayEvs.length) {
       const e = document.createElement('div');
@@ -2948,10 +3077,16 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
   function addEvent(title) {
     title = (title || '').trim();
     if (!title) return;
+    const timeEl = $('eventTime'), locEl = $('eventLocation');
     EVENTS.push({
       id: 'e_' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
-      date: selectedDate, title: title, type: evNewType, created: new Date().toISOString()
+      date: selectedDate, title: title,
+      time: timeEl ? timeEl.value : '',
+      location: locEl ? locEl.value.trim() : '',
+      type: evNewType, created: new Date().toISOString()
     });
+    if (timeEl) timeEl.value = '';
+    if (locEl) locEl.value = '';
     renderCalendar();
     renderEventPanel();
     scheduleSaveEvents();
