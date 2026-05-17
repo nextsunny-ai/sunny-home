@@ -744,6 +744,20 @@ body {
 .cal-gcal-btn.connected {
   background: rgba(5,150,105,0.1); border-color: rgba(5,150,105,0.35); color: var(--green);
 }
+.cal-gcal-row {
+  display: flex; align-items: center; gap: 8px; margin-top: 8px;
+}
+.cal-gcal-row-label {
+  font-size: 0.66rem; font-weight: 700; color: var(--text-mute);
+  white-space: nowrap; flex-shrink: 0;
+}
+.cal-gcal-select {
+  flex: 1; min-width: 0; padding: 7px 9px;
+  border: 1px solid var(--border); border-radius: 8px;
+  background: var(--bg); color: var(--text);
+  font-family: var(--font); font-size: 0.74rem; cursor: pointer;
+}
+.cal-gcal-select:focus { outline: none; border-color: var(--orange); }
 .cal-gcal-status {
   margin-top: 7px; font-size: 0.66rem; line-height: 1.5;
   color: var(--text-mute); min-height: 1em;
@@ -1161,6 +1175,10 @@ body {
         <div class="cal-foot">
           <button class="cal-add-btn" id="calAddBtn" type="button">＋ 오늘 일정 추가</button>
           <button class="cal-gcal-btn" id="calGcalBtn" type="button">🔗 구글 캘린더 연결</button>
+        </div>
+        <div class="cal-gcal-row" id="calGcalRow" style="display:none;">
+          <span class="cal-gcal-row-label">표시할 구글 캘린더</span>
+          <select id="calGcalSelect" class="cal-gcal-select" aria-label="표시할 구글 캘린더 선택"></select>
         </div>
         <div class="cal-gcal-status" id="calGcalStatus"></div>
       </div>
@@ -3185,13 +3203,33 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
   /* ════ 구글 캘린더 양방향 연동 (Google Identity Services) ════ */
   const GCAL_CLIENT_ID = '108517220824-vetv6lhf4cs6uu3sihdqj857qissvtde.apps.googleusercontent.com';
-  const GCAL_SCOPE = 'https://www.googleapis.com/auth/calendar.events';
+  const GCAL_SCOPE = 'https://www.googleapis.com/auth/calendar';   // 캘린더 목록 + 일정 읽기·쓰기
   const LS_GCAL = 'sunny_gcal_on';
+  const LS_GCAL_CALID = 'sunny_gcal_calid';
   let gcalTokenClient = null;
   let gcalToken = '';
   let gcalConnected = false;
   let gcalSilent = false;       // 자동 재연결(조용히 시도) 중이면 에러 메시지 억제
-  let GEVENTS = [];             // 구글 캘린더에서 가져온 일정
+  let GEVENTS = [];             // 선택된 구글 캘린더에서 가져온 일정
+  let gcalCalendars = [];       // 사용자의 구글 캘린더 목록
+  let gcalCalId = localStorage.getItem(LS_GCAL_CALID) || 'primary';   // 표시·동기화 대상 캘린더
+
+  // 구글 캘린더 API URL — 캘린더 id 안전하게 인코딩
+  function gcalUrl(suffix) {
+    return 'https://www.googleapis.com/calendar/v3/calendars/' + encodeURIComponent(gcalCalId) + suffix;
+  }
+  // 구글 API 오류 응답에서 사람이 읽을 사유 추출
+  async function gcalApiError(res) {
+    try {
+      const j = await res.json();
+      if (j && j.error) {
+        if (typeof j.error === 'string') return j.error;
+        return j.error.message
+          || (j.error.errors && j.error.errors[0] && j.error.errors[0].reason) || '';
+      }
+    } catch (e) { /* noop */ }
+    return '';
+  }
 
   function gcalStatus(msg, cls) {
     const el = $('calGcalStatus');
@@ -3200,10 +3238,27 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     el.className = 'cal-gcal-status' + (cls ? ' ' + cls : '');
   }
   function updateGcalUI() {
-    const btn = $('calGcalBtn');
-    if (!btn) return;
-    btn.classList.toggle('connected', gcalConnected);
-    btn.textContent = gcalConnected ? '✓ 구글 연결됨' : '🔗 구글 캘린더 연결';
+    const btn = $('calGcalBtn'), row = $('calGcalRow');
+    if (btn) {
+      btn.classList.toggle('connected', gcalConnected);
+      btn.textContent = gcalConnected ? '✓ 구글 연결됨' : '🔗 구글 캘린더 연결';
+    }
+    if (row && !gcalConnected) row.style.display = 'none';
+  }
+
+  // 구글 캘린더 선택 드롭다운 채우기
+  function fillGcalSelect() {
+    const sel = $('calGcalSelect'), row = $('calGcalRow');
+    if (!sel) return;
+    sel.innerHTML = '';
+    gcalCalendars.forEach((c) => {
+      const o = document.createElement('option');
+      o.value = c.id;
+      o.textContent = (c.summary || c.id) + (c.primary ? ' (기본)' : '');
+      sel.appendChild(o);
+    });
+    sel.value = gcalCalId;
+    if (row) row.style.display = (gcalConnected && gcalCalendars.length) ? 'flex' : 'none';
   }
 
   function initGcal() {
@@ -3219,8 +3274,8 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
           gcalSilent = false;
           localStorage.setItem(LS_GCAL, '1');
           updateGcalUI();
-          gcalStatus('구글 캘린더 일정을 불러오는 중…');
-          loadGoogleEvents();
+          gcalStatus('구글 캘린더 목록을 불러오는 중…');
+          loadCalendarList().then(loadGoogleEvents);
         } else if (!gcalSilent) {
           gcalStatus('구글 연결이 취소되었거나 실패했습니다.', 'err');
         }
@@ -3251,17 +3306,40 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     gcalToken = '';
     gcalConnected = false;
     GEVENTS = [];
+    gcalCalendars = [];
     localStorage.removeItem(LS_GCAL);
     updateGcalUI();
     gcalStatus('');
     refreshCal();
   }
 
+  // 사용자의 구글 캘린더 목록 불러오기 (쓰기 권한 있는 것만)
+  async function loadCalendarList() {
+    if (!gcalToken) return;
+    try {
+      const res = await fetch('https://www.googleapis.com/calendar/v3/users/me/calendarList?minAccessRole=writer&maxResults=250', {
+        headers: { Authorization: 'Bearer ' + gcalToken }
+      });
+      if (!res.ok) {
+        const reason = await gcalApiError(res);
+        gcalStatus('구글 캘린더 목록을 못 불러왔습니다 (HTTP ' + res.status + (reason ? ' · ' + reason : '') + ')', 'err');
+        console.error('[gcal] calendarList 실패', res.status, reason);
+        return;
+      }
+      const data = await res.json();
+      gcalCalendars = (data.items || []).filter((c) => c.id);
+      if (!gcalCalendars.some((c) => c.id === gcalCalId)) gcalCalId = 'primary';
+      fillGcalSelect();
+    } catch (e) {
+      gcalStatus('구글 캘린더 목록을 불러오는 중 네트워크 오류.', 'err');
+    }
+  }
+
   async function loadGoogleEvents() {
     if (!gcalToken) return;
     const timeMin = new Date(Date.now() - 45 * 86400000).toISOString();
     const timeMax = new Date(Date.now() + 180 * 86400000).toISOString();
-    const url = 'https://www.googleapis.com/calendar/v3/calendars/primary/events'
+    const url = gcalUrl('/events')
       + '?singleEvents=true&orderBy=startTime&maxResults=250'
       + '&timeMin=' + encodeURIComponent(timeMin)
       + '&timeMax=' + encodeURIComponent(timeMax);
@@ -3272,10 +3350,16 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
         gcalStatus('구글 인증이 만료됐습니다. "구글 캘린더 연결"을 다시 눌러주세요.', 'err');
         return;
       }
-      if (!res.ok) { gcalStatus('구글 일정을 불러오지 못했습니다 (HTTP ' + res.status + ').', 'err'); return; }
+      if (!res.ok) {
+        const reason = await gcalApiError(res);
+        gcalStatus('구글 일정을 불러오지 못했습니다 (HTTP ' + res.status + (reason ? ' · ' + reason : '') + ')', 'err');
+        console.error('[gcal] events.list 실패', res.status, reason);
+        return;
+      }
       const data = await res.json();
       GEVENTS = (data.items || []).filter((g) => g.status !== 'cancelled' && g.start);
-      gcalStatus('구글 캘린더 연결됨 · 일정 ' + GEVENTS.length + '개 표시 중', 'ok');
+      const cal = gcalCalendars.find((c) => c.id === gcalCalId);
+      gcalStatus('구글 "' + ((cal && cal.summary) || '캘린더') + '" 연결됨 · 일정 ' + GEVENTS.length + '개', 'ok');
       refreshCal();
     } catch (e) {
       gcalStatus('구글 일정을 불러오는 중 네트워크 오류가 발생했습니다.', 'err');
@@ -3303,7 +3387,7 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
   async function gcalCreate(ev) {
     if (!gcalConnected || !gcalToken) return '';
     try {
-      const res = await fetch('https://www.googleapis.com/calendar/v3/calendars/primary/events', {
+      const res = await fetch(gcalUrl('/events'), {
         method: 'POST',
         headers: { Authorization: 'Bearer ' + gcalToken, 'Content-Type': 'application/json' },
         body: JSON.stringify(ourEventToGoogleBody(ev))
@@ -3315,7 +3399,7 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
   async function gcalPatch(ev) {
     if (!gcalConnected || !gcalToken || !ev.googleId) return;
     try {
-      await fetch('https://www.googleapis.com/calendar/v3/calendars/primary/events/' + encodeURIComponent(ev.googleId), {
+      await fetch(gcalUrl('/events/' + encodeURIComponent(ev.googleId)), {
         method: 'PATCH',
         headers: { Authorization: 'Bearer ' + gcalToken, 'Content-Type': 'application/json' },
         body: JSON.stringify(ourEventToGoogleBody(ev))
@@ -3325,11 +3409,21 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
   async function gcalDelete(googleId) {
     if (!gcalConnected || !gcalToken || !googleId) return;
     try {
-      await fetch('https://www.googleapis.com/calendar/v3/calendars/primary/events/' + encodeURIComponent(googleId), {
+      await fetch(gcalUrl('/events/' + encodeURIComponent(googleId)), {
         method: 'DELETE',
         headers: { Authorization: 'Bearer ' + gcalToken }
       });
     } catch (e) { /* 무시 */ }
+  }
+
+  // 표시할 캘린더를 바꿨을 때
+  function onGcalSelect() {
+    const sel = $('calGcalSelect');
+    if (!sel) return;
+    gcalCalId = sel.value;
+    localStorage.setItem(LS_GCAL_CALID, gcalCalId);
+    gcalStatus('캘린더를 바꾸는 중…');
+    loadGoogleEvents();
   }
 
   /* ════ 할 일 패널 — 순서는 드래그(SortableJS)로 직접 정한다 ════ */
@@ -3586,10 +3680,11 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
   $('evmTypeDeadline').addEventListener('click', () => { evmType = 'deadline'; applyEvmType(); });
   $('evmTime').addEventListener('change', syncEndTimeState);
   $('evModalBg').addEventListener('click', (e) => { if (e.target === $('evModalBg')) closeEventModal(); });
-  // 구글 캘린더 연결/해제
+  // 구글 캘린더 연결/해제 + 표시 캘린더 선택
   if ($('calGcalBtn')) {
     $('calGcalBtn').addEventListener('click', () => { gcalConnected ? gcalDisconnect() : gcalConnect(); });
   }
+  if ($('calGcalSelect')) $('calGcalSelect').addEventListener('change', onGcalSelect);
   // 영어 회화 — 대화 전체 발음 재생
   if ($('engPlayAll')) $('engPlayAll').addEventListener('click', () => speakConversation(CURRENT_ENG));
 
