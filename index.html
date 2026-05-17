@@ -122,8 +122,8 @@ body {
   min-height: calc(100vh - 52px);
 }
 .hero-left {
-  padding: 80px 56px 64px 72px;
-  display: flex; flex-direction: column; justify-content: center;
+  padding: 56px 56px 64px 72px;
+  display: flex; flex-direction: column; justify-content: flex-start;
   position: relative; overflow: hidden;
 }
 .hero-left::before {
@@ -778,7 +778,13 @@ body {
   margin-top: 6px; padding: 8px 6px 2px;
   border-top: 1px solid var(--border);
 }
-.todo-add-icon { color: var(--text-mute); font-size: 1rem; flex-shrink: 0; }
+.todo-add-icon {
+  color: var(--text-mute); font-size: 1.2rem; flex-shrink: 0;
+  border: none; background: transparent; cursor: pointer;
+  padding: 0; width: 24px; height: 24px; line-height: 1;
+  border-radius: 6px; transition: color .12s var(--ease), background .12s var(--ease);
+}
+.todo-add-icon:hover { color: #fff; background: var(--orange); }
 .todo-add input {
   flex: 1; background: transparent; border: none; outline: none;
   font-family: inherit; font-size: 0.8rem; color: var(--text);
@@ -878,8 +884,8 @@ body {
   color: var(--text-sub);
   background: var(--bg-elevated);
   border: 1px solid var(--border);
-  cursor: pointer; font-family: var(--mono);
-  letter-spacing: 0.08em; text-transform: uppercase;
+  cursor: pointer; font-family: var(--font);
+  letter-spacing: 0.04em;
   transition: all .12s var(--ease);
 }
 .news-tab:hover { color: var(--text); border-color: var(--text-mute); }
@@ -1023,8 +1029,8 @@ body {
         <div class="todo-list" id="todoList"></div>
         <button class="todo-done-toggle" id="todoDoneToggle" type="button" style="display:none;"></button>
         <div class="todo-add">
-          <span class="todo-add-icon" aria-hidden="true">+</span>
-          <input type="text" id="todoInput" placeholder="할 일 추가 후 Enter" aria-label="할 일 추가" maxlength="200">
+          <button class="todo-add-icon" id="todoAddBtn" type="button" aria-label="할 일 추가">+</button>
+          <input type="text" id="todoInput" placeholder="할 일 입력 후 Enter 또는 + 클릭" aria-label="할 일 추가" maxlength="200">
           <button class="todo-prio-toggle" id="todoPrioToggle" type="button" title="우선순위 전환 (보통 ↔ 중요)">보통</button>
         </div>
         <div class="todo-sync">
@@ -1032,15 +1038,6 @@ body {
           <span id="todoSyncLabel">이 기기에만 저장 중</span>
           <button class="todo-sync-btn" id="todoSyncBtn" type="button">GitHub 연결</button>
         </div>
-      </div>
-
-      <!-- English = 상황별 비즈니스 영어 (data/english.json · 매일 자동 로테이션) -->
-      <div class="hero-english" id="heroEnglish" style="margin-top:14px;">
-        <span class="he-label" id="engSituation">Business English</span>
-        <span class="he-phrase" id="engPhrase">—</span>
-        <span class="he-meaning" id="engMeaning"></span>
-        <span class="he-example" id="engExample"></span>
-        <span class="he-example-ko" id="engExampleKo"></span>
       </div>
     </div>
 
@@ -1058,6 +1055,15 @@ body {
         <span class="news-tab" data-cat="festival">페스티벌</span>
       </div>
       <div class="pick-list" id="newsPick"></div>
+
+      <!-- English = 상황별 비즈니스 영어 (2026-05-17: 할 일 공간 확보 위해 뉴스 아래로 이동) -->
+      <div class="hero-english" id="heroEnglish" style="margin-top:22px;">
+        <span class="he-label" id="engSituation">Business English</span>
+        <span class="he-phrase" id="engPhrase">—</span>
+        <span class="he-meaning" id="engMeaning"></span>
+        <span class="he-example" id="engExample"></span>
+        <span class="he-example-ko" id="engExampleKo"></span>
+      </div>
     </div>
   </section>
 
@@ -2267,13 +2273,20 @@ function buildNewsItems(data) {
   //   fetch_news.py 가 서버에서 14일·30개를 누적 관리하므로 클라이언트도 14일로 맞춘다.
   const NEWS_DAYS = 14;
   const cutoff = Date.now() - NEWS_DAYS * 24 * 60 * 60 * 1000;
+  // ★ 2026-05-17: 게재일(published)이 오래된 옛 기사 제외 — 지난 공고·마감된 지원사업이
+  //   "뉴스"로 섞여 보이던 문제 (대표님 명시). 게재 30일 넘은 기사는 표시 X.
+  const PUB_MAX_DAYS = 30;
+  const pubCutoff = Date.now() - PUB_MAX_DAYS * 24 * 60 * 60 * 1000;
   data.categories.forEach(cat => {
     if (cat.id === 'english') return;
     (cat.items || []).forEach(item => {
-      // first_seen(우리가 처음 수집한 시각) 기준 — published 는 Google 값이라 부정확
       const seen = item.first_seen || item.published || '';
       const seenT = seen ? new Date(seen).getTime() : 0;
-      if (seenT && !isNaN(seenT) && seenT < cutoff) return; // 14일 지난 뉴스만 제외
+      if (seenT && !isNaN(seenT) && seenT < cutoff) return;       // 수집 14일 경과 제외
+      if (item.published) {
+        const pubT = new Date(item.published).getTime();
+        if (!isNaN(pubT) && pubT < pubCutoff) return;             // 게재 30일 경과 제외
+      }
       allNewsItems.push({
         cat: cat.id, catName: catNames[cat.id] || cat.name,
         title: item.title, url: item.url || '#', source: item.source || '',
@@ -2354,7 +2367,7 @@ function renderNewsPick(filter) {
     a.innerHTML =
       '<span class="nti-cat cat-' + n.cat + '">' + n.catName + '</span>' +
       '<span class="nti-title">' + escHtml(n.title) + '</span>' +
-      '<span class="nti-source">' + escHtml(n.source) + '</span>';
+      '<span class="nti-source">' + escHtml(n.source) + (n.published ? ' · ' + escHtml(n.published) : '') + '</span>';
     pickContainer.appendChild(a);
   });
 }
@@ -2949,6 +2962,12 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
   $('todoInput').addEventListener('keydown', (e) => {
     if (e.key === 'Enter') { addTask(e.target.value); e.target.value = ''; }
+  });
+  $('todoAddBtn').addEventListener('click', () => {
+    const inp = $('todoInput');
+    addTask(inp.value);
+    inp.value = '';
+    inp.focus();
   });
   $('todoPrioToggle').addEventListener('click', () => {
     newPrio = (newPrio === 'high') ? 'normal' : 'high';
