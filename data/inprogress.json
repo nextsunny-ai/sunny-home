@@ -1,0 +1,12 @@
+{
+  "updated": "2026-05-17T19:00:00+09:00",
+  "note": "진행 중 — 직접 관리하는 회사·비개발 프로젝트. 홈 대시보드 '진행 중'에서 추가·삭제하며 GitHub 연결 시 자동 저장된다. 개발/코드 프로젝트는 data/projects.json(GitHub 최근 push)으로 자동 표시되므로 여기엔 전시·브랜딩 등 비개발 위주로 둔다. state: Live | Develop | Pending | Watch.",
+  "items": [
+    { "id": "ip_seed1", "text": "조선요괴전 — 써니엔터 · 체험전시 + 해외투어 협의 + 마리오아울렛", "state": "Live", "created": "2026-05-17T19:00:00+09:00" },
+    { "id": "ip_seed2", "text": "화산귀환 팝업 — 굿즈모먼트 · 4/23~5/5 운영", "state": "Live", "created": "2026-05-17T19:00:00+09:00" },
+    { "id": "ip_seed3", "text": "NORY CITY 브랜딩 — 버치사운드 · v7→v8 Han 한국어 Brand Bible 수정", "state": "Develop", "created": "2026-05-17T19:00:00+09:00" },
+    { "id": "ip_seed4", "text": "KOCCA 신기술영상 — 버치사운드 · 4/14 최종제출, 결과 대기 (최대 2.2억)", "state": "Pending", "created": "2026-05-17T19:00:00+09:00" },
+    { "id": "ip_seed5", "text": "Phenomenon JV — 버치사운드 · HYBE·SM·JYP·YG 합작 2027.12, 사운드 브랜딩 진입", "state": "Watch", "created": "2026-05-17T19:00:00+09:00" },
+    { "id": "ip_seed6", "text": "서울링 — 넥스트아트 · 상암동 대관람차, 시행사 리츠 예탁 (모니터링)", "state": "Watch", "created": "2026-05-17T19:00:00+09:00" }
+  ]
+}
