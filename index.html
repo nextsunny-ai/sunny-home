@@ -13,6 +13,10 @@
 <!-- ★ 2026-05-18: 캘린더 = FullCalendar(MIT 오픈소스)로 교체 — 직접 짠 캘린더의 버그 제거 -->
 <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.19/index.global.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.19/locales/ko.global.min.js"></script>
+<!-- ★ 2026-05-18: 할 일 목록 = SortableJS(MIT)로 드래그 순서 변경 -->
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.6/Sortable.min.js"></script>
+<!-- ★ 2026-05-18: 구글 캘린더 양방향 연동 = Google Identity Services -->
+<script src="https://accounts.google.com/gsi/client" async defer></script>
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -719,14 +723,33 @@ body {
   padding: 28px 12px; text-align: center;
   font-size: 0.78rem; color: var(--text-mute); line-height: 1.6;
 }
+.cal-foot { display: flex; gap: 8px; margin-top: 10px; }
 .cal-add-btn {
-  width: 100%; margin-top: 10px; padding: 9px;
+  flex: 1; padding: 9px;
   border: 1px dashed var(--border-accent); border-radius: 9px;
   background: var(--orange-soft); color: var(--deep-orange);
   font-family: inherit; font-size: 0.76rem; font-weight: 700;
   cursor: pointer; transition: background .12s var(--ease), border-color .12s var(--ease);
 }
 .cal-add-btn:hover { background: #FFE6D0; border-color: var(--orange); }
+.cal-gcal-btn {
+  flex-shrink: 0; padding: 9px 12px;
+  border: 1px solid var(--border); border-radius: 9px;
+  background: var(--bg); color: var(--text-sub);
+  font-family: inherit; font-size: 0.74rem; font-weight: 600;
+  cursor: pointer; white-space: nowrap;
+  transition: all .12s var(--ease);
+}
+.cal-gcal-btn:hover { border-color: var(--orange); color: var(--deep-orange); }
+.cal-gcal-btn.connected {
+  background: rgba(5,150,105,0.1); border-color: rgba(5,150,105,0.35); color: var(--green);
+}
+.cal-gcal-status {
+  margin-top: 7px; font-size: 0.66rem; line-height: 1.5;
+  color: var(--text-mute); min-height: 1em;
+}
+.cal-gcal-status.err { color: var(--pink); }
+.cal-gcal-status.ok { color: var(--green); }
 
 /* FullCalendar 테마 — 사이트 오렌지 톤에 맞춤 */
 #calendar {
@@ -774,6 +797,7 @@ body {
 .fc .fc-event:hover { filter: brightness(0.94); }
 .fc-event.fc-ev-meeting { background: var(--teal); border-color: var(--teal); }
 .fc-event.fc-ev-deadline { background: var(--deep-orange); border-color: var(--deep-orange); }
+.fc-event.fc-ev-google { background: var(--blue); border-color: var(--blue); }
 .fc .fc-daygrid-day:hover { background: var(--orange-soft); cursor: pointer; }
 .fc .fc-timegrid-slot { height: 1.7em; }
 .fc .fc-timegrid-slot-label-cushion, .fc .fc-list-day-text { font-size: 0.66rem; font-family: var(--mono); }
@@ -786,6 +810,8 @@ body {
 /* ─── 일정 입력 모달 (날짜 클릭 → 팝업) — gh-modal 톤 재사용 ─── */
 .evm-field { margin-top: 14px; }
 .evm-field:first-child { margin-top: 0; }
+.evm-time-row { display: flex; align-items: center; gap: 8px; }
+.evm-time-sep { color: var(--text-mute); font-weight: 700; flex-shrink: 0; }
 .evm-label {
   font-size: 0.66rem; font-weight: 700; color: var(--text-mute);
   letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 6px; display: block;
@@ -836,11 +862,28 @@ body {
 .todo-progress.all-done { color: var(--green); }
 .todo-list { display: flex; flex-direction: column; gap: 1px; }
 .todo-item {
-  display: flex; align-items: flex-start; gap: 9px;
+  display: flex; align-items: flex-start; gap: 7px;
   padding: 7px 6px; border-radius: 8px;
   transition: background .12s var(--ease);
 }
 .todo-item:hover { background: var(--bg-card-hover); }
+/* 드래그 손잡이 — SortableJS */
+.todo-grip {
+  flex-shrink: 0; width: 16px; align-self: center; padding: 4px 0;
+  border: none; background: transparent; cursor: grab;
+  color: var(--text-mute); opacity: 0; line-height: 0;
+  transition: opacity .12s var(--ease), color .12s var(--ease);
+}
+.todo-item:hover .todo-grip { opacity: 0.5; }
+.todo-grip:hover { opacity: 1 !important; color: var(--deep-orange); }
+.todo-grip:active { cursor: grabbing; }
+.todo-grip svg { width: 9px; height: 14px; display: block; }
+.todo-ghost { opacity: 0.4; background: var(--orange-soft); }
+.todo-chosen { background: var(--bg-card-hover); }
+.todo-drag {
+  background: var(--bg-elevated); border: 1px solid var(--border-accent);
+  box-shadow: var(--shadow-md); opacity: 1;
+}
 .todo-check {
   width: 17px; height: 17px; flex-shrink: 0; margin-top: 1px;
   border: 1.5px solid var(--text-mute); border-radius: 5px;
@@ -996,8 +1039,8 @@ body {
 .news-tab:hover { color: var(--text); border-color: var(--text-mute); }
 .news-tab.active { background: var(--orange); color: #fff; border-color: var(--orange); }
 
-/* Admin Hub = mid-col card 토큰 일관 */
-.admin-section { padding: 56px 56px 64px; }
+/* Admin Hub = mid-col card 토큰 일관 — Quick Links 와 같은 컨테이너(1400px) 로 좌우 정렬 */
+.admin-section { padding: 56px 56px 64px; max-width: 1400px; margin: 0 auto; }
 .admin-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -1087,9 +1130,9 @@ body {
 <nav class="nav" role="navigation" aria-label="메인 네비게이션">
   <span class="nav-logo">SUNNY</span>
   <span class="nav-item active" data-section="hero" role="button" tabindex="0" aria-label="Today 섹션으로 이동">Today</span>
-  <span class="nav-item" data-section="team-section" role="button" tabindex="0" aria-label="Team 섹션으로 이동" style="color:var(--orange);font-weight:600">Team</span>
-  <span class="nav-item" data-section="news-section" role="button" tabindex="0" aria-label="News 섹션으로 이동">News</span>
-  <span class="nav-item" data-section="deadlines-section" role="button" tabindex="0" aria-label="Deadlines 섹션으로 이동">Deadlines</span>
+  <span class="nav-item" data-section="mid" role="button" tabindex="0" aria-label="Team 섹션으로 이동">Team</span>
+  <span class="nav-item" data-section="quick-links-section" role="button" tabindex="0" aria-label="Quick Links 섹션으로 이동">Quick Links</span>
+  <span class="nav-item" data-section="admin-section" role="button" tabindex="0" aria-label="통합 관리 섹션으로 이동">통합 관리</span>
   <span class="nav-spacer"></span>
   <div class="nav-search">
     <span style="color:var(--text-mute);font-size:0.78rem">&#128269;</span>
@@ -1115,7 +1158,11 @@ body {
       <!-- ★ 캘린더 — FullCalendar(검증된 오픈소스). 날짜 클릭 → 일정 입력 팝업 -->
       <div class="calendar-wrap" id="calendarWrap">
         <div id="calendar"></div>
-        <button class="cal-add-btn" id="calAddBtn" type="button">＋ 오늘 일정 추가 · 또는 날짜를 클릭하세요</button>
+        <div class="cal-foot">
+          <button class="cal-add-btn" id="calAddBtn" type="button">＋ 오늘 일정 추가</button>
+          <button class="cal-gcal-btn" id="calGcalBtn" type="button">🔗 구글 캘린더 연결</button>
+        </div>
+        <div class="cal-gcal-status" id="calGcalStatus"></div>
       </div>
 
       <!-- ★ 할 일 패널 — 날짜와 무관한 체크리스트 (캘린더 일정과 별개) -->
@@ -1385,8 +1432,18 @@ body {
     .nti-cat { min-width: 50px; font-size: 0.5rem; padding: 2px 6px; }
   }
 
-  /* Recent Projects (mid col3) */
-  #projectsList { display: flex; flex-direction: column; gap: 7px; }
+  /* Recent Projects (mid col3) — Team 칼럼 높이에 맞춰 고정 + 스크롤 */
+  #projectsList {
+    display: flex; flex-direction: column; gap: 7px;
+    height: 660px; overflow-y: auto; padding-right: 5px;
+  }
+  #projectsList::-webkit-scrollbar, .in-progress-list::-webkit-scrollbar { width: 6px; }
+  #projectsList::-webkit-scrollbar-thumb, .in-progress-list::-webkit-scrollbar-thumb {
+    background: var(--border); border-radius: 3px;
+  }
+  #projectsList::-webkit-scrollbar-thumb:hover, .in-progress-list::-webkit-scrollbar-thumb:hover {
+    background: var(--text-mute);
+  }
   .pj-item {
     display: flex; align-items: center; gap: 10px;
     padding: 9px 11px;
@@ -1405,8 +1462,11 @@ body {
   .pj-dead { opacity: 0.55; }
   .pj-dead .pj-name::after { content: ' ✗'; color: #DC2626; font-weight: 700; }
 
-  /* In Progress (mid col2) */
-  .in-progress-list { display: flex; flex-direction: column; gap: 8px; }
+  /* In Progress (mid col2) — Team 칼럼 높이에 맞춰 고정 + 스크롤 */
+  .in-progress-list {
+    display: flex; flex-direction: column; gap: 8px;
+    height: 620px; overflow-y: auto; padding-right: 5px;
+  }
   .ip-item {
     padding: 10px 12px;
     border: 1px solid var(--border);
@@ -1730,8 +1790,12 @@ body {
     </div>
 
     <div class="evm-field">
-      <label class="evm-label" for="evmTime">시간</label>
-      <select id="evmTime" class="evm-control"></select>
+      <span class="evm-label">시간</span>
+      <div class="evm-time-row">
+        <select id="evmTime" class="evm-control" aria-label="시작 시간"></select>
+        <span class="evm-time-sep">~</span>
+        <select id="evmEndTime" class="evm-control" aria-label="종료 시간"></select>
+      </div>
     </div>
 
     <div class="evm-field">
@@ -2285,7 +2349,7 @@ document.getElementById('teamToggle')?.addEventListener('click', function() {
 });
 
 // scroll spy
-const sections = ['hero', 'team-section', 'mid', 'news-section', 'deadlines-section'];
+const sections = ['hero', 'mid', 'quick-links-section', 'admin-section'];
 let scrollTicking = false;
 window.addEventListener('scroll', () => {
   if (!scrollTicking) {
@@ -2889,16 +2953,32 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
   let evmId = null;           // 수정 중인 일정 id
   let evmType = 'meeting';    // 모달 종류 선택값: meeting | deadline
 
-  // EVENTS(우리 데이터) → FullCalendar 이벤트 객체로 변환
+  // EVENTS(우리 데이터) + 구글 캘린더 일정 → FullCalendar 이벤트 객체로 변환
   function mapCalEvents() {
-    return EVENTS.map((e) => ({
+    const ours = EVENTS.map((e) => ({
       id: e.id,
       title: e.title || '(제목 없음)',
       start: e.time ? (e.date + 'T' + e.time + ':00') : e.date,
+      end: (e.time && e.endTime) ? (e.date + 'T' + e.endTime + ':00') : undefined,
       allDay: !e.time,
       classNames: ['fc-ev-' + (e.type === 'deadline' ? 'deadline' : 'meeting')],
       extendedProps: { type: e.type, location: e.location || '' }
     }));
+    if (!gcalConnected || !GEVENTS.length) return ours;
+    // 구글 일정 추가 — 단, 우리가 구글에 올린 일정(googleId 보유)은 중복이라 제외
+    const ourGids = new Set(EVENTS.map((e) => e.googleId).filter(Boolean));
+    const gmapped = GEVENTS
+      .filter((g) => !ourGids.has(g.id) && g.start)
+      .map((g) => ({
+        id: 'g_' + g.id,
+        title: g.summary || '(제목 없음)',
+        start: g.start.dateTime || g.start.date,
+        end: g.end ? (g.end.dateTime || g.end.date) : undefined,
+        allDay: !g.start.dateTime,
+        classNames: ['fc-ev-google'],
+        extendedProps: { google: true }
+      }));
+    return ours.concat(gmapped);
   }
 
   // 추가·수정·삭제·로드 후 캘린더에 EVENTS 다시 반영
@@ -2908,19 +2988,28 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     mapCalEvents().forEach((e) => CAL.addEvent(e));
   }
 
-  // 일정 모달의 시간 select 채우기 (06:00~23:30, 30분 단위 — 네이티브 time 입력 대체)
+  // 일정 모달의 시간 select 채우기 — 시작·종료 둘 다 (06:00~23:30, 30분 단위)
   function fillTimeSelect() {
-    const sel = $('evmTime');
-    if (!sel || sel.dataset.filled) return;
-    let html = '<option value="">종일 (시간 없음)</option>';
+    const start = $('evmTime'), end = $('evmEndTime');
+    if (!start || start.dataset.filled) return;
+    let opts = '';
     for (let h = 6; h <= 23; h++) {
       for (let m = 0; m < 60; m += 30) {
         const t = pad(h) + ':' + pad(m);
-        html += '<option value="' + t + '">' + t + '</option>';
+        opts += '<option value="' + t + '">' + t + '</option>';
       }
     }
-    sel.innerHTML = html;
-    sel.dataset.filled = '1';
+    start.innerHTML = '<option value="">종일 (시간 없음)</option>' + opts;
+    if (end) end.innerHTML = '<option value="">종료 없음</option>' + opts;
+    start.dataset.filled = '1';
+  }
+
+  // 시작 시각에 분(min)을 더한 'HH:MM'. 범위(23:30) 밖이면 빈 문자열.
+  function addMinutes(hhmm, min) {
+    const p = String(hhmm).split(':');
+    let total = (Number(p[0]) * 60 + Number(p[1])) + min;
+    if (total > 23 * 60 + 30) return '';
+    return pad(Math.floor(total / 60)) + ':' + pad(total % 60);
   }
 
   function initCalendar() {
@@ -2934,7 +3023,7 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     CAL = new FullCalendar.Calendar(el, {
       initialView: 'dayGridMonth',
       locale: 'ko',
-      height: 'auto',
+      height: 460,            // 고정 높이 — 월/주/일 뷰가 모두 같은 크기 (주·일이 길게 늘어나지 않음)
       headerToolbar: { left: 'prev,next today', center: 'title', right: 'dayGridMonth,timeGridWeek,timeGridDay' },
       buttonText: { today: '오늘', month: '월', week: '주', day: '일' },
       dayMaxEvents: 3,
@@ -2942,7 +3031,8 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
       nowIndicator: true,
       slotMinTime: '07:00:00',
       slotMaxTime: '23:00:00',
-      expandRows: true,
+      expandRows: true,       // 주·일 뷰 시간축을 고정 높이에 맞춰 — 스크롤 없이 하루 전체가 한눈에
+      scrollTime: '08:00:00',
       eventTimeFormat: { hour: '2-digit', minute: '2-digit', hour12: false },
       events: mapCalEvents(),
       // 날짜(또는 주·일 뷰의 시간대)를 클릭하면 일정 입력 팝업
@@ -2953,6 +3043,10 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
       },
       // 기존 일정을 클릭하면 수정·삭제 팝업
       eventClick: (info) => {
+        if (String(info.event.id).indexOf('g_') === 0) {   // 구글 캘린더에서 가져온 일정
+          window.alert('📅 ' + (info.event.title || '') + '\n\n구글 캘린더 일정입니다.\n수정·삭제는 구글 캘린더 앱에서 해주세요.');
+          return;
+        }
         const ev = EVENTS.find((e) => e.id === info.event.id);
         if (ev) openEventModal('edit', ev.date, ev, '');
       }
@@ -3013,6 +3107,8 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     $('evmInput').value = ev ? (ev.title || '') : '';
     $('evmLocation').value = ev ? (ev.location || '') : '';
     $('evmTime').value = ev ? (ev.time || '') : (prefillTime || '');
+    $('evmEndTime').value = ev ? (ev.endTime || '') : '';
+    syncEndTimeState();
     $('evmSave').textContent = mode === 'edit' ? '수정 저장' : '저장';
     $('evmDelete').style.display = mode === 'edit' ? '' : 'none';
     applyEvmType();
@@ -3021,45 +3117,239 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
   }
   function closeEventModal() { $('evModalBg').classList.remove('open'); }
 
-  function saveEventModal() {
+  // 시작 시간 상태에 맞춰 종료 select 정리 — 종일이면 종료 비활성, 시작 바뀌면 종료 기본 +1시간
+  function syncEndTimeState() {
+    const start = $('evmTime').value, endEl = $('evmEndTime');
+    if (!endEl) return;
+    if (!start) {                       // 종일 — 종료 시간 의미 없음
+      endEl.value = '';
+      endEl.disabled = true;
+    } else {
+      endEl.disabled = false;
+      if (!endEl.value || endEl.value <= start) endEl.value = addMinutes(start, 60);
+    }
+  }
+
+  async function saveEventModal() {
     const title = $('evmInput').value.trim();
     if (!title) { $('evmInput').focus(); return; }
     const time = $('evmTime').value;
+    let endTime = $('evmEndTime').value;
     const location = $('evmLocation').value.trim();
+    if (!time) endTime = '';                              // 종일이면 종료 없음
+    if (endTime && endTime <= time) {                     // 종료가 시작보다 이르거나 같음
+      window.alert('종료 시간은 시작 시간보다 늦어야 합니다.');
+      return;
+    }
+    let saved = null;          // 방금 저장된 일정 (구글 동기화 대상)
     if (evmMode === 'edit' && evmId) {
-      EVENTS = EVENTS.map((e) => e.id === evmId
-        ? Object.assign({}, e, { title: title, time: time, location: location, type: evmType })
-        : e);
+      EVENTS = EVENTS.map((e) => {
+        if (e.id !== evmId) return e;
+        saved = Object.assign({}, e, { title: title, time: time, endTime: endTime, location: location, type: evmType });
+        return saved;
+      });
     } else {
-      EVENTS = EVENTS.concat([{
+      saved = {
         id: 'e_' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
-        date: evmDate, title: title, time: time, location: location,
+        date: evmDate, title: title, time: time, endTime: endTime, location: location,
         type: evmType, created: new Date().toISOString()
-      }]);
+      };
+      EVENTS = EVENTS.concat([saved]);
     }
     refreshCal();
     scheduleSaveEvents();
     closeEventModal();
+    // 구글 캘린더 양방향 — 연결돼 있으면 구글에도 반영
+    if (saved && gcalConnected) {
+      if (saved.googleId) {
+        gcalPatch(saved);
+      } else {
+        const gid = await gcalCreate(saved);
+        if (gid) {            // 구글 event id 를 우리 일정에 저장 → 다음부터 중복 방지·수정 추적
+          EVENTS = EVENTS.map((e) => e.id === saved.id ? Object.assign({}, e, { googleId: gid }) : e);
+          scheduleSaveEvents();
+        }
+      }
+    }
   }
   function deleteEventModal() {
     if (!evmId) return;
     if (!window.confirm('이 일정을 삭제할까요?')) return;
+    const target = EVENTS.find((e) => e.id === evmId);
     EVENTS = EVENTS.filter((e) => e.id !== evmId);
     refreshCal();
     scheduleSaveEvents();
     closeEventModal();
+    if (target && target.googleId && gcalConnected) gcalDelete(target.googleId);   // 구글에서도 삭제
   }
 
-  /* ════ 할 일 패널 ════ */
-  function sortTask(a, b) {
-    const ah = a.priority === 'high', bh = b.priority === 'high';
-    if (ah !== bh) return ah ? -1 : 1;
-    return String(a.created || '').localeCompare(String(b.created || ''));
+  /* ════ 구글 캘린더 양방향 연동 (Google Identity Services) ════ */
+  const GCAL_CLIENT_ID = '108517220824-vetv6lhf4cs6uu3sihdqj857qissvtde.apps.googleusercontent.com';
+  const GCAL_SCOPE = 'https://www.googleapis.com/auth/calendar.events';
+  const LS_GCAL = 'sunny_gcal_on';
+  let gcalTokenClient = null;
+  let gcalToken = '';
+  let gcalConnected = false;
+  let gcalSilent = false;       // 자동 재연결(조용히 시도) 중이면 에러 메시지 억제
+  let GEVENTS = [];             // 구글 캘린더에서 가져온 일정
+
+  function gcalStatus(msg, cls) {
+    const el = $('calGcalStatus');
+    if (!el) return;
+    el.textContent = msg || '';
+    el.className = 'cal-gcal-status' + (cls ? ' ' + cls : '');
   }
+  function updateGcalUI() {
+    const btn = $('calGcalBtn');
+    if (!btn) return;
+    btn.classList.toggle('connected', gcalConnected);
+    btn.textContent = gcalConnected ? '✓ 구글 연결됨' : '🔗 구글 캘린더 연결';
+  }
+
+  function initGcal() {
+    if (!(window.google && google.accounts && google.accounts.oauth2)) return false;
+    if (gcalTokenClient) return true;
+    gcalTokenClient = google.accounts.oauth2.initTokenClient({
+      client_id: GCAL_CLIENT_ID,
+      scope: GCAL_SCOPE,
+      callback: (resp) => {
+        if (resp && resp.access_token) {
+          gcalToken = resp.access_token;
+          gcalConnected = true;
+          gcalSilent = false;
+          localStorage.setItem(LS_GCAL, '1');
+          updateGcalUI();
+          gcalStatus('구글 캘린더 일정을 불러오는 중…');
+          loadGoogleEvents();
+        } else if (!gcalSilent) {
+          gcalStatus('구글 연결이 취소되었거나 실패했습니다.', 'err');
+        }
+        gcalSilent = false;
+      },
+      error_callback: () => {
+        if (!gcalSilent) gcalStatus('구글 연결 창이 닫혔습니다. 다시 시도해 주세요.', 'err');
+        gcalSilent = false;
+      }
+    });
+    return true;
+  }
+
+  function gcalConnect() {
+    if (!initGcal()) {
+      gcalStatus('구글 로그인 모듈을 아직 불러오지 못했습니다. 잠시 후 다시 눌러주세요.', 'err');
+      return;
+    }
+    gcalStatus('구글 로그인 창을 여는 중…');
+    gcalTokenClient.requestAccessToken();
+  }
+
+  function gcalDisconnect() {
+    if (!window.confirm('구글 캘린더 연결을 해제할까요?\n홈 일정은 그대로 남고, 구글 일정 표시만 멈춥니다.')) return;
+    if (gcalToken && google.accounts.oauth2.revoke) {
+      google.accounts.oauth2.revoke(gcalToken, () => {});
+    }
+    gcalToken = '';
+    gcalConnected = false;
+    GEVENTS = [];
+    localStorage.removeItem(LS_GCAL);
+    updateGcalUI();
+    gcalStatus('');
+    refreshCal();
+  }
+
+  async function loadGoogleEvents() {
+    if (!gcalToken) return;
+    const timeMin = new Date(Date.now() - 45 * 86400000).toISOString();
+    const timeMax = new Date(Date.now() + 180 * 86400000).toISOString();
+    const url = 'https://www.googleapis.com/calendar/v3/calendars/primary/events'
+      + '?singleEvents=true&orderBy=startTime&maxResults=250'
+      + '&timeMin=' + encodeURIComponent(timeMin)
+      + '&timeMax=' + encodeURIComponent(timeMax);
+    try {
+      const res = await fetch(url, { headers: { Authorization: 'Bearer ' + gcalToken } });
+      if (res.status === 401) {            // 토큰 만료
+        gcalToken = '';
+        gcalStatus('구글 인증이 만료됐습니다. "구글 캘린더 연결"을 다시 눌러주세요.', 'err');
+        return;
+      }
+      if (!res.ok) { gcalStatus('구글 일정을 불러오지 못했습니다 (HTTP ' + res.status + ').', 'err'); return; }
+      const data = await res.json();
+      GEVENTS = (data.items || []).filter((g) => g.status !== 'cancelled' && g.start);
+      gcalStatus('구글 캘린더 연결됨 · 일정 ' + GEVENTS.length + '개 표시 중', 'ok');
+      refreshCal();
+    } catch (e) {
+      gcalStatus('구글 일정을 불러오는 중 네트워크 오류가 발생했습니다.', 'err');
+    }
+  }
+
+  // 우리 일정 → 구글 캘린더 이벤트 본문
+  function ourEventToGoogleBody(ev) {
+    const body = { summary: ev.title || '(제목 없음)' };
+    if (ev.location) body.location = ev.location;
+    if (ev.time) {
+      const end = ev.endTime || addMinutes(ev.time, 60) || ev.time;
+      body.start = { dateTime: ev.date + 'T' + ev.time + ':00', timeZone: 'Asia/Seoul' };
+      body.end   = { dateTime: ev.date + 'T' + end + ':00', timeZone: 'Asia/Seoul' };
+    } else {                               // 종일 — 구글은 end.date 가 다음 날
+      const next = new Date(parseYmd(ev.date));
+      next.setDate(next.getDate() + 1);
+      body.start = { date: ev.date };
+      body.end   = { date: ymd(next) };
+    }
+    return body;
+  }
+
+  // 구글에 새 일정 생성 → 구글 event id 반환 (실패 시 '' — 홈에는 이미 저장됨)
+  async function gcalCreate(ev) {
+    if (!gcalConnected || !gcalToken) return '';
+    try {
+      const res = await fetch('https://www.googleapis.com/calendar/v3/calendars/primary/events', {
+        method: 'POST',
+        headers: { Authorization: 'Bearer ' + gcalToken, 'Content-Type': 'application/json' },
+        body: JSON.stringify(ourEventToGoogleBody(ev))
+      });
+      if (res.ok) { const g = await res.json(); return g.id || ''; }
+    } catch (e) { /* 무시 — 다음 동기화 때 다시 시도 가능 */ }
+    return '';
+  }
+  async function gcalPatch(ev) {
+    if (!gcalConnected || !gcalToken || !ev.googleId) return;
+    try {
+      await fetch('https://www.googleapis.com/calendar/v3/calendars/primary/events/' + encodeURIComponent(ev.googleId), {
+        method: 'PATCH',
+        headers: { Authorization: 'Bearer ' + gcalToken, 'Content-Type': 'application/json' },
+        body: JSON.stringify(ourEventToGoogleBody(ev))
+      });
+    } catch (e) { /* 무시 */ }
+  }
+  async function gcalDelete(googleId) {
+    if (!gcalConnected || !gcalToken || !googleId) return;
+    try {
+      await fetch('https://www.googleapis.com/calendar/v3/calendars/primary/events/' + encodeURIComponent(googleId), {
+        method: 'DELETE',
+        headers: { Authorization: 'Bearer ' + gcalToken }
+      });
+    } catch (e) { /* 무시 */ }
+  }
+
+  /* ════ 할 일 패널 — 순서는 드래그(SortableJS)로 직접 정한다 ════ */
+  let todoSortable = null;   // SortableJS 인스턴스 (한 번만 생성)
+  const GRIP_SVG = '<svg viewBox="0 0 6 14" fill="currentColor" aria-hidden="true">'
+    + '<circle cx="1.5" cy="2" r="1.3"/><circle cx="4.5" cy="2" r="1.3"/>'
+    + '<circle cx="1.5" cy="7" r="1.3"/><circle cx="4.5" cy="7" r="1.3"/>'
+    + '<circle cx="1.5" cy="12" r="1.3"/><circle cx="4.5" cy="12" r="1.3"/></svg>';
 
   function taskRow(t) {
     const row = document.createElement('div');
     row.className = 'todo-item' + (t.done ? ' done' : '');
+    row.dataset.id = t.id;
+
+    const grip = document.createElement('span');
+    grip.className = 'todo-grip';
+    grip.innerHTML = GRIP_SVG;
+    grip.title = '드래그해서 순서 변경';
+    if (t.done) grip.style.visibility = 'hidden';   // 완료한 일은 순서 고정
+    row.appendChild(grip);
 
     const chk = document.createElement('button');
     chk.className = 'todo-check';
@@ -3099,9 +3389,9 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     const list = $('todoList'), prog = $('todoProgress'), doneToggle = $('todoDoneToggle');
     if (!list) return;
 
-    // 날짜와 무관한 할 일 체크리스트 (캘린더 일정과 별개)
-    const open = TASKS.filter((t) => !t.done).sort(sortTask);
-    const done = TASKS.filter((t) => t.done).sort(sortTask);
+    // 날짜와 무관한 할 일 체크리스트 — 순서는 TASKS 배열 순서 그대로 (드래그로 정함)
+    const open = TASKS.filter((t) => !t.done);
+    const done = TASKS.filter((t) => t.done);
 
     list.innerHTML = '';
     if (!TASKS.length) {
@@ -3113,6 +3403,7 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
       open.forEach((t) => list.appendChild(taskRow(t)));
       if (showDone) done.forEach((t) => list.appendChild(taskRow(t)));
     }
+    initTodoSortable(list);
 
     if (prog) {
       if (TASKS.length) {
@@ -3136,13 +3427,41 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
   function genId() { return 't_' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6); }
 
+  // 드래그 종료 — DOM 순서대로 미완료 할 일 순서를 재구성한다 (완료 항목은 뒤에 그대로 유지)
+  function applyTodoOrder() {
+    const list = $('todoList');
+    if (!list) return;
+    const domIds = Array.from(list.querySelectorAll('.todo-item:not(.done)')).map((el) => el.dataset.id);
+    const openById = {};
+    TASKS.forEach((t) => { if (!t.done) openById[t.id] = t; });
+    const newOpen = domIds.map((id) => openById[id]).filter(Boolean);
+    TASKS = newOpen.concat(TASKS.filter((t) => t.done));
+    scheduleSave();
+  }
+
+  // 할 일 목록에 드래그 정렬 부착 (컨테이너는 유지되므로 1회만 생성)
+  function initTodoSortable(list) {
+    if (todoSortable || !list || typeof Sortable === 'undefined') return;
+    todoSortable = Sortable.create(list, {
+      handle: '.todo-grip',
+      draggable: '.todo-item:not(.done)',
+      animation: 150,
+      ghostClass: 'todo-ghost',
+      chosenClass: 'todo-chosen',
+      dragClass: 'todo-drag',
+      onEnd: applyTodoOrder
+    });
+  }
+
   function addTask(text) {
     text = (text || '').trim();
     if (!text) return;
-    TASKS.push({
+    const t = {
       id: genId(), text: text,
       done: false, priority: newPrio, created: new Date().toISOString()
-    });
+    };
+    // 중요 = 맨 위, 보통 = 맨 아래
+    TASKS = (newPrio === 'high') ? [t].concat(TASKS) : TASKS.concat([t]);
     renderTodo();
     scheduleSave();
   }
@@ -3265,7 +3584,12 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
   $('evmInput').addEventListener('keydown', (e) => { if (e.key === 'Enter') saveEventModal(); });
   $('evmTypeMeeting').addEventListener('click', () => { evmType = 'meeting'; applyEvmType(); });
   $('evmTypeDeadline').addEventListener('click', () => { evmType = 'deadline'; applyEvmType(); });
+  $('evmTime').addEventListener('change', syncEndTimeState);
   $('evModalBg').addEventListener('click', (e) => { if (e.target === $('evModalBg')) closeEventModal(); });
+  // 구글 캘린더 연결/해제
+  if ($('calGcalBtn')) {
+    $('calGcalBtn').addEventListener('click', () => { gcalConnected ? gcalDisconnect() : gcalConnect(); });
+  }
   // 영어 회화 — 대화 전체 발음 재생
   if ($('engPlayAll')) $('engPlayAll').addEventListener('click', () => speakConversation(CURRENT_ENG));
 
@@ -3468,6 +3792,19 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
   loadEnglish();
   loadWeather();
   Promise.all([loadProjectsAuto(), loadInprogress()]).then(renderInProgress2);
+
+  // 구글 캘린더 — GIS(비동기 로드) 준비되면 초기화 + 이전에 연결했으면 조용히 자동 재연결
+  (function waitGis(tries) {
+    if (window.google && google.accounts && google.accounts.oauth2) {
+      initGcal();
+      if (localStorage.getItem(LS_GCAL) === '1' && gcalTokenClient) {
+        gcalSilent = true;
+        gcalTokenClient.requestAccessToken({ prompt: '' });   // 동의 기록 있으면 창 없이 토큰 재발급
+      }
+    } else if ((tries || 0) < 25) {
+      setTimeout(() => waitGis((tries || 0) + 1), 300);
+    }
+  })(0);
 })();
 </script>
 </body>
