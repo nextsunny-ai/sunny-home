@@ -1799,7 +1799,7 @@ body {
       <input type="text" id="evmInput" class="evm-control" placeholder="예: 버치사운드 미팅" maxlength="120" autocomplete="off">
     </div>
 
-    <div class="evm-field">
+    <div class="evm-field" id="evmTypeField">
       <span class="evm-label">종류</span>
       <div class="evm-type-row">
         <button type="button" class="evm-type-btn is-meeting active" id="evmTypeMeeting">미팅</button>
@@ -2968,8 +2968,9 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
   let CAL = null;             // FullCalendar 인스턴스
   let evmMode = 'new';        // 일정 모달 모드: new | edit
   let evmDate = todayYmd();   // 모달이 다루는 날짜 (YYYY-MM-DD)
-  let evmId = null;           // 수정 중인 일정 id
+  let evmId = null;           // 수정 중인 우리 일정 id
   let evmType = 'meeting';    // 모달 종류 선택값: meeting | deadline
+  let evmGoogleId = null;     // 구글 일정 수정 중이면 그 구글 event id (우리 일정과 구분)
 
   // EVENTS(우리 데이터) + 구글 캘린더 일정 → FullCalendar 이벤트 객체로 변환
   function mapCalEvents() {
@@ -3061,8 +3062,10 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
       },
       // 기존 일정을 클릭하면 수정·삭제 팝업
       eventClick: (info) => {
-        if (String(info.event.id).indexOf('g_') === 0) {   // 구글 캘린더에서 가져온 일정
-          window.alert('📅 ' + (info.event.title || '') + '\n\n구글 캘린더 일정입니다.\n수정·삭제는 구글 캘린더 앱에서 해주세요.');
+        if (String(info.event.id).indexOf('g_') === 0) {   // 구글 캘린더 일정 — 홈에서 바로 수정
+          const gid = String(info.event.id).slice(2);
+          const g = GEVENTS.find((x) => x.id === gid);
+          if (g) openGoogleModal(g);
           return;
         }
         const ev = EVENTS.find((e) => e.id === info.event.id);
@@ -3116,6 +3119,7 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     evmMode = mode;
     evmDate = date;
     evmId = ev ? ev.id : null;
+    evmGoogleId = null;        // 우리 일정 모달 — 구글 전용 모드 해제
     evmType = (ev && ev.type === 'deadline') ? 'deadline' : 'meeting';
     const dObj = parseYmd(date);
     const dow = ['일', '월', '화', '수', '목', '금', '토'][dObj.getDay()];
@@ -3129,11 +3133,56 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     syncEndTimeState();
     $('evmSave').textContent = mode === 'edit' ? '수정 저장' : '저장';
     $('evmDelete').style.display = mode === 'edit' ? '' : 'none';
+    if ($('evmTypeField')) $('evmTypeField').style.display = '';   // 구글 모달이 숨겼을 수 있어 복구
     applyEvmType();
     $('evModalBg').classList.add('open');
     setTimeout(() => $('evmInput').focus(), 60);
   }
   function closeEventModal() { $('evModalBg').classList.remove('open'); }
+
+  // 구글 일정의 start/end ({dateTime} 또는 {date}) → { date:'YYYY-MM-DD', time:'HH:MM' }
+  function gcalParseDT(dt) {
+    if (!dt) return { date: '', time: '' };
+    if (dt.dateTime) return { date: dt.dateTime.slice(0, 10), time: dt.dateTime.slice(11, 16) };
+    return { date: dt.date || '', time: '' };   // 종일 일정
+  }
+  // 시간 select 에 없는 시각(예: 14:15)이면 옵션을 즉석 추가 — 구글 일정의 임의 시각 대응
+  function ensureTimeOption(sel, t) {
+    if (!sel || !t) return;
+    if (!Array.prototype.some.call(sel.options, (o) => o.value === t)) {
+      const o = document.createElement('option');
+      o.value = t; o.textContent = t;
+      sel.appendChild(o);
+    }
+  }
+
+  // 구글 캘린더 일정을 홈 모달로 열기 — 홈에서 바로 수정·삭제 (구글에 직접 반영)
+  function openGoogleModal(g) {
+    const s = gcalParseDT(g.start);
+    const e = gcalParseDT(g.end);
+    evmMode = 'edit';
+    evmId = null;
+    evmGoogleId = g.id;
+    evmDate = s.date || todayYmd();
+    evmType = 'meeting';
+    const dObj = parseYmd(evmDate);
+    const dow = ['일', '월', '화', '수', '목', '금', '토'][dObj.getDay()];
+    $('evmDate').textContent = dObj.getFullYear() + '년 '
+      + (dObj.getMonth() + 1) + '월 ' + dObj.getDate() + '일 (' + dow + ')';
+    $('evmTitle').textContent = '구글 일정 수정';
+    $('evmInput').value = g.summary || '';
+    $('evmLocation').value = g.location || '';
+    ensureTimeOption($('evmTime'), s.time);
+    ensureTimeOption($('evmEndTime'), (s.time && e.time) ? e.time : '');
+    $('evmTime').value = s.time || '';
+    $('evmEndTime').value = (s.time && e.time) ? e.time : '';
+    if ($('evmTypeField')) $('evmTypeField').style.display = 'none';   // 구글 일정엔 미팅/데드라인 구분 없음
+    syncEndTimeState();
+    $('evmSave').textContent = '구글에 저장';
+    $('evmDelete').style.display = '';
+    $('evModalBg').classList.add('open');
+    setTimeout(() => $('evmInput').focus(), 60);
+  }
 
   // 시작 시간 상태에 맞춰 종료 select 정리 — 종일이면 종료 비활성, 시작 바뀌면 종료 기본 +1시간
   function syncEndTimeState() {
@@ -3157,6 +3206,14 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     if (!time) endTime = '';                              // 종일이면 종료 없음
     if (endTime && endTime <= time) {                     // 종료가 시작보다 이르거나 같음
       window.alert('종료 시간은 시작 시간보다 늦어야 합니다.');
+      return;
+    }
+    // 구글 일정 수정 — 구글 캘린더에 직접 반영 (events.json 과 무관)
+    if (evmGoogleId) {
+      closeEventModal();
+      gcalStatus('구글 일정을 저장하는 중…');
+      await gcalPatch({ googleId: evmGoogleId, date: evmDate, title: title, time: time, endTime: endTime, location: location });
+      loadGoogleEvents();
       return;
     }
     let saved = null;          // 방금 저장된 일정 (구글 동기화 대상)
@@ -3191,6 +3248,14 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     }
   }
   function deleteEventModal() {
+    // 구글 일정 삭제 — 구글 캘린더(폰)에서도 삭제됨
+    if (evmGoogleId) {
+      if (!window.confirm('이 구글 일정을 삭제할까요?\n구글 캘린더(폰)에서도 삭제됩니다.')) return;
+      closeEventModal();
+      gcalStatus('구글 일정을 삭제하는 중…');
+      gcalDelete(evmGoogleId).then(loadGoogleEvents);
+      return;
+    }
     if (!evmId) return;
     if (!window.confirm('이 일정을 삭제할까요?')) return;
     const target = EVENTS.find((e) => e.id === evmId);
