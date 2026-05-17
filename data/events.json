@@ -1,0 +1,5 @@
+{
+  "updated": "2026-05-18",
+  "note": "캘린더 일정 — 미팅·데드라인 등 날짜에 붙는 일정. 홈 대시보드 캘린더에서 직접 추가·삭제한다. 할 일(tasks.json)과는 별개. event 구조: { id, date(YYYY-MM-DD), title, type(meeting|deadline|etc), created }.",
+  "events": []
+}
