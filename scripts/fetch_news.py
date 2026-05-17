@@ -31,7 +31,7 @@ CTX.verify_mode = ssl.CERT_NONE
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; SunnyHome/2.0)"}
 
 CATEGORIES = [
-    {"id": "ai",          "name": "AI 트렌드", "queries": ["AI 에이전트", "AI 이미지 생성", "GPT 클로드"]},
+    {"id": "ai",          "name": "AI 트렌드", "queries": ["AI 에이전트", "클로드 Claude Anthropic", "AI 이미지 생성", "ChatGPT GPT"]},
     {"id": "content_ip",  "name": "콘텐츠·IP", "queries": ["K웹툰 IP", "한국 콘텐츠 IP", "OTT 콘텐츠"]},
     {"id": "performance", "name": "공연",      "queries": ["뮤지컬 공연 2026", "공연 페스티벌 서울"]},
     {"id": "exhibition",  "name": "전시",      "queries": ["미디어아트 전시", "현대미술 전시 서울"]},

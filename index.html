@@ -6,7 +6,10 @@
 <title>SUNNY HOME</title>
 <meta name="description" content="써니 개인 대시보드. 뉴스, 도구, 프로젝트, 마감일을 한 눈에.">
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap">
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -38,7 +41,7 @@
   --r-pill: 999px;
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
   --font: 'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-  --mono: 'SF Mono', 'JetBrains Mono', ui-monospace, monospace;
+  --mono: 'JetBrains Mono', 'SF Mono', ui-monospace, monospace;
 }
 
 /* ─── FOCUS & A11Y ─── */
@@ -523,117 +526,6 @@ body {
   text-transform: uppercase; letter-spacing: 0.08em;
 }
 
-/* ─── OUTPUTS ─── */
-.outputs-section {
-  padding: 72px 56px;
-  background: var(--bg-elevated);
-}
-.outputs-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 10px;
-  margin-top: 28px;
-}
-.output-tile {
-  aspect-ratio: 1/1; border-radius: var(--r); overflow: hidden;
-  background: var(--bg-card); cursor: pointer;
-  position: relative; transition: all 0.25s var(--ease);
-  display: flex; align-items: center; justify-content: center;
-  border: 1px solid var(--border);
-}
-.output-tile:hover {
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 12px 32px rgba(0,0,0,0.5);
-  border-color: rgba(255,255,255,0.08);
-}
-.output-tile img { width: 100%; height: 100%; object-fit: cover; }
-.output-tile .placeholder { font-size: 2rem; color: var(--text-mute); font-weight: 100; }
-.output-tile .label {
-  position: absolute; left: 0; right: 0; bottom: 0;
-  padding: 8px 10px;
-  background: linear-gradient(transparent, rgba(0,0,0,0.85));
-  font-size: 0.6rem; color: var(--text);
-  opacity: 0; transition: opacity 0.25s;
-  letter-spacing: 0.04em;
-}
-.output-tile:hover .label { opacity: 1; }
-
-/* ─── FLIPBOOK ─── */
-.flipbook-section {
-  padding: 72px 56px 96px;
-  background: var(--bg);
-  border-top: 1px solid var(--border);
-}
-.flipbook-stage {
-  margin-top: 32px;
-  perspective: 2400px;
-  display: flex; justify-content: center;
-}
-.flipbook {
-  position: relative;
-  width: min(880px, 90vw);
-  height: 460px;
-  transform-style: preserve-3d;
-}
-.flip-page {
-  position: absolute; inset: 0;
-  background: var(--bg-elevated);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 40px 48px;
-  transform-origin: left center;
-  transform-style: preserve-3d;
-  transition: transform 0.85s cubic-bezier(0.4, 0, 0.2, 1);
-  backface-visibility: hidden;
-  overflow: hidden;
-  display: flex; flex-direction: column;
-}
-.flip-page.flipped { transform: rotateY(-180deg); }
-.flip-page::before {
-  content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 14px;
-  background: linear-gradient(90deg, rgba(0,0,0,0.3), transparent);
-  pointer-events: none;
-}
-.flip-page-num {
-  position: absolute; right: 28px; bottom: 20px;
-  font-family: var(--mono);
-  font-size: 0.6rem; color: var(--text-mute); letter-spacing: 0.16em;
-}
-.flip-page h3 {
-  font-size: 0.58rem; text-transform: uppercase; letter-spacing: 0.22em;
-  color: var(--orange); font-weight: 700; margin-bottom: 20px;
-}
-.flip-page .quote {
-  font-size: 1.5rem; font-weight: 200; line-height: 1.45; color: var(--text);
-  margin-bottom: 24px; flex: 1;
-}
-.flip-page .attribution { font-size: 0.78rem; color: var(--text-sub); font-weight: 300; }
-.flip-controls {
-  display: flex; gap: 12px; justify-content: center; margin-top: 28px;
-}
-.flip-btn {
-  padding: 10px 22px; min-height: 44px;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid var(--border);
-  border-radius: 22px;
-  color: var(--text-sub);
-  font-family: inherit; font-size: 0.75rem; font-weight: 400;
-  cursor: pointer; transition: all 0.2s;
-  letter-spacing: 0.02em;
-}
-.flip-btn:hover:not(:disabled) {
-  background: rgba(255,255,255,0.06);
-  color: var(--text);
-  border-color: rgba(255,255,255,0.1);
-}
-.flip-btn:disabled { opacity: 0.25; cursor: not-allowed; }
-.flip-progress {
-  display: flex; gap: 6px; align-items: center;
-  font-family: var(--mono);
-  font-size: 0.68rem; color: var(--text-mute);
-  padding: 8px 14px;
-}
-
 /* ─── FOOTER ─── */
 .footer {
   padding: 40px 56px 52px;
@@ -701,7 +593,6 @@ body {
   .mid-col:nth-child(3) { grid-column: span 2; }
   .news-grid { grid-template-columns: repeat(2, 1fr); }
   .news-card:nth-child(4), .news-card:nth-child(7) { grid-column: span 2; }
-  .outputs-grid { grid-template-columns: repeat(4, 1fr); }
 }
 
 /* Tablet portrait / small laptop */
@@ -729,14 +620,9 @@ body {
     padding: 44px 28px; min-height: auto;
   }
 
-  .news-section, .deadlines-section, .outputs-section, .flipbook-section { padding: 48px 24px; }
+  .news-section, .deadlines-section { padding: 48px 24px; }
   .news-grid { grid-template-columns: 1fr; }
   .news-card.featured, .news-card:nth-child(4), .news-card:nth-child(7) { grid-column: span 1; grid-row: span 1; }
-
-  .outputs-grid { grid-template-columns: repeat(3, 1fr); }
-  .flipbook { height: 340px; width: 92vw; }
-  .flip-page { padding: 28px 32px; }
-  .flip-page .quote { font-size: 1.1rem; }
 
   .section-header { font-size: 2.2rem; }
   .footer { padding: 32px 24px; }
@@ -758,16 +644,9 @@ body {
   .tool-tile .icon { font-size: 1.3rem; }
   .tool-tile .name { font-size: 0.7rem; }
 
-  .news-section, .deadlines-section, .outputs-section, .flipbook-section { padding: 40px 16px; }
+  .news-section, .deadlines-section { padding: 40px 16px; }
   .section-header { font-size: 1.8rem; }
   .deadlines-grid { grid-template-columns: 1fr; }
-  .outputs-grid { grid-template-columns: repeat(2, 1fr); }
-
-  .flipbook { height: 280px; }
-  .flip-page { padding: 20px 24px; }
-  .flip-page .quote { font-size: 0.95rem; }
-  .flip-controls { gap: 8px; }
-  .flip-btn { padding: 8px 16px; font-size: 0.7rem; }
 
   .footer { padding: 24px 16px; flex-direction: column; align-items: flex-start; }
 }
@@ -1282,26 +1161,7 @@ body {
     </div>
   </section>
 
-  <!-- ═══ OUTPUTS ═══ -->
-  <section class="outputs-section reveal" id="outputs-section">
-    <div class="section-eyebrow">Visual Maker</div>
-    <div class="section-header">Recent Outputs</div>
-    <div class="outputs-grid" id="outputsGrid"></div>
-  </section>
-
-  <!-- ═══ FLIPBOOK ═══ -->
-  <section class="flipbook-section reveal" id="flipbook-section">
-    <div class="section-eyebrow">Hana's Curation</div>
-    <div class="section-header">Daily Pages</div>
-    <div class="flipbook-stage">
-      <div class="flipbook" id="flipbook"></div>
-    </div>
-    <div class="flip-controls">
-      <button class="flip-btn" id="flipPrev" aria-label="이전 페이지">&larr; Prev</button>
-      <div class="flip-progress" id="flipProgress">1 / 1</div>
-      <button class="flip-btn" id="flipNext" aria-label="다음 페이지">Next &rarr;</button>
-    </div>
-  </section>
+  <!-- Daily Pages(큐레이션)·Visual Maker(Outputs) 섹션 = 2026-05-17 완전 제거 -->
 
 
   <style>
@@ -1342,15 +1202,10 @@ body {
   .tq-role { font-size: 0.65rem; color: var(--text-sub); white-space: normal; line-height: 1.25; margin-top: 4px; }
   .tq-co { display: inline-block; font-size: 0.55rem; font-family: var(--mono); letter-spacing: 0.06em; padding: 2px 6px; border-radius: 999px; margin-top: 5px; }
 
-  /* ★ Outputs·Flipbook 섹션 = 숨김 (= 대표님 2026-05-11 "디스 위크 아래 다 지우자") */
-  #outputs-section, #flipbook-section { display: none !important; }
-
   /* ★ 섹션 박스 (= 위아래 구분, 2026-05-11 대표님 명시) */
   .mid,
   .news-section,
   .deadlines-section,
-  .outputs-section,
-  .flipbook-section,
   .activity-section {
     max-width: 1400px !important;
     margin: 24px auto !important;
@@ -1366,7 +1221,7 @@ body {
   /* hero·english은 그대로 (배경 X = 통째 베이지) */
   @media (max-width: 980px) {
     .mid { grid-template-columns: 1fr; gap: 24px; }
-    .mid, .news-section, .deadlines-section, .outputs-section, .flipbook-section, .activity-section {
+    .mid, .news-section, .deadlines-section, .activity-section {
       margin: 16px 12px !important; padding: 24px 20px !important;
     }
   }
@@ -2468,17 +2323,20 @@ function renderNewsPick(filter) {
 
   let picked;
   if (filter === 'all') {
-    // 카테고리당 1개씩 먼저 채워 다양성 확보 → 남는 자리는 최신순
-    const priority = ['ai','content_ip','performance','exhibition','grants','design','festival'];
-    const sorted = [...allNewsItems].sort((a, b) => {
-      const pa = priority.indexOf(a.cat);
-      const pb = priority.indexOf(b.cat);
-      return (pa === -1 ? 99 : pa) - (pb === -1 ? 99 : pb);
+    // ★ AI 뉴스를 맨 앞에 우선 노출 (대표님 2026-05-17 명시 — 클로드 등 AI 트렌드 우선)
+    const aiItems = allNewsItems.filter(n => n.cat === 'ai').slice(0, 4);
+    picked = aiItems.slice();
+    const usedCats = new Set(['ai']);
+    // 그다음 다른 카테고리 1개씩 — 다양성 확보 (allNewsItems 는 최신순)
+    allNewsItems.forEach(n => {
+      if (picked.length >= 12 || usedCats.has(n.cat)) return;
+      picked.push(n); usedCats.add(n.cat);
     });
-    picked = [];
-    const usedCats = new Set();
-    sorted.forEach(n => { if (picked.length >= 12 || usedCats.has(n.cat)) return; picked.push(n); usedCats.add(n.cat); });
-    sorted.forEach(n => { if (picked.length >= 12 || picked.includes(n)) return; picked.push(n); });
+    // 남는 자리는 최신순으로 채움
+    allNewsItems.forEach(n => {
+      if (picked.length >= 12 || picked.indexOf(n) !== -1) return;
+      picked.push(n);
+    });
   } else {
     // 특정 카테고리 탭 — 그 카테고리만 최신순 최대 12개
     picked = allNewsItems.filter(n => n.cat === filter).slice(0, 12);
@@ -2554,100 +2412,7 @@ loadExternalData();
 // ═══ CALENDAR · TODO · GITHUB ═══
 // 달력·할 일·GitHub 자동 저장은 하단 "SUNNY HOME v2" 통합 블록에서 처리한다.
 
-// ═══ OUTPUTS ═══
-async function loadOutputs() {
-  const grid = document.getElementById('outputsGrid');
-  let items = [];
-  try {
-    const res = await fetch('data/outputs.json', { cache: 'no-store' });
-    if (res.ok) items = (await res.json()).items || [];
-  } catch(e) {}
-
-  for (let i = 0; i < 6; i++) {
-    const tile = document.createElement('a');
-    tile.className = 'output-tile';
-    tile.target = '_blank'; tile.rel = 'noopener';
-    const item = items[i];
-    if (item && item.image) {
-      tile.href = item.url || item.image;
-      tile.innerHTML =
-        '<img src="' + item.image + '" alt="' + escHtml(item.title || 'output') + '" loading="lazy">' +
-        (item.title ? '<div class="label">' + escHtml(item.title) + '</div>' : '');
-    } else {
-      tile.href = 'https://visual.sunnytoon.com';
-      tile.innerHTML = '<div class="placeholder">+</div>';
-    }
-    grid.appendChild(tile);
-  }
-}
-loadOutputs();
-
-// ═══ FLIPBOOK ═══
-async function loadFlipbook() {
-  const stage = document.getElementById('flipbook');
-  let pages = [];
-  try {
-    const res = await fetch('data/curation.json', { cache: 'no-store' });
-    if (res.ok) pages = (await res.json()).pages || [];
-  } catch(e) {}
-
-  if (!pages.length) {
-    pages = [
-      { kind: '책', quote: '디자인은 단순함이 아니라, 단순해 보이게 만드는 일이다.', attribution: '— 디터 람스, Less but Better' },
-      { kind: '영상', quote: '진짜 만든 사람의 손길은 30초 안에 드러난다.', attribution: '— Apple Design Stories, 2026' },
-      { kind: '전시', quote: '미디어아트는 관객을 작품의 일부로 만드는 순간 완성된다.', attribution: '— 국립현대미술관 기획전 도록' },
-      { kind: '말', quote: '브랜드는 매일 흘리는 작은 흔적의 총합이다.', attribution: '— 하나(HANA), 오늘의 큐레이션' },
-    ];
-  }
-
-  stage.innerHTML = '';
-  pages.forEach((p, i) => {
-    const page = document.createElement('div');
-    page.className = 'flip-page';
-    page.style.zIndex = (pages.length - i);
-    page.innerHTML =
-      '<h3>' + escHtml(p.kind || 'Curation') + '</h3>' +
-      '<div class="quote">' + escHtml(p.quote || '') + '</div>' +
-      '<div class="attribution">' + escHtml(p.attribution || '') + '</div>' +
-      '<div class="flip-page-num">' + String(i+1).padStart(2,'0') + ' / ' + String(pages.length).padStart(2,'0') + '</div>';
-    stage.appendChild(page);
-  });
-
-  let cursor = 0;
-  const total = pages.length;
-  const progress = document.getElementById('flipProgress');
-  const prevBtn = document.getElementById('flipPrev');
-  const nextBtn = document.getElementById('flipNext');
-
-  function render() {
-    stage.querySelectorAll('.flip-page').forEach((el, idx) => {
-      el.classList.toggle('flipped', idx < cursor);
-    });
-    progress.textContent = (cursor + 1) + ' / ' + total;
-    prevBtn.disabled = cursor === 0;
-    nextBtn.disabled = cursor >= total - 1;
-  }
-  render();
-
-  nextBtn.addEventListener('click', () => { if (cursor < total - 1) { cursor++; render(); } });
-  prevBtn.addEventListener('click', () => { if (cursor > 0) { cursor--; render(); } });
-
-  let startX = 0;
-  stage.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
-  stage.addEventListener('touchend', e => {
-    const dx = e.changedTouches[0].clientX - startX;
-    if (dx < -50 && cursor < total - 1) { cursor++; render(); }
-    else if (dx > 50 && cursor > 0) { cursor--; render(); }
-  });
-
-  document.addEventListener('keydown', e => {
-    const rect = document.getElementById('flipbook-section').getBoundingClientRect();
-    if (rect.top >= window.innerHeight || rect.bottom <= 0) return;
-    if (e.key === 'ArrowRight' && cursor < total - 1) { cursor++; render(); }
-    else if (e.key === 'ArrowLeft' && cursor > 0) { cursor--; render(); }
-  });
-}
-loadFlipbook();
+// FLIPBOOK(Daily Pages 큐레이션) 섹션 = 2026-05-17 완전 제거 (지니 업무는 뉴스·영어)
 
 // ═══ BUILD META ═══
 async function loadBuildMeta() {
