@@ -1,10 +1,19 @@
 {
-  "updated": "2026-05-17T17:51:34+09:00",
+  "updated": "2026-05-17T18:32:24+09:00",
   "categories": [
     {
       "id": "ai",
       "name": "AI 트렌드",
       "items": [
+        {
+          "title": "\"AI 프사, 이 정도였어?\"…챗GPT 이미지 2.0, 출시 첫 주부터 난리 - 지디넷코리아",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1VZkVQV0ktdkxsQVktM3RvN1pFMHVIdnd2UFVGUFAtaUw3LUlmVzhlYnExaFFQOTJVRHZFSmx0cWdGT1V0ejlpYUgtNGJPX0sxNTVGOGhn?oc=5",
+          "source": "지디넷코리아",
+          "summary": "",
+          "published": "2026-05-01",
+          "image": "",
+          "first_seen": "2026-05-17T18:32:24+09:00"
+        },
         {
           "title": "MS, 100여개 AI 에이전트 기반 보안AI 공개…“미토스보다 뛰어나” - 전자신문",
           "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9LYTQzV09yY21HV2o4ajNnT3Fzd2pMVHB1djFrMXJEa1lILTVaUjhVV04zbU83clMyalA1aHRLWlZFa2k1YWV3Ym0xcnpvdw?oc=5",
@@ -129,6 +138,42 @@
       "name": "콘텐츠·IP",
       "items": [
         {
+          "title": "대전시, '웹툰 IP 첨단 클러스터' 중앙투자심사 통과…K-웹툰 거점 도약 본격화 - 전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBBeDZPMzA4SDNfakF1czRRSVlocDRwelczRzFOUXVsYUF5RmlSQzlnZFNsZTlFTGNlMWk0M3p3YW1NeTh3NEVXTnJEemRHZw?oc=5",
+          "source": "전자신문",
+          "summary": "",
+          "published": "2026-04-21",
+          "image": "",
+          "first_seen": "2026-05-17T18:32:24+09:00"
+        },
+        {
+          "title": "콘텐츠 IP전쟁 확산과 뒤처진 한국[최현미의 시론] - 문화일보",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8xWWtzdTJIc2FPVUtiZnlHSC0tNk5NbDUwbEViMWlPSm11Y2J6OWU2dktLZ3VpQWRuRm1GWFZkNlFKNi1Rbjh4UDFJRXQwRTN5?oc=5",
+          "source": "문화일보",
+          "summary": "",
+          "published": "2025-09-03",
+          "image": "",
+          "first_seen": "2026-05-17T18:32:24+09:00"
+        },
+        {
+          "title": "스토리 중심의 ‘슈퍼 IP’ 발굴해야… K-콘텐츠 ‘IP 산업화’ - IPDaily",
+          "url": "https://news.google.com/rss/articles/CBMizAJBVV95cUxPbjVMX1p3bmY1ZzBYVVlUMnFtdzBPcnkxeU8tMS0wTjAxNmItaTd3NkF4RktTQWdIZTFzXzRCVmxBbENoVlJlenhscmVpOTZ6dHI2RXZ4YnBib1JiMC1jWGUwY3VMY1VwYTNiLU5LU0lnbHJBZXdnVGpCRGowU2lsTEJXZ3loYlhRdG9XR0xrYUNhT3pwVjEzdlpaOUZzMnZKYXB5ZVM2VWp4ZWhtVzFvanhVSFRkejc4TDdTX0tjN1FXNzFLM2VROGdMal9pMW9Qei1HbEpDczNZNW9kZlJrNk9ya3lQMHNBSDRjOEk1SGIxUnpwaktCbGRrZ1hHcTZGWlRsS19OSWFjMGlQME5YVkNLdE1DTUd2VDlQYklNcWZVMEJJS2dMeGJtVXVVaDUzWEp0WXAxMUNiRkFZRzJLQnQ4TW56QV9IRzZaaQ?oc=5",
+          "source": "IPDaily",
+          "summary": "",
+          "published": "2025-08-19",
+          "image": "",
+          "first_seen": "2026-05-17T18:32:24+09:00"
+        },
+        {
+          "title": "반크, 디즈니에 ‘21세기 대군부인’ 역사 왜곡 시정 요구 - 마켓인",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB1WGE2V0JUajFacFE2N2p5QlVSRUFpWnJaWUxpQlE5Um5mdV83bmNvR2ZfZTVGVW90R25NNUpXUzc4RTJDZU96dVM3TVZfVmtYcmwtMko2Z2xBVUF2blA0eXhMZi1HVElpQXVqZV9lc3ljMHM?oc=5",
+          "source": "마켓인",
+          "summary": "",
+          "published": "2026-05-17",
+          "image": "",
+          "first_seen": "2026-05-17T18:32:24+09:00"
+        },
+        {
           "title": "네이버웹툰, 워너와 애니 공동 제작 확대…K웹툰 할리우드행 넓힌다 - v.daum.net",
           "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBmV29GNXNFN3B3Nmo0YnN5XzlwWnVHbG5fdU1DeTJmOUdGOTU2eE9FajZEcWFwNEFWZkRsUG1ZVklOMWFfVHlGWUJXakxoS1E?oc=5",
           "source": "v.daum.net",
@@ -215,6 +260,33 @@
       "id": "performance",
       "name": "공연",
       "items": [
+        {
+          "title": "중랑 서울장미축제 둘째 날 북적…노라조·치즈 공연에 체험행사까지 - 문화일보",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE56cUtoVTBZRE1VVnJKaWg2S0Q3N2hxRUtSaFdNQWFPbmFmTlFsdUtkYkphSTJHSElWSG5RWmtaWEtLYWJCMHlsWFEyRmR0cWFq?oc=5",
+          "source": "문화일보",
+          "summary": "",
+          "published": "2026-05-17",
+          "image": "",
+          "first_seen": "2026-05-17T18:32:24+09:00"
+        },
+        {
+          "title": "중랑구, ‘제18회 중랑 서울장미축제’ 둘째 날도 열기 이어가 - 서울포커스",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1XVzlpME4zdEVYSTFlNGpCUVppeXRMN3pwYnJqUHdoQ3gzcjNxMnFvdVd6Mk00dk5MTUlUYThLb0pJS3VIenF1WVo0c2lkWmV5cG41SXkyd2dfY1loRjFFYVE1SFZUQ1RyTXAyZg?oc=5",
+          "source": "서울포커스",
+          "summary": "",
+          "published": "2026-05-17",
+          "image": "",
+          "first_seen": "2026-05-17T18:32:24+09:00"
+        },
+        {
+          "title": "광화문광장·청계천·서울숲...서울 곳곳이 유럽같은 ‘거리공연장’으로 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9HTFFoVmxVcVVDcmZuWWJWYWgyS3lXTGZlSjRkcjRscWluTm9Ma2lyalMwZ21jOWxiNGp4Q1R6UHNaMUFJc3Z3YmpJMmRpOU5fR0Y1UA?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-05-14",
+          "image": "",
+          "first_seen": "2026-05-17T18:32:24+09:00"
+        },
         {
           "title": "금융투자협회, 금융 뮤지컬 ‘아임유(I’m You)’ 2026 공연 학교 모집…청소년 체험형 금융교육 확대 - 나눔경제뉴스",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5hX3M1bUZNUzJkLTlwa0FfRWNrWGNaVVhCNElNTjczX0JUekZZSzFCdU1wOUZPeDl6eENDMS1QbFR6RUNpOW1xcjhQT1JTaC1QTzRLV0RlVEw5ZFFabDJDN2lvZU1KdjM4V29pbQ?oc=5",
@@ -321,6 +393,15 @@
       "name": "전시",
       "items": [
         {
+          "title": "발걸음 붙잡는 미디어아트의 향연! 3대 전시 플랫폼서 겨울편 개막 - 내 손안에 서울",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBaQUVKSENFdHk1MmY4X2JMRXdlem1OUWk3WGxTRFB6Y3M1b2J0ZngwSmZIb3p6bVR0Q1ExZDlYV1Z2Y0NpV2pNeFR6T2lxY1NsZF96RGkyZUE?oc=5",
+          "source": "내 손안에 서울",
+          "summary": "",
+          "published": "2026-01-06",
+          "image": "",
+          "first_seen": "2026-05-17T18:32:24+09:00"
+        },
+        {
           "title": "ACC, 미디어아트 전시 ‘기억 전달자’ 개최 - 선데이뉴스신문",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9VZENLZjNDdGllc2NWLWdaN3VCY1hpcERWa2p5MUQ4dUZ3TkZZN0R0eVF2TnZrVGRUcHgxcE5HV29Gd2lpNWs2RGd2ZU9odTdKeThuVzB6Mnl1d2c?oc=5",
           "source": "선데이뉴스신문",
@@ -407,6 +488,33 @@
       "id": "grants",
       "name": "지원사업",
       "items": [
+        {
+          "title": "한국콘텐츠진흥원, 2026 콘텐츠 스타트업 지원사업 공고 - 인디게임닷컴",
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE55UF90V193cXJmdDdqSi1JTEdQMWZFSlZMZ1kwVFJTaUgtSGtfdlBncUVGQjYtek04VlNVcE53d2tFMkdjZE9QQm9TQm_SAVRBVV95cUxObjdEWE1OUGVFbUVjc1pxcVhhZ2kzY1hfSkdBNmhMblFxNTUtUDVBdDA2b3NDVVl3WnVyMUZoQ1ZCYXhfemM0RWNxNlZtQ0ZnY1BIS1Y?oc=5",
+          "source": "인디게임닷컴",
+          "summary": "",
+          "published": "2026-03-23",
+          "image": "",
+          "first_seen": "2026-05-17T18:32:24+09:00"
+        },
+        {
+          "title": "문체부, '콘텐츠 기업육성 협의체' 운영…새 지원체계 논의 - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1YVF9fSUl6Tk43b3BtbDl4aGpaYkRMRWdtYzh5aElSUV9ZWVo2Sk9INk9rcVBpcUxSdmZRVlNZOUJidGVOMUY0bEZRSkppN1d4cXZMWHhsemw4T2fSAWBBVV95cUxOQWNXQUVCNGhqWm9RMFNBak9vU1laUGU5aHROWVFFd3NUWXlpbTdpUWEzQkozWE5fTldnQmtpZmR3NEVHQlg1UzFRclBjUmZVa19jX3p6cG95Q3d1VHFIcWU?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-04-30",
+          "image": "",
+          "first_seen": "2026-05-17T18:32:24+09:00"
+        },
+        {
+          "title": "'소방관이 전하는 우리들의 안전 이야기' 소방청, 「119 영상콘텐츠 공모전」 개최 - 서울Pn",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNbzNCNXoyUFRKNUFTSldNdnBDclRTS2N1RVJQWG94WUlLOU92RUpCYmJ4S3Rqbi1Nb25vUG03dF9kdGp3LVRzczNwUFE5QzZKWnBqVmlNemRyTE1lTVJXWGtONjNGTnF2cTVDT2pPZmIzWXFYNUNGTEpWbS1KOUhCVHdnMlZCWEI4TnNn?oc=5",
+          "source": "서울Pn",
+          "summary": "",
+          "published": "2026-05-14",
+          "image": "",
+          "first_seen": "2026-05-17T18:32:24+09:00"
+        },
         {
           "title": "콘진원, 2026년 게임 지원사업 개편...AI 게임 과제당 최대 3억원 지원 - 지디넷코리아",
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9VUG4ta2pvRk9nb1hvMTc2Uk9DWmE1aGt6VjFabUNmQjgxSjlURGJYUWxyNzJPbVdYbkpmWXpIczMxN0wxUk9zeXVrU1ZWbzVBZDlHZDl3?oc=5",
@@ -513,6 +621,33 @@
       "name": "디자인",
       "items": [
         {
+          "title": "2026년을 좌우할 9가지 UX 디자인 트렌드 - SAP News Center",
+          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOT2d2ZThMSHhVM01QZjgwcnJCdTgxV01CelFza2Y3dHlXb29NNTdmMTFoOFZxSG56anVCWExPSUowYnYzSTRhcFE3ZVZFa2xwbmtLMnZpcTFWLXkxNXprajZ6U3h1M2tDR2hkQmsyai1lLUF6U1h0THM2SlhqcEhEQnB2dFJGYWFSakZYcF90ZFRJNjlYQ3htRGNLTXdiNEhKb002N3diMHY3dDRkeV9DWWFtazJTNnV4alU3WE5PZVNmbkJWV3NRZ0FCRVNEUlpZdzI5aGpDdFlPYWk5al9kdTgxdGJkakt0TmtFUDMxcU9GMnFYemRIdA?oc=5",
+          "source": "SAP News Center",
+          "summary": "",
+          "published": "2026-03-13",
+          "image": "",
+          "first_seen": "2026-05-17T18:32:24+09:00"
+        },
+        {
+          "title": "미리 보는 2026년 UI·UX 디자인 트렌드 9가지 - 디지털 인사이트 DIGITAL iNSIGHT",
+          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNdXBFY21KZU1ueE9yOHpyRGtEczREbkwtck45Y25hSS1MMThQMkdEZXVsc1BoaU0wc1dVWFhjcGtqSXRVd2Eta3BNVjc3S2o2NGphVTdLM2hIS1FOMlMzT1E1Wjg0LWRDeTlQVDc2LWxKczVTakVqR21yWDItT29pVHJWNVBTS2xaNk03NFB5LWdQUG4tX0dYVDRWNkFvZnFNVkViR0MyMHZxT0tDZnp6U2JtemNPaDV5MTg5b2NjbzdIWWlaZFlZYnkyeDd5U3NrNExxakxSUFE0SktBTEpsdE02QVJpWGp0MVhrbkxxMTE?oc=5",
+          "source": "디지털 인사이트 DIGITAL iNSIGHT",
+          "summary": "",
+          "published": "2025-12-31",
+          "image": "",
+          "first_seen": "2026-05-17T18:32:24+09:00"
+        },
+        {
+          "title": "2026 유행 예감 UI/UX 디자인 트렌드 정리 - 브런치",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE82OHAzUHNIY0doY2p0WDJDd1JVdUtEMV9VNzBzc0x6emlMd0RmaE9kenNteFcwamRTZUtieklSOUV5Rm00ajVLUkRjc0hhcWRubVE?oc=5",
+          "source": "브런치",
+          "summary": "",
+          "published": "2025-09-17",
+          "image": "",
+          "first_seen": "2026-05-17T18:32:24+09:00"
+        },
+        {
           "title": "AI가 대체한 것과 2026년 주목할 UI·UX 트렌드 4가지 - 요즘IT",
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA5bmdlc253RUluYnFkMkFlbDdnclVvQzg2V2Q5bTdLTlYxZ0dwNUVmcUxBMHNiQkphXzVGLUw2R09QeVl2ZzlzdHpWNHc4WHNzSzRIM0ptUWNDUQ?oc=5",
           "source": "요즘IT",
@@ -572,6 +707,24 @@
       "id": "festival",
       "name": "페스티벌",
       "items": [
+        {
+          "title": "‘2025 국제 스페셜 뮤직&amp;아트 페스티벌’ 서울대학교에서 오늘 개막… 4일간의 감동적인 여정의 시작 - 뉴스와이어",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9laS1YckpHdWlOU0JVNU51OC00UWJyaDUtYTBSMW5qX2lfb3lveHJibWF3SlNyWGxCbzBKNTRBMXdVUjFQaXJDeVRNUlF1c2VTRllHdExsTDA4S1NUNXpj?oc=5",
+          "source": "뉴스와이어",
+          "summary": "",
+          "published": "2025-08-07",
+          "image": "",
+          "first_seen": "2026-05-17T18:32:24+09:00"
+        },
+        {
+          "title": "더욱 확장된 세계관으로 돌아온 비주얼 아트 축제, 웁서울 2025 - heyPOP",
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE56U3VLQ1hhc3UwX0luNlNqbkFONFBBajM1ZjZiUzExRmd1TlFDTS1mWFRJVkk1VEZFNjhBWXQxVTA?oc=5",
+          "source": "heyPOP",
+          "summary": "",
+          "published": "2025-09-24",
+          "image": "",
+          "first_seen": "2026-05-17T18:32:24+09:00"
+        },
         {
           "title": "'DMZ 피스트레인 2026' 최종 라인업…서스턴 무어·인순이 등 30팀 - 뉴시스",
           "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE8wVFp6VVlwVVM5VVlQUDc5cGVQcDBEbll3bVFNcEd4Y0o4LWtaSUV3OFZDa3dzb1doOFVtUFV3UGJVZlhVNnJzbVJfSkpQZFlkWWhQWmh0OWp4WE14bWhOUDV3WFFtLTh5N2J3emxBeUpLSkFvNmY1c9IBeEFVX3lxTE8wVFp6VVlwVVM5VVlQUDc5cGVQcDBEbll3bVFNcEd4Y0o4LWtaSUV3OFZDa3dzb1doOFVtUFV3UGJVZlhVNnJzbVJfSkpQZFlkWWhQWmh0OWp4WE14bWhOUDV3WFFtLTh5N2J3emxBeUpLSkFvNmY1cw?oc=5",

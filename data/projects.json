@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-15T16:04:56.446135+00:00",
+  "updated": "2026-05-17T09:32:31.774887+00:00",
   "source": "github.com/nextsunny-ai",
   "repos": [
     {
@@ -8,9 +8,42 @@
       "html_url": "https://github.com/nextsunny-ai/sunny-home",
       "homepage": "",
       "language": "HTML",
-      "pushed_at": "2026-05-14T22:12:20Z",
+      "pushed_at": "2026-05-17T09:31:39Z",
       "has_pages": true,
       "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
+      "stars": 0
+    },
+    {
+      "name": "made-100",
+      "description": "",
+      "html_url": "https://github.com/nextsunny-ai/made-100",
+      "homepage": "",
+      "language": "HTML",
+      "pushed_at": "2026-05-16T11:23:10Z",
+      "has_pages": true,
+      "pages_url": "https://nextsunny-ai.github.io/made-100/",
+      "stars": 0
+    },
+    {
+      "name": "made-100-org",
+      "description": "",
+      "html_url": "https://github.com/nextsunny-ai/made-100-org",
+      "homepage": "",
+      "language": "HTML",
+      "pushed_at": "2026-05-16T10:20:54Z",
+      "has_pages": true,
+      "pages_url": "https://nextsunny-ai.github.io/made-100-org/",
+      "stars": 0
+    },
+    {
+      "name": "firefly-indexer",
+      "description": "Adobe Firefly training-data indexer by SUNNY",
+      "html_url": "https://github.com/nextsunny-ai/firefly-indexer",
+      "homepage": "",
+      "language": "Rust",
+      "pushed_at": "2026-05-16T07:13:09Z",
+      "has_pages": true,
+      "pages_url": "https://nextsunny-ai.github.io/firefly-indexer/",
       "stars": 0
     },
     {
@@ -99,39 +132,6 @@
       "pushed_at": "2026-05-09T02:53:56Z",
       "has_pages": false,
       "pages_url": "",
-      "stars": 0
-    },
-    {
-      "name": "binding-club-v4-preview",
-      "description": "바인딩 클럽 v4 시안 (모던 인디)",
-      "html_url": "https://github.com/nextsunny-ai/binding-club-v4-preview",
-      "homepage": "",
-      "language": "HTML",
-      "pushed_at": "2026-05-09T02:08:51Z",
-      "has_pages": true,
-      "pages_url": "https://nextsunny-ai.github.io/binding-club-v4-preview/",
-      "stars": 0
-    },
-    {
-      "name": "ultra-busan-bside-demo",
-      "description": "B-SIDE RECORDS — 울트라백화점 부산 시연용 데모 (써니엔터 × 어반플레이)",
-      "html_url": "https://github.com/nextsunny-ai/ultra-busan-bside-demo",
-      "homepage": "",
-      "language": "HTML",
-      "pushed_at": "2026-05-06T16:56:11Z",
-      "has_pages": true,
-      "pages_url": "https://nextsunny-ai.github.io/ultra-busan-bside-demo/",
-      "stars": 0
-    },
-    {
-      "name": "nextart-home",
-      "description": "NEXTART Home — AI/XR/VFX Magazine (Editorial Light + Emerald)",
-      "html_url": "https://github.com/nextsunny-ai/nextart-home",
-      "homepage": "",
-      "language": "HTML",
-      "pushed_at": "2026-04-28T14:22:52Z",
-      "has_pages": true,
-      "pages_url": "https://nextsunny-ai.github.io/nextart-home/",
       "stars": 0
     }
   ]
