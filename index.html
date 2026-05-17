@@ -10,6 +10,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap">
+<!-- ★ 2026-05-18: 캘린더 = FullCalendar(MIT 오픈소스)로 교체 — 직접 짠 캘린더의 버그 제거 -->
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.19/index.global.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.19/locales/ko.global.min.js"></script>
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -158,23 +161,64 @@ body {
   margin-top: 14px; letter-spacing: 0.02em;
 }
 
-/* English in hero-left (= 시간 밑 통합) */
+/* English = 상황별 비즈니스 영어 회화 (대화 + 발음 재생) */
 .hero-english {
-  margin-top: 28px; padding: 14px 0 12px;
+  margin-top: 28px; padding: 16px 0 14px;
   border-top: 1px dashed var(--border);
   border-bottom: 1px dashed var(--border);
-  display: flex; flex-direction: column; gap: 4px;
 }
+.he-top { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
 .hero-english .he-label {
-  font-size: 0.55rem; text-transform: uppercase; letter-spacing: 0.16em;
-  color: var(--orange); font-weight: 700;
+  font-size: 0.55rem; text-transform: uppercase; letter-spacing: 0.14em;
+  color: var(--deep-orange); font-weight: 700;
   padding: 3px 8px; background: var(--orange-soft); border-radius: 4px;
-  align-self: flex-start; margin-bottom: 4px;
 }
-.hero-english .he-phrase { font-size: 0.95rem; font-weight: 600; line-height: 1.45; }
-.hero-english .he-meaning { font-size: 0.78rem; color: var(--text-sub); }
-.hero-english .he-example { font-size: 0.72rem; color: var(--text-sub); font-style: italic; line-height: 1.5; margin-top: 6px; }
-.hero-english .he-example-ko { font-size: 0.68rem; color: var(--text-mute); line-height: 1.5; }
+.hero-english .he-tag {
+  font-size: 0.6rem; font-weight: 700; color: var(--teal);
+  padding: 2px 8px; background: rgba(13,148,136,0.1); border-radius: var(--r-pill);
+}
+.he-play-all {
+  margin-left: auto; font-size: 0.62rem; font-weight: 600;
+  color: var(--text-sub); background: var(--bg); border: 1px solid var(--border);
+  border-radius: var(--r-pill); padding: 3px 10px; cursor: pointer;
+  transition: all .12s var(--ease);
+}
+.he-play-all:hover { border-color: var(--orange); color: var(--deep-orange); }
+.hero-english .he-situation {
+  font-size: 0.74rem; color: var(--text-mute); line-height: 1.5; margin-bottom: 10px;
+}
+.he-convo { display: flex; flex-direction: column; gap: 8px; }
+.he-line { display: flex; gap: 8px; }
+.he-who {
+  flex-shrink: 0; width: 30px; font-size: 0.58rem; font-weight: 700;
+  color: var(--text-mute); padding-top: 3px; letter-spacing: 0.02em;
+}
+.he-line.me .he-who { color: var(--deep-orange); }
+.he-line-body {
+  flex: 1; min-width: 0; padding: 7px 10px; border-radius: 9px;
+  background: var(--bg); border: 1px solid var(--border);
+}
+.he-line.me .he-line-body { background: var(--orange-soft); border-color: var(--border-accent); }
+.he-en-row { display: flex; align-items: flex-start; gap: 6px; }
+.he-en { flex: 1; min-width: 0; font-size: 0.8rem; font-weight: 600; line-height: 1.45; color: var(--text); }
+.he-speak {
+  flex-shrink: 0; width: 22px; height: 22px; padding: 0; cursor: pointer;
+  border: 1px solid var(--border); border-radius: 6px; background: var(--bg-elevated);
+  font-size: 0.7rem; line-height: 1; transition: all .12s var(--ease);
+}
+.he-speak:hover { border-color: var(--orange); background: var(--orange-soft); }
+.he-speak.speaking { border-color: var(--orange); background: var(--orange); }
+.he-ko { display: block; font-size: 0.68rem; color: var(--text-mute); line-height: 1.5; margin-top: 3px; }
+.he-key {
+  margin-top: 10px; padding: 8px 11px; border-radius: 9px;
+  background: rgba(13,148,136,0.07); border: 1px solid rgba(13,148,136,0.18);
+  display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap;
+}
+.he-key-label {
+  font-size: 0.54rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em;
+  color: var(--teal); flex-shrink: 0;
+}
+.he-key-text { font-size: 0.78rem; font-weight: 700; color: var(--text); line-height: 1.4; }
 .hero-greeting {
   font-size: 0.9rem;
   font-weight: 300; margin-top: 8px; color: var(--text-mute);
@@ -664,181 +708,112 @@ body {
 }
 .time-sep { margin: 0 8px; opacity: 0.4; }
 
-/* 달력 = pick-card·in-progress 동일 톤 */
+/* ─── 캘린더 = FullCalendar(MIT 오픈소스) — pick-card 톤 래퍼 ─── */
 .calendar-wrap {
   background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 18px 20px;
+  padding: 16px 18px;
 }
-.cal-head {
-  display: flex; align-items: center; justify-content: space-between;
-  margin-bottom: 14px;
+.cal-fallback {
+  padding: 28px 12px; text-align: center;
+  font-size: 0.78rem; color: var(--text-mute); line-height: 1.6;
 }
-.cal-title {
-  font-size: 0.95rem; font-weight: 700; letter-spacing: -0.01em;
+.cal-add-btn {
+  width: 100%; margin-top: 10px; padding: 9px;
+  border: 1px dashed var(--border-accent); border-radius: 9px;
+  background: var(--orange-soft); color: var(--deep-orange);
+  font-family: inherit; font-size: 0.76rem; font-weight: 700;
+  cursor: pointer; transition: background .12s var(--ease), border-color .12s var(--ease);
 }
-.cal-nav {
-  width: 26px; height: 26px; border-radius: 6px;
+.cal-add-btn:hover { background: #FFE6D0; border-color: var(--orange); }
+
+/* FullCalendar 테마 — 사이트 오렌지 톤에 맞춤 */
+#calendar {
+  --fc-border-color: var(--border);
+  --fc-page-bg-color: var(--bg-elevated);
+  --fc-neutral-bg-color: var(--bg);
+  --fc-today-bg-color: var(--orange-soft);
+  --fc-now-indicator-color: var(--deep-orange);
+  --fc-event-bg-color: var(--orange);
+  --fc-event-border-color: var(--orange);
+  --fc-event-text-color: #fff;
+  --fc-list-event-hover-bg-color: var(--orange-soft);
+  font-family: var(--font);
+  font-size: 0.8rem;
+}
+.fc .fc-toolbar.fc-header-toolbar { margin-bottom: 12px; gap: 8px 6px; flex-wrap: wrap; }
+.fc .fc-toolbar-chunk { display: flex; align-items: center; }
+.fc .fc-toolbar-title { font-size: 1rem; font-weight: 700; letter-spacing: -0.01em; }
+.fc .fc-button {
+  font-family: var(--font); font-size: 0.66rem; font-weight: 600;
+  padding: 5px 9px; border-radius: 7px;
+  background: var(--bg); border: 1px solid var(--border); color: var(--text-sub);
+  box-shadow: none; text-transform: none; transition: all .12s var(--ease);
+}
+.fc .fc-button:hover { background: var(--orange-soft); color: var(--deep-orange); border-color: var(--orange); }
+.fc .fc-button:focus { box-shadow: none; }
+.fc .fc-button-primary:not(:disabled).fc-button-active,
+.fc .fc-button-primary:not(:disabled):active {
+  background: var(--orange); border-color: var(--orange); color: #fff;
+}
+.fc .fc-button-primary:disabled { background: var(--bg); border-color: var(--border); color: var(--text-mute); opacity: 0.6; }
+.fc .fc-button .fc-icon { font-size: 1.1em; vertical-align: -0.1em; }
+.fc .fc-col-header-cell-cushion {
+  font-size: 0.6rem; font-weight: 700; color: var(--text-mute);
+  text-transform: uppercase; letter-spacing: 0.06em; padding: 6px 2px;
+}
+.fc .fc-daygrid-day-number { font-size: 0.74rem; color: var(--text); padding: 4px 6px; }
+.fc .fc-day-today .fc-daygrid-day-number { font-weight: 700; color: var(--deep-orange); }
+.fc .fc-day-sun .fc-col-header-cell-cushion,
+.fc .fc-day-sun .fc-daygrid-day-number { color: #E05A1B; }
+.fc .fc-daygrid-day.fc-day-today { box-shadow: inset 0 0 0 1.5px var(--orange); }
+.fc-theme-standard td, .fc-theme-standard th { border-color: var(--border); }
+.fc .fc-daygrid-event { font-size: 0.62rem; font-weight: 600; padding: 1px 4px; border-radius: 4px; }
+.fc .fc-event { cursor: pointer; }
+.fc .fc-event:hover { filter: brightness(0.94); }
+.fc-event.fc-ev-meeting { background: var(--teal); border-color: var(--teal); }
+.fc-event.fc-ev-deadline { background: var(--deep-orange); border-color: var(--deep-orange); }
+.fc .fc-daygrid-day:hover { background: var(--orange-soft); cursor: pointer; }
+.fc .fc-timegrid-slot { height: 1.7em; }
+.fc .fc-timegrid-slot-label-cushion, .fc .fc-list-day-text { font-size: 0.66rem; font-family: var(--mono); }
+.fc .fc-more-link { font-size: 0.6rem; color: var(--deep-orange); font-weight: 600; }
+.fc a { color: inherit; }
+.fc .fc-list-event:hover td { background: var(--orange-soft); }
+.fc .fc-popover { border-color: var(--border); box-shadow: var(--shadow-lg); }
+.fc .fc-popover-header { background: var(--bg); }
+
+/* ─── 일정 입력 모달 (날짜 클릭 → 팝업) — gh-modal 톤 재사용 ─── */
+.evm-field { margin-top: 14px; }
+.evm-field:first-child { margin-top: 0; }
+.evm-label {
+  font-size: 0.66rem; font-weight: 700; color: var(--text-mute);
+  letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 6px; display: block;
+}
+.evm-date-head {
+  font-size: 1.05rem; font-weight: 700; letter-spacing: -0.01em;
+  color: var(--deep-orange); margin-top: 4px;
+}
+.gh-modal select.evm-control {
+  width: 100%; margin-top: 0; padding: 10px 12px;
+  border: 1px solid var(--border); border-radius: var(--r);
+  font-family: var(--font); font-size: 0.82rem; color: var(--text);
+  background: var(--bg); outline: none; cursor: pointer;
+}
+.gh-modal select.evm-control:focus { border-color: var(--orange); }
+.gh-modal input.evm-control { margin-top: 0; font-family: var(--font); font-size: 0.82rem; }
+.evm-type-row { display: flex; gap: 8px; }
+.evm-type-btn {
+  flex: 1; padding: 9px; border-radius: var(--r);
   border: 1px solid var(--border); background: var(--bg);
-  cursor: pointer; font-size: 0.9rem; color: var(--text-sub);
-  transition: all .12s var(--ease); display: flex; align-items: center; justify-content: center;
+  font-family: inherit; font-size: 0.78rem; font-weight: 600;
+  color: var(--text-sub); cursor: pointer; transition: all .12s var(--ease);
 }
-.cal-nav:hover { background: var(--orange-soft); color: var(--deep-orange); border-color: var(--orange); }
-.cal-weekdays { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; margin-bottom: 4px; }
-.cal-weekdays span {
-  text-align: center; font-size: 0.55rem;
-  color: var(--text-mute); font-family: var(--mono);
-  letter-spacing: 0.12em; padding: 6px 0; text-transform: uppercase;
-}
-.cal-weekdays span:first-child { color: #E05A1B; }
-.cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; }
-.cal-day {
-  aspect-ratio: 1;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 0.78rem; font-weight: 500;
-  border-radius: 6px; color: var(--text);
-  transition: background .12s var(--ease), color .12s var(--ease), box-shadow .12s var(--ease);
-  position: relative; cursor: pointer;
-}
-.cal-day.other { color: var(--text-mute); opacity: 0.3; cursor: default; }
-.cal-day.sun:not(.selected) { color: #E05A1B; }
-.cal-day:not(.other):hover { background: var(--orange-soft); }
-.cal-day.today { font-weight: 700; box-shadow: inset 0 0 0 1.5px var(--orange); }
-.cal-day.selected { background: var(--orange); color: #fff; font-weight: 700; box-shadow: none; }
-.cal-day .cal-dot {
-  position: absolute; bottom: 3.5px; left: 50%; transform: translateX(-50%);
-  width: 4px; height: 4px; border-radius: 50%;
-}
-.cal-day .cal-dot.todo { background: var(--teal); }
-.cal-day .cal-dot.done { background: var(--text-mute); opacity: 0.55; }
-.cal-day .cal-dot.event { background: var(--orange); }
-.cal-day.selected .cal-dot.event { background: #fff; }
-
-/* ─── 캘린더 뷰 토글 (월/주/일) ─── */
-.cal-views {
-  display: flex; gap: 2px; background: var(--bg);
-  border: 1px solid var(--border); border-radius: var(--r-pill); padding: 2px;
-}
-.cal-view-btn {
-  padding: 3px 11px; border: none; background: transparent; cursor: pointer;
-  font-family: var(--font); font-size: 0.62rem; font-weight: 600;
-  color: var(--text-mute); border-radius: var(--r-pill);
-  transition: background .12s var(--ease), color .12s var(--ease);
-}
-.cal-view-btn.active { background: var(--orange); color: #fff; }
-.cal-nav-group { display: flex; align-items: center; gap: 4px; }
-
-/* 주 뷰 — 세로 7일 (요일별 한 행, 그 날 일정 칩) */
-.cal-grid.view-week { grid-template-columns: 1fr; gap: 5px; }
-.cal-grid.view-week .cal-day {
-  aspect-ratio: auto; min-height: 46px;
-  flex-direction: row; justify-content: flex-start; align-items: center;
-  gap: 12px; padding: 8px 12px; border: 1px solid var(--border);
-}
-.cal-wk-date { display: flex; flex-direction: column; align-items: center; width: 30px; flex-shrink: 0; }
-.cal-wk-dow { font-size: 0.52rem; color: var(--text-mute); font-family: var(--mono); }
-.cal-day.selected .cal-wk-dow { color: rgba(255,255,255,0.7); }
-.cal-wk-num { font-size: 0.95rem; font-weight: 700; line-height: 1.15; }
-.cal-wk-events { flex: 1; min-width: 0; display: flex; flex-wrap: wrap; gap: 4px; }
-.cal-wk-chip {
-  font-size: 0.58rem; padding: 2px 8px; border-radius: var(--r-pill);
-  max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-}
-.cal-wk-chip.meeting { background: rgba(13,148,136,0.14); color: var(--teal); }
-.cal-wk-chip.deadline { background: var(--orange-soft); color: var(--deep-orange); }
-.cal-day.selected .cal-wk-chip { background: rgba(255,255,255,0.22); color: #fff; }
-.cal-wk-more { font-size: 0.56rem; color: var(--text-mute); align-self: center; }
-.cal-day.selected .cal-wk-more { color: rgba(255,255,255,0.8); }
-.cal-wk-empty { font-size: 0.68rem; color: var(--text-mute); opacity: 0.55; }
-.cal-day.selected .cal-wk-empty { color: rgba(255,255,255,0.7); opacity: 1; }
-/* 일 뷰 — 하루 1칸 크게 */
-.cal-grid.view-day { grid-template-columns: 1fr; }
-.cal-grid.view-day .cal-day { aspect-ratio: auto; min-height: 76px; font-size: 1.5rem; }
-
-/* ─── 일정 패널 (캘린더 전용 — 미팅·데드라인) ─── */
-.event-panel {
-  margin-top: 12px;
-  background: var(--bg-elevated); border: 1px solid var(--border);
-  border-radius: 12px; padding: 14px 16px;
-}
-.event-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 10px; }
-.event-date-label { font-size: 0.85rem; font-weight: 700; letter-spacing: -0.01em; }
-.event-date-label .event-rel { color: var(--text-mute); font-weight: 500; margin-left: 6px; }
-.event-count { font-size: 0.58rem; font-family: var(--mono); color: var(--text-mute); letter-spacing: 0.08em; white-space: nowrap; }
-.event-list { display: flex; flex-direction: column; gap: 4px; }
-.event-item {
-  display: flex; align-items: center; gap: 8px;
-  padding: 8px 10px; border-radius: 8px;
-  background: var(--bg); border: 1px solid var(--border);
-}
-.event-type-badge {
-  font-size: 0.53rem; font-weight: 700; letter-spacing: 0.04em;
-  padding: 2px 7px; border-radius: var(--r-pill); flex-shrink: 0; white-space: nowrap;
-}
-.event-type-badge.meeting { background: rgba(13,148,136,0.12); color: var(--teal); }
-.event-type-badge.deadline { background: var(--orange-soft); color: var(--deep-orange); }
-.event-title { flex: 1; min-width: 0; font-size: 0.8rem; line-height: 1.4; word-break: break-word; }
-.event-del {
-  flex-shrink: 0; width: 20px; height: 20px; padding: 0; border: none;
-  background: transparent; color: var(--text-mute); font-size: 0.95rem;
-  line-height: 1; cursor: pointer; border-radius: 5px; opacity: 0;
-  transition: opacity .12s var(--ease), color .12s var(--ease);
-}
-.event-item:hover .event-del { opacity: 1; }
-.event-del:hover { color: var(--pink); }
-.event-empty { font-size: 0.74rem; color: var(--text-mute); padding: 8px 2px; line-height: 1.5; }
-.event-add {
-  margin-top: 8px; padding-top: 10px; border-top: 1px solid var(--border);
-  display: flex; flex-direction: column; gap: 6px;
-}
-.event-add-row { display: flex; align-items: center; gap: 6px; }
-.event-add-row input[type="text"] {
-  flex: 1; min-width: 0; background: var(--bg); border: 1px solid var(--border);
-  border-radius: 7px; outline: none; padding: 7px 10px;
-  font-family: inherit; font-size: 0.78rem; color: var(--text);
-}
-.event-add-row input[type="text"]:focus { border-color: var(--orange); }
-.event-add-row input::placeholder { color: var(--text-mute); }
-.event-time-input {
-  flex-shrink: 0; width: 100px; background: var(--bg); border: 1px solid var(--border);
-  border-radius: 7px; outline: none; padding: 6px 8px;
-  font-family: var(--mono); font-size: 0.74rem; color: var(--text);
-}
-.event-time-input:focus { border-color: var(--orange); }
-.event-add-icon {
-  flex-shrink: 0; padding: 7px 13px; border: none; cursor: pointer;
-  background: var(--orange); color: #fff; font-size: 0.72rem; font-weight: 700;
-  border-radius: 7px; white-space: nowrap;
-  transition: background .12s var(--ease);
-}
-.event-add-icon:hover { background: var(--deep-orange); }
-.event-main { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
-.event-meta { font-size: 0.62rem; color: var(--text-mute); font-family: var(--mono); letter-spacing: 0.02em; }
-/* 일 뷰 — 시간 스케줄 */
-.cal-grid.view-day { grid-template-columns: 1fr; gap: 5px; }
-.cal-day-empty { padding: 28px 12px; text-align: center; font-size: 0.78rem; color: var(--text-mute); }
-.cal-day-slot {
-  display: flex; align-items: flex-start; gap: 12px;
-  padding: 10px 12px; border: 1px solid var(--border); border-radius: 10px;
-  background: var(--bg);
-}
-.cal-day-time {
-  flex-shrink: 0; width: 54px; font-family: var(--mono);
-  font-size: 0.78rem; font-weight: 700; color: var(--deep-orange);
-}
-.cal-day-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px; align-items: flex-start; }
-.cal-day-slot-title { font-size: 0.84rem; line-height: 1.4; word-break: break-word; }
-.event-type-toggle {
-  flex-shrink: 0; padding: 4px 9px; border-radius: var(--r-pill);
-  border: 1px solid var(--border); background: var(--bg);
-  font-size: 0.56rem; font-weight: 700; letter-spacing: 0.04em;
-  color: var(--text-sub); cursor: pointer; white-space: nowrap;
-  transition: border-color .12s var(--ease), color .12s var(--ease);
-}
-.event-type-toggle.deadline { background: var(--orange-soft); color: var(--deep-orange); border-color: rgba(255,140,66,0.3); }
-.cal-day.selected .cal-dot.todo { background: #fff; }
-.cal-day.selected .cal-dot.done { background: rgba(255,255,255,0.65); }
+.evm-type-btn:hover { border-color: var(--orange); }
+.evm-type-btn.active.is-meeting { background: var(--teal); border-color: var(--teal); color: #fff; }
+.evm-type-btn.active.is-deadline { background: var(--deep-orange); border-color: var(--deep-orange); color: #fff; }
+.gh-btn.danger { background: transparent; color: var(--pink); border-color: rgba(219,39,119,0.3); flex: 0 0 auto; }
+.gh-btn.danger:hover { background: rgba(219,39,119,0.08); }
 
 /* ─── TODO PANEL (= 인트로 왼쪽, 노션식 할 일) ─── */
 .todo-panel {
@@ -1137,44 +1112,10 @@ body {
         <span style="font-size:0.9em"><span id="weatherIcon">⛅</span> <span id="weatherTemp">--°</span> <span id="weatherDesc">Loading</span></span>
       </div>
 
-      <!-- ★ 캘린더 — 월/주/일 뷰 전환 + 일정 점. 날짜 클릭 → 아래 일정 패널 -->
+      <!-- ★ 캘린더 — FullCalendar(검증된 오픈소스). 날짜 클릭 → 일정 입력 팝업 -->
       <div class="calendar-wrap" id="calendarWrap">
-        <div class="cal-head">
-          <div class="cal-views" id="calViews">
-            <button class="cal-view-btn active" data-view="month" type="button">월</button>
-            <button class="cal-view-btn" data-view="week" type="button">주</button>
-            <button class="cal-view-btn" data-view="day" type="button">일</button>
-          </div>
-          <div class="cal-nav-group">
-            <button class="cal-nav" id="calPrev" type="button" aria-label="이전">‹</button>
-            <div class="cal-title" id="calTitle">—</div>
-            <button class="cal-nav" id="calNext" type="button" aria-label="다음">›</button>
-          </div>
-        </div>
-        <div class="cal-weekdays" id="calWeekdays">
-          <span>일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span>
-        </div>
-        <div class="cal-grid" id="calGrid"></div>
-      </div>
-
-      <!-- ★ 일정 패널 — 선택한 날짜의 미팅·데드라인 (캘린더 전용, 할 일과 별개) -->
-      <div class="event-panel" id="eventPanel">
-        <div class="event-head">
-          <div class="event-date-label" id="eventDateLabel">오늘</div>
-          <div class="event-count" id="eventCount"></div>
-        </div>
-        <div class="event-list" id="eventList"></div>
-        <div class="event-add">
-          <div class="event-add-row">
-            <input type="text" id="eventInput" placeholder="일정 내용 (예: 버치사운드 미팅)" aria-label="일정 내용" maxlength="120">
-            <button class="event-type-toggle" id="eventTypeToggle" type="button" title="종류 전환 (미팅 ↔ 데드라인)">미팅</button>
-          </div>
-          <div class="event-add-row">
-            <input type="time" id="eventTime" class="event-time-input" aria-label="시간 (선택)">
-            <input type="text" id="eventLocation" class="event-loc-input" placeholder="장소 (선택)" aria-label="장소" maxlength="60">
-            <button class="event-add-icon" id="eventAddBtn" type="button" aria-label="일정 추가">＋ 추가</button>
-          </div>
-        </div>
+        <div id="calendar"></div>
+        <button class="cal-add-btn" id="calAddBtn" type="button">＋ 오늘 일정 추가 · 또는 날짜를 클릭하세요</button>
       </div>
 
       <!-- ★ 할 일 패널 — 날짜와 무관한 체크리스트 (캘린더 일정과 별개) -->
@@ -1214,13 +1155,19 @@ body {
       </div>
       <div class="pick-list" id="newsPick"></div>
 
-      <!-- English = 상황별 비즈니스 영어 (2026-05-17: 할 일 공간 확보 위해 뉴스 아래로 이동) -->
+      <!-- English = 상황별 비즈니스 영어 회화 + 발음 재생(브라우저 TTS) -->
       <div class="hero-english" id="heroEnglish" style="margin-top:22px;">
-        <span class="he-label" id="engSituation">Business English</span>
-        <span class="he-phrase" id="engPhrase">—</span>
-        <span class="he-meaning" id="engMeaning"></span>
-        <span class="he-example" id="engExample"></span>
-        <span class="he-example-ko" id="engExampleKo"></span>
+        <div class="he-top">
+          <span class="he-label">오늘의 비즈니스 영어</span>
+          <span class="he-tag" id="engTag"></span>
+          <button class="he-play-all" id="engPlayAll" type="button">▶ 전체 듣기</button>
+        </div>
+        <p class="he-situation" id="engSituation">—</p>
+        <div class="he-convo" id="engConvo"></div>
+        <div class="he-key">
+          <span class="he-key-label">핵심 표현</span>
+          <span class="he-key-text" id="engKey"></span>
+        </div>
       </div>
     </div>
   </section>
@@ -1763,6 +1710,43 @@ body {
 </div>
 
 <!-- GitHub 연결 모달 (= 할 일·일정을 모든 기기에 자동 저장) -->
+<!-- ★ 일정 입력·수정 모달 — 캘린더 날짜 클릭 시 팝업 -->
+<div class="gh-modal-bg" id="evModalBg" role="dialog" aria-modal="true" aria-labelledby="evmTitle">
+  <div class="gh-modal">
+    <h3 id="evmTitle">일정 추가</h3>
+    <div class="evm-date-head" id="evmDate">—</div>
+
+    <div class="evm-field">
+      <label class="evm-label" for="evmInput">일정 내용</label>
+      <input type="text" id="evmInput" class="evm-control" placeholder="예: 버치사운드 미팅" maxlength="120" autocomplete="off">
+    </div>
+
+    <div class="evm-field">
+      <span class="evm-label">종류</span>
+      <div class="evm-type-row">
+        <button type="button" class="evm-type-btn is-meeting active" id="evmTypeMeeting">미팅</button>
+        <button type="button" class="evm-type-btn is-deadline" id="evmTypeDeadline">데드라인</button>
+      </div>
+    </div>
+
+    <div class="evm-field">
+      <label class="evm-label" for="evmTime">시간</label>
+      <select id="evmTime" class="evm-control"></select>
+    </div>
+
+    <div class="evm-field">
+      <label class="evm-label" for="evmLocation">장소 (선택)</label>
+      <input type="text" id="evmLocation" class="evm-control" placeholder="예: 강남 사무실" maxlength="60" autocomplete="off">
+    </div>
+
+    <div class="gh-modal-actions">
+      <button class="gh-btn danger" id="evmDelete" type="button" style="display:none;">삭제</button>
+      <button class="gh-btn ghost" id="evmCancel" type="button">취소</button>
+      <button class="gh-btn primary" id="evmSave" type="button">저장</button>
+    </div>
+  </div>
+</div>
+
 <div class="gh-modal-bg" id="ghModalBg" role="dialog" aria-modal="true" aria-labelledby="ghModalTitle">
   <div class="gh-modal">
     <h3 id="ghModalTitle">GitHub 연결</h3>
@@ -2647,14 +2631,10 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
   let projAuto = [];           // 자동 진행 중 (GitHub 최근 push repo)
   let ipNewState = 'Develop';  // 진행 중 추가 입력의 상태
   let ipSaveTimer = null;
-  let calView = new Date();
-  let selectedDate = ymd(new Date());
   let newPrio = 'normal';
   let showDone = false;
   let saveTimer = null;
   let EVENTS = [];              // 캘린더 일정 (미팅·데드라인) — 할 일과 별개
-  let calViewMode = 'month';    // 캘린더 뷰: month | week | day
-  let evNewType = 'meeting';    // 일정 추가 입력의 종류
   let evSaveTimer = null;
 
   const $ = (id) => document.getElementById(id);
@@ -2678,28 +2658,95 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     return new TextDecoder().decode(bytes);
   }
 
-  /* ════ 영어 — 상황별 비즈니스 영어, 날짜 기반 매일 로테이션 ════ */
-  const DEFAULT_ENGLISH = [
-    { situation: '회의', phrase: "Let's circle back on that.", meaning: '그 건은 나중에 다시 논의하죠.',
-      example: "We're short on time — let's circle back on this after lunch.", example_ko: '시간이 부족하네요. 점심 후에 다시 얘기하죠.' },
-    { situation: '이메일', phrase: 'Just a quick heads-up:', meaning: '미리 간단히 알려드립니다:',
-      example: 'Just a quick heads-up: the review moved to Friday.', example_ko: '미리 알려드립니다: 리뷰가 금요일로 옮겨졌어요.' }
-  ];
+  /* ════ 영어 — 상황별 비즈니스 영어 회화, 날짜 기반 매일 로테이션 + 발음 재생 ════ */
+  let CURRENT_ENG = null;   // 오늘 선택된 회화 (전체 듣기에서 사용)
+  const DEFAULT_ENGLISH = [{
+    situation: '회의에서 한 안건을 지금 정하지 말고 나중에 다시 보고 싶을 때',
+    tag: '회의', key: "Let's circle back on that.",
+    lines: [
+      { who: '상대', en: 'So, should we finalize the launch date now?', ko: '그럼 출시일을 지금 확정할까요?' },
+      { who: '나', en: "Let's circle back on that after we hear from the design team.", ko: '디자인팀 의견 듣고 나서 그 건은 다시 논의하죠.' },
+      { who: '상대', en: "Good idea. I'll put it on next week's agenda.", ko: '좋아요. 다음 주 안건에 올릴게요.' }
+    ]
+  }];
+
+  // 브라우저 TTS — 영어 한 문장 발음 재생
+  function speakEnglish(text, btn) {
+    if (!('speechSynthesis' in window) || !text) return;
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = 'en-US';
+    u.rate = 0.95;
+    if (btn) {
+      btn.classList.add('speaking');
+      u.onend = u.onerror = () => btn.classList.remove('speaking');
+    }
+    window.speechSynthesis.speak(u);
+  }
+  // 대화 전체를 순서대로 재생
+  function speakConversation(convo) {
+    if (!('speechSynthesis' in window) || !convo) return;
+    window.speechSynthesis.cancel();
+    (convo.lines || []).forEach((ln) => {
+      if (!ln.en) return;
+      const u = new SpeechSynthesisUtterance(ln.en);
+      u.lang = 'en-US';
+      u.rate = 0.95;
+      window.speechSynthesis.speak(u);
+    });
+  }
+
+  function renderEnglish(c) {
+    CURRENT_ENG = c;
+    if (!c) return;
+    if ($('engTag')) $('engTag').textContent = c.tag || '';
+    if ($('engSituation')) $('engSituation').textContent = c.situation || '';
+    if ($('engKey')) $('engKey').textContent = c.key || '';
+    const wrap = $('engConvo');
+    if (!wrap) return;
+    wrap.innerHTML = '';
+    (c.lines || []).forEach((ln) => {
+      const row = document.createElement('div');
+      row.className = 'he-line' + (ln.who === '나' ? ' me' : '');
+      const who = document.createElement('span');
+      who.className = 'he-who';
+      who.textContent = ln.who || '';
+      const body = document.createElement('div');
+      body.className = 'he-line-body';
+      const enRow = document.createElement('div');
+      enRow.className = 'he-en-row';
+      const en = document.createElement('span');
+      en.className = 'he-en';
+      en.textContent = ln.en || '';
+      const speak = document.createElement('button');
+      speak.className = 'he-speak';
+      speak.type = 'button';
+      speak.textContent = '🔊';
+      speak.setAttribute('aria-label', '발음 듣기');
+      speak.addEventListener('click', () => speakEnglish(ln.en || '', speak));
+      enRow.append(en, speak);
+      const ko = document.createElement('span');
+      ko.className = 'he-ko';
+      ko.textContent = ln.ko || '';
+      body.append(enRow, ko);
+      row.append(who, body);
+      wrap.appendChild(row);
+    });
+  }
+
   async function loadEnglish() {
-    let pool = [];
+    let convos = [];
     try {
       const res = await fetch('data/english.json?t=' + Date.now());
-      if (res.ok) pool = (await res.json()).expressions || [];
+      if (res.ok) {
+        const j = await res.json();
+        convos = Array.isArray(j.conversations) ? j.conversations : [];
+      }
     } catch (e) { /* 네트워크 실패 — fallback */ }
-    if (!pool.length) pool = DEFAULT_ENGLISH;
+    if (!convos.length) convos = DEFAULT_ENGLISH;
     // KST 기준 일(日) 번호로 deterministic 선택 → 하루 동안 고정, 매일 변경
     const epochDay = Math.floor((Date.now() + 9 * 3600000) / 86400000);
-    const e = pool[epochDay % pool.length];
-    if ($('engSituation')) $('engSituation').textContent = e.situation || 'Business English';
-    if ($('engPhrase')) $('engPhrase').textContent = '"' + e.phrase + '"';
-    if ($('engMeaning')) $('engMeaning').textContent = e.meaning || '';
-    if ($('engExample')) $('engExample').textContent = e.example || '';
-    if ($('engExampleKo')) $('engExampleKo').textContent = e.example_ko || '';
+    renderEnglish(convos[epochDay % convos.length]);
   }
 
   /* ════ 날씨 — open-meteo 무료 API (키 불필요) ════ */
@@ -2835,151 +2882,82 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     else { label.textContent = '이 기기에만 저장 중'; btn.textContent = 'GitHub 연결'; }
   }
 
-  /* ════ 캘린더 ════ */
-  function renderCalendar() {
-    const titleEl = $('calTitle'), gridEl = $('calGrid'), weekdaysEl = $('calWeekdays');
-    if (!titleEl || !gridEl) return;
-    const todayStr = todayYmd();
+  /* ════ 캘린더 — FullCalendar(검증된 오픈소스). 직접 짠 캘린더 대체 ════ */
+  let CAL = null;             // FullCalendar 인스턴스
+  let evmMode = 'new';        // 일정 모달 모드: new | edit
+  let evmDate = todayYmd();   // 모달이 다루는 날짜 (YYYY-MM-DD)
+  let evmId = null;           // 수정 중인 일정 id
+  let evmType = 'meeting';    // 모달 종류 선택값: meeting | deadline
 
-    // 일정 있는 날짜 표시용
-    const evDates = {};
-    EVENTS.forEach((e) => { if (e.date) evDates[e.date] = true; });
+  // EVENTS(우리 데이터) → FullCalendar 이벤트 객체로 변환
+  function mapCalEvents() {
+    return EVENTS.map((e) => ({
+      id: e.id,
+      title: e.title || '(제목 없음)',
+      start: e.time ? (e.date + 'T' + e.time + ':00') : e.date,
+      allDay: !e.time,
+      classNames: ['fc-ev-' + (e.type === 'deadline' ? 'deadline' : 'meeting')],
+      extendedProps: { type: e.type, location: e.location || '' }
+    }));
+  }
 
-    gridEl.className = 'cal-grid view-' + calViewMode;
-    gridEl.innerHTML = '';
+  // 추가·수정·삭제·로드 후 캘린더에 EVENTS 다시 반영
+  function refreshCal() {
+    if (!CAL) return;
+    CAL.removeAllEvents();
+    mapCalEvents().forEach((e) => CAL.addEvent(e));
+  }
 
-    function dayCell(dateObj, isOther) {
-      const dateStr = ymd(dateObj);
-      const d = document.createElement('div');
-      let cls = 'cal-day';
-      if (isOther) cls += ' other';
-      if (dateObj.getDay() === 0) cls += ' sun';
-      if (dateStr === todayStr) cls += ' today';
-      if (dateStr === selectedDate) cls += ' selected';
-      d.className = cls;
-      const num = document.createElement('span');
-      num.textContent = dateObj.getDate();
-      d.appendChild(num);
-      if (!isOther) {
-        d.setAttribute('role', 'button');
-        d.tabIndex = 0;
-        d.setAttribute('aria-label', (dateObj.getMonth() + 1) + '월 ' + dateObj.getDate() + '일');
-        if (evDates[dateStr]) {
-          const dot = document.createElement('span');
-          dot.className = 'cal-dot event';
-          d.appendChild(dot);
-        }
-        const pick = () => { selectedDate = dateStr; renderCalendar(); renderEventPanel(); };
-        d.addEventListener('click', pick);
-        d.addEventListener('keydown', (e) => {
-          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(); }
-        });
-      }
-      gridEl.appendChild(d);
-    }
-
-    if (calViewMode === 'week') {
-      weekdaysEl.style.display = 'none';
-      const base = new Date(calView);
-      base.setDate(base.getDate() - base.getDay());
-      const end = new Date(base); end.setDate(end.getDate() + 6);
-      titleEl.textContent = (base.getMonth() + 1) + '/' + base.getDate()
-        + ' – ' + (end.getMonth() + 1) + '/' + end.getDate();
-      for (let i = 0; i < 7; i++) {
-        const dd = new Date(base); dd.setDate(dd.getDate() + i);
-        const dateStr = ymd(dd);
-        const row = document.createElement('div');
-        let cls = 'cal-day';
-        if (dd.getDay() === 0) cls += ' sun';
-        if (dateStr === todayStr) cls += ' today';
-        if (dateStr === selectedDate) cls += ' selected';
-        row.className = cls;
-        const dl = document.createElement('div');
-        dl.className = 'cal-wk-date';
-        const dow = ['일', '월', '화', '수', '목', '금', '토'][dd.getDay()];
-        dl.innerHTML = '<span class="cal-wk-dow">' + dow + '</span><span class="cal-wk-num">' + dd.getDate() + '</span>';
-        const ew = document.createElement('div');
-        ew.className = 'cal-wk-events';
-        const evs = EVENTS.filter((e) => e.date === dateStr);
-        if (evs.length) {
-          evs.slice(0, 4).forEach((ev) => {
-            const chip = document.createElement('span');
-            chip.className = 'cal-wk-chip ' + (ev.type === 'deadline' ? 'deadline' : 'meeting');
-            chip.textContent = ev.title;
-            ew.appendChild(chip);
-          });
-          if (evs.length > 4) {
-            const m = document.createElement('span');
-            m.className = 'cal-wk-more';
-            m.textContent = '+' + (evs.length - 4);
-            ew.appendChild(m);
-          }
-        } else {
-          const em = document.createElement('span');
-          em.className = 'cal-wk-empty';
-          em.textContent = '일정 없음';
-          ew.appendChild(em);
-        }
-        row.append(dl, ew);
-        row.setAttribute('role', 'button');
-        row.tabIndex = 0;
-        const pick = () => { selectedDate = dateStr; renderCalendar(); renderEventPanel(); };
-        row.addEventListener('click', pick);
-        row.addEventListener('keydown', (e) => {
-          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(); }
-        });
-        gridEl.appendChild(row);
-      }
-    } else if (calViewMode === 'day') {
-      weekdaysEl.style.display = 'none';
-      const dow = ['일', '월', '화', '수', '목', '금', '토'][calView.getDay()];
-      titleEl.textContent = (calView.getMonth() + 1) + '월 ' + calView.getDate() + '일 (' + dow + ')';
-      selectedDate = ymd(calView);
-      const dateStr = ymd(calView);
-      const dayEvs = EVENTS.filter((e) => e.date === dateStr)
-        .sort((a, b) => (a.time || '99:99').localeCompare(b.time || '99:99'));
-      if (!dayEvs.length) {
-        const empty = document.createElement('div');
-        empty.className = 'cal-day-empty';
-        empty.textContent = '이 날 일정이 없어요. 아래에서 일정을 추가하세요.';
-        gridEl.appendChild(empty);
-      } else {
-        dayEvs.forEach((ev) => {
-          const slot = document.createElement('div');
-          slot.className = 'cal-day-slot';
-          const tm = document.createElement('span');
-          tm.className = 'cal-day-time';
-          tm.textContent = ev.time || '종일';
-          const body = document.createElement('div');
-          body.className = 'cal-day-body';
-          const bdg = document.createElement('span');
-          bdg.className = 'event-type-badge ' + (ev.type === 'deadline' ? 'deadline' : 'meeting');
-          bdg.textContent = ev.type === 'deadline' ? '데드라인' : '미팅';
-          const ti = document.createElement('span');
-          ti.className = 'cal-day-slot-title';
-          ti.textContent = ev.title + (ev.location ? '  ·  ' + ev.location : '');
-          body.append(bdg, ti);
-          slot.append(tm, body);
-          gridEl.appendChild(slot);
-        });
-      }
-    } else {
-      weekdaysEl.style.display = '';
-      const year = calView.getFullYear(), month = calView.getMonth();
-      titleEl.textContent = year + '. ' + pad(month + 1);
-      const firstDow = new Date(year, month, 1).getDay();
-      const lastDate = new Date(year, month + 1, 0).getDate();
-      for (let i = 0; i < firstDow; i++) {
-        dayCell(new Date(year, month, 1 - firstDow + i), true);
-      }
-      for (let day = 1; day <= lastDate; day++) {
-        dayCell(new Date(year, month, day), false);
-      }
-      const remain = (7 - ((firstDow + lastDate) % 7)) % 7;
-      for (let i = 1; i <= remain; i++) {
-        dayCell(new Date(year, month + 1, i), true);
+  // 일정 모달의 시간 select 채우기 (06:00~23:30, 30분 단위 — 네이티브 time 입력 대체)
+  function fillTimeSelect() {
+    const sel = $('evmTime');
+    if (!sel || sel.dataset.filled) return;
+    let html = '<option value="">종일 (시간 없음)</option>';
+    for (let h = 6; h <= 23; h++) {
+      for (let m = 0; m < 60; m += 30) {
+        const t = pad(h) + ':' + pad(m);
+        html += '<option value="' + t + '">' + t + '</option>';
       }
     }
+    sel.innerHTML = html;
+    sel.dataset.filled = '1';
+  }
+
+  function initCalendar() {
+    const el = $('calendar');
+    if (!el) return;
+    if (typeof FullCalendar === 'undefined') {
+      el.innerHTML = '<div class="cal-fallback">캘린더를 불러오지 못했습니다.<br>인터넷 연결 확인 후 새로고침해 주세요.</div>';
+      return;
+    }
+    fillTimeSelect();
+    CAL = new FullCalendar.Calendar(el, {
+      initialView: 'dayGridMonth',
+      locale: 'ko',
+      height: 'auto',
+      headerToolbar: { left: 'prev,next today', center: 'title', right: 'dayGridMonth,timeGridWeek,timeGridDay' },
+      buttonText: { today: '오늘', month: '월', week: '주', day: '일' },
+      dayMaxEvents: 3,
+      fixedWeekCount: false,
+      nowIndicator: true,
+      slotMinTime: '07:00:00',
+      slotMaxTime: '23:00:00',
+      expandRows: true,
+      eventTimeFormat: { hour: '2-digit', minute: '2-digit', hour12: false },
+      events: mapCalEvents(),
+      // 날짜(또는 주·일 뷰의 시간대)를 클릭하면 일정 입력 팝업
+      dateClick: (info) => {
+        const date = info.dateStr.slice(0, 10);
+        const time = (info.dateStr.length > 10) ? info.dateStr.slice(11, 16) : '';
+        openEventModal('new', date, null, time);
+      },
+      // 기존 일정을 클릭하면 수정·삭제 팝업
+      eventClick: (info) => {
+        const ev = EVENTS.find((e) => e.id === info.event.id);
+        if (ev) openEventModal('edit', ev.date, ev, '');
+      }
+    });
+    CAL.render();
   }
 
   /* ════ 캘린더 일정 (EVENTS) — 미팅·데드라인. 할 일과 별개 ════ */
@@ -3016,86 +2994,60 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     }, 1200);
   }
 
-  function eventRow(ev) {
-    const row = document.createElement('div');
-    row.className = 'event-item';
-    const isDl = ev.type === 'deadline';
-    const badge = document.createElement('span');
-    badge.className = 'event-type-badge ' + (isDl ? 'deadline' : 'meeting');
-    badge.textContent = isDl ? '데드라인' : '미팅';
-    const main = document.createElement('div');
-    main.className = 'event-main';
-    const title = document.createElement('div');
-    title.className = 'event-title';
-    title.textContent = ev.title || '';
-    main.appendChild(title);
-    if (ev.time || ev.location) {
-      const meta = document.createElement('div');
-      meta.className = 'event-meta';
-      meta.textContent = [ev.time, ev.location].filter(Boolean).join('  ·  ');
-      main.appendChild(meta);
-    }
-    const del = document.createElement('button');
-    del.className = 'event-del';
-    del.type = 'button';
-    del.textContent = '×';
-    del.setAttribute('aria-label', '일정 삭제');
-    del.addEventListener('click', () => deleteEvent(ev.id));
-    row.append(badge, main, del);
-    return row;
+  /* ════ 일정 입력·수정 모달 (캘린더 날짜 클릭 → 팝업) ════ */
+  function applyEvmType() {
+    $('evmTypeMeeting').classList.toggle('active', evmType === 'meeting');
+    $('evmTypeDeadline').classList.toggle('active', evmType === 'deadline');
   }
-
-  function renderEventPanel() {
-    const label = $('eventDateLabel'), list = $('eventList'), cnt = $('eventCount');
-    if (!label || !list) return;
-    const dObj = parseYmd(selectedDate);
-    const diff = Math.round((parseYmd(selectedDate) - parseYmd(todayYmd())) / 86400000);
-    let rel;
-    if (diff === 0) rel = '오늘';
-    else if (diff === 1) rel = '내일';
-    else if (diff === -1) rel = '어제';
-    else if (diff > 0) rel = 'D-' + diff;
-    else rel = '지남';
+  // mode: 'new' | 'edit' / date: YYYY-MM-DD / ev: 수정 시 일정 객체 / prefillTime: 시간대 클릭 시 미리 채울 시각
+  function openEventModal(mode, date, ev, prefillTime) {
+    evmMode = mode;
+    evmDate = date;
+    evmId = ev ? ev.id : null;
+    evmType = (ev && ev.type === 'deadline') ? 'deadline' : 'meeting';
+    const dObj = parseYmd(date);
     const dow = ['일', '월', '화', '수', '목', '금', '토'][dObj.getDay()];
-    label.innerHTML = escHtml((dObj.getMonth() + 1) + '월 ' + dObj.getDate() + '일 (' + dow + ')')
-      + ' <span class="event-rel">' + escHtml(rel) + '</span>';
+    $('evmDate').textContent = dObj.getFullYear() + '년 '
+      + (dObj.getMonth() + 1) + '월 ' + dObj.getDate() + '일 (' + dow + ')';
+    $('evmTitle').textContent = mode === 'edit' ? '일정 수정' : '일정 추가';
+    $('evmInput').value = ev ? (ev.title || '') : '';
+    $('evmLocation').value = ev ? (ev.location || '') : '';
+    $('evmTime').value = ev ? (ev.time || '') : (prefillTime || '');
+    $('evmSave').textContent = mode === 'edit' ? '수정 저장' : '저장';
+    $('evmDelete').style.display = mode === 'edit' ? '' : 'none';
+    applyEvmType();
+    $('evModalBg').classList.add('open');
+    setTimeout(() => $('evmInput').focus(), 60);
+  }
+  function closeEventModal() { $('evModalBg').classList.remove('open'); }
 
-    const dayEvs = EVENTS.filter((e) => e.date === selectedDate)
-      .sort((a, b) => (a.time || '99:99').localeCompare(b.time || '99:99'));
-    list.innerHTML = '';
-    if (!dayEvs.length) {
-      const e = document.createElement('div');
-      e.className = 'event-empty';
-      e.textContent = '이 날짜에 일정이 없어요. 아래에 미팅·데드라인을 추가하세요.';
-      list.appendChild(e);
+  function saveEventModal() {
+    const title = $('evmInput').value.trim();
+    if (!title) { $('evmInput').focus(); return; }
+    const time = $('evmTime').value;
+    const location = $('evmLocation').value.trim();
+    if (evmMode === 'edit' && evmId) {
+      EVENTS = EVENTS.map((e) => e.id === evmId
+        ? Object.assign({}, e, { title: title, time: time, location: location, type: evmType })
+        : e);
     } else {
-      dayEvs.forEach((ev) => list.appendChild(eventRow(ev)));
+      EVENTS = EVENTS.concat([{
+        id: 'e_' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
+        date: evmDate, title: title, time: time, location: location,
+        type: evmType, created: new Date().toISOString()
+      }]);
     }
-    if (cnt) cnt.textContent = dayEvs.length ? dayEvs.length + '개' : '';
-  }
-
-  function addEvent(title) {
-    title = (title || '').trim();
-    if (!title) return;
-    const timeEl = $('eventTime'), locEl = $('eventLocation');
-    EVENTS.push({
-      id: 'e_' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
-      date: selectedDate, title: title,
-      time: timeEl ? timeEl.value : '',
-      location: locEl ? locEl.value.trim() : '',
-      type: evNewType, created: new Date().toISOString()
-    });
-    if (timeEl) timeEl.value = '';
-    if (locEl) locEl.value = '';
-    renderCalendar();
-    renderEventPanel();
+    refreshCal();
     scheduleSaveEvents();
+    closeEventModal();
   }
-  function deleteEvent(id) {
-    EVENTS = EVENTS.filter((e) => e.id !== id);
-    renderCalendar();
-    renderEventPanel();
+  function deleteEventModal() {
+    if (!evmId) return;
+    if (!window.confirm('이 일정을 삭제할까요?')) return;
+    EVENTS = EVENTS.filter((e) => e.id !== evmId);
+    refreshCal();
     scheduleSaveEvents();
+    closeEventModal();
   }
 
   /* ════ 할 일 패널 ════ */
@@ -3285,7 +3237,7 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
         await ghPutTasks('chore: 기기 간 할 일 동기화 (홈 대시보드)');
       }
       setSync('on');
-      renderCalendar();
+      loadEvents().then(refreshCal);   // GitHub 연결 후 일정도 원격 기준으로 새로 로드
       renderTodo();
       closeGhModal();
     } catch (e) {
@@ -3305,38 +3257,17 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
   }
 
   /* ════ 이벤트 바인딩 ════ */
-  function calShift(dir) {
-    if (calViewMode === 'week') calView.setDate(calView.getDate() + dir * 7);
-    else if (calViewMode === 'day') calView.setDate(calView.getDate() + dir);
-    else calView.setMonth(calView.getMonth() + dir);
-    renderCalendar();
-  }
-  $('calPrev').addEventListener('click', () => calShift(-1));
-  $('calNext').addEventListener('click', () => calShift(1));
-  // 캘린더 월/주/일 뷰 전환
-  document.querySelectorAll('.cal-view-btn').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      calViewMode = btn.dataset.view;
-      document.querySelectorAll('.cal-view-btn').forEach((b) => b.classList.toggle('active', b === btn));
-      renderCalendar();
-    });
-  });
-  // 캘린더 일정 입력
-  $('eventInput').addEventListener('keydown', (e) => {
-    if (e.key === 'Enter') { addEvent(e.target.value); e.target.value = ''; }
-  });
-  $('eventAddBtn').addEventListener('click', () => {
-    const inp = $('eventInput');
-    addEvent(inp.value);
-    inp.value = '';
-    inp.focus();
-  });
-  $('eventTypeToggle').addEventListener('click', () => {
-    evNewType = (evNewType === 'deadline') ? 'meeting' : 'deadline';
-    const btn = $('eventTypeToggle');
-    btn.classList.toggle('deadline', evNewType === 'deadline');
-    btn.textContent = (evNewType === 'deadline') ? '데드라인' : '미팅';
-  });
+  // 캘린더 네비게이션·뷰 전환은 FullCalendar가 내장 처리. 일정 입력은 모달.
+  $('calAddBtn').addEventListener('click', () => openEventModal('new', todayYmd(), null, ''));
+  $('evmSave').addEventListener('click', saveEventModal);
+  $('evmDelete').addEventListener('click', deleteEventModal);
+  $('evmCancel').addEventListener('click', closeEventModal);
+  $('evmInput').addEventListener('keydown', (e) => { if (e.key === 'Enter') saveEventModal(); });
+  $('evmTypeMeeting').addEventListener('click', () => { evmType = 'meeting'; applyEvmType(); });
+  $('evmTypeDeadline').addEventListener('click', () => { evmType = 'deadline'; applyEvmType(); });
+  $('evModalBg').addEventListener('click', (e) => { if (e.target === $('evModalBg')) closeEventModal(); });
+  // 영어 회화 — 대화 전체 발음 재생
+  if ($('engPlayAll')) $('engPlayAll').addEventListener('click', () => speakConversation(CURRENT_ENG));
 
   $('todoInput').addEventListener('keydown', (e) => {
     if (e.key === 'Enter') { addTask(e.target.value); e.target.value = ''; }
@@ -3362,7 +3293,9 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
   $('ghTokenInput').addEventListener('keydown', (e) => { if (e.key === 'Enter') ghConnect(); });
   $('ghModalBg').addEventListener('click', (e) => { if (e.target === $('ghModalBg')) closeGhModal(); });
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && $('ghModalBg').classList.contains('open')) closeGhModal();
+    if (e.key !== 'Escape') return;
+    if ($('evModalBg').classList.contains('open')) closeEventModal();
+    else if ($('ghModalBg').classList.contains('open')) closeGhModal();
   });
 
   /* ════════ 진행 중 — 하이브리드 (GitHub 최근 push 자동 + 회사 프로젝트 수동) ════════ */
@@ -3526,13 +3459,12 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
   }
 
   /* ════ 시작 ════ */
-  renderCalendar();
+  initCalendar();
   renderTodo();
-  renderEventPanel();
   renderInProgress2();
   setSync(hasGh() ? 'on' : 'off');
   loadTasks().then(() => { renderTodo(); });
-  loadEvents().then(() => { renderCalendar(); renderEventPanel(); });
+  loadEvents().then(() => { refreshCal(); });
   loadEnglish();
   loadWeather();
   Promise.all([loadProjectsAuto(), loadInprogress()]).then(renderInProgress2);
