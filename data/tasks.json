@@ -1,0 +1,5 @@
+{
+  "updated": "2026-05-17T18:40:00+09:00",
+  "note": "할 일·일정 데이터. 홈 대시보드 인트로 왼쪽에서 직접 추가·체크·삭제한다. GitHub 연결 시 입력하는 즉시 이 파일에 자동 저장(commit)되어 모든 기기에서 동기화된다. tasks 항목 구조: { id, date(YYYY-MM-DD), text, done, priority(normal|high), created }.",
+  "tasks": []
+}

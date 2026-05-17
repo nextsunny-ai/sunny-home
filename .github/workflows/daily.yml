@@ -1,9 +1,12 @@
 name: Daily Refresh
 
+# 뉴스·프로젝트 데이터를 매일 자동 갱신한다.
+# GitHub Actions 의 schedule 은 정시를 보장하지 않고 가끔 한 회차를 건너뛴다.
+# 그래서 하루 2회(06시·23시 KST)로 돌려, 한 번 누락돼도 다음 회차가 따라잡게 한다.
 on:
   schedule:
-    - cron: '0 21 * * 0-4'   # 06:00 KST 월~금 (UTC 일~목 21:00)
-    - cron: '0 14 * * 1-5'   # 23:00 KST 월~금 (UTC 월~금 14:00)
+    - cron: '0 21 * * *'   # 매일 06:00 KST (UTC 전날 21:00) — 주말 포함
+    - cron: '0 14 * * *'   # 매일 23:00 KST (UTC 당일 14:00) — 주말 포함
   workflow_dispatch:
 
 permissions:
@@ -19,7 +22,7 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Fetch news (8 categories)
+      - name: Fetch news (7 categories, 누적 병합)
         run: python scripts/fetch_news.py
 
       - name: Refresh projects
