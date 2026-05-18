@@ -881,17 +881,18 @@ body {
   transition: background .12s var(--ease);
 }
 .todo-item:hover { background: var(--bg-card-hover); }
-/* 드래그 손잡이 — SortableJS */
+/* 드래그 손잡이 — SortableJS (2026-05-18: 항상 보이게 + 터치 영역 확대) */
 .todo-grip {
-  flex-shrink: 0; width: 16px; align-self: center; padding: 4px 0;
+  flex-shrink: 0; width: 20px; align-self: center; padding: 6px 2px;
   border: none; background: transparent; cursor: grab;
-  color: var(--text-mute); opacity: 0; line-height: 0;
+  color: var(--text-mute); opacity: 0.3; line-height: 0;
   transition: opacity .12s var(--ease), color .12s var(--ease);
+  touch-action: none;
 }
-.todo-item:hover .todo-grip { opacity: 0.5; }
+.todo-item:hover .todo-grip { opacity: 0.6; }
 .todo-grip:hover { opacity: 1 !important; color: var(--deep-orange); }
 .todo-grip:active { cursor: grabbing; }
-.todo-grip svg { width: 9px; height: 14px; display: block; }
+.todo-grip svg { width: 11px; height: 16px; display: block; margin: 0 auto; }
 .todo-ghost { opacity: 0.4; background: var(--orange-soft); }
 .todo-chosen { background: var(--bg-card-hover); }
 .todo-drag {
@@ -912,8 +913,9 @@ body {
 .todo-main { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
 .todo-text {
   font-size: 0.8rem; line-height: 1.45; color: var(--text);
-  word-break: break-word; cursor: pointer;
+  word-break: break-word; cursor: default;
 }
+.todo-text:hover { color: var(--deep-orange); }
 .todo-item.done .todo-text { text-decoration: line-through; color: var(--text-mute); opacity: 0.55; }
 .todo-prio {
   display: inline-flex; align-items: center; gap: 3px; align-self: flex-start;
@@ -987,6 +989,92 @@ body {
   cursor: pointer; transition: all .12s var(--ease);
 }
 .todo-sync-btn:hover { border-color: var(--orange); color: var(--deep-orange); }
+
+/* ─── TODO: 수정·마감일·되돌리기·완료비우기 (2026-05-18 개선) ─── */
+.todo-chips { display: flex; flex-wrap: wrap; gap: 4px; }
+.todo-date {
+  display: inline-flex; align-items: center; gap: 3px; align-self: flex-start;
+  font-size: 0.56rem; font-weight: 700; letter-spacing: 0.03em;
+  padding: 2px 7px; border-radius: var(--r-pill);
+  background: var(--bg-card-hover); color: var(--text-mute);
+  cursor: pointer; border: 1px solid transparent;
+  transition: border-color .12s var(--ease);
+}
+.todo-date:hover { border-color: var(--border-accent); }
+.todo-date.today { background: var(--orange-soft); color: var(--deep-orange); }
+.todo-date.overdue { background: rgba(219,39,119,0.12); color: var(--pink); }
+.todo-item.done .todo-date { opacity: 0.5; }
+.todo-edit {
+  flex-shrink: 0; width: 22px; height: 22px; padding: 0;
+  border: none; background: transparent; cursor: pointer;
+  color: var(--text-mute); font-size: 0.8rem; line-height: 1;
+  border-radius: 5px; opacity: 0;
+  transition: opacity .12s var(--ease), background .12s var(--ease), color .12s var(--ease);
+}
+.todo-item:hover .todo-edit { opacity: 1; }
+.todo-edit:hover { background: var(--orange-soft); color: var(--deep-orange); }
+/* 인라인 편집 폼 */
+.todo-edit-form { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+.todo-edit-text {
+  width: 100%; box-sizing: border-box; background: var(--bg); color: var(--text);
+  border: 1px solid var(--border-accent); border-radius: 6px;
+  font-family: inherit; font-size: 0.8rem; padding: 5px 8px; outline: none;
+}
+.todo-edit-row { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.todo-edit-date {
+  background: var(--bg); color: var(--text);
+  border: 1px solid var(--border); border-radius: 6px;
+  font-family: inherit; font-size: 0.62rem; padding: 3px 6px; outline: none;
+  color-scheme: light;
+}
+.todo-edit-clear-date {
+  background: transparent; border: none; cursor: pointer;
+  color: var(--text-mute); font-size: 0.6rem; padding: 2px 3px;
+}
+.todo-edit-clear-date:hover { color: var(--pink); }
+.todo-edit-prio {
+  padding: 3px 8px; border-radius: var(--r-pill);
+  border: 1px solid var(--border); background: var(--bg);
+  font-size: 0.56rem; font-weight: 700; letter-spacing: 0.04em;
+  color: var(--text-mute); cursor: pointer;
+}
+.todo-edit-prio.high { background: rgba(219,39,119,0.1); color: var(--pink); border-color: rgba(219,39,119,0.3); }
+.todo-edit-save, .todo-edit-cancel {
+  padding: 3px 11px; border-radius: var(--r-pill);
+  font-size: 0.6rem; font-weight: 700; cursor: pointer;
+  border: 1px solid var(--border);
+}
+.todo-edit-save { background: var(--orange); color: #fff; border-color: var(--orange); }
+.todo-edit-cancel { background: var(--bg); color: var(--text-mute); }
+/* 삭제 되돌리기 토스트 */
+.todo-undo {
+  display: flex; align-items: center; gap: 8px;
+  margin-top: 6px; padding: 7px 10px; border-radius: 8px;
+  background: var(--bg-card-hover); border: 1px solid var(--border);
+  font-size: 0.7rem; color: var(--text-sub);
+}
+.todo-undo-btn {
+  margin-left: auto; padding: 3px 11px; border-radius: var(--r-pill);
+  border: 1px solid var(--border-accent); background: var(--bg);
+  font-size: 0.62rem; font-weight: 700; color: var(--deep-orange);
+  cursor: pointer; white-space: nowrap;
+}
+.todo-undo-btn:hover { background: var(--orange-soft); }
+/* 완료 항목 일괄 비우기 */
+.todo-done-bar { display: flex; align-items: center; gap: 4px; }
+.todo-done-bar .todo-done-toggle { flex: 1; width: auto; margin-top: 0; }
+.todo-clear-done {
+  flex-shrink: 0; background: transparent; border: none; cursor: pointer;
+  color: var(--text-mute); font-size: 0.6rem; font-family: var(--mono);
+  letter-spacing: 0.03em; padding: 6px 6px;
+  transition: color .12s var(--ease);
+}
+.todo-clear-done:hover { color: var(--pink); }
+/* 모바일/터치 — 손잡이·수정·삭제 버튼 항상 보이게 */
+@media (hover: none) {
+  .todo-grip { opacity: 0.55; }
+  .todo-edit, .todo-del { opacity: 0.6; }
+}
 
 /* ─── GITHUB 연결 모달 ─── */
 .gh-modal-bg {
@@ -1190,7 +1278,14 @@ body {
           <div class="todo-progress" id="todoProgress"></div>
         </div>
         <div class="todo-list" id="todoList"></div>
-        <button class="todo-done-toggle" id="todoDoneToggle" type="button" style="display:none;"></button>
+        <div class="todo-undo" id="todoUndo" style="display:none;">
+          <span id="todoUndoLabel"></span>
+          <button class="todo-undo-btn" id="todoUndoBtn" type="button">되돌리기</button>
+        </div>
+        <div class="todo-done-bar" id="todoDoneBar" style="display:none;">
+          <button class="todo-done-toggle" id="todoDoneToggle" type="button"></button>
+          <button class="todo-clear-done" id="todoClearDone" type="button">완료 비우기</button>
+        </div>
         <div class="todo-add">
           <button class="todo-add-icon" id="todoAddBtn" type="button" aria-label="할 일 추가">+</button>
           <input type="text" id="todoInput" placeholder="할 일 입력 후 Enter 또는 + 클릭" aria-label="할 일 추가" maxlength="200">
@@ -3523,15 +3618,37 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     const txt = document.createElement('div');
     txt.className = 'todo-text';
     txt.textContent = t.text;
-    txt.title = '클릭하면 완료/취소';
-    txt.addEventListener('click', () => toggleTask(t.id));
+    txt.title = '더블클릭하면 수정';
+    txt.addEventListener('dblclick', () => enterEdit(row, t));
     main.appendChild(txt);
+
+    // 마감일 · 우선순위 칩
+    const chips = document.createElement('div');
+    chips.className = 'todo-chips';
+    if (t.due) {
+      const info = dueChip(t.due);
+      const dc = document.createElement('span');
+      dc.className = 'todo-date ' + info.cls;
+      dc.textContent = info.label;
+      dc.title = t.due + ' — 클릭하면 수정';
+      dc.addEventListener('click', () => enterEdit(row, t));
+      chips.appendChild(dc);
+    }
     if (t.priority === 'high' && !t.done) {
       const p = document.createElement('span');
       p.className = 'todo-prio high';
       p.textContent = '● 중요';
-      main.appendChild(p);
+      chips.appendChild(p);
     }
+    if (chips.children.length) main.appendChild(chips);
+
+    const edit = document.createElement('button');
+    edit.className = 'todo-edit';
+    edit.type = 'button';
+    edit.textContent = '✎';
+    edit.title = '수정';
+    edit.setAttribute('aria-label', '할 일 수정');
+    edit.addEventListener('click', () => enterEdit(row, t));
 
     const del = document.createElement('button');
     del.className = 'todo-del';
@@ -3540,12 +3657,108 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     del.setAttribute('aria-label', '할 일 삭제');
     del.addEventListener('click', () => deleteTask(t.id));
 
-    row.append(chk, main, del);
+    row.append(chk, main, edit, del);
     return row;
   }
 
+  // 마감일 → 표시 라벨·색상 클래스
+  function dueChip(due) {
+    const today = parseYmd(todayYmd());
+    const d = parseYmd(due);
+    const diff = Math.round((d - today) / 86400000);
+    const md = (d.getMonth() + 1) + '/' + d.getDate();
+    if (diff < 0)   return { cls: 'overdue', label: '📅 ' + md + ' · ' + (-diff) + '일 지남' };
+    if (diff === 0) return { cls: 'today',   label: '📅 오늘' };
+    if (diff === 1) return { cls: 'today',   label: '📅 내일' };
+    if (diff <= 7)  return { cls: 'future',  label: '📅 ' + md + ' · ' + diff + '일 뒤' };
+    return { cls: 'future', label: '📅 ' + md };
+  }
+
+  // 인라인 편집 — 내용·마감일·우선순위를 한 번에 수정
+  function enterEdit(row, t) {
+    if (!row || row.querySelector('.todo-edit-form')) return;
+    const main = row.querySelector('.todo-main');
+    if (!main) return;
+    let editPrio = t.priority || 'normal';
+
+    const form = document.createElement('div');
+    form.className = 'todo-edit-form';
+
+    const ti = document.createElement('input');
+    ti.className = 'todo-edit-text';
+    ti.type = 'text';
+    ti.value = t.text;
+    ti.maxLength = 200;
+    ti.setAttribute('aria-label', '할 일 내용');
+
+    const erow = document.createElement('div');
+    erow.className = 'todo-edit-row';
+
+    const di = document.createElement('input');
+    di.className = 'todo-edit-date';
+    di.type = 'date';
+    di.value = t.due || '';
+    di.setAttribute('aria-label', '마감일');
+
+    const clr = document.createElement('button');
+    clr.className = 'todo-edit-clear-date';
+    clr.type = 'button';
+    clr.textContent = '날짜 지움';
+    clr.addEventListener('click', () => { di.value = ''; });
+
+    const pb = document.createElement('button');
+    pb.type = 'button';
+    pb.className = 'todo-edit-prio' + (editPrio === 'high' ? ' high' : '');
+    pb.textContent = editPrio === 'high' ? '중요' : '보통';
+    pb.title = '우선순위 전환';
+    pb.addEventListener('click', () => {
+      editPrio = (editPrio === 'high') ? 'normal' : 'high';
+      pb.classList.toggle('high', editPrio === 'high');
+      pb.textContent = editPrio === 'high' ? '중요' : '보통';
+    });
+
+    const save = document.createElement('button');
+    save.type = 'button';
+    save.className = 'todo-edit-save';
+    save.textContent = '저장';
+
+    const cancel = document.createElement('button');
+    cancel.type = 'button';
+    cancel.className = 'todo-edit-cancel';
+    cancel.textContent = '취소';
+
+    const commit = () => {
+      const v = ti.value.trim();
+      if (!v) { ti.focus(); return; }
+      editTask(t.id, { text: v, due: di.value || '', priority: editPrio });
+    };
+    save.addEventListener('click', commit);
+    cancel.addEventListener('click', () => renderTodo());
+    ti.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') { e.preventDefault(); commit(); }
+      else if (e.key === 'Escape') renderTodo();
+    });
+
+    erow.append(di, clr, pb, save, cancel);
+    form.append(ti, erow);
+    main.replaceWith(form);
+    ti.focus();
+    ti.setSelectionRange(ti.value.length, ti.value.length);
+  }
+
+  function editTask(id, fields) {
+    const t = TASKS.find((x) => x.id === id);
+    if (!t) return;
+    t.text = fields.text;
+    t.due = fields.due || '';
+    t.priority = fields.priority || 'normal';
+    renderTodo();
+    scheduleSave();
+  }
+
   function renderTodo() {
-    const list = $('todoList'), prog = $('todoProgress'), doneToggle = $('todoDoneToggle');
+    const list = $('todoList'), prog = $('todoProgress');
+    const doneBar = $('todoDoneBar'), doneToggle = $('todoDoneToggle');
     if (!list) return;
 
     // 날짜와 무관한 할 일 체크리스트 — 순서는 TASKS 배열 순서 그대로 (드래그로 정함)
@@ -3573,13 +3786,13 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
         prog.classList.remove('all-done');
       }
     }
-    if (doneToggle) {
+    if (doneBar && doneToggle) {
       if (done.length) {
-        doneToggle.style.display = 'block';
+        doneBar.style.display = 'flex';
         doneToggle.textContent = (showDone ? '▾ 완료한 일 ' : '▸ 완료한 일 ') + done.length + '개'
           + (showDone ? ' 접기' : ' 보기');
       } else {
-        doneToggle.style.display = 'none';
+        doneBar.style.display = 'none';
       }
     }
   }
@@ -3605,6 +3818,8 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
       handle: '.todo-grip',
       draggable: '.todo-item:not(.done)',
       animation: 150,
+      delay: 120,
+      delayOnTouchOnly: true,
       ghostClass: 'todo-ghost',
       chosenClass: 'todo-chosen',
       dragClass: 'todo-drag',
@@ -3616,8 +3831,8 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     text = (text || '').trim();
     if (!text) return;
     const t = {
-      id: genId(), text: text,
-      done: false, priority: newPrio, created: new Date().toISOString()
+      id: genId(), text: text, done: false,
+      priority: newPrio, due: '', created: new Date().toISOString()
     };
     // 중요 = 맨 위, 보통 = 맨 아래
     TASKS = (newPrio === 'high') ? [t].concat(TASKS) : TASKS.concat([t]);
@@ -3631,8 +3846,50 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     renderTodo();
     scheduleSave();
   }
+  // ── 삭제 + 되돌리기(undo) ──
+  let pendingDelete = null;   // { task, index }
+  let undoTimer = null;
+
   function deleteTask(id) {
+    const idx = TASKS.findIndex((x) => x.id === id);
+    if (idx < 0) return;
+    if (pendingDelete) finalizeDelete();   // 직전 대기 건 먼저 확정
+    pendingDelete = { task: TASKS[idx], index: idx };
     TASKS = TASKS.filter((x) => x.id !== id);
+    renderTodo();
+    scheduleSave();
+    showUndo('"' + truncateText(pendingDelete.task.text, 16) + '" 삭제됨');
+  }
+  function truncateText(s, n) { s = String(s); return s.length > n ? s.slice(0, n) + '…' : s; }
+  function showUndo(msg) {
+    const box = $('todoUndo'), label = $('todoUndoLabel');
+    if (!box || !label) return;
+    label.textContent = msg;
+    box.style.display = 'flex';
+    clearTimeout(undoTimer);
+    undoTimer = setTimeout(finalizeDelete, 6000);
+  }
+  function finalizeDelete() {
+    clearTimeout(undoTimer);
+    pendingDelete = null;
+    const box = $('todoUndo');
+    if (box) box.style.display = 'none';
+  }
+  function undoDelete() {
+    if (!pendingDelete) { finalizeDelete(); return; }
+    const i = Math.min(pendingDelete.index, TASKS.length);
+    TASKS.splice(i, 0, pendingDelete.task);
+    pendingDelete = null;
+    finalizeDelete();
+    renderTodo();
+    scheduleSave();
+  }
+  function clearDone() {
+    const done = TASKS.filter((t) => t.done);
+    if (!done.length) return;
+    if (!window.confirm('완료한 일 ' + done.length + '개를 모두 비울까요?')) return;
+    TASKS = TASKS.filter((t) => !t.done);
+    showDone = false;
     renderTodo();
     scheduleSave();
   }
@@ -3769,6 +4026,8 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     btn.textContent = (newPrio === 'high') ? '중요' : '보통';
   });
   $('todoDoneToggle').addEventListener('click', () => { showDone = !showDone; renderTodo(); });
+  $('todoClearDone').addEventListener('click', clearDone);
+  $('todoUndoBtn').addEventListener('click', undoDelete);
   $('todoSyncBtn').addEventListener('click', openGhModal);
 
   $('ghSaveBtn').addEventListener('click', ghConnect);
