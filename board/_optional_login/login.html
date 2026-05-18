@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>써니보드 — 로그인</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css" />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --bg: #FAF8F4;
+  --surface: #FFFFFF;
+  --line: #E8E5DE;
+  --text: #14120F;
+  --sub: #4F4A42;
+  --mute: #8A8278;
+  --accent: #E05A1B;
+  --accent-deep: #C64A12;
+  --accent-soft: #FFF0E2;
+  --danger: #B23A2A;
+  --danger-soft: #FCE4E1;
+  --font-body: 'Pretendard Variable', Pretendard, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --r: 12px;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; background: var(--bg); color: var(--text); font-family: var(--font-body); }
+body { min-height: 100vh; background-image: radial-gradient(1200px 600px at 80% -10%, var(--accent-soft), transparent 60%); display: grid; place-items: center; padding: 20px; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; border: 0; background: transparent; color: inherit; }
+
+.login-wrap {
+  width: 100%; max-width: 920px;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+  background: var(--surface);
+  border-radius: 18px;
+  box-shadow: 0 24px 64px rgba(20,18,15,0.10);
+  overflow: hidden;
+  min-height: 540px;
+}
+
+/* Left = quote panel */
+.quote-panel {
+  background: linear-gradient(145deg, #FF8C42, var(--accent-deep));
+  color: #fff; padding: 56px 48px;
+  display: flex; flex-direction: column; justify-content: space-between;
+  position: relative; overflow: hidden;
+}
+.quote-panel::after {
+  content: '';
+  position: absolute; right: -80px; top: -80px;
+  width: 280px; height: 280px; border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(255,255,255,0.12), transparent);
+}
+.quote-brand { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.22em; opacity: 0.78; }
+.quote-text { font-size: 28px; font-weight: 700; line-height: 1.3; letter-spacing: -0.025em; max-width: 340px; position: relative; z-index: 1; }
+.quote-text em { font-style: normal; opacity: 0.82; display: block; margin-top: 10px; font-size: 17px; font-weight: 500; }
+.quote-by { font-family: var(--font-mono); font-size: 11px; opacity: 0.62; letter-spacing: 0.06em; }
+
+/* Right = form */
+.form-panel { padding: 56px 48px; display: flex; flex-direction: column; justify-content: center; }
+.form-eyebrow { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.22em; color: var(--mute); margin-bottom: 8px; }
+.form-title { font-size: 24px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 32px; }
+
+.mode-tabs { display: flex; gap: 4px; margin-bottom: 24px; background: var(--bg); padding: 4px; border-radius: 10px; }
+.mode-tab { flex: 1; padding: 10px 14px; font-size: 13px; font-weight: 600; color: var(--sub); border-radius: 7px; transition: all .15s var(--ease); text-align: center; }
+.mode-tab.active { background: var(--surface); color: var(--text); box-shadow: 0 1px 3px rgba(20,18,15,0.06); }
+
+.field { margin-bottom: 14px; }
+.field label { display: block; font-size: 11px; font-weight: 600; letter-spacing: 0.08em; color: var(--mute); font-family: var(--font-mono); text-transform: uppercase; margin-bottom: 6px; }
+.field input {
+  width: 100%; padding: 12px 14px; background: var(--bg);
+  border: 1px solid var(--line); border-radius: 10px;
+  font-size: 14px; outline: none; font-family: var(--font-body);
+  transition: all .15s var(--ease);
+}
+.field input:focus { border-color: var(--accent); background: var(--surface); }
+.field-pw { position: relative; }
+.field-pw input { padding-right: 40px; }
+.pw-toggle { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); width: 28px; height: 28px; border: none; background: transparent; cursor: pointer; display: grid; place-items: center; opacity: 0.55; transition: opacity .15s; padding: 0; }
+.pw-toggle:hover { opacity: 1; }
+.pw-toggle svg { width: 18px; height: 18px; pointer-events: none; }
+
+.terms { display: flex; gap: 8px; align-items: flex-start; margin: 12px 0 16px; font-size: 12px; color: var(--sub); line-height: 1.5; }
+.terms input { margin-top: 3px; }
+.terms a { color: var(--accent); text-decoration: underline; }
+
+.submit-btn {
+  width: 100%; padding: 13px; border-radius: 10px; background: var(--accent); color: #fff;
+  font-size: 14px; font-weight: 600; transition: all .15s var(--ease);
+  margin-top: 6px;
+}
+.submit-btn:hover:not(:disabled) { background: var(--accent-deep); transform: translateY(-1px); }
+.submit-btn:disabled { background: #DCD8D2; cursor: not-allowed; }
+
+.divider { display: flex; align-items: center; gap: 12px; margin: 20px 0; font-family: var(--font-mono); font-size: 11px; color: var(--mute); letter-spacing: 0.12em; }
+.divider::before, .divider::after { content: ''; flex: 1; height: 1px; background: var(--line); }
+
+.oauth-btn {
+  width: 100%; padding: 12px; border-radius: 10px; background: var(--surface); color: var(--text);
+  font-size: 13px; font-weight: 500; border: 1px solid var(--line);
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  transition: all .15s var(--ease);
+}
+.oauth-btn:hover { background: var(--bg); border-color: var(--mute); }
+.oauth-btn svg { width: 16px; height: 16px; }
+
+.magic-btn {
+  margin-top: 10px; width: 100%; padding: 11px;
+  background: transparent; border: 1px dashed var(--line); border-radius: 10px;
+  font-size: 12px; color: var(--sub); transition: all .15s var(--ease);
+}
+.magic-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+.error { padding: 10px 12px; background: var(--danger-soft); color: var(--danger); border-radius: 8px; font-size: 12px; margin-bottom: 14px; }
+.info { padding: 10px 12px; background: var(--accent-soft); color: var(--accent-deep); border-radius: 8px; font-size: 12px; margin-bottom: 14px; }
+
+.foot-note { margin-top: 22px; font-family: var(--font-mono); font-size: 10px; color: var(--mute); letter-spacing: 0.06em; text-align: center; }
+
+@media (max-width: 720px) {
+  .login-wrap { grid-template-columns: 1fr; min-height: auto; }
+  .quote-panel { padding: 36px 28px; min-height: 200px; }
+  .quote-text { font-size: 22px; }
+  .form-panel { padding: 36px 28px; }
+}
+</style>
+</head>
+<body>
+
+<div class="login-wrap">
+  <!-- Left: quote -->
+  <aside class="quote-panel">
+    <div class="quote-brand">SUNNY BOARD</div>
+    <div>
+      <p class="quote-text">하루를 한 화면에서.<em>뉴스 · 캘린더 · 할 일 · 영어 — 내 대시보드.</em></p>
+    </div>
+    <div class="quote-by">— 써니보드</div>
+  </aside>
+
+  <!-- Right: form -->
+  <section class="form-panel">
+    <div class="form-eyebrow">SIGN IN</div>
+    <h1 class="form-title" id="formTitle">로그인</h1>
+
+    <div class="mode-tabs">
+      <button class="mode-tab active" id="tabLogin" onclick="setMode('login')">로그인</button>
+      <button class="mode-tab" id="tabSignup" onclick="setMode('signup')">가입</button>
+    </div>
+
+    <div id="errorBox" class="error" style="display:none"></div>
+    <div id="infoBox" class="info" style="display:none"></div>
+
+    <form id="authForm" onsubmit="handleSubmit(event)">
+      <div class="field" id="nameField" style="display:none">
+        <label for="name">이름</label>
+        <input type="text" id="name" placeholder="홍길동" autocomplete="name">
+      </div>
+      <div class="field">
+        <label for="email">이메일</label>
+        <input type="email" id="email" placeholder="you@example.com" autocomplete="email" required>
+      </div>
+      <div class="field field-pw">
+        <label for="password">비밀번호</label>
+        <input type="password" id="password" placeholder="8자 이상" autocomplete="current-password" required>
+        <button type="button" class="pw-toggle" onclick="togglePw('password', this)" aria-label="비밀번호 보기/숨기기">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="terms" id="termsBox" style="display:none">
+        <input type="checkbox" id="terms">
+        <label for="terms" style="font-family:var(--font-body);text-transform:none;letter-spacing:0;color:var(--sub);font-size:12px;font-weight:400;margin:0;cursor:pointer;line-height:1.5">
+          서비스 이용약관 및 개인정보처리방침에 동의합니다.
+        </label>
+      </div>
+
+      <button class="submit-btn" id="submitBtn" type="submit">로그인</button>
+    </form>
+
+    <div class="divider">OR</div>
+
+    <button class="oauth-btn" onclick="signInGoogle()">
+      <svg viewBox="0 0 24 24"><path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+      Google로 계속
+    </button>
+
+    <button class="magic-btn" onclick="signInMagic()" title="비밀번호 없이 이메일로 로그인 링크 받기">
+      📧 매직 링크로 로그인 (비밀번호 없이)
+    </button>
+
+    <p class="foot-note">가입 = 무료 · 내 데이터는 내 계정에만</p>
+  </section>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script>
+// ============================================================
+// 써니보드 Supabase 설정
+// ★ Phase 1 = ai-pronote 프로젝트 재사용 (기획서 옵션 B — 무료 한도 유지).
+//   Supabase 셋업 단계에서 대표님과 최종 확인 후 필요 시 교체.
+//   anon key = publishable key = 공개 안전값.
+// ============================================================
+const SUPABASE_URL = 'https://pddasonkizwviwqzdhpu.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable_g_WkmPy-txtru1D93pl8iA_kddaB4GQ';
+const sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+// 경로 자동 인식 — /board/ 든 / 든 동일하게 동작
+const BASE = location.pathname.replace(/[^/]*$/, '');
+const CALLBACK_URL = location.origin + BASE + 'auth_callback.html';
+
+// 비밀번호 보기/숨기기 토글
+function togglePw(inputId, btn) {
+  const inp = document.getElementById(inputId);
+  if (!inp) return;
+  const visible = inp.type === 'text';
+  inp.type = visible ? 'password' : 'text';
+  btn.innerHTML = visible
+    ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>'
+    : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>';
+}
+
+let mode = 'login';
+const params = new URLSearchParams(location.search);
+// redirect = 내부 경로만 허용. 기본 = 대시보드(BASE).
+const rawRedirect = params.get('redirect') || BASE;
+const redirectTo = (rawRedirect.startsWith('/') && !rawRedirect.startsWith('//')) ? rawRedirect : BASE;
+
+function setMode(m) {
+  mode = m;
+  document.getElementById('tabLogin').classList.toggle('active', m === 'login');
+  document.getElementById('tabSignup').classList.toggle('active', m === 'signup');
+  document.getElementById('formTitle').textContent = m === 'login' ? '로그인' : '가입';
+  document.getElementById('submitBtn').textContent = m === 'login' ? '로그인' : '가입';
+  document.getElementById('nameField').style.display = m === 'signup' ? 'block' : 'none';
+  document.getElementById('termsBox').style.display = m === 'signup' ? 'flex' : 'none';
+  document.getElementById('password').setAttribute('autocomplete', m === 'login' ? 'current-password' : 'new-password');
+  clearMsg();
+}
+
+function showError(msg) {
+  const box = document.getElementById('errorBox');
+  box.textContent = msg; box.style.display = 'block';
+  document.getElementById('infoBox').style.display = 'none';
+}
+function showInfo(msg) {
+  const box = document.getElementById('infoBox');
+  box.textContent = msg; box.style.display = 'block';
+  document.getElementById('errorBox').style.display = 'none';
+}
+function clearMsg() {
+  document.getElementById('errorBox').style.display = 'none';
+  document.getElementById('infoBox').style.display = 'none';
+}
+
+function translate(err) {
+  const m = err.toLowerCase();
+  if (m.includes('invalid login') || m.includes('invalid_credentials')) return '이메일 또는 비밀번호가 올바르지 않습니다.';
+  if (m.includes('email not confirmed')) return '이메일 인증이 필요합니다. 받은편지함을 확인해주세요.';
+  if (m.includes('user already registered')) return '이미 가입된 이메일입니다. 로그인해주세요.';
+  if (m.includes('password') && m.includes('6')) return '비밀번호는 8자 이상이어야 합니다.';
+  if (m.includes('rate limit')) return '요청이 많습니다. 잠시 후 다시 시도해주세요.';
+  if (m.includes('provider is not enabled')) return 'Google 로그인이 아직 설정 중입니다. 이메일로 로그인해주세요.';
+  return err;
+}
+
+async function handleSubmit(e) {
+  e.preventDefault();
+  clearMsg();
+  const email = document.getElementById('email').value.trim();
+  const password = document.getElementById('password').value;
+  const name = document.getElementById('name').value.trim();
+  const btn = document.getElementById('submitBtn');
+  btn.disabled = true; btn.textContent = '진행 중...';
+
+  try {
+    if (mode === 'signup') {
+      if (!document.getElementById('terms').checked) {
+        throw new Error('서비스 이용약관 동의가 필요합니다.');
+      }
+      const { data, error } = await sb.auth.signUp({
+        email, password,
+        options: {
+          data: { name: name || '', app: 'board' },
+          emailRedirectTo: CALLBACK_URL + '?redirect=' + encodeURIComponent(redirectTo)
+        }
+      });
+      if (error) throw error;
+      if (data.session) {
+        location.href = redirectTo;
+      } else {
+        showInfo('확인 메일을 보냈습니다. 받은편지함을 확인해주세요.');
+      }
+    } else {
+      const { error } = await sb.auth.signInWithPassword({ email, password });
+      if (error) throw error;
+      location.href = redirectTo;
+    }
+  } catch (err) {
+    showError(translate(err.message || String(err)));
+  } finally {
+    btn.disabled = false;
+    btn.textContent = mode === 'login' ? '로그인' : '가입';
+  }
+}
+
+async function signInGoogle() {
+  clearMsg();
+  try {
+    const { error } = await sb.auth.signInWithOAuth({
+      provider: 'google',
+      options: { redirectTo: CALLBACK_URL + '?redirect=' + encodeURIComponent(redirectTo) }
+    });
+    if (error) throw error;
+  } catch (err) { showError(translate(err.message || String(err))); }
+}
+
+async function signInMagic() {
+  clearMsg();
+  const email = document.getElementById('email').value.trim();
+  if (!email) { showError('이메일을 입력해주세요.'); return; }
+  try {
+    const { error } = await sb.auth.signInWithOtp({
+      email,
+      options: { emailRedirectTo: CALLBACK_URL + '?redirect=' + encodeURIComponent(redirectTo) }
+    });
+    if (error) throw error;
+    showInfo(email + ' 받은편지함을 확인해주세요. 매직 링크 클릭 = 자동 로그인.');
+  } catch (err) { showError(translate(err.message || String(err))); }
+}
+
+// 이미 로그인됐으면 → 대시보드로
+(async () => {
+  const { data } = await sb.auth.getSession();
+  if (data.session) location.href = redirectTo;
+})();
+</script>
+</body>
+</html>
