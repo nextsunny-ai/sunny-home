@@ -1233,8 +1233,7 @@ body {
 <nav class="nav" role="navigation" aria-label="메인 네비게이션">
   <span class="nav-logo">써니보드</span>
   <span class="nav-item active" data-section="hero" role="button" tabindex="0" aria-label="오늘 섹션으로 이동">오늘</span>
-  <span class="nav-item" data-section="quick-links-section" role="button" tabindex="0" aria-label="바로가기 섹션으로 이동">바로가기</span>
-  <span class="nav-item" data-section="mid" role="button" tabindex="0" aria-label="진행 중 섹션으로 이동">진행 중</span>
+  <span class="nav-item" data-section="mid" role="button" tabindex="0" aria-label="내 보드 섹션으로 이동">내 보드</span>
   <span class="nav-spacer"></span>
   <div class="nav-search">
     <span style="color:var(--text-mute);font-size:0.78rem">&#128269;</span>
@@ -1334,14 +1333,7 @@ body {
   </section>
 
 
-  <!-- ═══ 바로가기 ═══ -->
-  <section class="quick-links-section reveal" id="quick-links-section">
-    <div class="section-eyebrow">Quick Access</div>
-    <div class="section-header">바로가기</div>
-    <div class="quick-links-grid" id="quickLinksGrid"></div>
-  </section>
-
-  <!-- ═══ 진행 중 ═══ -->
+  <!-- ═══ 내 보드 (진행 중 · 최근 · 자주 찾는 링크) ═══ -->
   <section class="mid reveal" id="mid">
     <div class="mid-col">
       <div class="section-eyebrow">In Progress</div>
@@ -1349,8 +1341,23 @@ body {
       <div class="in-progress-list" id="inProgressList"></div>
       <div class="ip-add">
         <span class="ip-add-icon" aria-hidden="true">+</span>
-        <input type="text" id="ipInput" placeholder="진행 중인 일 추가 후 Enter" maxlength="140" aria-label="진행 중 프로젝트 추가">
+        <input type="text" id="ipInput" placeholder="진행 중인 일 추가 후 Enter" maxlength="140" aria-label="진행 중 추가">
         <button class="ip-state-toggle" id="ipStateToggle" type="button" title="상태 전환">Develop</button>
+      </div>
+    </div>
+    <div class="mid-col">
+      <div class="section-eyebrow">Recent</div>
+      <div class="section-header">최근 열어본 링크</div>
+      <div class="bl-list" id="recentList"></div>
+    </div>
+    <div class="mid-col">
+      <div class="section-eyebrow">Bookmarks</div>
+      <div class="section-header">자주 찾는 링크</div>
+      <div class="bl-list" id="linksList"></div>
+      <div class="bl-add">
+        <input type="text" id="blName" class="bl-input" placeholder="이름" maxlength="40" aria-label="링크 이름">
+        <input type="text" id="blUrl" class="bl-input" placeholder="주소 (예: google.com)" maxlength="200" aria-label="링크 주소">
+        <button class="bl-add-btn" id="blAddBtn" type="button">추가</button>
       </div>
     </div>
   </section>
@@ -1407,8 +1414,9 @@ body {
     box-shadow: var(--shadow-sm);
     border: 1px solid var(--border);
   }
-  .mid { display: block; }
+  .mid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 32px; }
   .mid .mid-col { padding: 0; min-height: 0; border-right: none; background: transparent; }
+  @media (max-width: 860px) { .mid { grid-template-columns: 1fr; gap: 26px; } }
   body { background: var(--bg); }
   main { padding-bottom: 40px; }
   /* hero·english은 그대로 (배경 X = 통째 베이지) */
@@ -1640,6 +1648,45 @@ body {
   .ql-name { font-size: 0.82rem; font-weight: 600; letter-spacing: -0.005em; }
   .ql-host { font-size: 0.62rem; color: var(--text-mute); font-family: var(--mono); margin-top: 1px;
     overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+
+  /* 자주 찾는 링크 · 최근 (내 보드 컬럼) */
+  .bl-list { display: flex; flex-direction: column; gap: 6px; }
+  .bl-item { display: flex; align-items: center; gap: 2px; }
+  .bl-link {
+    flex: 1; min-width: 0;
+    display: flex; align-items: center; gap: 9px;
+    padding: 9px 11px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border); border-radius: 9px;
+    text-decoration: none; color: var(--text);
+    transition: transform 0.15s var(--ease), border-color 0.15s, background 0.15s;
+  }
+  .bl-link:hover { border-color: var(--border-accent); background: var(--bg-card-hover); transform: translateY(-1px); }
+  .bl-fav { width: 18px; height: 18px; border-radius: 4px; flex-shrink: 0; background: var(--bg-card-hover); }
+  .bl-name { font-size: 0.8rem; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .bl-del {
+    flex-shrink: 0; width: 26px; height: 26px;
+    border: none; background: none; color: var(--text-mute);
+    font-size: 1.05rem; line-height: 1; cursor: pointer; border-radius: 6px;
+    opacity: 0.4; transition: opacity 0.15s, color 0.15s, background 0.15s;
+  }
+  .bl-item:hover .bl-del { opacity: 1; }
+  .bl-del:hover { color: var(--deep-orange); background: var(--orange-soft); }
+  .bl-empty { font-size: 0.75rem; color: var(--text-mute); padding: 10px 2px; line-height: 1.6; }
+  .bl-add { display: flex; gap: 5px; margin-top: 10px; flex-wrap: wrap; }
+  .bl-input {
+    flex: 1; min-width: 70px; padding: 8px 10px;
+    background: var(--bg); border: 1px solid var(--border); border-radius: 8px;
+    font-size: 0.74rem; font-family: inherit; color: var(--text); outline: none;
+  }
+  .bl-input:focus { border-color: var(--border-accent); }
+  .bl-add-btn {
+    padding: 8px 14px; flex-shrink: 0;
+    background: var(--orange); color: #fff; border: none; border-radius: 8px;
+    font-size: 0.74rem; font-weight: 600; cursor: pointer;
+    transition: background 0.15s;
+  }
+  .bl-add-btn:hover { background: var(--deep-orange); }
 
   /* Team grid (옛 풀세트 — 사용 X but CSS 보존) */
   .team-grid {
@@ -1891,37 +1938,87 @@ document.querySelectorAll('.nav-item').forEach(item => {
   });
 });
 
-// ═══ 바로가기 (다들 쓰는 앱) ═══
-const QUICK_LINKS = [
-  { name: 'Claude',       host: 'claude.ai',           icon: '✦',  url: 'https://claude.ai' },
-  { name: 'ChatGPT',      host: 'chatgpt.com',         icon: '◍',  url: 'https://chatgpt.com' },
-  { name: 'Gmail',        host: 'mail.google.com',     icon: '✉',  url: 'https://mail.google.com' },
-  { name: '구글 캘린더',   host: 'calendar.google.com', icon: '📅', url: 'https://calendar.google.com' },
-  { name: '구글 드라이브', host: 'drive.google.com',    icon: '📁', url: 'https://drive.google.com' },
-  { name: 'YouTube',      host: 'youtube.com',         icon: '▶',  url: 'https://youtube.com' },
-  { name: '네이버',        host: 'naver.com',           icon: 'N',  url: 'https://naver.com' },
-  { name: 'Notion',       host: 'notion.so',           icon: '✎',  url: 'https://notion.so' },
-  { name: '구글 지도',     host: 'maps.google.com',     icon: '📍', url: 'https://maps.google.com' },
-  { name: '파파고 번역',   host: 'papago.naver.com',    icon: '🌐', url: 'https://papago.naver.com' },
-  { name: '구글 검색',     host: 'google.com',          icon: '🔍', url: 'https://google.com' },
-  { name: '카카오톡',      host: 'web.kakao.com',       icon: '💬', url: 'https://web.kakao.com' },
+// ═══ 자주 찾는 링크 + 최근 열어본 링크 (로그인 없이 브라우저에 자동 저장) ═══
+const BL_KEY = 'board_links_v1';
+const BR_KEY = 'board_recent_v1';
+// 처음 방문 시 기본으로 채워두는, 다들 쓰는 사이트
+const BL_SEED = [
+  { name: 'Claude',     url: 'https://claude.ai' },
+  { name: 'ChatGPT',    url: 'https://chatgpt.com' },
+  { name: 'Gmail',      url: 'https://mail.google.com' },
+  { name: '구글 캘린더', url: 'https://calendar.google.com' },
+  { name: '구글 드라이브', url: 'https://drive.google.com' },
+  { name: 'YouTube',    url: 'https://youtube.com' },
+  { name: '네이버',      url: 'https://naver.com' },
+  { name: 'Notion',     url: 'https://notion.so' },
 ];
-function renderQuickLinks() {
-  const g = document.getElementById('quickLinksGrid');
-  if (!g) return;
-  g.innerHTML = QUICK_LINKS.map(l => `
-    <a class="ql-tile" href="${l.url}" target="_blank" rel="noopener" title="${l.name} — ${l.host}">
-      <span class="ql-icon">${l.icon}</span>
-      <div class="ql-body">
-        <div class="ql-name">${l.name}</div>
-        <div class="ql-host">${l.host}</div>
-      </div>
-    </a>`).join('');
+function blLoad() { try { const s = localStorage.getItem(BL_KEY); if (s) return JSON.parse(s); } catch (e) {} return BL_SEED.slice(); }
+function blSave() { try { localStorage.setItem(BL_KEY, JSON.stringify(boardLinks)); } catch (e) {} }
+function brLoad() { try { const s = localStorage.getItem(BR_KEY); if (s) return JSON.parse(s); } catch (e) {} return []; }
+function brSave() { try { localStorage.setItem(BR_KEY, JSON.stringify(boardRecent)); } catch (e) {} }
+let boardLinks = blLoad();
+let boardRecent = brLoad();
+
+function blFavicon(url) {
+  try { return 'https://www.google.com/s2/favicons?domain=' + encodeURIComponent(new URL(url).hostname) + '&sz=64'; }
+  catch (e) { return ''; }
 }
-renderQuickLinks();
+function blNormUrl(u) { return /^https?:\/\//i.test(u) ? u : 'https://' + u; }
+
+function blLogRecent(name, url) {
+  boardRecent = boardRecent.filter(r => r.url !== url);
+  boardRecent.unshift({ name: name, url: url });
+  if (boardRecent.length > 8) boardRecent = boardRecent.slice(0, 8);
+  brSave();
+  renderRecent();
+}
+function blTile(name, url) {
+  return '<a class="bl-link" href="' + url + '" target="_blank" rel="noopener" title="' + escHtml(name) + '">' +
+    '<img class="bl-fav" src="' + blFavicon(url) + '" alt="" onerror="this.style.visibility=\'hidden\'">' +
+    '<span class="bl-name">' + escHtml(name) + '</span></a>';
+}
+function renderLinks() {
+  const g = document.getElementById('linksList');
+  if (!g) return;
+  if (!boardLinks.length) { g.innerHTML = '<div class="bl-empty">아래에서 자주 가는 사이트를 추가하세요.</div>'; return; }
+  g.innerHTML = boardLinks.map((l, i) =>
+    '<div class="bl-item">' + blTile(l.name, l.url) +
+    '<button class="bl-del" type="button" data-del="' + i + '" aria-label="' + escHtml(l.name) + ' 삭제">×</button></div>'
+  ).join('');
+}
+function renderRecent() {
+  const g = document.getElementById('recentList');
+  if (!g) return;
+  if (!boardRecent.length) { g.innerHTML = '<div class="bl-empty">링크를 클릭하면 최근 기록이 여기 쌓입니다.</div>'; return; }
+  g.innerHTML = boardRecent.map(r => blTile(r.name, r.url)).join('');
+}
+function blAdd() {
+  const n = document.getElementById('blName'), u = document.getElementById('blUrl');
+  const name = (n.value || '').trim(), url = (u.value || '').trim();
+  if (!name || !url) return;
+  boardLinks.push({ name: name, url: blNormUrl(url) });
+  blSave();
+  n.value = ''; u.value = ''; renderLinks(); n.focus();
+}
+document.getElementById('linksList')?.addEventListener('click', (e) => {
+  const del = e.target.closest('.bl-del');
+  if (del) { e.preventDefault(); boardLinks.splice(+del.dataset.del, 1); blSave(); renderLinks(); return; }
+  const a = e.target.closest('.bl-link');
+  if (a) blLogRecent(a.querySelector('.bl-name').textContent, a.getAttribute('href'));
+});
+document.getElementById('recentList')?.addEventListener('click', (e) => {
+  const a = e.target.closest('.bl-link');
+  if (a) blLogRecent(a.querySelector('.bl-name').textContent, a.getAttribute('href'));
+});
+document.getElementById('blAddBtn')?.addEventListener('click', blAdd);
+['blName', 'blUrl'].forEach(id => document.getElementById(id)?.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') { e.preventDefault(); blAdd(); }
+}));
+renderLinks();
+renderRecent();
 
 // scroll spy
-const sections = ['hero', 'quick-links-section', 'mid'];
+const sections = ['hero', 'mid'];
 let scrollTicking = false;
 window.addEventListener('scroll', () => {
   if (!scrollTicking) {
