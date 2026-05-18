@@ -1233,6 +1233,7 @@ body {
 <nav class="nav" role="navigation" aria-label="메인 네비게이션">
   <span class="nav-logo">써니보드</span>
   <span class="nav-item active" data-section="hero" role="button" tabindex="0" aria-label="오늘 섹션으로 이동">오늘</span>
+  <span class="nav-item" data-section="quick-links-section" role="button" tabindex="0" aria-label="바로가기 섹션으로 이동">바로가기</span>
   <span class="nav-item" data-section="mid" role="button" tabindex="0" aria-label="진행 중 섹션으로 이동">진행 중</span>
   <span class="nav-spacer"></span>
   <div class="nav-search">
@@ -1333,6 +1334,13 @@ body {
   </section>
 
 
+  <!-- ═══ 바로가기 ═══ -->
+  <section class="quick-links-section reveal" id="quick-links-section">
+    <div class="section-eyebrow">Quick Access</div>
+    <div class="section-header">바로가기</div>
+    <div class="quick-links-grid" id="quickLinksGrid"></div>
+  </section>
+
   <!-- ═══ 진행 중 ═══ -->
   <section class="mid reveal" id="mid">
     <div class="mid-col">
@@ -1387,6 +1395,7 @@ body {
 
   /* ★ 섹션 박스 (= 위아래 구분, 2026-05-11 대표님 명시) */
   .mid,
+  .quick-links-section,
   .news-section,
   .deadlines-section,
   .activity-section {
@@ -1398,13 +1407,14 @@ body {
     box-shadow: var(--shadow-sm);
     border: 1px solid var(--border);
   }
-  .mid { display: grid; grid-template-columns: 1.05fr 1fr 1fr; gap: 28px; }
+  .mid { display: block; }
+  .mid .mid-col { padding: 0; min-height: 0; border-right: none; background: transparent; }
   body { background: var(--bg); }
   main { padding-bottom: 40px; }
   /* hero·english은 그대로 (배경 X = 통째 베이지) */
   @media (max-width: 980px) {
     .mid { grid-template-columns: 1fr; gap: 24px; }
-    .mid, .news-section, .deadlines-section, .activity-section {
+    .mid, .quick-links-section, .news-section, .deadlines-section, .activity-section {
       margin: 16px 12px !important; padding: 24px 20px !important;
     }
   }
@@ -1881,8 +1891,37 @@ document.querySelectorAll('.nav-item').forEach(item => {
   });
 });
 
+// ═══ 바로가기 (다들 쓰는 앱) ═══
+const QUICK_LINKS = [
+  { name: 'Claude',       host: 'claude.ai',           icon: '✦',  url: 'https://claude.ai' },
+  { name: 'ChatGPT',      host: 'chatgpt.com',         icon: '◍',  url: 'https://chatgpt.com' },
+  { name: 'Gmail',        host: 'mail.google.com',     icon: '✉',  url: 'https://mail.google.com' },
+  { name: '구글 캘린더',   host: 'calendar.google.com', icon: '📅', url: 'https://calendar.google.com' },
+  { name: '구글 드라이브', host: 'drive.google.com',    icon: '📁', url: 'https://drive.google.com' },
+  { name: 'YouTube',      host: 'youtube.com',         icon: '▶',  url: 'https://youtube.com' },
+  { name: '네이버',        host: 'naver.com',           icon: 'N',  url: 'https://naver.com' },
+  { name: 'Notion',       host: 'notion.so',           icon: '✎',  url: 'https://notion.so' },
+  { name: '구글 지도',     host: 'maps.google.com',     icon: '📍', url: 'https://maps.google.com' },
+  { name: '파파고 번역',   host: 'papago.naver.com',    icon: '🌐', url: 'https://papago.naver.com' },
+  { name: '구글 검색',     host: 'google.com',          icon: '🔍', url: 'https://google.com' },
+  { name: '카카오톡',      host: 'web.kakao.com',       icon: '💬', url: 'https://web.kakao.com' },
+];
+function renderQuickLinks() {
+  const g = document.getElementById('quickLinksGrid');
+  if (!g) return;
+  g.innerHTML = QUICK_LINKS.map(l => `
+    <a class="ql-tile" href="${l.url}" target="_blank" rel="noopener" title="${l.name} — ${l.host}">
+      <span class="ql-icon">${l.icon}</span>
+      <div class="ql-body">
+        <div class="ql-name">${l.name}</div>
+        <div class="ql-host">${l.host}</div>
+      </div>
+    </a>`).join('');
+}
+renderQuickLinks();
+
 // scroll spy
-const sections = ['hero', 'mid'];
+const sections = ['hero', 'quick-links-section', 'mid'];
 let scrollTicking = false;
 window.addEventListener('scroll', () => {
   if (!scrollTicking) {
