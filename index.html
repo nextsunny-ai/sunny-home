@@ -955,6 +955,14 @@ body {
   padding: 4px 0;
 }
 .todo-add input::placeholder { color: var(--text-mute); }
+.todo-add { flex-wrap: wrap; }
+.todo-add-date {
+  flex-shrink: 0; background: var(--bg); color: var(--text-mute);
+  border: 1px solid var(--border); border-radius: var(--r-pill);
+  font-family: inherit; font-size: 0.58rem; padding: 2px 7px; outline: none;
+  color-scheme: light; cursor: pointer;
+}
+.todo-add-date:hover { border-color: var(--border-accent); }
 .todo-prio-toggle {
   flex-shrink: 0; padding: 3px 8px; border-radius: var(--r-pill);
   border: 1px solid var(--border); background: var(--bg);
@@ -1289,6 +1297,7 @@ body {
         <div class="todo-add">
           <button class="todo-add-icon" id="todoAddBtn" type="button" aria-label="할 일 추가">+</button>
           <input type="text" id="todoInput" placeholder="할 일 입력 후 Enter 또는 + 클릭" aria-label="할 일 추가" maxlength="200">
+          <input type="date" id="todoAddDate" class="todo-add-date" aria-label="마감일 (선택)" title="마감일 — 선택 사항">
           <button class="todo-prio-toggle" id="todoPrioToggle" type="button" title="우선순위 전환 (보통 ↔ 중요)">보통</button>
         </div>
         <div class="todo-sync">
@@ -3830,12 +3839,15 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
   function addTask(text) {
     text = (text || '').trim();
     if (!text) return;
+    const dateInp = $('todoAddDate');
     const t = {
       id: genId(), text: text, done: false,
-      priority: newPrio, due: '', created: new Date().toISOString()
+      priority: newPrio, due: (dateInp && dateInp.value) || '',
+      created: new Date().toISOString()
     };
     // 중요 = 맨 위, 보통 = 맨 아래
     TASKS = (newPrio === 'high') ? [t].concat(TASKS) : TASKS.concat([t]);
+    if (dateInp) dateInp.value = '';
     renderTodo();
     scheduleSave();
   }
