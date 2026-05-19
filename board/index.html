@@ -1490,7 +1490,10 @@ body {
     background: var(--bg); color: var(--text-sub);
     border: 1px solid var(--border); border-radius: var(--r-pill);
     cursor: pointer; transition: all 0.15s var(--ease); white-space: nowrap;
+    max-width: 100%;
   }
+  /* ★ 2026-05-20: 긴 재생목록 제목 = 칸 밖으로 안 늘어나게 말줄임 */
+  .yt-tab-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 150px; min-width: 0; }
   .yt-tab:hover { border-color: var(--border-accent); color: var(--text); }
   .yt-tab.active { background: var(--deep-orange); color: #fff; border-color: var(--deep-orange); }
   .yt-tab-del {
