@@ -25,6 +25,9 @@ jobs:
       - name: Fetch news (7 categories, 누적 병합)
         run: python scripts/fetch_news.py
 
+      - name: Sync news copy for MBOARD (board/)
+        run: cp sunny_home_data.json board/sunny_home_data.json
+
       - name: Refresh projects
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
