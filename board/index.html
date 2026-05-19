@@ -744,6 +744,9 @@ body {
 .cal-gcal-btn.connected {
   background: rgba(5,150,105,0.1); border-color: rgba(5,150,105,0.35); color: var(--green);
 }
+.cal-gcal-hint {
+  font-size: 0.68rem; color: var(--text-mute); line-height: 1.55; margin-top: 8px;
+}
 .cal-gcal-row {
   display: flex; align-items: center; gap: 8px; margin-top: 8px;
 }
@@ -1263,6 +1266,7 @@ body {
           <button class="cal-add-btn" id="calAddBtn" type="button">＋ 오늘 일정 추가</button>
           <button class="cal-gcal-btn" id="calGcalBtn" type="button">🔗 구글 캘린더 연결</button>
         </div>
+        <div class="cal-gcal-hint" id="calGcalHint">＂🔗 구글 캘린더 연결＂을 누르고 본인 구글 계정으로 로그인하면, 내 구글 캘린더 일정이 여기에 함께 표시됩니다. (가입·키 발급 없이 로그인 한 번)</div>
         <div class="cal-gcal-row" id="calGcalRow" style="display:none;">
           <span class="cal-gcal-row-label">표시할 구글 캘린더</span>
           <select id="calGcalSelect" class="cal-gcal-select" aria-label="표시할 구글 캘린더 선택"></select>
@@ -3125,12 +3129,13 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     el.className = 'cal-gcal-status' + (cls ? ' ' + cls : '');
   }
   function updateGcalUI() {
-    const btn = $('calGcalBtn'), row = $('calGcalRow');
+    const btn = $('calGcalBtn'), row = $('calGcalRow'), hint = $('calGcalHint');
     if (btn) {
       btn.classList.toggle('connected', gcalConnected);
       btn.textContent = gcalConnected ? '✓ 구글 연결됨' : '🔗 구글 캘린더 연결';
     }
     if (row && !gcalConnected) row.style.display = 'none';
+    if (hint) hint.style.display = gcalConnected ? 'none' : 'block';
   }
 
   // 구글 캘린더 선택 드롭다운 채우기
