@@ -1423,6 +1423,11 @@ body {
   <section class="quick-links-section reveal" id="quick-links-section" style="padding: 56px 56px 64px; max-width: 1400px; margin: 0 auto;">
     <div class="section-eyebrow">Bookmarks</div>
     <div class="section-header">Quick Links</div>
+    <div class="ql-add">
+      <input type="text" id="qlName" class="ql-add-input" placeholder="이름" maxlength="40" aria-label="링크 이름">
+      <input type="text" id="qlUrl" class="ql-add-input" placeholder="주소 (예: google.com)" maxlength="200" aria-label="링크 주소">
+      <button class="ql-add-btn" id="qlAddBtn" type="button">＋ 추가</button>
+    </div>
     <div class="quick-links-grid" id="quickLinksGrid"></div>
   </section>
 
@@ -1855,6 +1860,35 @@ body {
   .ql-name { font-size: 0.82rem; font-weight: 600; letter-spacing: -0.005em; }
   .ql-host { font-size: 0.62rem; color: var(--text-mute); font-family: var(--mono); margin-top: 1px;
     overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  /* ★ 2026-05-19: 퀵링크 직접 추가·삭제 (브라우저 저장) */
+  .ql-add { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+  .ql-add-input {
+    padding: 9px 13px; background: var(--bg);
+    border: 1px solid var(--border); border-radius: 9px;
+    font-size: 0.78rem; font-family: inherit; color: var(--text); outline: none;
+  }
+  .ql-add-input:focus { border-color: var(--border-accent); }
+  #qlName { width: 140px; flex-shrink: 0; }
+  #qlUrl { flex: 1; min-width: 180px; }
+  .ql-add-btn {
+    padding: 9px 18px; flex-shrink: 0;
+    background: var(--orange); color: #fff; border: none; border-radius: 9px;
+    font-size: 0.78rem; font-weight: 700; cursor: pointer;
+    transition: background 0.15s;
+  }
+  .ql-add-btn:hover { background: var(--deep-orange); }
+  .ql-cell { position: relative; }
+  .ql-del {
+    position: absolute; top: 6px; right: 6px;
+    width: 20px; height: 20px; padding: 0;
+    border: 1px solid var(--border); background: var(--bg-elevated);
+    border-radius: 50%; color: var(--text-mute);
+    font-size: 0.82rem; line-height: 1; cursor: pointer;
+    opacity: 0; transition: opacity 0.15s var(--ease), border-color 0.15s, color 0.15s;
+  }
+  .ql-cell:hover .ql-del { opacity: 1; }
+  .ql-del:hover { border-color: var(--deep-orange); color: var(--deep-orange); }
+  .ql-fav { width: 22px; height: 22px; border-radius: 4px; display: block; }
 
   /* Team grid (옛 풀세트 — 사용 X but CSS 보존) */
   .team-grid {
@@ -2324,19 +2358,49 @@ function renderProjects() {
   `).join('');
 }
 
+// ★ 2026-05-19: 퀵링크 = 직접 추가·삭제 (QUICK_LINKS = 기본 seed, 이후 브라우저 저장)
+const QL_KEY = 'sunny_quicklinks_v1';
+function qlLoad(){ try{ const s=localStorage.getItem(QL_KEY); if(s) return JSON.parse(s); }catch(e){} return QUICK_LINKS.slice(); }
+function qlSave(){ try{ localStorage.setItem(QL_KEY, JSON.stringify(quickLinksData)); }catch(e){} }
+let quickLinksData = qlLoad();
+function qlFavicon(url){ try{ return 'https://www.google.com/s2/favicons?domain='+encodeURIComponent(new URL(url, location.href).hostname)+'&sz=64'; }catch(e){ return ''; } }
+function qlNormUrl(u){ return (/^https?:\/\//i.test(u) || u.charAt(0)==='/') ? u : 'https://'+u; }
+
 function renderQuickLinks() {
   const g = document.getElementById('quickLinksGrid');
   if(!g) return;
-  g.innerHTML = QUICK_LINKS.map(l => `
-    <a class="ql-tile" href="${l.url}" target="_blank" rel="noopener" title="${l.name} — ${l.host}">
-      <span class="ql-icon">${l.icon}</span>
-      <div class="ql-body">
-        <div class="ql-name">${l.name}</div>
-        <div class="ql-host">${l.host}</div>
-      </div>
-    </a>
-  `).join('');
+  g.innerHTML = quickLinksData.map((l, i) => {
+    const icon = l.icon
+      ? '<span class="ql-icon">'+l.icon+'</span>'
+      : '<span class="ql-icon"><img class="ql-fav" src="'+qlFavicon(l.url)+'" alt="" onerror="this.style.visibility=\'hidden\'"></span>';
+    return '<div class="ql-cell">'
+      + '<a class="ql-tile" href="'+l.url+'" target="_blank" rel="noopener" title="'+escapeHtml(l.name)+'">'
+      + icon
+      + '<div class="ql-body"><div class="ql-name">'+escapeHtml(l.name)+'</div>'
+      + '<div class="ql-host">'+escapeHtml(l.host||'')+'</div></div></a>'
+      + '<button class="ql-del" type="button" data-del="'+i+'" aria-label="삭제">&times;</button></div>';
+  }).join('');
 }
+function qlAdd(){
+  const n=document.getElementById('qlName'), u=document.getElementById('qlUrl');
+  if(!n||!u) return;
+  const name=(n.value||'').trim(); let url=(u.value||'').trim();
+  if(!name||!url) return;
+  url=qlNormUrl(url);
+  let host=''; try{ host=new URL(url, location.href).hostname.replace(/^www\./,''); }catch(e){ host=url; }
+  quickLinksData.push({ name:name, host:host, url:url });
+  qlSave(); n.value=''; u.value=''; renderQuickLinks(); n.focus();
+}
+(function(){
+  const grid=document.getElementById('quickLinksGrid');
+  if(grid) grid.addEventListener('click', function(e){
+    const del=e.target.closest('.ql-del');
+    if(del){ e.preventDefault(); quickLinksData.splice(+del.dataset.del,1); qlSave(); renderQuickLinks(); }
+  });
+  const btn=document.getElementById('qlAddBtn');
+  if(btn) btn.addEventListener('click', qlAdd);
+  ['qlName','qlUrl'].forEach(function(id){ const el=document.getElementById(id); if(el) el.addEventListener('keydown', function(e){ if(e.key==='Enter'){ e.preventDefault(); qlAdd(); } }); });
+})();
 
 function getVisibility() {
   try { return JSON.parse(localStorage.getItem('sunny_persona_visibility') || '{}'); } catch(e){ return {}; }
