@@ -103,9 +103,9 @@ body {
 .nav-logo .logo-dot { color: var(--orange); }
 .nav-logo .logo-b { color: var(--text); }
 .nav-greeting {
-  font-family: 'Caveat', cursive;
-  font-size: 1.55rem; font-weight: 700; color: var(--text);
-  white-space: nowrap; line-height: 1;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 1.15rem; font-weight: 700; color: var(--text);
+  white-space: nowrap; line-height: 1; margin-left: 24px;
 }
 /* ★ 2026-05-20: 네비 3등분 — 로고(좌)·메뉴(가운데)·인사말+검색(우) */
 .nav-group { display: flex; align-items: center; }
@@ -139,14 +139,6 @@ body {
 .main { padding-top: 52px; }
 
 /* ─── HERO ─── */
-/* ★ 2026-05-20: 인사말 헤드라인 — 왼쪽 위, 한글 serif */
-.hero-greet { padding: 36px 72px 6px; }
-.hero-greet-text {
-  font-family: 'Nanum Myeongjo', serif;
-  font-size: clamp(1.9rem, 3.2vw, 2.7rem);
-  font-weight: 800; color: var(--text);
-  letter-spacing: -0.01em; line-height: 1.2;
-}
 .hero {
   display: grid; grid-template-columns: 5fr 7fr;
   min-height: calc(100vh - 52px);
@@ -1285,6 +1277,7 @@ body {
 <nav class="nav" role="navigation" aria-label="메인 네비게이션">
   <div class="nav-group nav-left">
     <span class="nav-logo"><span class="logo-a">SUNNY</span><span class="logo-l2"><span class="logo-b">HOME</span> <span class="logo-dot">·</span></span></span>
+    <span class="nav-greeting" id="greeting">Good morning, Sunny</span>
   </div>
   <div class="nav-group nav-center">
     <span class="nav-item active" data-section="hero" role="button" tabindex="0" aria-label="Today 섹션으로 이동">Today</span>
@@ -1301,11 +1294,6 @@ body {
 </nav>
 
 <main class="main" id="main-content">
-
-  <!-- ★ 2026-05-20: 인사말 = 왼쪽 위 큰 헤드라인 (한글 · serif) -->
-  <div class="hero-greet">
-    <div class="hero-greet-text" id="greeting">좋은 아침이에요, Sunny</div>
-  </div>
 
   <!-- ═══ HERO ═══ -->
   <section class="hero" id="hero">
@@ -2185,10 +2173,10 @@ function updateTime() {
     days[now.getDay()] + ', ' + months[now.getMonth()] + ' ' + now.getDate() + ', ' + now.getFullYear();
 
   const hour = now.getHours();
-  let greet = '편안한 저녁이에요, Sunny';
-  if (hour < 6) greet = '아직 깨어 있으시네요, Sunny';
-  else if (hour < 12) greet = '좋은 아침이에요, Sunny';
-  else if (hour < 18) greet = '좋은 오후예요, Sunny';
+  let greet = 'Good evening, Sunny';
+  if (hour < 6) greet = 'Still up, Sunny?';
+  else if (hour < 12) greet = 'Good morning, Sunny';
+  else if (hour < 18) greet = 'Good afternoon, Sunny';
   document.getElementById('greeting').textContent = greet;
 }
 updateTime();
