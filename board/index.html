@@ -162,6 +162,10 @@ body {
 .conv-text { font-size: 1.05rem; font-weight: 700; color: var(--text); letter-spacing: -0.01em; line-height: 1.35; }
 .conv-read { font-family: var(--mono); font-size: 0.74rem; color: var(--text-mute); }
 .conv-mean { font-size: 0.84rem; color: var(--text-sub); }
+.conv-card { background: var(--bg); border: 1px solid var(--border); border-radius: var(--r); padding: 16px 18px; display: flex; flex-direction: column; gap: 7px; }
+.conv-line { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
+.conv-play { flex-shrink: 0; width: 30px; height: 30px; border: 1px solid var(--border); background: var(--bg-elevated); border-radius: 50%; cursor: pointer; font-size: 0.62rem; color: var(--deep-orange); display: grid; place-items: center; transition: all 0.15s var(--ease); }
+.conv-play:hover { border-color: var(--orange); background: var(--orange-soft); }
 .hcell .calendar-wrap { flex: 1; display: flex; flex-direction: column; min-height: 0; }
 .hcell #calendar { flex: 1; min-height: 0; }
 .hero-left {
@@ -2376,18 +2380,37 @@ const CONV = {
 };
 let convLang = 'en';
 try { convLang = localStorage.getItem('board_conv_lang') || 'en'; } catch (e) {}
+function convToday() {
+  const list = CONV[convLang] || CONV.en;
+  return list[Math.floor(Date.now() / 86400000) % list.length];
+}
+function speakConv() {
+  try {
+    if (!window.speechSynthesis) return;
+    speechSynthesis.cancel();
+    const it = convToday();
+    const u = new SpeechSynthesisUtterance(it.t);
+    u.lang = convLang === 'ja' ? 'ja-JP' : (convLang === 'zh' ? 'zh-CN' : 'en-US');
+    u.rate = 0.9;
+    speechSynthesis.speak(u);
+  } catch (e) {}
+}
 function renderConv() {
   const body = document.getElementById('convBody');
   if (!body) return;
-  const list = CONV[convLang] || CONV.en;
-  const it = list[Math.floor(Date.now() / 86400000) % list.length];
-  body.innerHTML = '<div class="conv-text">' + escHtml(it.t) + '</div>'
+  const it = convToday();
+  body.innerHTML = '<div class="conv-card">'
+    + '<div class="conv-line"><span class="conv-text">' + escHtml(it.t) + '</span>'
+    + '<button class="conv-play" type="button" aria-label="발음 듣기">▶</button></div>'
     + (it.r ? '<div class="conv-read">' + escHtml(it.r) + '</div>' : '')
-    + '<div class="conv-mean">' + escHtml(it.m) + '</div>';
+    + '<div class="conv-mean">' + escHtml(it.m) + '</div></div>';
   document.querySelectorAll('.conv-tab').forEach(function (b) {
     b.classList.toggle('active', b.dataset.lang === convLang);
   });
 }
+document.getElementById('convBody')?.addEventListener('click', function (e) {
+  if (e.target.closest('.conv-play')) speakConv();
+});
 document.querySelectorAll('.conv-tab').forEach(function (b) {
   b.addEventListener('click', function () {
     convLang = b.dataset.lang;
