@@ -95,7 +95,11 @@ body {
 .nav-logo {
   font-size: 0.72rem; font-weight: 800; letter-spacing: 0.18em;
   color: var(--orange);
-  margin-right: 32px;
+  margin-right: 20px;
+}
+.nav-greeting {
+  font-size: 0.8rem; font-weight: 600; color: var(--text-sub);
+  letter-spacing: -0.005em; white-space: nowrap; margin-right: 28px;
 }
 .nav-item {
   padding: 6px 14px; font-size: 0.75rem; font-weight: 400;
@@ -718,6 +722,9 @@ body {
   margin-bottom: 20px; text-transform: uppercase;
 }
 .time-sep { margin: 0 8px; opacity: 0.4; }
+/* ★ 2026-05-19: Calendar 제목 + 시간·날씨 한 줄 — News 제목과 라인 정렬 */
+.cal-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.cal-head .hero-time-mini { margin-bottom: 0; }
 
 /* ─── 캘린더 = FullCalendar(MIT 오픈소스) — pick-card 톤 래퍼 ─── */
 .calendar-wrap {
@@ -1249,6 +1256,7 @@ body {
 <!-- NAV -->
 <nav class="nav" role="navigation" aria-label="메인 네비게이션">
   <span class="nav-logo">SUNNY</span>
+  <span class="nav-greeting" id="greeting">Good morning, Sunny</span>
   <span class="nav-item active" data-section="hero" role="button" tabindex="0" aria-label="Today 섹션으로 이동">Today</span>
   <span class="nav-item" data-section="mid" role="button" tabindex="0" aria-label="Team 섹션으로 이동">Team</span>
   <span class="nav-item" data-section="quick-links-section" role="button" tabindex="0" aria-label="Quick Links 섹션으로 이동">Quick Links</span>
@@ -1266,17 +1274,17 @@ body {
   <section class="hero" id="hero">
     <!-- ★ 2026-05-14: 인트로 = 왼쪽 달력 + 오른쪽 뉴스(탭) -->
     <div class="hero-left">
-      <div class="hero-eyebrow" id="greeting">Good morning, Sunny</div>
-      <div class="hero-time-mini">
-        <span id="timeDisplay">--:--</span>
-        <span class="time-sep">·</span>
-        <span id="dateDisplay"></span>
-        <span class="time-sep">·</span>
-        <span style="font-size:0.9em"><span id="weatherIcon">⛅</span> <span id="weatherTemp">--°</span> <span id="weatherDesc">Loading</span></span>
-      </div>
-
       <!-- ★ 캘린더 — FullCalendar(검증된 오픈소스). 날짜 클릭 → 일정 입력 팝업 -->
-      <div class="sec-title">Calendar</div>
+      <div class="cal-head">
+        <div class="sec-title">Calendar</div>
+        <div class="hero-time-mini">
+          <span id="timeDisplay">--:--</span>
+          <span class="time-sep">·</span>
+          <span id="dateDisplay"></span>
+          <span class="time-sep">·</span>
+          <span style="font-size:0.9em"><span id="weatherIcon">⛅</span> <span id="weatherTemp">--°</span> <span id="weatherDesc">Loading</span></span>
+        </div>
+      </div>
       <div class="calendar-wrap" id="calendarWrap">
         <div id="calendar"></div>
         <div class="cal-foot">
