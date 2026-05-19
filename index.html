@@ -4144,14 +4144,14 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
   /* ════ 뉴스 갱신 모니터링 (loadExternalData 가 호출) ════ */
   window.updateNewsFreshness = function (updated) {
-    const labelEl = document.getElementById('newsSecTitle');
+    const labelEl = document.getElementById('newsTabs');
     if (!labelEl || !updated) return;
     let badge = document.getElementById('newsFresh');
     if (!badge) {
       badge = document.createElement('span');
       badge.id = 'newsFresh';
-      badge.style.cssText = 'font-size:0.58rem;font-weight:700;'
-        + 'letter-spacing:0.04em;font-family:var(--mono);text-transform:none;';
+      badge.style.cssText = 'margin-left:auto;align-self:center;font-size:0.62rem;'
+        + 'font-weight:700;letter-spacing:0.02em;font-family:var(--font);';
       labelEl.appendChild(badge);
     }
     const diffH = (Date.now() - new Date(updated).getTime()) / 3600000;
