@@ -1629,15 +1629,15 @@ body {
   .yt-key-status { font-size: 0.68rem; color: var(--green); margin-top: 6px; }
   .yt-search { display: flex; gap: 5px; margin-top: 12px; }
   .yt-search .yt-input { flex: 1; min-width: 0; }
-  .yt-results { display: flex; flex-direction: column; gap: 5px; margin-top: 8px; max-height: 380px; overflow-y: auto; }
+  .yt-results { display: flex; flex-direction: column; gap: 5px; margin-top: 8px; max-height: 380px; overflow-y: auto; overflow-x: hidden; }
   .yt-results:empty { margin-top: 0; }
   .yt-results-msg { font-size: 0.74rem; color: var(--text-mute); padding: 6px 2px; line-height: 1.5; }
   .yt-result { display: flex; gap: 8px; align-items: center; padding: 6px; border: 1px solid var(--border); border-radius: 8px; cursor: pointer; transition: background 0.15s, border-color 0.15s; }
   .yt-result:hover { background: var(--bg-card-hover); border-color: var(--border-accent); }
   .yt-result-thumb { width: 52px; height: 39px; object-fit: cover; border-radius: 5px; flex-shrink: 0; background: var(--bg-card-hover); }
-  .yt-result-body { min-width: 0; }
+  .yt-result-body { min-width: 0; overflow: hidden; }
   .yt-result-title { font-size: 0.76rem; font-weight: 600; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
-  .yt-result-meta { font-size: 0.64rem; color: var(--text-mute); margin-top: 1px; }
+  .yt-result-meta { font-size: 0.64rem; color: var(--text-mute); margin-top: 1px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .yt-result.added { opacity: 0.5; }
   .yt-result.added .yt-result-title::after { content: ' ✓ 담음'; color: var(--green); font-weight: 700; }
 
@@ -1675,7 +1675,7 @@ body {
     grid-template-columns: none !important;
   }
   /* ★ 2026-05-19: 뉴스 목록 = 칼럼을 채워 캘린더 아래와 라인 정렬 + 스크롤 */
-  #newsPick { flex: 1; min-height: 0; overflow-y: auto; }
+  #newsPick { flex: 1; min-height: 0; overflow-y: auto; overflow-x: hidden; }
   .news-text-item {
     display: flex; align-items: center; gap: 12px;
     padding: 11px 14px;
