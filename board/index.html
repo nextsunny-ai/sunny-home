@@ -1233,7 +1233,6 @@ body {
 <nav class="nav" role="navigation" aria-label="메인 네비게이션">
   <span class="nav-logo">써니보드</span>
   <span class="nav-item active" data-section="hero" role="button" tabindex="0" aria-label="Today 섹션으로 이동">Today</span>
-  <span class="nav-item" data-section="music" role="button" tabindex="0" aria-label="Music 섹션으로 이동">Music</span>
   <span class="nav-item" data-section="mid" role="button" tabindex="0" aria-label="My Board 섹션으로 이동">My Board</span>
   <span class="nav-spacer"></span>
   <div class="nav-search">
@@ -1333,21 +1332,19 @@ body {
     </div>
   </section>
 
-  <!-- ═══ 음악 · 재생목록 ═══ -->
-  <section class="music-section reveal" id="music">
-    <div class="section-eyebrow">YouTube</div>
-    <div class="section-header">음악 · 재생목록</div>
-    <div class="yt-tabs" id="ytTabs"></div>
-    <div id="ytStage"></div>
-    <div class="yt-add">
-      <input type="text" id="ytName" class="yt-input name" placeholder="재생목록 이름" maxlength="40" aria-label="재생목록 이름">
-      <input type="text" id="ytUrl" class="yt-input url" placeholder="유튜브 재생목록 주소 붙여넣기" maxlength="300" aria-label="유튜브 재생목록 주소">
-      <button class="yt-add-btn" id="ytAddBtn" type="button">추가</button>
-    </div>
-  </section>
-
-  <!-- ═══ 내 보드 (진행 중 · 최근 · 자주 찾는 링크) ═══ -->
+  <!-- ═══ 내 보드 (음악 · 진행 중 · 자주 찾는 링크) ═══ -->
   <section class="mid reveal" id="mid">
+    <div class="mid-col">
+      <div class="section-eyebrow">YouTube</div>
+      <div class="section-header">음악</div>
+      <div class="yt-tabs" id="ytTabs"></div>
+      <div id="ytStage"></div>
+      <div class="yt-add">
+        <input type="text" id="ytName" class="yt-input name" placeholder="재생목록 이름" maxlength="40" aria-label="재생목록 이름">
+        <input type="text" id="ytUrl" class="yt-input url" placeholder="유튜브 재생목록 주소" maxlength="300" aria-label="유튜브 재생목록 주소">
+        <button class="yt-add-btn" id="ytAddBtn" type="button">추가</button>
+      </div>
+    </div>
     <div class="mid-col">
       <div class="section-eyebrow">In Progress</div>
       <div class="section-header">진행 중</div>
@@ -1357,11 +1354,6 @@ body {
         <input type="text" id="ipInput" placeholder="진행 중인 일 추가 후 Enter" maxlength="140" aria-label="진행 중 추가">
         <button class="ip-state-toggle" id="ipStateToggle" type="button" title="상태 전환">Develop</button>
       </div>
-    </div>
-    <div class="mid-col">
-      <div class="section-eyebrow">Recent</div>
-      <div class="section-header">최근 열어본 링크</div>
-      <div class="bl-list" id="recentList"></div>
     </div>
     <div class="mid-col">
       <div class="section-eyebrow">Bookmarks</div>
@@ -2161,7 +2153,7 @@ document.getElementById('ytAddBtn')?.addEventListener('click', ytAdd);
 renderYt();
 
 // scroll spy
-const sections = ['hero', 'music', 'mid'];
+const sections = ['hero', 'mid'];
 let scrollTicking = false;
 window.addEventListener('scroll', () => {
   if (!scrollTicking) {
