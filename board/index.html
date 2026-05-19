@@ -276,6 +276,11 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   align-content: start;
+  max-height: 380px;
+  overflow-y: auto;
+  padding-right: 4px;
+  -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 22px), transparent);
+  mask-image: linear-gradient(to bottom, #000 calc(100% - 22px), transparent);
 }
 .pick-card {
   display: flex; gap: 12px; padding: 12px;
@@ -881,7 +886,9 @@ body {
   color: var(--text-mute); white-space: nowrap;
 }
 .todo-progress.all-done { color: var(--green); }
-.todo-list { display: flex; flex-direction: column; gap: 1px; }
+.todo-list { display: flex; flex-direction: column; gap: 1px; max-height: 240px; overflow-y: auto;
+  -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 20px), transparent);
+  mask-image: linear-gradient(to bottom, #000 calc(100% - 20px), transparent); }
 .todo-item {
   display: flex; align-items: flex-start; gap: 7px;
   padding: 7px 6px; border-radius: 8px;
@@ -1476,7 +1483,9 @@ body {
   .yt-key-status { font-size: 0.68rem; color: var(--green); margin-top: 6px; }
   .yt-search { display: flex; gap: 5px; margin-top: 12px; }
   .yt-search .yt-input { flex: 1; min-width: 0; }
-  .yt-results { display: flex; flex-direction: column; gap: 5px; margin-top: 8px; }
+  .yt-results { display: flex; flex-direction: column; gap: 5px; margin-top: 8px; max-height: 260px; overflow-y: auto;
+    -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 18px), transparent);
+    mask-image: linear-gradient(to bottom, #000 calc(100% - 18px), transparent); }
   .yt-results:empty { margin-top: 0; }
   .yt-results-msg { font-size: 0.74rem; color: var(--text-mute); padding: 6px 2px; line-height: 1.5; }
   .yt-result { display: flex; gap: 8px; align-items: center; padding: 6px; border: 1px solid var(--border); border-radius: 8px; cursor: pointer; transition: background 0.15s, border-color 0.15s; }
@@ -1733,7 +1742,9 @@ body {
     overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
 
   /* 자주 찾는 링크 · 최근 (내 보드 컬럼) */
-  .bl-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 6px; }
+  .bl-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 6px; max-height: 216px; overflow-y: auto; padding-right: 4px;
+    -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 20px), transparent);
+    mask-image: linear-gradient(to bottom, #000 calc(100% - 20px), transparent); }
   .bl-item { display: flex; align-items: center; gap: 2px; min-width: 0; }
   .bl-link {
     flex: 1; min-width: 0;
