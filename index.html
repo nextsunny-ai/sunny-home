@@ -266,6 +266,13 @@ body {
   letter-spacing: -0.02em; line-height: 1.15;
   color: var(--text); margin-bottom: 20px;
 }
+/* ★ 2026-05-19: 섹션 제목 통일 — Calendar·News·Music·To-do 동일 규격 */
+.sec-title {
+  font-size: 1.15rem; font-weight: 700;
+  letter-spacing: -0.01em; color: var(--orange);
+  margin-bottom: 12px;
+  display: flex; align-items: center; gap: 10px;
+}
 
 .pick-list {
   flex: 1;
@@ -870,7 +877,7 @@ body {
   display: flex; align-items: baseline; justify-content: space-between;
   gap: 12px; margin-bottom: 12px;
 }
-.todo-date-label { font-size: 0.85rem; font-weight: 700; letter-spacing: -0.01em; }
+.todo-date-label { font-size: 1.15rem; font-weight: 700; letter-spacing: -0.01em; color: var(--orange); }
 .todo-date-label .todo-rel { color: var(--text-mute); font-weight: 500; margin-left: 6px; }
 .todo-progress {
   font-size: 0.58rem; font-family: var(--mono); letter-spacing: 0.1em;
@@ -1269,6 +1276,7 @@ body {
       </div>
 
       <!-- ★ 캘린더 — FullCalendar(검증된 오픈소스). 날짜 클릭 → 일정 입력 팝업 -->
+      <div class="sec-title">Calendar</div>
       <div class="calendar-wrap" id="calendarWrap">
         <div id="calendar"></div>
         <div class="cal-foot">
@@ -1286,7 +1294,7 @@ body {
       <!-- ★ 할 일 패널 — 날짜와 무관한 체크리스트 (캘린더 일정과 별개) -->
       <div class="todo-panel" id="todoPanel">
         <div class="todo-head">
-          <div class="todo-date-label">할 일</div>
+          <div class="todo-date-label">To-do</div>
           <div class="todo-progress" id="todoProgress"></div>
         </div>
         <div class="todo-list" id="todoList"></div>
@@ -1313,12 +1321,11 @@ body {
     </div>
 
     <div class="hero-right">
-      <div class="hero-right-label">News</div>
-      <div class="hero-right-title">뉴스</div>
       <!-- 뉴스(2/3) + 음악(1/3) 가로 분할 -->
       <div class="hero-news-row">
         <div class="hero-news-col">
-          <div class="news-tabs" id="newsTabs" style="margin-top:6px;margin-bottom:14px;">
+          <div class="sec-title" id="newsSecTitle">News</div>
+          <div class="news-tabs" id="newsTabs" style="margin-bottom:14px;">
             <span class="news-tab active" data-cat="all">All</span>
             <span class="news-tab" data-cat="ai">AI</span>
             <span class="news-tab" data-cat="performance">공연</span>
@@ -1332,7 +1339,7 @@ body {
         </div>
         <div class="hero-music-col">
           <div class="yt-head">
-            <div class="hero-music-label">🎵 음악</div>
+            <div class="sec-title">Music</div>
             <button class="yt-key-btn" id="ytKeyBtn" type="button" title="유튜브 검색 키 설정" aria-label="유튜브 검색 키 설정">🔑</button>
           </div>
           <div class="yt-keybox" id="ytKeyBox" style="display:none">
@@ -4022,7 +4029,7 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
   /* ════ 뉴스 갱신 모니터링 (loadExternalData 가 호출) ════ */
   window.updateNewsFreshness = function (updated) {
-    const labelEl = document.querySelector('.hero-right-label');
+    const labelEl = document.getElementById('newsSecTitle');
     if (!labelEl || !updated) return;
     let badge = document.getElementById('newsFresh');
     if (!badge) {
