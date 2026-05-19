@@ -145,7 +145,7 @@ body {
 .hero-eyebrow {
   font-size: clamp(1.7rem, 3.3vw, 2.5rem); font-weight: 700;
   letter-spacing: -0.02em; line-height: 1.15;
-  color: var(--text); margin-bottom: 20px;
+  color: var(--orange); margin-bottom: 20px;
 }
 .hero-time {
   font-size: clamp(3rem, 6.5vw, 4.6rem);
@@ -267,7 +267,7 @@ body {
 .hero-right-title {
   font-size: clamp(1.7rem, 3.3vw, 2.5rem); font-weight: 700;
   letter-spacing: -0.02em; line-height: 1.15;
-  color: var(--text); margin-bottom: 20px;
+  color: var(--orange); margin-bottom: 20px;
 }
 
 .pick-list {
@@ -276,7 +276,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   align-content: start;
-  max-height: 380px;
+  max-height: 640px;
   overflow-y: auto;
   padding-right: 4px;
   -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 22px), transparent);
@@ -887,6 +887,7 @@ body {
 }
 .todo-progress.all-done { color: var(--green); }
 .todo-list { display: flex; flex-direction: column; gap: 1px; height: 400px; overflow-y: auto;
+  background: repeating-linear-gradient(to bottom, transparent 0, transparent 42px, var(--border) 42px, var(--border) 43px) local;
   -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 20px), transparent);
   mask-image: linear-gradient(to bottom, #000 calc(100% - 20px), transparent); }
 .todo-item {
