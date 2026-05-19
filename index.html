@@ -1633,9 +1633,7 @@ body {
   .yt-key-status { font-size: 0.68rem; color: var(--green); margin-top: 6px; }
   .yt-search { display: flex; gap: 5px; margin-top: 12px; }
   .yt-search .yt-input { flex: 1; min-width: 0; }
-  .yt-results { display: flex; flex-direction: column; gap: 5px; margin-top: 8px; max-height: 380px; overflow-y: auto; overflow-x: hidden; }
-  .yt-open { display: block; text-align: center; font-size: 0.66rem; color: var(--text-mute); text-decoration: none; padding: 7px 0 2px; flex-shrink: 0; }
-  .yt-open:hover { color: var(--deep-orange); }
+  .yt-results { display: flex; flex-direction: column; gap: 5px; margin-top: 8px; flex: 1; min-height: 0; overflow-y: auto; overflow-x: hidden; }
   .yt-results:empty { margin-top: 0; }
   .yt-results-msg { font-size: 0.74rem; color: var(--text-mute); padding: 6px 2px; line-height: 1.5; }
   .yt-result { display: flex; gap: 8px; align-items: center; padding: 6px; border: 1px solid var(--border); border-radius: 8px; cursor: pointer; transition: background 0.15s, border-color 0.15s; }
@@ -1652,16 +1650,14 @@ body {
   .hero-news-row { display: flex; gap: 16px; align-items: stretch; height: 693px; }
   .hero-news-col { flex: 2; min-width: 0; display: flex; flex-direction: column; min-height: 0; }
   .hero-music-col { flex: 1; min-width: 0; display: flex; flex-direction: column; min-height: 0; }
-  #ytStage { flex: 1; display: flex; flex-direction: column; min-height: 0; }
-  #ytStage .yt-player, #ytStage .yt-empty { flex: 1; aspect-ratio: auto; }
+  /* ★ 유튜브 플레이어 = 정상 16:9 비율 (세로로 안 늘림 — 재생 정상) / 빈 칸은 검색결과가 채움 */
+  #ytStage { flex: 0 0 auto; }
   .hero-music-label { font-size: 0.78rem; font-weight: 700; color: var(--deep-orange); margin: 6px 0 8px; }
   .hero-music-col .yt-add { flex-direction: column; }
   .hero-music-col .yt-input.name, .hero-music-col .yt-input.url { width: 100%; flex: none; }
   @media (max-width: 720px) {
     .hero-news-row { flex-direction: column; height: auto; }
     .hero-news-col, .hero-music-col { width: 100%; flex: none; }
-    #ytStage { flex: none; }
-    #ytStage .yt-player, #ytStage .yt-empty { aspect-ratio: 16 / 9; }
   }
   body { background: var(--bg); }
   main { padding-bottom: 40px; }
@@ -4494,11 +4490,6 @@ function ytEmbedSrc(pl) {
     ? 'https://www.youtube.com/embed/' + pl.id
     : 'https://www.youtube.com/embed/videoseries?list=' + pl.id;
 }
-function ytWatchUrl(pl) {
-  return pl.type === 'video'
-    ? 'https://www.youtube.com/watch?v=' + pl.id
-    : 'https://www.youtube.com/playlist?list=' + pl.id;
-}
 function renderYtTabs() {
   const t = document.getElementById('ytTabs');
   if (!t) return;
@@ -4520,8 +4511,7 @@ function renderYtStage() {
   const pl = ytPlaylists[ytSel];
   s.innerHTML = '<div class="yt-player"><iframe src="' + ytEmbedSrc(pl) + '" ' +
     'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ' +
-    'allowfullscreen title="' + escHtml(ytDecode(pl.name)) + '"></iframe></div>' +
-    '<a class="yt-open" href="' + ytWatchUrl(pl) + '" target="_blank" rel="noopener">재생이 안 되면 ▶ 유튜브에서 열기 ↗</a>';
+    'allowfullscreen title="' + escHtml(ytDecode(pl.name)) + '"></iframe></div>';
 }
 function renderYt() { renderYtTabs(); renderYtStage(); }
 function ytSelect(i) { ytSel = i; try { localStorage.setItem(YT_SEL_KEY, String(i)); } catch (e) {} renderYt(); }
