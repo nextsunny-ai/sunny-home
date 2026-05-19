@@ -1,13 +1,13 @@
 {
-  "name": "써니보드 — 내 대시보드",
-  "short_name": "써니보드",
-  "description": "뉴스·캘린더·할 일·영어를 한 화면에. 누구나 가입해 쓰는 개인 대시보드.",
+  "name": "MBOARD — 내 대시보드",
+  "short_name": "MBOARD",
+  "description": "뉴스·캘린더·할 일·음악·자주 찾는 링크를 한 화면에. 개인 대시보드.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#FAF8F4",
-  "theme_color": "#FF8C42",
+  "background_color": "#FAFAFA",
+  "theme_color": "#2C5882",
   "icons": [
     {
       "src": "icon-192.png",

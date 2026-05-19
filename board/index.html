@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>써니보드</title>
-<meta name="description" content="써니보드 — 뉴스·캘린더·할 일·영어를 한 화면에. 누구나 가입해 쓰는 개인 대시보드.">
+<title>MBOARD</title>
+<meta name="description" content="MBOARD — 뉴스·캘린더·할 일·영어를 한 화면에. 누구나 가입해 쓰는 개인 대시보드.">
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,30 +21,31 @@
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
-  --orange: #FF8C42;
-  --deep-orange: #E05A1B;
-  --amber: #FFAB40;
-  --bg: #FAF8F4;
+  /* ★ 2026-05-19 파이어플라이 톤 — 무채색 + 차분한 블루. 변수명은 유지(값만 교체). */
+  --orange: #2C5882;          /* = accent 블루 */
+  --deep-orange: #1F4668;     /* = accent 진하게 (hover) */
+  --amber: #6B7280;
+  --bg: #FAFAFA;
   --bg-elevated: #FFFFFF;
   --bg-card: #FFFFFF;
-  --bg-card-hover: #F5F1E6;
-  --border: rgba(20,18,15,0.08);
-  --border-accent: rgba(255,140,66,0.28);
-  --text: #14120F;
-  --text-sub: #4F4A42;
-  --text-mute: #8A8278;
-  --blue: #2563EB;
-  --green: #059669;
+  --bg-card-hover: #F5F5F7;
+  --border: #E5E7EB;
+  --border-accent: #8BA8C4;
+  --text: #0A0A0E;
+  --text-sub: #1F2937;
+  --text-mute: #6B7280;
+  --blue: #2C5882;
+  --green: #10B981;
   --purple: #7C3AED;
   --teal: #0D9488;
   --pink: #DB2777;
-  --yellow: #D97706;
-  --orange-soft: #FFF0E2;
-  --shadow-sm: 0 1px 2px rgba(20,18,15,0.04);
-  --shadow-md: 0 4px 16px rgba(20,18,15,0.06);
-  --shadow-lg: 0 12px 32px rgba(20,18,15,0.08);
-  --r: 12px;
-  --r-lg: 16px;
+  --yellow: #F59E0B;
+  --orange-soft: #EBF0F5;
+  --shadow-sm: 0 1px 2px rgba(10,10,14,0.04);
+  --shadow-md: 0 2px 8px rgba(10,10,14,0.05);
+  --shadow-lg: 0 4px 16px rgba(10,10,14,0.07);
+  --r: 8px;
+  --r-lg: 8px;
   --r-pill: 999px;
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
   --font: 'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
@@ -136,7 +137,7 @@ body {
 .hero-left::before {
   content: ''; position: absolute; top: -30%; right: -15%;
   width: 500px; height: 500px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(255,140,66,0.035) 0%, transparent 70%);
+  background: none;
   pointer-events: none;
 }
 
@@ -156,7 +157,7 @@ body {
   content: '';
   position: absolute; left: 0; bottom: -6px;
   width: 48px; height: 2px;
-  background: linear-gradient(90deg, var(--orange), var(--deep-orange));
+  background: var(--orange);
   border-radius: 2px;
 }
 .hero-date {
@@ -806,7 +807,7 @@ body {
 .fc .fc-daygrid-day-number { font-size: 0.74rem; color: var(--text); padding: 4px 6px; }
 .fc .fc-day-today .fc-daygrid-day-number { font-weight: 700; color: var(--deep-orange); }
 .fc .fc-day-sun .fc-col-header-cell-cushion,
-.fc .fc-day-sun .fc-daygrid-day-number { color: #E05A1B; }
+.fc .fc-day-sun .fc-daygrid-day-number { color: var(--deep-orange); }
 .fc .fc-daygrid-day.fc-day-today { box-shadow: inset 0 0 0 1.5px var(--orange); }
 .fc-theme-standard td, .fc-theme-standard th { border-color: var(--border); }
 .fc .fc-daygrid-event { font-size: 0.62rem; font-weight: 600; padding: 1px 4px; border-radius: 4px; }
@@ -1222,10 +1223,10 @@ body {
 
 <!-- PWA v2 (2026-05-14): manifest + theme + service worker -->
 <link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#FF8C42">
+<meta name="theme-color" content="#2C5882">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="써니보드">
+<meta name="apple-mobile-web-app-title" content="MBOARD">
 <link rel="apple-touch-icon" href="icon-192.png">
 </head>
 <body>
@@ -1234,7 +1235,7 @@ body {
 
 <!-- NAV -->
 <nav class="nav" role="navigation" aria-label="메인 네비게이션">
-  <span class="nav-logo">써니보드</span>
+  <span class="nav-logo">MBOARD</span>
   <span class="nav-item active" data-section="hero" role="button" tabindex="0" aria-label="Today 섹션으로 이동">Today</span>  <span class="nav-spacer"></span>
   <div class="nav-search">
     <span style="color:var(--text-mute);font-size:0.78rem">&#128269;</span>
@@ -1900,7 +1901,7 @@ body {
   </style>
 
   <footer class="footer">
-    <div class="footer-brand">써니보드</div>
+    <div class="footer-brand">MBOARD</div>
     <div class="footer-meta" id="buildMeta">build · loading...</div>
   </footer>
 </main>
