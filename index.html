@@ -888,10 +888,17 @@ body {
   color: var(--text-mute); white-space: nowrap;
 }
 .todo-progress.all-done { color: var(--green); }
-.todo-list { display: flex; flex-direction: column; gap: 1px; }
+/* ★ 2026-05-19: 고정 높이 + 줄 그어진 칸 + 스크롤 (패널이 늘었다 줄었다 안 함) */
+.todo-list {
+  display: flex; flex-direction: column; gap: 0;
+  height: 252px; overflow-y: auto;
+  background: repeating-linear-gradient(to bottom,
+    transparent 0, transparent 35px,
+    var(--border) 35px, var(--border) 36px) local;
+}
 .todo-item {
   display: flex; align-items: flex-start; gap: 7px;
-  padding: 7px 6px; border-radius: 8px;
+  padding: 7px 6px; border-radius: 8px; min-height: 36px;
   transition: background .12s var(--ease);
 }
 .todo-item:hover { background: var(--bg-card-hover); }
