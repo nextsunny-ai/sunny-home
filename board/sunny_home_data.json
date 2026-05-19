@@ -1,10 +1,19 @@
 {
-  "updated": "2026-05-20T01:50:35+09:00",
+  "updated": "2026-05-20T07:03:21+09:00",
   "categories": [
     {
       "id": "ai",
       "name": "AI 트렌드",
       "items": [
+        {
+          "title": "[C컷] 중국 선물 버리는 AI 사진이 국내에서 화제가 된 이유 - 조선일보",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9WRmtCWGY3QXFKRThBTl8wTERTVU9yaHU5aGc3X0F3aTE3SS14Mm9vd2FyaGhFWTdvaW0zSWlaU3c2M2o3emRyMnJ0cFIyN2ZRYlFib0ZkRWY0MG5IWG5OVkFqSHJNb05rSm4xbTR3ZGx2YVZrbFhpLTNMTGpOZw?oc=5",
+          "source": "조선일보",
+          "summary": "",
+          "published": "2026-05-20",
+          "image": "",
+          "first_seen": "2026-05-20T07:03:21+09:00"
+        },
         {
           "title": "생성형AI 통해 뇌종양 수술 환자들에 ‘눈 높이 설명’ - 데일리메디",
           "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5WYUJvR242LU5rNzltREhFZU5BRUwtZUstUkxKVWU5dDNLZ1hTTGcxcnlKYjNJR2FyV2JqSk93WUtVdkZsQ0pPek9rLWtIQmE4VWwta2dWaEdoam5VWW9pR0JxcVhnWklETWw3RmFWNFc1bmwz?oc=5",
@@ -263,15 +272,6 @@
           "source": "데일리안",
           "summary": "",
           "published": "2026-05-13",
-          "image": "",
-          "first_seen": "2026-05-18T01:51:06+09:00"
-        },
-        {
-          "title": "엠클라우드브리지, AI에이전트 교육 프로그램 출시 - 디일렉",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBRTFVuSXhLU2tKN01UVTI5N2FveHdkLWh6bm1OQVJxeUsxTWJJYnV5czBpaW11cmFBa3lGMldoWkI1N1ZncWRUMDlXc2xyQUpGQ1RfR0plenJjN0FCak5WQjd6enNJQQ?oc=5",
-          "source": "디일렉",
-          "summary": "",
-          "published": "2026-05-12",
           "image": "",
           "first_seen": "2026-05-18T01:51:06+09:00"
         }
@@ -946,6 +946,15 @@
           "published": "2026-05-18",
           "image": "",
           "first_seen": "2026-05-19T18:22:37+09:00"
+        },
+        {
+          "title": "방한객 10명 중 8명 서울로…문체부, 지역 관광특구 2곳 키운다 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1kYXRRU3daelRRM3hHbXM2OGI1a3RUMjJUTUxMaVpfLTVRSTdPdWt3MEd6WUs2X2YwNktFdG1UcngxcFRBZExnUHhrVTRCdG1mWmRJSg?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-05-18",
+          "image": "",
+          "first_seen": "2026-05-20T07:03:21+09:00"
         },
         {
           "title": "'소방관이 전하는 우리들의 안전 이야기' 소방청, 「119 영상콘텐츠 공모전」 개최 - 서울Pn",
