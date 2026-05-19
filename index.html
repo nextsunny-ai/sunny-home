@@ -186,7 +186,7 @@ body {
   padding: 2px 8px; background: rgba(13,148,136,0.1); border-radius: var(--r-pill);
 }
 .he-play-all {
-  margin-left: auto; font-size: 0.62rem; font-weight: 600;
+  font-size: 0.62rem; font-weight: 600;
   color: var(--text-sub); background: var(--bg); border: 1px solid var(--border);
   border-radius: var(--r-pill); padding: 3px 10px; cursor: pointer;
   transition: all .12s var(--ease);
@@ -353,13 +353,10 @@ body {
   border-bottom: 1px solid var(--border);
 }
 .mid-col {
-  padding: 56px 44px;
-  border-right: 1px solid var(--border);
+  padding: 0;
   min-height: 440px;
 }
-.mid-col:last-child { border-right: none; }
-.mid-col:nth-child(odd) { background: var(--bg); }
-.mid-col:nth-child(even) { background: var(--bg-elevated); }
+/* ★ 2026-05-19: 줄무늬 배경·세로 divider 제거 — gap 으로만 구분 (깔끔) */
 
 .section-eyebrow {
   font-size: 0.55rem; font-weight: 700; letter-spacing: 0.22em;
@@ -1378,6 +1375,7 @@ body {
           <span class="he-label">오늘의 비즈니스 영어</span>
           <span class="he-tag" id="engTag"></span>
           <button class="he-play-all" id="engPlayAll" type="button">▶ 전체 듣기</button>
+          <button class="he-play-all" id="engStop" type="button">■ 정지</button>
         </div>
         <p class="he-situation" id="engSituation">—</p>
         <div class="he-convo" id="engConvo"></div>
@@ -1601,7 +1599,7 @@ body {
   .yt-key-status { font-size: 0.68rem; color: var(--green); margin-top: 6px; }
   .yt-search { display: flex; gap: 5px; margin-top: 12px; }
   .yt-search .yt-input { flex: 1; min-width: 0; }
-  .yt-results { display: flex; flex-direction: column; gap: 5px; margin-top: 8px; }
+  .yt-results { display: flex; flex-direction: column; gap: 5px; margin-top: 8px; max-height: 380px; overflow-y: auto; }
   .yt-results:empty { margin-top: 0; }
   .yt-results-msg { font-size: 0.74rem; color: var(--text-mute); padding: 6px 2px; line-height: 1.5; }
   .yt-result { display: flex; gap: 8px; align-items: center; padding: 6px; border: 1px solid var(--border); border-radius: 8px; cursor: pointer; transition: background 0.15s, border-color 0.15s; }
@@ -1641,6 +1639,8 @@ body {
     gap: 0 !important;
     grid-template-columns: none !important;
   }
+  /* ★ 2026-05-19: 뉴스 목록·유튜브 검색결과 = 같은 길이(380px) + 스크롤바 */
+  #newsPick { max-height: 380px; overflow-y: auto; }
   .news-text-item {
     display: flex; align-items: center; gap: 12px;
     padding: 11px 14px;
@@ -4150,6 +4150,10 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
   if ($('calGcalSelect')) $('calGcalSelect').addEventListener('change', onGcalSelect);
   // 영어 회화 — 대화 전체 발음 재생
   if ($('engPlayAll')) $('engPlayAll').addEventListener('click', () => speakConversation(CURRENT_ENG));
+  if ($('engStop')) $('engStop').addEventListener('click', () => {
+    if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+    document.querySelectorAll('.he-speak.speaking').forEach((b) => b.classList.remove('speaking'));
+  });
 
   $('todoInput').addEventListener('keydown', (e) => {
     if (e.key === 'Enter') { addTask(e.target.value); e.target.value = ''; }
