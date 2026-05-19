@@ -1510,6 +1510,8 @@ body {
   .yt-result-body { min-width: 0; }
   .yt-result-title { font-size: 0.76rem; font-weight: 600; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
   .yt-result-meta { font-size: 0.64rem; color: var(--text-mute); margin-top: 1px; }
+  .yt-result.added { opacity: 0.5; }
+  .yt-result.added .yt-result-title::after { content: ' ✓ 담음'; color: var(--green); font-weight: 700; }
   body { background: var(--bg); }
   main { padding-bottom: 40px; }
   /* hero·english은 그대로 (배경 X = 통째 베이지) */
@@ -2217,6 +2219,8 @@ document.getElementById('ytKeySave')?.addEventListener('click', () => {
 });
 
 // ── 유튜브 검색 (본인 키로 호출) ──
+// YouTube API는 제목을 HTML 인코딩해서 줌 (R&B → R&amp;B) → 디코드 먼저
+function ytDecode(s) { const t = document.createElement('textarea'); t.innerHTML = s || ''; return t.value; }
 async function ytSearch() {
   const inp = document.getElementById('ytSearchInput');
   const results = document.getElementById('ytResults');
@@ -2244,12 +2248,14 @@ async function ytSearch() {
       const isList = !!it.id.playlistId;
       const id = isList ? it.id.playlistId : it.id.videoId;
       const sn = it.snippet || {};
+      const title = ytDecode(sn.title || '') || '제목 없음';
+      const ch = ytDecode(sn.channelTitle || '');
       const th = ((sn.thumbnails || {}).default || (sn.thumbnails || {}).medium || {}).url || '';
       return '<div class="yt-result" data-type="' + (isList ? 'list' : 'video') + '" data-id="' + id +
-        '" data-name="' + escHtml(sn.title || '') + '" role="button" tabindex="0">' +
+        '" data-name="' + escHtml(title) + '" role="button" tabindex="0">' +
         '<img class="yt-result-thumb" src="' + th + '" alt="" onerror="this.style.visibility=\'hidden\'">' +
-        '<div class="yt-result-body"><div class="yt-result-title">' + escHtml(sn.title || '제목 없음') + '</div>' +
-        '<div class="yt-result-meta">' + (isList ? '재생목록' : '영상') + ' · ' + escHtml(sn.channelTitle || '') + '</div></div></div>';
+        '<div class="yt-result-body"><div class="yt-result-title">' + escHtml(title) + '</div>' +
+        '<div class="yt-result-meta">' + (isList ? '재생목록' : '영상') + ' · ' + escHtml(ch) + '</div></div></div>';
     }).join('');
   } catch (e) {
     results.innerHTML = '<div class="yt-results-msg">검색 중 오류가 났습니다. 잠시 후 다시 시도해 주세요.</div>';
@@ -2258,8 +2264,7 @@ async function ytSearch() {
 function ytPickResult(el) {
   ytPlaylists.push({ name: el.dataset.name || '음악', type: el.dataset.type, id: el.dataset.id });
   ytSave();
-  document.getElementById('ytResults').innerHTML = '';
-  document.getElementById('ytSearchInput').value = '';
+  el.classList.add('added');  // 검색 목록은 그대로 유지 — 여러 개 골라 담을 수 있게
   ytSelect(ytPlaylists.length - 1);
 }
 document.getElementById('ytSearchBtn')?.addEventListener('click', ytSearch);
