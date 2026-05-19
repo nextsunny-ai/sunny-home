@@ -4487,8 +4487,8 @@ function renderYtTabs() {
   if (!t) return;
   t.innerHTML = ytPlaylists.map((p, i) =>
     '<span class="yt-tab' + (i === ytSel ? ' active' : '') + '" data-i="' + i + '" role="button" tabindex="0">' +
-    '<span class="yt-tab-name">' + escHtml(p.name) + '</span>' +
-    '<button class="yt-tab-del" data-del="' + i + '" type="button" aria-label="' + escHtml(p.name) + ' 삭제">×</button></span>'
+    '<span class="yt-tab-name">' + escHtml(ytDecode(p.name)) + '</span>' +
+    '<button class="yt-tab-del" data-del="' + i + '" type="button" aria-label="' + escHtml(ytDecode(p.name)) + ' 삭제">×</button></span>'
   ).join('');
 }
 function renderYtStage() {
@@ -4503,7 +4503,7 @@ function renderYtStage() {
   const pl = ytPlaylists[ytSel];
   s.innerHTML = '<div class="yt-player"><iframe src="' + ytEmbedSrc(pl) + '" ' +
     'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ' +
-    'allowfullscreen title="' + escHtml(pl.name) + '"></iframe></div>';
+    'allowfullscreen title="' + escHtml(ytDecode(pl.name)) + '"></iframe></div>';
 }
 function renderYt() { renderYtTabs(); renderYtStage(); }
 function ytSelect(i) { ytSel = i; try { localStorage.setItem(YT_SEL_KEY, String(i)); } catch (e) {} renderYt(); }
