@@ -4150,8 +4150,8 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     if (!badge) {
       badge = document.createElement('span');
       badge.id = 'newsFresh';
-      badge.style.cssText = 'margin-left:auto;align-self:center;font-size:0.62rem;'
-        + 'font-weight:700;letter-spacing:0.02em;font-family:var(--font);';
+      badge.style.cssText = 'align-self:center;font-size:0.62rem;'
+        + 'font-weight:400;letter-spacing:0.02em;font-family:var(--font);opacity:0.6;';
       labelEl.appendChild(badge);
     }
     const diffH = (Date.now() - new Date(updated).getTime()) / 3600000;
