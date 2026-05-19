@@ -1624,15 +1624,20 @@ body {
   .yt-result.added .yt-result-title::after { content: ' ✓ 담음'; color: var(--green); font-weight: 700; }
 
   /* hero — 뉴스(2/3) 옆 음악 칼럼(1/3) */
-  .hero-news-row { display: flex; gap: 16px; align-items: flex-start; }
-  .hero-news-col { flex: 2; min-width: 0; }
-  .hero-music-col { flex: 1; min-width: 0; }
+  /* ★ 2026-05-19: 캘린더 아래 = 뉴스 아래 = 유튜브 아래 한 줄 정렬 (고정 높이) */
+  .hero-news-row { display: flex; gap: 16px; align-items: stretch; height: 662px; }
+  .hero-news-col { flex: 2; min-width: 0; display: flex; flex-direction: column; min-height: 0; }
+  .hero-music-col { flex: 1; min-width: 0; display: flex; flex-direction: column; min-height: 0; }
+  #ytStage { flex: 1; display: flex; flex-direction: column; min-height: 0; }
+  #ytStage .yt-player, #ytStage .yt-empty { flex: 1; aspect-ratio: auto; }
   .hero-music-label { font-size: 0.78rem; font-weight: 700; color: var(--deep-orange); margin: 6px 0 8px; }
   .hero-music-col .yt-add { flex-direction: column; }
   .hero-music-col .yt-input.name, .hero-music-col .yt-input.url { width: 100%; flex: none; }
   @media (max-width: 720px) {
-    .hero-news-row { flex-direction: column; }
+    .hero-news-row { flex-direction: column; height: auto; }
     .hero-news-col, .hero-music-col { width: 100%; flex: none; }
+    #ytStage { flex: none; }
+    #ytStage .yt-player, #ytStage .yt-empty { aspect-ratio: 16 / 9; }
   }
   body { background: var(--bg); }
   main { padding-bottom: 40px; }
@@ -1651,8 +1656,8 @@ body {
     gap: 0 !important;
     grid-template-columns: none !important;
   }
-  /* ★ 2026-05-19: 뉴스 목록·유튜브 검색결과 = 같은 길이(380px) + 스크롤바 */
-  #newsPick { max-height: 380px; overflow-y: auto; }
+  /* ★ 2026-05-19: 뉴스 목록 = 칼럼을 채워 캘린더 아래와 라인 정렬 + 스크롤 */
+  #newsPick { flex: 1; min-height: 0; overflow-y: auto; }
   .news-text-item {
     display: flex; align-items: center; gap: 12px;
     padding: 11px 14px;
