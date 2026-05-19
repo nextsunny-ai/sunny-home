@@ -93,10 +93,15 @@ body {
   border-bottom: 1px solid var(--border);
 }
 .nav-logo {
-  font-size: 0.72rem; font-weight: 800; letter-spacing: 0.18em;
-  color: var(--orange);
-  margin-right: 20px;
+  display: inline-flex; align-items: baseline; gap: 6px;
+  font-family: var(--mono);
+  font-size: 0.82rem; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  margin-right: 24px; white-space: nowrap;
 }
+.nav-logo .logo-a { color: var(--orange); }
+.nav-logo .logo-dot { color: var(--orange); }
+.nav-logo .logo-b { color: var(--text); }
 .nav-greeting {
   font-size: 0.8rem; font-weight: 600; color: var(--text-sub);
   letter-spacing: -0.005em; white-space: nowrap; margin-right: 28px;
@@ -1264,7 +1269,7 @@ body {
 
 <!-- NAV -->
 <nav class="nav" role="navigation" aria-label="메인 네비게이션">
-  <span class="nav-logo">SUNNY</span>
+  <span class="nav-logo"><span class="logo-a">SUNNY</span><span class="logo-dot">·</span><span class="logo-b">HOME</span></span>
   <span class="nav-greeting" id="greeting">Good morning, Sunny</span>
   <span class="nav-item active" data-section="hero" role="button" tabindex="0" aria-label="Today 섹션으로 이동">Today</span>
   <span class="nav-item" data-section="mid" role="button" tabindex="0" aria-label="Team 섹션으로 이동">Team</span>
