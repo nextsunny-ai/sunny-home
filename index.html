@@ -1374,7 +1374,6 @@ body {
             </div>
             <div class="yt-key-status" id="ytKeyStatus"></div>
           </div>
-          <div class="yt-tabs" id="ytTabs"></div>
           <div id="ytStage"></div>
           <div class="yt-search">
             <input type="text" id="ytSearchInput" class="yt-input" placeholder="유튜브 검색 (로파이, 재즈…)" maxlength="80" aria-label="유튜브 검색">
@@ -4527,10 +4526,11 @@ function ytAdd() {
   if (!url) return;
   const parsed = ytParse(url);
   if (!parsed) { u.value = ''; u.placeholder = '주소 인식 실패 — 유튜브 주소를 붙여넣어 주세요'; return; }
-  ytPlaylists.push({ name: parsed.type === 'video' ? '영상' : '재생목록', type: parsed.type, id: parsed.id });
+  // 탭 없이 한 개만 — 새로 넣으면 교체
+  ytPlaylists = [{ name: parsed.type === 'video' ? '영상' : '재생목록', type: parsed.type, id: parsed.id }];
   ytSave();
   u.value = '';
-  ytSelect(ytPlaylists.length - 1);
+  ytSelect(0);
 }
 function boardYtDelete(i) {
   ytPlaylists.splice(i, 1);
@@ -4623,10 +4623,12 @@ async function ytSearch() {
   }
 }
 function ytPickResult(el) {
-  ytPlaylists.push({ name: el.dataset.name || '음악', type: el.dataset.type, id: el.dataset.id });
+  // 탭 없이 한 개만 — 검색 결과를 고르면 교체
+  ytPlaylists = [{ name: el.dataset.name || '음악', type: el.dataset.type, id: el.dataset.id }];
   ytSave();
-  el.classList.add('added');  // 검색 목록은 그대로 유지 — 여러 개 골라 담을 수 있게
-  ytSelect(ytPlaylists.length - 1);
+  document.querySelectorAll('.yt-result.added').forEach((r) => r.classList.remove('added'));
+  el.classList.add('added');
+  ytSelect(0);
 }
 document.getElementById('ytSearchBtn')?.addEventListener('click', ytSearch);
 document.getElementById('ytSearchInput')?.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); ytSearch(); } });
