@@ -144,9 +144,8 @@ body {
 .hcell .hero-news-row { flex: 1; min-height: 0; }
 .hcell .hero-news-col, .hcell .hero-music-col { display: flex; flex-direction: column; min-height: 0; }
 .hcell .pick-list { flex: 1; max-height: 760px; }
-.hcell #ytStage { flex: 1; min-height: 150px; display: flex; }
-.hcell #ytStage .yt-player { flex: 1; aspect-ratio: auto; }
-.hcell #ytStage .yt-empty { flex: 1; aspect-ratio: auto; }
+/* ★ 2026-05-20: 유튜브 플레이어 = 정상 16:9 (세로로 안 늘림 — 재생 정상) */
+.hcell #ytStage { flex: 0 0 auto; }
 .hcell .todo-panel { flex: 1; display: flex; flex-direction: column; min-height: 0; }
 .hcell .todo-list { flex: 1; height: auto; }
 .hcell .bl-list { flex: 1; max-height: none; }
@@ -1538,7 +1537,7 @@ body {
   .yt-key-status { font-size: 0.68rem; color: var(--green); margin-top: 6px; }
   .yt-search { display: flex; gap: 5px; margin-top: 12px; }
   .yt-search .yt-input { flex: 1; min-width: 0; }
-  .yt-results { display: flex; flex-direction: column; gap: 5px; margin-top: 8px; max-height: 260px; overflow-y: auto;
+  .yt-results { display: flex; flex-direction: column; gap: 5px; margin-top: 8px; flex: 1; min-height: 0; overflow-y: auto; overflow-x: hidden;
     -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 18px), transparent);
     mask-image: linear-gradient(to bottom, #000 calc(100% - 18px), transparent); }
   .yt-results:empty { margin-top: 0; }
@@ -2194,8 +2193,8 @@ function renderYtTabs() {
   if (!t) return;
   t.innerHTML = ytPlaylists.map((p, i) =>
     '<span class="yt-tab' + (i === ytSel ? ' active' : '') + '" data-i="' + i + '" role="button" tabindex="0">' +
-    '<span class="yt-tab-name">' + escHtml(p.name) + '</span>' +
-    '<button class="yt-tab-del" data-del="' + i + '" type="button" aria-label="' + escHtml(p.name) + ' 삭제">×</button></span>'
+    '<span class="yt-tab-name">' + escHtml(ytDecode(p.name)) + '</span>' +
+    '<button class="yt-tab-del" data-del="' + i + '" type="button" aria-label="' + escHtml(ytDecode(p.name)) + ' 삭제">×</button></span>'
   ).join('');
 }
 function renderYtStage() {
@@ -2210,7 +2209,7 @@ function renderYtStage() {
   const pl = ytPlaylists[ytSel];
   s.innerHTML = '<div class="yt-player"><iframe src="' + ytEmbedSrc(pl) + '" ' +
     'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ' +
-    'allowfullscreen title="' + escHtml(pl.name) + '"></iframe></div>';
+    'allowfullscreen title="' + escHtml(ytDecode(pl.name)) + '"></iframe></div>';
 }
 function renderYt() { renderYtTabs(); renderYtStage(); }
 function ytSelect(i) { ytSel = i; try { localStorage.setItem(YT_SEL_KEY, String(i)); } catch (e) {} renderYt(); }
