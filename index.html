@@ -85,7 +85,7 @@ body {
 /* ─── NAV ─── */
 .nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 200;
-  display: flex; align-items: center;
+  display: flex; align-items: center; justify-content: space-between;
   padding: 0 40px; height: 52px;
   background: rgba(250,248,244,0.85);
   backdrop-filter: blur(24px) saturate(1.4);
@@ -103,11 +103,14 @@ body {
 .nav-logo .logo-dot { color: var(--orange); }
 .nav-logo .logo-b { color: var(--text); }
 .nav-greeting {
-  font-size: 0.8rem; font-weight: 600; color: var(--text-sub);
+  font-size: 0.8rem; font-weight: 500; color: var(--text-mute);
   letter-spacing: -0.005em; white-space: nowrap;
 }
-/* ★ 2026-05-19: 로고·인사말·메뉴 사이 세로 구분선 */
-.nav-sep { width: 1px; height: 22px; background: var(--border); flex-shrink: 0; margin: 0 20px; }
+/* ★ 2026-05-20: 네비 3등분 — 로고(좌)·메뉴(가운데)·인사말+검색(우) */
+.nav-group { display: flex; align-items: center; }
+.nav-left { flex: 1; justify-content: flex-start; }
+.nav-center { flex: 0 0 auto; gap: 2px; }
+.nav-right { flex: 1; justify-content: flex-end; gap: 16px; }
 .nav-item {
   padding: 6px 14px; font-size: 0.75rem; font-weight: 400;
   color: var(--text-mute); cursor: pointer;
@@ -1271,18 +1274,21 @@ body {
 
 <!-- NAV -->
 <nav class="nav" role="navigation" aria-label="메인 네비게이션">
-  <span class="nav-logo"><span class="logo-l1"><span class="logo-a">SUNNY</span> <span class="logo-dot">·</span></span><span class="logo-b">HOME</span></span>
-  <span class="nav-sep"></span>
-  <span class="nav-greeting" id="greeting">Good morning, Sunny</span>
-  <span class="nav-sep"></span>
-  <span class="nav-item active" data-section="hero" role="button" tabindex="0" aria-label="Today 섹션으로 이동">Today</span>
-  <span class="nav-item" data-section="mid" role="button" tabindex="0" aria-label="Team 섹션으로 이동">Team</span>
-  <span class="nav-item" data-section="quick-links-section" role="button" tabindex="0" aria-label="Quick Links 섹션으로 이동">Quick Links</span>
-  <span class="nav-item" data-section="admin-section" role="button" tabindex="0" aria-label="통합 관리 섹션으로 이동">통합 관리</span>
-  <span class="nav-spacer"></span>
-  <div class="nav-search">
-    <span style="color:var(--text-mute);font-size:0.78rem">&#128269;</span>
-    <input type="text" placeholder="Search..." id="searchInput" aria-label="Google 검색">
+  <div class="nav-group nav-left">
+    <span class="nav-logo"><span class="logo-l1"><span class="logo-a">SUNNY</span> <span class="logo-dot">·</span></span><span class="logo-b">HOME</span></span>
+  </div>
+  <div class="nav-group nav-center">
+    <span class="nav-item active" data-section="hero" role="button" tabindex="0" aria-label="Today 섹션으로 이동">Today</span>
+    <span class="nav-item" data-section="mid" role="button" tabindex="0" aria-label="Team 섹션으로 이동">Team</span>
+    <span class="nav-item" data-section="quick-links-section" role="button" tabindex="0" aria-label="Quick Links 섹션으로 이동">Quick Links</span>
+    <span class="nav-item" data-section="admin-section" role="button" tabindex="0" aria-label="통합 관리 섹션으로 이동">통합 관리</span>
+  </div>
+  <div class="nav-group nav-right">
+    <span class="nav-greeting" id="greeting">Good morning, Sunny</span>
+    <div class="nav-search">
+      <span style="color:var(--text-mute);font-size:0.78rem">&#128269;</span>
+      <input type="text" placeholder="Search..." id="searchInput" aria-label="Google 검색">
+    </div>
   </div>
 </nav>
 
