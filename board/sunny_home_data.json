@@ -1,10 +1,19 @@
 {
-  "updated": "2026-05-21T01:54:50+09:00",
+  "updated": "2026-05-21T07:18:24+09:00",
   "categories": [
     {
       "id": "ai",
       "name": "AI 트렌드",
       "items": [
+        {
+          "title": "BMS, 신약 개발 가속화 위해 앤트로픽 클로드 AI 도입 - 의약뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBFbGJwZ0lBRGRmX3phcHZhSzB5NGxpZU1HQ1ZPRTVGczhSNDluWEhZZDRPUE9tVTJRZkJLNDZlaGJ4b3lFTjQ1ZTN3c3FuQURUVkZ1R2FGOVZ1VEs0Ylo2S3FIcUtFUzg?oc=5",
+          "source": "의약뉴스",
+          "summary": "",
+          "published": "2026-05-21",
+          "image": "",
+          "first_seen": "2026-05-21T07:18:24+09:00"
+        },
         {
           "title": "[C컷] 중국 선물 버리는 AI 사진이 국내에서 화제가 된 이유 - 조선일보",
           "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9WRmtCWGY3QXFKRThBTl8wTERTVU9yaHU5aGc3X0F3aTE3SS14Mm9vd2FyaGhFWTdvaW0zSWlaU3c2M2o3emRyMnJ0cFIyN2ZRYlFib0ZkRWY0MG5IWG5OVkFqSHJNb05rSm4xbTR3ZGx2YVZrbFhpLTNMTGpOZw?oc=5",
@@ -265,15 +274,6 @@
           "published": "2026-05-14",
           "image": "",
           "first_seen": "2026-05-19T06:57:14+09:00"
-        },
-        {
-          "title": "칼럼 | AI 에이전트가 데이터 삭제하면 책임은 누구에게 있나 - cio.com",
-          "url": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxQLWt0S2Z4a3k4YmpjV0FzX3luMm42SXlvcDJUNHJ6SzlHUl9rak9VQ1FLdVRNN2tXMmtEcWFJX0RFNVpZc2lPTlI5dnZoa1daT1hYQjZmdHNpbjZuMzYwcTJwUVNQV3BadUdWWkFYaWZIdjh6TnZDRm9mckI0WDlKaTlXdnhDYzNGaU9yblN3cnM2b05fSlRsM3RiQXZTaXYxMW5sdjdpZ05hX1lScTRiNXdScllwNWlmaXlpMjVLX1JURUVOSEpyd2lJNzdjd0QwWVQ0VE9mRGdCamJnZm9QX1R3VkZUR0JwbkhDLWRHZlFlN1JLNWhBVjA2LVFOaGl1Y1ZRcV9RNmxzQU9ESEp4bFFNeVlFenBtanRSdjhVYkMyQnZJanNkdzNvdHlDWkZuNERncVQ1eTkwenFPOWRjM3g4clBmM2R5NnkwWWw1bTJ4aHYzdlRMQWdR?oc=5",
-          "source": "cio.com",
-          "summary": "",
-          "published": "2026-05-14",
-          "image": "",
-          "first_seen": "2026-05-19T18:22:37+09:00"
         }
       ]
     },
@@ -558,6 +558,15 @@
       "name": "공연",
       "items": [
         {
+          "title": "재즈 거장부터 글로벌 DJ까지···초여름 페스티벌 ‘완벽 정복’ - 경향신문",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBEUWk3WklhWlhmandQTC0zRy14ajBnd1RvQ3oxcGRpaHBIQkI3RjdDNTVCdlFpUzRTU2xZcTV5aS1sODZRQnRMOXFxSGFJYXk4TnBHYW5EX1hxR3poMEdj0gFfQVVfeXFMUERRaTdaSWFaWGZqd1BMLTNHLXhqMGd3VG9DejFwZGlocEhCQjdGN0M1NUJ2UWlTNFNTbFlxNXlpLWw4NlFCdEw5cXFIYUlheThOcEdhbkRfWHFHemgwR2M?oc=5",
+          "source": "경향신문",
+          "summary": "",
+          "published": "2026-05-20",
+          "image": "",
+          "first_seen": "2026-05-21T07:18:24+09:00"
+        },
+        {
           "title": "울산교육청, 각급 학교 방문해 마약류 예방 뮤지컬 공연 - 연합뉴스",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFAzS3d2c24wOHZlTktaOVhzcVZEQXR6c003MFp1Y3RGYUswMkxrNVNGZWtHRjhkR2VjaGRYc3Jud1BubWJoRjdqbkNtcTNJWUpJdkZKWjVxbUYwVjFzcVdFedIBYEFVX3lxTFAzS3d2c24wOHZlTktaOVhzcVZEQXR6c003MFp1Y3RGYUswMkxrNVNGZWtHRjhkR2VjaGRYc3Jud1BubWJoRjdqbkNtcTNJWUpJdkZKWjVxbUYwVjFzcVdFeQ?oc=5",
           "source": "연합뉴스",
@@ -720,6 +729,15 @@
           "first_seen": "2026-05-21T01:54:50+09:00"
         },
         {
+          "title": "멜로망스·10CM 공연이 무료! 서울가든페스티벌 열린다 - 내 손안에 서울",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBCeVRvcVo4WFJFZHVad1g3NDJ1VEc2S3hFZ2NDcXdQbHI0czY2NzQzWGhOZkNZaFhfRENnRktjb2RfbW1FSGYzbU1GaTNKTkZDMzNBXzJ5R0o?oc=5",
+          "source": "내 손안에 서울",
+          "summary": "",
+          "published": "2026-05-07",
+          "image": "",
+          "first_seen": "2026-05-21T07:18:24+09:00"
+        },
+        {
           "title": "주말 공연·체험 가득한 서울숲… 5.16.~6.7.‘서울가든페스티벌’개최 - 한국방송뉴스",
           "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9JYjU3UVkxczNkUTlkSFNDbEN3NFdwZnhFZjdGR2hhdVJKYjRaRDZxQklJZ0RQQ3h3M0VxeTRhbU04ZEtyck1rdzBvT2IzV19rcm9iZ2M3Nl9wTWY4R0E?oc=5",
           "source": "한국방송뉴스",
@@ -743,6 +761,15 @@
       "id": "exhibition",
       "name": "전시",
       "items": [
+        {
+          "title": "서울시, '미디어아트 서울' 봄 전시 본격 운영…\"야외미술관 확장\" - 뉴스1",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5jcHA1bGNCdm9kRFZpY0Job2VNNFFmcno1clZzYzFscUNtQzhRMWdObWJoVDNUOXZTcTNIbXptTjhaYUR3WXN1N0ttQlVKSnF1RUE2ZkYtQ2xGdlNU?oc=5",
+          "source": "뉴스1",
+          "summary": "",
+          "published": "2026-05-21",
+          "image": "",
+          "first_seen": "2026-05-21T07:18:24+09:00"
+        },
         {
           "title": "한화그룹 '퐁피두센터 한화' 개관…세계 현대미술 가교로 육성 - 뉴스1",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBLVHNtMjlTUUlRS0lBWDNpRDJTUWNZLVVQQ3VXU2pnYnFrSHJyTVhtY0t3aWdWbnY0MlMyS3JJRWJrbEJVTlZhaXRIVlIySEt2dEhpQ0k1RU5saVJDdW1BZ05hbHAzWXZwZmc?oc=5",
@@ -1119,6 +1146,15 @@
           "first_seen": "2026-05-19T01:47:50+09:00"
         },
         {
+          "title": "[바이오스냅] 식약처, 어린이 의약정보 영상 공모전 개최 - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9uTDBUTnExOUx0Q2lNT04wb1lFclJiS3dIUC1oaUk4SEV2S0xOLU51QjNDWmdJb251UTZrcnRwRHBKRGpoWHU3UVVMZlFBRGNBQnBCVXhGU3VVRHPSAWBBVV95cUxPMVVuUjQ4ZS1kMDgzQWR6Y2FRbENta0ZyWmNGRndMMTNPamdBcnNnY1lIZkZVMkJSLWkyZTJQdHloWTc2OW01amJfUUs4VjlYS1lvYzk0RWlpaklEcFVndzA?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-05-11",
+          "image": "",
+          "first_seen": "2026-05-21T07:18:24+09:00"
+        },
+        {
           "title": "콘진원, 콘텐츠 지원 제작에서 수출까지…해외 연결형 사업 잇따라 - 지디넷코리아",
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBzc1Q1eVp2NjhSSlRra3dOc3pkNl8yZEVYUEhnVzNuNDNwXzlmN1N4ZmlqTzRMRExodHo1LU1jelBENzZOT0Z6NVZiQVlTN2RhTHVCWE1R?oc=5",
           "source": "지디넷코리아",
@@ -1189,15 +1225,6 @@
           "published": "2026-04-30",
           "image": "",
           "first_seen": "2026-05-17T18:32:24+09:00"
-        },
-        {
-          "title": "K콘텐츠, 제작지원서 전 주기 지원으로 확 바꾼다…문체부 \"슈퍼 IP, 육성 집중\" - 뉴스핌",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9aOGV2N1hCbHdJRkc1NDR5WUxuZXF3bFhMb0gtUUg1eXpaVnRmbVp6d0cyMUtIcDBFWjBCSk5iWWc2OXZLYUd5MTUzX3djdUdVV1Z4NUIzdDZmTlow?oc=5",
-          "source": "뉴스핌",
-          "summary": "",
-          "published": "2026-04-30",
-          "image": "",
-          "first_seen": "2026-05-17T17:51:34+09:00"
         }
       ]
     },
