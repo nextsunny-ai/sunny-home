@@ -1,10 +1,19 @@
 {
-  "updated": "2026-05-22T01:39:31+09:00",
+  "updated": "2026-05-22T07:08:37+09:00",
   "categories": [
     {
       "id": "ai",
       "name": "AI 트렌드",
       "items": [
+        {
+          "title": "﻿이미지도, 영상도, 편집도 한 모델로 ‘영상 올인원 AI’ ﻿[정원훈의 AI 트렌드] - IT조선",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE96cy1SeWM5UFVoQ1BITmZvNm1IN3RNX0cyQ1BCeEYwZFFtZnlHR1doLUdSckN4enZnYkNwaU1CcEY1RHJyZzExWVlfZFA5Y1NGeVZPVExkcjJBRE9GRXZ4UmswS1FMaUpZSnJHWWVRcEfSAXRBVV95cUxNTk5UdUhpa1E2ZlpRb2lnWlNhcDhOV1dnYjZzR2Z5bzlCVXBfS2NuNnN6X2I4RG5fb2cwT1F5Nkl2RmFvbG00UnBTelNUWXhTQkN5eDJyQ3pTSXFEeURJTThidDFqMUJFNXlRQ1lRSHQxNk1vQQ?oc=5",
+          "source": "IT조선",
+          "summary": "",
+          "published": "2026-05-22",
+          "image": "",
+          "first_seen": "2026-05-22T07:08:37+09:00"
+        },
         {
           "title": "BMS, 신약 개발 가속화 위해 앤트로픽 클로드 AI 도입 - 의약뉴스",
           "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBFbGJwZ0lBRGRmX3phcHZhSzB5NGxpZU1HQ1ZPRTVGczhSNDluWEhZZDRPUE9tVTJRZkJLNDZlaGJ4b3lFTjQ1ZTN3c3FuQURUVkZ1R2FGOVZ1VEs0Ylo2S3FIcUtFUzg?oc=5",
@@ -258,22 +267,13 @@
           "first_seen": "2026-05-18T01:51:06+09:00"
         },
         {
-          "title": "MS, 100여개 AI 에이전트 기반 보안AI 공개…“미토스보다 뛰어나” - 전자신문",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9LYTQzV09yY21HV2o4ajNnT3Fzd2pMVHB1djFrMXJEa1lILTVaUjhVV04zbU83clMyalA1aHRLWlZFa2k1YWV3Ym0xcnpvdw?oc=5",
-          "source": "전자신문",
+          "title": "[샷!] 교복 입히고 성적 요구까지…(종합) - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE81eFI0SER3SUZkeUphSW1Hb1k4cGdWUHBYWFoyWWFVRDg5V1JIZmRaSWF3LVY0MklHYlZXYWlEckpHMWdCVnkzZWdtaWNidVNac1lsLTBnNkROSTDSAWBBVV95cUxPcTJBT3VzUFYwZVVkR00xdXNwQXhTWW5SVGpfZDk2ZUhtS0NDLVNiNjA3Um1ISmk2cjdqQ3pJOFE1emRUeGYzRW5TVHF6MGRkZUU0WmxKTmoyay1KMWNoVko?oc=5",
+          "source": "연합뉴스",
           "summary": "",
-          "published": "2026-05-14",
+          "published": "2026-05-15",
           "image": "",
-          "first_seen": "2026-05-17T17:51:34+09:00"
-        },
-        {
-          "title": "애플, 앱스토어에 'AI 에이전트' 승인 검토...\"앱 사라져도 수익 구조 고수\" - AI타임스",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBDTGNXbkU0akFjS0hxamh5SnNzN2ZiYmxBOWhrRW9wMTVJTW11VWpnakhWM0hRVXg0aUtLZm9GYlBKTE0yX0YyME1DNjVzUm52dFhCUmlVaTFNNDZSdWVmUkRHcTJKS2VKQmc?oc=5",
-          "source": "AI타임스",
-          "summary": "",
-          "published": "2026-05-14",
-          "image": "",
-          "first_seen": "2026-05-14"
+          "first_seen": "2026-05-22T07:08:37+09:00"
         }
       ]
     },
@@ -281,6 +281,15 @@
       "id": "content_ip",
       "name": "콘텐츠·IP",
       "items": [
+        {
+          "title": "\"AI·데이터가 콘텐츠 산업 판 바꾼다\"... 한·영 전문가들, 미래 ‘창조생태계’ 공동 설계 나섰다 - 특허뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9jcHRRU0hlOTVvU0NCemRHLVJLbjdRTUpZNGx1R1pmR1NjVzlWYWNMTk54RHNsM2lnd3RlVGNOYVc1azcwaFVYUQ?oc=5",
+          "source": "특허뉴스",
+          "summary": "",
+          "published": "2026-05-22",
+          "image": "",
+          "first_seen": "2026-05-22T07:08:37+09:00"
+        },
         {
           "title": "한국콘텐츠진흥원, 넷플릭스와 OTT 제작 인력 양성 협력 - 알파경제",
           "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9aREtqYTYtRG9pQk9EemMydlhHR0xFV3k3dEMya3I2d19EMEhxcFNlc3dJXzJGbFdwMFNmY0VLMzlrWnRwRU9hdm1TOFlYM3Z6Q05QWHVsMFk3eXFVb3fSAW5BVV95cUxPR0o5RGlUZGl3Yk1QaUhNMktNY1IxSmZ4VWRmX05HQmtUODEwQUM0Tm80WEhTdHE0Z0xadEVVVTBhSnJaT0xSSkVKUk1PMlhCLXRZbUI1WU9rSXhLNXFleWs3SF9UN29VWkRWYVVhZw?oc=5",
@@ -541,15 +550,6 @@
           "published": "2026-05-08",
           "image": "",
           "first_seen": "2026-05-19T06:57:14+09:00"
-        },
-        {
-          "title": "콘진원, 콘텐츠 지원 제작에서 수출까지…해외 연결형 사업 잇따라 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9jMmJodk9YZk9XYkx2ajh6RFFMRTNLVlFwSGpESFhka2hnb3M1T1ZrTnFuQjlCZjdYLTZkTU1DdWstYWlZMkE?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-05-08",
-          "image": "",
-          "first_seen": "2026-05-19T18:22:37+09:00"
         }
       ]
     },
@@ -915,6 +915,15 @@
           "first_seen": "2026-05-21T01:54:50+09:00"
         },
         {
+          "title": "“캠퍼스가 전시장으로”…이화여대서 국제 미디어아트 축제 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9DUzVrQmpjLUlSRUlTU05rcWJtckdKNGttWE92Ny13QlAtbHJFLWxaeVZ6SFE4UlYyTHkxalhSWWR5a25Na19zVUR6T2djdGM?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-05-14",
+          "image": "",
+          "first_seen": "2026-05-22T07:08:37+09:00"
+        },
+        {
           "title": "이화여대 창립 140주년 기념, 16일까지 미디어아트 축제 - 조선일보",
           "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNTDdCUWQwc0JETGRSRTdCbDBFN2dHblVocVZYTUxSRlo3Vmd5SlcyQm5FSmlZR3dBdWVVOXBfZXczdGxGUy1wLVZCS2g5aEt5Q1FqcDMxUHhyWUt2NHB2a1FfTzg0SnVheFJ6S1NLbnNkRW5ZZTlidVBXYjBCeTJwQVQtcnFQb1d4Z3A3dk85VE1OR0x6?oc=5",
           "source": "조선일보",
@@ -1101,6 +1110,15 @@
           "first_seen": "2026-05-20T07:03:21+09:00"
         },
         {
+          "title": "청주시, 제4회 직지콘텐츠 공모 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5VQUZhNVdNMUVwMWxMMEpBWlA4Y0x4UWpFcTdfdG9rSWJjd0Z0RGdlT0lKVVVDS05WSzZhb21vcm14ZHExRkJfQVRDaEdRajQ?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-05-18",
+          "image": "",
+          "first_seen": "2026-05-22T07:08:37+09:00"
+        },
+        {
           "title": "'소방관이 전하는 우리들의 안전 이야기' 소방청, 「119 영상콘텐츠 공모전」 개최 - 서울Pn",
           "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNbzNCNXoyUFRKNUFTSldNdnBDclRTS2N1RVJQWG94WUlLOU92RUpCYmJ4S3Rqbi1Nb25vUG03dF9kdGp3LVRzczNwUFE5QzZKWnBqVmlNemRyTE1lTVJXWGtONjNGTnF2cTVDT2pPZmIzWXFYNUNGTEpWbS1KOUhCVHdnMlZCWEI4TnNn?oc=5",
           "source": "서울Pn",
@@ -1243,15 +1261,6 @@
           "published": "2026-05-07",
           "image": "",
           "first_seen": "2026-05-18T01:51:06+09:00"
-        },
-        {
-          "title": "문체부·콘진원, 19일까지 대한민국콘텐츠대상 스토리부문 공모 - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0wU0MtWHNCTFhSYzBnSERtOUJ3Mm45aGtfNlI2OXdxYWxjemxkVVd2NVd5NGJjNmlWdThZMTFoMzJPUzAwbVRFMFEweHI2Yy1rRS1Jc3ZDeWdrSzDSAWBBVV95cUxNYzZNalBIRWVfYzFfcU96RmlyVUswUzdPa0t6THJtMW8zTV80WndLeTBCV1QyVFk5QzRpN0FaU1VLeDFTVUlPMHRRU1pBVWdtRnQ1YXk3aEpKREdXNHg5d1E?oc=5",
-          "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-05-06",
-          "image": "",
-          "first_seen": "2026-05-18T01:51:06+09:00"
         }
       ]
     },
@@ -1267,6 +1276,15 @@
           "published": "2026-05-21",
           "image": "",
           "first_seen": "2026-05-22T01:39:31+09:00"
+        },
+        {
+          "title": "보성 소상공인, 7개월 브랜딩 받고 성수동 팝업 간다 - 베타뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE43eG1PSjRRY2RVUmhFUTIzYXZieHVKd2RWcHlETW9MRU5PQmlab2lSN0x5Yy1NX2xhM3MxSzNWWW9ybDJLU0Q1bkNINjQxaTE4UlJFTUhFWDhkTW1wT1NaMTNOZTg?oc=5",
+          "source": "베타뉴스",
+          "summary": "",
+          "published": "2026-05-19",
+          "image": "",
+          "first_seen": "2026-05-22T07:08:37+09:00"
         },
         {
           "title": "[위클리 디자인] 디자이너가 빚어낸 가상의 세계 - 디자인플러스",
@@ -1408,6 +1426,15 @@
           "published": "2026-05-17",
           "image": "",
           "first_seen": "2026-05-18T01:51:06+09:00"
+        },
+        {
+          "title": "K-PLUS 페스티벌 2026: 파리 한가운데에서 진짜 한국을 만나는 3일 - Sortir à Paris",
+          "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQeTRzem0wUFZ3SGhxalZPcGNGazdrNUJKUDJVNXlUTWZqUFROMlYxUzBHX1ROam9UWlhNUUd0TktzZnRlVXpTYWFXRFhWRTdwSmYzaW1TTllKRnFUZ291dlF3Y3pIY3V5UzF0dmV1NHlXS2laRWhxREdqQnhMLW4zQ1BQekVCQUFZU1NnVDBKbXdlWVNWZ0dKVk8yRmktN0ZWTnlQLUVqSll3OURXcXctSG5YYmdZUkY2U0k0Y1pHZ3ZCN28zREJlcmFtbG41OVRQQTJLSlNWVEFZRDZmUnE4cUNXZ1I1VHdENldrLXZLVWs2ZkFsbHUxVjZpUFcxTldodTNn?oc=5",
+          "source": "Sortir à Paris",
+          "summary": "",
+          "published": "2026-05-16",
+          "image": "",
+          "first_seen": "2026-05-22T07:08:37+09:00"
         },
         {
           "title": "제주 4·3의 기억, 베를린에서 연주된다 - 제주도민일보",
