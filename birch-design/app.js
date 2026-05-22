@@ -205,7 +205,7 @@ REFERENCES.forEach(group => {
     <div class="ref-grid">
       ${group.items.map(item => `
         <article class="ref-card">
-          <button class="ref-card__download" data-guide="${item.guide}" data-name="${item.name}" aria-label="${item.name} 가이드 다운로드" title=".md 다운로드">↓</button>
+          <button class="ref-card__download" data-guide="${item.guide}" data-name="${item.name}" aria-label="${item.name} 가이드 .md 다운로드"><span class="ref-card__download-icon">↓</span><span class="ref-card__download-text">.md 다운</span></button>
           <a class="ref-card__link" href="${item.url}" target="_blank" rel="noopener noreferrer">
             <div class="ref-card__palette">
               ${item.palette.map(c => `<span class="ref-color" style="background:${c}" title="${c}"></span>`).join('')}
