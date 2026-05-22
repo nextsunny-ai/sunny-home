@@ -101,6 +101,8 @@ const REFERENCES = [
   {
     group: 'Design Systems',
     downloadable: true,
+    groupDesc: '톤 가이드 .md 다운로드 → Claude · ChatGPT에 업로드해서 그 톤 흉내내기',
+    visitLabel: '',
     items: [
       { name: 'Apple HIG', desc: '벤토 그리드 · iOS·macOS 디자인 원칙.', guide: 'guides/ref_01_apple_hig.md', source: 'developer.apple.com', url: 'https://developer.apple.com/design/human-interface-guidelines', palette: ['#000000', '#FFFFFF', '#007AFF'], style: '미니멀 · 벤토' },
       { name: 'Material 3', desc: 'Material You · 동적 컬러 시스템.', guide: 'guides/ref_02_material_3.md', source: 'm3.material.io', url: 'https://m3.material.io', palette: ['#6750A4', '#B69DF8', '#EADDFF'], style: '동적 컬러 · 라운드' },
@@ -117,6 +119,8 @@ const REFERENCES = [
   {
     group: 'Slide Tools',
     downloadable: false,
+    groupDesc: '슬라이드 만들기 도구 — 사이트 방문해서 직접 사용',
+    visitLabel: '↗ 사이트',
     items: [
       { name: 'Pitch', desc: '협업형 모던 슬라이드 도구.', guide: 'guides/ref_11_pitch.md', source: 'pitch.com', url: 'https://pitch.com', palette: ['#1A1A1A', '#FFFFFF', '#FF5C28'], style: '모던 · 협업' },
       { name: 'Gamma', desc: 'AI 슬라이드 · 웹페이지 자동 생성.', guide: 'guides/ref_12_gamma.md', source: 'gamma.app', url: 'https://gamma.app', palette: ['#1A1A1A', '#FF6B35', '#FFD9C2'], style: 'AI · 자동' },
@@ -130,6 +134,8 @@ const REFERENCES = [
   {
     group: 'Inspiration',
     downloadable: false,
+    groupDesc: '디자인 영감 큐레이션 — 사이트 방문해서 시안 보기',
+    visitLabel: '↗ 영감',
     items: [
       { name: 'Awwwards', desc: '웹 디자인 시상식 · 트렌드.', guide: 'guides/ref_18_awwwards.md', source: 'awwwards.com', url: 'https://www.awwwards.com', palette: ['#000000', '#FFFFFF', '#FFCC00'], style: '트렌드 · 옐로우' },
       { name: 'Dribbble', desc: 'UI · 일러스트 디자인 샷.', guide: 'guides/ref_19_dribbble.md', source: 'dribbble.com', url: 'https://dribbble.com', palette: ['#EA4C89', '#0D0C22', '#FFFFFF'], style: '핑크 · 컬러풀' },
@@ -198,36 +204,84 @@ const refHost = document.getElementById('references-host');
 REFERENCES.forEach(group => {
   const g = document.createElement('div');
   g.className = 'ref-group';
-  const countLabel = group.downloadable ? 'guides' : 'sites';
-  g.innerHTML = `
-    <div class="ref-group__head">
-      <div class="ref-group__left">
-        <h3 class="ref-group__title">${group.group}</h3>
-        <span class="ref-group__count">${String(group.items.length).padStart(2, '0')} ${countLabel}</span>
+  if (group.downloadable) {
+    g.innerHTML = `
+      <div class="ref-group__head">
+        <div class="ref-group__left">
+          <h3 class="ref-group__title">${group.group}</h3>
+          <span class="ref-group__count">${String(group.items.length).padStart(2, '0')} guides</span>
+        </div>
+        <p class="ref-group__desc">${group.groupDesc}</p>
       </div>
-    </div>
-    <div class="ref-grid">
-      ${group.items.map(item => `
-        <article class="ref-card">
-          ${group.downloadable ? `<button class="ref-card__download" data-guide="${item.guide}" data-name="${item.name}" aria-label="${item.name} 가이드 .md 다운로드"><span class="ref-card__download-icon">↓</span><span class="ref-card__download-text">.md 다운</span></button>` : ''}
-          <a class="ref-card__link" href="${item.url}" target="_blank" rel="noopener noreferrer">
-            <div class="ref-card__palette">
-              ${item.palette.map(c => `<span class="ref-color" style="background:${c}" title="${c}"></span>`).join('')}
-              <span class="ref-card__style">${item.style}</span>
-            </div>
-            <div class="ref-card__top">
-              <span class="ref-card__name">${item.name}</span>
-              <span class="ref-card__arrow">↗</span>
-            </div>
-            <p class="ref-card__desc">${item.desc}</p>
-            <span class="ref-card__url">${item.source}</span>
+      <div class="ref-grid">
+        ${group.items.map(item => `
+          <article class="ref-card ref-card--featured">
+            <button class="ref-card__download" data-guide="${item.guide}" data-name="${item.name}" aria-label="${item.name} 가이드 .md 다운로드"><span class="ref-card__download-icon">↓</span><span class="ref-card__download-text">.md 다운</span></button>
+            <a class="ref-card__link" href="${item.url}" target="_blank" rel="noopener noreferrer">
+              <div class="ref-card__shot" data-url="${item.url}" data-fallback-palette='${JSON.stringify(item.palette)}'></div>
+              <div class="ref-card__body">
+                <div class="ref-card__palette">
+                  ${item.palette.map(c => `<span class="ref-color" style="background:${c}" title="${c}"></span>`).join('')}
+                  <span class="ref-card__style">${item.style}</span>
+                </div>
+                <div class="ref-card__top">
+                  <span class="ref-card__name">${item.name}</span>
+                  <span class="ref-card__arrow">↗</span>
+                </div>
+                <p class="ref-card__desc">${item.desc}</p>
+                <span class="ref-card__url">${item.source}</span>
+              </div>
+            </a>
+          </article>
+        `).join('')}
+      </div>
+    `;
+  } else {
+    g.innerHTML = `
+      <div class="ref-group__head">
+        <div class="ref-group__left">
+          <h3 class="ref-group__title">${group.group}</h3>
+          <span class="ref-group__count">${String(group.items.length).padStart(2, '0')} sites</span>
+        </div>
+        <p class="ref-group__desc">${group.groupDesc}</p>
+      </div>
+      <div class="ref-pills">
+        ${group.items.map(item => `
+          <a class="ref-pill" href="${item.url}" target="_blank" rel="noopener noreferrer" title="${item.desc}">
+            <span class="ref-pill__dot" style="background:${item.palette[0]}"></span>
+            ${item.name}
+            <span class="ref-pill__arrow">↗</span>
           </a>
-        </article>
-      `).join('')}
-    </div>
-  `;
+        `).join('')}
+      </div>
+    `;
+  }
   refHost.appendChild(g);
 });
+
+// 사이트 미리보기 lazy load (thum.io 무료 스크린샷 서비스)
+const shotObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    const el = entry.target;
+    if (el.dataset.loaded === 'true') return;
+    el.dataset.loaded = 'true';
+    const url = el.dataset.url;
+    const palette = JSON.parse(el.dataset.fallbackPalette || '[]');
+    const img = new Image();
+    img.alt = '';
+    img.loading = 'lazy';
+    img.onerror = () => {
+      el.classList.add('ref-card__shot--fallback');
+      el.style.background = `linear-gradient(135deg, ${palette[0] || '#000'} 0%, ${palette[1] || '#888'} 60%, ${palette[2] || '#fff'} 100%)`;
+    };
+    img.onload = () => el.classList.add('ref-card__shot--loaded');
+    img.src = `https://image.thum.io/get/width/720/crop/400/noanimate/${encodeURIComponent(url)}`;
+    el.appendChild(img);
+    shotObserver.unobserve(el);
+  });
+}, { rootMargin: '300px' });
+document.querySelectorAll('.ref-card__shot').forEach(el => shotObserver.observe(el));
 
 // ── 모달 ──
 const modal = document.getElementById('modal');
