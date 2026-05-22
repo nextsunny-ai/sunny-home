@@ -1,0 +1,39 @@
+다음 디자인 가이드를 따라 기술 개발 기획서 PPT 5장을 HTML로 만들어 줘.
+
+가이드 = Project Knowledge에 업로드된 "Tech Spec" 디자인 가이드 참조.
+
+[주제]
+예: "AR-Live Experience 기술 기획서" / "모바일 앱 v1.0 Spec" / "AR/VR 프로젝트"
+
+[추가 정보 — 선택]
+- 프로젝트명 / Lead Engineer / Ship 일정 / Team 구성
+
+[데이터 — 다이어그램·코드·표 중심]
+- 시스템 아키텍처 (= 3 layer · Client → API → Data):
+  예) L3 Client: iOS · Android · WebXR · Live Event Viewer (강조)
+       L2 API: Edge Gateway (강조) · Realtime Bus · Auth
+       L1 Data: Postgres · Redis · S3 · Snowflake · ML/Vector DB
+- Tech Stack 표 (= 카테고리 · 이름 · 설명 · 버전):
+  예) CLIENT · Unity 2023 LTS · iOS·Android·XR
+       WEB · three.js + WebXR · r168
+       REALTIME · Mediasoup + WebRTC · v3
+       BACKEND · Node 22 + Fastify
+       DATA · Postgres 17 + Redis 7.4
+       INFRA · Cloudflare + AWS
+- 코드 스니펫 (= 다크 카드용):
+  예) project.config (name · platform · stack · ship · team)
+       arSession.ts (XR.request · features · connect WebSocket)
+- 로드맵 (= 3 milestone):
+  예) M1 Q2 Architecture (active) · M2 Q3 Beta (active) · M3 Q4 Public v1.0
+- 링크 (= 마무리 카드):
+  예) Repo · Docs · Demo · Contact
+
+[요구]
+- 라이트 cool 배경 + 푸른 액센트 + 다크 코드 카드 (= 좌측 푸른 보더)
+- JetBrains Mono 디스플레이 (= `build()`, `ship().success()` 함수 호출 톤)
+- 5장 = 표지 · 목차 · Architecture · Stack · Roadmap
+- 다이어그램 = HTML+CSS 박스 + 모노 화살표 (= `↓ HTTPS · WebSocket`)
+- 둥근 박스 X · 그라디언트 X · 이모지 X · 영업 톤 X
+- HTML 1파일 stacked · 1920×1080
+
+출력 = HTML 코드만.

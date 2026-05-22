@@ -1,0 +1,33 @@
+다음 디자인 가이드를 따라 투자자 IR PPT 5장을 HTML로 만들어 줘.
+
+가이드 = Project Knowledge에 업로드된 "Investor IR" 디자인 가이드 참조.
+
+[주제]
+예: "Series A 투자자 브리프" / "Q3 IR 보고"
+
+[추가 정보 — 선택]
+- 회사명 / 라운드 (Seed · Series A · B) / 청중 / 발표자
+
+[데이터 — IR의 핵심: 숫자·표·차트 중심]
+- 핵심 지표 (= 4 stat 카드용):
+  예) Revenue ARR $8.2M · Gross Margin 62% · Active Projects 12 · Runway 22mo
+- 차트 데이터 (= 6분기 ARR 추이 + 강조 1개):
+  예) Q3·25=35 / Q4·25=48 / Q1·26=62 / Q2·26=82 (강조) / Q3·26F=55 / Q4·26F=70
+- 매출 스트림 표 (= 6 stream 행):
+  예) R1 Live Touring · B2C·B2B · +52% · 38%
+       R2 Exhibition · B2C·B2G · +34% · 22%
+       R3 IP Licensing · B2B · +61% · 16%
+       (이런 식으로 6 row)
+- The Ask (= 다크 카드 강조 숫자):
+  예) $ 12M Series A
+- Use of Funds (= 라이트 카드 표):
+  예) Asia Touring $5M · 42% / Infrastructure $3.5M · 29% / Talent $2.5M · 21% / Reserve $1M · 8%
+
+[요구]
+- 라이트 배경 (= 숫자 가독성) + 푸른 액센트 + 다크 카드 = 강조용만
+- 5장 = 표지 · 목차 · Metrics · Revenue · The Ask
+- 표·차트 = HTML+CSS로 (= 외부 라이브러리 X)
+- 그라디언트 X · 이모지 X · 영업 형용사 X (= 숫자로 말함)
+- HTML 1파일 stacked · 1920×1080
+
+출력 = HTML 코드만.

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>10 — Awwwards 키네틱 타이포</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@300;400;500;700;900&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 100%; height: 100%; overflow: hidden; }
+body {
+  background: #0A0A0E;
+  color: #FFFFFF;
+  font-family: 'Archivo', 'Pretendard Variable', sans-serif;
+  aspect-ratio: 16 / 9;
+  padding: 48px 64px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  position: relative;
+  overflow: hidden;
+}
+body::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 100%, rgba(255, 95, 31, 0.18) 0%, transparent 50%),
+    radial-gradient(circle at 0% 0%, rgba(91, 196, 245, 0.12) 0%, transparent 40%);
+}
+.header, .center, .footer { position: relative; z-index: 2; }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Archivo', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+.header .left { display: flex; align-items: center; gap: 12px; }
+.header .dot {
+  width: 8px;
+  height: 8px;
+  background: #FF5F1F;
+  border-radius: 999px;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0;
+}
+.kinetic {
+  font-family: 'Archivo Black', 'Archivo', sans-serif;
+  font-weight: 900;
+  color: #FFFFFF;
+  letter-spacing: -0.06em;
+  line-height: 0.85;
+  text-align: center;
+  text-transform: uppercase;
+}
+.line-1 { font-size: 120px; }
+.line-2 {
+  font-size: 200px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 60%, rgba(255,255,255,0.3) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-top: -8px;
+}
+.line-3 {
+  font-size: 88px;
+  font-style: italic;
+  color: #FF5F1F;
+  -webkit-text-stroke: 0;
+  margin-top: 4px;
+}
+.subline {
+  margin-top: 24px;
+  font-family: 'Pretendard Variable', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.5;
+  letter-spacing: 0;
+  text-align: center;
+  max-width: 64ch;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Archivo', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer .progress {
+  display: flex;
+  gap: 6px;
+}
+.footer .bar { width: 24px; height: 2px; background: rgba(255,255,255,0.2); }
+.footer .bar.active { background: #FF5F1F; }
+</style>
+</head>
+<body>
+  <header class="header">
+    <div class="left"><span class="dot"></span>NEXTART · KINETIC</div>
+    <div>10 / Cover</div>
+  </header>
+
+  <div class="center">
+    <div class="kinetic line-1">FESTIVAL</div>
+    <div class="kinetic line-2">SOUND</div>
+    <div class="kinetic line-3">— moves people.</div>
+    <p class="subline">초대형 키네틱 타이포 · tight tracking · 풀스크린 비주얼의 임팩트 표지 양식.</p>
+  </div>
+
+  <footer class="footer">
+    <div>2026 · 05 · 22 / v1.0</div>
+    <div class="progress">
+      <div class="bar active"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </footer>
+</body>
+</html>
