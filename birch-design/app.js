@@ -226,10 +226,12 @@ REFERENCES.forEach(group => {
                 </div>
                 <div class="ref-card__top">
                   <span class="ref-card__name">${item.name}</span>
-                  <span class="ref-card__arrow">↗</span>
                 </div>
                 <p class="ref-card__desc">${item.desc}</p>
-                <span class="ref-card__url">${item.source}</span>
+                <div class="ref-card__bottom">
+                  <span class="ref-card__url">${item.source}</span>
+                  <span class="ref-card__visit-cta">사이트 방문 →</span>
+                </div>
               </div>
             </a>
           </article>
