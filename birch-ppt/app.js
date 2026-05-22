@@ -1,0 +1,289 @@
+// ===========================================
+// Birch Sound · PPT Design System
+// 6 main cards (3-col grid) + 25 reference buttons
+// ===========================================
+
+const STYLES = [
+  {
+    id: '01',
+    featured: true,
+    name: '심플 모노 + 붉은 액센트',
+    subName: 'Simple Mono Red',
+    desc: '회사 표준 보고서 톤. 붉은 액센트, hairline divider, 카드 기반.',
+    cover: 'previews/cover_01.html',
+    meta: {
+      '배경': '#FAFAFA',
+      '텍스트': '#0A0A0E',
+      '액센트': '붉은 액센트 (단색)',
+      '폰트': 'Pretendard · JetBrains Mono',
+      '레이아웃': 'hairline · card',
+      '용도': '주간보고 · 사업계획 · 데이터 리포트'
+    }
+  },
+  {
+    id: '02',
+    name: '다크 보고서',
+    subName: 'Dark Mono Report',
+    desc: '다크 배경 보고서 톤. 모노스페이스 메타 + 노란 액센트.',
+    cover: 'previews/cover_02.html',
+    meta: {
+      '배경': '#0A0A0E',
+      '텍스트': '#F5F5F7',
+      '액센트': '#FFB800 — Amber',
+      '폰트': 'Pretendard · JetBrains Mono',
+      '레이아웃': 'hairline · 모노 메타',
+      '용도': '전략 보고 · 투자자 자료'
+    }
+  },
+  {
+    id: '03',
+    name: '컬러 블록 비즈니스',
+    subName: 'Color Block Business',
+    desc: '컬러 블록 + 화살표 + 큰 영문 타이포. 피치덱 양식.',
+    cover: 'previews/cover_03.html',
+    meta: {
+      '배경': '#F5F4F0',
+      '액센트': '#FF6B1F — Orange Block',
+      '텍스트': '#15151D',
+      '폰트': 'Inter · Pretendard · JetBrains Mono',
+      '레이아웃': '컬러 블록 · 화살표 · 통계 카드',
+      '용도': '피치덱 · B2B 제안'
+    }
+  },
+  {
+    id: '04',
+    name: '시티 브랜드 라이트',
+    subName: 'City Brand Light',
+    desc: '라이트그레이 + 차콜 + 5컬러 도메인. 도시·문화 톤.',
+    cover: 'previews/cover_04.html',
+    meta: {
+      '배경': '#F2F2F4',
+      '텍스트': '#1A1A22',
+      '액센트': '5색 도메인',
+      '폰트': 'Pretendard · Space Mono',
+      '레이아웃': '미니멀 좌우 분할 · 컬러 글로우',
+      '용도': '브랜드 발표 · 페스티벌 라인업'
+    }
+  },
+  {
+    id: '05',
+    name: '다크 디지털 아트',
+    subName: 'Dark Digital Art',
+    desc: '다크 + 네온 그라디언트. Display 타이포 + 글래스 칩.',
+    cover: 'previews/cover_05.html',
+    meta: {
+      '배경': '#0A0A12',
+      '액센트': 'Neon (Purple · Mint · Pink)',
+      '텍스트': '#FFFFFF',
+      '폰트': 'Bricolage Grotesque · Pretendard',
+      '레이아웃': '풀스크린 비주얼 · 글래스 카드',
+      '용도': '아트 프로젝트 · 페스티벌 발표'
+    }
+  },
+  {
+    id: '06',
+    name: '에디토리얼 매거진',
+    subName: 'Editorial Magazine',
+    desc: '화이트 + 부드러운 컬러 카드 + Display Serif. 잡지 톤.',
+    cover: 'previews/cover_06.html',
+    meta: {
+      '배경': '#F5F4F0',
+      '텍스트': '#1A1A22',
+      '액센트': '민트 #C8E0D5 · 모브 #3E2F2F',
+      '폰트': 'Fraunces · Pretendard',
+      '레이아웃': '둥근 카드 (cover 한정) · 큰 숫자 마커',
+      '용도': '광고 협업 제안 · 아티스트 프로파일'
+    }
+  }
+];
+
+const REFERENCES = [
+  {
+    group: 'Design Systems',
+    items: [
+      { name: 'Apple HIG', desc: '벤토 그리드 · iOS·macOS 디자인 원칙.', guide: 'guides/ref_01_apple_hig.md', source: 'developer.apple.com' },
+      { name: 'Material 3', desc: 'Material You · 동적 컬러 시스템.', guide: 'guides/ref_02_material_3.md', source: 'm3.material.io' },
+      { name: 'IBM Carbon', desc: '엔터프라이즈 + 데이터 시각화 + AAA.', guide: 'guides/ref_03_ibm_carbon.md', source: 'carbondesignsystem.com' },
+      { name: 'shadcn/ui', desc: 'copy-paste 컴포넌트. React UI 표준.', guide: 'guides/ref_04_shadcn_ui.md', source: 'ui.shadcn.com' },
+      { name: 'Radix UI', desc: '헤드리스 접근성 프리미티브.', guide: 'guides/ref_05_radix_ui.md', source: 'radix-ui.com' },
+      { name: 'Vercel Geist', desc: 'Geist 폰트 + 미니멀 흑백.', guide: 'guides/ref_06_vercel_geist.md', source: 'vercel.com/design' },
+      { name: 'Linear Method', desc: '미니멀 다크 · 키보드 퍼스트.', guide: 'guides/ref_07_linear_method.md', source: 'linear.app/method' },
+      { name: 'Stripe Design', desc: '그라디언트 메시 + 마이크로 인터랙션.', guide: 'guides/ref_08_stripe_design.md', source: 'stripe.com' },
+      { name: 'Atlassian Design', desc: 'Confluence · Jira 워크 프로덕트 톤.', guide: 'guides/ref_09_atlassian_design.md', source: 'atlassian.design' },
+      { name: 'Notion', desc: '문서 톤 미니멀 + 캘리그래픽.', guide: 'guides/ref_10_notion.md', source: 'notion.so' }
+    ]
+  },
+  {
+    group: 'Slide Tools',
+    items: [
+      { name: 'Pitch', desc: '협업형 모던 슬라이드 도구.', guide: 'guides/ref_11_pitch.md', source: 'pitch.com' },
+      { name: 'Gamma', desc: 'AI 슬라이드 · 웹페이지 자동 생성.', guide: 'guides/ref_12_gamma.md', source: 'gamma.app' },
+      { name: 'Beautiful.ai', desc: 'AI 자동 레이아웃 슬라이드.', guide: 'guides/ref_13_beautiful_ai.md', source: 'beautiful.ai' },
+      { name: 'Slidesgo', desc: '무료 PPT 템플릿.', guide: 'guides/ref_14_slidesgo.md', source: 'slidesgo.com' },
+      { name: 'Canva Presentations', desc: '다양한 PPT 템플릿 + 협업.', guide: 'guides/ref_15_canva.md', source: 'canva.com' },
+      { name: 'Pages.xyz', desc: '랜딩 페이지 디자인 영감.', guide: 'guides/ref_16_pages_xyz.md', source: 'pages.xyz' },
+      { name: 'Slidebean', desc: 'IR · 피치덱 전문.', guide: 'guides/ref_17_slidebean.md', source: 'slidebean.com' }
+    ]
+  },
+  {
+    group: 'Inspiration',
+    items: [
+      { name: 'Awwwards', desc: '웹 디자인 시상식 · 트렌드.', guide: 'guides/ref_18_awwwards.md', source: 'awwwards.com' },
+      { name: 'Dribbble', desc: 'UI · 일러스트 디자인 샷.', guide: 'guides/ref_19_dribbble.md', source: 'dribbble.com' },
+      { name: 'Behance', desc: '브랜딩 · 에디토리얼 · 풀 프로젝트.', guide: 'guides/ref_20_behance.md', source: 'behance.net' },
+      { name: 'Mobbin', desc: '모바일 앱 UI 패턴 라이브러리.', guide: 'guides/ref_21_mobbin.md', source: 'mobbin.com' },
+      { name: 'Land-book', desc: '랜딩 페이지 큐레이션.', guide: 'guides/ref_22_land_book.md', source: 'land-book.com' },
+      { name: 'SiteInspire', desc: '엄선된 웹 디자인 갤러리.', guide: 'guides/ref_23_siteinspire.md', source: 'siteinspire.com' },
+      { name: 'Godly', desc: '극상위 웹 디자인 큐레이션.', guide: 'guides/ref_24_godly.md', source: 'godly.website' },
+      { name: 'Pinterest · Presentation', desc: 'PPT · 키비주얼 보드 검색.', guide: 'guides/ref_25_pinterest_presentation.md', source: 'pinterest.com' }
+    ]
+  }
+];
+
+// ── 카드 그리드 렌더링 ──
+const stylesHost = document.getElementById('styles-host');
+STYLES.forEach(s => {
+  const btn = document.createElement('button');
+  btn.className = 'style-card';
+  btn.type = 'button';
+  btn.dataset.id = s.id;
+  btn.innerHTML = `
+    <span class="style-card__chip ${s.featured ? 'featured' : ''}">${s.id} · ${s.subName}</span>
+    <div class="style-card__preview is-loading" data-cover="${s.cover}"></div>
+    <div class="style-card__body">
+      <div class="style-card__mark ${s.featured ? 'featured' : ''}">${s.id}</div>
+      <div class="style-card__text">
+        <div class="style-card__name">${s.name}</div>
+        <div class="style-card__desc">${s.desc}</div>
+      </div>
+    </div>
+  `;
+  btn.addEventListener('click', () => openModal(s));
+  stylesHost.appendChild(btn);
+});
+
+// ── 미리보기 lazy load + scale ──
+const previewObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    const el = entry.target;
+    if (el.dataset.loaded === 'true') return;
+    el.dataset.loaded = 'true';
+    const iframe = document.createElement('iframe');
+    iframe.src = el.dataset.cover;
+    iframe.loading = 'lazy';
+    iframe.tabIndex = -1;
+    iframe.setAttribute('aria-hidden', 'true');
+    iframe.addEventListener('load', () => el.classList.remove('is-loading'));
+    el.appendChild(iframe);
+    previewObserver.unobserve(el);
+  });
+}, { rootMargin: '200px' });
+document.querySelectorAll('.style-card__preview').forEach(el => previewObserver.observe(el));
+
+const scaleObserver = new ResizeObserver(entries => {
+  entries.forEach(entry => {
+    const iframe = entry.target.querySelector('iframe');
+    if (!iframe) return;
+    iframe.style.transform = `scale(${entry.contentRect.width / 1920})`;
+  });
+});
+document.querySelectorAll('.style-card__preview').forEach(el => scaleObserver.observe(el));
+
+// ── 글로벌 레퍼런스 = 작은 버튼 ──
+const refHost = document.getElementById('references-host');
+REFERENCES.forEach(group => {
+  const g = document.createElement('div');
+  g.className = 'ref-group';
+  g.innerHTML = `
+    <div class="ref-group__head">
+      <div class="ref-group__left">
+        <h3 class="ref-group__title">${group.group}</h3>
+        <span class="ref-group__count">${String(group.items.length).padStart(2, '0')} guides</span>
+      </div>
+    </div>
+    <div class="ref-grid">
+      ${group.items.map(item => `
+        <a class="ref-card" href="${item.guide}" download>
+          <div class="ref-card__top">
+            <span class="ref-card__name">${item.name}</span>
+            <span class="ref-card__arrow">↓</span>
+          </div>
+          <p class="ref-card__desc">${item.desc}</p>
+          <span class="ref-card__url">${item.source}</span>
+        </a>
+      `).join('')}
+    </div>
+  `;
+  refHost.appendChild(g);
+});
+
+// ── 모달 ──
+const modal = document.getElementById('modal');
+const modalClose = document.getElementById('modal-close');
+const modalIndex = document.getElementById('modal-index');
+const modalTitle = document.getElementById('modal-title');
+const modalDesc = document.getElementById('modal-desc');
+const modalMeta = document.getElementById('modal-meta');
+const modalFrame = document.getElementById('modal-frame');
+const btnDownload = document.getElementById('btn-download');
+const btnCopyPrompt = document.getElementById('btn-copy-prompt');
+
+let currentStyle = null;
+
+function openModal(s) {
+  currentStyle = s;
+  modalIndex.textContent = `${s.id} / 06 · ${s.subName}`;
+  modalTitle.textContent = s.name;
+  modalDesc.textContent = s.desc;
+  modalMeta.innerHTML = Object.entries(s.meta).map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join('');
+  modalFrame.src = s.cover;
+  const slug = slugify(s.subName);
+  btnDownload.href = `guides/${s.id}_${slug}.md`;
+  btnDownload.download = `${s.id}_${slug}.md`;
+  modal.dataset.open = 'true';
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  modal.dataset.open = 'false';
+  modal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+  modalFrame.src = 'about:blank';
+}
+
+modalClose.addEventListener('click', closeModal);
+modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+document.addEventListener('keydown', (e) => {
+  if (modal.dataset.open !== 'true') return;
+  if (e.key === 'Escape') closeModal();
+});
+
+btnCopyPrompt.addEventListener('click', async () => {
+  if (!currentStyle) return;
+  try {
+    const slug = slugify(currentStyle.subName);
+    const res = await fetch(`prompts/${currentStyle.id}_${slug}.txt`);
+    if (!res.ok) throw new Error('not found');
+    const text = await res.text();
+    await navigator.clipboard.writeText(text);
+    showToast('AI 프롬프트 복사 완료');
+  } catch (err) {
+    showToast('프롬프트 파일 준비 중');
+  }
+});
+
+// ── helpers ──
+function slugify(s) {
+  return s.toLowerCase().replace(/[^\w\s-]/g, '').trim().replace(/\s+/g, '_');
+}
+
+const toast = document.getElementById('toast');
+let toastTimer;
+function showToast(msg) {
+  toast.textContent = msg;
+  toast.dataset.visible = 'true';
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { toast.dataset.visible = 'false'; }, 2400);
+}

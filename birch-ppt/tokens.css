@@ -1,0 +1,95 @@
+/* ============================================
+   버치사운드 PPT 갤러리 — 디자인 토큰
+   라이트 톤 베이스 (글로벌 룰: 라이트 톤 디폴트)
+   ============================================ */
+
+:root {
+  /* ── 배경 / 표면 ── */
+  --bg-page: #FAF8F4;          /* 따뜻한 한지 톤 화이트 (절대 #FFF X) */
+  --bg-card: #FFFFFF;
+  --bg-elevated: #FFFFFF;
+  --bg-muted: #F5F1E6;
+
+  /* ── 텍스트 ── */
+  --fg-primary: #15151D;       /* 따뜻한 다크 (절대 #000 X) */
+  --fg-secondary: #4A4A55;
+  --fg-muted: #8A8A95;
+  --fg-on-accent: #FFFFFF;
+
+  /* ── 액센트 (버치 레드 — 단색, 그라디언트 X) ── */
+  --accent: #FF3B30;
+  --accent-hover: #E63329;
+  --accent-soft: rgba(255, 59, 48, 0.08);
+
+  /* ── 보고서 표준 (심플 모노 + 블루) — cover_01에서 직접 사용 ── */
+  --report-bg: #FAFAFA;
+  --report-fg: #0A0A0E;
+  --report-blue: oklch(0.45 0.12 240);
+  --report-blue-soft: oklch(0.45 0.12 240 / 0.08);
+  --report-hairline: rgba(10, 10, 14, 0.08);
+
+  /* ── 갤러리 자체 액센트 (붉은) ── */
+  --brand-accent: #E63329;
+  --brand-accent-hover: #C72A20;
+  --brand-accent-soft: rgba(230, 51, 41, 0.06);
+  --card-shell: #F1F1F2;
+  --card-shell-hover: #E8E8EA;
+
+  /* ── 보더 / 헤어라인 ── */
+  --hairline: rgba(21, 21, 29, 0.08);
+  --hairline-strong: rgba(21, 21, 29, 0.16);
+
+  /* ── 간격 (4·8 grid) ── */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+
+  /* ── 타이포 ── */
+  --font-display: 'Fraunces', 'Pretendard', serif;
+  --font-body: 'Pretendard', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'D2Coding', ui-monospace, monospace;
+
+  --text-hero: clamp(2.5rem, 1.5rem + 4vw, 5rem);
+  --text-h1: clamp(2rem, 1.2rem + 2vw, 3rem);
+  --text-h2: clamp(1.5rem, 1rem + 1vw, 2rem);
+  --text-body: 1rem;
+  --text-caption: 0.875rem;
+  --text-mono: 0.75rem;
+
+  /* ── 라디우스 (4단계만) ── */
+  --radius-0: 0;
+  --radius-1: 4px;
+  --radius-2: 8px;
+  --radius-pill: 999px;
+
+  /* ── 섀도우 (4단계 시스템) ── */
+  --shadow-none: none;
+  --shadow-sm: 0 1px 2px rgba(21, 21, 29, 0.06);
+  --shadow-md: 0 4px 12px rgba(21, 21, 29, 0.08);
+  --shadow-lg: 0 16px 48px rgba(21, 21, 29, 0.12);
+
+  /* ── 모션 ── */
+  --duration-fast: 150ms;
+  --duration-normal: 200ms;
+  --duration-slow: 300ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-default: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ── 레이아웃 ── */
+  --max-width: 1320px;
+  --gutter: clamp(20px, 4vw, 48px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

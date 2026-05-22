@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Birch Sound · PPT Design System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="site-header__row">
+        <div class="site-header__brand">
+          <span class="site-header__logo"></span>
+          <span class="site-header__title">Birch Sound · PPT Design System</span>
+          <span class="site-header__sub">v1.0 · 2026-05-22</span>
+        </div>
+        <div class="site-header__meta">06 styles · 25 references</div>
+      </div>
+    </div>
+  </header>
+
+  <section class="howto">
+    <div class="container">
+      <ol class="howto__steps">
+        <li><span class="howto__num">1</span>스타일 카드 클릭</li>
+        <li><span class="howto__num">2</span>디자인 가이드 <code>.md</code> 다운로드</li>
+        <li><span class="howto__num">3</span>Claude / ChatGPT 새 프로젝트 → Project Knowledge에 업로드</li>
+        <li><span class="howto__num">4</span>프롬프트 복사 → 대화창에 주제 박고 생성</li>
+      </ol>
+    </div>
+  </section>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">회사 메인 PPT 스타일</h2>
+          <div class="section__count">06 styles</div>
+        </div>
+        <div class="card-grid" id="styles-host"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Global References</h2>
+          <div class="section__count">25 sites</div>
+        </div>
+        <div id="references-host"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span class="site-footer__meta">Birch Sound · PPT Design System v1.0 · 2026-05-22</span>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal__preview">
+        <iframe id="modal-frame" title="스타일 미리보기"></iframe>
+        <button class="modal__close" id="modal-close" aria-label="닫기">×</button>
+      </div>
+      <aside class="modal__info">
+        <div class="modal__index" id="modal-index">— / —</div>
+        <h3 class="modal__title" id="modal-title">—</h3>
+        <p class="modal__desc" id="modal-desc">—</p>
+        <dl class="modal__meta" id="modal-meta"></dl>
+        <div class="modal__actions">
+          <a class="btn btn--accent" id="btn-download" download>디자인 가이드 .md</a>
+          <button class="btn btn--secondary" id="btn-copy-prompt">AI 프롬프트 복사</button>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
