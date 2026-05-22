@@ -100,6 +100,7 @@ const STYLES = [
 const REFERENCES = [
   {
     group: 'Design Systems',
+    downloadable: true,
     items: [
       { name: 'Apple HIG', desc: '벤토 그리드 · iOS·macOS 디자인 원칙.', guide: 'guides/ref_01_apple_hig.md', source: 'developer.apple.com', url: 'https://developer.apple.com/design/human-interface-guidelines', palette: ['#000000', '#FFFFFF', '#007AFF'], style: '미니멀 · 벤토' },
       { name: 'Material 3', desc: 'Material You · 동적 컬러 시스템.', guide: 'guides/ref_02_material_3.md', source: 'm3.material.io', url: 'https://m3.material.io', palette: ['#6750A4', '#B69DF8', '#EADDFF'], style: '동적 컬러 · 라운드' },
@@ -115,6 +116,7 @@ const REFERENCES = [
   },
   {
     group: 'Slide Tools',
+    downloadable: false,
     items: [
       { name: 'Pitch', desc: '협업형 모던 슬라이드 도구.', guide: 'guides/ref_11_pitch.md', source: 'pitch.com', url: 'https://pitch.com', palette: ['#1A1A1A', '#FFFFFF', '#FF5C28'], style: '모던 · 협업' },
       { name: 'Gamma', desc: 'AI 슬라이드 · 웹페이지 자동 생성.', guide: 'guides/ref_12_gamma.md', source: 'gamma.app', url: 'https://gamma.app', palette: ['#1A1A1A', '#FF6B35', '#FFD9C2'], style: 'AI · 자동' },
@@ -127,6 +129,7 @@ const REFERENCES = [
   },
   {
     group: 'Inspiration',
+    downloadable: false,
     items: [
       { name: 'Awwwards', desc: '웹 디자인 시상식 · 트렌드.', guide: 'guides/ref_18_awwwards.md', source: 'awwwards.com', url: 'https://www.awwwards.com', palette: ['#000000', '#FFFFFF', '#FFCC00'], style: '트렌드 · 옐로우' },
       { name: 'Dribbble', desc: 'UI · 일러스트 디자인 샷.', guide: 'guides/ref_19_dribbble.md', source: 'dribbble.com', url: 'https://dribbble.com', palette: ['#EA4C89', '#0D0C22', '#FFFFFF'], style: '핑크 · 컬러풀' },
@@ -195,17 +198,18 @@ const refHost = document.getElementById('references-host');
 REFERENCES.forEach(group => {
   const g = document.createElement('div');
   g.className = 'ref-group';
+  const countLabel = group.downloadable ? 'guides' : 'sites';
   g.innerHTML = `
     <div class="ref-group__head">
       <div class="ref-group__left">
         <h3 class="ref-group__title">${group.group}</h3>
-        <span class="ref-group__count">${String(group.items.length).padStart(2, '0')} guides</span>
+        <span class="ref-group__count">${String(group.items.length).padStart(2, '0')} ${countLabel}</span>
       </div>
     </div>
     <div class="ref-grid">
       ${group.items.map(item => `
         <article class="ref-card">
-          <button class="ref-card__download" data-guide="${item.guide}" data-name="${item.name}" aria-label="${item.name} 가이드 .md 다운로드"><span class="ref-card__download-icon">↓</span><span class="ref-card__download-text">.md 다운</span></button>
+          ${group.downloadable ? `<button class="ref-card__download" data-guide="${item.guide}" data-name="${item.name}" aria-label="${item.name} 가이드 .md 다운로드"><span class="ref-card__download-icon">↓</span><span class="ref-card__download-text">.md 다운</span></button>` : ''}
           <a class="ref-card__link" href="${item.url}" target="_blank" rel="noopener noreferrer">
             <div class="ref-card__palette">
               ${item.palette.map(c => `<span class="ref-color" style="background:${c}" title="${c}"></span>`).join('')}
