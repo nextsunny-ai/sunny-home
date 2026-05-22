@@ -489,6 +489,32 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   margin-top: auto;
   padding-top: 4px;
 }
+.ref-card__palette {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--hairline);
+  margin-bottom: 12px;
+}
+.ref-color {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  border: 1px solid rgba(10, 10, 14, 0.08);
+  flex-shrink: 0;
+}
+.ref-card__style {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+  margin-left: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 /* ── 토스트 ── */
 .toast {
