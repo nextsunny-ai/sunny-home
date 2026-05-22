@@ -2,17 +2,16 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8" />
-<title>07 — Brand Intro (Company Profile) · 5 slides</title>
+<title>07 — Brand Intro (Homepage Tone) · 5 slides</title>
 <style>
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { width: 100%; }
 body {
-  background: #E8E5DC;
-  color: #1A1A22;
+  background: #050509;
+  color: #FFFFFF;
   font-family: 'Pretendard Variable', Pretendard, sans-serif;
   padding: 0; margin: 0;
 }
@@ -20,43 +19,50 @@ body {
   width: 100%;
   max-width: 1920px;
   aspect-ratio: 16 / 9;
-  background: #F5F2EB;
+  background: #0A0A0E;
   margin: 0 auto;
   padding: 64px 80px;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  position: relative;
   gap: 32px;
+  position: relative;
+  overflow: hidden;
 }
 .slide + .slide { margin-top: 24px; }
+
 .top-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .brand {
-  font-family: 'Pretendard Variable', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: -0.02em;
-  color: #1A1A22;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 .brand-mark {
-  width: 24px;
-  height: 24px;
-  border-radius: 999px;
-  background: #1A1A22;
+  width: 8px;
+  height: 8px;
+  background: #FFFFFF;
   display: inline-block;
 }
 .section-tag {
   font-family: 'JetBrains Mono', monospace;
   font-size: 11px;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.45);
   text-transform: uppercase;
-  color: rgba(26, 26, 34, 0.5);
+}
+.section-tag .bracket {
+  color: rgba(255, 255, 255, 0.3);
+  padding: 0 4px;
 }
 .bottom-bar {
   display: flex;
@@ -64,297 +70,239 @@ body {
   align-items: center;
   font-family: 'JetBrains Mono', monospace;
   font-size: 11px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(26, 26, 34, 0.55);
+  color: rgba(255, 255, 255, 0.5);
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* 표지 — 포스터형 키비주얼 + 글래스 카드 */
+/* ── 표지 ── */
 .cover-slide .middle {
-  display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  gap: 40px;
-  align-items: stretch;
-}
-.cover-slide .title-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 40px 0;
+  justify-content: center;
+  gap: 28px;
 }
-.cover-slide .eyebrow {
-  font-family: 'Fraunces', serif;
-  font-style: italic;
-  font-size: 18px;
-  color: rgba(26, 26, 34, 0.65);
-  margin-bottom: 24px;
+.cover-slide .bracket-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+}
+.cover-slide .bracket-label .b {
+  color: rgba(255, 255, 255, 0.3);
+  padding: 0 6px;
 }
 .cover-slide .title {
-  font-family: 'Fraunces', serif;
-  font-size: 96px;
-  font-weight: 500;
-  letter-spacing: -0.03em;
-  line-height: 1.0;
-  color: #1A1A22;
+  font-size: 112px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  color: #FFFFFF;
   max-width: 16ch;
 }
-.cover-slide .title em {
-  font-style: italic;
-  font-weight: 400;
-  color: rgba(26, 26, 34, 0.6);
+.cover-slide .title .dim {
+  color: rgba(255, 255, 255, 0.45);
+  font-weight: 500;
 }
 .cover-slide .subtitle {
   font-size: 18px;
-  color: rgba(26, 26, 34, 0.65);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.65);
   line-height: 1.6;
-  max-width: 48ch;
-  margin-top: 24px;
+  max-width: 56ch;
+  margin-top: 8px;
 }
-.cover-slide .poster {
-  background: linear-gradient(180deg, #2A2520 0%, #1A1A22 60%, #3A3530 100%);
-  position: relative;
-  overflow: hidden;
+.cover-slide .pills {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 40px;
+  gap: 8px;
+  margin-top: 16px;
 }
-.cover-slide .poster::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(45deg, transparent, transparent 28px, rgba(255,255,255,0.03) 28px, rgba(255,255,255,0.03) 29px);
-}
-.cover-slide .poster-tag {
+.cover-slide .pill {
   font-family: 'JetBrains Mono', monospace;
   font-size: 11px;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.6);
-  position: absolute;
-  top: 32px;
-  left: 32px;
-  z-index: 2;
-}
-.cover-slide .poster-title {
-  font-family: 'Fraunces', serif;
-  font-style: italic;
-  font-size: 48px;
-  font-weight: 400;
-  color: #FFFFFF;
-  letter-spacing: -0.02em;
-  line-height: 1.05;
-  max-width: 14ch;
-  position: relative;
+  padding: 8px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.85);
 }
 
-/* 비전·미션 */
+/* ── 비전·미션 ── */
 .vision-slide .middle {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 24px;
+  align-items: stretch;
 }
 .vision-slide .card {
-  background: #FFFFFF;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 48px 40px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-.vision-slide .card.dark {
-  background: #1A1A22;
-  color: #FFFFFF;
+.vision-slide .card.accent { border-color: rgba(255, 255, 255, 0.45); }
+.vision-slide .card-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
 }
-.vision-slide .card-tag {
-  font-family: 'Fraunces', serif;
-  font-style: italic;
-  font-size: 16px;
-  color: rgba(26, 26, 34, 0.55);
-}
-.vision-slide .card.dark .card-tag { color: rgba(255,255,255,0.6); }
+.vision-slide .card-label .b { color: rgba(255, 255, 255, 0.3); padding: 0 6px; }
 .vision-slide .card-title {
-  font-family: 'Fraunces', serif;
-  font-size: 56px;
-  font-weight: 500;
-  letter-spacing: -0.02em;
+  font-size: 52px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
   line-height: 1.0;
-  margin-top: 8px;
+  margin-top: 4px;
+  color: #FFFFFF;
 }
 .vision-slide .card-body {
   font-size: 15px;
-  color: rgba(26, 26, 34, 0.7);
+  color: rgba(255, 255, 255, 0.7);
   line-height: 1.65;
   margin-top: auto;
 }
-.vision-slide .card.dark .card-body { color: rgba(255,255,255,0.7); }
 
-/* 핵심 사업 — 3 트랙 */
+/* ── 핵심 사업 ── */
 .tracks-slide .middle {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 .tracks-slide h2 {
-  font-family: 'Fraunces', serif;
   font-size: 56px;
-  font-weight: 500;
-  letter-spacing: -0.02em;
+  font-weight: 700;
+  letter-spacing: -0.025em;
   line-height: 1.0;
 }
-.tracks-slide h2 em { font-style: italic; color: rgba(26, 26, 34, 0.55); }
+.tracks-slide h2 .dim { color: rgba(255, 255, 255, 0.45); font-weight: 500; }
 .tracks-slide .tracks {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 .tracks-slide .track {
-  background: #FFFFFF;
-  padding: 32px 28px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 28px 24px;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  min-height: 240px;
+  min-height: 220px;
 }
 .tracks-slide .track-num {
   font-family: 'JetBrains Mono', monospace;
   font-size: 11px;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: rgba(26, 26, 34, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
+.tracks-slide .track-num .b { color: rgba(255, 255, 255, 0.3); padding: 0 4px; }
 .tracks-slide .track-title {
-  font-family: 'Fraunces', serif;
-  font-size: 30px;
-  font-weight: 500;
-  letter-spacing: -0.01em;
-  line-height: 1.1;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.15;
+  color: #FFFFFF;
 }
 .tracks-slide .track-desc {
   font-size: 13px;
-  color: rgba(26, 26, 34, 0.65);
-  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.6;
   margin-top: auto;
 }
 
-/* 팀 */
+/* ── 팀 ── */
 .team-slide .middle {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 .team-slide h2 {
-  font-family: 'Fraunces', serif;
   font-size: 56px;
-  font-weight: 500;
-  letter-spacing: -0.02em;
+  font-weight: 700;
+  letter-spacing: -0.025em;
 }
-.team-slide h2 em { font-style: italic; color: rgba(26, 26, 34, 0.55); }
+.team-slide h2 .dim { color: rgba(255, 255, 255, 0.45); font-weight: 500; }
 .team-slide .members {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
 .team-slide .member {
-  background: #FFFFFF;
-  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 24px 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  min-height: 220px;
 }
 .team-slide .portrait {
   aspect-ratio: 1;
-  background: linear-gradient(135deg, #D7D2C5 0%, #B8B2A0 100%);
+  background: rgba(255, 255, 255, 0.06);
   margin-bottom: 8px;
   position: relative;
+  overflow: hidden;
 }
 .team-slide .portrait::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: repeating-linear-gradient(45deg, transparent, transparent 14px, rgba(0,0,0,0.04) 14px, rgba(0,0,0,0.04) 15px);
+  background: repeating-linear-gradient(45deg, transparent, transparent 12px, rgba(255,255,255,0.04) 12px, rgba(255,255,255,0.04) 13px);
 }
-.team-slide .name {
-  font-family: 'Fraunces', serif;
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: -0.01em;
-}
+.team-slide .name { font-size: 18px; font-weight: 700; letter-spacing: -0.01em; color: #FFFFFF; }
 .team-slide .role {
   font-family: 'JetBrains Mono', monospace;
   font-size: 10.5px;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: rgba(26, 26, 34, 0.55);
+  color: rgba(255, 255, 255, 0.5);
 }
 
-/* 마무리 */
+/* ── 마무리 ── */
 .closing-slide .middle {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 40px;
-}
-.closing-slide .closing-card {
-  background: #1A1A22;
-  color: #FFFFFF;
-  padding: 56px 48px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  position: relative;
-  overflow: hidden;
-}
-.closing-slide .closing-card::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(45deg, transparent, transparent 28px, rgba(255,255,255,0.03) 28px, rgba(255,255,255,0.03) 29px);
-}
-.closing-slide .closing-eyebrow {
-  font-family: 'Fraunces', serif;
-  font-style: italic;
-  font-size: 18px;
-  color: rgba(255,255,255,0.7);
-  position: relative;
-}
-.closing-slide .closing-title {
-  font-family: 'Fraunces', serif;
-  font-size: 96px;
-  font-weight: 500;
-  letter-spacing: -0.03em;
-  line-height: 1.0;
-  position: relative;
-}
-.closing-slide .closing-title em { font-style: italic; font-weight: 400; color: rgba(255,255,255,0.65); }
-.closing-slide .contact-card {
-  background: #FFFFFF;
-  padding: 48px 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
   justify-content: center;
+  gap: 32px;
 }
-.closing-slide .contact-tag {
-  font-family: 'Fraunces', serif;
-  font-style: italic;
-  font-size: 16px;
-  color: rgba(26, 26, 34, 0.55);
+.closing-slide .closing-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+}
+.closing-slide .closing-label .b { color: rgba(255, 255, 255, 0.3); padding: 0 6px; }
+.closing-slide .closing-title {
+  font-size: 144px;
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 0.95;
+  color: #FFFFFF;
+}
+.closing-slide .closing-title .dim { color: rgba(255, 255, 255, 0.4); font-weight: 500; }
+.closing-slide .contact {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 0 56px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  width: fit-content;
+  margin-top: 16px;
 }
 .closing-slide .contact dt {
-  font-family: 'JetBrains Mono', monospace;
   font-size: 10px;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: rgba(26, 26, 34, 0.5);
-  margin-top: 16px;
-  margin-bottom: 4px;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 6px;
 }
-.closing-slide .contact dd {
-  font-family: 'Fraunces', serif;
-  font-size: 22px;
-  font-weight: 500;
-  letter-spacing: -0.01em;
-}
+.closing-slide .contact dd { color: #FFFFFF; font-size: 16px; letter-spacing: 0.04em; }
 </style>
 </head>
 <body>
@@ -362,19 +310,16 @@ body {
 <section class="slide cover-slide">
   <div class="top-bar">
     <div class="brand"><span class="brand-mark"></span>STUDIO</div>
-    <div class="section-tag">01 / Company Profile</div>
+    <div class="section-tag"><span class="bracket">[</span>01 · COMPANY<span class="bracket">]</span></div>
   </div>
   <div class="middle">
-    <div class="title-card">
-      <div>
-        <div class="eyebrow">— Built for Live Entertainment</div>
-        <h1 class="title">A new chapter<br/><em>for</em> the stage.</h1>
-      </div>
-      <p class="subtitle">콘텐츠 · 기술 · 인베스트먼트가 단 하나의 무대로 수렴하는 라이브 엔터테인먼트 스튜디오.</p>
-    </div>
-    <div class="poster">
-      <div class="poster-tag">KEY VISUAL · COMPANY</div>
-      <div class="poster-title">"We don't just<br/>present. We build."</div>
+    <div class="bracket-label"><span class="b">[</span>Built for Live Entertainment<span class="b">]</span></div>
+    <h1 class="title">Content · Tech<br/><span class="dim">Investment.</span></h1>
+    <p class="subtitle">10년의 콘텐츠, 기술, 인베스트먼트가 단 하나의 무대로 수렴한다.</p>
+    <div class="pills">
+      <span class="pill">Live Entertainment</span>
+      <span class="pill">Exhibition</span>
+      <span class="pill">Creative Direction</span>
     </div>
   </div>
   <div class="bottom-bar">
@@ -386,22 +331,22 @@ body {
 <section class="slide vision-slide">
   <div class="top-bar">
     <div class="brand"><span class="brand-mark"></span>STUDIO</div>
-    <div class="section-tag">02 / Vision · Mission</div>
+    <div class="section-tag"><span class="bracket">[</span>02 · VISION · MISSION<span class="bracket">]</span></div>
   </div>
   <div class="middle">
-    <div class="card">
-      <span class="card-tag">— Vision</span>
-      <h3 class="card-title">Connect the city, the artist, and the audience.</h3>
-      <p class="card-body">아시아를 중심으로 글로벌 아티스트, K-콘텐츠, 도시, 브랜드, 팬덤을 연결하는 차세대 라이브 엔터테인먼트 플랫폼을 구축한다.</p>
+    <div class="card accent">
+      <span class="card-label"><span class="b">[</span>01 · Vision<span class="b">]</span></span>
+      <h3 class="card-title">Connect city,<br/>artist, audience.</h3>
+      <p class="card-body">아시아 중심 + 글로벌 아티스트 · K-콘텐츠 · 도시 · 브랜드 · 팬덤 = 차세대 라이브 엔터테인먼트 플랫폼.</p>
     </div>
-    <div class="card dark">
-      <span class="card-tag">— Mission</span>
+    <div class="card">
+      <span class="card-label"><span class="b">[</span>02 · Mission<span class="b">]</span></span>
       <h3 class="card-title">Live as a<br/>cultural asset.</h3>
-      <p class="card-body">공연과 전시를 일회성 이벤트가 아닌, 지속 가능한 문화 경험이자 확장 가능한 콘텐츠 자산으로 만든다.</p>
+      <p class="card-body">공연 + 전시 = 일회성 이벤트 X · 지속 가능한 문화 경험 + 확장 가능한 콘텐츠 자산.</p>
     </div>
   </div>
   <div class="bottom-bar">
-    <span>STUDIO · COMPANY PROFILE</span>
+    <span>STUDIO · VISION · MISSION</span>
     <span>02 / 12</span>
   </div>
 </section>
@@ -409,25 +354,25 @@ body {
 <section class="slide tracks-slide">
   <div class="top-bar">
     <div class="brand"><span class="brand-mark"></span>STUDIO</div>
-    <div class="section-tag">03 / Core Business</div>
+    <div class="section-tag"><span class="bracket">[</span>03 · CORE BUSINESS<span class="bracket">]</span></div>
   </div>
   <div class="middle">
-    <h2>Three tracks, <em>one stage.</em></h2>
+    <h2>Three tracks, <span class="dim">one stage.</span></h2>
     <div class="tracks">
       <div class="track">
-        <span class="track-num">TRACK 01</span>
-        <h3 class="track-title">Live Entertainment <em>&amp; Touring</em></h3>
+        <span class="track-num"><span class="b">[</span>TRACK 01<span class="b">]</span></span>
+        <h3 class="track-title">Live Entertainment · Touring</h3>
         <p class="track-desc">글로벌 아티스트 공연 · K-pop 투어 · 페스티벌 · 도시형 문화 이벤트.</p>
       </div>
       <div class="track">
-        <span class="track-num">TRACK 02</span>
-        <h3 class="track-title">Exhibition <em>&amp; Immersive</em></h3>
+        <span class="track-num"><span class="b">[</span>TRACK 02<span class="b">]</span></span>
+        <h3 class="track-title">Exhibition · Immersive</h3>
         <p class="track-desc">전시 · 공간형 콘텐츠 · 미디어아트 · 체험형 문화 프로젝트.</p>
       </div>
       <div class="track">
-        <span class="track-num">TRACK 03</span>
-        <h3 class="track-title">Creative <em>Direction</em></h3>
-        <p class="track-desc">공연 콘셉트 기획 · 무대 비주얼 · 미디어아트 · 생성형 AI 기반 시각 경험.</p>
+        <span class="track-num"><span class="b">[</span>TRACK 03<span class="b">]</span></span>
+        <h3 class="track-title">Creative Direction</h3>
+        <p class="track-desc">공연 콘셉트 · 무대 비주얼 · 미디어아트 · 생성형 AI 시각 경험.</p>
       </div>
     </div>
   </div>
@@ -440,10 +385,10 @@ body {
 <section class="slide team-slide">
   <div class="top-bar">
     <div class="brand"><span class="brand-mark"></span>STUDIO</div>
-    <div class="section-tag">04 / Leadership</div>
+    <div class="section-tag"><span class="bracket">[</span>04 · LEADERSHIP<span class="bracket">]</span></div>
   </div>
   <div class="middle">
-    <h2>The people <em>behind it.</em></h2>
+    <h2>The people <span class="dim">behind it.</span></h2>
     <div class="members">
       <div class="member">
         <div class="portrait"></div>
@@ -476,21 +421,16 @@ body {
 <section class="slide closing-slide">
   <div class="top-bar">
     <div class="brand"><span class="brand-mark"></span>STUDIO</div>
-    <div class="section-tag">05 / Get in Touch</div>
+    <div class="section-tag"><span class="bracket">[</span>05 · GET IN TOUCH<span class="bracket">]</span></div>
   </div>
   <div class="middle">
-    <div class="closing-card">
-      <span class="closing-eyebrow">— Until next chapter</span>
-      <h2 class="closing-title">Let's build the <em>next stage.</em></h2>
-    </div>
-    <div class="contact-card">
-      <span class="contact-tag">— Get in touch</span>
-      <dl class="contact">
-        <dt>Email</dt><dd>hello@studio.com</dd>
-        <dt>Web</dt><dd>studio.com</dd>
-        <dt>Date</dt><dd>2026 · 05 · 22</dd>
-      </dl>
-    </div>
+    <div class="closing-label"><span class="b">[</span>Until next chapter<span class="b">]</span></div>
+    <h2 class="closing-title">Let's build the<br/><span class="dim">next stage.</span></h2>
+    <dl class="contact">
+      <div><dt>Email</dt><dd>hello@studio.com</dd></div>
+      <div><dt>Web</dt><dd>studio.com</dd></div>
+      <div><dt>Date</dt><dd>2026 · 05 · 22</dd></div>
+    </dl>
   </div>
   <div class="bottom-bar">
     <span>© 2026 STUDIO · END</span>
