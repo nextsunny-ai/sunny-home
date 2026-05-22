@@ -94,6 +94,51 @@ const STYLES = [
       '레이아웃': '둥근 카드 (cover 한정) · 큰 숫자 마커',
       '용도': '광고 협업 제안 · 아티스트 프로파일'
     }
+  },
+  {
+    id: '07',
+    name: '회사 소개 (홈페이지 톤)',
+    subName: 'Brand Intro · Homepage Tone',
+    desc: '다크 + 브래킷 라벨 + 미니멀 모던. birchsound.net 홈페이지 톤.',
+    cover: 'previews/cover_07_brand_intro.html',
+    meta: {
+      '배경': '#0A0A0E',
+      '텍스트': '#FFFFFF',
+      '액센트': '브래킷 라벨 [ · ]',
+      '폰트': 'Pretendard · JetBrains Mono',
+      '레이아웃': '다크 + 카드 보더 1px · 모노 라벨',
+      '용도': '회사 소개 · 외부 프로필 · 브랜드 자료'
+    }
+  },
+  {
+    id: '08',
+    name: '투자자 IR (라이트)',
+    subName: 'Investor IR · Light',
+    desc: '라이트 + 숫자·차트 중심 + 푸른 액센트. 정보 밀도 높음.',
+    cover: 'previews/cover_08_investor_ir.html',
+    meta: {
+      '배경': '#FFFFFF',
+      '텍스트': '#0A0A0E',
+      '액센트': '#1A4FD9 (Investor Blue)',
+      '폰트': 'Pretendard · JetBrains Mono',
+      '레이아웃': '라이트 + 다크 강조 카드 · 6 매출 스트림 표',
+      '용도': 'IR · Series A · 투자자 자료'
+    }
+  },
+  {
+    id: '09',
+    name: '기술 개발 기획서',
+    subName: 'Tech Spec · AR/VR · App',
+    desc: '라이트 + 푸른 액센트 + 다이어그램·코드 박스. AR/VR·앱 개발.',
+    cover: 'previews/cover_09_tech_spec.html',
+    meta: {
+      '배경': '#FAFBFC',
+      '텍스트': '#0A0A0E',
+      '액센트': '#1A6BFF (Tech Blue)',
+      '폰트': 'JetBrains Mono · Pretendard',
+      '레이아웃': '3-layer 아키텍처 다이어그램 · 다크 코드 카드',
+      '용도': 'AR/VR · 앱 개발 기획서 · 기술 명세'
+    }
   }
 ];
 
@@ -364,10 +409,18 @@ document.addEventListener('click', async (e) => {
 
 async function downloadMd(path, filename, displayName) {
   try {
-    const res = await fetch(path);
-    if (!res.ok) throw new Error('not found');
-    const text = await res.text();
-    const blob = new Blob([text], { type: 'text/markdown;charset=utf-8' });
+    // 공통 규칙 + 스타일 가이드 결합 다운로드
+    const [rulesRes, guideRes] = await Promise.all([
+      fetch('guides/00_AI_규칙.md'),
+      fetch(path)
+    ]);
+    if (!guideRes.ok) throw new Error('guide not found');
+    const guideText = await guideRes.text();
+    const rulesText = rulesRes.ok ? await rulesRes.text() : '';
+    const combined = rulesText
+      ? `${rulesText}\n\n---\n\n${guideText}`
+      : guideText;
+    const blob = new Blob([combined], { type: 'text/markdown;charset=utf-8' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
@@ -376,7 +429,7 @@ async function downloadMd(path, filename, displayName) {
     a.click();
     document.body.removeChild(a);
     setTimeout(() => URL.revokeObjectURL(url), 1000);
-    showToast(`${displayName} 가이드 다운로드 완료`);
+    showToast(`${displayName} 가이드 다운로드 완료 (= 공통 규칙 포함)`);
   } catch (err) {
     showToast('가이드 파일 준비 중');
   }

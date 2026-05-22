@@ -1,0 +1,24 @@
+다음 디자인 가이드를 따라 회사 소개 PPT 5장을 HTML로 만들어 줘.
+
+가이드 = Project Knowledge에 업로드된 "Brand Intro" 디자인 가이드 참조.
+
+[주제]
+회사 공식 프로필 · 외부 소개 자료
+
+[추가 정보 — 선택]
+- 회사명 / 비전 / 미션 / 핵심 사업 (= 트랙 3개) / 리더십 4명 / 연락처
+
+[데이터 — 차트·표·다이어그램에 들어갈 자료]
+- 트랙 3개 (= 회사 핵심 사업): 예) Live Touring · Exhibition · Creative Direction
+- 팀 4명 (= 이름·역할): 예) CEO · A&R · Touring Lead · Creative Director
+- 핵심 지표 (= 표지 또는 마무리 강조용): 예) 25 years · 500+ shows · 14 countries
+- 다이어그램 (= 사업 구조·관계도): 예) "Content · Tech · Investment → One Stage"
+
+[요구]
+- 크림 베이스 + Fraunces serif Display + 포스터형 다크 카드
+- 5장 = 표지 · 비전·미션 · 핵심 사업 · 팀 · 마무리
+- 표·차트·다이어그램 = HTML+CSS로
+- 둥근 카드 X · 그라디언트 X · 이모지 X · 영업 톤 X
+- HTML 1파일 stacked · 1920×1080
+
+출력 = HTML 코드만.
