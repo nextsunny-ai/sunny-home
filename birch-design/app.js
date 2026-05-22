@@ -278,7 +278,7 @@ const shotObserver = new IntersectionObserver((entries) => {
       el.style.background = `linear-gradient(135deg, ${palette[0] || '#000'} 0%, ${palette[1] || '#888'} 60%, ${palette[2] || '#fff'} 100%)`;
     };
     img.onload = () => el.classList.add('ref-card__shot--loaded');
-    img.src = `https://image.thum.io/get/width/720/crop/400/noanimate/${encodeURIComponent(url)}`;
+    img.src = `https://image.thum.io/get/width/720/crop/225/noanimate/${encodeURIComponent(url)}`;
     el.appendChild(img);
     shotObserver.unobserve(el);
   });

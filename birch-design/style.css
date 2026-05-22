@@ -443,7 +443,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 /* ── Design Systems = 큰 카드 + 사이트 미리보기 ── */
 .ref-card--featured .ref-card__shot {
   position: relative;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 5;
   background: var(--bg-muted);
   border-bottom: 1px solid var(--hairline);
   overflow: hidden;
