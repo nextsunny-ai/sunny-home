@@ -2,44 +2,51 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8" />
-<title>05 — 다크 디지털 아트</title>
+<title>05 — Dark Digital Art · 5 slides</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&display=swap');
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html, body { width: 100%; height: 100%; overflow: hidden; }
+html { width: 100%; }
 body {
-  background: #0A0A12;
+  background: #050509;
   color: #FFFFFF;
   font-family: 'Bricolage Grotesque', 'Pretendard Variable', sans-serif;
+  padding: 0; margin: 0;
+}
+.slide {
+  width: 100%;
+  max-width: 1920px;
   aspect-ratio: 16 / 9;
-  position: relative;
+  background: #0A0A12;
+  margin: 0 auto;
   padding: 56px 80px;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  position: relative;
   overflow: hidden;
 }
-body::before {
+.slide + .slide { margin-top: 24px; }
+.slide::before {
   content: '';
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 80% 30%, rgba(199, 123, 255, 0.45) 0%, transparent 45%),
-    radial-gradient(ellipse at 20% 80%, rgba(95, 234, 175, 0.35) 0%, transparent 45%),
-    radial-gradient(ellipse at 60% 90%, rgba(255, 95, 169, 0.35) 0%, transparent 40%),
-    radial-gradient(ellipse at 35% 25%, rgba(91, 196, 245, 0.25) 0%, transparent 50%);
-  filter: blur(0px);
+    radial-gradient(ellipse at 80% 30%, rgba(199, 123, 255, 0.35) 0%, transparent 45%),
+    radial-gradient(ellipse at 20% 80%, rgba(95, 234, 175, 0.28) 0%, transparent 45%),
+    radial-gradient(ellipse at 60% 90%, rgba(255, 95, 169, 0.28) 0%, transparent 40%),
+    radial-gradient(ellipse at 35% 25%, rgba(91, 196, 245, 0.2) 0%, transparent 50%);
   z-index: 0;
 }
-body::after {
+.slide::after {
   content: '';
   position: absolute;
   inset: 0;
   background-image:
-    radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px),
-    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
   background-size: 40px 40px, 80px 80px, 80px 80px;
   z-index: 1;
   pointer-events: none;
@@ -49,7 +56,8 @@ body::after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .brand {
   font-family: 'Bricolage Grotesque', sans-serif;
@@ -76,60 +84,19 @@ body::after {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5);
 }
-.middle {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 28px;
-  padding: 40px 0;
-}
-.eyebrow {
-  font-family: 'Bricolage Grotesque', sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.7);
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-.eyebrow::before {
-  content: '';
-  width: 32px;
-  height: 1px;
-  background: rgba(255,255,255,0.5);
-}
-.title {
-  font-family: 'Bricolage Grotesque', sans-serif;
-  font-size: 128px;
-  font-weight: 800;
-  line-height: 0.92;
-  letter-spacing: -0.045em;
-  color: #FFFFFF;
-}
-.title .glyph {
-  font-style: italic;
-  background: linear-gradient(135deg, #C77BFF 0%, #5FEAAF 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-.subtitle {
-  font-family: 'Pretendard Variable', sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.7);
-  line-height: 1.55;
-  max-width: 56ch;
-}
 .bottom-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid rgba(255,255,255,0.12);
-  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 16px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
 }
-.chips { display: flex; gap: 10px; }
+.chips { display: flex; gap: 10px; flex-wrap: wrap; }
 .chip {
   font-family: 'Bricolage Grotesque', sans-serif;
   font-size: 12px;
@@ -142,34 +109,390 @@ body::after {
   backdrop-filter: blur(8px);
   background: rgba(255,255,255,0.04);
 }
-.date {
+.chip.accent {
+  border-color: #C77BFF;
+  color: #FFFFFF;
+  background: rgba(199, 123, 255, 0.15);
+}
+
+/* 표지 */
+.cover-slide .middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 28px;
+  padding: 40px 0;
+}
+.cover-slide .eyebrow {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.cover-slide .eyebrow::before {
+  content: '';
+  width: 32px;
+  height: 1px;
+  background: rgba(255,255,255,0.5);
+}
+.cover-slide .title {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 128px;
+  font-weight: 800;
+  line-height: 0.92;
+  letter-spacing: -0.045em;
+  color: #FFFFFF;
+}
+.cover-slide .title .glyph {
+  font-style: italic;
+  background: linear-gradient(135deg, #C77BFF 0%, #5FEAAF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.cover-slide .subtitle {
+  font-family: 'Pretendard Variable', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.55;
+  max-width: 56ch;
+}
+
+/* 목차 */
+.toc-slide .middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  padding: 32px 0;
+}
+.toc-slide .toc-eyebrow {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 16px;
+}
+.toc-slide .toc-h {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 72px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  margin-bottom: 32px;
+  color: #FFFFFF;
+}
+.toc-slide .toc-list { display: flex; flex-direction: column; }
+.toc-slide .toc-item {
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  gap: 24px;
+  align-items: baseline;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.toc-slide .toc-num {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #C77BFF 0%, #5FEAAF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.toc-slide .toc-title {
+  font-family: 'Pretendard Variable', sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+}
+.toc-slide .toc-page {
   font-family: 'Bricolage Grotesque', sans-serif;
   font-size: 12px;
-  letter-spacing: 0.16em;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.5);
 }
+
+/* 콘텐츠 */
+.content-slide .middle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  padding: 32px 0;
+  align-items: center;
+}
+.content-slide h3 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 80px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  margin-bottom: 24px;
+  color: #FFFFFF;
+}
+.content-slide h3 .glyph {
+  font-style: italic;
+  background: linear-gradient(135deg, #C77BFF 0%, #5FEAAF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.content-slide .lead {
+  font-family: 'Pretendard Variable', sans-serif;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  max-width: 44ch;
+}
+.content-slide .visual-placeholder {
+  background: linear-gradient(135deg, rgba(199, 123, 255, 0.2) 0%, rgba(95, 234, 175, 0.2) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  aspect-ratio: 1 / 1;
+  display: grid;
+  place-items: center;
+  position: relative;
+  backdrop-filter: blur(8px);
+}
+.content-slide .visual-placeholder::before {
+  content: 'VISUAL';
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.5);
+}
+.content-slide .visual-placeholder::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(45deg, transparent, transparent 18px, rgba(255,255,255,0.04) 18px, rgba(255,255,255,0.04) 19px);
+}
+
+/* 데이터 */
+.data-slide .middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 36px;
+  padding: 32px 0;
+}
+.data-slide h3 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+}
+.data-slide .big-stat {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.data-slide .stat {
+  padding: 32px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+  position: relative;
+}
+.data-slide .stat.accent { border-color: rgba(199, 123, 255, 0.5); }
+.data-slide .stat-label {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 16px;
+}
+.data-slide .stat-value {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 88px;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  line-height: 0.9;
+  color: #FFFFFF;
+}
+.data-slide .stat.accent .stat-value {
+  background: linear-gradient(135deg, #C77BFF 0%, #5FEAAF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.data-slide .stat-meta {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 12px;
+  letter-spacing: 0.06em;
+}
+
+/* 마무리 */
+.closing-slide .middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 28px;
+  padding: 40px 0;
+}
+.closing-slide .closing-eyebrow {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.closing-slide .closing-eyebrow::before {
+  content: '';
+  width: 32px;
+  height: 1px;
+  background: linear-gradient(90deg, #C77BFF 0%, #5FEAAF 100%);
+}
+.closing-slide .closing-title {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 160px;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  line-height: 0.9;
+  color: #FFFFFF;
+}
+.closing-slide .closing-title .glyph {
+  font-style: italic;
+  background: linear-gradient(135deg, #C77BFF 0%, #5FEAAF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.closing-slide .closing-sub {
+  font-family: 'Pretendard Variable', sans-serif;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.65);
+  max-width: 50ch;
+}
+.closing-slide .chips { margin-top: 8px; }
 </style>
 </head>
 <body>
+
+<section class="slide cover-slide">
   <div class="top-bar">
     <div class="brand"><span class="brand-mark">◐</span> Studio · Digital</div>
-    <div class="section-tag">05 / Dark Digital Art</div>
+    <div class="section-tag">01 / Dark Digital Art</div>
   </div>
-
   <div class="middle">
-    <div class="eyebrow">Immersive Festival Experience</div>
+    <div class="eyebrow">Immersive Project · 2026</div>
     <h1 class="title">P<span class="glyph">o</span>rt<span class="glyph">a</span><br/>~ digit<span class="glyph">A</span>l art</h1>
     <p class="subtitle">디지털 아트 · 미디어아트 · 라이브 사운드가 결합된 다크 + 네온 비주얼 톤.</p>
   </div>
-
   <div class="bottom-bar">
     <div class="chips">
       <span class="chip">Artwork</span>
       <span class="chip">Platform</span>
       <span class="chip">3D · AI</span>
     </div>
-    <div class="date">2026 · 05 · 22</div>
+    <div>2026 · 05 · 22 / v1.0</div>
   </div>
+</section>
+
+<section class="slide toc-slide">
+  <div class="top-bar">
+    <div class="brand"><span class="brand-mark">◐</span> Studio · Digital</div>
+    <div class="section-tag">02 / Contents</div>
+  </div>
+  <div class="middle">
+    <div class="toc-eyebrow">Contents · 04 sections</div>
+    <h2 class="toc-h">목차</h2>
+    <div class="toc-list">
+      <div class="toc-item"><span class="toc-num">01</span><span class="toc-title">Concept — 작품 컨셉과 영감</span><span class="toc-page">p. 03</span></div>
+      <div class="toc-item"><span class="toc-num">02</span><span class="toc-title">Visual — 디자인 톤과 비주얼 시스템</span><span class="toc-page">p. 05</span></div>
+      <div class="toc-item"><span class="toc-num">03</span><span class="toc-title">Data — 관객·운영·임팩트 지표</span><span class="toc-page">p. 08</span></div>
+      <div class="toc-item"><span class="toc-num">04</span><span class="toc-title">Next — 협업 제안과 다음 단계</span><span class="toc-page">p. 11</span></div>
+    </div>
+  </div>
+  <div class="bottom-bar">
+    <div>00 / Contents</div>
+    <div>02 / 12</div>
+  </div>
+</section>
+
+<section class="slide content-slide">
+  <div class="top-bar">
+    <div class="brand"><span class="brand-mark">◐</span> Studio · Digital</div>
+    <div class="section-tag">03 / Concept</div>
+  </div>
+  <div class="middle">
+    <div>
+      <h3>비주얼<br/><span class="glyph">시스템</span></h3>
+      <p class="lead">네온 그라디언트 + 도트 그리드 + 글래스 칩 = 다크 베이스 위의 디지털 아트 톤. 라이브 사운드와 미디어아트가 융합되는 공간 감각.</p>
+    </div>
+    <div class="visual-placeholder"></div>
+  </div>
+  <div class="bottom-bar">
+    <div>02 / Visual</div>
+    <div>05 / 12</div>
+  </div>
+</section>
+
+<section class="slide data-slide">
+  <div class="top-bar">
+    <div class="brand"><span class="brand-mark">◐</span> Studio · Digital</div>
+    <div class="section-tag">04 / Data</div>
+  </div>
+  <div class="middle">
+    <h3>관객 · 임팩트 지표</h3>
+    <div class="big-stat">
+      <div class="stat accent">
+        <div class="stat-label">Audience</div>
+        <div class="stat-value">12K+</div>
+        <div class="stat-meta">avg per event</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Cities</div>
+        <div class="stat-value">08</div>
+        <div class="stat-meta">2026 tour</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Engagement</div>
+        <div class="stat-value">87%</div>
+        <div class="stat-meta">retention</div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-bar">
+    <div>03 / Data</div>
+    <div>08 / 12</div>
+  </div>
+</section>
+
+<section class="slide closing-slide">
+  <div class="top-bar">
+    <div class="brand"><span class="brand-mark">◐</span> Studio · Digital</div>
+    <div class="section-tag">05 / Closing</div>
+  </div>
+  <div class="middle">
+    <div class="closing-eyebrow">Collaboration · Next</div>
+    <h2 class="closing-title">Let's<br/>cre<span class="glyph">a</span>te.</h2>
+    <p class="closing-sub">디지털 아트 프로젝트 협업과 다음 단계 미팅을 회의에서 확정한다.</p>
+    <div class="chips">
+      <span class="chip accent">Reach out</span>
+      <span class="chip">name@studio.com</span>
+      <span class="chip">2026 · 05 · 22</span>
+    </div>
+  </div>
+  <div class="bottom-bar">
+    <div>End of Deck · Studio v1.0</div>
+    <div>12 / 12</div>
+  </div>
+</section>
+
 </body>
 </html>
