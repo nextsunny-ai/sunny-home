@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>09 — Tech Spec (AR/VR · App) · 5 slides</title>
+<style>
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { width: 100%; }
+body {
+  background: #ECEEF1;
+  color: #0A0A0E;
+  font-family: 'Pretendard Variable', Pretendard, sans-serif;
+  padding: 0; margin: 0;
+}
+.slide {
+  width: 100%;
+  max-width: 1920px;
+  aspect-ratio: 16 / 9;
+  background: #FAFBFC;
+  margin: 0 auto;
+  padding: 56px 80px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  position: relative;
+}
+.slide + .slide { margin-top: 24px; }
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(10, 10, 14, 0.08);
+}
+.brand {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #0A0A0E;
+}
+.brand-tag {
+  background: #0A0A0E;
+  color: #FFFFFF;
+  padding: 3px 8px;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+}
+.section-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: rgba(10, 10, 14, 0.5);
+  text-transform: uppercase;
+}
+.bottom-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 32px;
+  border-top: 1px solid rgba(10, 10, 14, 0.08);
+  padding-top: 16px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: rgba(10, 10, 14, 0.55);
+}
+.bottom-bar dt {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(10, 10, 14, 0.4);
+  margin-bottom: 4px;
+}
+.bottom-bar dd { color: #0A0A0E; font-size: 12px; }
+
+/* 표지 */
+.cover-slide .middle {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 40px;
+  align-items: end;
+  padding: 40px 0;
+}
+.cover-slide .eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #1A6BFF;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.cover-slide .eyebrow::before {
+  content: '> ';
+  font-weight: 700;
+}
+.cover-slide .title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 88px;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  line-height: 0.95;
+  color: #0A0A0E;
+}
+.cover-slide .title .blue { color: #1A6BFF; }
+.cover-slide .ko-sub {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(10, 10, 14, 0.7);
+  margin-top: 12px;
+  letter-spacing: -0.01em;
+}
+.cover-slide .subtitle {
+  font-size: 15px;
+  color: rgba(10, 10, 14, 0.6);
+  line-height: 1.65;
+  max-width: 54ch;
+  margin-top: 16px;
+}
+.cover-slide .code-card {
+  background: #0A0A0E;
+  color: #FFFFFF;
+  padding: 32px 28px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  line-height: 1.7;
+  border-left: 3px solid #1A6BFF;
+}
+.cover-slide .code-card .comment { color: #6F7681; }
+.cover-slide .code-card .key { color: #5BC4F5; }
+.cover-slide .code-card .str { color: #C6FF6F; }
+
+/* 목차 */
+.toc-slide .middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  padding: 32px 0;
+}
+.toc-slide .toc-eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(10, 10, 14, 0.55);
+}
+.toc-slide .toc-h {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 56px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  margin-bottom: 24px;
+}
+.toc-slide .toc-h .blue { color: #1A6BFF; }
+.toc-slide .toc-list { display: flex; flex-direction: column; }
+.toc-slide .toc-item {
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  gap: 24px;
+  align-items: baseline;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(10, 10, 14, 0.08);
+}
+.toc-slide .toc-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  color: #1A6BFF;
+  font-weight: 600;
+}
+.toc-slide .toc-title {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+.toc-slide .toc-title small {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(10, 10, 14, 0.5);
+  margin-left: 8px;
+  letter-spacing: 0.02em;
+}
+.toc-slide .toc-page {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: rgba(10, 10, 14, 0.4);
+}
+
+/* 아키텍처 다이어그램 */
+.arch-slide .middle {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px 0;
+}
+.arch-slide h3 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 44px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+.arch-slide h3 .blue { color: #1A6BFF; }
+.arch-slide .diagram {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+  padding: 32px;
+  background: #FFFFFF;
+  border: 1px solid rgba(10, 10, 14, 0.12);
+}
+.arch-slide .layer {
+  display: grid;
+  gap: 12px;
+}
+.arch-slide .layer-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(10, 10, 14, 0.55);
+}
+.arch-slide .layer-row {
+  display: grid;
+  gap: 12px;
+}
+.arch-slide .layer.app .layer-row { grid-template-columns: repeat(4, 1fr); }
+.arch-slide .layer.api .layer-row { grid-template-columns: repeat(3, 1fr); }
+.arch-slide .layer.infra .layer-row { grid-template-columns: repeat(5, 1fr); }
+.arch-slide .box {
+  padding: 14px 12px;
+  background: #FAFBFC;
+  border: 1px solid rgba(10, 10, 14, 0.15);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  text-align: center;
+  color: #0A0A0E;
+  letter-spacing: -0.01em;
+}
+.arch-slide .box.accent {
+  background: #1A6BFF;
+  color: #FFFFFF;
+  border-color: #1A6BFF;
+}
+.arch-slide .arrow {
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 16px;
+  color: rgba(10, 10, 14, 0.4);
+  padding: 4px 0;
+}
+
+/* 기술 스택 + 코드 */
+.stack-slide .middle {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 32px;
+  padding: 16px 0;
+  align-items: stretch;
+}
+.stack-slide h3 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  margin-bottom: 20px;
+}
+.stack-slide h3 .blue { color: #1A6BFF; }
+.stack-slide .stack-list { display: flex; flex-direction: column; gap: 12px; }
+.stack-slide .stack-row {
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(10, 10, 14, 0.08);
+  align-items: baseline;
+}
+.stack-slide .stack-cat {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #1A6BFF;
+  font-weight: 600;
+}
+.stack-slide .stack-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0A0A0E;
+}
+.stack-slide .stack-name small {
+  display: block;
+  font-size: 11px;
+  font-weight: 400;
+  color: rgba(10, 10, 14, 0.55);
+  margin-top: 2px;
+  font-family: 'JetBrains Mono', monospace;
+}
+.stack-slide .stack-ver {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: rgba(10, 10, 14, 0.5);
+}
+.stack-slide .code-card {
+  background: #0A0A0E;
+  color: #FFFFFF;
+  padding: 28px 24px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12.5px;
+  line-height: 1.7;
+  border-left: 3px solid #1A6BFF;
+  overflow: auto;
+}
+.stack-slide .code-card .comment { color: #6F7681; }
+.stack-slide .code-card .key { color: #5BC4F5; }
+.stack-slide .code-card .str { color: #C6FF6F; }
+.stack-slide .code-card .fn { color: #FFB800; }
+
+/* 마무리 — 로드맵 + 링크 */
+.closing-slide .middle {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 32px;
+  padding: 16px 0;
+}
+.closing-slide .ship-card {
+  background: #0A0A0E;
+  color: #FFFFFF;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.closing-slide .ship-eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #C6FF6F;
+}
+.closing-slide .ship-eyebrow::before { content: '> '; }
+.closing-slide .ship-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 88px;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  line-height: 0.95;
+  margin-top: 20px;
+}
+.closing-slide .ship-title .blue { color: #5BC4F5; }
+.closing-slide .roadmap {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+}
+.closing-slide .ms {
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 12px 10px;
+  color: rgba(255,255,255,0.7);
+  letter-spacing: 0.06em;
+}
+.closing-slide .ms.active { border-color: #C6FF6F; color: #C6FF6F; }
+.closing-slide .ms strong { display: block; color: #FFFFFF; font-size: 13px; margin-top: 4px; }
+.closing-slide .links-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(10, 10, 14, 0.15);
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+}
+.closing-slide .links-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(10, 10, 14, 0.55);
+}
+.closing-slide .links dt {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(10, 10, 14, 0.5);
+  margin-top: 14px;
+}
+.closing-slide .links dd {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 15px;
+  color: #1A6BFF;
+  margin-top: 4px;
+  letter-spacing: -0.01em;
+}
+</style>
+</head>
+<body>
+
+<section class="slide cover-slide">
+  <div class="top-bar">
+    <div class="brand"><span class="brand-tag">DEV</span>STUDIO · TECH</div>
+    <div class="section-tag">01 / Technical Spec</div>
+  </div>
+  <div class="middle">
+    <div>
+      <div class="eyebrow">AR/VR · App Development</div>
+      <h1 class="title">build()<br/><span class="blue">.deploy()</span></h1>
+      <p class="ko-sub">기술 개발 기획서</p>
+      <p class="subtitle">AR/VR 인터랙티브 + 모바일 앱 — 아키텍처 · 기술 스택 · 로드맵 · 검증 기준을 한 문서에 정리한다.</p>
+    </div>
+    <div class="code-card">
+<span class="comment">// project.config</span><br/>
+<span class="key">name</span>: <span class="str">"AR-Live Experience"</span>,<br/>
+<span class="key">platform</span>: [<span class="str">"iOS"</span>, <span class="str">"Android"</span>, <span class="str">"Web XR"</span>],<br/>
+<span class="key">stack</span>: <span class="str">"Unity + WebGL"</span>,<br/>
+<span class="key">ship</span>: <span class="str">"2026 · Q4"</span>,<br/>
+<span class="key">team</span>: <span class="str">"5 eng + 2 design"</span>
+    </div>
+  </div>
+  <dl class="bottom-bar">
+    <div><dt>Project</dt><dd>AR-Live</dd></div>
+    <div><dt>Lead Eng</dt><dd>Tech Lead</dd></div>
+    <div><dt>Ship</dt><dd>2026 · Q4</dd></div>
+    <div><dt>Version</dt><dd>v1.0 · 2026.05.22</dd></div>
+  </dl>
+</section>
+
+<section class="slide toc-slide">
+  <div class="top-bar">
+    <div class="brand"><span class="brand-tag">DEV</span>STUDIO · TECH</div>
+    <div class="section-tag">02 / Contents</div>
+  </div>
+  <div class="middle">
+    <div class="toc-eyebrow">Contents · 04 sections</div>
+    <h2 class="toc-h">// contents<span class="blue">[]</span></h2>
+    <div class="toc-list">
+      <div class="toc-item"><span class="toc-num">01 ›</span><span class="toc-title">Architecture <small>system · data · client</small></span><span class="toc-page">p. 03</span></div>
+      <div class="toc-item"><span class="toc-num">02 ›</span><span class="toc-title">Tech Stack <small>frameworks · SDKs · infra</small></span><span class="toc-page">p. 05</span></div>
+      <div class="toc-item"><span class="toc-num">03 ›</span><span class="toc-title">Roadmap <small>milestones · ship dates</small></span><span class="toc-page">p. 08</span></div>
+      <div class="toc-item"><span class="toc-num">04 ›</span><span class="toc-title">Risks &amp; Mitigation <small>tech · platform · perf</small></span><span class="toc-page">p. 11</span></div>
+    </div>
+  </div>
+  <dl class="bottom-bar">
+    <div><dt>Section</dt><dd>00 / Contents</dd></div>
+    <div><dt>Doc Type</dt><dd>Tech Spec</dd></div>
+    <div><dt>Review</dt><dd>Eng + Product</dd></div>
+    <div><dt>Page</dt><dd>02 / 12</dd></div>
+  </dl>
+</section>
+
+<section class="slide arch-slide">
+  <div class="top-bar">
+    <div class="brand"><span class="brand-tag">DEV</span>STUDIO · TECH</div>
+    <div class="section-tag">03 / Architecture</div>
+  </div>
+  <div class="middle">
+    <h3>System <span class="blue">architecture</span></h3>
+    <div class="diagram">
+      <div class="layer app">
+        <span class="layer-label">L3 · CLIENT</span>
+        <div class="layer-row">
+          <div class="box">iOS App</div>
+          <div class="box">Android App</div>
+          <div class="box">WebXR Browser</div>
+          <div class="box accent">Live Event Viewer</div>
+        </div>
+      </div>
+      <div class="arrow">↓ HTTPS · WebSocket · WebRTC</div>
+      <div class="layer api">
+        <span class="layer-label">L2 · API · REALTIME</span>
+        <div class="layer-row">
+          <div class="box accent">Edge Gateway</div>
+          <div class="box">Realtime Bus (WebRTC)</div>
+          <div class="box">Auth · Identity</div>
+        </div>
+      </div>
+      <div class="arrow">↓ pub/sub · queries</div>
+      <div class="layer infra">
+        <span class="layer-label">L1 · DATA · INFRA</span>
+        <div class="layer-row">
+          <div class="box">Postgres</div>
+          <div class="box">Redis Cache</div>
+          <div class="box">S3 Media</div>
+          <div class="box">Snowflake DW</div>
+          <div class="box">ML · Vector DB</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <dl class="bottom-bar">
+    <div><dt>Section</dt><dd>01 / Architecture</dd></div>
+    <div><dt>Layers</dt><dd>3 · Client → API → Data</dd></div>
+    <div><dt>Realtime</dt><dd>WebRTC · 60fps</dd></div>
+    <div><dt>Page</dt><dd>05 / 12</dd></div>
+  </dl>
+</section>
+
+<section class="slide stack-slide">
+  <div class="top-bar">
+    <div class="brand"><span class="brand-tag">DEV</span>STUDIO · TECH</div>
+    <div class="section-tag">04 / Stack &amp; SDK</div>
+  </div>
+  <div class="middle">
+    <div>
+      <h3>Tech <span class="blue">stack</span></h3>
+      <div class="stack-list">
+        <div class="stack-row"><span class="stack-cat">CLIENT</span><span class="stack-name">Unity<small>iOS · Android · cross-platform XR</small></span><span class="stack-ver">2023 LTS</span></div>
+        <div class="stack-row"><span class="stack-cat">WEB</span><span class="stack-name">three.js + WebXR<small>browser-native AR · VR</small></span><span class="stack-ver">r168 / Level 1.0</span></div>
+        <div class="stack-row"><span class="stack-cat">REALTIME</span><span class="stack-name">Mediasoup + WebRTC<small>low-latency live audio · video</small></span><span class="stack-ver">v3</span></div>
+        <div class="stack-row"><span class="stack-cat">BACKEND</span><span class="stack-name">Node 22 + Fastify<small>edge · API · auth</small></span><span class="stack-ver">latest</span></div>
+        <div class="stack-row"><span class="stack-cat">DATA</span><span class="stack-name">Postgres + Redis<small>OLTP · cache · pub/sub</small></span><span class="stack-ver">17 / 7.4</span></div>
+        <div class="stack-row"><span class="stack-cat">INFRA</span><span class="stack-name">Cloudflare + AWS<small>edge CDN + compute · storage</small></span><span class="stack-ver">prod</span></div>
+      </div>
+    </div>
+    <div class="code-card">
+<span class="comment">// arSession.ts</span><br/>
+<span class="key">export async function</span> <span class="fn">startSession</span>() {<br/>
+&nbsp;&nbsp;<span class="key">const</span> ctx = <span class="key">await</span> <span class="fn">XR</span>.<span class="fn">request</span>({<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;mode: <span class="str">'immersive-ar'</span>,<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;features: [<span class="str">'hit-test'</span>, <span class="str">'anchors'</span>]<br/>
+&nbsp;&nbsp;});<br/>
+&nbsp;&nbsp;<span class="key">await</span> <span class="fn">connect</span>(<span class="str">'wss://live.studio.com'</span>);<br/>
+&nbsp;&nbsp;<span class="key">return</span> ctx;<br/>
+}<br/><br/>
+<span class="comment">// 60fps · latency &lt; 80ms · 5G</span>
+    </div>
+  </div>
+  <dl class="bottom-bar">
+    <div><dt>Section</dt><dd>02 / Stack</dd></div>
+    <div><dt>Lang</dt><dd>TypeScript · C#</dd></div>
+    <div><dt>Test</dt><dd>Vitest · Playwright</dd></div>
+    <div><dt>Page</dt><dd>08 / 12</dd></div>
+  </dl>
+</section>
+
+<section class="slide closing-slide">
+  <div class="top-bar">
+    <div class="brand"><span class="brand-tag">DEV</span>STUDIO · TECH</div>
+    <div class="section-tag">05 / Roadmap</div>
+  </div>
+  <div class="middle">
+    <div class="ship-card">
+      <div class="ship-eyebrow">ship.<span class="blue">().success()</span></div>
+      <div>
+        <h2 class="ship-title">2026 Q4<br/><span class="blue">v1.0</span></h2>
+      </div>
+      <div class="roadmap">
+        <div class="ms active">M1 · Q2<strong>Architecture</strong></div>
+        <div class="ms active">M2 · Q3<strong>Beta + Closed Test</strong></div>
+        <div class="ms">M3 · Q4<strong>Public v1.0 Ship</strong></div>
+      </div>
+    </div>
+    <div class="links-card">
+      <span class="links-tag">— Links</span>
+      <dl class="links">
+        <dt>Repo</dt><dd>github.com/studio/ar-live</dd>
+        <dt>Docs</dt><dd>docs.studio.com/ar</dd>
+        <dt>Demo</dt><dd>ar.studio.com/demo</dd>
+        <dt>Contact</dt><dd>tech@studio.com</dd>
+      </dl>
+    </div>
+  </div>
+  <dl class="bottom-bar">
+    <div><dt>Status</dt><dd>In Development</dd></div>
+    <div><dt>Eng Team</dt><dd>5 + 2 design</dd></div>
+    <div><dt>Burn</dt><dd>$ 80K / mo</dd></div>
+    <div><dt>Page</dt><dd>12 / 12</dd></div>
+  </dl>
+</section>
+
+</body>
+</html>

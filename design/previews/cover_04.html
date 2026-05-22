@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>04 — City Brand Light · 5 slides</title>
+<style>
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { width: 100%; }
+body {
+  background: #E8E8EA;
+  color: #1A1A22;
+  font-family: 'Pretendard Variable', Pretendard, sans-serif;
+  padding: 0; margin: 0;
+}
+.slide {
+  width: 100%;
+  max-width: 1920px;
+  aspect-ratio: 16 / 9;
+  background: #F2F2F4;
+  margin: 0 auto;
+  display: grid;
+  position: relative;
+  overflow: hidden;
+}
+.slide + .slide { margin-top: 24px; }
+
+/* 표지 — 좌우 분할 */
+.cover-slide { grid-template-columns: 1fr 1fr; }
+.cover-slide .left-pane {
+  padding: 64px 64px 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cover-slide .brand {
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(26, 26, 34, 0.55);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.cover-slide .brand-square { width: 12px; height: 12px; background: #1A1A22; }
+.cover-slide .title-wrap { display: flex; flex-direction: column; gap: 20px; padding: 40px 0; }
+.cover-slide .eyebrow {
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #1A1A22;
+}
+.cover-slide .title {
+  font-size: 96px;
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+.cover-slide .subtitle {
+  font-size: 18px;
+  color: rgba(26, 26, 34, 0.65);
+  line-height: 1.55;
+  max-width: 44ch;
+}
+.cover-slide .meta-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  color: rgba(26, 26, 34, 0.55);
+}
+.cover-slide .meta-row dt {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(26, 26, 34, 0.4);
+  margin-bottom: 4px;
+}
+.cover-slide .meta-row dd { color: #1A1A22; font-size: 13px; }
+.cover-slide .right-pane {
+  position: relative;
+  background: #1A1A22;
+  overflow: hidden;
+}
+.cover-slide .right-pane::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 30% 30%, #FFB800 0%, transparent 18%),
+    radial-gradient(circle at 70% 60%, #F23A4E 0%, transparent 22%),
+    radial-gradient(circle at 45% 80%, #5BC4F5 0%, transparent 18%),
+    radial-gradient(circle at 80% 25%, #C6FF6F 0%, transparent 15%),
+    radial-gradient(circle at 20% 65%, #C77BFF 0%, transparent 16%);
+  filter: blur(50px);
+  opacity: 0.85;
+}
+.cover-slide .right-tag {
+  position: absolute;
+  top: 64px; right: 64px;
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 2;
+}
+.cover-slide .right-bottom {
+  position: absolute;
+  bottom: 56px; left: 64px; right: 64px;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: #FFFFFF;
+}
+.cover-slide .lights {
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+.cover-slide .num {
+  font-size: 72px;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+  color: #FFFFFF;
+}
+
+/* 일반 슬라이드 공통 */
+.std-slide {
+  grid-template-rows: auto 1fr auto;
+  padding: 56px 80px;
+}
+.std-slide .top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(26, 26, 34, 0.55);
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(26, 26, 34, 0.12);
+}
+.std-slide .top-left { display: flex; align-items: center; gap: 12px; }
+.std-slide .top-square { width: 10px; height: 10px; background: #1A1A22; }
+.std-slide .bottom-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+  border-top: 1px solid rgba(26, 26, 34, 0.12);
+  padding-top: 16px;
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  color: rgba(26, 26, 34, 0.55);
+}
+.std-slide .bottom-bar dt {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(26, 26, 34, 0.4);
+  margin-bottom: 4px;
+}
+.std-slide .bottom-bar dd { color: #1A1A22; font-size: 12px; }
+
+/* 목차 */
+.toc-slide .middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  padding: 32px 0;
+}
+.toc-slide .toc-eyebrow {
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(26, 26, 34, 0.55);
+  margin-bottom: 16px;
+}
+.toc-slide .toc-h {
+  font-size: 64px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  margin-bottom: 32px;
+}
+.toc-slide .toc-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+}
+.toc-slide .toc-item {
+  padding: 28px 24px;
+  border-left: 1px solid rgba(26, 26, 34, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.toc-slide .toc-item:first-child { border-left: 0; padding-left: 0; }
+.toc-slide .toc-chip {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+.toc-slide .toc-chip.c1 { background: #FFB800; }
+.toc-slide .toc-chip.c2 { background: #F23A4E; }
+.toc-slide .toc-chip.c3 { background: #5BC4F5; }
+.toc-slide .toc-chip.c4 { background: #C6FF6F; }
+.toc-slide .toc-chip.c5 { background: #C77BFF; }
+.toc-slide .toc-num {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: rgba(26, 26, 34, 0.55);
+}
+.toc-slide .toc-title {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+.toc-slide .toc-desc {
+  font-size: 13px;
+  color: rgba(26, 26, 34, 0.6);
+  line-height: 1.5;
+}
+
+/* 콘텐츠 */
+.content-slide .middle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  padding: 32px 0;
+  align-items: start;
+}
+.content-slide h3 {
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.0;
+  max-width: 14ch;
+  margin-bottom: 28px;
+}
+.content-slide .lead {
+  font-size: 17px;
+  color: rgba(26, 26, 34, 0.7);
+  line-height: 1.6;
+  max-width: 50ch;
+}
+.content-slide .domain-card {
+  background: #1A1A22;
+  color: #FFFFFF;
+  padding: 36px 28px;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.content-slide .domain-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 30% 30%, #FFB800 0%, transparent 25%),
+    radial-gradient(circle at 70% 70%, #C77BFF 0%, transparent 25%);
+  filter: blur(40px);
+  opacity: 0.8;
+}
+.content-slide .domain-card > * { position: relative; z-index: 2; }
+.content-slide .domain-tag {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 16px;
+}
+.content-slide .domain-name {
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+.content-slide .domain-desc {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.55;
+  max-width: 28ch;
+}
+.content-slide .domain-num {
+  position: absolute;
+  bottom: 28px;
+  right: 28px;
+  font-size: 88px;
+  font-weight: 900;
+  color: #FFFFFF;
+  z-index: 2;
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+}
+
+/* 데이터 */
+.data-slide .middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  padding: 32px 0;
+}
+.data-slide h3 {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+.data-slide .domain-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  border-top: 1px solid rgba(26, 26, 34, 0.12);
+  border-bottom: 1px solid rgba(26, 26, 34, 0.12);
+}
+.data-slide .domain-stat {
+  padding: 28px 20px;
+  border-right: 1px solid rgba(26, 26, 34, 0.08);
+  position: relative;
+}
+.data-slide .domain-stat:last-child { border-right: 0; }
+.data-slide .domain-stat-chip {
+  width: 14px; height: 14px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+.data-slide .domain-stat-chip.c1 { background: #FFB800; }
+.data-slide .domain-stat-chip.c2 { background: #F23A4E; }
+.data-slide .domain-stat-chip.c3 { background: #5BC4F5; }
+.data-slide .domain-stat-chip.c4 { background: #C6FF6F; }
+.data-slide .domain-stat-chip.c5 { background: #C77BFF; }
+.data-slide .domain-stat-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(26, 26, 34, 0.55);
+}
+.data-slide .domain-stat-value {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-top: 8px;
+  line-height: 1;
+}
+.data-slide .domain-stat-meta {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  color: rgba(26, 26, 34, 0.5);
+  margin-top: 8px;
+}
+
+/* 마무리 */
+.closing-slide { grid-template-columns: 1fr 1fr; }
+.closing-slide .left-pane {
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.closing-slide .closing-eyebrow {
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(26, 26, 34, 0.55);
+}
+.closing-slide .closing-title {
+  font-size: 112px;
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 0.9;
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+.closing-slide .ko-closing {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(26, 26, 34, 0.65);
+  margin-top: 16px;
+  letter-spacing: -0.01em;
+}
+.closing-slide .closing-sub {
+  font-size: 18px;
+  color: rgba(26, 26, 34, 0.6);
+  line-height: 1.55;
+  max-width: 44ch;
+  margin-top: 24px;
+}
+.closing-slide .contact {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 0 48px;
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  width: fit-content;
+  margin-top: 32px;
+}
+.closing-slide .contact dt {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(26, 26, 34, 0.4);
+  margin-bottom: 4px;
+}
+.closing-slide .contact dd { color: #1A1A22; }
+.closing-slide .right-pane {
+  position: relative;
+  background: #1A1A22;
+  overflow: hidden;
+}
+.closing-slide .right-pane::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 30% 30%, #FFB800 0%, transparent 22%),
+    radial-gradient(circle at 70% 60%, #F23A4E 0%, transparent 26%),
+    radial-gradient(circle at 45% 80%, #5BC4F5 0%, transparent 22%),
+    radial-gradient(circle at 80% 25%, #C6FF6F 0%, transparent 18%),
+    radial-gradient(circle at 20% 65%, #C77BFF 0%, transparent 20%);
+  filter: blur(60px);
+  opacity: 0.9;
+}
+.closing-slide .right-text {
+  position: absolute;
+  bottom: 64px; left: 64px;
+  z-index: 2;
+  color: #FFFFFF;
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+</style>
+</head>
+<body>
+
+<section class="slide cover-slide">
+  <section class="left-pane">
+    <div class="brand"><span class="brand-square"></span>STUDIO · CITY</div>
+    <div class="title-wrap">
+      <div class="eyebrow">2026 — Brand Direction</div>
+      <h1 class="title">도시<br/>브랜드</h1>
+      <p class="subtitle">5개 도메인 컬러 시스템 — 라이트그레이 + 차콜 베이스의 도시형 브랜드 톤.</p>
+    </div>
+    <dl class="meta-row">
+      <div><dt>Director</dt><dd>Director Name</dd></div>
+      <div><dt>Date</dt><dd>2026.05.22</dd></div>
+    </dl>
+  </section>
+  <section class="right-pane">
+    <div class="right-tag">THE FIVE LIGHTS · 5 DOMAINS</div>
+    <div class="right-bottom">
+      <div class="lights">DOMAIN 01 — 05</div>
+      <div class="num">05</div>
+    </div>
+  </section>
+</section>
+
+<section class="slide std-slide toc-slide">
+  <div class="top-bar">
+    <div class="top-left"><span class="top-square"></span>STUDIO · CITY</div>
+    <div>02 / Contents</div>
+  </div>
+  <div class="middle">
+    <div class="toc-eyebrow">Contents · 5 Domains</div>
+    <h2 class="toc-h">5 도메인 라이트</h2>
+    <div class="toc-grid">
+      <div class="toc-item"><span class="toc-chip c1"></span><span class="toc-num">DOMAIN 01</span><span class="toc-title">Sound</span><span class="toc-desc">라이브 사운드 + 음악 페스티벌 영역.</span></div>
+      <div class="toc-item"><span class="toc-chip c2"></span><span class="toc-num">DOMAIN 02</span><span class="toc-title">Light</span><span class="toc-desc">조명·미디어아트·비주얼 전시.</span></div>
+      <div class="toc-item"><span class="toc-chip c3"></span><span class="toc-num">DOMAIN 03</span><span class="toc-title">Water</span><span class="toc-desc">수변·휴식·도시 공원형 공간.</span></div>
+      <div class="toc-item"><span class="toc-chip c4"></span><span class="toc-num">DOMAIN 04</span><span class="toc-title">Earth</span><span class="toc-desc">지속가능 · 자연 · 로컬 콘텐츠.</span></div>
+      <div class="toc-item"><span class="toc-chip c5"></span><span class="toc-num">DOMAIN 05</span><span class="toc-title">Air</span><span class="toc-desc">디지털 · 가상 · 데이터 레이어.</span></div>
+    </div>
+  </div>
+  <dl class="bottom-bar">
+    <div><dt>Section</dt><dd>00 / Contents</dd></div>
+    <div><dt>Tag</dt><dd>02 / TOC</dd></div>
+    <div><dt>Page</dt><dd>02 / 12</dd></div>
+  </dl>
+</section>
+
+<section class="slide std-slide content-slide">
+  <div class="top-bar">
+    <div class="top-left"><span class="top-square"></span>STUDIO · CITY</div>
+    <div>03 / Domain 01 — Sound</div>
+  </div>
+  <div class="middle">
+    <div>
+      <h3>도메인 01<br/>Sound</h3>
+      <p class="lead">라이브 사운드 + 음악 페스티벌 — 도시의 첫 번째 라이트. 도시 공간 안에서 음악과 사운드를 통한 시간대별 경험을 설계한다.</p>
+    </div>
+    <div class="domain-card">
+      <div class="domain-tag">DOMAIN 01 / Sound</div>
+      <div class="domain-name">Sound</div>
+      <p class="domain-desc">라이브 · 페스티벌 · 음악 큐레이션 · 사운드 디자인의 통합 도메인.</p>
+      <div class="domain-num">01</div>
+    </div>
+  </div>
+  <dl class="bottom-bar">
+    <div><dt>Section</dt><dd>01 / Domain Sound</dd></div>
+    <div><dt>Tag</dt><dd>03 / Content</dd></div>
+    <div><dt>Page</dt><dd>03 / 12</dd></div>
+  </dl>
+</section>
+
+<section class="slide std-slide data-slide">
+  <div class="top-bar">
+    <div class="top-left"><span class="top-square"></span>STUDIO · CITY</div>
+    <div>08 / 5 Domain Data</div>
+  </div>
+  <div class="middle">
+    <h3>도메인별 활동 지표</h3>
+    <div class="domain-row">
+      <div class="domain-stat">
+        <span class="domain-stat-chip c1"></span>
+        <div class="domain-stat-label">Sound</div>
+        <div class="domain-stat-value">42</div>
+        <div class="domain-stat-meta">events / year</div>
+      </div>
+      <div class="domain-stat">
+        <span class="domain-stat-chip c2"></span>
+        <div class="domain-stat-label">Light</div>
+        <div class="domain-stat-value">18</div>
+        <div class="domain-stat-meta">exhibitions</div>
+      </div>
+      <div class="domain-stat">
+        <span class="domain-stat-chip c3"></span>
+        <div class="domain-stat-label">Water</div>
+        <div class="domain-stat-value">06</div>
+        <div class="domain-stat-meta">spaces</div>
+      </div>
+      <div class="domain-stat">
+        <span class="domain-stat-chip c4"></span>
+        <div class="domain-stat-label">Earth</div>
+        <div class="domain-stat-value">11</div>
+        <div class="domain-stat-meta">partners</div>
+      </div>
+      <div class="domain-stat">
+        <span class="domain-stat-chip c5"></span>
+        <div class="domain-stat-label">Air</div>
+        <div class="domain-stat-value">28</div>
+        <div class="domain-stat-meta">platforms</div>
+      </div>
+    </div>
+  </div>
+  <dl class="bottom-bar">
+    <div><dt>Section</dt><dd>04 / Data</dd></div>
+    <div><dt>Source</dt><dd>Yearly · 2026</dd></div>
+    <div><dt>Page</dt><dd>08 / 12</dd></div>
+  </dl>
+</section>
+
+<section class="slide closing-slide">
+  <section class="left-pane">
+    <div class="closing-eyebrow">The Five Lights · Q&amp;A</div>
+    <h2 class="closing-title">THE FIVE<br/>LIGHTS.</h2>
+    <p class="ko-closing">다섯 도메인 라이트 시스템</p>
+    <p class="closing-sub">5 도메인 라이트 시스템에 대한 의견과 결정 사항을 회의에서 확정한다.</p>
+    <dl class="contact">
+      <div><dt>Director</dt><dd>Director Name</dd></div>
+      <div><dt>Email</dt><dd>name@studio.com</dd></div>
+      <div><dt>Date</dt><dd>2026 · 05 · 22</dd></div>
+    </dl>
+  </section>
+  <section class="right-pane">
+    <div class="right-text">THE FIVE LIGHTS · END</div>
+  </section>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>02 — Dark Mono Report · 5 slides</title>
+<style>
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { width: 100%; }
+body {
+  background: #050509;
+  color: #F5F5F7;
+  font-family: 'Pretendard Variable', Pretendard, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.slide {
+  width: 100%;
+  max-width: 1920px;
+  aspect-ratio: 16 / 9;
+  background: #0A0A0E;
+  margin: 0 auto;
+  padding: 56px 80px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  position: relative;
+}
+.slide + .slide { margin-top: 24px; }
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding-bottom: 14px;
+}
+.brand {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.85);
+}
+.brand .dot {
+  width: 8px;
+  height: 8px;
+  background: #FFB800;
+  display: inline-block;
+}
+.section-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+}
+.bottom-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 18px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.55);
+}
+.bottom-bar dt {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 4px;
+}
+.bottom-bar dd { color: #FFFFFF; }
+
+/* ── 표지 ── */
+.cover-slide .middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  padding: 40px 0;
+}
+.cover-slide .eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  letter-spacing: 0.16em;
+  color: #FFB800;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.cover-slide .eyebrow::before {
+  content: '';
+  width: 40px;
+  height: 1px;
+  background: #FFB800;
+}
+.cover-slide .display {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 144px;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  line-height: 0.95;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.cover-slide .display .amber { color: #FFB800; }
+.cover-slide .ko-sub {
+  font-family: 'Pretendard Variable', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 4px;
+}
+.cover-slide .subtitle {
+  font-family: 'Pretendard Variable', sans-serif;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.6;
+  max-width: 64ch;
+  margin-top: 8px;
+}
+
+/* ── 목차 ── */
+.toc-slide .middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  padding: 32px 0;
+}
+.toc-slide .toc-eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 16px;
+}
+.toc-slide .toc-h {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 80px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  margin-bottom: 32px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.toc-slide .toc-h .amber { color: #FFB800; }
+.toc-slide .toc-list { display: flex; flex-direction: column; }
+.toc-slide .toc-item {
+  display: grid;
+  grid-template-columns: 60px 1fr auto;
+  gap: 24px;
+  align-items: baseline;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.toc-slide .toc-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  color: #FFB800;
+  font-weight: 600;
+}
+.toc-slide .toc-title {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+}
+.toc-slide .toc-page {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* ── 콘텐츠 ── */
+.content-slide .middle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  padding: 32px 0;
+  align-items: start;
+}
+.content-slide h3 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 64px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.0;
+  max-width: 12ch;
+  margin-bottom: 16px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.content-slide h3 .amber { color: #FFB800; }
+.content-slide .ko-h3 {
+  font-family: 'Pretendard Variable', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 24px;
+  letter-spacing: -0.01em;
+}
+.content-slide .lead {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+.content-slide .bullets { display: flex; flex-direction: column; gap: 14px; }
+.content-slide .bullet {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 16px;
+  align-items: baseline;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 15px;
+}
+.content-slide .bullet-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: #FFB800;
+  font-weight: 600;
+}
+.content-slide .bullet strong { font-weight: 600; color: #FFFFFF; }
+.content-slide .bullet small {
+  display: block;
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.55);
+  margin-top: 4px;
+  line-height: 1.5;
+}
+
+/* ── 데이터 ── */
+.data-slide .middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 36px;
+  padding: 32px 0;
+}
+.data-slide .data-h {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 80px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  max-width: 16ch;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.data-slide .data-h .amber { color: #FFB800; }
+.data-slide .ko-data {
+  font-family: 'Pretendard Variable', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 8px;
+  letter-spacing: -0.01em;
+}
+.data-slide .stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+.data-slide .stat {
+  padding: 32px 24px;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+.data-slide .stat:last-child { border-right: 0; }
+.data-slide .stat-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 12px;
+}
+.data-slide .stat-value {
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: #FFFFFF;
+}
+.data-slide .stat-delta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: #FFB800;
+  margin-top: 8px;
+}
+.data-slide .chart {
+  display: grid;
+  grid-template-columns: 60px repeat(6, 1fr);
+  gap: 14px;
+  align-items: end;
+  height: 180px;
+}
+.data-slide .chart-axis {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.data-slide .bar-wrap { display: flex; flex-direction: column; gap: 8px; height: 100%; }
+.data-slide .bar {
+  background: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  align-self: end;
+}
+.data-slide .bar.accent { background: #FFB800; }
+.data-slide .bar-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* ── 마무리 ── */
+.closing-slide .middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 28px;
+  padding: 40px 0;
+}
+.closing-slide .closing-eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  letter-spacing: 0.16em;
+  color: #FFB800;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.closing-slide .closing-eyebrow::before {
+  content: '';
+  width: 40px;
+  height: 1px;
+  background: #FFB800;
+}
+.closing-slide .closing-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 168px;
+  font-weight: 600;
+  letter-spacing: -0.06em;
+  line-height: 0.9;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.closing-slide .closing-title .amber { color: #FFB800; }
+.closing-slide .ko-closing {
+  font-family: 'Pretendard Variable', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 8px;
+}
+.closing-slide .closing-sub {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 50ch;
+  line-height: 1.55;
+}
+.closing-slide .contact {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 0 48px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  width: fit-content;
+}
+.closing-slide .contact dt {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 4px;
+}
+.closing-slide .contact dd { color: #FFFFFF; }
+</style>
+</head>
+<body>
+
+<section class="slide cover-slide">
+  <div class="top-bar">
+    <div class="brand"><span class="dot"></span>STUDIO · STRATEGY</div>
+    <div class="section-tag">02 / Dark Mono Report</div>
+  </div>
+  <div class="middle">
+    <div class="eyebrow">Strategy Brief · 2026 Q3</div>
+    <h1 class="display">STRATEGIC<br/><span class="amber">DIRECTION.</span></h1>
+    <p class="ko-sub">전략 방향 제안</p>
+    <p class="subtitle">시장 구조 변화 분석 · 신규 사업 기회 · 다음 단계 의사결정 요청 — 모노스페이스 디스플레이 톤의 전략 브리프.</p>
+  </div>
+  <dl class="bottom-bar">
+    <div><dt>Author</dt><dd>Author Name</dd></div>
+    <div><dt>Audience</dt><dd>경영진 / 투자자</dd></div>
+    <div><dt>Date · Version</dt><dd>2026 · 05 · 22 / v1.0</dd></div>
+  </dl>
+</section>
+
+<section class="slide toc-slide">
+  <div class="top-bar">
+    <div class="brand"><span class="dot"></span>STUDIO · STRATEGY</div>
+    <div class="section-tag">02 / Contents</div>
+  </div>
+  <div class="middle">
+    <div class="toc-eyebrow">Contents · 04 sections</div>
+    <h2 class="toc-h">CON<span class="amber">TENTS</span>.</h2>
+    <div class="toc-list">
+      <div class="toc-item"><span class="toc-num">01</span><span class="toc-title">시장 구조 — 핵심 변화 3가지</span><span class="toc-page">p. 03</span></div>
+      <div class="toc-item"><span class="toc-num">02</span><span class="toc-title">경쟁 환경 — 포지션 매트릭스</span><span class="toc-page">p. 05</span></div>
+      <div class="toc-item"><span class="toc-num">03</span><span class="toc-title">신규 기회 — 4개 트랙 평가</span><span class="toc-page">p. 08</span></div>
+      <div class="toc-item"><span class="toc-num">04</span><span class="toc-title">의사결정 요청 — 우선순위 + 자원</span><span class="toc-page">p. 11</span></div>
+    </div>
+  </div>
+  <dl class="bottom-bar">
+    <div><dt>Section</dt><dd>00 / Contents</dd></div>
+    <div><dt>Audience</dt><dd>Executive · Investors</dd></div>
+    <div><dt>Page</dt><dd>02 / 12</dd></div>
+  </dl>
+</section>
+
+<section class="slide content-slide">
+  <div class="top-bar">
+    <div class="brand"><span class="dot"></span>STUDIO · STRATEGY</div>
+    <div class="section-tag">03 / Section 01 — Market</div>
+  </div>
+  <div class="middle">
+    <div>
+      <h3>MARKET<br/><span class="amber">SHIFT.</span></h3>
+      <p class="ko-h3">시장 구조 — 핵심 변화 3가지</p>
+      <p class="lead">2026년 기준 세 개의 구조 변화가 동시 발생. 각 변화는 기존 사업 모델의 가정을 재검토하게 한다.</p>
+    </div>
+    <div class="bullets">
+      <div class="bullet">
+        <span class="bullet-num">01</span>
+        <span>
+          <strong>수익 구조 분화</strong>
+          <small>단일 제품 · 단일 채널 모델이 약화. 다층 수익 모델이 시장 평균을 상회.</small>
+        </span>
+      </div>
+      <div class="bullet">
+        <span class="bullet-num">02</span>
+        <span>
+          <strong>파트너십 비중 증가</strong>
+          <small>자체 운영보다 협업·라이센싱 비중이 매출의 30%를 넘는 사례 증가.</small>
+        </span>
+      </div>
+      <div class="bullet">
+        <span class="bullet-num">03</span>
+        <span>
+          <strong>의사결정 사이클 단축</strong>
+          <small>분기 단위에서 월간으로 — 데이터 인프라가 의사결정 속도를 결정.</small>
+        </span>
+      </div>
+      <div class="bullet">
+        <span class="bullet-num">04</span>
+        <span>
+          <strong>리스크 가시화</strong>
+          <small>두 개 영역에서 즉각 대응이 필요. 다음 페이지 분석 참조.</small>
+        </span>
+      </div>
+    </div>
+  </div>
+  <dl class="bottom-bar">
+    <div><dt>Section</dt><dd>01 / Market</dd></div>
+    <div><dt>Reviewed</dt><dd>Strategy Team</dd></div>
+    <div><dt>Page</dt><dd>05 / 12</dd></div>
+  </dl>
+</section>
+
+<section class="slide data-slide">
+  <div class="top-bar">
+    <div class="brand"><span class="dot"></span>STUDIO · STRATEGY</div>
+    <div class="section-tag">04 / Section 02 — Data</div>
+  </div>
+  <div class="middle">
+    <h3 class="data-h">Q2 <span class="amber">METRICS.</span></h3>
+    <p class="ko-data">핵심 지표 — 4 분기 추이</p>
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-label">Revenue</div>
+        <div class="stat-value">$ 8.2M</div>
+        <div class="stat-delta">▲ +47% YoY</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Gross Margin</div>
+        <div class="stat-value">62%</div>
+        <div class="stat-delta">▲ +5.4pt</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Burn Rate</div>
+        <div class="stat-value">$ 320K</div>
+        <div class="stat-delta">▼ −12%</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Runway</div>
+        <div class="stat-value">22 mo</div>
+        <div class="stat-delta">▲ +4 mo</div>
+      </div>
+    </div>
+    <div class="chart">
+      <div class="chart-axis">YoY</div>
+      <div class="bar-wrap"><div class="bar" style="height:35%"></div><div class="bar-label">Q3·25</div></div>
+      <div class="bar-wrap"><div class="bar" style="height:48%"></div><div class="bar-label">Q4·25</div></div>
+      <div class="bar-wrap"><div class="bar" style="height:62%"></div><div class="bar-label">Q1·26</div></div>
+      <div class="bar-wrap"><div class="bar accent" style="height:82%"></div><div class="bar-label">Q2·26</div></div>
+      <div class="bar-wrap"><div class="bar" style="height:55%; opacity:0.35"></div><div class="bar-label">Q3·26</div></div>
+      <div class="bar-wrap"><div class="bar" style="height:70%; opacity:0.35"></div><div class="bar-label">Q4·26</div></div>
+    </div>
+  </div>
+  <dl class="bottom-bar">
+    <div><dt>Section</dt><dd>02 / Data</dd></div>
+    <div><dt>Source</dt><dd>Internal · 2026-05-22</dd></div>
+    <div><dt>Page</dt><dd>08 / 12</dd></div>
+  </dl>
+</section>
+
+<section class="slide closing-slide">
+  <div class="top-bar">
+    <div class="brand"><span class="dot"></span>STUDIO · STRATEGY</div>
+    <div class="section-tag">05 / Closing</div>
+  </div>
+  <div class="middle">
+    <div class="closing-eyebrow">Decision Required</div>
+    <h2 class="closing-title">NEXT<br/><span class="amber">STEPS.</span></h2>
+    <p class="ko-closing">다음 단계 — 결정 요청</p>
+    <p class="closing-sub">제시한 4개 트랙 중 우선순위와 자원 배분에 대한 결정을 회의에서 확정한다.</p>
+    <dl class="contact">
+      <div><dt>Author</dt><dd>Author Name</dd></div>
+      <div><dt>Email</dt><dd>name@studio.com</dd></div>
+      <div><dt>Date</dt><dd>2026 · 05 · 22</dd></div>
+    </dl>
+  </div>
+  <dl class="bottom-bar">
+    <div><dt>End of Brief</dt><dd>STUDIO · v1.0</dd></div>
+    <div><dt>Next Review</dt><dd>2026 · 08 · 01</dd></div>
+    <div><dt>Page</dt><dd>12 / 12</dd></div>
+  </dl>
+</section>
+
+</body>
+</html>
