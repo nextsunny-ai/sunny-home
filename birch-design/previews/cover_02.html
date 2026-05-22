@@ -84,7 +84,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 28px;
+  gap: 24px;
   padding: 40px 0;
 }
 .cover-slide .eyebrow {
@@ -103,19 +103,31 @@ body {
   height: 1px;
   background: #FFB800;
 }
-.cover-slide .title {
-  font-size: 96px;
-  font-weight: 700;
-  letter-spacing: -0.04em;
-  line-height: 1.05;
-  max-width: 18ch;
+.cover-slide .display {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 144px;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  line-height: 0.95;
   color: #FFFFFF;
+  text-transform: uppercase;
+}
+.cover-slide .display .amber { color: #FFB800; }
+.cover-slide .ko-sub {
+  font-family: 'Pretendard Variable', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 4px;
 }
 .cover-slide .subtitle {
-  font-size: 22px;
-  color: rgba(255, 255, 255, 0.7);
-  line-height: 1.55;
-  max-width: 56ch;
+  font-family: 'Pretendard Variable', sans-serif;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.6;
+  max-width: 64ch;
+  margin-top: 8px;
 }
 
 /* ── 목차 ── */
@@ -135,12 +147,15 @@ body {
   margin-bottom: 16px;
 }
 .toc-slide .toc-h {
-  font-size: 56px;
-  font-weight: 700;
-  letter-spacing: -0.03em;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 80px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
   margin-bottom: 32px;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
+.toc-slide .toc-h .amber { color: #FFB800; }
 .toc-slide .toc-list { display: flex; flex-direction: column; }
 .toc-slide .toc-item {
   display: grid;
@@ -177,13 +192,24 @@ body {
   align-items: start;
 }
 .content-slide h3 {
-  font-size: 48px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1.1;
-  max-width: 14ch;
-  margin-bottom: 32px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 64px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.0;
+  max-width: 12ch;
+  margin-bottom: 16px;
   color: #FFFFFF;
+  text-transform: uppercase;
+}
+.content-slide h3 .amber { color: #FFB800; }
+.content-slide .ko-h3 {
+  font-family: 'Pretendard Variable', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 24px;
+  letter-spacing: -0.01em;
 }
 .content-slide .lead {
   font-size: 18px;
@@ -225,12 +251,23 @@ body {
   padding: 32px 0;
 }
 .data-slide .data-h {
-  font-size: 48px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1.1;
-  max-width: 18ch;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 80px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  max-width: 16ch;
   color: #FFFFFF;
+  text-transform: uppercase;
+}
+.data-slide .data-h .amber { color: #FFB800; }
+.data-slide .ko-data {
+  font-family: 'Pretendard Variable', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 8px;
+  letter-spacing: -0.01em;
 }
 .data-slide .stats {
   display: grid;
@@ -315,11 +352,21 @@ body {
   background: #FFB800;
 }
 .closing-slide .closing-title {
-  font-size: 120px;
-  font-weight: 700;
-  letter-spacing: -0.04em;
-  line-height: 1.0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 168px;
+  font-weight: 600;
+  letter-spacing: -0.06em;
+  line-height: 0.9;
   color: #FFFFFF;
+  text-transform: uppercase;
+}
+.closing-slide .closing-title .amber { color: #FFB800; }
+.closing-slide .ko-closing {
+  font-family: 'Pretendard Variable', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 8px;
 }
 .closing-slide .closing-sub {
   font-size: 20px;
@@ -354,9 +401,10 @@ body {
     <div class="section-tag">02 / Dark Mono Report</div>
   </div>
   <div class="middle">
-    <div class="eyebrow">Strategy Brief · 2026</div>
-    <h1 class="title">전략<br/>방향 제안</h1>
-    <p class="subtitle">시장 구조 변화 분석 · 신규 사업 기회 · 다음 단계 의사결정 요청.</p>
+    <div class="eyebrow">Strategy Brief · 2026 Q3</div>
+    <h1 class="display">STRATEGIC<br/><span class="amber">DIRECTION.</span></h1>
+    <p class="ko-sub">전략 방향 제안</p>
+    <p class="subtitle">시장 구조 변화 분석 · 신규 사업 기회 · 다음 단계 의사결정 요청 — 모노스페이스 디스플레이 톤의 전략 브리프.</p>
   </div>
   <dl class="bottom-bar">
     <div><dt>Author</dt><dd>Author Name</dd></div>
@@ -372,7 +420,7 @@ body {
   </div>
   <div class="middle">
     <div class="toc-eyebrow">Contents · 04 sections</div>
-    <h2 class="toc-h">목차</h2>
+    <h2 class="toc-h">CON<span class="amber">TENTS</span>.</h2>
     <div class="toc-list">
       <div class="toc-item"><span class="toc-num">01</span><span class="toc-title">시장 구조 — 핵심 변화 3가지</span><span class="toc-page">p. 03</span></div>
       <div class="toc-item"><span class="toc-num">02</span><span class="toc-title">경쟁 환경 — 포지션 매트릭스</span><span class="toc-page">p. 05</span></div>
@@ -394,7 +442,8 @@ body {
   </div>
   <div class="middle">
     <div>
-      <h3>시장 구조<br/>핵심 변화</h3>
+      <h3>MARKET<br/><span class="amber">SHIFT.</span></h3>
+      <p class="ko-h3">시장 구조 — 핵심 변화 3가지</p>
       <p class="lead">2026년 기준 세 개의 구조 변화가 동시 발생. 각 변화는 기존 사업 모델의 가정을 재검토하게 한다.</p>
     </div>
     <div class="bullets">
@@ -441,7 +490,8 @@ body {
     <div class="section-tag">04 / Section 02 — Data</div>
   </div>
   <div class="middle">
-    <h3 class="data-h">핵심 지표 — 4 분기 추이</h3>
+    <h3 class="data-h">Q2 <span class="amber">METRICS.</span></h3>
+    <p class="ko-data">핵심 지표 — 4 분기 추이</p>
     <div class="stats">
       <div class="stat">
         <div class="stat-label">Revenue</div>
@@ -487,8 +537,9 @@ body {
     <div class="section-tag">05 / Closing</div>
   </div>
   <div class="middle">
-    <div class="closing-eyebrow">Decision · Q&amp;A</div>
-    <h2 class="closing-title">감사합니다.</h2>
+    <div class="closing-eyebrow">Decision Required</div>
+    <h2 class="closing-title">NEXT<br/><span class="amber">STEPS.</span></h2>
+    <p class="ko-closing">다음 단계 — 결정 요청</p>
     <p class="closing-sub">제시한 4개 트랙 중 우선순위와 자원 배분에 대한 결정을 회의에서 확정한다.</p>
     <dl class="contact">
       <div><dt>Author</dt><dd>Author Name</dd></div>
