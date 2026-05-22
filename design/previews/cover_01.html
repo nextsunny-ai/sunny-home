@@ -290,6 +290,215 @@ body {
   letter-spacing: 0.08em;
 }
 
+/* ── 다이어그램 ── */
+.diagram-slide .middle { display: flex; flex-direction: column; gap: 28px; padding: 24px 0; }
+.diagram-slide h3 { font-size: 44px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.0; }
+.diagram-slide .diag-container {
+  padding: 32px;
+  border: 1px solid rgba(10, 10, 14, 0.12);
+  background: #FFFFFF;
+}
+.diagram-slide .diag-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+  align-items: stretch;
+}
+.diagram-slide .diag-box {
+  padding: 18px 16px;
+  background: #F5F5F7;
+  border: 1px solid rgba(10, 10, 14, 0.08);
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+.diagram-slide .diag-box.accent { background: #E63329; color: #FFFFFF; border-color: #E63329; }
+.diagram-slide .diag-box small {
+  display: block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.65;
+  margin-top: 6px;
+  font-weight: 400;
+}
+.diagram-slide .diag-arrow {
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 18px;
+  color: rgba(10, 10, 14, 0.35);
+  margin: 4px 0;
+}
+
+/* ── 비교표 ── */
+.table-slide .middle { display: flex; flex-direction: column; gap: 24px; padding: 24px 0; }
+.table-slide h3 { font-size: 44px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.0; }
+.table-slide .comp-table {
+  border-top: 1px solid rgba(10, 10, 14, 0.15);
+  border-bottom: 1px solid rgba(10, 10, 14, 0.15);
+}
+.table-slide .row {
+  display: grid;
+  grid-template-columns: 60px 1.4fr 1fr 1fr 1fr 1fr;
+  gap: 24px;
+  padding: 14px 12px;
+  border-bottom: 1px solid rgba(10, 10, 14, 0.06);
+  align-items: center;
+}
+.table-slide .row:last-child { border-bottom: 0; }
+.table-slide .row.header {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(10, 10, 14, 0.55);
+  background: rgba(10, 10, 14, 0.03);
+}
+.table-slide .row.accent { background: rgba(230, 51, 41, 0.05); }
+.table-slide .col-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: #E63329;
+  font-weight: 600;
+}
+.table-slide .col-name { font-size: 14px; font-weight: 600; letter-spacing: -0.01em; }
+.table-slide .col-data {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: rgba(10, 10, 14, 0.7);
+}
+
+/* ── 타임라인 ── */
+.timeline-slide .middle { display: flex; flex-direction: column; gap: 28px; padding: 24px 0; }
+.timeline-slide h3 { font-size: 44px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.0; }
+.timeline-slide .timeline-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  padding: 32px 0;
+  border-top: 1px solid rgba(10, 10, 14, 0.15);
+  border-bottom: 1px solid rgba(10, 10, 14, 0.15);
+  position: relative;
+}
+.timeline-slide .tl-step {
+  padding: 0 16px;
+  border-right: 1px solid rgba(10, 10, 14, 0.06);
+  text-align: center;
+  position: relative;
+}
+.timeline-slide .tl-step:last-child { border-right: 0; }
+.timeline-slide .tl-marker {
+  width: 14px;
+  height: 14px;
+  background: rgba(10, 10, 14, 0.3);
+  margin: 0 auto 14px;
+  position: relative;
+  z-index: 2;
+}
+.timeline-slide .tl-step.active .tl-marker { background: #E63329; }
+.timeline-slide .tl-step.done .tl-marker { background: #0A0A0E; }
+.timeline-slide .tl-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(10, 10, 14, 0.55);
+  margin-bottom: 8px;
+}
+.timeline-slide .tl-title {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 6px;
+}
+.timeline-slide .tl-desc {
+  font-size: 12px;
+  color: rgba(10, 10, 14, 0.6);
+  line-height: 1.55;
+}
+
+/* ── 팀 ── */
+.team-slide .middle { display: flex; flex-direction: column; gap: 28px; padding: 24px 0; }
+.team-slide h3 { font-size: 44px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.0; }
+.team-slide .team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.team-slide .member {
+  background: #FFFFFF;
+  border: 1px solid rgba(10, 10, 14, 0.12);
+  padding: 24px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.team-slide .portrait {
+  width: 80px;
+  height: 80px;
+  background: rgba(10, 10, 14, 0.06);
+  position: relative;
+  margin-bottom: 6px;
+  overflow: hidden;
+}
+.team-slide .portrait::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(45deg, transparent, transparent 8px, rgba(10,10,14,0.06) 8px, rgba(10,10,14,0.06) 9px);
+}
+.team-slide .name { font-size: 17px; font-weight: 700; letter-spacing: -0.01em; }
+.team-slide .role {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #E63329;
+}
+.team-slide .bio { font-size: 12px; color: rgba(10, 10, 14, 0.65); line-height: 1.5; margin-top: 4px; }
+
+/* ── 리스크 (SWOT 매트릭스) ── */
+.risk-slide .middle { display: flex; flex-direction: column; gap: 24px; padding: 24px 0; }
+.risk-slide h3 { font-size: 44px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.0; }
+.risk-slide .swot {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+}
+.risk-slide .quad {
+  background: #FFFFFF;
+  border: 1px solid rgba(10, 10, 14, 0.12);
+  padding: 24px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 180px;
+}
+.risk-slide .quad.accent { border-left: 3px solid #E63329; }
+.risk-slide .quad-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(10, 10, 14, 0.55);
+}
+.risk-slide .quad-title {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.risk-slide .quad ul { padding-left: 16px; margin-top: 8px; }
+.risk-slide .quad li {
+  font-size: 13px;
+  color: rgba(10, 10, 14, 0.7);
+  line-height: 1.6;
+  margin-bottom: 4px;
+}
+
 /* ── 마무리 ── */
 .closing-slide .middle {
   display: flex;
@@ -484,7 +693,240 @@ body {
   </dl>
 </section>
 
-<!-- 슬라이드 5 — 마무리 -->
+<!-- 슬라이드 5 — 다이어그램 (시스템·플로우) -->
+<section class="slide diagram-slide">
+  <div class="top-bar">
+    <div class="brand"><span class="dot"></span>STUDIO · REPORT</div>
+    <div class="section-tag">05 / Section 03 — Flow</div>
+  </div>
+  <div class="middle">
+    <h3>업무 흐름 · 시스템 다이어그램</h3>
+    <div class="diag-container">
+      <div class="diag-row">
+        <div class="diag-box">입력 자료<small>RAW DATA</small></div>
+        <div class="diag-box">전처리<small>VALIDATION</small></div>
+        <div class="diag-box accent">분석 엔진<small>CORE</small></div>
+        <div class="diag-box">결과 출력<small>REPORT</small></div>
+      </div>
+      <div class="diag-arrow">↓ 피드백 루프</div>
+      <div class="diag-row">
+        <div class="diag-box">사용자 검토</div>
+        <div class="diag-box">개선 의견</div>
+        <div class="diag-box">반영 작업</div>
+        <div class="diag-box">다음 분기 자료</div>
+      </div>
+    </div>
+  </div>
+  <dl class="bottom-bar">
+    <div><dt>Section</dt><dd>03 / Flow</dd></div>
+    <div><dt>Updated</dt><dd>2026.05.22</dd></div>
+    <div><dt>Page</dt><dd>05 / 15</dd></div>
+  </dl>
+</section>
+
+<!-- 슬라이드 6 — 비교표 -->
+<section class="slide table-slide">
+  <div class="top-bar">
+    <div class="brand"><span class="dot"></span>STUDIO · REPORT</div>
+    <div class="section-tag">06 / Section 04 — Comparison</div>
+  </div>
+  <div class="middle">
+    <h3>분기별 핵심 지표 비교</h3>
+    <div class="comp-table">
+      <div class="row header">
+        <span>NO.</span><span>지표</span><span>Q1·26</span><span>Q2·26</span><span>변화</span><span>달성률</span>
+      </div>
+      <div class="row">
+        <span class="col-num">01</span>
+        <span class="col-name">매출액</span>
+        <span class="col-data">₩ 3.6B</span>
+        <span class="col-data">₩ 4.2B</span>
+        <span class="col-data">+18%</span>
+        <span class="col-data">105%</span>
+      </div>
+      <div class="row accent">
+        <span class="col-num">02</span>
+        <span class="col-name">활성 프로젝트</span>
+        <span class="col-data">9</span>
+        <span class="col-data">12</span>
+        <span class="col-data">+3</span>
+        <span class="col-data">120%</span>
+      </div>
+      <div class="row">
+        <span class="col-num">03</span>
+        <span class="col-name">전환율</span>
+        <span class="col-data">30.3%</span>
+        <span class="col-data">34.5%</span>
+        <span class="col-data">+4.2pt</span>
+        <span class="col-data">115%</span>
+      </div>
+      <div class="row">
+        <span class="col-num">04</span>
+        <span class="col-name">평균 사이클</span>
+        <span class="col-data">25 d</span>
+        <span class="col-data">22 d</span>
+        <span class="col-data">−3 d</span>
+        <span class="col-data">112%</span>
+      </div>
+      <div class="row">
+        <span class="col-num">05</span>
+        <span class="col-name">미수금</span>
+        <span class="col-data">₩ 0.8B</span>
+        <span class="col-data">₩ 0.5B</span>
+        <span class="col-data">−37%</span>
+        <span class="col-data">133%</span>
+      </div>
+    </div>
+  </div>
+  <dl class="bottom-bar">
+    <div><dt>Section</dt><dd>04 / Comparison</dd></div>
+    <div><dt>Source</dt><dd>ERP · 2026-05-22</dd></div>
+    <div><dt>Page</dt><dd>06 / 15</dd></div>
+  </dl>
+</section>
+
+<!-- 슬라이드 7 — 타임라인 -->
+<section class="slide timeline-slide">
+  <div class="top-bar">
+    <div class="brand"><span class="dot"></span>STUDIO · REPORT</div>
+    <div class="section-tag">07 / Section 05 — Roadmap</div>
+  </div>
+  <div class="middle">
+    <h3>2026 하반기 로드맵</h3>
+    <div class="timeline-container">
+      <div class="tl-step done">
+        <div class="tl-marker"></div>
+        <div class="tl-date">2026 · Q2</div>
+        <div class="tl-title">기반 정비</div>
+        <div class="tl-desc">표준 양식 정비 · 보고 주기 재정렬</div>
+      </div>
+      <div class="tl-step active">
+        <div class="tl-marker"></div>
+        <div class="tl-date">2026 · Q3</div>
+        <div class="tl-title">신규 트랙 착수</div>
+        <div class="tl-desc">2 건 신규 트랙 시작 · 파트너 협의</div>
+      </div>
+      <div class="tl-step">
+        <div class="tl-marker"></div>
+        <div class="tl-date">2026 · Q4</div>
+        <div class="tl-title">인프라 정비</div>
+        <div class="tl-desc">저장소 · 권한 · 외부 통합</div>
+      </div>
+      <div class="tl-step">
+        <div class="tl-marker"></div>
+        <div class="tl-date">2027 · Q1</div>
+        <div class="tl-title">자동화 1차</div>
+        <div class="tl-desc">데이터 파이프라인 자동화</div>
+      </div>
+      <div class="tl-step">
+        <div class="tl-marker"></div>
+        <div class="tl-date">2027 · Q2</div>
+        <div class="tl-title">성과 검증</div>
+        <div class="tl-desc">상반기 성과 평가 · 다음 분기 계획</div>
+      </div>
+    </div>
+  </div>
+  <dl class="bottom-bar">
+    <div><dt>Section</dt><dd>05 / Roadmap</dd></div>
+    <div><dt>Updated</dt><dd>2026.05.22</dd></div>
+    <div><dt>Page</dt><dd>07 / 15</dd></div>
+  </dl>
+</section>
+
+<!-- 슬라이드 8 — 팀 -->
+<section class="slide team-slide">
+  <div class="top-bar">
+    <div class="brand"><span class="dot"></span>STUDIO · REPORT</div>
+    <div class="section-tag">08 / Section 06 — Team</div>
+  </div>
+  <div class="middle">
+    <h3>프로젝트 팀 구성</h3>
+    <div class="team-grid">
+      <div class="member">
+        <div class="portrait"></div>
+        <div class="name">Member A</div>
+        <div class="role">Project Lead</div>
+        <p class="bio">전체 일정·자원 관리 + 외부 보고 총괄.</p>
+      </div>
+      <div class="member">
+        <div class="portrait"></div>
+        <div class="name">Member B</div>
+        <div class="role">Data · Analytics</div>
+        <p class="bio">데이터 파이프라인 · 분석 · 시각화.</p>
+      </div>
+      <div class="member">
+        <div class="portrait"></div>
+        <div class="name">Member C</div>
+        <div class="role">Operations</div>
+        <p class="bio">일상 운영 · 표준 양식 · 검증.</p>
+      </div>
+      <div class="member">
+        <div class="portrait"></div>
+        <div class="name">Member D</div>
+        <div class="role">Partnership</div>
+        <p class="bio">외부 파트너십 · 협업 채널.</p>
+      </div>
+    </div>
+  </div>
+  <dl class="bottom-bar">
+    <div><dt>Section</dt><dd>06 / Team</dd></div>
+    <div><dt>Total</dt><dd>04 members</dd></div>
+    <div><dt>Page</dt><dd>08 / 15</dd></div>
+  </dl>
+</section>
+
+<!-- 슬라이드 9 — 리스크 (SWOT) -->
+<section class="slide risk-slide">
+  <div class="top-bar">
+    <div class="brand"><span class="dot"></span>STUDIO · REPORT</div>
+    <div class="section-tag">09 / Section 07 — Risk</div>
+  </div>
+  <div class="middle">
+    <h3>리스크 매트릭스 · SWOT</h3>
+    <div class="swot">
+      <div class="quad">
+        <span class="quad-label">Strengths</span>
+        <span class="quad-title">강점</span>
+        <ul>
+          <li>표준 양식 정착 = 운영 안정</li>
+          <li>데이터 파이프라인 검증 완료</li>
+          <li>4분기 연속 성장 추세</li>
+        </ul>
+      </div>
+      <div class="quad">
+        <span class="quad-label">Weaknesses</span>
+        <span class="quad-title">약점</span>
+        <ul>
+          <li>외부 통합 = 일부 수동 작업 잔존</li>
+          <li>인력 = 핵심 1~2명 의존도 높음</li>
+        </ul>
+      </div>
+      <div class="quad">
+        <span class="quad-label">Opportunities</span>
+        <span class="quad-title">기회</span>
+        <ul>
+          <li>신규 트랙 2 건 = 다음 분기 매출 기여</li>
+          <li>자동화 도입 = 사이클 단축 여지</li>
+        </ul>
+      </div>
+      <div class="quad accent">
+        <span class="quad-label">Threats · ★ 대응 필요</span>
+        <span class="quad-title">위협</span>
+        <ul>
+          <li>핵심 파트너 1 건 = 계약 연장 협의 중</li>
+          <li>경쟁사 진입 = 다음 분기 검토 필요</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <dl class="bottom-bar">
+    <div><dt>Section</dt><dd>07 / Risk</dd></div>
+    <div><dt>Reviewed</dt><dd>Project Team</dd></div>
+    <div><dt>Page</dt><dd>09 / 15</dd></div>
+  </dl>
+</section>
+
+<!-- 슬라이드 15 — 마무리 -->
 <section class="slide closing-slide">
   <div class="top-bar">
     <div class="brand"><span class="dot"></span>STUDIO · REPORT</div>
