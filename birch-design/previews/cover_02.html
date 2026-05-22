@@ -554,20 +554,5 @@ body {
   </dl>
 </section>
 
-<script src="https://cdn.jsdelivr.net/npm/dom-to-pptx@latest/dist/dom-to-pptx.bundle.js"></script>
-<script>
-(function() {
-  const btn = document.createElement('button');
-  btn.style.cssText = 'position:fixed;top:16px;right:16px;background:#E63329;color:#fff;border:none;padding:10px 18px;font-family:"JetBrains Mono",monospace;font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;z-index:99999;box-shadow:0 4px 16px rgba(0,0,0,0.18)';
-  btn.innerHTML = '↓ .pptx 다운';
-  btn.onclick = async () => {
-    const o = btn.innerHTML; btn.innerHTML = '변환 중...'; btn.disabled = true;
-    try { await domToPptx.exportToPptx(Array.from(document.querySelectorAll('.slide')), { fileName: '02_dark_mono_report.pptx' }); btn.innerHTML = '✓ 다운 완료'; }
-    catch (e) { btn.innerHTML = '실패'; console.error(e); }
-    setTimeout(() => { btn.innerHTML = o; btn.disabled = false; }, 2500);
-  };
-  document.body.appendChild(btn);
-})();
-</script>
 </body>
 </html>
