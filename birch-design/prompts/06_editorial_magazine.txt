@@ -1,0 +1,21 @@
+다음 디자인 가이드를 따라 매거진·에디토리얼 톤 PPT 5장을 HTML로 만들어 줘.
+
+가이드 = "Editorial Magazine" 디자인 가이드.
+
+[주제]
+예: "광고 협업 제안 — Brand × Artist" / "아티스트 프로파일"
+
+[추가 정보 — 필요시]
+- 협업 브랜드:
+- 아티스트:
+- 발표자:
+- 청중:
+
+[요구]
+- 따뜻한 화이트 + Fraunces Display Serif + 부드러운 컬러 카드
+- 둥근 카드 OK (= 이 톤의 시그니처, radius 20~24px)
+- Mint/Mauve/Cream/Charcoal 4컬러까지
+- 그라디언트·이모지·영업 톤 X
+- 5장 stacked HTML
+
+출력 = HTML 코드만.
