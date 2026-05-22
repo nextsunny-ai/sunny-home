@@ -111,6 +111,14 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   border: 1px solid var(--hairline);
   color: var(--fg-primary);
 }
+.howto__link {
+  color: var(--brand-accent);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.howto__link:hover { color: var(--brand-accent-hover); }
 @media (max-width: 900px) {
   .howto__steps { font-size: 12.5px; gap: 6px 20px; }
   .howto__steps li { white-space: normal; }
