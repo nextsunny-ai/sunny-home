@@ -247,10 +247,10 @@ REFERENCES.forEach(group => {
       </div>
       <div class="ref-pills">
         ${group.items.map(item => `
-          <a class="ref-pill" href="${item.url}" target="_blank" rel="noopener noreferrer" title="${item.desc}">
+          <a class="ref-pill" href="${item.url}" target="_blank" rel="noopener noreferrer" title="${item.desc} — 사이트 방문">
             <span class="ref-pill__dot" style="background:${item.palette[0]}"></span>
             ${item.name}
-            <span class="ref-pill__arrow">↗</span>
+            <span class="ref-pill__arrow">사이트 →</span>
           </a>
         `).join('')}
       </div>

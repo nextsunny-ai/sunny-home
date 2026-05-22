@@ -483,6 +483,22 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   min-height: 0;
   display: block;
 }
+.ref-card__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-top: 4px;
+}
+.ref-card__visit-cta {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  color: var(--fg-primary);
+  white-space: nowrap;
+}
+.ref-card--featured:hover .ref-card__visit-cta { color: var(--brand-accent); }
 
 /* ── 참고 링크 = 타원형 버튼 ── */
 .ref-pills {
@@ -518,8 +534,13 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .ref-pill__arrow {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  font-weight: 600;
   color: var(--fg-muted);
+  padding-left: 4px;
+  border-left: 1px solid var(--hairline);
+  margin-left: 2px;
 }
 .ref-pill:hover .ref-pill__arrow { color: var(--brand-accent); }
 .ref-grid {
