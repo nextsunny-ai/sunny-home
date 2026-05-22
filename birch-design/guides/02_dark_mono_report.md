@@ -56,7 +56,7 @@ secondary   rgba(255, 255, 255, 0.65)
 
 ## 5장 패턴
 
-1. **표지** — STUDIO · STRATEGY brand → 큰 타이틀 → 서브 → 메타
+1. **표지** — BIRCH SOUND · STRATEGY brand → 큰 타이틀 → 서브 → 메타
 2. **목차** — Amber eyebrow → 큰 헤딩 → 리스트
 3. **콘텐츠** — 좌측 헤딩 / 우측 bullet (bullet-num = amber)
 4. **데이터** — stat 카드 4개 (라벨·값·delta = amber) + 차트 (강조 막대 = amber)
