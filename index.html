@@ -1284,8 +1284,20 @@ body {
     <span class="nav-item" data-section="mid" role="button" tabindex="0" aria-label="Team 섹션으로 이동">Team</span>
     <span class="nav-item" data-section="quick-links-section" role="button" tabindex="0" aria-label="Quick Links 섹션으로 이동">Quick Links</span>
     <span class="nav-item" data-section="admin-section" role="button" tabindex="0" aria-label="통합 관리 섹션으로 이동">통합 관리</span>
-    <a class="nav-item" href="/design/" aria-label="디자인 시스템 페이지로 이동" style="text-decoration:none;color:inherit">Design</a>
+    <span class="nav-item nav-design" tabindex="0" aria-haspopup="true" style="position:relative;cursor:pointer">
+      Design <span style="font-size:9px;opacity:0.5;margin-left:4px">▾</span>
+      <span class="design-dropdown" style="position:absolute;top:100%;right:0;background:var(--bg,#fff);border:1px solid var(--border,#e5e5e7);border-radius:8px;padding:8px;min-width:180px;box-shadow:0 8px 24px rgba(0,0,0,0.08);display:none;flex-direction:column;gap:2px;z-index:100;margin-top:8px">
+        <a href="/design/" style="display:block;padding:8px 12px;text-decoration:none;color:inherit;border-radius:4px;font-size:0.85rem">Sunny <span style="opacity:0.5;font-size:0.75rem">— 대표님</span></a>
+        <a href="/birch-design/" style="display:block;padding:8px 12px;text-decoration:none;color:inherit;border-radius:4px;font-size:0.85rem">Birch Sound <span style="opacity:0.5;font-size:0.75rem">— 버치</span></a>
+        <a href="/nextart-design/" style="display:block;padding:8px 12px;text-decoration:none;color:inherit;border-radius:4px;font-size:0.85rem">Nextart <span style="opacity:0.5;font-size:0.75rem">— 넥스트아트</span></a>
+      </span>
+    </span>
   </div>
+  <style>
+    .nav-design:hover .design-dropdown,
+    .nav-design:focus-within .design-dropdown { display:flex !important; }
+    .design-dropdown a:hover { background:rgba(0,0,0,0.04); color:var(--text-sub,#666) !important; }
+  </style>
   <div class="nav-group nav-right">
     <div class="nav-search">
       <span style="color:var(--text-mute);font-size:0.78rem">&#128269;</span>
