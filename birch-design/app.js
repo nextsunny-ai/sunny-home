@@ -101,41 +101,41 @@ const REFERENCES = [
   {
     group: 'Design Systems',
     items: [
-      { name: 'Apple HIG', desc: '벤토 그리드 · iOS·macOS 디자인 원칙.', guide: 'guides/ref_01_apple_hig.md', source: 'developer.apple.com', palette: ['#000000', '#FFFFFF', '#007AFF'], style: '미니멀 · 벤토' },
-      { name: 'Material 3', desc: 'Material You · 동적 컬러 시스템.', guide: 'guides/ref_02_material_3.md', source: 'm3.material.io', palette: ['#6750A4', '#B69DF8', '#EADDFF'], style: '동적 컬러 · 라운드' },
-      { name: 'IBM Carbon', desc: '엔터프라이즈 + 데이터 시각화 + AAA.', guide: 'guides/ref_03_ibm_carbon.md', source: 'carbondesignsystem.com', palette: ['#0F62FE', '#161616', '#F4F4F4'], style: '엔터프라이즈 · 직각' },
-      { name: 'shadcn/ui', desc: 'copy-paste 컴포넌트. React UI 표준.', guide: 'guides/ref_04_shadcn_ui.md', source: 'ui.shadcn.com', palette: ['#0A0A0A', '#FAFAFA', '#71717A'], style: '흑백 · 모던' },
-      { name: 'Radix UI', desc: '헤드리스 접근성 프리미티브.', guide: 'guides/ref_05_radix_ui.md', source: 'radix-ui.com', palette: ['#1A1523', '#FFFFFF', '#3E63DD'], style: '헤드리스 · 인디고' },
-      { name: 'Vercel Geist', desc: 'Geist 폰트 + 미니멀 흑백.', guide: 'guides/ref_06_vercel_geist.md', source: 'vercel.com/design', palette: ['#000000', '#FFFFFF', '#0070F3'], style: '미니멀 · 모노' },
-      { name: 'Linear Method', desc: '미니멀 다크 · 키보드 퍼스트.', guide: 'guides/ref_07_linear_method.md', source: 'linear.app/method', palette: ['#08090A', '#5E6AD2', '#9B9B9B'], style: '다크 · 퍼플' },
-      { name: 'Stripe Design', desc: '그라디언트 메시 + 마이크로 인터랙션.', guide: 'guides/ref_08_stripe_design.md', source: 'stripe.com', palette: ['#635BFF', '#00D4FF', '#FF6BC8'], style: '그라디언트 · 프리미엄' },
-      { name: 'Atlassian Design', desc: 'Confluence · Jira 워크 프로덕트 톤.', guide: 'guides/ref_09_atlassian_design.md', source: 'atlassian.design', palette: ['#0052CC', '#172B4D', '#F4F5F7'], style: '워크 · 블루' },
-      { name: 'Notion', desc: '문서 톤 미니멀 + 캘리그래픽.', guide: 'guides/ref_10_notion.md', source: 'notion.so', palette: ['#37352F', '#F1F1EF', '#E03E3E'], style: '문서 · 따뜻한 톤' }
+      { name: 'Apple HIG', desc: '벤토 그리드 · iOS·macOS 디자인 원칙.', guide: 'guides/ref_01_apple_hig.md', source: 'developer.apple.com', url: 'https://developer.apple.com/design/human-interface-guidelines', palette: ['#000000', '#FFFFFF', '#007AFF'], style: '미니멀 · 벤토' },
+      { name: 'Material 3', desc: 'Material You · 동적 컬러 시스템.', guide: 'guides/ref_02_material_3.md', source: 'm3.material.io', url: 'https://m3.material.io', palette: ['#6750A4', '#B69DF8', '#EADDFF'], style: '동적 컬러 · 라운드' },
+      { name: 'IBM Carbon', desc: '엔터프라이즈 + 데이터 시각화 + AAA.', guide: 'guides/ref_03_ibm_carbon.md', source: 'carbondesignsystem.com', url: 'https://carbondesignsystem.com', palette: ['#0F62FE', '#161616', '#F4F4F4'], style: '엔터프라이즈 · 직각' },
+      { name: 'shadcn/ui', desc: 'copy-paste 컴포넌트. React UI 표준.', guide: 'guides/ref_04_shadcn_ui.md', source: 'ui.shadcn.com', url: 'https://ui.shadcn.com', palette: ['#0A0A0A', '#FAFAFA', '#71717A'], style: '흑백 · 모던' },
+      { name: 'Radix UI', desc: '헤드리스 접근성 프리미티브.', guide: 'guides/ref_05_radix_ui.md', source: 'radix-ui.com', url: 'https://www.radix-ui.com', palette: ['#1A1523', '#FFFFFF', '#3E63DD'], style: '헤드리스 · 인디고' },
+      { name: 'Vercel Geist', desc: 'Geist 폰트 + 미니멀 흑백.', guide: 'guides/ref_06_vercel_geist.md', source: 'vercel.com/design', url: 'https://vercel.com/design', palette: ['#000000', '#FFFFFF', '#0070F3'], style: '미니멀 · 모노' },
+      { name: 'Linear Method', desc: '미니멀 다크 · 키보드 퍼스트.', guide: 'guides/ref_07_linear_method.md', source: 'linear.app/method', url: 'https://linear.app/method', palette: ['#08090A', '#5E6AD2', '#9B9B9B'], style: '다크 · 퍼플' },
+      { name: 'Stripe Design', desc: '그라디언트 메시 + 마이크로 인터랙션.', guide: 'guides/ref_08_stripe_design.md', source: 'stripe.com', url: 'https://stripe.com', palette: ['#635BFF', '#00D4FF', '#FF6BC8'], style: '그라디언트 · 프리미엄' },
+      { name: 'Atlassian Design', desc: 'Confluence · Jira 워크 프로덕트 톤.', guide: 'guides/ref_09_atlassian_design.md', source: 'atlassian.design', url: 'https://atlassian.design', palette: ['#0052CC', '#172B4D', '#F4F5F7'], style: '워크 · 블루' },
+      { name: 'Notion', desc: '문서 톤 미니멀 + 캘리그래픽.', guide: 'guides/ref_10_notion.md', source: 'notion.so', url: 'https://www.notion.so', palette: ['#37352F', '#F1F1EF', '#E03E3E'], style: '문서 · 따뜻한 톤' }
     ]
   },
   {
     group: 'Slide Tools',
     items: [
-      { name: 'Pitch', desc: '협업형 모던 슬라이드 도구.', guide: 'guides/ref_11_pitch.md', source: 'pitch.com', palette: ['#1A1A1A', '#FFFFFF', '#FF5C28'], style: '모던 · 협업' },
-      { name: 'Gamma', desc: 'AI 슬라이드 · 웹페이지 자동 생성.', guide: 'guides/ref_12_gamma.md', source: 'gamma.app', palette: ['#1A1A1A', '#FF6B35', '#FFD9C2'], style: 'AI · 자동' },
-      { name: 'Beautiful.ai', desc: 'AI 자동 레이아웃 슬라이드.', guide: 'guides/ref_13_beautiful_ai.md', source: 'beautiful.ai', palette: ['#0066FF', '#FFFFFF', '#000000'], style: 'AI · 블루' },
-      { name: 'Slidesgo', desc: '무료 PPT 템플릿.', guide: 'guides/ref_14_slidesgo.md', source: 'slidesgo.com', palette: ['#FF6F00', '#FFFFFF', '#1A1A22'], style: '템플릿 · 다양' },
-      { name: 'Canva Presentations', desc: '다양한 PPT 템플릿 + 협업.', guide: 'guides/ref_15_canva.md', source: 'canva.com', palette: ['#00C4CC', '#7D2AE8', '#FFFFFF'], style: '시안·퍼플' },
-      { name: 'Pages.xyz', desc: '랜딩 페이지 디자인 영감.', guide: 'guides/ref_16_pages_xyz.md', source: 'pages.xyz', palette: ['#000000', '#FFFFFF', '#A0A0A0'], style: '모노 · 큐레이션' },
-      { name: 'Slidebean', desc: 'IR · 피치덱 전문.', guide: 'guides/ref_17_slidebean.md', source: 'slidebean.com', palette: ['#001F3F', '#FF851B', '#FFFFFF'], style: 'IR · 피치덱' }
+      { name: 'Pitch', desc: '협업형 모던 슬라이드 도구.', guide: 'guides/ref_11_pitch.md', source: 'pitch.com', url: 'https://pitch.com', palette: ['#1A1A1A', '#FFFFFF', '#FF5C28'], style: '모던 · 협업' },
+      { name: 'Gamma', desc: 'AI 슬라이드 · 웹페이지 자동 생성.', guide: 'guides/ref_12_gamma.md', source: 'gamma.app', url: 'https://gamma.app', palette: ['#1A1A1A', '#FF6B35', '#FFD9C2'], style: 'AI · 자동' },
+      { name: 'Beautiful.ai', desc: 'AI 자동 레이아웃 슬라이드.', guide: 'guides/ref_13_beautiful_ai.md', source: 'beautiful.ai', url: 'https://www.beautiful.ai', palette: ['#0066FF', '#FFFFFF', '#000000'], style: 'AI · 블루' },
+      { name: 'Slidesgo', desc: '무료 PPT 템플릿.', guide: 'guides/ref_14_slidesgo.md', source: 'slidesgo.com', url: 'https://slidesgo.com', palette: ['#FF6F00', '#FFFFFF', '#1A1A22'], style: '템플릿 · 다양' },
+      { name: 'Canva Presentations', desc: '다양한 PPT 템플릿 + 협업.', guide: 'guides/ref_15_canva.md', source: 'canva.com', url: 'https://www.canva.com/presentations', palette: ['#00C4CC', '#7D2AE8', '#FFFFFF'], style: '시안·퍼플' },
+      { name: 'Pages.xyz', desc: '랜딩 페이지 디자인 영감.', guide: 'guides/ref_16_pages_xyz.md', source: 'pages.xyz', url: 'https://pages.xyz', palette: ['#000000', '#FFFFFF', '#A0A0A0'], style: '모노 · 큐레이션' },
+      { name: 'Slidebean', desc: 'IR · 피치덱 전문.', guide: 'guides/ref_17_slidebean.md', source: 'slidebean.com', url: 'https://slidebean.com', palette: ['#001F3F', '#FF851B', '#FFFFFF'], style: 'IR · 피치덱' }
     ]
   },
   {
     group: 'Inspiration',
     items: [
-      { name: 'Awwwards', desc: '웹 디자인 시상식 · 트렌드.', guide: 'guides/ref_18_awwwards.md', source: 'awwwards.com', palette: ['#000000', '#FFFFFF', '#FFCC00'], style: '트렌드 · 옐로우' },
-      { name: 'Dribbble', desc: 'UI · 일러스트 디자인 샷.', guide: 'guides/ref_19_dribbble.md', source: 'dribbble.com', palette: ['#EA4C89', '#0D0C22', '#FFFFFF'], style: '핑크 · 컬러풀' },
-      { name: 'Behance', desc: '브랜딩 · 에디토리얼 · 풀 프로젝트.', guide: 'guides/ref_20_behance.md', source: 'behance.net', palette: ['#1769FF', '#000000', '#FFFFFF'], style: '풀 프로젝트 · 블루' },
-      { name: 'Mobbin', desc: '모바일 앱 UI 패턴 라이브러리.', guide: 'guides/ref_21_mobbin.md', source: 'mobbin.com', palette: ['#F1F1F2', '#000000', '#0066FF'], style: '모바일 · 패턴' },
-      { name: 'Land-book', desc: '랜딩 페이지 큐레이션.', guide: 'guides/ref_22_land_book.md', source: 'land-book.com', palette: ['#1A1A22', '#FFFFFF', '#FF4D4D'], style: '랜딩 · 큐레이션' },
-      { name: 'SiteInspire', desc: '엄선된 웹 디자인 갤러리.', guide: 'guides/ref_23_siteinspire.md', source: 'siteinspire.com', palette: ['#FFFFFF', '#1A1A22', '#888888'], style: '모노 · 엄선' },
-      { name: 'Godly', desc: '극상위 웹 디자인 큐레이션.', guide: 'guides/ref_24_godly.md', source: 'godly.website', palette: ['#000000', '#FFFFFF', '#FF6B6B'], style: '극상위 · 모노' },
-      { name: 'Pinterest · Presentation', desc: 'PPT · 키비주얼 보드 검색.', guide: 'guides/ref_25_pinterest_presentation.md', source: 'pinterest.com', palette: ['#E60023', '#FFFFFF', '#000000'], style: '보드 · 레드' }
+      { name: 'Awwwards', desc: '웹 디자인 시상식 · 트렌드.', guide: 'guides/ref_18_awwwards.md', source: 'awwwards.com', url: 'https://www.awwwards.com', palette: ['#000000', '#FFFFFF', '#FFCC00'], style: '트렌드 · 옐로우' },
+      { name: 'Dribbble', desc: 'UI · 일러스트 디자인 샷.', guide: 'guides/ref_19_dribbble.md', source: 'dribbble.com', url: 'https://dribbble.com', palette: ['#EA4C89', '#0D0C22', '#FFFFFF'], style: '핑크 · 컬러풀' },
+      { name: 'Behance', desc: '브랜딩 · 에디토리얼 · 풀 프로젝트.', guide: 'guides/ref_20_behance.md', source: 'behance.net', url: 'https://www.behance.net', palette: ['#1769FF', '#000000', '#FFFFFF'], style: '풀 프로젝트 · 블루' },
+      { name: 'Mobbin', desc: '모바일 앱 UI 패턴 라이브러리.', guide: 'guides/ref_21_mobbin.md', source: 'mobbin.com', url: 'https://mobbin.com', palette: ['#F1F1F2', '#000000', '#0066FF'], style: '모바일 · 패턴' },
+      { name: 'Land-book', desc: '랜딩 페이지 큐레이션.', guide: 'guides/ref_22_land_book.md', source: 'land-book.com', url: 'https://land-book.com', palette: ['#1A1A22', '#FFFFFF', '#FF4D4D'], style: '랜딩 · 큐레이션' },
+      { name: 'SiteInspire', desc: '엄선된 웹 디자인 갤러리.', guide: 'guides/ref_23_siteinspire.md', source: 'siteinspire.com', url: 'https://www.siteinspire.com', palette: ['#FFFFFF', '#1A1A22', '#888888'], style: '모노 · 엄선' },
+      { name: 'Godly', desc: '극상위 웹 디자인 큐레이션.', guide: 'guides/ref_24_godly.md', source: 'godly.website', url: 'https://godly.website', palette: ['#000000', '#FFFFFF', '#FF6B6B'], style: '극상위 · 모노' },
+      { name: 'Pinterest · Presentation', desc: 'PPT · 키비주얼 보드 검색.', guide: 'guides/ref_25_pinterest_presentation.md', source: 'pinterest.com', url: 'https://www.pinterest.com/search/pins/?q=presentation%20design', palette: ['#E60023', '#FFFFFF', '#000000'], style: '보드 · 레드' }
     ]
   }
 ];
@@ -204,18 +204,21 @@ REFERENCES.forEach(group => {
     </div>
     <div class="ref-grid">
       ${group.items.map(item => `
-        <a class="ref-card" href="${item.guide}" download>
-          <div class="ref-card__palette">
-            ${item.palette.map(c => `<span class="ref-color" style="background:${c}" title="${c}"></span>`).join('')}
-            <span class="ref-card__style">${item.style}</span>
-          </div>
-          <div class="ref-card__top">
-            <span class="ref-card__name">${item.name}</span>
-            <span class="ref-card__arrow">↓</span>
-          </div>
-          <p class="ref-card__desc">${item.desc}</p>
-          <span class="ref-card__url">${item.source}</span>
-        </a>
+        <article class="ref-card">
+          <button class="ref-card__download" data-guide="${item.guide}" data-name="${item.name}" aria-label="${item.name} 가이드 다운로드" title=".md 다운로드">↓</button>
+          <a class="ref-card__link" href="${item.url}" target="_blank" rel="noopener noreferrer">
+            <div class="ref-card__palette">
+              ${item.palette.map(c => `<span class="ref-color" style="background:${c}" title="${c}"></span>`).join('')}
+              <span class="ref-card__style">${item.style}</span>
+            </div>
+            <div class="ref-card__top">
+              <span class="ref-card__name">${item.name}</span>
+              <span class="ref-card__arrow">↗</span>
+            </div>
+            <p class="ref-card__desc">${item.desc}</p>
+            <span class="ref-card__url">${item.source}</span>
+          </a>
+        </article>
       `).join('')}
     </div>
   `;
@@ -277,6 +280,47 @@ btnCopyPrompt.addEventListener('click', async () => {
     showToast('프롬프트 파일 준비 중');
   }
 });
+
+// ── 회사 카드 가이드 .md 다운로드 = Blob 방식 (Chrome 경고 X) ──
+btnDownload.addEventListener('click', async (e) => {
+  if (!currentStyle) return;
+  e.preventDefault();
+  const slug = slugify(currentStyle.subName);
+  const path = `guides/${currentStyle.id}_${slug}.md`;
+  const filename = `${currentStyle.id}_${slug}.md`;
+  await downloadMd(path, filename, currentStyle.name);
+});
+
+// ── 글로벌 레퍼런스 다운로드 버튼 ──
+document.addEventListener('click', async (e) => {
+  const dlBtn = e.target.closest('.ref-card__download');
+  if (!dlBtn) return;
+  e.preventDefault();
+  e.stopPropagation();
+  const guide = dlBtn.dataset.guide;
+  const filename = guide.split('/').pop();
+  await downloadMd(guide, filename, dlBtn.dataset.name);
+});
+
+async function downloadMd(path, filename, displayName) {
+  try {
+    const res = await fetch(path);
+    if (!res.ok) throw new Error('not found');
+    const text = await res.text();
+    const blob = new Blob([text], { type: 'text/markdown;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    showToast(`${displayName} 가이드 다운로드 완료`);
+  } catch (err) {
+    showToast('가이드 파일 준비 중');
+  }
+}
 
 // ── helpers ──
 function slugify(s) {
