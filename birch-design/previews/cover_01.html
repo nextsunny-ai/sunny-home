@@ -507,5 +507,40 @@ body {
   </dl>
 </section>
 
+<!-- ─── PPT 다운로드 (dom-to-pptx 라이브러리) ─── -->
+<script src="https://cdn.jsdelivr.net/npm/dom-to-pptx@latest/dist/dom-to-pptx.bundle.js"></script>
+<script>
+(function() {
+  const btn = document.createElement('button');
+  btn.id = 'pptx-export-btn';
+  btn.innerHTML = '↓ .pptx 다운';
+  btn.style.cssText = 'position:fixed;top:16px;right:16px;background:#E63329;color:#fff;border:none;padding:10px 18px;font-family:"JetBrains Mono",monospace;font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;z-index:99999;box-shadow:0 4px 16px rgba(0,0,0,0.18)';
+  btn.onmouseover = () => btn.style.background = '#C72A20';
+  btn.onmouseout = () => btn.style.background = '#E63329';
+  btn.onclick = async () => {
+    const original = btn.innerHTML;
+    btn.innerHTML = '변환 중...';
+    btn.disabled = true;
+    try {
+      if (typeof domToPptx === 'undefined') throw new Error('라이브러리 로딩 실패');
+      const slides = document.querySelectorAll('.slide');
+      await domToPptx.exportToPptx(Array.from(slides), {
+        fileName: '01_simple_mono_red.pptx'
+      });
+      btn.innerHTML = '✓ 다운 완료';
+    } catch (e) {
+      btn.innerHTML = '실패 (콘솔 확인)';
+      console.error('PPTX 변환 실패:', e);
+    }
+    setTimeout(() => { btn.innerHTML = original; btn.disabled = false; }, 2500);
+  };
+  document.body.appendChild(btn);
+  // URL ?export=pptx = 자동 다운
+  if (new URLSearchParams(location.search).get('export') === 'pptx') {
+    setTimeout(() => btn.click(), 2500);
+  }
+})();
+</script>
+
 </body>
 </html>
