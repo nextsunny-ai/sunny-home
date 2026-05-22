@@ -1,4 +1,4 @@
-# Birch Sound · PPT Design System
+# Birch Sound · 디자인 시스템
 
 6가지 PPT 스타일 + 25 글로벌 레퍼런스. 디자인 가이드 `.md`를 Claude / ChatGPT Project Knowledge에 업로드하면 AI가 그 톤으로 슬라이드 콘텐츠를 만들어 준다.
 
