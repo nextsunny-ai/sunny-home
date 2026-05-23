@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-24T00:01:27+09:00",
+  "updated": "2026-05-24T06:42:07+09:00",
   "categories": [
     {
       "id": "ai",
@@ -103,6 +103,15 @@
           "published": "2026-05-20",
           "image": "",
           "first_seen": "2026-05-23T06:54:54+09:00"
+        },
+        {
+          "title": "[I/O 2026] AI 검색의 새로운 시대 - blog.google",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBocVlxUzZJQ25mSk56SnBKN0ZicDM5bUxkNlNqU0hJckczSG5oR0dEc1UzMmNMQmxBck96UWhsdzdFY0hhYzhkN3k4SHFzVW9fekw5TDFDS1dIb1RlWUU0RXAzUjV4VEp3RGJYM3dnTUpOUHpsNUlFZTh3?oc=5",
+          "source": "blog.google",
+          "summary": "",
+          "published": "2026-05-20",
+          "image": "",
+          "first_seen": "2026-05-24T06:42:07+09:00"
         },
         {
           "title": "생성형AI 통해 뇌종양 수술 환자들에 ‘눈 높이 설명’ - 데일리메디",
@@ -265,15 +274,6 @@
           "published": "2026-05-17",
           "image": "",
           "first_seen": "2026-05-17T17:51:34+09:00"
-        },
-        {
-          "title": "'미토스'보다 한 수 위…오픈AI GPT-5.5, 세계 최고 보안 평가서 '왕좌' - 뉴시스",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1tQ1FxVWhFU0NYTm05OEhSSHltRElySndvZDhPalhQMzNNRGM4T2hld0NPdkhxcjZVeWgxUzJCUDlaOFotWHNLU0JRRWhTSm5TMXU2S1lvMDM4SHhZZDlhUtIBeEFVX3lxTE5FQWpQd3JHSEl4ZlpmVjdaeWtUb3VIVHp3cEw4Smx3b0JleDFvTjRTWlgzWjdoRHlNQnNrOXdGYmVUVERHdmVJUi1aSFVYSHlWWWVUeXd5Z3FDdmFfU2tmTlZXN2ZtRG1lTFJWNVdlQk9acF9iQXhCeQ?oc=5",
-          "source": "뉴시스",
-          "summary": "",
-          "published": "2026-05-17",
-          "image": "",
-          "first_seen": "2026-05-17T17:51:34+09:00"
         }
       ]
     },
@@ -298,6 +298,15 @@
           "published": "2026-05-22",
           "image": "",
           "first_seen": "2026-05-23T01:26:45+09:00"
+        },
+        {
+          "title": "글로벌 숏폼드라마 플랫폼 10개사 한자리에… K-숏폼 IP 유통 플랫폼 ‘숏플로우(ShortFlow)’, 중국 베이징 첫 론칭 쇼케이스 성료 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5NMUtPRTJUbHJLcUxNMmNKU3FXaGtqYjJiaVhlZDYza0dfU2NVVmNQU2ZKNFpSNXhwZUxqZTd4Z1lTbFk1Znc?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-05-22",
+          "image": "",
+          "first_seen": "2026-05-24T06:42:07+09:00"
         },
         {
           "title": "한국콘텐츠진흥원, 넷플릭스와 OTT 제작 인력 양성 협력 - 알파경제",
@@ -534,22 +543,13 @@
           "first_seen": "2026-05-19T18:22:37+09:00"
         },
         {
-          "title": "AI 기반 콘텐츠 IP 제작 ‘마테오AI스튜디오’, 팁스 선정 - 와우테일",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9WZGw3ME1DUGlqdHFoY1FZTjdibFdwNnVfdnpzQ0ROSGU0ZHNIcWxkY2E4dGlmRk04V1hvQXlrekM2U2tGUHJRZS1lMzFJNVk?oc=5",
-          "source": "와우테일",
+          "title": "KB국민은행, 'K콘텐츠 기업 성장 지원' 특별출연 협약 - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5MY1NsWmNPSXJDazZxS25MM21VTUVkSEZnVkVjNkFSRG9QUDZaa1U1SmpMeXJmTVhqTTdfVFVKZnJESkE2aGRmSWJtVm1ibEVmM1ByazM2dXN1YnfSAWBBVV95cUxNNVI4X3Y1SU5TQ0FHQ29qbWRtQlZaZzhnYjhSaHFHUGdVdjhwbzNqMTFoMkRycS1ab3FqUWxxUEtoZF9IUllXTm9lLVp3Ty1NZ3MtUldzTHJ1YzZxWkJjaTg?oc=5",
+          "source": "연합뉴스",
           "summary": "",
-          "published": "2026-05-12",
+          "published": "2026-05-13",
           "image": "",
-          "first_seen": "2026-05-18T01:51:06+09:00"
-        },
-        {
-          "title": "창작가무극, K웹툰 타고 해외로 비상 - 매일경제",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBTTG04Q0JDNU51aU1YLUkxcTdvZjE3a1Q3ZEUxb3AyZFZTOUVhRktBc3NzbEtDak1Nb3JTZndUYmtsSDlXcS1jOHU2NFBzUDJkdnJ5cg?oc=5",
-          "source": "매일경제",
-          "summary": "",
-          "published": "2026-05-12",
-          "image": "",
-          "first_seen": "2026-05-19T18:22:37+09:00"
+          "first_seen": "2026-05-24T06:42:07+09:00"
         }
       ]
     },
