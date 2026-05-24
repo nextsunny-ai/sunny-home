@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-24T06:42:07+09:00",
+  "updated": "2026-05-25T00:05:25+09:00",
   "categories": [
     {
       "id": "ai",
@@ -282,6 +282,15 @@
       "name": "콘텐츠·IP",
       "items": [
         {
+          "title": "'공룡 OTT' 넷플릭스 영향력 확대에 방송은 'OTL' - 한국기자협회",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1iN2daeXpoZnRrMGo0cHd1STVIdXRIeWFLNzgwaUJ3N2lBNUYwU29GbjExcUxpQXJRYVFBUnFmaTdLMWFtbXlueXpRckIwV29sb2NXU1FqYU10clUzczkwOWV3ZHI3dw?oc=5",
+          "source": "한국기자협회",
+          "summary": "",
+          "published": "2026-05-24",
+          "image": "",
+          "first_seen": "2026-05-25T00:05:25+09:00"
+        },
+        {
           "title": "\"AI·데이터가 콘텐츠 산업 판 바꾼다\"... 한·영 전문가들, 미래 ‘창조생태계’ 공동 설계 나섰다 - 특허뉴스",
           "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9jcHRRU0hlOTVvU0NCemRHLVJLbjdRTUpZNGx1R1pmR1NjVzlWYWNMTk54RHNsM2lnd3RlVGNOYVc1azcwaFVYUQ?oc=5",
           "source": "특허뉴스",
@@ -541,15 +550,6 @@
           "published": "2026-05-13",
           "image": "",
           "first_seen": "2026-05-19T18:22:37+09:00"
-        },
-        {
-          "title": "KB국민은행, 'K콘텐츠 기업 성장 지원' 특별출연 협약 - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5MY1NsWmNPSXJDazZxS25MM21VTUVkSEZnVkVjNkFSRG9QUDZaa1U1SmpMeXJmTVhqTTdfVFVKZnJESkE2aGRmSWJtVm1ibEVmM1ByazM2dXN1YnfSAWBBVV95cUxNNVI4X3Y1SU5TQ0FHQ29qbWRtQlZaZzhnYjhSaHFHUGdVdjhwbzNqMTFoMkRycS1ab3FqUWxxUEtoZF9IUllXTm9lLVp3Ty1NZ3MtUldzTHJ1YzZxWkJjaTg?oc=5",
-          "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-05-13",
-          "image": "",
-          "first_seen": "2026-05-24T06:42:07+09:00"
         }
       ]
     },
@@ -646,6 +646,15 @@
           "published": "2026-05-17",
           "image": "",
           "first_seen": "2026-05-17T17:51:34+09:00"
+        },
+        {
+          "title": "[Opinion] 2026, 페스티벌의 시즌이 돌아왔다 [공연] - 아트인사이트",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9iOHlXVUg4c0J1NHU1bmJOLUxrMV9FeFh0RGk5V2g0aFB0d2c4OVNxSUdtNmVQNDhwMXlQWjdYeDRIWmZsZXlJdmI1TEtOb0tPMlBVZW8tZW1mLVlSQWJRaA?oc=5",
+          "source": "아트인사이트",
+          "summary": "",
+          "published": "2026-05-17",
+          "image": "",
+          "first_seen": "2026-05-25T00:05:25+09:00"
         },
         {
           "title": "금융투자를 쉽고 재미있게 뮤지컬‘아임유’2026 공연 모집 - 글로벌뉴스통신GNA",
@@ -861,6 +870,15 @@
           "first_seen": "2026-05-23T06:54:54+09:00"
         },
         {
+          "title": "현대미술, 예술인가 자본의 신화인가? - abcn.kr",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB3emMxanlXLVFjZFg5ODJfWkhSVjhhRXgwblR3N1NwSVdfcWE3SWlZSWlwU2ZwSmxfN1RMYlFGUWozUTVIc29OcjMwR0N4cXptRlFEckRjUlk2ck9taUZjSlh0ODUydUHSAWdBVV95cUxQd3pjMWp5Vy1RY2RYOTgyX1pIUlY4YUV4MG5UdzdTcElXX3FhN0lpWUlpcFNmcEpsXzdUTGJRRlFqM1E1SHNvTnIzMEdDeHF6bUZRRHJEY1JZNnJPbWlGY0pYdDg1MnVB?oc=5",
+          "source": "abcn.kr",
+          "summary": "",
+          "published": "2026-05-22",
+          "image": "",
+          "first_seen": "2026-05-25T00:05:25+09:00"
+        },
+        {
           "title": "서울시, '미디어아트 서울' 봄 전시 본격 운영…\"야외미술관 확장\" - 뉴스1",
           "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5jcHA1bGNCdm9kRFZpY0Job2VNNFFmcno1clZzYzFscUNtQzhRMWdObWJoVDNUOXZTcTNIbXptTjhaYUR3WXN1N0ttQlVKSnF1RUE2ZkYtQ2xGdlNU?oc=5",
           "source": "뉴스1",
@@ -877,6 +895,15 @@
           "published": "2026-05-21",
           "image": "",
           "first_seen": "2026-05-24T00:01:27+09:00"
+        },
+        {
+          "title": "'미디어아트 서울' 봄 전시, 내일 5개 플랫폼에서 개막 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE84bmdYUGtRd2ZrV3Mtckw0MTFHVmpjcXpXMmpVT3FyNElRTWdza21VTS1XLTNOSndpX0VqUDlZQ2RSMEtGMEdKZTc5eVplODhKRXR2OA?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-05-21",
+          "image": "",
+          "first_seen": "2026-05-25T00:05:25+09:00"
         },
         {
           "title": "한화그룹 '퐁피두센터 한화' 개관…세계 현대미술 가교로 육성 - 뉴스1",
@@ -1083,6 +1110,15 @@
       "name": "지원사업",
       "items": [
         {
+          "title": "아이디어와 솜씨를 모으는 다채로운 공모전 개최 - K스피릿",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1kNGxieEtsRGJHYUlMUmhGcWFtNEhKOEs5Znh1S2M0YVE4ZXdSX0hLNmJBY1Rnb0pubHhXT01aWEdSYm1RZG5jQ3ZUTndTT0VJZjlYak5yc0ZTak9wN0NpeDE2R19KQXFRbnh0Z1RNNNIBc0FVX3lxTE1fMDNiSFMzN0NGQ0xHbWpfaE9lQTY2Z3ZwOVBTLVpvcFNwNk1udlJQbllwdThCbThvT1BsdnNQOUJKb2g1MnR1MElTRTlrOE95d1JhdzQ2Vkx2bjZreU1ING1SOUtuV0M4aGU5Unp4cUo3NVU?oc=5",
+          "source": "K스피릿",
+          "summary": "",
+          "published": "2026-05-24",
+          "image": "",
+          "first_seen": "2026-05-25T00:05:25+09:00"
+        },
+        {
           "title": "‘대군부인’ 후폭풍 정부로 갔다···문체부에 “지원금 점검하라” 민원 - 스포츠경향",
           "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1ZOGxodTdETElHaGVCNDhYNFdGdXhJYXlVcy0tdF9oTmctS1A3blJ5X2JCMGpyTXg4RlZEOVQzVHFXZHFUQ05OaTAtRzFWa1FhZjMyQnBMYlV3TWFlRE44WkNFUdIBY0FVX3lxTE1ZOGxodTdETElHaGVCNDhYNFdGdXhJYXlVcy0tdF9oTmctS1A3blJ5X2JCMGpyTXg4RlZEOVQzVHFXZHFUQ05OaTAtRzFWa1FhZjMyQnBMYlV3TWFlRE44WkNFUQ?oc=5",
           "source": "스포츠경향",
@@ -1191,6 +1227,15 @@
           "first_seen": "2026-05-24T00:01:27+09:00"
         },
         {
+          "title": "'오월 정신' 영상으로 만든다…ACC, AI 콘텐츠 공모전 개최 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE0xODJpMEZWM1ZmeDgwc3psYzBXNk5YektiaDQ2QlZlSG9EeHp3d3E3T0l4Zm0zWnRKcHV6OWZ5VmgtNUlNMjlqMnlaT0pLQWM?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-05-21",
+          "image": "",
+          "first_seen": "2026-05-25T00:05:25+09:00"
+        },
+        {
           "title": "KOCCA, 게임 제작환경 인공지능 전환 지원사업 공모 - 인디게임닷컴",
           "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9vQWUybHlHQ1dTSms3bGx6M2pBVDU5ZEVMZG5pVDZiMjBTQ3pMLUd6TzVodXh3Q25vcXJMdWNjSUJDZmNLRVJaeWdqRHjSAVRBVV95cUxNaEIza2RNSzF2NGgyam8yRjBDSTBocDItRzdKV0NlZklBLVJqU0lKRE5pWVltT25PR0xyZ3BaeUNfcnByRVNYcVB0d0xhcDJLWGo5Tnc?oc=5",
           "source": "인디게임닷컴",
@@ -1281,6 +1326,15 @@
           "first_seen": "2026-05-22T07:08:37+09:00"
         },
         {
+          "title": "AI도구 사용료 최대 5000만원 지원…콘진원, 게임제작 AI 전환 돕는다 - 뉴스1",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5jaHdURGMtbUdfYmlCMWdJbm9WeDFCTHFQQmQ0ZHJpSnZsZ1BkSFB4N0JBWWFadWpHRFpCWVVGNHAzWFJEOEtBbEp1Y01COG1iaEVzU1hJRkxXVXN1blpvVFBjdC1KTWFUSWc?oc=5",
+          "source": "뉴스1",
+          "summary": "",
+          "published": "2026-05-18",
+          "image": "",
+          "first_seen": "2026-05-25T00:05:25+09:00"
+        },
+        {
           "title": "'소방관이 전하는 우리들의 안전 이야기' 소방청, 「119 영상콘텐츠 공모전」 개최 - 서울Pn",
           "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNbzNCNXoyUFRKNUFTSldNdnBDclRTS2N1RVJQWG94WUlLOU92RUpCYmJ4S3Rqbi1Nb25vUG03dF9kdGp3LVRzczNwUFE5QzZKWnBqVmlNemRyTE1lTVJXWGtONjNGTnF2cTVDT2pPZmIzWXFYNUNGTEpWbS1KOUhCVHdnMlZCWEI4TnNn?oc=5",
           "source": "서울Pn",
@@ -1324,33 +1378,6 @@
           "published": "2026-05-12",
           "image": "",
           "first_seen": "2026-05-12"
-        },
-        {
-          "title": "문체부·콘진원, 우수 방송영상콘텐츠 제작 지원 공모 - 서울Pn",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNEF1Slhyd0hvSzR3dFZaa0lrUGtUQnBGc0RaRnRWYTNlQmhYVUVmaUt4R0pYY2xLaWJBdm8tU2pVR1d5WWdmR0l4QnF1NW00aE9pMGhQOWpsNE5xOUNpVENjbmh2dXVrVzJ0WDRvcVBvS0tJRUh5Z19sMm1vR0Z6c1hJd3g?oc=5",
-          "source": "서울Pn",
-          "summary": "",
-          "published": "2026-05-11",
-          "image": "",
-          "first_seen": "2026-05-17T17:51:34+09:00"
-        },
-        {
-          "title": "식약처, 어린이·보호자 대상 안전한 의약정보 영상 공모전 - 메디소비자뉴스",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBmcEd0Xy1HV3p6M2xKU2FiQWp5c2c5MlVXaGlSM1g3TkZhcEl1ZlF2akh0eVhLTzU2U0d4UU9vbDFhYUR3U3ZuTWpHRjNjaXlIRThadHZBWS1UbDRXZnU5X0JtZlZpbVdWY2ZtQXd6ZWNmd9IBdkFVX3lxTFBTNEpaNWU1TzJsMGJVSG9JUmdYUUpkdlBqOS1RZVNRRnExaG4wb0QxMVpRZkZQVzVJa2xDRXo0bmhERUpxMllnVVlzT2FqV25KRlg4azJmVlRwS3MyOUx4anQ4c0txeFNaS3dRb3dRUGRINVRCenc?oc=5",
-          "source": "메디소비자뉴스",
-          "summary": "",
-          "published": "2026-05-11",
-          "image": "",
-          "first_seen": "2026-05-17T17:51:34+09:00"
-        },
-        {
-          "title": "식약처, ‘안전한 어린이 의약정보’ 영상 공모전 개최 - 로컬세계",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1ueVZtaktNaV9PRERQUWVMeFJZbV8xSjZZT2pJbnEybHFXNWhQVl9lWmhHYnY2VWxLdUxXTHJabW1zRTRXczNDNUhpYmUxWE5KT0dWRzdrcFVmUHp5YUhZaNIBWEFVX3lxTFAtbm5YNmxOc3dhdDd5bmw4MmlFMkI1Y2F6UjhOcXZXX3drWjhIeHU5MFRMNlExTHlNaEttd2xybnB1ZXQySmRTT015OTcwcTBPd0hxaFNIcVA?oc=5",
-          "source": "로컬세계",
-          "summary": "",
-          "published": "2026-05-11",
-          "image": "",
-          "first_seen": "2026-05-17T17:51:34+09:00"
         }
       ]
     },
@@ -1375,6 +1402,15 @@
           "published": "2026-05-21",
           "image": "",
           "first_seen": "2026-05-22T01:39:31+09:00"
+        },
+        {
+          "title": "“보성 브랜드, 성수동 뜬다”…스타기업 육성 나서 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1KN21qdURsZE5XbEVrMmE2T05ZXzg3dmxfSFl0V1g5MUZqNzFWcU11bExNWWhOWDVwcnRyV0ljcmtFZFFnTWVsSzJ2Qm9PY3c?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-05-20",
+          "image": "",
+          "first_seen": "2026-05-25T00:05:25+09:00"
         },
         {
           "title": "보성 소상공인, 7개월 브랜딩 받고 성수동 팝업 간다 - 베타뉴스",
@@ -1572,6 +1608,15 @@
           "first_seen": "2026-05-24T00:01:27+09:00"
         },
         {
+          "title": "알파색채 공식 후원 작가 세연(Ichigo), 국제 아트 페스티벌 ‘CITY SONIC Seoul’서 라이브 페인팅 퍼포먼스 선보여 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE4tazVLR2F0UldFajNaWHNoOHJnZ1V3TGJFOGswSE5VQmlld3ZNV1dRWUlSbFp5ZnFPQmdBNk5uWlpmQ3ozX1E?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-05-18",
+          "image": "",
+          "first_seen": "2026-05-25T00:05:25+09:00"
+        },
+        {
           "title": "[Opinion] 2026, 페스티벌의 시즌이 돌아왔다 [공연] - 아트인사이트",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9iOHlXVUg4c0J1NHU1bmJOLUxrMV9FeFh0RGk5V2g0aFB0d2c4OVNxSUdtNmVQNDhwMXlQWjdYeDRIWmZsZXlJdmI1TEtOb0tPMlBVZW8tZW1mLVlSQWJRaA?oc=5",
           "source": "아트인사이트",
@@ -1759,15 +1804,6 @@
           "published": "2026-05-08",
           "image": "",
           "first_seen": "2026-05-20T01:50:35+09:00"
-        },
-        {
-          "title": "파리에서 열리는 2026년 음악 축제: 여행으로 이끄는 콘서트 - Sortir à Paris",
-          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQY2NhYkxOc1VDVE5LY0FBdzFURFNDMmZiaHA0SzVKOVU0cGJoVTJGWGxlMHFIVHg3SURIcFEyZFNsWUVnSV9iWTNlNkJaQzg2S0JsZkZGdzJFNVU1OVJmR3ZKNkpjVDY2WlVsZUdYR0dPbjVPRC1sNkFETDZIYUhmMTNxN1I5TXRoV0tPcUdyd1JmS0VUSDBOSmlFRGFlQzJfM2xNN1dsRGNyeV9oV2tsWlVlUmd3bkNCT2JwWi1yeTNLU1dRVkppZXp5Q0tTTjc1OTJYLUhfVlp3MWRScWVFZkpQaWI?oc=5",
-          "source": "Sortir à Paris",
-          "summary": "",
-          "published": "2026-05-07",
-          "image": "",
-          "first_seen": "2026-05-19T18:22:37+09:00"
         }
       ]
     }
