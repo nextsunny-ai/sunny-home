@@ -1,27 +1,27 @@
 {
-  "updated": "2026-05-24T21:43:25.820391+00:00",
+  "updated": "2026-05-25T16:23:31.724964+00:00",
   "source": "github.com/nextsunny-ai",
   "repos": [
+    {
+      "name": "ai-workshop",
+      "description": "AI Workshop — Birch Sound, 42 slides + PDF",
+      "html_url": "https://github.com/nextsunny-ai/ai-workshop",
+      "homepage": "",
+      "language": "HTML",
+      "pushed_at": "2026-05-25T16:02:11Z",
+      "has_pages": true,
+      "pages_url": "https://nextsunny-ai.github.io/ai-workshop/",
+      "stars": 0
+    },
     {
       "name": "agent-sunnytoon",
       "description": "Agency Pro 1.0 — agency.sunnytoon.com (12명 페르소나 + 회사별 분기 + BYOK)",
       "html_url": "https://github.com/nextsunny-ai/agent-sunnytoon",
       "homepage": "http://agency.sunnytoon.com/",
       "language": "HTML",
-      "pushed_at": "2026-05-24T17:34:06Z",
+      "pushed_at": "2026-05-25T10:30:37Z",
       "has_pages": true,
       "pages_url": "https://nextsunny-ai.github.io/agent-sunnytoon/",
-      "stars": 0
-    },
-    {
-      "name": "sunny-home",
-      "description": "Sunny personal home",
-      "html_url": "https://github.com/nextsunny-ai/sunny-home",
-      "homepage": "",
-      "language": "HTML",
-      "pushed_at": "2026-05-24T15:05:33Z",
-      "has_pages": true,
-      "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
       "stars": 0
     },
     {
@@ -30,9 +30,20 @@
       "html_url": "https://github.com/nextsunny-ai/sunny-story-maker",
       "homepage": "https://sunny-story-maker.vercel.app",
       "language": "TypeScript",
-      "pushed_at": "2026-05-24T14:58:58Z",
+      "pushed_at": "2026-05-25T07:09:35Z",
       "has_pages": false,
       "pages_url": "",
+      "stars": 0
+    },
+    {
+      "name": "sunny-home",
+      "description": "Sunny personal home",
+      "html_url": "https://github.com/nextsunny-ai/sunny-home",
+      "homepage": "",
+      "language": "HTML",
+      "pushed_at": "2026-05-24T21:43:26Z",
+      "has_pages": true,
+      "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
       "stars": 0
     },
     {
@@ -121,17 +132,6 @@
       "pushed_at": "2026-05-11T14:17:00Z",
       "has_pages": true,
       "pages_url": "https://nextsunny-ai.github.io/haetal-company-v6-preview/",
-      "stars": 0
-    },
-    {
-      "name": "binding-club-v6-preview",
-      "description": "바인딩 클럽 v6 시안 (팝 키즈 + 어드민)",
-      "html_url": "https://github.com/nextsunny-ai/binding-club-v6-preview",
-      "homepage": "",
-      "language": "JavaScript",
-      "pushed_at": "2026-05-11T13:10:36Z",
-      "has_pages": true,
-      "pages_url": "https://nextsunny-ai.github.io/binding-club-v6-preview/",
       "stars": 0
     }
   ]
