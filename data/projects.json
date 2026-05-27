@@ -1,14 +1,25 @@
 {
-  "updated": "2026-05-26T22:14:18.674669+00:00",
+  "updated": "2026-05-27T17:20:15.450367+00:00",
   "source": "github.com/nextsunny-ai",
   "repos": [
+    {
+      "name": "imgcut-editor",
+      "description": "SUNNY EDITOR — Edit images and text in a finished HTML page, no code. HTML / ZIP / Folder. KO/EN. Free.",
+      "html_url": "https://github.com/nextsunny-ai/imgcut-editor",
+      "homepage": "https://nextsunny-ai.github.io/imgcut-editor/",
+      "language": "HTML",
+      "pushed_at": "2026-05-27T05:24:33Z",
+      "has_pages": true,
+      "pages_url": "https://nextsunny-ai.github.io/imgcut-editor/",
+      "stars": 0
+    },
     {
       "name": "sunny-home",
       "description": "Sunny personal home",
       "html_url": "https://github.com/nextsunny-ai/sunny-home",
       "homepage": "",
       "language": "HTML",
-      "pushed_at": "2026-05-26T17:27:48Z",
+      "pushed_at": "2026-05-26T22:14:19Z",
       "has_pages": true,
       "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
       "stars": 0
@@ -121,17 +132,6 @@
       "pushed_at": "2026-05-11T15:21:15Z",
       "has_pages": true,
       "pages_url": "https://nextsunny-ai.github.io/team-sunnytoon/",
-      "stars": 0
-    },
-    {
-      "name": "haetal-company-v6-preview",
-      "description": "해탈 컴퍼니 v6 컨펌 시안 (모던 점집 · 키치 레트로 힙 · 어반 톤)",
-      "html_url": "https://github.com/nextsunny-ai/haetal-company-v6-preview",
-      "homepage": "",
-      "language": "HTML",
-      "pushed_at": "2026-05-11T14:17:00Z",
-      "has_pages": true,
-      "pages_url": "https://nextsunny-ai.github.io/haetal-company-v6-preview/",
       "stars": 0
     }
   ]

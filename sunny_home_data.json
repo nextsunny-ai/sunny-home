@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-27T07:14:11+09:00",
+  "updated": "2026-05-28T02:20:08+09:00",
   "categories": [
     {
       "id": "ai",
@@ -13,6 +13,15 @@
           "published": "2026-05-26",
           "image": "",
           "first_seen": "2026-05-27T02:27:39+09:00"
+        },
+        {
+          "title": "[김정호의 AI시대 전략] 100개의 AI 에이전트와 일하는 ‘1인 기업 시대’ 온다 - 조선일보",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQTW9MOHpBdnRtaUZud0lZMWQtQXRLRXhkOEplSHQxVU54RHdrSE02WllrQnFBYTByNGRpUWZwTThiOGNkUFJhRDFnS0lHNjhYNUZfcDlsZWFCSmdtS3NVNVNrb01Sa0xyVVlhTURwZ2QySjlZenBzbGgtNThrYzBzOER1NmJyeG1SaC1zNk02SC0?oc=5",
+          "source": "조선일보",
+          "summary": "",
+          "published": "2026-05-26",
+          "image": "",
+          "first_seen": "2026-05-28T02:20:08+09:00"
         },
         {
           "title": "﻿이미지도, 영상도, 편집도 한 모델로 ‘영상 올인원 AI’ ﻿[정원훈의 AI 트렌드] - IT조선",
@@ -265,15 +274,6 @@
           "published": "2026-05-17",
           "image": "",
           "first_seen": "2026-05-17T17:51:34+09:00"
-        },
-        {
-          "title": "“AI가 그려준 이상형 대로 해주세요”…美 성형외과는 괴로워 - 매일경제",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9GUEU0dXhHUmZ2U3JOZWtpam9xZGdJQlRCekVtRE1UYmwyTzB0MXlQYjl6cVQ0WF9Ed3J6WUh6X3JVQ2RGS25TTTlLMGI4Zw?oc=5",
-          "source": "매일경제",
-          "summary": "",
-          "published": "2026-05-17",
-          "image": "",
-          "first_seen": "2026-05-17T17:51:34+09:00"
         }
       ]
     },
@@ -281,6 +281,24 @@
       "id": "content_ip",
       "name": "콘텐츠·IP",
       "items": [
+        {
+          "title": "캐릭터 넘어 K팝·게임·웹툰까지…K콘텐츠 IP, 북미 라이선스 시장 20% 성장 - 뉴스핌",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5Gd0pyNGd5NG13Y0dCVWUtd3l4RjV3aGZFbnhQVXI5X0dibU5MaUx5RUpqZjZYU0NyWVVpZnkwVDd2X19tMklFUVA0MmtpV0lyaEFKemV5dVVMNXRo?oc=5",
+          "source": "뉴스핌",
+          "summary": "",
+          "published": "2026-05-27",
+          "image": "",
+          "first_seen": "2026-05-28T02:20:08+09:00"
+        },
+        {
+          "title": "글로벌 시장 정조준한 K지식재산권…콘진원, ‘2026 라이선싱 엑스포’ 韓공동관 운영 - 문화일보",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9GNjVKNkc4RTFaUU9haGFwVHhobFNSaENVRlJhb1dCQ0dPb3NxbnJ4QlltdFRtVnA4VEtTRWxvTXFWR2xXemJNNWR6N3RmNG5J?oc=5",
+          "source": "문화일보",
+          "summary": "",
+          "published": "2026-05-27",
+          "image": "",
+          "first_seen": "2026-05-28T02:20:08+09:00"
+        },
         {
           "title": "\"K-콘텐츠 지킨다\"…경콘진, 저작권 법률지원 본격화 - 한국경제",
           "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBzcFRsTWl2amJtNUtMODNMWTFoWHFQY3RZNmdmVm1nSGdYRW9uQ096b2k4dERHbGFhbzAtMFlYbEZUcjhaZjJJS09vQXRUaS1TbUdyT9IBVEFVX3lxTFBzcFRsTWl2amJtNUtMODNMWTFoWHFQY3RZNmdmVm1nSGdYRW9uQ096b2k4dERHbGFhbzAtMFlYbEZUcjhaZjJJS09vQXRUaS1TbUdyTw?oc=5",
@@ -327,6 +345,15 @@
           "first_seen": "2026-05-27T07:14:11+09:00"
         },
         {
+          "title": "웹툰 제작 시스템부터 IP 확장까지… K-웹툰 스페인서 주목 - ACN아시아콘텐츠뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE00MENLQW5FYUlKVXBoLWVfMVBQTmdTYmhoZ1pZYXBYLU9iTXFrQ0d1eGptSTdLdW16V0ZKalNrUGhkbzdLNV9VeVExYThncUw4bWVnR2xNM2tmT3FKT3NzMFhieG5sOTh30gFsQVVfeXFMT1lCb2JBenlSVkdOd0lPWHllaExkUEctc3U2LURSME5ZR0dvWUc5UzViZzh4Rko4cWMzLUtfMktBMUNpMkc1cmdNQmZJa1hXbkM0eTF6TzM2OWxXOHlIWXJqLVFfRHE5VGZxMk5p?oc=5",
+          "source": "ACN아시아콘텐츠뉴스",
+          "summary": "",
+          "published": "2026-05-26",
+          "image": "",
+          "first_seen": "2026-05-28T02:20:08+09:00"
+        },
+        {
           "title": "“콘텐츠 넘어선 K컬처로···IP중심 스타트업 ‘생태계 확장’ 나서야” - 매일경제",
           "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5ldUZraHdCLWI4S1pkLVk3dE10QXAtQjBHS2w4TllEa0ZwaUZhaE02d2dQa3NORXlWMTVVdmNhSk5ubFJRVUdzVi1Td3VnazZzWnFubA?oc=5",
           "source": "매일경제",
@@ -334,6 +361,15 @@
           "published": "2026-05-25",
           "image": "",
           "first_seen": "2026-05-27T02:27:39+09:00"
+        },
+        {
+          "title": "OTT가 방송 넘어섰는데…규제는 여전히 TV 시대 - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB3MDVEbmdhbUVzRnhQYjBBTV9tejl1Wk5KRTRTZzVIaGpCeWVyLW5OZlBON1JZRGU5bnJiSFJiNFdDeF9aUmFNaFNYRUw0R2VwRDVneHhsdEE4a2PSAWBBVV95cUxOalVZNU9IMkdlZ1VTMXhPU1NYR252RkRVbjRUM1JOa3luSnBVYUFtdHZBSjdmRFZHdkZtakVaV2tVWVNjaFpmUjBUYmJtWl9xRno5QzNaSFJmYzNROTdIVkk?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-05-25",
+          "image": "",
+          "first_seen": "2026-05-28T02:20:08+09:00"
         },
         {
           "title": "'공룡 OTT' 넷플릭스 영향력 확대에 방송은 'OTL' - 한국기자협회",
@@ -352,6 +388,15 @@
           "published": "2026-05-24",
           "image": "",
           "first_seen": "2026-05-25T06:43:16+09:00"
+        },
+        {
+          "title": "'공룡 OTT' 넷플릭스 영향력 확대에 방송은 'OTL' - 한국기자협회",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE42XzlOOHA0U284ZmdCQ2Z3RmlzUUNrOFNZMlpDbDNMVE5HZDd5LUdOckR6UWpvSkpWQi1NZjBlWS01T1IwblJCNDFIalBJZVc0dkRRTFVHbFdPdmJCMEpicTln?oc=5",
+          "source": "한국기자협회",
+          "summary": "",
+          "published": "2026-05-24",
+          "image": "",
+          "first_seen": "2026-05-28T02:20:08+09:00"
         },
         {
           "title": "\"AI·데이터가 콘텐츠 산업 판 바꾼다\"... 한·영 전문가들, 미래 ‘창조생태계’ 공동 설계 나섰다 - 특허뉴스",
@@ -505,51 +550,6 @@
           "published": "2026-05-17",
           "image": "",
           "first_seen": "2026-05-20T01:50:35+09:00"
-        },
-        {
-          "title": "\"콘텐츠만으론 부족해\"... 커머스·오프라인 확장 나서는 OTT - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBWV25veldRdWxaSDZLNDV5aDZuc201RTlRNl9oZVBrb3BoUjdJc0lfWkppRHVPYkdxbVlDb1FXWllsSTF3T0dmSS1SaHpjSjQ?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-05-17",
-          "image": "",
-          "first_seen": "2026-05-22T01:39:31+09:00"
-        },
-        {
-          "title": "네이버웹툰, 워너와 애니 공동 제작 확대…K웹툰 할리우드행 넓힌다 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1QcloybjBYNmFGY0ZFRWwwb1BBQVdob0hDTUFQaUZJZGdyUVJ1UERHVU9IdWZLUVo1RkZLVVVoSWNwbWtmZTlSNU4xTQ?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-05-17",
-          "image": "",
-          "first_seen": "2026-05-26T06:59:14+09:00"
-        },
-        {
-          "title": "넷플릭스만 버텼다…국내 콘텐츠 제작 수요 정체 - 뉴스토마토",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9nOFg3bktXYmNCVm13ckFDTFMzd1pZbFM5c2s4QklSUHhQWmpvWi1JZW9wakdzMl9iWGo3blpCQWpqX1JYNkstN1U3UHJnN3NFOUpMWktiYTBOekJIWnV3Ng?oc=5",
-          "source": "뉴스토마토",
-          "summary": "",
-          "published": "2026-05-15",
-          "image": "",
-          "first_seen": "2026-05-17T23:57:44+09:00"
-        },
-        {
-          "title": "美HBO, 베트남 스트리밍 서비스 내달 종료…OTT시장 적극 공략 - 인사이드비나",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBlcGNvSjRaNUl2bFl0OVZvY29Dc1c0eUNTME4xVVFEUS1SUHRtcmQzYlR5MFNyM0Iza0dzQ3VHTmxZazQySWhkRGI2elNVU1pnUnpyQ3BsOThBX0dkLU1XaERXYkFtUUtMN2FnSg?oc=5",
-          "source": "인사이드비나",
-          "summary": "",
-          "published": "2026-05-15",
-          "image": "",
-          "first_seen": "2026-05-17T17:51:34+09:00"
-        },
-        {
-          "title": "국내 콘텐츠 정체 속 넷플릭스 영향력 확대…\"OTT 자료제출 근거 필요\" - 이데일리",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxONDAzZnRrZ1JLMVM1U3drTzhPbW5tOF9wNDVtMVJwUGd3TEpDM1lPT1dMQVZBRWZyR1A5YTBNcmhDVFdkTkxhMXRyMlRFLU04ZXBvWkhzM2dkTDltTTc0RmFZMU1LOVUwb3BUcWZvR2V0WnV5ZUtUTTU3TU5OdHlJcg?oc=5",
-          "source": "이데일리",
-          "summary": "",
-          "published": "2026-05-15",
-          "image": "",
-          "first_seen": "2026-05-17T17:51:34+09:00"
         }
       ]
     },
@@ -834,6 +834,15 @@
       "name": "전시",
       "items": [
         {
+          "title": "음성군, 미디어아트전시 개최 - 음성타임즈",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBnMUJvOEozRTVuaXpMQUM1U1U3THhMNGV0allyTGpSZnprMnpYN1c5N3RsaHVKa0ZJVk5EOFNzTWM0d2ZyNmRzTDBXcmFYcWxBTFVyRGhYYlB1TGVfNFdjb0RORmRTZnNNZGc?oc=5",
+          "source": "음성타임즈",
+          "summary": "",
+          "published": "2026-05-27",
+          "image": "",
+          "first_seen": "2026-05-28T02:20:08+09:00"
+        },
+        {
           "title": "[주목할 전시]한화, 퐁피두센터 서울 개관…한국·프랑스 문화교류 새 지평 열다 - 서울문화투데이",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9iRGQ5VFJJeFNXT18xclU4Q0YwdUhHNXV5aW1vVGlXNlRzbkRKVnk3S3lPSllWTG1ncEVlN1NTRlBqbFdGblZVLWdhTGs5M0F4aUlLcGxnRWtNWFpVZWdsMTRxVVBFbmZ5YlE?oc=5",
           "source": "서울문화투데이",
@@ -996,15 +1005,6 @@
           "first_seen": "2026-05-17T17:51:34+09:00"
         },
         {
-          "title": "“캠퍼스가 전시장으로”…이화여대서 국제 미디어아트 축제 - 진일보",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE8xMnY0UHhMNVU3dmUwUS1pclZxOFh1OTZCdHg5TndBR1BXMWd0SUdwU3I0VzdyV1czMWgwYWIwNUlMYjBmdDBUX2ZvclA4ZjBQNThlSkpnV3dGR0FPclFvX1JicEdjeFlVMHJxVVM5QQ?oc=5",
-          "source": "진일보",
-          "summary": "",
-          "published": "2026-05-14",
-          "image": "",
-          "first_seen": "2026-05-14"
-        },
-        {
           "title": "산책하듯 거닐며 현대미술의 매력속으로 - 경상일보",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBMR19VTG1aZzBNVEZUMmJlNy03cndYdGJyRy1QTF9LdE8wLVlJTXJZWDdVVG9aSjM0NVRid1phYUo4bkRMcWRGWFhaRVVEVFRvTFA0YW8xQlhrUDdjOG1jX3VfNlNoa2h2X3FpSg?oc=5",
           "source": "경상일보",
@@ -1109,6 +1109,15 @@
       "id": "grants",
       "name": "지원사업",
       "items": [
+        {
+          "title": "진천군, SNS 영상 공모전 개최 - 충청타임즈",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE90MkR0elVtNGV0UURFZGJBVWhScDk2RVI1cVBNcnNDRFBBZkpJeThNWm5ST2F1ZVZtSUpMcG9uSURIZFFEY0V5Ukxlay1RQnFEQ0RkWG9FUDhHR0FoNUc2VDI1Yms2R05F?oc=5",
+          "source": "충청타임즈",
+          "summary": "",
+          "published": "2026-05-27",
+          "image": "",
+          "first_seen": "2026-05-28T02:20:08+09:00"
+        },
         {
           "title": "국립대구과학관, 2026년 제6회 과학영상 콘텐츠 공모전 개최 - 매일신문",
           "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFAtckowdk9yN3cxSWlvUU9BSVNWbEkyMkFFcU52QlZLVzVoUzJlTklGTTBTTzA5VDFHbmNrR0xrTHNDT1ZBNEcydW1ENGdmSzl2ZmJQTmVEZU4zWnJVUkNGOXhB?oc=5",
@@ -1369,15 +1378,6 @@
           "published": "2026-05-18",
           "image": "",
           "first_seen": "2026-05-19T01:47:50+09:00"
-        },
-        {
-          "title": "방한객 10명 중 8명 서울로…문체부, 지역 관광특구 2곳 키운다 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9HWkJaZWNvcnJ1YXBhOUNsalVMVFM2cHBvSmpkMlFid0xCTXoySlZLQjNlUTVIMHV5ZEt6V0J6eE9mQ2g2MjlkakdGRQ?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-05-18",
-          "image": "",
-          "first_seen": "2026-05-19T06:57:14+09:00"
         }
       ]
     },
@@ -1385,6 +1385,24 @@
       "id": "design",
       "name": "디자인",
       "items": [
+        {
+          "title": "2026 크리에이티브 디렉터 세미나 - 디자인정글",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5SY25oMEtrdGFESEd0RHRnTVE1VnpLampteUNGaWxiTnc3RG11eHJmcWF1a2s0SFJBT2JtUVVnQUxsbFNWUm9nQXpPTmxnVWNi?oc=5",
+          "source": "디자인정글",
+          "summary": "",
+          "published": "2026-05-27",
+          "image": "",
+          "first_seen": "2026-05-28T02:20:08+09:00"
+        },
+        {
+          "title": "팀스파르타, 브랜드 개편하고 ‘AI 네이티브 조직’ 선언 - 플래텀(Platum)",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9DV2pZejRpcjhNN1I5X0hXbE5kbl9xZlljbkRMUXF6ajExd3pXNjVPbDFhV2ROY3Y2Y3ZGYlJSRElZTXl1dTE5VQ?oc=5",
+          "source": "플래텀(Platum)",
+          "summary": "",
+          "published": "2026-05-27",
+          "image": "",
+          "first_seen": "2026-05-28T02:20:08+09:00"
+        },
         {
           "title": "LCC에 신뢰를 담는 디자인, 피치 항공 리브랜딩 - 디자인플러스",
           "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE84Y1ZobE1udldFTERSb2RGWWw4Ui1wNTlhVUJRX05uTk9FOUFybm1ZNXFMLTIwUTFERWFrbFU4NGpfTVBRSTNmV2w0bFg?oc=5",
@@ -1411,6 +1429,15 @@
           "published": "2026-05-23",
           "image": "",
           "first_seen": "2026-05-24T00:01:27+09:00"
+        },
+        {
+          "title": "F&amp;L People_Design Team 오은지님 - 잡플래닛",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPMi1ST0l5cXBrdU1NQ3JBNTFfMEVwN1hCSXk4MWhCQW5pWGc0LW9YM2E5VzRuRkJpXzdfM0FyT0dMdVhKUGV5RmRfWFpySktCY3VIem8yMmdvZGkxaWlfaG9kNHJmS0hheGVkdjVONjF2ekl3TWVoUlNWQ21EMmNrOHpfUGdNenlUNXhrNHNGZlRud0o0YnpialpneS02R2JSNTRkQVdzaS1LTXFESFhKNWpoMk04TnpHOExFcGNockR2Z1RJZHpOYk5SX0l1emVYTXlyX3JIMVN6YmpiZEZtMW1n?oc=5",
+          "source": "잡플래닛",
+          "summary": "",
+          "published": "2026-05-22",
+          "image": "",
+          "first_seen": "2026-05-28T02:20:08+09:00"
         },
         {
           "title": "청주 80년 향토기업 ‘한국도자기’ 전통에 새로운 감각 더해 젊은 세대 공략 - 중부매일",
@@ -1669,33 +1696,6 @@
           "published": "2026-05-15",
           "image": "",
           "first_seen": "2026-05-24T00:01:27+09:00"
-        },
-        {
-          "title": "K-클래식이 중심에 선 ‘베를린 아시안 뮤직 페스티벌 BAMF 2026’, 베를린 콘체르트하우스에서 열린다 - K-Classic News",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE40UkpGMXdkXzk4MUs2d0JHeGJacEFSS1RPWWNyQkpRLXdXWGxoZWwzQno0LTE2bldKN05RdEFQUzlZSWJVMGo1UTEtMC1PVDM1WHc3SGVTdWVnSUpUcTFCQTFjN29SUGs?oc=5",
-          "source": "K-Classic News",
-          "summary": "",
-          "published": "2026-05-14",
-          "image": "",
-          "first_seen": "2026-05-14"
-        },
-        {
-          "title": "[철원군] 6월 12-14일 DMZ 피스트레인 뮤직페스티벌 2026 개최 - 팝업뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1VdWUzR3RsTFNzdGUxZFhLcjhyczJWalV3SVU2aGgtTHNDTmdXamNPaFQ3ODMybGMxX0ZSTVMxeGJ3Q2EzS1FlWUk4TWlpeEluWlFSeUN3?oc=5",
-          "source": "팝업뉴스",
-          "summary": "",
-          "published": "2026-05-14",
-          "image": "",
-          "first_seen": "2026-05-14"
-        },
-        {
-          "title": "베를린에 퍼지는 아리랑…'BAMF 2026' - 뉴시스",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE83MDhhQ1N2WS1faHU5YkpYalc0U1N0Q2FyZ1RVU0YwdHV5WnNoUE0xb2JoVnVnVFVUSUJBRlU4Ylc2cXlFV0pkb3BCU0liZGtwZUxLbjlLcE4yZWV6ZFR1eXdCbnZZMEROMHhTN2NBaFhIZ0pOOUszdtIBeEFVX3lxTE83MDhhQ1N2WS1faHU5YkpYalc0U1N0Q2FyZ1RVU0YwdHV5WnNoUE0xb2JoVnVnVFVUSUJBRlU4Ylc2cXlFV0pkb3BCU0liZGtwZUxLbjlLcE4yZWV6ZFR1eXdCbnZZMEROMHhTN2NBaFhIZ0pOOUszdg?oc=5",
-          "source": "뉴시스",
-          "summary": "",
-          "published": "2026-05-14",
-          "image": "",
-          "first_seen": "2026-05-14"
         },
         {
           "title": "英 매시브 어택·美 픽시즈 등 펜타포트 록 페스티벌 출연 - 연합뉴스",
