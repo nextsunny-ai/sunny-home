@@ -2700,13 +2700,13 @@ function saveApiKey() {
   setApiKey(v); closeKeyModal();
 }
 
-// init team
-loadTeamHist();
-renderTeamGrid();
-renderTeamQuick();
-renderProjects();
-if(typeof renderQuickLinks === 'function') renderQuickLinks();
-updateKeyBtnUI();
+// init team — 각 초기 렌더를 격리해 한 곳 throw가 이후 렌더(프로젝트·퀵링크 등)를 막지 않게 한다.
+try { loadTeamHist(); } catch (e) { console.error('[init] loadTeamHist 실패:', e); }
+try { renderTeamGrid(); } catch (e) { console.error('[init] renderTeamGrid 실패:', e); }
+try { renderTeamQuick(); } catch (e) { console.error('[init] renderTeamQuick 실패:', e); }
+try { renderProjects(); } catch (e) { console.error('[init] renderProjects 실패:', e); }
+try { if (typeof renderQuickLinks === 'function') renderQuickLinks(); } catch (e) { console.error('[init] renderQuickLinks 실패:', e); }
+try { updateKeyBtnUI(); } catch (e) { console.error('[init] updateKeyBtnUI 실패:', e); }
 document.getElementById('teamKeyBtn')?.addEventListener('click', openKeyModal);
 document.getElementById('keyModalBg')?.addEventListener('click', (e) => { if(e.target.id==='keyModalBg') closeKeyModal(); });
 document.getElementById('personaModal')?.addEventListener('click', (e) => { if(e.target.id==='personaModal') closePersonaModal(); });
@@ -2991,10 +2991,18 @@ async function loadExternalData() {
     };
   }
 
-  buildNewsItems(data);
-  renderNewsPick();
-  renderNews('all');
-  updateNewsFreshness(data.updated);
+  // 각 렌더 호출을 개별 try/catch로 격리한다.
+  // 한 곳에서 throw(예: 정의 전 호출·DOM 누락)가 나도 나머지 섹션은 계속 그린다. (5/17·5/29 전체 멈춤 사고 방지)
+  try { buildNewsItems(data); } catch (e) { console.error('[loadExternalData] buildNewsItems 실패:', e); }
+  try { renderNewsPick(); } catch (e) { console.error('[loadExternalData] renderNewsPick 실패:', e); }
+  try { renderNews('all'); } catch (e) { console.error('[loadExternalData] renderNews 실패:', e); }
+  // updateNewsFreshness 는 파일 하단(window.updateNewsFreshness)에서 정의된다.
+  // 이 호출이 정의보다 앞이라 정의 전엔 ReferenceError가 났다 → 함수 존재 가드.
+  try {
+    if (typeof window.updateNewsFreshness === 'function') {
+      window.updateNewsFreshness(data.updated);
+    }
+  } catch (e) { console.error('[loadExternalData] updateNewsFreshness 실패:', e); }
 }
 loadExternalData();
 
@@ -3180,7 +3188,9 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     if (!convos.length) convos = DEFAULT_ENGLISH;
     // KST 기준 일(日) 번호로 deterministic 선택 → 하루 동안 고정, 매일 변경
     const epochDay = Math.floor((Date.now() + 9 * 3600000) / 86400000);
-    renderEnglish(convos[epochDay % convos.length]);
+    // 영어 회화 렌더도 격리한다 — 데이터 형식 이상으로 throw 나도 다른 섹션은 살아있게.
+    try { renderEnglish(convos[epochDay % convos.length]); }
+    catch (e) { console.error('[loadEnglish] renderEnglish 실패:', e); }
   }
 
   /* ════ 날씨 — open-meteo 무료 API (키 불필요) ════ */
