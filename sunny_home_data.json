@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-30T02:33:58+09:00",
+  "updated": "2026-05-30T07:22:46+09:00",
   "categories": [
     {
       "id": "ai",
@@ -76,6 +76,15 @@
           "published": "2026-05-27",
           "image": "",
           "first_seen": "2026-05-30T02:33:58+09:00"
+        },
+        {
+          "title": "앤트로픽, 최기영 한국 대표 선임…서울 오피스 개소 앞두고 본격화 - 플래텀(Platum)",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9lRzF0al9zc1I0V0lWV0VaRlZBdm1wTk5KVU1SRDJmdWZ1V3d2TzQ5S1owdDhYWVdkYVhzVG9XaDM1TF9xaTVMRw?oc=5",
+          "source": "플래텀(Platum)",
+          "summary": "",
+          "published": "2026-05-27",
+          "image": "",
+          "first_seen": "2026-05-30T07:22:46+09:00"
         },
         {
           "title": "[AI픽] AI안전연구소장 \"에이전트 AI 위험 평가·국제 공조 필수\" - 연합뉴스",
@@ -265,15 +274,6 @@
           "published": "2026-05-19",
           "image": "",
           "first_seen": "2026-05-21T01:54:50+09:00"
-        },
-        {
-          "title": "AI 콘텐츠 제작의 모든 것 '하나면 다 된다 제미나이' 출간 - 전자신문",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9lWjhJQ1IyeVRIYmo4V1lrMWs1QURLUGcwZ2RkZWtTVUJLRmVVLVl3cXpjd2lyRk9SQU5VbGJkVVJqVWtKVFFsN19YaHpSdw?oc=5",
-          "source": "전자신문",
-          "summary": "",
-          "published": "2026-05-19",
-          "image": "",
-          "first_seen": "2026-05-23T01:26:45+09:00"
         }
       ]
     },
@@ -834,6 +834,24 @@
       "name": "전시",
       "items": [
         {
+          "title": "국내 15개 갤러리 한자리…한국 현대미술 흐름을 읽는다 - 중앙일보",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1sUEtEcHpCTl80N0pyU2ZCU2JoVUNQNjQyNG03cV9ud3JIaUpCVGljVmZYQzZUQlBkY2pXODJXMUdJdXBfX2ZMSEE2akV4VWQxQ1NlaHFR?oc=5",
+          "source": "중앙일보",
+          "summary": "",
+          "published": "2026-05-30",
+          "image": "",
+          "first_seen": "2026-05-30T07:22:46+09:00"
+        },
+        {
+          "title": "바다를 넘어, 마음을 잇다… 2026 한국-필리핀 국제미술교류전 ‘ACROSS SEAS, ACROSS HEARTS’ 개최 - 외교문화뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0zclI3d3NrekptUVI1YXRzM2lnTjh2a2lSZ1JoUWVhMW4xRFNFVjZmbDZEM2tLSkctWFlNU3I2cG1jUWdLZWY4M21LeENFOWtkWF9qalY4cXhORXo5eFdtX29pLUg?oc=5",
+          "source": "외교문화뉴스",
+          "summary": "",
+          "published": "2026-05-30",
+          "image": "",
+          "first_seen": "2026-05-30T07:22:46+09:00"
+        },
+        {
           "title": "음성군, 미디어아트전시 '멜로디 오브 라이트' 개최 - 엔디엔뉴스",
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8zQ1UtcEtPRGRMOHRZSnk4Mnk0aGdadzRPSkljRHZ1TjZwQnI1ZUQzcHFvZllDdkRBSTQ3Vi1FOEdHMWZ5NHZGRWlKLTloaWNNY0toYXl2aUFoWmoxZF9oMlpEbTVHRnpNWmdCQUtB0gFyQVVfeXFMTUxPQm1XT2dSWExodXhzbDRtaVpZb1VhZ01xYjNrSWNyV0F6dXJXd3JrZi1YQXVIZnZoT3pnenBCODZybHM3ZmNCeTMwaTVNQzdrWE1pb3ZoQ1Jkek9vRUMzSWowTFBmcmw3LWtidnJva1BR?oc=5",
           "source": "엔디엔뉴스",
@@ -859,6 +877,15 @@
           "published": "2026-05-28",
           "image": "",
           "first_seen": "2026-05-29T02:34:42+09:00"
+        },
+        {
+          "title": "아모레퍼시픽미술관, 개념미술 거장 ‘솔 르윗’ 국내 첫 대규모 개인전 9월 개최 - BRIQUE MAGAZINE",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPX3lkbUpJRWVpbnI0ZWxlaFhpUEp4YWFqQ2dVS2U1NlN1Y2RpQk9TQkpYNGJ3MVhlakQ0OWl6WXRMVlBaR18tQWo1dUpqLWpUaEpKZ09PYV9fYkZCSVBUSk4xNV9ta3YxeXRaVjFZVzhkYkNXcmlaRWhPb3dta0U3TGpieGJRSWlmWWxfdWM0WGhnRWxv?oc=5",
+          "source": "BRIQUE MAGAZINE",
+          "summary": "",
+          "published": "2026-05-28",
+          "image": "",
+          "first_seen": "2026-05-30T07:22:46+09:00"
         },
         {
           "title": "음성군, 미디어아트전시 개최 - 음성타임즈",
@@ -1075,33 +1102,6 @@
           "published": "2026-05-14",
           "image": "",
           "first_seen": "2026-05-21T01:54:50+09:00"
-        },
-        {
-          "title": "“캠퍼스가 전시장으로”…이화여대서 국제 미디어아트 축제 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9DUzVrQmpjLUlSRUlTU05rcWJtckdKNGttWE92Ny13QlAtbHJFLWxaeVZ6SFE4UlYyTHkxalhSWWR5a25Na19zVUR6T2djdGM?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-05-14",
-          "image": "",
-          "first_seen": "2026-05-22T07:08:37+09:00"
-        },
-        {
-          "title": "이화여대 창립 140주년 기념, 16일까지 미디어아트 축제 - 조선일보",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNTDdCUWQwc0JETGRSRTdCbDBFN2dHblVocVZYTUxSRlo3Vmd5SlcyQm5FSmlZR3dBdWVVOXBfZXczdGxGUy1wLVZCS2g5aEt5Q1FqcDMxUHhyWUt2NHB2a1FfTzg0SnVheFJ6S1NLbnNkRW5ZZTlidVBXYjBCeTJwQVQtcnFQb1d4Z3A3dk85VE1OR0x6?oc=5",
-          "source": "조선일보",
-          "summary": "",
-          "published": "2026-05-14",
-          "image": "",
-          "first_seen": "2026-05-27T07:14:11+09:00"
-        },
-        {
-          "title": "해방 80년, 예술은 국경을 넘었다…MMCA ‘로드 무비’展 - 뉴시스",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1hZXlhcjF6ZmM4TkRzNDZEalQ2c2ZfVURUOXFsUllGQnd4a1BMZkludXZvbkh1WW1TaXl4Vmw0QWFwRTlTbXdNeVdvTms1X1N1UUVCdGlPcXVuYngwMkxMTmphV0ZHYXRIeGJMSkppaDJUbXBJbUZ0LdIBeEFVX3lxTE1hZXlhcjF6ZmM4TkRzNDZEalQ2c2ZfVURUOXFsUllGQnd4a1BMZkludXZvbkh1WW1TaXl4Vmw0QWFwRTlTbXdNeVdvTms1X1N1UUVCdGlPcXVuYngwMkxMTmphV0ZHYXRIeGJMSkppaDJUbXBJbUZ0LQ?oc=5",
-          "source": "뉴시스",
-          "summary": "",
-          "published": "2026-05-13",
-          "image": "",
-          "first_seen": "2026-05-18T01:51:06+09:00"
         }
       ]
     },
@@ -1171,6 +1171,15 @@
           "published": "2026-05-28",
           "image": "",
           "first_seen": "2026-05-30T02:33:58+09:00"
+        },
+        {
+          "title": "문체부, 지역 콘텐츠 창작·창업 지원에 63억원 투입 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9Xb2N6NEN5OWxCZU9QazRhUEJCS2xHVWpHSjdlMk4zYVhvNlUyNlFDN0JHQkNYZllxV3BOaFhHN3pLUHd4YUlGeFhDeXY2eU0?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-05-28",
+          "image": "",
+          "first_seen": "2026-05-30T07:22:46+09:00"
         },
         {
           "title": "진천군, SNS 영상 공모전 개최 - 충청타임즈",
@@ -1369,15 +1378,6 @@
           "published": "2026-05-21",
           "image": "",
           "first_seen": "2026-05-25T00:05:25+09:00"
-        },
-        {
-          "title": "문체부, 한글문화상품 개발 공모…최대 1200만원 지원 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9SNTJORDJjM3lHejFpbWtnMzZVdEFTM1VfZFpOenpTX2tnSzBUYlVjd1c2bmQycW9sT0FFMkhsemJYdlVvU1E?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-05-21",
-          "image": "",
-          "first_seen": "2026-05-25T06:43:16+09:00"
         }
       ]
     },
@@ -1431,6 +1431,15 @@
           "first_seen": "2026-05-28T07:24:16+09:00"
         },
         {
+          "title": "하만, 2026년 춘계 소음진동 학술대회서 브랜드·디자인·음향 철학 발표 - 네이트",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1YaWdtMnNQRFBRbWk4NU1yQkh4VkN5ZGRjLXgwYWZzZzZHRzZGX2lTTlI2WGNIMGZUcXAyQkZfNWtNTzlFaHRLVlE5S0tNMjU3cm8w?oc=5",
+          "source": "네이트",
+          "summary": "",
+          "published": "2026-05-27",
+          "image": "",
+          "first_seen": "2026-05-30T07:22:46+09:00"
+        },
+        {
           "title": "LCC에 신뢰를 담는 디자인, 피치 항공 리브랜딩 - 디자인플러스",
           "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE84Y1ZobE1udldFTERSb2RGWWw4Ui1wNTlhVUJRX05uTk9FOUFybm1ZNXFMLTIwUTFERWFrbFU4NGpfTVBRSTNmV2w0bFg?oc=5",
           "source": "디자인플러스",
@@ -1474,6 +1483,15 @@
           "published": "2026-05-22",
           "image": "",
           "first_seen": "2026-05-28T02:20:08+09:00"
+        },
+        {
+          "title": "F&amp;L People_Design Team 오은지님 - 잡플래닛",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5WdXBvbTBSRGJCVXNRZldOYXdoUEtLX2ZTWWt6WElWOW9FaVQ1azRock1EU3lUcVZHYnF6dXRTSTlYMjJ1cmZOX3ZDRGxyQ3diNGFYVjhMMllhZw?oc=5",
+          "source": "잡플래닛",
+          "summary": "",
+          "published": "2026-05-22",
+          "image": "",
+          "first_seen": "2026-05-30T07:22:46+09:00"
         },
         {
           "title": "청주 80년 향토기업 ‘한국도자기’ 전통에 새로운 감각 더해 젊은 세대 공략 - 중부매일",
@@ -1546,6 +1564,15 @@
           "published": "2026-05-18",
           "image": "",
           "first_seen": "2026-05-19T01:47:50+09:00"
+        },
+        {
+          "title": "AI 시대, 옵시디언이 디자이너에게 필요한 이유 - 브런치",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5hTHN2Wjg1cThFeG1qQzVGZkRkMmVHbVdYNWJBdDBDeWo5ZEN2WVZYWVdzY0x1WmhpQVpOS3dXeS1tSGJiNnFXVDFPVjRqdw?oc=5",
+          "source": "브런치",
+          "summary": "",
+          "published": "2026-05-18",
+          "image": "",
+          "first_seen": "2026-05-30T07:22:46+09:00"
         },
         {
           "title": "[AI디자인 실전 #04] AI는 우리 디자인 시스템을 '읽고' 있을까... 바이브 코딩 시대, 디자이너가 다시 챙겨야 할 단 하나 - kmjournal.net",
@@ -1642,6 +1669,15 @@
           "published": "2026-05-29",
           "image": "",
           "first_seen": "2026-05-30T02:33:58+09:00"
+        },
+        {
+          "title": "佛 음악 축제 '페트 드 라 뮈지크', 두근두근 '한국 개최' 선언 - 전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBJdlRvdUw2eHFvMGxGdlg4SkpoTlhvRThHdXBSLUZ0cEtHUzV2V1VQUWx6aDNKQ2lvUXpEREY2Q2c4NnZaYWhzZjVWSWRaQQ?oc=5",
+          "source": "전자신문",
+          "summary": "",
+          "published": "2026-05-29",
+          "image": "",
+          "first_seen": "2026-05-30T07:22:46+09:00"
         },
         {
           "title": "2026 히어로 락 페스티벌, 이게 바로 ROCK이지! - 브런치",
@@ -1885,15 +1921,6 @@
           "published": "2026-05-13",
           "image": "",
           "first_seen": "2026-05-27T02:27:39+09:00"
-        },
-        {
-          "title": "'DMZ 피스트레인 2026' 최종 라인업…서스턴 무어·인순이 등 30팀 - 뉴시스",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE8wVFp6VVlwVVM5VVlQUDc5cGVQcDBEbll3bVFNcEd4Y0o4LWtaSUV3OFZDa3dzb1doOFVtUFV3UGJVZlhVNnJzbVJfSkpQZFlkWWhQWmh0OWp4WE14bWhOUDV3WFFtLTh5N2J3emxBeUpLSkFvNmY1c9IBeEFVX3lxTE8wVFp6VVlwVVM5VVlQUDc5cGVQcDBEbll3bVFNcEd4Y0o4LWtaSUV3OFZDa3dzb1doOFVtUFV3UGJVZlhVNnJzbVJfSkpQZFlkWWhQWmh0OWp4WE14bWhOUDV3WFFtLTh5N2J3emxBeUpLSkFvNmY1cw?oc=5",
-          "source": "뉴시스",
-          "summary": "",
-          "published": "2026-05-12",
-          "image": "",
-          "first_seen": "2026-05-17T17:51:34+09:00"
         }
       ]
     }
