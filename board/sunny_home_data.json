@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-30T07:22:46+09:00",
+  "updated": "2026-05-31T00:07:44+09:00",
   "categories": [
     {
       "id": "ai",
@@ -40,6 +40,15 @@
           "published": "2026-05-28",
           "image": "",
           "first_seen": "2026-05-30T02:33:58+09:00"
+        },
+        {
+          "title": "생성형 AI 이미지 - 전자신문",
+          "url": "https://news.google.com/rss/articles/CBMipARBVV95cUxPalhQS0s4bE5hbWRTQUhtN2hUX3c1ZHkwR1ZSd19pSkhvQ3prMzBTc0JPV0Z3OENoMWpIUnZHc3RuRUlZZ3NxSFhQZ3VFZlpDcXNrX01rTldzcmdMMTBTZVNxakRsUjJPTldMZFJqWFMyUDlSb0otVjd5NnJ3ckNRbGF3WXc3UGdVVnFCOURjSjBheng5enN3VWVuSXRlbC05dXhPRmttSVZ1VVl6OUdKS3ZjcmdtdFVnYlhIWEUyMzQ1eUpsQ1RLR3RNMGtVLWxpWG9aa3VyeDhDRXI3dXdqMVIwbnFid2pMSFdld1ViSW1IY3NEUGg0R2JreHdEcExVRjZuN0cwbHNRLW5qbU54ZWl5ZUlfTjZwdnZFSW5yakZzQ2liOW9LbFhwN0VWRzEyY0owM0FzUUp3R2kycTFBUFoyYXlaQ25UTU1oQnlpSUhhekZvNnlsalQ4c04wSkhiTkVxSHFoY1dfMVZOXzRQZFpNOXo0OWptcENKeERfLUVPODlmOTVJQzlXWUZSZ1BKTm9wcXhMSWptS0x5dVBiblpZejRKazhKSS1Td2x4MWxlenMzMDNsV1ZUaVl2MkFsQXpQWk5admR5Q1JDclF3Wnd2Uzd6Wmh1YXpzZmhSOF9uLU15VGhJdlN2MDlqTFlpbXJucGlla3MzcVIxMzlYMzdMUWtzRHhHWDBxSEdueFMxOVh5a1g1ZG9ja05LMlRFbjhoRw?oc=5",
+          "source": "전자신문",
+          "summary": "",
+          "published": "2026-05-28",
+          "image": "",
+          "first_seen": "2026-05-31T00:07:44+09:00"
         },
         {
           "title": "앤트로픽 한국 법인 초대 대표 최기영 \"산업별 특화 플랫폼이 차별점\" - v.daum.net",
@@ -87,6 +96,15 @@
           "first_seen": "2026-05-30T07:22:46+09:00"
         },
         {
+          "title": "앤트로픽, 최기영 한국 대표 선임…서울에 오피스 개소 - 대한경제",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5VQmNXZnBfdC1ObzF1X2t2eUU1Wl9IMS11c1RJbm5ZVS16NFh3QVE1c3FMRGJxdTZnb2tTVzdYbm5BdTlVRkZMQmVCZmJReVk2MS1KZS0tRklyMWp3aGZScTFrSnBvRG9mVGpUQVBhZ0NCZkJG?oc=5",
+          "source": "대한경제",
+          "summary": "",
+          "published": "2026-05-27",
+          "image": "",
+          "first_seen": "2026-05-31T00:07:44+09:00"
+        },
+        {
           "title": "[AI픽] AI안전연구소장 \"에이전트 AI 위험 평가·국제 공조 필수\" - 연합뉴스",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4xN2tWeFEyLUk4cm5YLThnenhqZklsRzRNTC1FSlRHR1lVVXQ3ZnlDTGllU3NkMlBVdWNsS0dkNUZxQ2ZYNklaM29aM0ZHSFlZTVVpRF9USWNOMVprOVRleNIBYEFVX3lxTE4xN2tWeFEyLUk4cm5YLThnenhqZklsRzRNTC1FSlRHR1lVVXQ3ZnlDTGllU3NkMlBVdWNsS0dkNUZxQ2ZYNklaM29aM0ZHSFlZTVVpRF9USWNOMVprOVRleA?oc=5",
           "source": "연합뉴스",
@@ -121,6 +139,24 @@
           "published": "2026-05-26",
           "image": "",
           "first_seen": "2026-05-30T02:33:58+09:00"
+        },
+        {
+          "title": "\"GPT, 너 얼굴 좀 까\" SNS에 쏟아진 AI 얼굴들[뉴스럽다] - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5YaGYxQlZPLTN5eVM2cG9CVEVHZkpTSVNfWXA2cXkxWWtSUU0zOFZvZTNLQWRka3YtdG9iZm55WmlDM1dPdFdVbTFwVGxMRXM?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-05-26",
+          "image": "",
+          "first_seen": "2026-05-31T00:07:44+09:00"
+        },
+        {
+          "title": "챗GPT에게 경북대 논술시험 치게 했더니 - 매일신문",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9WQXhnQU5CWlN1bkRSNGktVElsSDlBZVk3UmNuSndXaS1yNjM4MWJLWVZENXNoamJ2Y21ZaXdoaGNZM0NhRDFza1hzcVJWVDZETW1DaWZsVmNHcHpWQkpPQnhB?oc=5",
+          "source": "매일신문",
+          "summary": "",
+          "published": "2026-05-24",
+          "image": "",
+          "first_seen": "2026-05-31T00:07:44+09:00"
         },
         {
           "title": "﻿이미지도, 영상도, 편집도 한 모델로 ‘영상 올인원 AI’ ﻿[정원훈의 AI 트렌드] - IT조선",
@@ -238,42 +274,6 @@
           "published": "2026-05-20",
           "image": "",
           "first_seen": "2026-05-23T06:54:54+09:00"
-        },
-        {
-          "title": "[I/O 2026] AI 검색의 새로운 시대 - blog.google",
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBocVlxUzZJQ25mSk56SnBKN0ZicDM5bUxkNlNqU0hJckczSG5oR0dEc1UzMmNMQmxBck96UWhsdzdFY0hhYzhkN3k4SHFzVW9fekw5TDFDS1dIb1RlWUU0RXAzUjV4VEp3RGJYM3dnTUpOUHpsNUlFZTh3?oc=5",
-          "source": "blog.google",
-          "summary": "",
-          "published": "2026-05-20",
-          "image": "",
-          "first_seen": "2026-05-24T06:42:07+09:00"
-        },
-        {
-          "title": "챗GPT 1위는 그대로인데 클로드 사용자가 1년 새 12배 폭증한 이유 - 지디넷코리아",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5lWmNzbjZ0aVlieTB2R1dpWjlWUjVhdS1TYUltWGNJV3VkcnZMOF93Z0lHN09jNVJNZE5UNHE2OXhUQ2tQVGppU3A3UV9saDBGOGkxektR?oc=5",
-          "source": "지디넷코리아",
-          "summary": "",
-          "published": "2026-05-20",
-          "image": "",
-          "first_seen": "2026-05-26T01:23:24+09:00"
-        },
-        {
-          "title": "생성형AI 통해 뇌종양 수술 환자들에 ‘눈 높이 설명’ - 데일리메디",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5WYUJvR242LU5rNzltREhFZU5BRUwtZUstUkxKVWU5dDNLZ1hTTGcxcnlKYjNJR2FyV2JqSk93WUtVdkZsQ0pPek9rLWtIQmE4VWwta2dWaEdoam5VWW9pR0JxcVhnWklETWw3RmFWNFc1bmwz?oc=5",
-          "source": "데일리메디",
-          "summary": "",
-          "published": "2026-05-19",
-          "image": "",
-          "first_seen": "2026-05-19T18:22:37+09:00"
-        },
-        {
-          "title": "더 작고 효율적인 생성형 AI 구현… 서울공대 전기정보공학부 이종호 교수팀, 이미지 생성 핵심 기능 통합한 인공지능 반도체 기술 제시 - 뉴스와이어",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1HRU4yUFEtaUxhallWT0dQNWdUcVFPNE9TbGdMeGc0TVItNzUxVDVZdU1DdnRDVFRWaEhxY2VwRFNLSXB1NkItaUpDQW9faVVXYWstSk9vQm83M1FFeVF3?oc=5",
-          "source": "뉴스와이어",
-          "summary": "",
-          "published": "2026-05-19",
-          "image": "",
-          "first_seen": "2026-05-21T01:54:50+09:00"
         }
       ]
     },
@@ -316,6 +316,15 @@
           "published": "2026-05-28",
           "image": "",
           "first_seen": "2026-05-30T02:33:58+09:00"
+        },
+        {
+          "title": "15초에 홀려 본편까지...넷플릭스 등 OTT 숏폼 경쟁 - 조선일보",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOLWVfUmVjQThENWt3QlJjVlNRR2stNnNSZ0hYcU8zdDJwS0xnSTE1aXQ3ZEVlNExmaHlMV3BJNTk4cTRqNVNsQTROU2pid3JsNnBFSDduOGViVWMwSlNGelVwenJwaTB1ZkFCdFdGU0p5Rk9IWTh5aHJHZEp5T0RyNE9TRQ?oc=5",
+          "source": "조선일보",
+          "summary": "",
+          "published": "2026-05-28",
+          "image": "",
+          "first_seen": "2026-05-31T00:07:44+09:00"
         },
         {
           "title": "캐릭터 넘어 K팝·게임·웹툰까지…K콘텐츠 IP, 북미 라이선스 시장 20% 성장 - 뉴스핌",
@@ -541,15 +550,6 @@
           "published": "2026-05-18",
           "image": "",
           "first_seen": "2026-05-21T01:54:50+09:00"
-        },
-        {
-          "title": "반크, 디즈니에 ‘21세기 대군부인’ 역사 왜곡 시정 요구 - 마켓인",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB1WGE2V0JUajFacFE2N2p5QlVSRUFpWnJaWUxpQlE5Um5mdV83bmNvR2ZfZTVGVW90R25NNUpXUzc4RTJDZU96dVM3TVZfVmtYcmwtMko2Z2xBVUF2blA0eXhMZi1HVElpQXVqZV9lc3ljMHM?oc=5",
-          "source": "마켓인",
-          "summary": "",
-          "published": "2026-05-17",
-          "image": "",
-          "first_seen": "2026-05-17T18:32:24+09:00"
         }
       ]
     },
@@ -574,6 +574,15 @@
           "published": "2026-05-29",
           "image": "",
           "first_seen": "2026-05-30T02:33:58+09:00"
+        },
+        {
+          "title": "제주문예회관 창작뮤지컬 ‘고래의 아이’ 전국 공연 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE95elVDZ0pYUjFMdkdxcHk3QzMzM1ZaWUpvZlIwY0Jmd1IxX0FFMG53eHFFckhJN3d2SGwyYTBvYkdkOWdqNHRuOFBSanh4azA?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-05-29",
+          "image": "",
+          "first_seen": "2026-05-31T00:07:44+09:00"
         },
         {
           "title": "파리에서 2026년 6월에 볼 만한 공연: 이번 달 선정 - Sortir à Paris",
@@ -628,6 +637,15 @@
           "published": "2026-05-26",
           "image": "",
           "first_seen": "2026-05-30T02:33:58+09:00"
+        },
+        {
+          "title": "[더 한장] 5월의 서울이 가장 빛나는 순간 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9LNkp3VURHS1BjUzJvTmRlNF9mQUNmUC1yUUQ5OTBMWFB0eWE4ZjE2U1pLa0thWnNPVGJMelRVNDFPaE5BZU1YUG0zZGE4YjVrbHJ0aGpPUkE0aEE?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-05-26",
+          "image": "",
+          "first_seen": "2026-05-31T00:07:44+09:00"
         },
         {
           "title": "울산 봄밤 잔디마당서 뮤지컬 향연 '더 퍼스트' 공연 - 연합뉴스",
@@ -808,24 +826,6 @@
           "published": "2026-05-14",
           "image": "",
           "first_seen": "2026-05-21T01:54:50+09:00"
-        },
-        {
-          "title": "서울의료원, 서울시민 가정에 활력 선물…어린이 문화공연 10주년 결실 - 헬스경향",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBIQzRVNW9wTEJ3S3p0QW9sV1lWT1NGRDR1WE5VWUZpN0pOcE1sSkltN3NPRTlINEN0UU54ODBOb0h6VmNlZjJ4clEtdkg1V1hVdHhrTUFaY2JVcTd1eVEyMHpmTnJPeEhJR3c?oc=5",
-          "source": "헬스경향",
-          "summary": "",
-          "published": "2026-05-14",
-          "image": "",
-          "first_seen": "2026-05-23T01:26:45+09:00"
-        },
-        {
-          "title": "경기도극단 트로트뮤지컬, 2026년 5월 재공연…대표 레퍼토리로 자리매김 - 화성시민신문",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE82c04wZGJpRVJCTTl5NnRuMmZ3S0t4dE8xRU1mVjl4MDd1ZE9vcDJLUEdrVmhVYWI5Mm1uRkoyTmZMTGpJQkdVM3J2a09MVFA3bkZjSjFOX1QwbG1HbXV0ZjdDYmRaSkYta2xOVW50d3M?oc=5",
-          "source": "화성시민신문",
-          "summary": "",
-          "published": "2026-05-13",
-          "image": "",
-          "first_seen": "2026-05-17T17:51:34+09:00"
         }
       ]
     },
@@ -1680,6 +1680,15 @@
           "first_seen": "2026-05-30T07:22:46+09:00"
         },
         {
+          "title": "한·불 수교 140주년 기념…프랑스 음악 축제, 한국서 개최 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBLWVVvOHdjLS1XMUs5ZXJCSHpnVjVOcnBoTndmUWF6dDdOU1dpYTdTTHF4ZV9BS1J2Mk1OXzRrMFBvR0d2SGJZdWJVRGtMME0?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-05-29",
+          "image": "",
+          "first_seen": "2026-05-31T00:07:44+09:00"
+        },
+        {
           "title": "2026 히어로 락 페스티벌, 이게 바로 ROCK이지! - 브런치",
           "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9CbXhuTHI4QjRJZnp4NlJVazVGN2kwR0VYaFdPcnA1bTFhYmdnTWh0cnZGUktzclY0Y05IaWZ5Ry10MzRMVTBLUURB?oc=5",
           "source": "브런치",
@@ -1912,15 +1921,6 @@
           "published": "2026-05-13",
           "image": "",
           "first_seen": "2026-05-23T01:26:45+09:00"
-        },
-        {
-          "title": "‘타이완 화롄 태평양 스톤 밸런싱 아트 페스티벌’ 세계 3대 스톤 밸런싱 예술 축제로 도약 - 뉴스와이어",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9YVlM1TlZibTJmb3BkVkJreEdORHJJZkFGRTFuTzFSSVJUdUtXaVB6aWVoMl9XbVBRdzRMY2hwVkNHNWRUbzJPMnhlTnF6QnFGSHc3UDA4aExVbFBiaUJR?oc=5",
-          "source": "뉴스와이어",
-          "summary": "",
-          "published": "2026-05-13",
-          "image": "",
-          "first_seen": "2026-05-27T02:27:39+09:00"
         }
       ]
     }
