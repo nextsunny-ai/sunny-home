@@ -1,7 +1,18 @@
 {
-  "updated": "2026-05-31T15:17:52.770283+00:00",
+  "updated": "2026-05-31T21:45:07.658125+00:00",
   "source": "github.com/nextsunny-ai",
   "repos": [
+    {
+      "name": "sunny-home",
+      "description": "Sunny personal home",
+      "html_url": "https://github.com/nextsunny-ai/sunny-home",
+      "homepage": "",
+      "language": "HTML",
+      "pushed_at": "2026-05-31T15:17:53Z",
+      "has_pages": true,
+      "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
+      "stars": 0
+    },
     {
       "name": "retro-remake-report",
       "description": "써니엔터 레트로 리메이크 사업 전략보고서 v2.1",
@@ -11,17 +22,6 @@
       "pushed_at": "2026-05-31T14:17:53Z",
       "has_pages": true,
       "pages_url": "https://nextsunny-ai.github.io/retro-remake-report/",
-      "stars": 0
-    },
-    {
-      "name": "sunny-home",
-      "description": "Sunny personal home",
-      "html_url": "https://github.com/nextsunny-ai/sunny-home",
-      "homepage": "",
-      "language": "HTML",
-      "pushed_at": "2026-05-30T21:47:27Z",
-      "has_pages": true,
-      "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
       "stars": 0
     },
     {
