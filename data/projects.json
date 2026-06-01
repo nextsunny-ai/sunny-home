@@ -1,14 +1,25 @@
 {
-  "updated": "2026-05-31T21:45:07.658125+00:00",
+  "updated": "2026-06-01T19:20:48.581300+00:00",
   "source": "github.com/nextsunny-ai",
   "repos": [
+    {
+      "name": "nory-festival-storytelling",
+      "description": "",
+      "html_url": "https://github.com/nextsunny-ai/nory-festival-storytelling",
+      "homepage": "",
+      "language": "HTML",
+      "pushed_at": "2026-06-01T14:46:47Z",
+      "has_pages": true,
+      "pages_url": "https://nextsunny-ai.github.io/nory-festival-storytelling/",
+      "stars": 0
+    },
     {
       "name": "sunny-home",
       "description": "Sunny personal home",
       "html_url": "https://github.com/nextsunny-ai/sunny-home",
       "homepage": "",
       "language": "HTML",
-      "pushed_at": "2026-05-31T15:17:53Z",
+      "pushed_at": "2026-06-01T07:52:39Z",
       "has_pages": true,
       "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
       "stars": 0
@@ -119,17 +130,6 @@
       "homepage": "",
       "language": "HTML",
       "pushed_at": "2026-05-14T00:13:59Z",
-      "has_pages": false,
-      "pages_url": "",
-      "stars": 0
-    },
-    {
-      "name": "sunny-v2-pwa",
-      "description": "Sunny v2 PWA (휴대폰 홈화면 앱) - 비용 0 텔레그램 봇 deep link",
-      "html_url": "https://github.com/nextsunny-ai/sunny-v2-pwa",
-      "homepage": "",
-      "language": "HTML",
-      "pushed_at": "2026-05-13T16:28:16Z",
       "has_pages": false,
       "pages_url": "",
       "stars": 0
