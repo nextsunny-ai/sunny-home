@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-02T04:20:40+09:00",
+  "updated": "2026-06-02T07:54:21+09:00",
   "categories": [
     {
       "id": "ai",
@@ -49,6 +49,15 @@
           "published": "2026-05-29",
           "image": "",
           "first_seen": "2026-05-30T02:33:58+09:00"
+        },
+        {
+          "title": "모빌리티 생태계의 AI 에이전트 도입 - KPMG",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1NdW1TRmU3aEhSNmV0LTZIUTkxMWR2d3daemZGQkNkS3B6Qm5wYmVNZ3NyMlQ3MWxUeFRRNHRPOWdYc282WVlSZm5pSEk5ZktPbnpUVlplMkxWanNlUHZOMTIwNEs?oc=5",
+          "source": "KPMG",
+          "summary": "",
+          "published": "2026-05-29",
+          "image": "",
+          "first_seen": "2026-06-02T07:54:21+09:00"
         },
         {
           "title": "SKT, AI 에이전트 전면 도입…사내 AX 속도전 - 연합뉴스",
@@ -168,6 +177,15 @@
           "first_seen": "2026-06-02T04:20:40+09:00"
         },
         {
+          "title": "“사람처럼 드나드는 AI 에이전트... 인증 규격 등 ‘보안 프레임워크’ 시급” - 보안뉴스",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5abmlRZ2FRYjdzcFU0c3lydWc4ZXQwcVMwc2NRT2Vxb1A2Rl9DbzI3eXZjMkhvZEVhZDJMZ00yNmhOM0xXQmJkeEtSSFQ3ZlV5MDNiandLLTFQUExXNGtKeDNaRENWRnlwTnVwNjVR?oc=5",
+          "source": "보안뉴스",
+          "summary": "",
+          "published": "2026-05-27",
+          "image": "",
+          "first_seen": "2026-06-02T07:54:21+09:00"
+        },
+        {
           "title": "[AI픽] AI안전연구소장 \"에이전트 AI 위험 평가·국제 공조 필수\" - 연합뉴스",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4xN2tWeFEyLUk4cm5YLThnenhqZklsRzRNTC1FSlRHR1lVVXQ3ZnlDTGllU3NkMlBVdWNsS0dkNUZxQ2ZYNklaM29aM0ZHSFlZTVVpRF9USWNOMVprOVRleNIBYEFVX3lxTE4xN2tWeFEyLUk4cm5YLThnenhqZklsRzRNTC1FSlRHR1lVVXQ3ZnlDTGllU3NkMlBVdWNsS0dkNUZxQ2ZYNklaM29aM0ZHSFlZTVVpRF9USWNOMVprOVRleA?oc=5",
           "source": "연합뉴스",
@@ -256,24 +274,6 @@
           "published": "2026-05-22",
           "image": "",
           "first_seen": "2026-05-29T02:34:42+09:00"
-        },
-        {
-          "title": "BMS, 신약 개발 가속화 위해 앤트로픽 클로드 AI 도입 - 의약뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBFbGJwZ0lBRGRmX3phcHZhSzB5NGxpZU1HQ1ZPRTVGczhSNDluWEhZZDRPUE9tVTJRZkJLNDZlaGJ4b3lFTjQ1ZTN3c3FuQURUVkZ1R2FGOVZ1VEs0Ylo2S3FIcUtFUzg?oc=5",
-          "source": "의약뉴스",
-          "summary": "",
-          "published": "2026-05-21",
-          "image": "",
-          "first_seen": "2026-05-21T07:18:24+09:00"
-        },
-        {
-          "title": "오픈AI, AI 이미지 식별 2중 강화...C2PA 표준에 구글 ‘신스ID’ 더했다. - AI타임스",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0ycWtKOG94S2ZGcktSVnoySzk5T2lLc2sxWjJjbGJCbUxqMGhDRDZyTk9SR1ZYZ3lUU2VhMzVScHRoZV82ZkFybW5vVjl2VGsyRXl5amRKbkc3enY4V1lIU0RPcDJTM3RQZGc?oc=5",
-          "source": "AI타임스",
-          "summary": "",
-          "published": "2026-05-21",
-          "image": "",
-          "first_seen": "2026-05-22T01:39:31+09:00"
         }
       ]
     },
@@ -774,15 +774,6 @@
           "first_seen": "2026-05-25T00:05:25+09:00"
         },
         {
-          "title": "금융투자를 쉽고 재미있게 뮤지컬 ‘아임유(I′m You)’2026 공연 모집 - 핀테크경제신문",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBRUDZHd1YtSldLZlAwcUtnMHAtM1pTb3Y4MHVLZ0dLdzRLTDJTc1FIQUdMU1NNTGp1RlRYai1CMXdsMzlnN0UxR0RDckxsT1E2QmxrcDAzTDRud3Y5THUwSzdsYXJteFlF?oc=5",
-          "source": "핀테크경제신문",
-          "summary": "",
-          "published": "2026-05-15",
-          "image": "",
-          "first_seen": "2026-05-19T06:57:14+09:00"
-        },
-        {
           "title": "송도 트라이보울, 판뮤지컬 '이상한 나라의 숨바꼭질' 공연 - v.daum.net",
           "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBwOTVvZ29OTE14TTBfTnl5bzA2SmlKNXM4QjVjUzNDbC15dHNZOXBjRlE2Rzl6am15R0pNM0FMOVJwaFNtdTBvc2hObDZIUlk?oc=5",
           "source": "v.daum.net",
@@ -1038,6 +1029,15 @@
           "first_seen": "2026-06-02T04:20:40+09:00"
         },
         {
+          "title": "제주콘진원, 글로벌 ‘AI 영상’ 콘텐츠 공모전 연다 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9SUS1TZDRhSUh0NktpZkpKY1BUdTlDQmd5OC1tTTJoUlBQSUxhUzA5c1Uwb0hKQ2lLLWVLdHlDMFFlQjdLdEE?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-06-01",
+          "image": "",
+          "first_seen": "2026-06-02T07:54:21+09:00"
+        },
+        {
           "title": "[콘텐츠] 문체부·콘진원, 지역 콘텐츠 산업에 국비 63억 원 추가 지원 外 - 워크투데이",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBrTjNHT2dmNlpyYW1DWlBnLUFOU3BHTzFUei1xYmstNkJCYXFiOFdyYkEtclI3RjR1Ui10VXg1NTlZYXJfbng1T01mWThrRXVPeTVjWU1reWp0Z0NNOUFxNTVDSk11SnVjNnFwbQ?oc=5",
           "source": "워크투데이",
@@ -1279,15 +1279,6 @@
           "published": "2026-05-21",
           "image": "",
           "first_seen": "2026-05-22T01:39:31+09:00"
-        },
-        {
-          "title": "[단독] 아이유·변우석 ‘대군부인’ 콘진원 지원 선정작이었다 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBLT2NmUDVLVi01R1pXbTF5QjlHUkI4d3I0N2RZRURvNTJRM0RYZjlZSFg3cVdOVjFIYjRRclI4WnVUVWZzSmNHVVRxSTh6N1hBVHBEWWZwdlVhYWM?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-05-21",
-          "image": "",
-          "first_seen": "2026-05-23T01:26:45+09:00"
         }
       ]
     },
@@ -1303,6 +1294,15 @@
           "published": "2026-06-01",
           "image": "",
           "first_seen": "2026-06-02T04:20:40+09:00"
+        },
+        {
+          "title": "이태리 식품 브랜드 ‘만토바’, ‘골든 엑스트라 버진 올리브유’ 리뉴얼 출시 - 이투뉴스",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBSYjNkLVV2X1MxMXJmZG1qVjNZVjY2RnpkNUEtMF9pYUtUQXpnZWtoRldNQm02Wk40b3dfWVRELS1kQ2txSDBNN2dTWkMzZ1M4U016V3BOaTlKMmpRa0hxSkhvWkh4eXFPTzc40gFrQVVfeXFMUFJiM2QtVXZfUzExcmZkbWpWM1lWNjZGemQ1QS0wX2lhS1RBemdla2hGV01CbTZaTjRvd19ZVEQtLWRDa3FIME03Z1NaQzNnUzhTTXpXcE5pOUoyalFrSHFKSG9aSHh5cU9PNzg?oc=5",
+          "source": "이투뉴스",
+          "summary": "",
+          "published": "2026-06-01",
+          "image": "",
+          "first_seen": "2026-06-02T07:54:21+09:00"
         },
         {
           "title": "Find D - 브런치",
@@ -1321,6 +1321,15 @@
           "published": "2026-05-29",
           "image": "",
           "first_seen": "2026-05-31T06:47:19+09:00"
+        },
+        {
+          "title": "[일정] AI 에이전트부터 AI 네이티브 전환까지...6월 AI 실전 교육 개최 - 전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1KOFdibWlFOGFaRGZuYUMyVGhDeTJmZTZtNkM5RVJlb2czMGxrVGEzWGdtUTZ3eTA1emRBV0VoQlpQRmFxa0xqR0dpOEQ4UQ?oc=5",
+          "source": "전자신문",
+          "summary": "",
+          "published": "2026-05-29",
+          "image": "",
+          "first_seen": "2026-06-02T07:54:21+09:00"
         },
         {
           "title": "중기부, 지역기업 협업으로 생활경제 선순환 모델 만든다 - 연합뉴스",
