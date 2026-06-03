@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-04T03:23:28+09:00",
+  "updated": "2026-06-04T07:56:14+09:00",
   "categories": [
     {
       "id": "ai",
@@ -13,6 +13,15 @@
           "published": "2026-06-04",
           "image": "",
           "first_seen": "2026-06-04T03:23:28+09:00"
+        },
+        {
+          "title": "\"실존인물 아니라지만\" AI 성인콘텐츠로 구독 유도?…징역형·추징금까지 - 한국경제",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE03Zk9EVDB4THJjbUlnODQ2eXR6UzQ1RXB4XzMwRmNrX3FSNm9kTUNuOHNLRG4xWGtCeTVXZVYySE9MRE9KR1BGaVhjUVhOT2hweEtvSNIBVEFVX3lxTE03Zk9EVDB4THJjbUlnODQ2eXR6UzQ1RXB4XzMwRmNrX3FSNm9kTUNuOHNLRG4xWGtCeTVXZVYySE9MRE9KR1BGaVhjUVhOT2hweEtvSA?oc=5",
+          "source": "한국경제",
+          "summary": "",
+          "published": "2026-06-03",
+          "image": "",
+          "first_seen": "2026-06-04T07:56:14+09:00"
         },
         {
           "title": "SK브로드밴드, AI 에이전트로 네트워크 장애 사전 차단 - 연합뉴스",
@@ -31,6 +40,15 @@
           "published": "2026-06-02",
           "image": "",
           "first_seen": "2026-06-04T03:23:28+09:00"
+        },
+        {
+          "title": "돈봉투 의혹 보도에 사용된 AI 이미지, 선거법 위반 논란 - 한려투데이",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB5d0tWU0l0UF9wZFZvLXZlSmJBeEhYVFp0emdvS19zOTM3MkxJRzg2LTM4c0gtT182YnIzNk5VdFNLT1NMcWhQS1Vha2JqYUZCYzFVTXV5MDlON1dzSzZNVk5ZWkNobGlFNDJPZlAtMA?oc=5",
+          "source": "한려투데이",
+          "summary": "",
+          "published": "2026-06-02",
+          "image": "",
+          "first_seen": "2026-06-04T07:56:14+09:00"
         },
         {
           "title": "[AI픽] 노타, 영상 AI 에이전트 시장 공략…엔비디아와 기술 협력 - 연합뉴스",
@@ -69,6 +87,15 @@
           "first_seen": "2026-06-04T03:23:28+09:00"
         },
         {
+          "title": "IT 리더 - 더 정직해진 클로드 오퍼스 4.8 - 전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBqdTJGbml4a3pTSk1sZnAybEh3dFdUTExvV3NLM2FVdmNmenItZUhkODB1U21jYXVCSlRVajloUEFnUkd5QkxqNVcyeTdzdw?oc=5",
+          "source": "전자신문",
+          "summary": "",
+          "published": "2026-06-01",
+          "image": "",
+          "first_seen": "2026-06-04T07:56:14+09:00"
+        },
+        {
           "title": "바이브컴퍼니 썸트렌드, '국내 소셜 분석 앱 최초' 챗GPT Apps 정식 승인 - 헬로티",
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4xX3dleklYTWFjRW44SkdXY0NYUnpGTWFQTEVqYzh3YWM1LWpGRWVwQm5CNmxXU1lMcmU2dDR6eFQxcDNjQ3pQSnB0aGd2UVVkRnVBNVZ2c2dmcGVwUzBZ?oc=5",
           "source": "헬로티",
@@ -96,6 +123,15 @@
           "first_seen": "2026-06-02T04:20:40+09:00"
         },
         {
+          "title": "[배종찬의 보안 빅데이터] 인간보다 더 능력 출중한 공포의 AI에이전트 - 보안뉴스",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9kbDQtbmlwVGJGUHN0LTBQcTZWOFBCUFhPQjJLLUY5dGRCVEFpSFJwaVY1czJ4NWQ5SzF1dzZRWHdwcDhUUVc2Z1NydU1mM2xQMWJiSk9yWEZ5djZnTFM4U3FSR3B3UFVFTzNybnR3?oc=5",
+          "source": "보안뉴스",
+          "summary": "",
+          "published": "2026-05-30",
+          "image": "",
+          "first_seen": "2026-06-04T07:56:14+09:00"
+        },
+        {
           "title": "AI 생성 이미지인 줄···알고 보니 카메라로 찍은 경이로운 자연 - 캠페인 인사이트",
           "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5laEpob283RjRuWEtTYU1SN0Z5ZVdBdnBtZ1Q2RU9RamdYdWxKaXU1QlA0MGVoSXY3bEU1bmJ2akY0WXphbDQ4OVlyaUlHZjdiMDFzVjU3LU81THM4NVBMMVoyN19FXy1qVWtsRnVwQjdGZ21j?oc=5",
           "source": "캠페인 인사이트",
@@ -112,6 +148,15 @@
           "published": "2026-05-29",
           "image": "",
           "first_seen": "2026-06-02T07:54:21+09:00"
+        },
+        {
+          "title": "[영상] 챗GPT vs 제미나이 vs 퍼플렉시티 vs 클로드···작업별 AI 비교 총정리 - 시사저널e",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBBTWU5eHAtTnNTbUROR0tickdKdmFSMDFzLWZaZHFzNFhFSUNfc29qQnN6Y3NCZmRteml4V1p4azFHb1hsb2tBODRUS1dvanA3ZWJfRVpLZnRjT01uODJKU1pLMXdRSmlmVzRqMzgwUTFvd9IBdkFVX3lxTE50OVdseHpkSF94ZnZDQU5PZ3V0MHE1b21Mbm9hQzhYLXdncTVhdkFESFNiRlVUZVc5VjhEZWRvcExKUk1wT3pEa19Pd3c1UHE3dFBGZXZDTXI5ZXRxNDMwcU1lTjdPaUNmTlZ2RVJRLUxmWlp4N0E?oc=5",
+          "source": "시사저널e",
+          "summary": "",
+          "published": "2026-05-29",
+          "image": "",
+          "first_seen": "2026-06-04T07:56:14+09:00"
         },
         {
           "title": "SKT, AI 에이전트 전면 도입…사내 AX 속도전 - 연합뉴스",
@@ -229,51 +274,6 @@
           "published": "2026-05-27",
           "image": "",
           "first_seen": "2026-06-01T00:17:45+09:00"
-        },
-        {
-          "title": "앤트로픽 한국 법인 초대 대표 최기영 \"산업별 특화 플랫폼이 차별점\" - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE90TWpuUUVjRVlwVlFtcGlTbWFfQlc1OGo0NHoyXzhQb3dMUzJUWnFJdDlEcjJoa1k3WHV2XzF6S3RZbTF5N3c?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-05-27",
-          "image": "",
-          "first_seen": "2026-06-01T06:45:00+09:00"
-        },
-        {
-          "title": "하나투어, 챗GPT 전용 확장 앱 출시 - 중소기업신문",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9ZbzJIMEJfc3RTbHF5a0s1V09ld19wU3V2eDVsSV9DRXJwYnlnejhneGpWLXRtNkNEZzZsM2lzZER2U0JsazBrX0lTbFZ4WmlfWWRMUmp3S2NDV3FFSTRMYjREQlgtMTFTcnZUUUNB?oc=5",
-          "source": "중소기업신문",
-          "summary": "",
-          "published": "2026-05-27",
-          "image": "",
-          "first_seen": "2026-06-02T04:20:40+09:00"
-        },
-        {
-          "title": "“사람처럼 드나드는 AI 에이전트... 인증 규격 등 ‘보안 프레임워크’ 시급” - 보안뉴스",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5abmlRZ2FRYjdzcFU0c3lydWc4ZXQwcVMwc2NRT2Vxb1A2Rl9DbzI3eXZjMkhvZEVhZDJMZ00yNmhOM0xXQmJkeEtSSFQ3ZlV5MDNiandLLTFQUExXNGtKeDNaRENWRnlwTnVwNjVR?oc=5",
-          "source": "보안뉴스",
-          "summary": "",
-          "published": "2026-05-27",
-          "image": "",
-          "first_seen": "2026-06-02T07:54:21+09:00"
-        },
-        {
-          "title": "앤트로픽, 한국 대표에 최기영 전 스노우플레이크 한국 총괄 선임... 국내 사업 본격화 - 보안뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1uYmZYRUM0eWo1bjhtR0RPMnJIX0p6cktFek5JemNTRV96LVVJcWp4UzBqZDdyM3NZeHpUYlhfM3hVQlNUWXZ4ajlMMlotTENPamVUTGdud2JCVFRXMTR3?oc=5",
-          "source": "보안뉴스",
-          "summary": "",
-          "published": "2026-05-27",
-          "image": "",
-          "first_seen": "2026-06-03T03:04:58+09:00"
-        },
-        {
-          "title": "충남 언론사, AI로 '전교조 비방' 이미지 제작 논란...기자 해명 '황당' - 오마이뉴스",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9vbVhMLXN5ZzcxanNUTGZ0YXpRT2NXeTRFX21WaGZEN25UWXNLSEdjQWJSa0RUaTZfbW1vZ1pqTW5sdnE1UTBvVGQ3dUV2RUdNcEUtcmZQdFNhalRvMjgyUUxhY0FqV1NmWmZXbEdwNWU3R2lRNXZr?oc=5",
-          "source": "오마이뉴스",
-          "summary": "",
-          "published": "2026-05-27",
-          "image": "",
-          "first_seen": "2026-06-04T03:23:28+09:00"
         }
       ]
     },
@@ -408,6 +408,15 @@
           "first_seen": "2026-06-03T03:04:58+09:00"
         },
         {
+          "title": "연재 ②특허권·상표권·콘텐츠 IP를 토큰증권으로 - 뉴스인",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE83ZlBndm5wT3BLNl9wU3hSa2U0QnRYV0g4UzNoSnZGb3JtMkdOZnFwREk2dld6Z3R6MWVVU1ZyUkh0SDhVZHdKOEhmaUQ1c3B1VUwwUDM1TENjTGVOd1dnLU13NHZKVFB1NGtv?oc=5",
+          "source": "뉴스인",
+          "summary": "",
+          "published": "2026-05-28",
+          "image": "",
+          "first_seen": "2026-06-04T07:56:14+09:00"
+        },
+        {
           "title": "캐릭터 넘어 K팝·게임·웹툰까지…K콘텐츠 IP, 북미 라이선스 시장 20% 성장 - 뉴스핌",
           "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5Gd0pyNGd5NG13Y0dCVWUtd3l4RjV3aGZFbnhQVXI5X0dibU5MaUx5RUpqZjZYU0NyWVVpZnkwVDd2X19tMklFUVA0MmtpV0lyaEFKemV5dVVMNXRo?oc=5",
           "source": "뉴스핌",
@@ -516,6 +525,15 @@
           "first_seen": "2026-05-30T02:33:58+09:00"
         },
         {
+          "title": "콘진원, 스페인서 K-웹툰 2억 달러 수출 상담 성과 달성 - 지디넷코리아",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1RY0xaLTlKak5tNHBhWnctQ0lSdEpvRUVMRXJsV2xVVkNnMEJlTEU5czBQN21YUXZ4YTY5OVZ5dTYyeU1TMVZZQUViX1Q5UkxkbkRxOG1n?oc=5",
+          "source": "지디넷코리아",
+          "summary": "",
+          "published": "2026-05-26",
+          "image": "",
+          "first_seen": "2026-06-04T07:56:14+09:00"
+        },
+        {
           "title": "“콘텐츠 넘어선 K컬처로···IP중심 스타트업 ‘생태계 확장’ 나서야” - 매일경제",
           "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5ldUZraHdCLWI4S1pkLVk3dE10QXAtQjBHS2w4TllEa0ZwaUZhaE02d2dQa3NORXlWMTVVdmNhSk5ubFJRVUdzVi1Td3VnazZzWnFubA?oc=5",
           "source": "매일경제",
@@ -532,24 +550,6 @@
           "published": "2026-05-25",
           "image": "",
           "first_seen": "2026-05-28T02:20:08+09:00"
-        },
-        {
-          "title": "'공룡 OTT' 넷플릭스 영향력 확대에 방송은 'OTL' - 한국기자협회",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1iN2daeXpoZnRrMGo0cHd1STVIdXRIeWFLNzgwaUJ3N2lBNUYwU29GbjExcUxpQXJRYVFBUnFmaTdLMWFtbXlueXpRckIwV29sb2NXU1FqYU10clUzczkwOWV3ZHI3dw?oc=5",
-          "source": "한국기자협회",
-          "summary": "",
-          "published": "2026-05-24",
-          "image": "",
-          "first_seen": "2026-05-25T00:05:25+09:00"
-        },
-        {
-          "title": "부처님 오신 날, ‘법륜로드’ 넷플릭스 3위… OTT 불교 콘텐츠들 - 미디어오늘",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9DOWpGdm56VTNLTUYxNW44MVdBU3hiM09NbG11LWpOTmE4UWhwd3p1OHE3d2N2TmpGRl9iQ3R5SnBjQmZubk1HVnp2UnhVYXFXa18wZjBneEtqOERyaTBYOEhZNXJlR0V1aF9TczRmWWg?oc=5",
-          "source": "미디어오늘",
-          "summary": "",
-          "published": "2026-05-24",
-          "image": "",
-          "first_seen": "2026-05-25T06:43:16+09:00"
         }
       ]
     },
@@ -745,15 +745,6 @@
           "published": "2026-05-22",
           "image": "",
           "first_seen": "2026-06-03T03:04:58+09:00"
-        },
-        {
-          "title": "재즈 거장부터 글로벌 DJ까지···초여름 페스티벌 ‘완벽 정복’ - 경향신문",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBEUWk3WklhWlhmandQTC0zRy14ajBnd1RvQ3oxcGRpaHBIQkI3RjdDNTVCdlFpUzRTU2xZcTV5aS1sODZRQnRMOXFxSGFJYXk4TnBHYW5EX1hxR3poMEdj0gFfQVVfeXFMUERRaTdaSWFaWGZqd1BMLTNHLXhqMGd3VG9DejFwZGlocEhCQjdGN0M1NUJ2UWlTNFNTbFlxNXlpLWw4NlFCdEw5cXFIYUlheThOcEdhbkRfWHFHemgwR2M?oc=5",
-          "source": "경향신문",
-          "summary": "",
-          "published": "2026-05-20",
-          "image": "",
-          "first_seen": "2026-05-21T07:18:24+09:00"
         },
         {
           "title": "재즈 거장부터 글로벌 DJ까지 총출동···초여름 페스티벌 ‘완벽 정복’ 해볼까 - v.daum.net",
@@ -969,15 +960,6 @@
           "first_seen": "2026-05-25T00:05:25+09:00"
         },
         {
-          "title": "서울시, '미디어아트 서울' 봄 전시 본격 운영…\"야외미술관 확장\" - 뉴스1",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5jcHA1bGNCdm9kRFZpY0Job2VNNFFmcno1clZzYzFscUNtQzhRMWdObWJoVDNUOXZTcTNIbXptTjhaYUR3WXN1N0ttQlVKSnF1RUE2ZkYtQ2xGdlNU?oc=5",
-          "source": "뉴스1",
-          "summary": "",
-          "published": "2026-05-21",
-          "image": "",
-          "first_seen": "2026-05-21T07:18:24+09:00"
-        },
-        {
           "title": "'미디어아트 서울' 봄 전시, 내일 5개 플랫폼에서 개막 - 연합뉴스",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1MOXFCR2lxQ0cxakViRnR3Z1ZIUzJ3cksybEd4ekRKdThSUV8xVlFldXdiVTlHQ1dGcUVwSER6Qk5pdkhWaFZJWURHM2ZwSEQzTmNKV1AxaXF1ZVXSAWBBVV95cUxQMTdkMjhzUm1Cd0g3RUhUUmVFcnczVDBMaEZaWENieG9GRk1uYWljd2V6cDRtTXkxay1qV0w3b3owXzdITGp0NHdWdXhnWTVqdUU1T1UyZ05ERDNiUkJXSDI?oc=5",
           "source": "연합뉴스",
@@ -1164,6 +1146,15 @@
           "first_seen": "2026-06-01T06:45:00+09:00"
         },
         {
+          "title": "‘왕사남’ ‘살목지’처럼…잠자던 설화·역사 깨워 콘텐츠로 키운다 - 농민신문",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBrY3FZdUpVSlBadmx4OU1zQjFiZ3N3VUJaZWJJMTFXVXVQR2FFeE11OU55X2FIQmRwMjNFNlpfT2NWR3IzRHFCazJqMmRsTV9LdVNsNkRFUzR1dw?oc=5",
+          "source": "농민신문",
+          "summary": "",
+          "published": "2026-05-28",
+          "image": "",
+          "first_seen": "2026-06-04T07:56:14+09:00"
+        },
+        {
           "title": "진천군, SNS 영상 공모전 개최 - 충청타임즈",
           "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE90MkR0elVtNGV0UURFZGJBVWhScDk2RVI1cVBNcnNDRFBBZkpJeThNWm5ST2F1ZVZtSUpMcG9uSURIZFFEY0V5Ukxlay1RQnFEQ0RkWG9FUDhHR0FoNUc2VDI1Yms2R05F?oc=5",
           "source": "충청타임즈",
@@ -1270,15 +1261,6 @@
           "published": "2026-05-22",
           "image": "",
           "first_seen": "2026-06-04T03:23:28+09:00"
-        },
-        {
-          "title": "[단독] 아이유·변우석 ‘대군부인’ 콘진원 지원 선정작이었다 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5YRGF5Z0ZUVHFITmpIeVU5ZzVHNUJjZlFhZ1B2QXZfQXpWekJhbWVxallKcDFTVGRsbEZrdmpTbjlNZHZLU0E?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-05-21",
-          "image": "",
-          "first_seen": "2026-05-22T01:39:31+09:00"
         }
       ]
     },
@@ -1671,6 +1653,15 @@
           "first_seen": "2026-06-03T07:53:20+09:00"
         },
         {
+          "title": "제주 바다와 4·3 품은 뮤지 ‘고래의 아이’…부산 거쳐 서울 무대 오른다 - 해양레저신문",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9jZTZKRnRzNDVSTnp4MHlmMjNXeTROeUVjYVpDWl9zQmI3Yy1taVhVUE5QQmZQLXE4VWk4X2VjTGpFNkdGUld0OGlraWJzVnk2VkhzVjVFYnRDWHJN?oc=5",
+          "source": "해양레저신문",
+          "summary": "",
+          "published": "2026-05-29",
+          "image": "",
+          "first_seen": "2026-06-04T07:56:14+09:00"
+        },
+        {
           "title": "2026 히어로 락 페스티벌, 이게 바로 ROCK이지! - 브런치",
           "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9CbXhuTHI4QjRJZnp4NlJVazVGN2kwR0VYaFdPcnA1bTFhYmdnTWh0cnZGUktzclY0Y05IaWZ5Ry10MzRMVTBLUURB?oc=5",
           "source": "브런치",
@@ -1822,15 +1813,6 @@
           "published": "2026-05-18",
           "image": "",
           "first_seen": "2026-06-01T06:45:00+09:00"
-        },
-        {
-          "title": "K-PLUS 페스티벌 2026: 파리 한가운데에서 진짜 한국을 만나는 3일 - Sortir à Paris",
-          "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQeTRzem0wUFZ3SGhxalZPcGNGazdrNUJKUDJVNXlUTWZqUFROMlYxUzBHX1ROam9UWlhNUUd0TktzZnRlVXpTYWFXRFhWRTdwSmYzaW1TTllKRnFUZ291dlF3Y3pIY3V5UzF0dmV1NHlXS2laRWhxREdqQnhMLW4zQ1BQekVCQUFZU1NnVDBKbXdlWVNWZ0dKVk8yRmktN0ZWTnlQLUVqSll3OURXcXctSG5YYmdZUkY2U0k0Y1pHZ3ZCN28zREJlcmFtbG41OVRQQTJLSlNWVEFZRDZmUnE4cUNXZ1I1VHdENldrLXZLVWs2ZkFsbHUxVjZpUFcxTldodTNn?oc=5",
-          "source": "Sortir à Paris",
-          "summary": "",
-          "published": "2026-05-16",
-          "image": "",
-          "first_seen": "2026-05-22T07:08:37+09:00"
         }
       ]
     }
