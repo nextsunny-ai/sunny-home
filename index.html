@@ -2623,34 +2623,43 @@ function pmToggleMic() {
 // 흐름: 페르소나 선택 → 메시지 입력 → 텔레그램 봇 자동 열림 → '전송' → 워커 처리 → 텔레그램 알림
 const TG_BOT_USERNAME = 'NextSunnybot';
 
+// ★ v5 (2026-06-03): 텔레그램 deep link 제거 → OAuth 직접채팅 복원
+// 이유: 노트북엔 텔레그램이 없어 deep link가 먹통이었음. 옛 OAuth 방식 복원 =
+// 써니홈 채팅창에서 바로 대화 + 답변도 이 화면에 + 음성 + 과금0(sk-ant-oat 정액 토큰).
 async function pmSend() {
   if(!currentTeamPersona) return;
   const inp = document.getElementById('pmInp');
   const t = inp.value.trim();
   if(!t) { alert('메시지를 입력해주세요. (음성 또는 키보드)'); return; }
+  const apiKey = getApiKey();
+  if(!apiKey) { openKeyModal(); return; }
 
-  // "리안야 IR 표지 시안 3개" 형식으로 페르소나 호출 자동 생성
-  const personaCall = currentTeamPersona.name + '야 ' + t;
-  const tgUrl = 'https://t.me/' + TG_BOT_USERNAME + '?text=' + encodeURIComponent(personaCall);
-
-  // 텔레그램 앱·웹 자동 열기 (휴대폰=앱 / PC=웹)
-  window.open(tgUrl, '_blank');
-
-  // 채팅 UI에 기록
+  // 채팅 UI에 사용자 메시지 기록
   pmAppendMsg('user', t);
   teamHist[currentTeamPersona.id] = teamHist[currentTeamPersona.id] || [];
-  teamHist[currentTeamPersona.id].push({role:'user', content: t, _displayText: t});
+  teamHist[currentTeamPersona.id].push({role:'user', content: t});
   saveTeamHist();
   inp.value = '';
   pmAutoGrow(inp);
   pmAttachments = []; pmRenderAttachBar();
 
-  const guide = '✅ 텔레그램 봇으로 전달됨.\n\n'
-    + '휴대폰 = 텔레그램 앱이 열렸어요. "전송" 한 번 누르면 끝.\n'
-    + 'PC = 텔레그램 웹 열림. 같은 방식.\n\n'
-    + '결과 = 텔레그램 알림으로 도착 (= 15초~몇 분).\n'
-    + '비용 = 0원 (= Pro/Max 정액 안 헤드리스 워커 처리).';
-  pmAppendMsg('agent', guide);
+  // "생각 중..." 표시
+  const sendBtn = document.getElementById('pmSend'); if(sendBtn) sendBtn.disabled = true;
+  const msgs = document.getElementById('pmMsgs');
+  const ty = document.createElement('div'); ty.className = 'pm-typing'; ty.id = 'pmTyping';
+  ty.textContent = currentTeamPersona.name + ' 생각 중...';
+  if(msgs){ msgs.appendChild(ty); } pmScrollBottom();
+
+  try {
+    const reply = await callAnthropic(apiKey, currentTeamPersona, teamHist[currentTeamPersona.id]);
+    document.getElementById('pmTyping')?.remove();
+    teamHist[currentTeamPersona.id].push({role:'assistant', content: reply});
+    saveTeamHist();
+    pmAppendMsg('agent', reply);
+  } catch(e) {
+    document.getElementById('pmTyping')?.remove();
+    pmAppendMsg('agent', '⚠️ 호출 실패: ' + e.message + '\n\n우측 상단 키 버튼에서 OAuth 토큰(sk-ant-oat...) 또는 API 키를 확인해주세요.');
+  } finally { if(sendBtn) sendBtn.disabled = false; }
 }
 
 // 옛 BYOK callAnthropic 함수 = 더 이상 호출 X (= 위 pmSend가 텔레그램 deep link 사용)
