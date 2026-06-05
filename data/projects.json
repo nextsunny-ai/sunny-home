@@ -1,14 +1,25 @@
 {
-  "updated": "2026-06-04T22:15:24.146710+00:00",
+  "updated": "2026-06-05T16:30:04.392265+00:00",
   "source": "github.com/nextsunny-ai",
   "repos": [
+    {
+      "name": "ppt-maker",
+      "description": "PPT 메이커 — HTML 슬라이드 덱을 편집 가능한 PowerPoint(.pptx)로 변환. AI 없음·로컬·폰트 임베드. Free.",
+      "html_url": "https://github.com/nextsunny-ai/ppt-maker",
+      "homepage": "",
+      "language": "JavaScript",
+      "pushed_at": "2026-06-05T15:25:51Z",
+      "has_pages": false,
+      "pages_url": "",
+      "stars": 0
+    },
     {
       "name": "sunny-home",
       "description": "Sunny personal home",
       "html_url": "https://github.com/nextsunny-ai/sunny-home",
       "homepage": "",
       "language": "HTML",
-      "pushed_at": "2026-06-04T16:55:47Z",
+      "pushed_at": "2026-06-04T22:15:25Z",
       "has_pages": true,
       "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
       "stars": 0
@@ -121,17 +132,6 @@
       "pushed_at": "2026-05-16T10:20:54Z",
       "has_pages": true,
       "pages_url": "https://nextsunny-ai.github.io/made-100-org/",
-      "stars": 0
-    },
-    {
-      "name": "ai-pronote",
-      "description": "AI PRONOTE — 회의 녹음·받아쓰기·AI 회의록 자동 정리 (= 본인 Claude Pro/Max 구독 = 비용 0)",
-      "html_url": "https://github.com/nextsunny-ai/ai-pronote",
-      "homepage": "",
-      "language": "HTML",
-      "pushed_at": "2026-05-14T00:13:59Z",
-      "has_pages": false,
-      "pages_url": "",
       "stars": 0
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-05T07:15:17+09:00",
+  "updated": "2026-06-06T01:29:57+09:00",
   "categories": [
     {
       "id": "ai",
@@ -141,6 +141,15 @@
           "first_seen": "2026-06-01T00:17:45+09:00"
         },
         {
+          "title": "“네이버 AI 에이전트, 이용자 데이터 활용 거부 옵션 더 쉽게 안내하세요” - 보안뉴스",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1jQkM1RUVuRUMzOXg0ZVJXT2ZBdWZpb0JMYjRCQTZHY0JGem1VclN3dk52a0FRekRqX3dxdEdUY2Jna21HVzQtaU1CWUxPNjJwd1A5SkNMUTd0NmhfT1p2SUJrcGxJSVNrM18wcWZB?oc=5",
+          "source": "보안뉴스",
+          "summary": "",
+          "published": "2026-05-31",
+          "image": "",
+          "first_seen": "2026-06-06T01:29:57+09:00"
+        },
+        {
           "title": "[빅테크칼럼] 클로드 AI 한달 요금이 무려 5억 달러? “토큰맥싱의 역습”… AI 요금 폭탄이 던진 경고 - 뉴스스페이스",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBON3FuLW4tVUdMZDV5U0tlMVBsMXdkbHI4bjUxNGt0dDY1a0NDUUxYcDlGbllLV0NRN21zY3gyWDFUVDVhQ3lsUUhCNTRhQjJISFJPbUhucnpSOEk?oc=5",
           "source": "뉴스스페이스",
@@ -265,15 +274,6 @@
           "published": "2026-05-28",
           "image": "",
           "first_seen": "2026-06-04T03:23:28+09:00"
-        },
-        {
-          "title": "앤트로픽 한국 법인 초대 대표 최기영 \"산업별 특화 플랫폼이 차별점\" - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9GUW1TOVlRdHNJcC15b0JyNEJQaDRLRWlhbWJmS0t0YVE4djJPc0lpZXZHZm1NNWp5MVVRSVUtbmhhdE5VSnNSZ2pnMA?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-05-27",
-          "image": "",
-          "first_seen": "2026-05-28T07:24:16+09:00"
         }
       ]
     },
@@ -558,6 +558,24 @@
       "name": "공연",
       "items": [
         {
+          "title": "화려하게 막 내린 '서울재즈페스티벌 2026'..여름의 초입 달궜다 - 한경매거진&amp;북",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5iY2F0cC03OGNNZWNNeFNnbDRoejgxOG9YU1VOcC1EeFRoRkpoQndvbERRaDZ4ODgyWV9Rd2Rfa0x4Zkg1c19VN2VSWC1DbmxvUVJUNlF1d3FiZFF4MmVUeDlRX1F3Y1pz?oc=5",
+          "source": "한경매거진&amp;북",
+          "summary": "",
+          "published": "2026-06-05",
+          "image": "",
+          "first_seen": "2026-06-06T01:29:57+09:00"
+        },
+        {
+          "title": "서울 청소년 오케스트라 페스티벌 개최 - 핸드메이커",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5xVm5fWUdMOFdwVXVqTm1mMUNOV21HcWpSNUVFR21FSjNXNVQwNnBtQWdQWGVtdVMyM1lRajNYLWNoVUVuMG05d1Naa3VESXpDb0hWM0F2dkxlRUgwX0lBNmlQRVhKTEE?oc=5",
+          "source": "핸드메이커",
+          "summary": "",
+          "published": "2026-06-05",
+          "image": "",
+          "first_seen": "2026-06-06T01:29:57+09:00"
+        },
+        {
           "title": "진천군, 오는 24∼25일 '천년의 불꽃 김유신' 뮤지컬 공연 - 연합뉴스",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9vZ0dGX1RRN2pyR1lRdFd4YUJlaFhaTmlROXBidU9OaE52QlRZS1lqazd4RHlaLUxySmhpelgyZHF3V0tUcGV6bVplaEZ1SS1PbHJRZ2ZlcEYxaEHSAWBBVV95cUxPdnZpOHVzNjNLQlVSOVZvVm5EYVhjOUZfYmsxQXNYMXM2WjBFaE9kS1d5UVZkWWhIR3hEeXBxbW4zV1dIWnpudDdWTzBOQWNHbTh1X2haZGFIXy1sU0hoOEw?oc=5",
           "source": "연합뉴스",
@@ -738,15 +756,6 @@
           "first_seen": "2026-05-30T02:33:58+09:00"
         },
         {
-          "title": "NOL, 2026 공연예술 관람료 지원사업 동참 - 중소기업신문",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE50SHdVMEVlTEgxb1FCeUJMeGFxSWlseTJ2Z1pCWm8xX21YVzFoT2RaUDRMY3Jya3BVbGRpdmtRb0ZJRF9DRUJMLWJnaHVVTUVNdUREMzZ6TkNZb2RQMkJnMVV4RElxNzlSMlZWcDdn?oc=5",
-          "source": "중소기업신문",
-          "summary": "",
-          "published": "2026-05-22",
-          "image": "",
-          "first_seen": "2026-05-23T01:26:45+09:00"
-        },
-        {
           "title": "[주말 갈만한곳] 서울재즈페스티벌과 아이린 솔로 콘서트까지...주말 수놓을 대형 공연 라인업 - ppss.kr",
           "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5xR1Y5SFRtQ1VZODhqR0IzT3FQQjNwalZYU1NEQjhpV0h4NXg4a09iT0xpSHM5X1NKYjA2cEpYX3Izc0JDcm1QZUJJaXp3UzZha3RyZjVCMU83bExjQzJKRURWU0U?oc=5",
           "source": "ppss.kr",
@@ -816,6 +825,15 @@
           "first_seen": "2026-06-05T01:55:38+09:00"
         },
         {
+          "title": "미디어아트 전시, 백화점·면세점 옥외 미디어월로 확대 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBTY0RDMGtyNlpoM2pjcmFKODRHUWFuRzBGeFotU3lHdEFfTHZrMWJMSk92T1o0alYyN3ZEdWNMTkJPLWU1aTFmZUFQbw?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-06-04",
+          "image": "",
+          "first_seen": "2026-06-06T01:29:57+09:00"
+        },
+        {
           "title": "퐁피두센터 한화 4일 개관…서울, 글로벌 현대미술 허브 도약 본격화 - abcn.kr",
           "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBiaHZjZllSQS1ueVJZV2FxU0J0eF9vbnN3SEt6Zk5rUzIxa0R5Rng4cW5reGg0bHJMMVBEWHRsNFlQR3MzZHJScUVwYkpGT3FyeUNUdU9iX2pKTzhrUHNucDFCd9IBZ0FVX3lxTE5RUU52OGhpNm5VdnktQzNyWkF6bE85NGtTTWJSMVVOdGh5YWNzMGpOSXBoS2JFTk9EMExRVWVOOHpUOWhRRWhrbEdnbzZONm9rQTZJdXJYTmdSeUlyTDEyVGltbnVSTVE?oc=5",
           "source": "abcn.kr",
@@ -841,6 +859,15 @@
           "published": "2026-06-02",
           "image": "",
           "first_seen": "2026-06-03T07:53:20+09:00"
+        },
+        {
+          "title": "밤 산책으로 딱! 퇴근 후 가볼 만한 미디어아트 전시 - 서울특별시",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9VRkZqakFPNENWZHFVQUhIT3I2X0djM3lvNGFNWFdCUlMwUHBRUFE3U1RFMnpldGZUaWNpRGZuRl9hc3NKaUcyNHlNQUd2THhLdUFFZHpSRkU?oc=5",
+          "source": "서울특별시",
+          "summary": "",
+          "published": "2026-06-02",
+          "image": "",
+          "first_seen": "2026-06-06T01:29:57+09:00"
         },
         {
           "title": "다이아몬드 해골을 왜 만들지? '데이미언 허스트와의 대화’에서 물어봐요! - 컬처램프",
@@ -960,15 +987,6 @@
           "first_seen": "2026-05-24T00:01:27+09:00"
         },
         {
-          "title": "현대미술, 예술인가 자본의 신화인가? - abcn.kr",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBQUDNkQ3hqa01ZZVpvV1VvRGhfdUJRNU5XY1pvaGhlaHdHX2tJNkdqWkZTYW1TU3hTRUFHbmpLTEZlWWVKa0VPWkFLTkhfNVJ6b0dWMVFEaGw2U0k0MGpTa3FHd9IBZ0FVX3lxTFB3emMxanlXLVFjZFg5ODJfWkhSVjhhRXgwblR3N1NwSVdfcWE3SWlZSWlwU2ZwSmxfN1RMYlFGUWozUTVIc29OcjMwR0N4cXptRlFEckRjUlk2ck9taUZjSlh0ODUydUE?oc=5",
-          "source": "abcn.kr",
-          "summary": "",
-          "published": "2026-05-22",
-          "image": "",
-          "first_seen": "2026-05-23T01:26:45+09:00"
-        },
-        {
           "title": "무료로 즐기는 빛의 전시 '미디어아트 서울' 추천! - 서울특별시",
           "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBZUXpFLXRPS1BtdDlQYjRScG1abnduVG9KaHFNM293OTV6c3FOUUs1eENTTHkwWHgwSE5YcTV4ZzJPTllVQzJqRVkzTXpWeTIzQkNJMkg5czI?oc=5",
           "source": "서울특별시",
@@ -1003,15 +1021,6 @@
           "published": "2026-05-21",
           "image": "",
           "first_seen": "2026-05-25T00:05:25+09:00"
-        },
-        {
-          "title": "한화그룹 '퐁피두센터 한화' 개관…세계 현대미술 가교로 육성 - 뉴스1",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE02M0ZmMllNLWhVTXdxN2xpcnJGN3l6THN5VVplMDdLQkFETllyRVFOc1BKOFU4RUNxSng1MWY1Y2hHUTZUMFdEUzkxVXBkM1FnUmswV1ZBbFJtQXpVVlFHMWZONnQ?oc=5",
-          "source": "뉴스1",
-          "summary": "",
-          "published": "2026-05-19",
-          "image": "",
-          "first_seen": "2026-05-23T01:26:45+09:00"
         }
       ]
     },
@@ -1227,6 +1236,15 @@
           "first_seen": "2026-06-05T01:55:38+09:00"
         },
         {
+          "title": "교토 비트서밋 달군 K-인디게임, KOCCA 공동관에 글로벌 관심 집중 - 인디게임닷컴",
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1fUzlEaW5fNFdyS29JNlE1a0dYQnRUUnNXX25lMkZGc0IwUEk5eGRTYWRfUVNUdUJDYU8zUmZ5VEVodVVHZ1dhdFc5RkjSAVRBVV95cUxOQmhYamdLMUZvNkdIYTFHa1Y4UkY0MHNnNUxzMTEzazJXcEVKeU80QlJtZVpHUVdRaDZ3VFZicnVlZWw0ekNpVEtrdVI3MC1ZZnFWVXo?oc=5",
+          "source": "인디게임닷컴",
+          "summary": "",
+          "published": "2026-05-28",
+          "image": "",
+          "first_seen": "2026-06-06T01:29:57+09:00"
+        },
+        {
           "title": "진천군, SNS 영상 공모전 개최 - 충청타임즈",
           "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE90MkR0elVtNGV0UURFZGJBVWhScDk2RVI1cVBNcnNDRFBBZkpJeThNWm5ST2F1ZVZtSUpMcG9uSURIZFFEY0V5Ukxlay1RQnFEQ0RkWG9FUDhHR0FoNUc2VDI1Yms2R05F?oc=5",
           "source": "충청타임즈",
@@ -1279,15 +1297,6 @@
           "published": "2026-05-24",
           "image": "",
           "first_seen": "2026-05-26T01:23:24+09:00"
-        },
-        {
-          "title": "‘대군부인’ 후폭풍 정부로 갔다···문체부에 “지원금 점검하라” 민원 - 스포츠경향",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1ZOGxodTdETElHaGVCNDhYNFdGdXhJYXlVcy0tdF9oTmctS1A3blJ5X2JCMGpyTXg4RlZEOVQzVHFXZHFUQ05OaTAtRzFWa1FhZjMyQnBMYlV3TWFlRE44WkNFUdIBY0FVX3lxTE1ZOGxodTdETElHaGVCNDhYNFdGdXhJYXlVcy0tdF9oTmctS1A3blJ5X2JCMGpyTXg4RlZEOVQzVHFXZHFUQ05OaTAtRzFWa1FhZjMyQnBMYlV3TWFlRE44WkNFUQ?oc=5",
-          "source": "스포츠경향",
-          "summary": "",
-          "published": "2026-05-22",
-          "image": "",
-          "first_seen": "2026-05-23T01:26:45+09:00"
         }
       ]
     },
@@ -1295,6 +1304,24 @@
       "id": "design",
       "name": "디자인",
       "items": [
+        {
+          "title": "세그루패션디자인고, 6회 홈커밍데이 '친정 오는 날' 개최 - 전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1OYk1oemFpNnFidnBTU2REQUhQYmVfVGdnZ0p4RVFyZFNDVXlDUGFIcmZzNXFCM1E3OGhVdkZkRnVKcEdIUEkyUnQ0MHZrZw?oc=5",
+          "source": "전자신문",
+          "summary": "",
+          "published": "2026-06-05",
+          "image": "",
+          "first_seen": "2026-06-06T01:29:57+09:00"
+        },
+        {
+          "title": "NHN이 직조하는 브랜드의 방식 - 디자인플러스",
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE10anQwdUhNdnBIci1pcVRDYUphQWM5cG1udHA5bU5yUlU2cmU1YWRkWGlZT1RabVBaM1RhbDMtQ3dtV2kwbEJPbWg0a2M?oc=5",
+          "source": "디자인플러스",
+          "summary": "",
+          "published": "2026-06-05",
+          "image": "",
+          "first_seen": "2026-06-06T01:29:57+09:00"
+        },
         {
           "title": "[포토] K-AI 반도체 성장 포럼 - 전자신문",
           "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1HN1RsMlZNbm9hMjcyaUhQdEhoNGZWSGVQWDlTZFRrWFJIdHZoZExEWWdKbFJxNEJFRlNKZ0t6WHlvUmxkdFJtbjJjOFVCQQ?oc=5",
@@ -1546,24 +1573,6 @@
           "published": "2026-05-22",
           "image": "",
           "first_seen": "2026-06-04T03:23:28+09:00"
-        },
-        {
-          "title": "2026 AI 트렌드: HR이 HR다워질 수 있다고? - 브런치",
-          "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE1UY2RFRUt4M3oxeHZwcWlKeC1jVGpOWFVXQlJMN0t1YTRLX1o3WVMxSy1qYmQwZWFsX1NpWDktRGw3OWZ2?oc=5",
-          "source": "브런치",
-          "summary": "",
-          "published": "2026-05-21",
-          "image": "",
-          "first_seen": "2026-05-29T02:34:42+09:00"
-        },
-        {
-          "title": "구글 I/O 2026, 디자이너의 주목 포인트 총정리 - 브런치",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE95amZpUDR5YnRpdHRtdkZGN0gxaU5wVmJtZWVKX3JjNGlvWjZncGRQR0hlMGZqaHc1cjhHX0QxbzVSLUFzWDRSUnlqeFNUOXJm?oc=5",
-          "source": "브런치",
-          "summary": "",
-          "published": "2026-05-21",
-          "image": "",
-          "first_seen": "2026-05-30T02:33:58+09:00"
         }
       ]
     },
@@ -1606,6 +1615,15 @@
           "published": "2026-06-02",
           "image": "",
           "first_seen": "2026-06-04T03:23:28+09:00"
+        },
+        {
+          "title": "클래시컬 브릿지 국제 음악 페스티벌 기자간담회 - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0zY28yelF5X2NBN0pFbEluOWRNZnVKMFlEYmFJZWJJRC1pQ0RBWjZ1cG51YkpGUEJUWDJaT01HNTZSVERWM0MtNmR4WG5kRW1TazZRTTVCaUhJdjZxa1E2NdIBYEFVX3lxTE0zY28yelF5X2NBN0pFbEluOWRNZnVKMFlEYmFJZWJJRC1pQ0RBWjZ1cG51YkpGUEJUWDJaT01HNTZSVERWM0MtNmR4WG5kRW1TazZRTTVCaUhJdjZxa1E2NQ?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-06-02",
+          "image": "",
+          "first_seen": "2026-06-06T01:29:57+09:00"
         },
         {
           "title": "[제주 24시] 제주 창작 뮤지컬 《고래의 아이》, 부산 ‘KOCACA 아트페스티벌’ 등 전국 순회공연 - 시사저널",
@@ -1777,33 +1795,6 @@
           "published": "2026-05-22",
           "image": "",
           "first_seen": "2026-05-26T06:59:14+09:00"
-        },
-        {
-          "title": "여름 달구는 EDM 열기…6월 서울랜드서 '월드 디제이 페스티벌' - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBrelUxcDUtZk1veWJFV1dPZmVnT1pkMjI3ZHBBUEE5MkUyM2lRWEZCeVFLcHMzd185dE9UWW8tTGNmTmlqVmVPZE8zZ19CdE5RczZmX2NsV0VIbEp6SXNPatIBYEFVX3lxTFBrelUxcDUtZk1veWJFV1dPZmVnT1pkMjI3ZHBBUEE5MkUyM2lRWEZCeVFLcHMzd185dE9UWW8tTGNmTmlqVmVPZE8zZ19CdE5RczZmX2NsV0VIbEp6SXNPag?oc=5",
-          "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-05-21",
-          "image": "",
-          "first_seen": "2026-05-23T01:26:45+09:00"
-        },
-        {
-          "title": "알파색채 공식 후원 작가 세연(Ichigo), 국제 아트 페스티벌 ‘CITY SONIC Seoul’서 라이브 페인팅 퍼포먼스 선보여 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1vb003Rms4am04RHZnSURrYU00ZVZpa00wVm44Qk85Zy1Jem44RldLYmFBdXI1R1lfcW1iSDlzYzhuSGJnUnBEY3ozRQ?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-05-18",
-          "image": "",
-          "first_seen": "2026-05-23T01:26:45+09:00"
-        },
-        {
-          "title": "그레이스 랭 \"K팝 아티스트 홍콩서 만나고 싶어…오케스트라와 프로젝트 공연 구상\" - 한국경제",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBydnFtVkpSR0Z1a3k1b2pmbGVYNjk5T2p0clk1VDFwMFdmWUk0Y2IzQWNnS0ZOeGtpalI1N0s4dVlKbDZIT0NLaUJ1OW1hdXpZaUJGNzFPYXptZ9IBVEFVX3lxTE5RNXRQNUZKMFZ5SHMzSy1qSm83amt2Z2IwSzlFclBqaVRXeVpwa1NONjVhMVkzMlJhUVBOZGdPZnJRbnVZYzVGLVZLSGRNXzZ4QnhIYg?oc=5",
-          "source": "한국경제",
-          "summary": "",
-          "published": "2026-05-18",
-          "image": "",
-          "first_seen": "2026-05-23T01:26:45+09:00"
         },
         {
           "title": "알파색채 공식 후원 작가 세연(Ichigo), 국제 아트 페스티벌 ‘CITY SONIC Seoul’서 라이브 페인팅 퍼포먼스 선보여 - v.daum.net",
