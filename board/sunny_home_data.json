@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-07T00:16:40+09:00",
+  "updated": "2026-06-07T06:53:04+09:00",
   "categories": [
     {
       "id": "ai",
@@ -22,6 +22,15 @@
           "published": "2026-06-06",
           "image": "",
           "first_seen": "2026-06-07T00:16:40+09:00"
+        },
+        {
+          "title": "아이폰도 이제 AI이미지 생성 되나.. 9일 새로운 시리 출시 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5sal9tVnVxcUhiU3hTbXNzeHFSLVBnRVFhUEIwZkJscFdIUUlEcnVsVklrX3BTOWVkaXpwSmhPMnlOamRPbHc?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-06-06",
+          "image": "",
+          "first_seen": "2026-06-07T06:53:04+09:00"
         },
         {
           "title": "[경제인칼럼] 올해의 인물 'ChatGPT' - 대전일보",
@@ -258,22 +267,13 @@
           "first_seen": "2026-06-05T01:55:38+09:00"
         },
         {
-          "title": "SKT, AI 에이전트 전면 도입…사내 AX 속도전 - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1oalAyTUFrdTl0YjZnb1dIdzA4UU05RUg0N2x1a2dNcmpIbjVGcGJITWlXZHpOajYxdlVpeTR0cGgtd2RnVm5DLWNXREJ0RkI5dVVFNTNxN3hrLVpMb3JNSdIBYEFVX3lxTE1oalAyTUFrdTl0YjZnb1dIdzA4UU05RUg0N2x1a2dNcmpIbjVGcGJITWlXZHpOajYxdlVpeTR0cGgtd2RnVm5DLWNXREJ0RkI5dVVFNTNxN3hrLVpMb3JNSQ?oc=5",
-          "source": "연합뉴스",
+          "title": "업무를 위한 AI: OpenAI 라이브스트림 - OpenAI",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBJSjJLdl9ZdzE3UjRJZ01JWDZ1Rm9wSmd0ekF6aFRCMmRwNFhfUTMtS2h3eXA4ejhYVjMzYkxvR1JYMTlSZHFtRFJyc1R1TWVXcU1xZ0tWc1hFNXV6QzNkMHBJWk5hdw?oc=5",
+          "source": "OpenAI",
           "summary": "",
-          "published": "2026-05-28",
+          "published": "2026-05-29",
           "image": "",
-          "first_seen": "2026-05-29T02:34:42+09:00"
-        },
-        {
-          "title": "[AI써봄] 챗GPT 이미지 2.0, 무료 플랜으로 어디까지 가능할까 - 동아일보",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9LRVNpUXc2elhCZnRTd0JObUdrRUNDcmhJRHhneVpFREJQTzhrNlB4ekttUnlGV29XaFN6R0VYTWRES0dJRnBDbldvc2l4eE5HdFBSNm5vNkRUZk1IakNfOFdGRzc3d9IBZkFVX3lxTE9LRVNpUXc2elhCZnRTd0JObUdrRUNDcmhJRHhneVpFREJQTzhrNlB4ekttUnlGV29XaFN6R0VYTWRES0dJRnBDbldvc2l4eE5HdFBSNm5vNkRUZk1IakNfOFdGRzc3dw?oc=5",
-          "source": "동아일보",
-          "summary": "",
-          "published": "2026-05-28",
-          "image": "",
-          "first_seen": "2026-05-29T02:34:42+09:00"
+          "first_seen": "2026-06-07T06:53:04+09:00"
         }
       ]
     },
@@ -657,6 +657,15 @@
           "first_seen": "2026-06-05T07:15:17+09:00"
         },
         {
+          "title": "아시아 뮤지컬 교류 허브로 확장, ‘2026 K-뮤지컬국제마켓’ 내달 개최 - 서울문화투데이",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1nLTU0UlRpYnZ3ZHY4NnVEQUpwUS1yMkdOVlYyaXJqMFVFRXlnR3dmeUEwRmJERllXRFhiNHAybEMwbXFKcmhkaFV1SVkxZ19sY2tkNURtcmlaZ0NZaEZDYkpPV2RrNld6UVE?oc=5",
+          "source": "서울문화투데이",
+          "summary": "",
+          "published": "2026-05-29",
+          "image": "",
+          "first_seen": "2026-06-07T06:53:04+09:00"
+        },
+        {
           "title": "보령교육지원청, ‘흡연·음주예방 뮤지컬’ 순회 공연 실시 - 밝은미래신문",
           "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE10cEFjQ0I4RGFGMVV6bW5HRnA3cEwweDR5bTVyXzdZMWwxbmNUajdCVVZ5RmtGc09CM2Z2Rnl5SnhzM2UxblJZeDNYVVF4QQ?oc=5",
           "source": "밝은미래신문",
@@ -797,6 +806,15 @@
       "id": "exhibition",
       "name": "전시",
       "items": [
+        {
+          "title": "[미술계 뉴스]서울시립미술관 ‘다시 보는 서울풍경 전’ - 문화경제 CNB저널",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBrTnRISHNGYUQyeXJZNW5DWmprVzNNWkk5ZGhUSVZNUEtndlprODZOb010ZHRseHZ5TnZmcjBJaWdVWXRwSk5rNzdjeDN1a1JaRlU4TlRCZThsRzhQV2xSRHMxM1Y2bDFWeHhjbDRQMA?oc=5",
+          "source": "문화경제 CNB저널",
+          "summary": "",
+          "published": "2026-06-06",
+          "image": "",
+          "first_seen": "2026-06-07T06:53:04+09:00"
+        },
         {
           "title": "곶자왈의 숨결, 실감 미디어아트로…제주현대미술관서 전시 - 연합뉴스",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9SejZZNGlWS2dhWnJ6UDFKQm91UWhFNmFqbzZrYk1LWVZlUElRTWVlZk9vTV9NT25DSVFBdG9NdmVNekk5cTRfRlNTRHB2X1RHZlhBal8zMnBTQnPSAWBBVV95cUxOVHFVNXBmbWtIZ0VvWUdPVkFSLWRjVDl6azIwSlk5c3dLYmxGLUpWM0dwVm9uMnRyX3ZLbHdIdEE5QlpNLUh1ZFUzX1ZDWDNOdS1tb1V5Z0p0a1JFTWExMjE?oc=5",
@@ -1065,6 +1083,15 @@
           "first_seen": "2026-06-01T00:17:45+09:00"
         },
         {
+          "title": "LG U+와 함께 MWC 2026 참여한 DOKAI STUDIO, 글로벌 현장서 AI 콘텐츠 실증 - blockchainus.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5BRzlrTldfZUd1cVNMcUxpOWNncHlwVnUxSVJjSFJMWndVMEdlaE16Z1hBWkEydWtzdTFIX0c2b1RUN2dTNndId28wVEdsdG1FRkZqOW5TZkU1R1pzQVhQUFlHZjZJVGJiQjZ1ZDROY00?oc=5",
+          "source": "blockchainus.co.kr",
+          "summary": "",
+          "published": "2026-05-30",
+          "image": "",
+          "first_seen": "2026-06-07T06:53:04+09:00"
+        },
+        {
           "title": "MWC·OTT·광화문까지… DOKAI, AI 시대 콘텐츠 스튜디오의 새로운 방향 제시 - 글로벌 비즈 뉴스",
           "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBLUjZhYXRfTk1pMXFZdmhFSEdZVHFRbEg5LU8tejA5ZC1saEMwSHNneEZnbngxaTBnZDdJZ3NVWktWZjdxN3BQNHoxd2k4ZUdMTDZmWWFiQ0RWSnJ3aVZBVVdpOURBQdIBaEFVX3lxTE43eG00ME5hQkVMZWN6NnRBSG5Ib3l6WDlXckJiOHB1V0tZc2RoQnptaHNreldxNnZqdVB6YkNDSUhCWlhOcy1LbjZqWVJQSThMM2FSLXdwbHRKeUwyc0VUc2RSWG4wbm4x?oc=5",
           "source": "글로벌 비즈 뉴스",
@@ -1227,6 +1254,15 @@
           "first_seen": "2026-06-06T01:29:57+09:00"
         },
         {
+          "title": "문체부, 지역 콘텐츠 창작·창업 지원에 63억원 투입 - 아시아경제",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1mcGFRWnNxNjZ4MnpDWFFsS2VFeVYyZDV2TWFSdnhMZWV1LU9wWTR5Ujh6el9BZUIzUkt5NkhFM3d6YVZMcWJkakdyT0ZWUmxma3lDNG1yZWZVSGhxUWpPaQ?oc=5",
+          "source": "아시아경제",
+          "summary": "",
+          "published": "2026-05-28",
+          "image": "",
+          "first_seen": "2026-06-07T06:53:04+09:00"
+        },
+        {
           "title": "진천군, SNS 영상 공모전 개최 - 충청타임즈",
           "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE90MkR0elVtNGV0UURFZGJBVWhScDk2RVI1cVBNcnNDRFBBZkpJeThNWm5ST2F1ZVZtSUpMcG9uSURIZFFEY0V5Ukxlay1RQnFEQ0RkWG9FUDhHR0FoNUc2VDI1Yms2R05F?oc=5",
           "source": "충청타임즈",
@@ -1252,24 +1288,6 @@
           "published": "2026-05-26",
           "image": "",
           "first_seen": "2026-05-27T02:27:39+09:00"
-        },
-        {
-          "title": "국립대구과학관, 2026년 제6회 과학영상 콘텐츠 공모전 개최…AI 주제로 7월 31일까지 접수 - 전자신문",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE83Y1NlbTdqNzBuR0N4SWVtWUlyUGhxbWtXRHJzTFl3WHczY1l2Z1BzbTRMS2dwTzR5ZzROT3cxd2lmY1RLNkhNTElwdEtPUQ?oc=5",
-          "source": "전자신문",
-          "summary": "",
-          "published": "2026-05-26",
-          "image": "",
-          "first_seen": "2026-05-27T02:27:39+09:00"
-        },
-        {
-          "title": "아이디어와 솜씨를 모으는 다채로운 공모전 개최 - K스피릿",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1kNGxieEtsRGJHYUlMUmhGcWFtNEhKOEs5Znh1S2M0YVE4ZXdSX0hLNmJBY1Rnb0pubHhXT01aWEdSYm1RZG5jQ3ZUTndTT0VJZjlYak5yc0ZTak9wN0NpeDE2R19KQXFRbnh0Z1RNNNIBc0FVX3lxTE1fMDNiSFMzN0NGQ0xHbWpfaE9lQTY2Z3ZwOVBTLVpvcFNwNk1udlJQbllwdThCbThvT1BsdnNQOUJKb2g1MnR1MElTRTlrOE95d1JhdzQ2Vkx2bjZreU1ING1SOUtuV0M4aGU5Unp4cUo3NVU?oc=5",
-          "source": "K스피릿",
-          "summary": "",
-          "published": "2026-05-24",
-          "image": "",
-          "first_seen": "2026-05-25T00:05:25+09:00"
         }
       ]
     },
@@ -1563,6 +1581,15 @@
           "first_seen": "2026-06-07T00:16:40+09:00"
         },
         {
+          "title": "전국 최대 ‘아트마켓’ 부산 상륙…올해는 광장의 축제로 - 국제신문",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRTY2clh0ZEwzdU9IaFpIVkFoSzY5UXNtaG81eUJIU3RpdDc5QVAyUXFYeFJNR3dEdnVmaExKSzRLdk5IR1pzQzRZdWNsd3ZUazZ0NlZETWtIb0tTTVdPYllPZlhYMDROZWZ1eDlNLXluVFNOdnJSN2JCSGhBZV9yWVVuRWJwSFhJam9NZktB?oc=5",
+          "source": "국제신문",
+          "summary": "",
+          "published": "2026-06-04",
+          "image": "",
+          "first_seen": "2026-06-07T06:53:04+09:00"
+        },
+        {
           "title": "음악의 축제 2026: 현대 한국 음악 신이 구에미 박물관으로 초대된다 - Sortir à Paris",
           "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNUkk5OVZOT1RST3dBX0xiLWJoYjJRSEU5d3BEYThHYmh5RGRKbWtuVFpfOHloREJ6RWozeWhXQW9UdDMtZzRTSjZkN1V0aGdOSUF5NFo0UWdIVlRtdWtzalhiaktQVXBBVDhyZE9MY3BGd0Vpb0EyeFAyQ1lDank0bXVZR3AyU3hpZGZrMXlHeFk0QkJTRDVtRlhHMmR6cmp3cXVveVJIaFliaTZhNUZnOHpfdkNlUG1HdmtlNkc4VWNjOUZIWV9xY1A2clNUbUFyZ2dGTmVYVF92YlludktlTmlMVFlsVFI0QmkwaDBQMjVybm9sU3VQV09JaVZLa2Z5OEpEbEg2bnhtTWN0?oc=5",
           "source": "Sortir à Paris",
@@ -1707,6 +1734,15 @@
           "first_seen": "2026-06-07T00:16:40+09:00"
         },
         {
+          "title": "33년 이어온 생명의 축제 '새물맞이 아트페스티벌' - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1mQ3FYNERiZHpVcGNvSFFnN1NSX0pmemwxRV9MV2xxUzNfcHRMVElKZEttZkc4T2hOTHI2OVgtaWJCX0VCUjZSRHZqVkM1b3M?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-05-29",
+          "image": "",
+          "first_seen": "2026-06-07T06:53:04+09:00"
+        },
+        {
           "title": "2026 히어로 락 페스티벌, 이게 바로 ROCK이지! - 브런치",
           "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9CbXhuTHI4QjRJZnp4NlJVazVGN2kwR0VYaFdPcnA1bTFhYmdnTWh0cnZGUktzclY0Y05IaWZ5Ry10MzRMVTBLUURB?oc=5",
           "source": "브런치",
@@ -1804,15 +1840,6 @@
           "published": "2026-05-18",
           "image": "",
           "first_seen": "2026-06-01T00:17:45+09:00"
-        },
-        {
-          "title": "철원군,6월에 만나는 음악 축제 “DMZ 피스트레인 뮤직페스티벌 2026” - thevoiceofus.co.kr",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5LdmFXekR6dExubGowZ1VUWEd4X2NGbDRuSkJTRWd3SWw4RVFIY3hrcXcxS0Q0alg0RG1wMGt6Z2VFQXBWRE5aSTEwSjZ4WG1vS0tDRmgwQXNxZ2UzTGlmelFuQ0ZndWNqVFZv?oc=5",
-          "source": "thevoiceofus.co.kr",
-          "summary": "",
-          "published": "2026-05-18",
-          "image": "",
-          "first_seen": "2026-06-01T06:45:00+09:00"
         }
       ]
     }
