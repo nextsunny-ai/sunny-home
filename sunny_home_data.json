@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-08T00:24:55+09:00",
+  "updated": "2026-06-08T06:56:14+09:00",
   "categories": [
     {
       "id": "ai",
@@ -1521,15 +1521,6 @@
           "first_seen": "2026-05-27T02:27:39+09:00"
         },
         {
-          "title": "[기고] 광주·전남 통합 ‘도시 브랜딩’이 하나된 미래를 만든다 - 투데이광주전남",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAweTA2T0ZDelJHVWpsM3NvS3NRX2JyemZqa29iMFJ4MW10ZEVOaV8tN3pKQ0tiQnBhZ09fMWx5LWFCUlhFd1BpZnBzWDBtczRyb1E5TklDMGJXbk5RYVV1aVFNaWpRQ2tFeTNvcXppY0o?oc=5",
-          "source": "투데이광주전남",
-          "summary": "",
-          "published": "2026-05-24",
-          "image": "",
-          "first_seen": "2026-05-25T06:43:16+09:00"
-        },
-        {
           "title": "Meta AI 글래스! 5.25부터 한국에서 판매시작 - 브런치",
           "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5PRlFIOS0zdk5tUDNHcVZkRzgwR2RSSW5leUZza0JyOGdCelROSFhSc0oxSXAwX3lqYVVNZ0Z5bUNBZEwwWW1YNWpEcTBTcEFCZlM4?oc=5",
           "source": "브런치",
@@ -1579,6 +1570,15 @@
           "published": "2026-06-05",
           "image": "",
           "first_seen": "2026-06-07T00:16:40+09:00"
+        },
+        {
+          "title": "화려하게 막 내린 '서울재즈페스티벌 2026'..여름의 초입 달궜다 - 한경매거진&amp;북",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5iY2F0cC03OGNNZWNNeFNnbDRoejgxOG9YU1VOcC1EeFRoRkpoQndvbERRaDZ4ODgyWV9Rd2Rfa0x4Zkg1c19VN2VSWC1DbmxvUVJUNlF1d3FiZFF4MmVUeDlRX1F3Y1pz?oc=5",
+          "source": "한경매거진&amp;북",
+          "summary": "",
+          "published": "2026-06-05",
+          "image": "",
+          "first_seen": "2026-06-08T06:56:14+09:00"
         },
         {
           "title": "전국 최대 ‘아트마켓’ 부산 상륙…올해는 광장의 축제로 - 국제신문",
@@ -1831,15 +1831,6 @@
           "published": "2026-05-26",
           "image": "",
           "first_seen": "2026-06-03T07:53:20+09:00"
-        },
-        {
-          "title": "젊은 공연창작자 실험무대, ‘두산아트랩 공연 2027’ 공모 - 서울문화투데이",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0yeUIxNlpHRVFyaFNVSjdKVzR5aXVWdlJEaXYzVFNsa29YSm1DM2hNblF6Ukp1YlFpVU0ycVNqRnlpekFzTklYdTFuaFNYOTNqSzlRY2RqeFB2Ti1kQlU3THpLQXVnb1Bab2c?oc=5",
-          "source": "서울문화투데이",
-          "summary": "",
-          "published": "2026-05-22",
-          "image": "",
-          "first_seen": "2026-05-26T01:23:24+09:00"
         }
       ]
     }
