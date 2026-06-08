@@ -1,10 +1,19 @@
 {
-  "updated": "2026-06-09T02:23:09+09:00",
+  "updated": "2026-06-09T07:17:49+09:00",
   "categories": [
     {
       "id": "ai",
       "name": "AI 트렌드",
       "items": [
+        {
+          "title": "무신사, 글로벌 AI 패션·뷰티 시장 정조준··· 챗GPT 무신사 전용 앱 출시 - 무신사 뉴스룸",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5UT19kSmVzQ0RtelptUUZFOWRRbk56NGpRZ0N0Q29XOG5KaDJ4enBqdkxVX19Nc0ZWN2dZWU5GeU1Xclp3TS1Lb2xRQXJXTGhnVjZKbXR6ZTJXVXpsUTQ5U3ZSRV94UQ?oc=5",
+          "source": "무신사 뉴스룸",
+          "summary": "",
+          "published": "2026-06-09",
+          "image": "",
+          "first_seen": "2026-06-09T07:17:49+09:00"
+        },
         {
           "title": "[AI픽] 국산 AI, 국가유산부터 금융까지 스며들었다 - 연합뉴스",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1KR0Frc3lNTlNDb0ZOVVFjbWFNMDRqQUF1YmU4d2tpclBiTnNlcWh3VGU3cXJlVDRqZkJneXBlenBMRW9oLVZ0NVJTTzdwS3hiOW9XRDRCamtUX2JTWW56SdIBYEFVX3lxTE1KR0Frc3lNTlNDb0ZOVVFjbWFNMDRqQUF1YmU4d2tpclBiTnNlcWh3VGU3cXJlVDRqZkJneXBlenBMRW9oLVZ0NVJTTzdwS3hiOW9XRDRCamtUX2JTWW56SQ?oc=5",
@@ -265,15 +274,6 @@
           "published": "2026-05-30",
           "image": "",
           "first_seen": "2026-06-05T01:55:38+09:00"
-        },
-        {
-          "title": "AI 생성 이미지인 줄···알고 보니 카메라로 찍은 경이로운 자연 - 캠페인 인사이트",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5laEpob283RjRuWEtTYU1SN0Z5ZVdBdnBtZ1Q2RU9RamdYdWxKaXU1QlA0MGVoSXY3bEU1bmJ2akY0WXphbDQ4OVlyaUlHZjdiMDFzVjU3LU81THM4NVBMMVoyN19FXy1qVWtsRnVwQjdGZ21j?oc=5",
-          "source": "캠페인 인사이트",
-          "summary": "",
-          "published": "2026-05-29",
-          "image": "",
-          "first_seen": "2026-05-30T02:33:58+09:00"
         }
       ]
     },
@@ -825,6 +825,15 @@
       "name": "전시",
       "items": [
         {
+          "title": "\"폭넓은 현대미술 경험의 향연\"…조형아트서울 2026 '성료' - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9fb0MxMUxUbzhobWszbk1DZG1UbXFnMVZCdDVlTGZBZXR4ZC1UVlRPTjFqRDJ4Y3pQZnBidzJJT0tsSllxUUE?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-06-08",
+          "image": "",
+          "first_seen": "2026-06-09T07:17:49+09:00"
+        },
+        {
           "title": "세포·기계·풍경이 뒤섞인 화면…에티오피아 작가 베르하누展 - 연합뉴스",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9HNUZZS1JPa1d2b0xnZ0NFQlhmQjVlXzY3SmVJNjlZMGVNM3Fxd0lFdlRpT2R0bjZtYlBRaVhjUUFPNUJyNlBLbkotQ2IxQ1Q2RHVULU5zdWVQTVBtWkxEaNIBYEFVX3lxTE9HNUZZS1JPa1d2b0xnZ0NFQlhmQjVlXzY3SmVJNjlZMGVNM3Fxd0lFdlRpT2R0bjZtYlBRaVhjUUFPNUJyNlBLbkotQ2IxQ1Q2RHVULU5zdWVQTVBtWkxEaA?oc=5",
           "source": "연합뉴스",
@@ -1368,6 +1377,15 @@
           "first_seen": "2026-06-05T01:55:38+09:00"
         },
         {
+          "title": "새활용, 캠페인 넘어 창업 브랜드로 키운다 - 환경일보",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE84UktNWXFOSGR2LWpWMkdMRTdqdWxIN080ZUNWVzRQVW9FaXZjMnlTdHhvcDVGNkVXWUlDQUp2SWtwYm84bkp6NmpmR0UzTGZ4Y1BTSlpqQldoeW0xRlpSYzhNQ3pZQWwy?oc=5",
+          "source": "환경일보",
+          "summary": "",
+          "published": "2026-06-03",
+          "image": "",
+          "first_seen": "2026-06-09T07:17:49+09:00"
+        },
+        {
           "title": "'2026 하반기 UX·UI 트렌드 및 AI 네이티브 실무 전략' 세미나 6월 18일 개최 - 전자신문",
           "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9qXzlRQ3E3T1dIVGhzZ1QweUpBNG5UNUVnVzRPMUg1Z0dQWWZrcG9nb0cycVN1R1dfWXNPZXpYZGR6WGhXUnV0NE55UnZYUQ?oc=5",
           "source": "전자신문",
@@ -1555,15 +1573,6 @@
           "published": "2026-05-24",
           "image": "",
           "first_seen": "2026-05-28T07:24:16+09:00"
-        },
-        {
-          "title": "2026 원티브 하이파이브 요약 - 브런치",
-          "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE4tZ1dWVjdzUlV2dWRJR3FrdHJVOU9lOVZWMERrR0Z3NEI4ZWJ6eGdyN0k2SEU5QlJ1S2VxNVVmeHRpZTdfbTRBY3N3?oc=5",
-          "source": "브런치",
-          "summary": "",
-          "published": "2026-05-24",
-          "image": "",
-          "first_seen": "2026-06-01T00:17:45+09:00"
         }
       ]
     },
@@ -1597,6 +1606,15 @@
           "published": "2026-06-08",
           "image": "",
           "first_seen": "2026-06-09T02:23:09+09:00"
+        },
+        {
+          "title": "'2026 KoCACA 아트페스티벌 in 부산' 개막 - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE85X0tYY3Z4YU93V0JlMDAyTUhORUk0MWUyWGMxNlF3NVloczFJcGFwRTR2SW12bmJMdlNWc0hlYUUyQWZMc25sbkNWMnNWQ2RGREJISDZMT3k2WFphTEJRctIBYEFVX3lxTE85X0tYY3Z4YU93V0JlMDAyTUhORUk0MWUyWGMxNlF3NVloczFJcGFwRTR2SW12bmJMdlNWc0hlYUUyQWZMc25sbkNWMnNWQ2RGREJISDZMT3k2WFphTEJRcg?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-06-08",
+          "image": "",
+          "first_seen": "2026-06-09T07:17:49+09:00"
         },
         {
           "title": "MK Pick | 아디다스 오리지널스 ‘원 유니버스 페스티벌 2026’ 티켓 래플 이벤트 진행 - mkbn.mk.co.kr",
@@ -1827,15 +1845,6 @@
           "title": "Part 2. 2026 페스티벌 스타일링 가이드 - allure Korea",
           "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQU2dXaFZzTVdZQVoxMXMwMFdVc2pOUUhiZUd2MkJ4bzVBajlVNFZoR2lpRi1OOFJxRlowYmFfMzl1RTdhcXBQYTJQQWZqR1hhZUM4RlJpcncyM0NSRzlPVXMycHA0MnVfcFhLLTk5V3plVXdiNVA1UUxIV1YwZEVMTU9URG5FemNfZGFWdnYyV19OeHBEWWNvYW9NOWg3M0I0QlMzWVN3M2NoWHZoTUxFT3BCWldIZy1Dc19KUzVGR1FLOHJzcnltTm5qcHQ5VXFFMVY4WkFIRExUVjhHSVh6dGJjcjMzNnlR?oc=5",
           "source": "allure Korea",
-          "summary": "",
-          "published": "2026-05-28",
-          "image": "",
-          "first_seen": "2026-06-02T04:20:40+09:00"
-        },
-        {
-          "title": "유쾌한 공연 한가득… 제20회 창원코미디아트페스티벌 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBKTWtIdG8tRHZ4WGFoMkdtUWxKMXRxVzNSMmZ2U191NVV4bjJLVHM5Yi0tRlFvdUIzUUxra0tlLXBxYkR3UFRsemR0ZE9SSVU?oc=5",
-          "source": "v.daum.net",
           "summary": "",
           "published": "2026-05-28",
           "image": "",

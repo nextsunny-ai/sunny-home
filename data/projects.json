@@ -1,7 +1,18 @@
 {
-  "updated": "2026-06-08T17:23:16.977815+00:00",
+  "updated": "2026-06-08T22:17:58.099368+00:00",
   "source": "github.com/nextsunny-ai",
   "repos": [
+    {
+      "name": "sunny-home",
+      "description": "Sunny personal home",
+      "html_url": "https://github.com/nextsunny-ai/sunny-home",
+      "homepage": "",
+      "language": "HTML",
+      "pushed_at": "2026-06-08T17:23:17Z",
+      "has_pages": true,
+      "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
+      "stars": 0
+    },
     {
       "name": "ppt-maker",
       "description": "PPT 메이커 — HTML 슬라이드 덱을 편집 가능한 PowerPoint(.pptx)로 변환. AI 없음·로컬·폰트 임베드. Free.",
@@ -11,17 +22,6 @@
       "pushed_at": "2026-06-08T16:32:42Z",
       "has_pages": false,
       "pages_url": "",
-      "stars": 0
-    },
-    {
-      "name": "sunny-home",
-      "description": "Sunny personal home",
-      "html_url": "https://github.com/nextsunny-ai/sunny-home",
-      "homepage": "",
-      "language": "HTML",
-      "pushed_at": "2026-06-07T21:56:22Z",
-      "has_pages": true,
-      "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
       "stars": 0
     },
     {
