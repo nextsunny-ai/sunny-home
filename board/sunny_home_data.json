@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-10T01:31:44+09:00",
+  "updated": "2026-06-10T07:16:44+09:00",
   "categories": [
     {
       "id": "ai",
@@ -541,15 +541,6 @@
           "published": "2026-05-27",
           "image": "",
           "first_seen": "2026-06-10T01:31:44+09:00"
-        },
-        {
-          "title": "\"K-콘텐츠 지킨다\"…경콘진, 저작권 법률지원 본격화 - 한국경제",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBzcFRsTWl2amJtNUtMODNMWTFoWHFQY3RZNmdmVm1nSGdYRW9uQ096b2k4dERHbGFhbzAtMFlYbEZUcjhaZjJJS09vQXRUaS1TbUdyT9IBVEFVX3lxTFBzcFRsTWl2amJtNUtMODNMWTFoWHFQY3RZNmdmVm1nSGdYRW9uQ096b2k4dERHbGFhbzAtMFlYbEZUcjhaZjJJS09vQXRUaS1TbUdyTw?oc=5",
-          "source": "한국경제",
-          "summary": "",
-          "published": "2026-05-26",
-          "image": "",
-          "first_seen": "2026-05-27T02:27:39+09:00"
         }
       ]
     },
@@ -565,6 +556,15 @@
           "published": "2026-06-09",
           "image": "",
           "first_seen": "2026-06-10T01:31:44+09:00"
+        },
+        {
+          "title": "2026 세종 울트라 틴즈 뮤지컬 참가자 모여라 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1tVTJXRkRiekkzMFdSNHY2YUFYVkhCQ3JxbFFiTGVPUUxjV0NyaHBLNWl2dHU3aHdrLWFlUzBBYzJXX19xbGVFTnpjZXBiRUpQeFNzYg?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-06-09",
+          "image": "",
+          "first_seen": "2026-06-10T07:16:44+09:00"
         },
         {
           "title": "150만 독자 울린 베스트셀러 '아몬드', 안양아트센터 뮤지컬 공연 - 뉴데일리 경기",
@@ -745,33 +745,6 @@
           "published": "2026-05-27",
           "image": "",
           "first_seen": "2026-05-29T02:34:42+09:00"
-        },
-        {
-          "title": "성북구, 내달 한용운 82주기 추모 뮤지컬 '심우' 공연 - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9SdGFBZ1psWGQ0NmpkQjF1RVlQNmhGa2w4RWhnc2R0ay1TdDl6R0RMTXRaYXI2WGNwaVhTUmVibzNuVEphaUpCLXR1QUpaTDVLaHI0YkdEbUs2WkhwYUJnZ9IBYEFVX3lxTE9SdGFBZ1psWGQ0NmpkQjF1RVlQNmhGa2w4RWhnc2R0ay1TdDl6R0RMTXRaYXI2WGNwaVhTUmVibzNuVEphaUpCLXR1QUpaTDVLaHI0YkdEbUs2WkhwYUJnZw?oc=5",
-          "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-05-26",
-          "image": "",
-          "first_seen": "2026-05-27T02:27:39+09:00"
-        },
-        {
-          "title": "2026 '제4회 대한민국 국제뮤지컬콩쿠르' 개최! - 뉴스인",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1UWnR1NWtZQW4xZDcySzkwUG83WmNES1U4RjlXUzEwQVhxN09XQXJ0alFCNWRsYnhPZ3NMMXo1SWl6VWh2UEtsYVk5bEdHR1VuOVh4blp6b0dmWFJXMUZoYmkxWllpa2ktX3dZ?oc=5",
-          "source": "뉴스인",
-          "summary": "",
-          "published": "2026-05-26",
-          "image": "",
-          "first_seen": "2026-05-27T02:27:39+09:00"
-        },
-        {
-          "title": "[더 한장] 5월의 서울이 가장 빛나는 순간 - 조선일보",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9uV2g1em9veDZOb2ZZZmhpSFZ4Mnl6SDk2aXJsbm9UYmoxcjAwaEpldGFJN3B5WkRKcHA3U3FReHpTUlByQ1pLUk1MNDN0UzgxT01CUExrdGZhNzlMR1ktQm1EVDdXalRnU29HOGx5elFKekVtNmxucnhnY0s5UQ?oc=5",
-          "source": "조선일보",
-          "summary": "",
-          "published": "2026-05-26",
-          "image": "",
-          "first_seen": "2026-05-27T02:27:39+09:00"
         },
         {
           "title": "전국 15개 공연예술축제 연결, ‘2026 아르코 썸 페스타’ 개최 - 서울문화투데이",
@@ -1074,6 +1047,15 @@
       "name": "지원사업",
       "items": [
         {
+          "title": "오썸피아, 한국콘텐츠진흥원 '2026 인공지능 콘텐츠 제작지원' 수행사 선정 - 전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1EMDY3Q0JiNlNmRmlYdlJrMW83QUs5T3d5ZkU5TlJ3d1ZpMktndUdOXzZZRUxYbTgzMjRaRllnY1EzZUJfd2Q1QnprVFp3UQ?oc=5",
+          "source": "전자신문",
+          "summary": "",
+          "published": "2026-06-10",
+          "image": "",
+          "first_seen": "2026-06-10T07:16:44+09:00"
+        },
+        {
           "title": "한국콘텐츠진흥원, 한국 게임기업 노르딕 게임 2026 참가 지원 - 베타뉴스",
           "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1mRlBha2h3TVNlMTBqN0JxQ2ktWjFuR1U5TEVUdzJzODdYX2QxT1Q5SkxiS09xay1qeUttUjUtMlhwWm96TVVCcUk5NXFrUmk0MXZJRVhmbFVXY1hTbmplcHpseWQ?oc=5",
           "source": "베타뉴스",
@@ -1153,6 +1135,15 @@
           "published": "2026-06-01",
           "image": "",
           "first_seen": "2026-06-03T03:04:58+09:00"
+        },
+        {
+          "title": "AI 영상 콘텐츠 미래 한눈에 … 대한민국 AI 콘텐츠 어워즈 개최 - 성남일보",
+          "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE5KbU5lSXJGUkNaVl9vVmRsZWFRME9iS3B4MXNRLWNCNGd0dnpNcmxRQlBCNTFncm5NelNlUlZHUVNHeVE?oc=5",
+          "source": "성남일보",
+          "summary": "",
+          "published": "2026-06-01",
+          "image": "",
+          "first_seen": "2026-06-10T07:16:44+09:00"
         },
         {
           "title": "[콘텐츠] 문체부·콘진원, 지역 콘텐츠 산업에 국비 63억 원 추가 지원 外 - 워크투데이",
@@ -1324,24 +1315,6 @@
           "published": "2026-05-28",
           "image": "",
           "first_seen": "2026-06-05T01:55:38+09:00"
-        },
-        {
-          "title": "교토 비트서밋 달군 K-인디게임, KOCCA 공동관에 글로벌 관심 집중 - 인디게임닷컴",
-          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1fUzlEaW5fNFdyS29JNlE1a0dYQnRUUnNXX25lMkZGc0IwUEk5eGRTYWRfUVNUdUJDYU8zUmZ5VEVodVVHZ1dhdFc5RkjSAVRBVV95cUxOQmhYamdLMUZvNkdIYTFHa1Y4UkY0MHNnNUxzMTEzazJXcEVKeU80QlJtZVpHUVdRaDZ3VFZicnVlZWw0ekNpVEtrdVI3MC1ZZnFWVXo?oc=5",
-          "source": "인디게임닷컴",
-          "summary": "",
-          "published": "2026-05-28",
-          "image": "",
-          "first_seen": "2026-06-06T01:29:57+09:00"
-        },
-        {
-          "title": "문체부, 지역 콘텐츠 창작·창업 지원에 63억원 투입 - 아시아경제",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1mcGFRWnNxNjZ4MnpDWFFsS2VFeVYyZDV2TWFSdnhMZWV1LU9wWTR5Ujh6el9BZUIzUkt5NkhFM3d6YVZMcWJkakdyT0ZWUmxma3lDNG1yZWZVSGhxUWpPaQ?oc=5",
-          "source": "아시아경제",
-          "summary": "",
-          "published": "2026-05-28",
-          "image": "",
-          "first_seen": "2026-06-07T06:53:04+09:00"
         }
       ]
     },
