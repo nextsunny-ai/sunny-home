@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>12 — Product Catalog · Modular</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { width: 100%; }
+body {
+  background: #E9E9E6;
+  margin: 0;
+  padding: 0;
+  font-family: 'Pretendard Variable', Pretendard, sans-serif;
+  color: #26262A;
+}
+.slide {
+  width: 100%;
+  max-width: 1920px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  background: #F4F4F1;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 128px 1fr;
+}
+.slide + .slide { margin-top: 24px; }
+
+/* ── 마스트헤드 행 ── */
+.masthead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 36px 56px 22px;
+}
+.masthead h1 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 58px;
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 1;
+}
+.masthead h1 span { color: rgba(38, 38, 42, 0.35); }
+.masthead .meta {
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-align: right;
+  line-height: 1.7;
+  color: rgba(38, 38, 42, 0.65);
+}
+.masthead h1 small {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: rgba(38, 38, 42, 0.5);
+  margin-bottom: 12px;
+}
+
+/* ── 셀·실루엣 공통 ── */
+.shot {
+  position: relative;
+  background: #EBEBE7;
+  overflow: hidden;
+}
+.shot .ground {
+  position: absolute;
+  left: 50%; bottom: 11%;
+  width: 56%; height: 6%;
+  transform: translateX(-50%);
+  background: radial-gradient(ellipse at center, rgba(38, 38, 42, 0.18) 0%, transparent 70%);
+}
+.ink { position: absolute; background: linear-gradient(160deg, #9C9A93 0%, #7C7A74 55%, #6A6862 100%); }
+.ink.dark { background: linear-gradient(160deg, #57565A 0%, #3D3C40 70%); }
+
+.cap {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 14px;
+  align-items: baseline;
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  padding-bottom: 2px;
+}
+.cap .idx { color: rgba(38, 38, 42, 0.35); font-weight: 800; }
+.cap .nm {
+  font-family: 'Pretendard Variable', Pretendard, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+}
+.cap .nm small {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 11.5px;
+  color: rgba(38, 38, 42, 0.5);
+  margin-left: 10px;
+  letter-spacing: 0.01em;
+}
+.cap .pr { font-variant-numeric: tabular-nums; }
+.specline {
+  font-family: 'Manrope', sans-serif;
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: rgba(38, 38, 42, 0.55);
+  display: flex;
+  gap: 26px;
+  padding-top: 2px;
+}
+
+/* ════ 1. 인덱스 (피처드 2×2 + 1×1) ════ */
+.modular {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 12px;
+  padding: 0 56px 40px;
+  min-height: 0;
+}
+.mod { display: grid; grid-template-rows: 1fr auto; gap: 8px; min-height: 0; }
+.mod.featured { grid-column: 1 / 3; grid-row: 1 / 3; }
+
+/* 라운지 체어 */
+.s-chair .seat { left: 30%; bottom: 34%; width: 40%; height: 26%; border-radius: 6% 14% 4% 4%; }
+.s-chair .back { left: 30%; bottom: 38%; width: 9%; height: 38%; border-radius: 40% 8% 0 0; transform: skewX(-6deg); }
+.s-chair .leg1 { left: 35%; bottom: 18%; width: 2.4%; height: 17%; transform: skewX(8deg); }
+.s-chair .leg2 { left: 60%; bottom: 18%; width: 2.4%; height: 17%; transform: skewX(-8deg); }
+.s-chair .cushion { position: absolute; left: 41%; bottom: 47%; width: 26%; height: 7%; background: #BDBBB3; border-radius: 8px; }
+
+/* 머그 */
+.s-mug .bodyy { left: 38%; bottom: 22%; width: 26%; height: 40%; border-radius: 0 0 12% 12%; }
+.s-mug .handle {
+  position: absolute;
+  left: 62%; bottom: 32%;
+  width: 13%; height: 20%;
+  border: 6px solid #7C7A74;
+  border-left: 0;
+  border-radius: 0 999px 999px 0;
+}
+
+/* 스탠드 조명 */
+.s-lamp .pole { left: 49%; bottom: 18%; width: 2.6%; height: 48%; }
+.s-lamp .shade { left: 36%; bottom: 60%; width: 28%; height: 16%; clip-path: polygon(18% 0, 82% 0, 100% 100%, 0 100%); }
+.s-lamp .base { left: 40%; bottom: 16%; width: 20%; height: 3.5%; border-radius: 999px; }
+
+/* 토트백 */
+.s-tote .bag { left: 31%; bottom: 20%; width: 38%; height: 34%; clip-path: polygon(7% 0, 93% 0, 100% 100%, 0 100%); }
+.s-tote .h1, .s-tote .h2 {
+  position: absolute;
+  width: 15%; height: 15%;
+  border: 5px solid #7C7A74;
+  border-bottom: 0;
+  border-radius: 999px 999px 0 0;
+  bottom: 54%;
+}
+.s-tote .h1 { left: 35%; }
+.s-tote .h2 { left: 51%; }
+
+/* 수납 박스 */
+.s-box .b1 { left: 32%; bottom: 20%; width: 36%; height: 18%; }
+.s-box .b2 { left: 32%; bottom: 40%; width: 36%; height: 18%; opacity: 0.78; }
+.s-box .slit1 { position: absolute; left: 44%; bottom: 27%; width: 12%; height: 2.5%; background: #F4F4F1; border-radius: 999px; }
+.s-box .slit2 { position: absolute; left: 44%; bottom: 47%; width: 12%; height: 2.5%; background: #F4F4F1; border-radius: 999px; }
+
+/* ════ 2. 카테고리 인덱스 (1×1 × 8) ════ */
+.catgrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 12px;
+  padding: 0 56px 40px;
+  min-height: 0;
+}
+/* 노트 */
+.s-note .cover { left: 34%; bottom: 22%; width: 32%; height: 44%; border-radius: 2% 6% 6% 2%; }
+.s-note .spine { position: absolute; left: 34%; bottom: 22%; width: 5%; height: 44%; background: #57565A; }
+.s-note .bandd { position: absolute; left: 56%; bottom: 22%; width: 3%; height: 44%; background: #BDBBB3; }
+/* 펜 */
+.s-pen .p1 { left: 44%; bottom: 20%; width: 2.6%; height: 46%; transform: rotate(7deg); border-radius: 999px; }
+.s-pen .p2 { left: 52%; bottom: 20%; width: 2.6%; height: 42%; transform: rotate(-5deg); border-radius: 999px; background: linear-gradient(160deg, #57565A 0%, #3D3C40 70%); }
+.s-pen .tray { left: 36%; bottom: 17%; width: 28%; height: 4%; border-radius: 999px; }
+/* 트레이 */
+.s-tray .plate { left: 26%; bottom: 24%; width: 48%; height: 9%; border-radius: 4px 4px 12px 12px; }
+.s-tray .lip { position: absolute; left: 26%; bottom: 32%; width: 48%; height: 2.5%; background: #57565A; border-radius: 999px; }
+/* 탁상시계 */
+.s-clock .face {
+  position: absolute;
+  left: 50%; bottom: 30%;
+  width: 36%; aspect-ratio: 1;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: linear-gradient(160deg, #9C9A93 0%, #7C7A74 70%);
+}
+.s-clock .dial {
+  position: absolute;
+  left: 50%; bottom: 33.5%;
+  width: 28%; aspect-ratio: 1;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: #EBEBE7;
+}
+.s-clock .hh { position: absolute; left: 49.4%; bottom: 47%; width: 1.4%; height: 9%; background: #3D3C40; transform-origin: bottom; transform: rotate(38deg); }
+.s-clock .mh { position: absolute; left: 49.4%; bottom: 47%; width: 1.2%; height: 13%; background: #3D3C40; transform-origin: bottom; transform: rotate(-64deg); }
+.s-clock .foot { left: 38%; bottom: 26%; width: 24%; height: 4%; border-radius: 999px; }
+/* 캔들 */
+.s-candle .jar { left: 40%; bottom: 22%; width: 20%; height: 30%; border-radius: 6% 6% 10% 10%; }
+.s-candle .wax { position: absolute; left: 40%; bottom: 46%; width: 20%; height: 6%; background: #D9D7CF; border-radius: 6% 6% 0 0; }
+.s-candle .wick { position: absolute; left: 49.4%; bottom: 52%; width: 1.2%; height: 5%; background: #3D3C40; }
+/* 화병 */
+.s-vase .vbody { left: 41%; bottom: 20%; width: 18%; height: 38%; clip-path: polygon(28% 0, 72% 0, 64% 18%, 96% 58%, 82% 100%, 18% 100%, 4% 58%, 36% 18%); }
+.s-vase .stem { position: absolute; left: 49.6%; bottom: 56%; width: 1%; height: 18%; background: #57565A; transform: rotate(9deg); }
+.s-vase .leaf { position: absolute; left: 51%; bottom: 70%; width: 9%; height: 5%; background: #57565A; border-radius: 999px 0; transform: rotate(-22deg); }
+/* 파우치 */
+.s-pouch .bodyy { left: 30%; bottom: 24%; width: 40%; height: 30%; border-radius: 10px; }
+.s-pouch .zip { position: absolute; left: 30%; bottom: 50%; width: 40%; height: 1.8%; background: #3D3C40; border-radius: 999px; }
+.s-pouch .pull { position: absolute; left: 64%; bottom: 47%; width: 3.4%; height: 7%; background: #3D3C40; border-radius: 999px; }
+/* 블랭킷 */
+.s-blanket .f1 { left: 30%; bottom: 22%; width: 40%; height: 10%; border-radius: 8px; }
+.s-blanket .f2 { left: 32%; bottom: 33%; width: 36%; height: 10%; border-radius: 8px; opacity: 0.85; }
+.s-blanket .f3 { left: 34%; bottom: 44%; width: 32%; height: 10%; border-radius: 8px; opacity: 0.65; }
+
+/* ════ 3. 제품 상세 ════ */
+.detail {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: 48px;
+  padding: 0 56px 44px;
+  min-height: 0;
+}
+.detail .shot-wrap { position: relative; display: grid; }
+.detail .bigshot { position: relative; background: #EBEBE7; overflow: hidden; }
+/* 대형 체어 */
+.bigchair .seat { left: 31%; bottom: 33%; width: 38%; height: 23%; border-radius: 6% 14% 4% 4%; }
+.bigchair .back { left: 31%; bottom: 36%; width: 8%; height: 37%; border-radius: 40% 8% 0 0; transform: skewX(-6deg); }
+.bigchair .leg1 { left: 36%; bottom: 19%; width: 2.2%; height: 15%; transform: skewX(8deg); }
+.bigchair .leg2 { left: 59%; bottom: 19%; width: 2.2%; height: 15%; transform: skewX(-8deg); }
+.bigchair .cushion { position: absolute; left: 41%; bottom: 44.5%; width: 24%; height: 6.5%; background: #BDBBB3; border-radius: 8px; }
+/* 치수 다이어그램 라인 */
+.dim-line { position: absolute; background: #26262A; }
+.dim-label {
+  position: absolute;
+  font-family: 'Manrope', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #26262A;
+  background: #EBEBE7;
+  padding: 0 6px;
+}
+/* W 가로선 */
+.dw-line { left: 31%; bottom: 12%; width: 30.4%; height: 1px; }
+.dw-t1 { left: 31%; bottom: 10.5%; width: 1px; height: 3%; }
+.dw-t2 { left: 61.4%; bottom: 10.5%; width: 1px; height: 3%; }
+.dw-label { left: 42%; bottom: 9.6%; }
+/* H 세로선 */
+.dh-line { left: 70%; bottom: 19%; width: 1px; height: 54%; }
+.dh-t1 { left: 68.6%; bottom: 19%; width: 3%; height: 1px; }
+.dh-t2 { left: 68.6%; bottom: 73%; width: 3%; height: 1px; }
+.dh-label { left: 71.6%; bottom: 44%; }
+/* 스펙 표 */
+.spec-col { display: flex; flex-direction: column; min-height: 0; }
+.spec-col .code {
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: rgba(38, 38, 42, 0.4);
+  margin-bottom: 10px;
+}
+.spec-col h2 { font-size: 40px; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 28px; }
+.spec-table { width: 100%; }
+.spec-table .srow {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 20px;
+  padding: 11px 0;
+  border-bottom: 1px solid rgba(38, 38, 42, 0.14);
+  font-size: 14px;
+}
+.spec-table .srow:first-child { border-top: 2px solid #26262A; }
+.spec-table .sk {
+  font-family: 'Manrope', sans-serif;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(38, 38, 42, 0.5);
+  align-self: center;
+}
+.spec-table .sv { font-variant-numeric: tabular-nums; }
+.spec-col .price {
+  margin-top: auto;
+  font-family: 'Manrope', sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+}
+.spec-col .price small {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(38, 38, 42, 0.5);
+  margin-left: 12px;
+  letter-spacing: 0;
+}
+
+/* ════ 4. 가격 · 주문 ════ */
+.pricing { display: flex; flex-direction: column; padding: 0 56px 40px; min-height: 0; }
+.ptable { width: 100%; }
+.ptable .hrow, .ptable .drow {
+  display: grid;
+  grid-template-columns: 110px 1.5fr 1.6fr 1fr 0.9fr 0.9fr 0.9fr;
+  gap: 18px;
+  align-items: baseline;
+  padding: 13px 0;
+  font-variant-numeric: tabular-nums;
+}
+.ptable .hrow {
+  font-family: 'Manrope', sans-serif;
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(38, 38, 42, 0.55);
+  border-top: 2px solid #26262A;
+  border-bottom: 2px solid #26262A;
+}
+.ptable .drow { border-bottom: 1px solid rgba(38, 38, 42, 0.14); font-size: 14px; }
+.ptable .pcode { font-family: 'Manrope', sans-serif; font-size: 12.5px; font-weight: 800; color: rgba(38, 38, 42, 0.45); }
+.ptable .pname { font-weight: 600; }
+.ptable .pdim, .ptable .pnum { font-family: 'Manrope', sans-serif; font-size: 13px; color: rgba(38, 38, 42, 0.75); }
+.ptable .pprice { font-family: 'Manrope', sans-serif; font-size: 13.5px; font-weight: 600; }
+.order-strip {
+  margin-top: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  gap: 40px;
+  border-top: 2px solid #26262A;
+  padding-top: 20px;
+  align-items: start;
+}
+.order-strip .step {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  font-size: 13.5px;
+  line-height: 1.55;
+}
+.order-strip .step b { display: block; font-weight: 700; }
+.order-strip .step .n {
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  color: rgba(38, 38, 42, 0.35);
+}
+.order-strip .contact {
+  font-family: 'Manrope', sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  text-align: right;
+  line-height: 1.8;
+  color: rgba(38, 38, 42, 0.65);
+}
+</style>
+</head>
+<body>
+
+<!-- 1. 인덱스 -->
+<section class="slide">
+  <header class="masthead">
+    <h1>Product Index <span>2026</span></h1>
+    <div class="meta">
+      Vol. 04 — Goods · IP Merchandise<br/>
+      24 Items · 6 Categories · KRW (VAT incl.)
+    </div>
+  </header>
+  <div class="modular">
+    <div class="mod featured">
+      <div class="shot s-chair">
+        <span class="ground" style="width:64%; bottom:14%;"></span>
+        <span class="ink dark back"></span>
+        <span class="ink seat"></span>
+        <span class="cushion"></span>
+        <span class="ink dark leg1"></span>
+        <span class="ink dark leg2"></span>
+      </div>
+      <div>
+        <div class="cap"><span class="idx">01</span><span class="nm">라운지 체어<small>GM-2610</small></span><span class="pr">₩240,000</span></div>
+        <div class="specline"><span>W 620 × D 640 × H 750 mm</span><span>Oak · Wool</span><span>MOQ 20</span></div>
+      </div>
+    </div>
+    <div class="mod">
+      <div class="shot s-mug"><span class="ground"></span><span class="ink bodyy"></span><span class="handle"></span></div>
+      <div class="cap"><span class="idx">02</span><span class="nm">머그컵<small>GM-2605</small></span><span class="pr">₩18,000</span></div>
+    </div>
+    <div class="mod">
+      <div class="shot s-lamp"><span class="ground"></span><span class="ink pole"></span><span class="ink dark shade"></span><span class="ink base"></span></div>
+      <div class="cap"><span class="idx">03</span><span class="nm">스탠드 조명<small>GM-2611</small></span><span class="pr">₩86,000</span></div>
+    </div>
+    <div class="mod">
+      <div class="shot s-tote"><span class="ground"></span><span class="h1"></span><span class="h2"></span><span class="ink bag"></span></div>
+      <div class="cap"><span class="idx">04</span><span class="nm">캔버스 토트백<small>GM-2608</small></span><span class="pr">₩24,000</span></div>
+    </div>
+    <div class="mod">
+      <div class="shot s-box"><span class="ground"></span><span class="ink b1"></span><span class="ink b2"></span><span class="slit1"></span><span class="slit2"></span></div>
+      <div class="cap"><span class="idx">05</span><span class="nm">수납 박스 세트<small>GM-2612</small></span><span class="pr">₩32,000</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. 카테고리 인덱스 -->
+<section class="slide">
+  <header class="masthead">
+    <h1><small>Category 02</small>Desk · Living</h1>
+    <div class="meta">
+      08 Items · Page 04 — 16<br/>
+      KRW (VAT incl.)
+    </div>
+  </header>
+  <div class="catgrid">
+    <div class="mod">
+      <div class="shot s-note"><span class="ground"></span><span class="ink cover"></span><span class="spine"></span><span class="bandd"></span></div>
+      <div class="cap"><span class="idx">06</span><span class="nm">하드커버 노트<small>GM-2613</small></span><span class="pr">₩14,000</span></div>
+    </div>
+    <div class="mod">
+      <div class="shot s-pen"><span class="ground"></span><span class="ink p1"></span><span class="ink dark p2"></span><span class="ink tray"></span></div>
+      <div class="cap"><span class="idx">07</span><span class="nm">펜 세트<small>GM-2614</small></span><span class="pr">₩12,000</span></div>
+    </div>
+    <div class="mod">
+      <div class="shot s-tray"><span class="ground"></span><span class="ink plate"></span><span class="lip"></span></div>
+      <div class="cap"><span class="idx">08</span><span class="nm">데스크 트레이<small>GM-2615</small></span><span class="pr">₩16,000</span></div>
+    </div>
+    <div class="mod">
+      <div class="shot s-clock"><span class="ground"></span><span class="face"></span><span class="dial"></span><span class="hh"></span><span class="mh"></span><span class="ink foot"></span></div>
+      <div class="cap"><span class="idx">09</span><span class="nm">탁상시계<small>GM-2616</small></span><span class="pr">₩38,000</span></div>
+    </div>
+    <div class="mod">
+      <div class="shot s-candle"><span class="ground"></span><span class="ink jar"></span><span class="wax"></span><span class="wick"></span></div>
+      <div class="cap"><span class="idx">10</span><span class="nm">캔들<small>GM-2617</small></span><span class="pr">₩22,000</span></div>
+    </div>
+    <div class="mod">
+      <div class="shot s-vase"><span class="ground"></span><span class="ink vbody"></span><span class="stem"></span><span class="leaf"></span></div>
+      <div class="cap"><span class="idx">11</span><span class="nm">세라믹 화병<small>GM-2618</small></span><span class="pr">₩34,000</span></div>
+    </div>
+    <div class="mod">
+      <div class="shot s-pouch"><span class="ground"></span><span class="ink bodyy"></span><span class="zip"></span><span class="pull"></span></div>
+      <div class="cap"><span class="idx">12</span><span class="nm">트래블 파우치<small>GM-2619</small></span><span class="pr">₩19,000</span></div>
+    </div>
+    <div class="mod">
+      <div class="shot s-blanket"><span class="ground"></span><span class="ink f1"></span><span class="ink f2"></span><span class="ink f3"></span></div>
+      <div class="cap"><span class="idx">13</span><span class="nm">울 블랭킷<small>GM-2620</small></span><span class="pr">₩68,000</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. 제품 상세 -->
+<section class="slide">
+  <header class="masthead">
+    <h1><small>Featured</small>GM-2610</h1>
+    <div class="meta">
+      Page 06 — 16<br/>
+      KRW (VAT incl.)
+    </div>
+  </header>
+  <div class="detail">
+    <div class="shot-wrap">
+      <div class="bigshot bigchair">
+        <span class="ground" style="width:50%; bottom:15%;"></span>
+        <span class="ink dark back"></span>
+        <span class="ink seat"></span>
+        <span class="cushion"></span>
+        <span class="ink dark leg1"></span>
+        <span class="ink dark leg2"></span>
+        <!-- 치수 다이어그램 -->
+        <span class="dim-line dw-line"></span>
+        <span class="dim-line dw-t1"></span>
+        <span class="dim-line dw-t2"></span>
+        <span class="dim-label dw-label">W 620</span>
+        <span class="dim-line dh-line"></span>
+        <span class="dim-line dh-t1"></span>
+        <span class="dim-line dh-t2"></span>
+        <span class="dim-label dh-label">H 750</span>
+      </div>
+    </div>
+    <div class="spec-col">
+      <div class="code">GM-2610</div>
+      <h2>라운지 체어</h2>
+      <div class="spec-table">
+        <div class="srow"><span class="sk">치수</span><span class="sv">W 620 × D 640 × H 750 mm · SH 410 mm</span></div>
+        <div class="srow"><span class="sk">소재</span><span class="sv">오크 원목 프레임 · 울 블렌드 패브릭</span></div>
+        <div class="srow"><span class="sk">구성</span><span class="sv">본체 1 · 쿠션 1 · 조립 공구 포함</span></div>
+        <div class="srow"><span class="sk">마감</span><span class="sv">천연 오일 스테인 · 방염 처리</span></div>
+        <div class="srow"><span class="sk">원산지</span><span class="sv">대한민국</span></div>
+        <div class="srow"><span class="sk">출시</span><span class="sv">2026 · 09</span></div>
+        <div class="srow"><span class="sk">MOQ</span><span class="sv">20 ea · 박스 입수 1 ea</span></div>
+      </div>
+      <div class="price">₩240,000<small>VAT 포함</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. 가격 · 주문 -->
+<section class="slide">
+  <header class="masthead">
+    <h1><small>Vol. 04</small>Price List</h1>
+    <div class="meta">
+      유효기간 2026.12.31<br/>
+      KRW (VAT incl.)
+    </div>
+  </header>
+  <div class="pricing">
+    <div class="ptable">
+      <div class="hrow">
+        <span>Code</span><span>제품명</span><span>치수</span><span>소비자가</span><span>박스 입수</span><span>MOQ</span><span>납기</span>
+      </div>
+      <div class="drow">
+        <span class="pcode">GM-2610</span><span class="pname">라운지 체어</span>
+        <span class="pdim">620 × 640 × 750</span><span class="pprice">₩240,000</span>
+        <span class="pnum">1 ea</span><span class="pnum">20 ea</span><span class="pnum">5주</span>
+      </div>
+      <div class="drow">
+        <span class="pcode">GM-2605</span><span class="pname">머그컵</span>
+        <span class="pdim">Ø88 × 96</span><span class="pprice">₩18,000</span>
+        <span class="pnum">24 ea</span><span class="pnum">120 ea</span><span class="pnum">3주</span>
+      </div>
+      <div class="drow">
+        <span class="pcode">GM-2611</span><span class="pname">스탠드 조명</span>
+        <span class="pdim">280 × 280 × 1,240</span><span class="pprice">₩86,000</span>
+        <span class="pnum">4 ea</span><span class="pnum">40 ea</span><span class="pnum">4주</span>
+      </div>
+      <div class="drow">
+        <span class="pcode">GM-2608</span><span class="pname">캔버스 토트백</span>
+        <span class="pdim">380 × 120 × 400</span><span class="pprice">₩24,000</span>
+        <span class="pnum">50 ea</span><span class="pnum">300 ea</span><span class="pnum">3주</span>
+      </div>
+      <div class="drow">
+        <span class="pcode">GM-2612</span><span class="pname">수납 박스 세트</span>
+        <span class="pdim">320 × 240 × 140 × 2</span><span class="pprice">₩32,000</span>
+        <span class="pnum">12 ea</span><span class="pnum">100 ea</span><span class="pnum">3주</span>
+      </div>
+      <div class="drow">
+        <span class="pcode">GM-2620</span><span class="pname">울 블랭킷</span>
+        <span class="pdim">1,300 × 1,700</span><span class="pprice">₩68,000</span>
+        <span class="pnum">10 ea</span><span class="pnum">60 ea</span><span class="pnum">4주</span>
+      </div>
+    </div>
+    <div class="order-strip">
+      <div class="step"><span class="n">01</span><span><b>발주서 접수</b>품번·수량 기재 후 메일 발송</span></div>
+      <div class="step"><span class="n">02</span><span><b>발주 확정</b>재고·납기 회신 및 선금 확인</span></div>
+      <div class="step"><span class="n">03</span><span><b>출고</b>검수 후 일괄 출고 · 납기 기준 안내</span></div>
+      <div class="contact">order@brand.com<br/>Catalog Vol. 04 — 2026.12.31까지 유효</div>
+    </div>
+  </div>
+</section>
+
+<script>
+// capture helper: ?only=N — 해당 슬라이드만 표시 (캡처용)
+(function () {
+  var n = new URLSearchParams(location.search).get('only');
+  if (!n) return;
+  document.querySelectorAll('.slide').forEach(function (s, i) {
+    if (String(i + 1) !== n) s.style.display = 'none';
+    else s.style.marginTop = '0';
+  });
+})();
+</script>
+</body>
+</html>
