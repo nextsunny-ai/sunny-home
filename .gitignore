@@ -1,3 +1,5 @@
 scripts/__pycache__/
 nul
 .playwright-mcp/
+
+desktop.ini
