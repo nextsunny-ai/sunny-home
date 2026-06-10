@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-11T02:20:44+09:00",
+  "updated": "2026-06-11T07:45:04+09:00",
   "categories": [
     {
       "id": "ai",
@@ -94,6 +94,15 @@
           "published": "2026-06-09",
           "image": "",
           "first_seen": "2026-06-11T02:20:44+09:00"
+        },
+        {
+          "title": "코딩 도구·AI 비서까지 결합… 챗GPT ‘수퍼앱’으로 진화한다 - 조선일보",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQQnZ2ZGR2bzdvekhmZ3hHc0IwZFpYYkRDc1FORjZJMWZqQ0h5d3pUNWhWdnFSaE03QUQ3eTdmNkNJOHVTNWl5LVpQTHdkZDJGS3ZxV0hYVVJrM2VUZDUwM01BNk1hdlc5bEF1eGNhcFhvcHg1aFlMdkRmTUVwT19kSHdoZw?oc=5",
+          "source": "조선일보",
+          "summary": "",
+          "published": "2026-06-09",
+          "image": "",
+          "first_seen": "2026-06-11T07:45:04+09:00"
         },
         {
           "title": "[AI픽] 국산 AI, 국가유산부터 금융까지 스며들었다 - 연합뉴스",
@@ -265,15 +274,6 @@
           "published": "2026-06-01",
           "image": "",
           "first_seen": "2026-06-03T03:04:58+09:00"
-        },
-        {
-          "title": "알바천국, 'AI 공고 이미지 생성 서비스' 실시 - 라이센스뉴스",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE51SHhTYU5FWW5MbUZFY2hwSVB5UzNTb3YtOXY1QVFhOTVhME9TU2Z0RXBldlJYNkdLM3E1U01PbFpncGhpcVlTUkNjWVExVjMwTTVXbU16QTV3TmsxNHdmTlRPaS1iVGdsVEdz?oc=5",
-          "source": "라이센스뉴스",
-          "summary": "",
-          "published": "2026-06-01",
-          "image": "",
-          "first_seen": "2026-06-03T03:04:58+09:00"
         }
       ]
     },
@@ -281,6 +281,15 @@
       "id": "content_ip",
       "name": "콘텐츠·IP",
       "items": [
+        {
+          "title": "[샷!] TV 편성표 종말의 시대 - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1YcXB1VzBvb2p3VU04T24wemRIY1VWZWI3cmQ4S2pEYjdiTkRVNnp5YkFCRkM3Ym9DTFVaczIxc1NVSW1pend3VnZxT0Vjd3B3dHJNM3ByaWVqbHBMVXNZONIBYEFVX3lxTE1YcXB1VzBvb2p3VU04T24wemRIY1VWZWI3cmQ4S2pEYjdiTkRVNnp5YkFCRkM3Ym9DTFVaczIxc1NVSW1pend3VnZxT0Vjd3B3dHJNM3ByaWVqbHBMVXNZOA?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-06-11",
+          "image": "",
+          "first_seen": "2026-06-11T07:45:04+09:00"
+        },
         {
           "title": "숭실대, 생성형 AI 시대 OTT 콘텐츠 저작권 보호 기술 고도화 논의 - 한국대학신문",
           "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBPRTRBYXlsczZnR3FqN0JmUnBhZjJQdFRoWDAyWXE4NGtUMTZ5djFPRzhMVDRSa2t2NkFubVBLQ3B4ZEtFaFd4VGxHNjFTa2JCNFdNSHdxZG1TaWs5NmtjUjMxS2tXUQ?oc=5",
@@ -541,15 +550,6 @@
           "published": "2026-05-27",
           "image": "",
           "first_seen": "2026-06-04T03:23:28+09:00"
-        },
-        {
-          "title": "바르셀로나서 통했다…K-웹툰, 유럽 시장 존재감 확대 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBGbTBnZkdsNE1vVUt5dWM3WHotU3UzTDdJZnJ5UTRiUTY2ZW10ZXdpc2QwZG9qcnplU0FQellid25yLXdpZHc?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-05-27",
-          "image": "",
-          "first_seen": "2026-06-09T02:23:09+09:00"
         }
       ]
     },
@@ -861,6 +861,15 @@
           "first_seen": "2026-06-10T01:31:44+09:00"
         },
         {
+          "title": "\"폭넓은 현대미술 경험의 향연\"…조형아트서울 2026 '성료' - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5rbHRyUTZKaFVhZERKZi1lalF2YTJiQ1d5ZVlFR1dETE9LWXFKNVFOWS1TN1VHZTNBSjZjMjFxa2FEOHI5S01YQk1HcUYxQmJFa0lhOQ?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-06-08",
+          "image": "",
+          "first_seen": "2026-06-11T07:45:04+09:00"
+        },
+        {
           "title": "세포·기계·풍경이 뒤섞인 화면…에티오피아 작가 베르하누展 - 연합뉴스",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9HNUZZS1JPa1d2b0xnZ0NFQlhmQjVlXzY3SmVJNjlZMGVNM3Fxd0lFdlRpT2R0bjZtYlBRaVhjUUFPNUJyNlBLbkotQ2IxQ1Q2RHVULU5zdWVQTVBtWkxEaNIBYEFVX3lxTE9HNUZZS1JPa1d2b0xnZ0NFQlhmQjVlXzY3SmVJNjlZMGVNM3Fxd0lFdlRpT2R0bjZtYlBRaVhjUUFPNUJyNlBLbkotQ2IxQ1Q2RHVULU5zdWVQTVBtWkxEaA?oc=5",
           "source": "연합뉴스",
@@ -1032,15 +1041,6 @@
           "first_seen": "2026-06-10T01:31:44+09:00"
         },
         {
-          "title": "전통 공예를 실감형 미디어아트로 재해석한 전시...답십리영화미디어아트센터서 개최 - 데일리연합",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9lWTNTMFlsRFJra0tmNHBBaUc0MjRfUzYxaGREekNtMHhuWDJEekJtamJvbGRUQm5sYjg5ZnVoZGw0cUlRbnRYUm9OTWxpbGg2czdoaFVCTEZHVG8?oc=5",
-          "source": "데일리연합",
-          "summary": "",
-          "published": "2026-05-27",
-          "image": "",
-          "first_seen": "2026-05-28T07:24:16+09:00"
-        },
-        {
           "title": "서울에 개관한 ‘퐁피두센터’ 방문해야 할 이유 - heyPOP",
           "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE04V1Z2MVRDVnY2WktWU25rYXJNeWN5TF9IRE9Paldlbmoxd3lwODd2eFJfNmtOZGQ4QzNiN0pYRzU?oc=5",
           "source": "heyPOP",
@@ -1048,15 +1048,6 @@
           "published": "2026-05-27",
           "image": "",
           "first_seen": "2026-06-03T07:53:20+09:00"
-        },
-        {
-          "title": "이정민 작가 '가시 끝에서 피어난 마음의 꽃'-코엑스 조형아트서울 B홀 참가 - 아트코리아방송",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBjdDNTeU5VRG1qZHNsSlNOTk9nV3FzMV9jZEE2U09Pbl93REFyemlRODhDVTdYM1YtVm1JZFNHUTBDWnZNZ25iMnJHakdNVU9sMjd6UUh0dk9pb241Yng4RC1jcXJGZzZ4aVpYcWdR?oc=5",
-          "source": "아트코리아방송",
-          "summary": "",
-          "published": "2026-05-26",
-          "image": "",
-          "first_seen": "2026-05-28T07:24:16+09:00"
         }
       ]
     },
@@ -1081,6 +1072,15 @@
           "published": "2026-06-10",
           "image": "",
           "first_seen": "2026-06-11T02:20:44+09:00"
+        },
+        {
+          "title": "오썸피아, 한국콘텐츠진흥원 '2026 인공지능 콘텐츠 제작지원' 수행사로 선정! - 블록체인투데이",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5hQW95ako5ak5GT2tQNDQ3NVM5MzUtQ05yZTVQVDlrVldYT3ZKYjFGSlBBX1RpeTFldEkzOXYtRmVDbVR4MVBoaWtYV3ZtZDdXQlZqSGdiY0dYMFoxaTJuemt6TVltcW0wMGNlWThvNWc?oc=5",
+          "source": "블록체인투데이",
+          "summary": "",
+          "published": "2026-06-10",
+          "image": "",
+          "first_seen": "2026-06-11T07:45:04+09:00"
         },
         {
           "title": "한국콘텐츠진흥원, 한국 게임기업 노르딕 게임 2026 참가 지원 - 베타뉴스",
@@ -1324,15 +1324,6 @@
           "published": "2026-05-28",
           "image": "",
           "first_seen": "2026-06-01T06:45:00+09:00"
-        },
-        {
-          "title": "‘왕사남’ ‘살목지’처럼…잠자던 설화·역사 깨워 콘텐츠로 키운다 - 농민신문",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBrY3FZdUpVSlBadmx4OU1zQjFiZ3N3VUJaZWJJMTFXVXVQR2FFeE11OU55X2FIQmRwMjNFNlpfT2NWR3IzRHFCazJqMmRsTV9LdVNsNkRFUzR1dw?oc=5",
-          "source": "농민신문",
-          "summary": "",
-          "published": "2026-05-28",
-          "image": "",
-          "first_seen": "2026-06-04T07:56:14+09:00"
         }
       ]
     },
@@ -1366,6 +1357,15 @@
           "published": "2026-06-10",
           "image": "",
           "first_seen": "2026-06-11T02:20:44+09:00"
+        },
+        {
+          "title": "[HOT 산업 트렌드] 한국타이어, 리테일 영토 넓히는 '디자인 경영' - 비즈월드",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE55RG55d0RSVHY5WTJBT2p4dkN6MUU1NzdvVFJQbkFMOGl4ZmNCYUpjeU5ZSUFPbVlRZThjZzRFbm4zVVViemxkS1ZNUHZCVTl6cURjN1pIcHJBWjVoS1NOc29STFFjTE5mcEZn?oc=5",
+          "source": "비즈월드",
+          "summary": "",
+          "published": "2026-06-10",
+          "image": "",
+          "first_seen": "2026-06-11T07:45:04+09:00"
         },
         {
           "title": "[셋로그팀 인터뷰] 광고비 없이 앱스토어 1위… 셋로그는 어떻게 Z세대의 일상이 됐을까 - mobiinside.co.kr",
@@ -1600,15 +1600,6 @@
           "published": "2026-05-28",
           "image": "",
           "first_seen": "2026-05-29T02:34:42+09:00"
-        },
-        {
-          "title": "하만, 춘계 소음 진동 학술대회 참가… \"차량용 오디오 기술 선보여\" - 디지틀조선일보",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNN1hHZlozR0pNTzJSbF83aVNEUUwzMnBIRi1xNmVNV2hTQlBoZG5BdEtORFV0RC16dzNjTXFEd0FpRmI0bXZIRVoyNnhQS0NYWFpEbEZWd3NSZ3Fzdm9fTW9IazF5X2YtRXlYcUdBREQyRHpoYU0yWVBXdnBzT1EzU19IWUN3LVXSAXtBVV95cUxPaTZtOHMycWdwdG8yaVF4S1BaaUNORW1laGFxRVBoTWFKakdvTjMzNW9ZV1JaRWpYaVE1eXdHbmtFXzZZMFFaSEZTV0MxOGhRMUR6R1BqTWxIbENlV0w4Wm9Qb0RwczFkMlhNdkdfTldrNDI1dDFpM011Z3c?oc=5",
-          "source": "디지틀조선일보",
-          "summary": "",
-          "published": "2026-05-27",
-          "image": "",
-          "first_seen": "2026-05-28T07:24:16+09:00"
         }
       ]
     },
