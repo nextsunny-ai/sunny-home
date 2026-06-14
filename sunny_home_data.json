@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-15T00:48:51+09:00",
+  "updated": "2026-06-15T07:00:47+09:00",
   "categories": [
     {
       "id": "ai",
@@ -85,6 +85,15 @@
           "published": "2026-06-10",
           "image": "",
           "first_seen": "2026-06-15T00:48:51+09:00"
+        },
+        {
+          "title": "From Zero to Agents: AI 에이전트를 위한 End-to-End 데이터 파이프라인 구축하기 - Snowflake",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE95ei1sUEVnVjdMaXJPN2JFUVVHM0JIYnRRZ1UwQURyLURBT2h1dWpERG5JSVhYUTVsaTJjeG5zVUIyX3k2b2NPRU4zdXVFSFMwSkRyOHZ5ZUw1bmhhRE12M0RmTkVWMDFucXZKYXRmVkNtVDR6NkZJRUp3?oc=5",
+          "source": "Snowflake",
+          "summary": "",
+          "published": "2026-06-10",
+          "image": "",
+          "first_seen": "2026-06-15T07:00:47+09:00"
         },
         {
           "title": "무신사, 글로벌 AI 패션·뷰티 시장 정조준··· 챗GPT 무신사 전용 앱 출시 - 무신사 뉴스룸",
@@ -265,15 +274,6 @@
           "published": "2026-06-05",
           "image": "",
           "first_seen": "2026-06-12T02:36:58+09:00"
-        },
-        {
-          "title": "[AI써봄] 챗GPT 이미지 2.0, 유료 구독하면 얼마나 달라질까 - 동아일보",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1YdnRNODhGWEJJQTh0b3ZvOFpwM1VKdjkyUjNHaG9nNzVyVjB4eVpwUzJkR0hITnRmUW5QQUFHUkJfbDlxZDMtNk00THhwM2dTb2xNb0tGZ0F5ajItY1c5UG5aaElaaWd1dEs4YkdaZ9IBZkFVX3lxTE9hNGpQT1NDdXNKLWx3eXc1MUN4clNXMTh4WUFZSV9oeXNTY0xINmxsZmVrS3N4RmltTjd3bjgxT21Hekd3MVRvcVRBbGIzeUt0MmdnTENCT1RFVTlWVEkxRXdqTHhIUQ?oc=5",
-          "source": "동아일보",
-          "summary": "",
-          "published": "2026-06-05",
-          "image": "",
-          "first_seen": "2026-06-13T01:45:04+09:00"
         }
       ]
     },
@@ -505,15 +505,6 @@
           "published": "2026-06-01",
           "image": "",
           "first_seen": "2026-06-02T04:20:40+09:00"
-        },
-        {
-          "title": "[콘텐츠 큐레이션] 때 이른 무더위 날린다…등골 오싹 웹툰·OTT 4선 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5naTRFWGpvclB3bldJd25pXzhILUFKdWhxUi03eHRIN0E2SFAySmJ5T1AxME5mckxQdnVUYldJcXR6OGhYRU9Wd1BJNA?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-05-31",
-          "image": "",
-          "first_seen": "2026-06-01T06:45:00+09:00"
         },
         {
           "title": "‘다양한 K-콘텐츠 지식재산(IP), 글로벌 라이선스 시장 진출 확대’ - 비즈월드",
@@ -763,15 +754,6 @@
           "published": "2026-06-01",
           "image": "",
           "first_seen": "2026-06-03T03:04:58+09:00"
-        },
-        {
-          "title": "[공연소식] 맛난 빵으로 치유하는 상처…연극 '동백당' 7월 공연 - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9abUxBQzY5ZEt6azg5UGswbnI0LUFDazRLS21GRnhkWHY2WEtWU2puQldtOFNHRFMwNHB4ZjVYX0pGSnpaOHRacm1qbzVzU2xQbkNETHpYRDZBRXRpLXloYdIBYEFVX3lxTE9abUxBQzY5ZEt6azg5UGswbnI0LUFDazRLS21GRnhkWHY2WEtWU2puQldtOFNHRFMwNHB4ZjVYX0pGSnpaOHRacm1qbzVzU2xQbkNETHpYRDZBRXRpLXloYQ?oc=5",
-          "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-05-29",
-          "image": "",
-          "first_seen": "2026-06-01T06:45:00+09:00"
         },
         {
           "title": "제주문화예술진흥원 '고래의 아이' 부산·제주·서울 공연 - 연합뉴스",
@@ -1029,6 +1011,24 @@
           "first_seen": "2026-06-15T00:48:51+09:00"
         },
         {
+          "title": "시간마저 무기로 삼는다… K-인디 탄막 슈팅 ‘소울러즈’ 스팀 플레이테스트 시작 - 인디게임닷컴",
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1FVzQ4U0t6eFAyRThvc0JVQ1RVdUVFbS04QzNwV01JRG9FWllyMnJ1dGRmUW1tZEtGQmJKNzMxdmFuUG5kV0ppX0N6Qlo?oc=5",
+          "source": "인디게임닷컴",
+          "summary": "",
+          "published": "2026-06-14",
+          "image": "",
+          "first_seen": "2026-06-15T07:00:47+09:00"
+        },
+        {
+          "title": "성평등, 1분 영상으로 말한다… 제주도 콘텐츠 공모전 개최 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1jdWtPYnN6cEhicnRRbWV2R0FzbDBzaFN6NkNJeDRCSHFhVDBld0tYSm55SlIzQ1lCY243bFhFTGRDNWRiRmNLVGVsbjUyWWQzZHNPcQ?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-06-14",
+          "image": "",
+          "first_seen": "2026-06-15T07:00:47+09:00"
+        },
+        {
           "title": "道, 2026 성평등 영상 콘텐츠 공모전 개최 - 컬처제주",
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4zUW40dWxIajR4M0tvSkpaNnM1UUdTQmZxWVRQVmp5WmhINHVpUVZDLTNFNlFuUDlOSTI5cERTMnk3V3ZrR0dYZk95SFNzcUg2VmhyVXFvS0d3ODIwRlB2SENWZ1dWRkRrUXBB?oc=5",
           "source": "컬처제주",
@@ -1270,24 +1270,6 @@
           "published": "2026-06-01",
           "image": "",
           "first_seen": "2026-06-02T04:20:40+09:00"
-        },
-        {
-          "title": "대구 중구, 60초 쇼츠 영상 공모전 개최 - 경북신문",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE4weVlvMnhIaTV6XzRZMFRjaHBEajRvWUhYeWwzM1pSRFpwUFI2LW54NnNTRjNEZkdDWVdDbUdqbmJtLW9fc2NyNHNaMF9xRDJlaE91elBzdnQ?oc=5",
-          "source": "경북신문",
-          "summary": "",
-          "published": "2026-06-01",
-          "image": "",
-          "first_seen": "2026-06-02T04:20:40+09:00"
-        },
-        {
-          "title": "제주콘진원, 글로벌 ‘AI 영상’ 콘텐츠 공모전 연다 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9SUS1TZDRhSUh0NktpZkpKY1BUdTlDQmd5OC1tTTJoUlBQSUxhUzA5c1Uwb0hKQ2lLLWVLdHlDMFFlQjdLdEE?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-06-01",
-          "image": "",
-          "first_seen": "2026-06-02T07:54:21+09:00"
         }
       ]
     },
@@ -1375,6 +1357,15 @@
           "published": "2026-06-10",
           "image": "",
           "first_seen": "2026-06-13T01:45:04+09:00"
+        },
+        {
+          "title": "[ET포토] 데이식스 영케이, '심쿵 눈맞춤' - 전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9qbVVEWENNOFQxU3AyMDlZeE9ZTW80Vk9wNHZSSS1qNV91UkVIYnJiUW1HemhVaGpxMi1TX2xmV0gzWVg3ZDRtNjN6RXVLZw?oc=5",
+          "source": "전자신문",
+          "summary": "",
+          "published": "2026-06-10",
+          "image": "",
+          "first_seen": "2026-06-15T07:00:47+09:00"
         },
         {
           "title": "[셋로그팀 인터뷰] 광고비 없이 앱스토어 1위… 셋로그는 어떻게 Z세대의 일상이 됐을까 - mobiinside.co.kr",
@@ -1555,15 +1546,6 @@
           "published": "2026-06-01",
           "image": "",
           "first_seen": "2026-06-02T07:54:21+09:00"
-        },
-        {
-          "title": "현대미술에서 욕망의 공식을 훔쳐왔다…브랜드의 여백을 묻는 '갭 디자인' 7가지 - 뉴스1",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5SMEdDQ3ZxbkdGUF9HYTAtWUhvcGV2MUpDR3BRR010ckUzWkI3Y3Y3WDY5Z1VsWXRpYkJEdWZFSGtBZGxpTFZtOW56bExrY1RHRDY5c3RaYzNZQQ?oc=5",
-          "source": "뉴스1",
-          "summary": "",
-          "published": "2026-06-01",
-          "image": "",
-          "first_seen": "2026-06-03T03:04:58+09:00"
         }
       ]
     },
@@ -1696,6 +1678,15 @@
           "published": "2026-06-08",
           "image": "",
           "first_seen": "2026-06-13T01:45:04+09:00"
+        },
+        {
+          "title": "'광양국제미디어아트페스티벌' 수도권 홍보 나선다 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE0teWowNVZBRnNQNEhXQXlOMEZfV1hVYzdPWF96c05ROHQ2WUpNMHlwRU91N1cyWExra3ZMdG5QandycGJFSEdQR1JsR1lSaVBiNklVTw?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-06-08",
+          "image": "",
+          "first_seen": "2026-06-15T07:00:47+09:00"
         },
         {
           "title": "MK Pick | 아디다스 오리지널스 ‘원 유니버스 페스티벌 2026’ 티켓 래플 이벤트 진행 - mkbn.mk.co.kr",
