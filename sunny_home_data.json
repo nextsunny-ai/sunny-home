@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-16T03:26:54+09:00",
+  "updated": "2026-06-16T07:52:57+09:00",
   "categories": [
     {
       "id": "ai",
@@ -543,13 +543,13 @@
           "first_seen": "2026-06-04T03:23:28+09:00"
         },
         {
-          "title": "[콘텐츠칼럼] OTT 승부처는 '데이터'…K-OTT, 체급부터 키워야 - 전자신문",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE15Z0hNQ2R3cHQ4TU16SldHS1VZb25JYzhNaS0yQlp3YmJJSzVlZUVDdTNIMGZENDB6MjRta3pBX0lBNzFCZG11anVyUjVHdw?oc=5",
-          "source": "전자신문",
+          "title": "콘텐츠 독점보다 정보 보호…OTT 업계 전반 보안 점검 계기 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5lWjVLUGxSTFI1T2l3NFFjd3E4RzlYZmJlbWoxS2ZUTkRfTTZ3dU9LUkU2MlpiT1l1UkthY2tRd01PS1RqdlkteGFTTQ?oc=5",
+          "source": "v.daum.net",
           "summary": "",
-          "published": "2026-06-01",
+          "published": "2026-06-03",
           "image": "",
-          "first_seen": "2026-06-02T04:20:40+09:00"
+          "first_seen": "2026-06-16T07:52:57+09:00"
         }
       ]
     },
@@ -557,6 +557,15 @@
       "id": "performance",
       "name": "공연",
       "items": [
+        {
+          "title": "“백성이 편히 사는 나라 만들리라” 2026 뮤지컬 ‘정도전’ 관객 호응 - 영주시민신문",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBXdXcyT2NDRmZNOHFqN0Ytek5ReHRrVXQxR1gzaFZRQnhFSU40YzRLZnBxWTFDckpUT1NCX1VyYWdVTk85LW51eGtQakxyYVJNN0F4XzhtVjZTMnh1bWJPQ0NET19XYWc?oc=5",
+          "source": "영주시민신문",
+          "summary": "",
+          "published": "2026-06-15",
+          "image": "",
+          "first_seen": "2026-06-16T07:52:57+09:00"
+        },
         {
           "title": "뮤지컬 '프랑켄슈타인' 콘서트로 재탄생…규현·박은태 출연 - 연합뉴스",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0tSEhFbmpHUjVabVZ0bGVsTGY0TEQ3VFVYel9IWG42SGJNNFdjVTdHOV9fY3dmYTNMVUtlZ2pVVjlMYjNhN25iRzZJU1lqVzN2YXpON0NIaUZkeHRiUWkxTNIBYEFVX3lxTE0tSEhFbmpHUjVabVZ0bGVsTGY0TEQ3VFVYel9IWG42SGJNNFdjVTdHOV9fY3dmYTNMVUtlZ2pVVjlMYjNhN25iRzZJU1lqVzN2YXpON0NIaUZkeHRiUWkxTA?oc=5",
@@ -745,15 +754,6 @@
           "published": "2026-06-02",
           "image": "",
           "first_seen": "2026-06-08T00:24:55+09:00"
-        },
-        {
-          "title": "연극·뮤지컬 1만 원 할인! '2026 공연 관람료 할인 지원' 총정리 - civicnews.com",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9YRXV2aVMwMzdUdWJTMVV2aXVLQ2JkOGtSUTgzQS1qaWYzdjQ5WEVCcHN2TXJ2SUxpOUhrT1RGRXBqQjFLSWplRl9zRVo5MkJidlJhazd0RGVLSzNZY2JERzRSOF9QSDFkMnln?oc=5",
-          "source": "civicnews.com",
-          "summary": "",
-          "published": "2026-06-01",
-          "image": "",
-          "first_seen": "2026-06-02T04:20:40+09:00"
         },
         {
           "title": "아시안팝페스티벌에 관객 1만명 몰려…김창완 등 51팀 공연 - 연합뉴스",
@@ -1573,15 +1573,6 @@
           "published": "2026-06-02",
           "image": "",
           "first_seen": "2026-06-09T02:23:09+09:00"
-        },
-        {
-          "title": "에스모드 서울, AI 와 브랜딩 더한 ‘서머클래스’ 개설… 실무 교육 강화 - 한국섬유신문",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1pbEU0cmVYQ3VmOXEwdUY1T1JpaGxLVGp6SjdneUZMenhKaVV6ZGtyR21NY0t2bVNUWlRvc2ZMNHhIUy1Dal9CZktPS1YyZThaX2N4N2d1NWJRTUQ5SGs0djZXdF9EaVBz?oc=5",
-          "source": "한국섬유신문",
-          "summary": "",
-          "published": "2026-06-01",
-          "image": "",
-          "first_seen": "2026-06-02T04:20:40+09:00"
         }
       ]
     },
