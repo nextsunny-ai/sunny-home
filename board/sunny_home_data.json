@@ -1,10 +1,19 @@
 {
-  "updated": "2026-06-18T01:55:16+09:00",
+  "updated": "2026-06-18T07:27:53+09:00",
   "categories": [
     {
       "id": "ai",
       "name": "AI 트렌드",
       "items": [
+        {
+          "title": "생성형 AI로 ‘가짜 민심’ 만든다… 댓글·이미지 대량으로 제작 - 조선일보",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNejVpUnZ2QWU3VWFmZFg0cFpuWnl3OFl2ZGNIRW54UEtEam9PcUs3MjlXQ3I2OTRTRmdqclE1Y1gzb0MwRDJRQzg5TkxFOE1JUWlXY1l3ZW9BNVY2NC1kLTJDcGdsb1dNRHhrbWRkdVBOQVB1cW5kY3NiLXlOZUQ0M3V0TQ?oc=5",
+          "source": "조선일보",
+          "summary": "",
+          "published": "2026-06-18",
+          "image": "",
+          "first_seen": "2026-06-18T07:27:53+09:00"
+        },
         {
           "title": "클로드 코드, 자동 모드의 안전장치 보강 업데이트 - 지디넷코리아",
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBGY2hPcDU1TFhDQ3pDVFR5cFFpY1d4RnNGbU1ZVTZoMmNneUtfSEVpSVpqanZoX2lqYjR5cWNKZkh4NlI3T0JPelVvVDNpaVNMbWNMV1RR?oc=5",
@@ -31,6 +40,15 @@
           "published": "2026-06-17",
           "image": "",
           "first_seen": "2026-06-18T01:55:16+09:00"
+        },
+        {
+          "title": "AI 에이전트 선도 리걸테크 기업들 총출동 - 법률신문",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9kazNYZzI4MDJBVEZIeU5xWVdtaWJwXzFXUWo1UXNZSDBlV08zX3RHYzJBblNRZ0FONVlEaE5Ieno5Ny0wNHlhUU1ta3BCMnBLR0VIVGFTMjNoRHlMQU5wcjdUV2g0Y0JwbFhiaUo2Z2oxUdIBckFVX3lxTE9kazNYZzI4MDJBVEZIeU5xWVdtaWJwXzFXUWo1UXNZSDBlV08zX3RHYzJBblNRZ0FONVlEaE5Ieno5Ny0wNHlhUU1ta3BCMnBLR0VIVGFTMjNoRHlMQU5wcjdUV2g0Y0JwbFhiaUo2Z2oxUQ?oc=5",
+          "source": "법률신문",
+          "summary": "",
+          "published": "2026-06-17",
+          "image": "",
+          "first_seen": "2026-06-18T07:27:53+09:00"
         },
         {
           "title": "[데스크 시론] AI 이미지가 현실을 잠식하는 시대, 리터러시가 무너지고 있다 - 디지털포용뉴스",
@@ -85,6 +103,15 @@
           "published": "2026-06-15",
           "image": "",
           "first_seen": "2026-06-17T07:45:45+09:00"
+        },
+        {
+          "title": "[기획연재] AI는 예술가가 될 수 있는가 - 바로뉴스",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1oLW42UGJQZ29uN1JKRHo1ZGctdkQ0ZTBqOUtkcW12a1NSN0F1ZG1nVGZEcm54c19ud2xlUDRHUDlsNjNyZTdTaW1KQndmWXJOZzBuclgwM2pZZUlHTVRxNFZqdERWWi1nV2VF0gFvQVVfeXFMUHZxLVlLanRvM3k2S0pVTXk5Y2FRVmFlNExUdUhvYXRXRFBJYTYtUmFYeWdkSmRpR1BYZWV3ejgzLUNmOFM0M3MzYjlOc0psNERmM2RQVGJaSDBYTWNTVEdYSFNXUC1VTGVHX05BVDBn?oc=5",
+          "source": "바로뉴스",
+          "summary": "",
+          "published": "2026-06-13",
+          "image": "",
+          "first_seen": "2026-06-18T07:27:53+09:00"
         },
         {
           "title": "앤스로픽은 많은 기대를 모았던 모델을 클로드 페이블 5라는 이름으로 출시했습니다. - Vietnam.vn",
@@ -247,33 +274,6 @@
           "published": "2026-06-09",
           "image": "",
           "first_seen": "2026-06-10T01:31:44+09:00"
-        },
-        {
-          "title": "무신사, 챗GPT에 전용 앱 출시… 대화형 AI 패션 커머스 글로벌 공략 - 패션비즈",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1UbkNocmFaSDh6aVNYLXhxdlpfTmJ4YmpveWlIblQ4YXdOeW5rNW84UzhXRWJGdXg4X2VvSzRnRFZFZnRHci0tQ1NEalFOeXpiblZ6Tw?oc=5",
-          "source": "패션비즈",
-          "summary": "",
-          "published": "2026-06-09",
-          "image": "",
-          "first_seen": "2026-06-10T01:31:44+09:00"
-        },
-        {
-          "title": "AI 이미지엔 없는 사물의 본질을 살피다…구본창 기획 사진전 - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9ldUIybjk2RXhPNThnOHVIaTRha09JeFlaakxUVDR6b3VNbEFXempiY0VTUm51TnpaYXgyQ01HQVFpY0EweTExYl9FcDNvbHh0b093bEJIbmRSM0FUX2FwUtIBYEFVX3lxTE9ldUIybjk2RXhPNThnOHVIaTRha09JeFlaakxUVDR6b3VNbEFXempiY0VTUm51TnpaYXgyQ01HQVFpY0EweTExYl9FcDNvbHh0b093bEJIbmRSM0FUX2FwUg?oc=5",
-          "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-06-09",
-          "image": "",
-          "first_seen": "2026-06-11T02:20:44+09:00"
-        },
-        {
-          "title": "무신사, 챗GPT에 AI 쇼핑 서비스 출시…글로벌 패션·뷰티 탐색 강화 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5wVkdoOHZwdERJV0R2MVNHeXdESzNjNnNDOTZGd215VGMtOGtBRHQyWDJQNnBoeGI2SWdFRE5SOU9hTjd3WXdrUVlQMA?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-06-09",
-          "image": "",
-          "first_seen": "2026-06-11T02:20:44+09:00"
         }
       ]
     },
@@ -747,6 +747,15 @@
           "first_seen": "2026-06-11T02:20:44+09:00"
         },
         {
+          "title": "‘세상의 모든 공연축제’, 서울 한복판에서 무료로 먼저 만난다 - 매일경제",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1zRi1PUjZFRVdFTER3bjVuZzFTbldsYWpUWWJtMjhGZ05jRmY5UTFVNjBaeWgwbTdZUjZpY3RIX0JiRG1hWHZUcGhTS1pYWlpRZ0p5cg?oc=5",
+          "source": "매일경제",
+          "summary": "",
+          "published": "2026-06-04",
+          "image": "",
+          "first_seen": "2026-06-18T07:27:53+09:00"
+        },
+        {
           "title": "[6월 4일 ~ 6월 7일] 이번 주말 서울 축제·공연 BEST 7 - 시크릿 서울",
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1WbVduT0JpdXV5QWt4TTRPODdEQ2NMbFNvN3I3RVNUWjNVUHZhN1JUclBwM2ltWmRVbHUxY2NiRUZ4M3piT2t3RFQwWWN6QmlZTlhWNnU5WDdaQQ?oc=5",
           "source": "시크릿 서울",
@@ -754,15 +763,6 @@
           "published": "2026-06-02",
           "image": "",
           "first_seen": "2026-06-08T00:24:55+09:00"
-        },
-        {
-          "title": "제주문화예술진흥원 '고래의 아이' 부산·제주·서울 공연 - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1vT0VqMHNodDdwTFQ0Zmtrd2RjMkh2b25WdGgwZG9RZEt3V2Z5b2hkWERUMzJ6UnB5bEdtbFhjZkozZkhmbFRXbVdJVE80bWZ1cTItQjBGWGQ5cm_SAWBBVV95cUxOQ1ByWmZ1VEs0SDVpT0lOaTFOTldtRklHVmZoVVJ5Z3pjUlVMa1dJQWRwakVwclRuc2x6TWkwM0VoN0hzLXdtbElyLTBnTkEySkE1NE9jWjFtdFhScWZPVFg?oc=5",
-          "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-05-29",
-          "image": "",
-          "first_seen": "2026-06-04T03:23:28+09:00"
         },
         {
           "title": "올해 1분기 공연 티켓판매액 3940억…전년比 21.1% 증가 - 뉴스핌",
@@ -805,6 +805,15 @@
           "published": "2026-06-17",
           "image": "",
           "first_seen": "2026-06-18T01:55:16+09:00"
+        },
+        {
+          "title": "안산시, 미디어아트 전시 ‘기억, 빛이 남은 자리’ 개최 - 모닝투데이",
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5QMVJXSk1STi1NTEtzbWRpdkJIUG9uUDN1dEZjc25acHFiY0J5aDNhM1pLZllKUWo5YWN3QTNNU21Cdm05alh2Vl9uT1Q?oc=5",
+          "source": "모닝투데이",
+          "summary": "",
+          "published": "2026-06-17",
+          "image": "",
+          "first_seen": "2026-06-18T07:27:53+09:00"
         },
         {
           "title": "영등포아트스퀘어, 미디어아트 전시·문정희 북콘서트 개최… 구민 문화 향유 확대 - 여성종합뉴스",
@@ -978,15 +987,6 @@
           "first_seen": "2026-06-10T01:31:44+09:00"
         },
         {
-          "title": "퐁피두센터 한화 4일 개관…서울, 글로벌 현대미술 허브 도약 본격화 - abcn.kr",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBiaHZjZllSQS1ueVJZV2FxU0J0eF9vbnN3SEt6Zk5rUzIxa0R5Rng4cW5reGg0bHJMMVBEWHRsNFlQR3MzZHJScUVwYkpGT3FyeUNUdU9iX2pKTzhrUHNucDFCd9IBZ0FVX3lxTE5RUU52OGhpNm5VdnktQzNyWkF6bE85NGtTTWJSMVVOdGh5YWNzMGpOSXBoS2JFTk9EMExRVWVOOHpUOWhRRWhrbEdnbzZONm9rQTZJdXJYTmdSeUlyTDEyVGltbnVSTVE?oc=5",
-          "source": "abcn.kr",
-          "summary": "",
-          "published": "2026-06-03",
-          "image": "",
-          "first_seen": "2026-06-04T03:23:28+09:00"
-        },
-        {
           "title": "밤 산책으로 딱! 퇴근 후 가볼 만한 미디어아트 전시 - 서울특별시",
           "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9VRkZqakFPNENWZHFVQUhIT3I2X0djM3lvNGFNWFdCUlMwUHBRUFE3U1RFMnpldGZUaWNpRGZuRl9hc3NKaUcyNHlNQUd2THhLdUFFZHpSRkU?oc=5",
           "source": "서울특별시",
@@ -1045,6 +1045,15 @@
           "published": "2026-06-17",
           "image": "",
           "first_seen": "2026-06-18T01:55:16+09:00"
+        },
+        {
+          "title": "문체부 \"대형 IP 육성 등 K-콘텐츠 성장 지원 확대\" - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1oR3BnOEFQTEZhTjV5aHNIUXUyTjREQlNCc20xbncxSmJPb1hjMHBkZ05jN3dUcFFlYTVxSl9tbUVzRHhlMUFRcUVBREpRQ1VlbXM2Ug?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-06-17",
+          "image": "",
+          "first_seen": "2026-06-18T07:27:53+09:00"
         },
         {
           "title": "오썸피아, SK플래닛과 전통문화 AI·AR 콘텐츠 만든다 - 서울경제",
@@ -1288,15 +1297,6 @@
           "published": "2026-06-10",
           "image": "",
           "first_seen": "2026-06-12T02:36:58+09:00"
-        },
-        {
-          "title": "한국콘텐츠진흥원, 한국 게임기업 노르딕 게임 2026 참가 지원 - 베타뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1mRlBha2h3TVNlMTBqN0JxQ2ktWjFuR1U5TEVUdzJzODdYX2QxT1Q5SkxiS09xay1qeUttUjUtMlhwWm96TVVCcUk5NXFrUmk0MXZJRVhmbFVXY1hTbmplcHpseWQ?oc=5",
-          "source": "베타뉴스",
-          "summary": "",
-          "published": "2026-06-09",
-          "image": "",
-          "first_seen": "2026-06-10T01:31:44+09:00"
         }
       ]
     },
@@ -1339,6 +1339,15 @@
           "published": "2026-06-16",
           "image": "",
           "first_seen": "2026-06-17T07:45:45+09:00"
+        },
+        {
+          "title": "[서비스 기획 이야기] Openclaw가 촉발한 AI시대의 사용자 경험(UX) - mobiinside.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOQ3JENm11UDM5ZFE1UlJZVmJRTkNrWGd6aGJpVzhxeVRjOGhjV1JkNHlCVC1IdlhNUXV5aG4wM285bmR0bXkzbTRCeldMZUFqR0pwbktjXzlza2hsZGczTDhydnJ4a0dCeHVnUFhkM1ZCbEJaNzNRbnFiN3Bvd3ZpWFNn?oc=5",
+          "source": "mobiinside.co.kr",
+          "summary": "",
+          "published": "2026-06-16",
+          "image": "",
+          "first_seen": "2026-06-18T07:27:53+09:00"
         },
         {
           "title": "[위클리 디자인] 매일 보는 어플리케이션 속 디자인 이야기 - 디자인플러스",
@@ -1537,15 +1546,6 @@
           "published": "2026-06-03",
           "image": "",
           "first_seen": "2026-06-09T07:17:49+09:00"
-        },
-        {
-          "title": "하이트진로, 참이슬 후레쉬 도수 15.7도로 낮춘다 - 전자신문",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9kMFFuU21rMmctT1JmZTZ1WHBuaExfTTc4cHhCY0NTR3lIS19uOHVWQVpRQkNwUTNmLVNPcExkdDMtb2t3MjhnQUo5QnNyZw?oc=5",
-          "source": "전자신문",
-          "summary": "",
-          "published": "2026-06-02",
-          "image": "",
-          "first_seen": "2026-06-04T03:23:28+09:00"
         },
         {
           "title": "2026 AI 트렌드: HR이 HR다워질 수 있다고? - 브런치",
@@ -1813,15 +1813,6 @@
           "published": "2026-06-03",
           "image": "",
           "first_seen": "2026-06-07T00:16:40+09:00"
-        },
-        {
-          "title": "공연예술의 모든 것… ‘2026 KoCACA 아트페스티벌’ 8일 개막 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1UOFVUeTRTZGh2Z09MTnFnVlQ1VGVrWUZRUVZkUktlOVNJYWhlbzZqR1U4eWkzUTVTR1dVbDlrYjhNSzhqNHc?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-06-02",
-          "image": "",
-          "first_seen": "2026-06-04T03:23:28+09:00"
         },
         {
           "title": "클래시컬 브릿지 국제 음악 페스티벌 기자간담회 - 연합뉴스",
