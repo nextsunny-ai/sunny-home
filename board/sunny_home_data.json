@@ -1,10 +1,19 @@
 {
-  "updated": "2026-06-21T00:45:33+09:00",
+  "updated": "2026-06-21T06:57:39+09:00",
   "categories": [
     {
       "id": "ai",
       "name": "AI 트렌드",
       "items": [
+        {
+          "title": "퍼플렉시티, 밤마다 스스로 학습하는 AI 에이전트 메모리 '브레인' 출시 - AI타임스",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE15SkV5VjhnOGtBblB4aWc3V3l3bkJUbEd1WmFsWjVLWnM0UzJ2M2hBbXNzRlI5QUpvekdmaFRNUnoyX19nMmVaMndaSXNRNFctRS1PZXJMcGxkaTVnOHVHTGF3MTc0RHRwRkE?oc=5",
+          "source": "AI타임스",
+          "summary": "",
+          "published": "2026-06-20",
+          "image": "",
+          "first_seen": "2026-06-21T06:57:39+09:00"
+        },
         {
           "title": "[NDC 26] 김서준 \"게임, AI 에이전트 경제의 첫 테스트베드\" - 딜사이트",
           "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE0zTlBjSFJyNURIeExlbVNkU0ZUd216MWI0anNuRms5Z0RZNjJDd0dGTUpWZGd4eUFnX3N1elozbHJQcUNrUFAzZ0VTLXJYLTQ?oc=5",
@@ -204,6 +213,15 @@
           "first_seen": "2026-06-20T01:32:05+09:00"
         },
         {
+          "title": "카톡하다가 ‘@ChatGPT 오늘 날씨 알려줘’… 바로 사용 가능해진다 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5FeW1HZ3hhTTJzU0Rnb2RkcXd6Vm52OEVPa1VVNU45TERsUGpucGxnd29CYVkxSDZkcVVlc00xb2VPN0ltbXhNS0d6cHRDTzQ?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-06-16",
+          "image": "",
+          "first_seen": "2026-06-21T06:57:39+09:00"
+        },
+        {
           "title": "생성형 AI 이미지 - 전자신문",
           "url": "https://news.google.com/rss/articles/CBMipARBVV95cUxOZlJjVVNGWFpuOFJOb0h5RjZ4eFZCTTA0QUFKQWtHWUx1ODBlekdEcnY1am5sNnYwV1JSaTBab3hpZ3UzU0JoWFg4WEg3QWI4Z2RiT2NmNTNpaUtpY09YSkc2TW1xY3IxSFNhcEdxM0dtMTlJakNtLUJab2NTa3psbFBBWUZpT21Xc21oVjBCMUhHQzRkWWx2NnJTcTJjNS03VlB4Z1Eydk0zbFJwM056MFF1U0JHQVhXVjRsWC1ub084a1Jib0d3bktqWEFyV1V6XzNtcjhFc2JabmFKQUZGNzdLOUo2bFZDWEtrd3JxeFh4YkxGb09wQng0T01fRDBzbUZ2YzJOVS1OOTl3ZlRqbWplbllMaC1jU1Bta0hwUEhlcDhfdzNzQkUyeHdnN0JIeEhoc1pMZncwdFpwd2wtNUhsNnA3LTZuYjFONGY5X0FzRFByOG1GcmJ1SVc3d2NvZkwtejFmLUlZWHZ3OWs5cUVmNDg4dGhwX01hcHdtRE9VV0poX3hXeXV2ajVUNnpuZUxsYjRlX1c4Mk9CLThHeGdKTVoyT3dCeDdxaTgweEdkdzd4cHF1LXl5OHlscVlfV1NnRDhhLXdFazFlY1NfY25zMzJvY2hNekRmVDMzTVBkbW0zN3hKN2dzV2dRRWNUcGUyWGUxVG9NSXFJcmIta3p3S3htSG5OSm1OMGctbXJqWG03ZTRPOXYteFJoWkx4NzRRRA?oc=5",
           "source": "전자신문",
@@ -256,24 +274,6 @@
           "published": "2026-06-12",
           "image": "",
           "first_seen": "2026-06-17T03:27:12+09:00"
-        },
-        {
-          "title": "바이낸스 \"AI 에이전트도 실수하고 조종당해…보안 신경써야\" - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9neXozMmlCQmJnR25XQzd1Vmd1RXdqNE5VMkNuWnNfT0VQeC1vc1hWRjUtZFpXc3lYZjNaLTZHelZXNjNIY1h2eVlXal81eDVHR2NHdUh2QVMtOHZyaDdNddIBYEFVX3lxTE9neXozMmlCQmJnR25XQzd1Vmd1RXdqNE5VMkNuWnNfT0VQeC1vc1hWRjUtZFpXc3lYZjNaLTZHelZXNjNIY1h2eVlXal81eDVHR2NHdUh2QVMtOHZyaDdNdQ?oc=5",
-          "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-06-11",
-          "image": "",
-          "first_seen": "2026-06-12T02:36:58+09:00"
-        },
-        {
-          "title": "KETI, IEEE AI 생성 이미지 검사 대회 1위 수상 - 전자신문",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBYOU1rMHNnVng5VEY3a3NNS1dQVksxRXdjcHN4a3JYdWxwNEVPaGh3cGRReWtjSDhmQW9HblZmaDFOdzJ5NW1VV0N6VDJKZw?oc=5",
-          "source": "전자신문",
-          "summary": "",
-          "published": "2026-06-11",
-          "image": "",
-          "first_seen": "2026-06-13T07:17:28+09:00"
         }
       ]
     },
@@ -417,6 +417,15 @@
           "first_seen": "2026-06-21T00:45:33+09:00"
         },
         {
+          "title": "K-웹툰, 무대 위 '슈퍼IP'로...한국만화영상진흥원, 국립정동극장과 손잡다 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1jc0pJemFpc3BXZUoxaWpCMzBNbUhyTXVJQ2hLbWtGUEp1U29rSElHZkx4dmdGME5uMGs4WkJZbHZ1aUJFd1hTYTIyRQ?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-06-16",
+          "image": "",
+          "first_seen": "2026-06-21T06:57:39+09:00"
+        },
+        {
           "title": "김윤지 제6대 콘진원 원장 취임 \"K-콘텐츠 IP 가치 확대·AI 선제 대응\" 강조 - 파이낸셜뉴스",
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBIVjlmSExXS1FOM0N4TEVMT3JocmpjcHVJTEpud1VtN3VHVlhDSXFZUVMxc1RpcXMyc1hucm1yeGlMallQV2kyNFpVamN1aUZPWUlvOWNDd3RNUQ?oc=5",
           "source": "파이낸셜뉴스",
@@ -537,15 +546,6 @@
           "title": "[기획]상명대가 천안에서 연 웹툰 정상회의…아시아 콘텐츠 지도 바꿔 - 뉴스프리존",
           "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBLQ01uTk83c0QzbWFId0NQRmFqT2FhenMyWnUtZnNpOW5rZzlXdE10SDZSQmtwY3pESjJ0VFJaZzZqYURXZjJIdWphTWhKb01udlN0ZkFHZ2hQdk5QMmcyTTlWcDlsVE5iaHQ2ZjVMXy0zZG5OLWdn0gF3QVVfeXFMUEtDTW5OTzdzRDNtYUh3Q1BGYWpPYWF6czJadS1mc2k5bmtnOVd0TXRINlJCa3BjekRKMnRUUlpnNmphRFdmMkh1amFNaEpvTW52U3RmQUdnaFB2TlAyZzJNOVZwOWxUTmJodDZmNUxfLTNkbk4tZ2c?oc=5",
           "source": "뉴스프리존",
-          "summary": "",
-          "published": "2026-06-11",
-          "image": "",
-          "first_seen": "2026-06-12T02:36:58+09:00"
-        },
-        {
-          "title": "한국(K)콘텐츠무역협회, K-콘텐츠의 가치로 세계를 잇다 - SDG뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5GSDBKdmEwQ2IxSXhjTzJsR0k4czNBZUlMN2tERkdreGpTbkFieV9fYUVPMktCbVVEeTVhQWlKQlc4OGJ4N1JXU19pcWh4a2JGX05KMnA2QTBnUTFEazlONjlvdUU3VlXSAWtBVV95cUxNN2U3SnU3SXZ6X0hjaENPMnVrVVBxc0xkRnk3NlRadXAtV2lxcEJydGdzaVE2OUVkMm1PeUExRGQ3T0NqZHRZcHh2Z1VPNEh0c2Q2ZmNiRFNGRy15V2F4V3BfMGczRG1rWGdfNA?oc=5",
-          "source": "SDG뉴스",
           "summary": "",
           "published": "2026-06-11",
           "image": "",
@@ -817,15 +817,6 @@
           "published": "2026-06-02",
           "image": "",
           "first_seen": "2026-06-08T00:24:55+09:00"
-        },
-        {
-          "title": "아시아 뮤지컬 교류 허브로 확장, ‘2026 K-뮤지컬국제마켓’ 내달 개최 - 서울문화투데이",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1nLTU0UlRpYnZ3ZHY4NnVEQUpwUS1yMkdOVlYyaXJqMFVFRXlnR3dmeUEwRmJERllXRFhiNHAybEMwbXFKcmhkaFV1SVkxZ19sY2tkNURtcmlaZ0NZaEZDYkpPV2RrNld6UVE?oc=5",
-          "source": "서울문화투데이",
-          "summary": "",
-          "published": "2026-05-29",
-          "image": "",
-          "first_seen": "2026-06-07T06:53:04+09:00"
         }
       ]
     },
@@ -833,6 +824,15 @@
       "id": "exhibition",
       "name": "전시",
       "items": [
+        {
+          "title": "김포미디어아트센터 - 고향사랑기부제 위기브",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE11YUp1YXVSamdjTmU2V3hRYTU1dFJOYzlmX3ZPTzRPbm1Wa3ZEU2VOQ2RFd09kSzFJM2d5VWo4enFZQkMwd2ZWU1JpU3VQRm5SOWEta0o3eDhqaWxpYzdnYW80TTk?oc=5",
+          "source": "고향사랑기부제 위기브",
+          "summary": "",
+          "published": "2026-06-19",
+          "image": "",
+          "first_seen": "2026-06-21T06:57:39+09:00"
+        },
         {
           "title": "백남준아트센터, 용인시와 손잡고 이원화된 ‘미디어아트 전시’ 선보인다 - 경기신문",
           "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBvX29FTXg0RjBMUVE4N1FsZ1A1YXJta05ZSTRqMlQ2cThGMFdZdmo4bXRUZXBzNVJCWEcwbmpOSnQ4b1dyNGoyajYtN0FoUFlHYW1CY25qazRVWEJXSXdJTk53?oc=5",
@@ -1084,15 +1084,6 @@
           "published": "2026-06-07",
           "image": "",
           "first_seen": "2026-06-08T00:24:55+09:00"
-        },
-        {
-          "title": "[미술계 뉴스]서울시립미술관 ‘다시 보는 서울풍경 전’ - 문화경제 CNB저널",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBrTnRISHNGYUQyeXJZNW5DWmprVzNNWkk5ZGhUSVZNUEtndlprODZOb010ZHRseHZ5TnZmcjBJaWdVWXRwSk5rNzdjeDN1a1JaRlU4TlRCZThsRzhQV2xSRHMxM1Y2bDFWeHhjbDRQMA?oc=5",
-          "source": "문화경제 CNB저널",
-          "summary": "",
-          "published": "2026-06-06",
-          "image": "",
-          "first_seen": "2026-06-07T06:53:04+09:00"
         },
         {
           "title": "미디어아트 전시, 백화점·면세점 옥외 미디어월로 확대 - 지디넷코리아",
@@ -1876,15 +1867,6 @@
           "published": "2026-06-05",
           "image": "",
           "first_seen": "2026-06-08T06:56:14+09:00"
-        },
-        {
-          "title": "전국 최대 ‘아트마켓’ 부산 상륙…올해는 광장의 축제로 - 국제신문",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRTY2clh0ZEwzdU9IaFpIVkFoSzY5UXNtaG81eUJIU3RpdDc5QVAyUXFYeFJNR3dEdnVmaExKSzRLdk5IR1pzQzRZdWNsd3ZUazZ0NlZETWtIb0tTTVdPYllPZlhYMDROZWZ1eDlNLXluVFNOdnJSN2JCSGhBZV9yWVVuRWJwSFhJam9NZktB?oc=5",
-          "source": "국제신문",
-          "summary": "",
-          "published": "2026-06-04",
-          "image": "",
-          "first_seen": "2026-06-07T06:53:04+09:00"
         }
       ]
     }
