@@ -1,10 +1,28 @@
 {
-  "updated": "2026-06-23T07:29:13+09:00",
+  "updated": "2026-06-24T01:27:18+09:00",
   "categories": [
     {
       "id": "ai",
       "name": "AI 트렌드",
       "items": [
+        {
+          "title": "[LES 2026] 코그니텀, 법률 문서 검색·작성 지원 AI 에이전트 선보인다 - 법률신문",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE56cHhmZU8xcVo2MU1zOF9JOXEzZTg4ODNXUE1SOW93YUxOelhfRm5XSGpxZ3NONklBT1Y5ZTk2QnZsSEluYmltY2ZJTlJpVmRhTXZGbXRZWGxSaGQ2aE9Cb1hQUUlEb2RnZmJaN1oxRWF4QdIBckFVX3lxTE56cHhmZU8xcVo2MU1zOF9JOXEzZTg4ODNXUE1SOW93YUxOelhfRm5XSGpxZ3NONklBT1Y5ZTk2QnZsSEluYmltY2ZJTlJpVmRhTXZGbXRZWGxSaGQ2aE9Cb1hQUUlEb2RnZmJaN1oxRWF4QQ?oc=5",
+          "source": "법률신문",
+          "summary": "",
+          "published": "2026-06-23",
+          "image": "",
+          "first_seen": "2026-06-24T01:27:18+09:00"
+        },
+        {
+          "title": "‘적과의 동침’ 택한 게티이미지, 챗GPT에 사진 공급하자 주가 145% 폭등 - 조선일보",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPeHRoTjhMc1g4Z3VwLXF0eU1yTTd0ZWVJU2cxcnRjQ3BQMV9vV2VudmM1Q2Y1Rm5VMFdpSVFKRmx1TkhsVEZBalppNk02ajJucTVPdXZrQl9fY0h4RWNXaWdFaXIzUlVtRGlLS1pfclZhQjgwTmxIZDJBQnNqemVOa2FMRQ?oc=5",
+          "source": "조선일보",
+          "summary": "",
+          "published": "2026-06-23",
+          "image": "",
+          "first_seen": "2026-06-24T01:27:18+09:00"
+        },
         {
           "title": "서울 중구, 동대문 패션상인에 'AI 패션 이미지 플랫폼' 제공 - 연합뉴스",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1MZzBzcWNkaVY1aVJhRThDdTlvSElzQ3FuejZzY0l5cl9nQmhxd2s1TFA4VjdZWGxiSHktc3FKUzNXS0JscWRkTmJLYVBaeGVoWUZNZlZWTUpMak0wMXdpRtIBYEFVX3lxTE1MZzBzcWNkaVY1aVJhRThDdTlvSElzQ3FuejZzY0l5cl9nQmhxd2s1TFA4VjdZWGxiSHktc3FKUzNXS0JscWRkTmJLYVBaeGVoWUZNZlZWTUpMak0wMXdpRg?oc=5",
@@ -186,6 +204,15 @@
           "first_seen": "2026-06-21T00:45:33+09:00"
         },
         {
+          "title": "\"인구 대비 3.5배, 상위 12개국\"…한국에 깊어지는 클로드 - 플래텀(Platum)",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1YLTNoMHowcmVkVnkzQ3dEYjFSenRyS1UwZFpMR2lIbC0wSEZLNmFJdzV4eUJxWjdlb2Jldl9RM3dYNV9jSnhkaQ?oc=5",
+          "source": "플래텀(Platum)",
+          "summary": "",
+          "published": "2026-06-17",
+          "image": "",
+          "first_seen": "2026-06-24T01:27:18+09:00"
+        },
+        {
           "title": "[데스크 시론] AI 이미지가 현실을 잠식하는 시대, 리터러시가 무너지고 있다 - 디지털포용뉴스",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE90NkM3cmxUdUYwcGJja3ItMGlyQ1Qxb3JpMGxpR2xRYXF6SjRfbFloblJBWktoZlJ5QWN4SVVXWU5obThVWTk1amwwb3o4SDJSSnlpcTVNU1hzQmdvZVdvUkhhZXVkamNqeTlwUQ?oc=5",
           "source": "디지털포용뉴스",
@@ -247,33 +274,6 @@
           "published": "2026-06-16",
           "image": "",
           "first_seen": "2026-06-20T01:32:05+09:00"
-        },
-        {
-          "title": "카톡하다가 ‘@ChatGPT 오늘 날씨 알려줘’… 바로 사용 가능해진다 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5FeW1HZ3hhTTJzU0Rnb2RkcXd6Vm52OEVPa1VVNU45TERsUGpucGxnd29CYVkxSDZkcVVlc00xb2VPN0ltbXhNS0d6cHRDTzQ?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-06-16",
-          "image": "",
-          "first_seen": "2026-06-21T06:57:39+09:00"
-        },
-        {
-          "title": "카톡하다가 ‘@ChatGPT 오늘 날씨 알려줘’… 바로 사용 가능해진다 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE84VGROUlpGdnVnMnBBcndFNHZvYm9CYmRpNjVTV2FMb0xndjVmaXZSTWgzQ2dyRi1MSm5SZkNZMEJMYzBQbUtVNThxdw?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-06-16",
-          "image": "",
-          "first_seen": "2026-06-22T07:06:53+09:00"
-        },
-        {
-          "title": "생성형 AI 이미지 - 전자신문",
-          "url": "https://news.google.com/rss/articles/CBMipARBVV95cUxOZlJjVVNGWFpuOFJOb0h5RjZ4eFZCTTA0QUFKQWtHWUx1ODBlekdEcnY1am5sNnYwV1JSaTBab3hpZ3UzU0JoWFg4WEg3QWI4Z2RiT2NmNTNpaUtpY09YSkc2TW1xY3IxSFNhcEdxM0dtMTlJakNtLUJab2NTa3psbFBBWUZpT21Xc21oVjBCMUhHQzRkWWx2NnJTcTJjNS03VlB4Z1Eydk0zbFJwM056MFF1U0JHQVhXVjRsWC1ub084a1Jib0d3bktqWEFyV1V6XzNtcjhFc2JabmFKQUZGNzdLOUo2bFZDWEtrd3JxeFh4YkxGb09wQng0T01fRDBzbUZ2YzJOVS1OOTl3ZlRqbWplbllMaC1jU1Bta0hwUEhlcDhfdzNzQkUyeHdnN0JIeEhoc1pMZncwdFpwd2wtNUhsNnA3LTZuYjFONGY5X0FzRFByOG1GcmJ1SVc3d2NvZkwtejFmLUlZWHZ3OWs5cUVmNDg4dGhwX01hcHdtRE9VV0poX3hXeXV2ajVUNnpuZUxsYjRlX1c4Mk9CLThHeGdKTVoyT3dCeDdxaTgweEdkdzd4cHF1LXl5OHlscVlfV1NnRDhhLXdFazFlY1NfY25zMzJvY2hNekRmVDMzTVBkbW0zN3hKN2dzV2dRRWNUcGUyWGUxVG9NSXFJcmIta3p3S3htSG5OSm1OMGctbXJqWG03ZTRPOXYteFJoWkx4NzRRRA?oc=5",
-          "source": "전자신문",
-          "summary": "",
-          "published": "2026-06-15",
-          "image": "",
-          "first_seen": "2026-06-16T03:26:54+09:00"
         }
       ]
     },
@@ -281,6 +281,15 @@
       "id": "content_ip",
       "name": "콘텐츠·IP",
       "items": [
+        {
+          "title": "'케이-웹툰' 해외 불법사이트 3곳 폐쇄 - 대한민국 정책브리핑",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5rRkNrR1BSbXRyZEhVR1lKLURETm9yb0JraGRfblg2NFNWMzBNZURpRzlDU1lhUkQ4eWxfTWRNckM1elItUXB0NVc1eU5VektfQUE2bmlTZ3hwRDl5SXNZYktoaUJtTWV3V1ptRA?oc=5",
+          "source": "대한민국 정책브리핑",
+          "summary": "",
+          "published": "2026-06-22",
+          "image": "",
+          "first_seen": "2026-06-24T01:27:18+09:00"
+        },
         {
           "title": "“글로벌 콘텐츠 IP 시장 선점 실태 진단과 독자적 법제화 방안 모색”:동아경제신문 &amp; daenews.co.kr - 동아경제",
           "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE4xckl2NFlOQjV0eVNoMlJURFpUMjVCT3RmX3M2MDkyTFJpUDJpT2Z6OEl6WS1CZ3dMdGRna3R5dk5TVENNQkHSAWJBVV95cUxQUjhaYUtEeF81TXpiWDZQRERiUTdXaVZnYnUyeU1GbzhRbG5US3cxb0RwcE0yNEdGcW1kNnZTWmFmTEF6clk5SFJ1akloMi04NWR4cXlMYkwwM05HdTJyUU5fQQ?oc=5",
@@ -541,15 +550,6 @@
           "published": "2026-06-12",
           "image": "",
           "first_seen": "2026-06-16T03:26:54+09:00"
-        },
-        {
-          "title": "스텔라앤, 웹툰·웹소설 IP 기반 숏폼 애니메이션 제작 OS ‘미스릴(Mithril)’ 공개 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE02U21VYndHTm5FaDZ2QTgyRGI3TFAyR0dqRW94d1U5Rkl0Y3ZRc0FlSGxONjN5VnNWUXhCZmVQdTVaSGJtSjNYYUJuWHJWRWJPT05TQw?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-06-12",
-          "image": "",
-          "first_seen": "2026-06-17T07:45:45+09:00"
         }
       ]
     },
@@ -664,6 +664,15 @@
           "published": "2026-06-16",
           "image": "",
           "first_seen": "2026-06-23T03:12:26+09:00"
+        },
+        {
+          "title": "DIMF, 창작뮤지컬 리딩공연 5편 첫선…지역 창작뮤지컬 성장 플랫폼 역할 강화 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE8yZnl6UVFVeHlBUFdUMzBncm4yOElqTVY0UF9vVkRrVHh3SmwwWmQ4Y1FGNDd3bUFESmpTQ0xSVmtlRkZ5WDY5bElUbw?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-06-16",
+          "image": "",
+          "first_seen": "2026-06-24T01:27:18+09:00"
         },
         {
           "title": "“백성이 편히 사는 나라 만들리라” 2026 뮤지컬 ‘정도전’ 관객 호응 - 영주시민신문",
@@ -825,6 +834,15 @@
       "name": "전시",
       "items": [
         {
+          "title": "미디어아트로 마주하는 ‘장흥 그리고 나’… 군민 작가 7인, 빛의 예술로 장흥을 물들이다 - benews.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1lWVVzZldIeDEzbU4zSjJ1Q3JtNlpxQ21kd282dWNaVGt6V0hVbHpfaFVfcXI1WVQycGhHNFhQYmJKNW5sbWNQYUFrOGo?oc=5",
+          "source": "benews.co.kr",
+          "summary": "",
+          "published": "2026-06-22",
+          "image": "",
+          "first_seen": "2026-06-24T01:27:18+09:00"
+        },
+        {
           "title": "무등산서 금남로까지 … 광주 문학, 미디어아트로 되살린다 - v.daum.net",
           "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB0cE5RRjctMjc0bXZwQVpJbEpWTHZOQlRONUF0bW9VNC1QaXFBQXJsWkExSWwxUXZMSjlnZEhyT1NFS2RyaTFGcksyM1h2VHM?oc=5",
           "source": "v.daum.net",
@@ -832,6 +850,15 @@
           "published": "2026-06-21",
           "image": "",
           "first_seen": "2026-06-23T03:12:26+09:00"
+        },
+        {
+          "title": "[현장취재] 국립현대서울관 '이것은 개념미술이 아니다' - 아트코리아방송",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1OVzVpMkpQVXpvTGNsUE1hWGJfRzZ1VjMzUzVESi1Fcmpna3JFUWVZRHQxeU5wYWZkWVprLWNHY0d2emM1R3pGWW91R3M3NFQ3REZhTnpBc3JLbjBaN1JxUnBzajdBcjBENml1Tm1B?oc=5",
+          "source": "아트코리아방송",
+          "summary": "",
+          "published": "2026-06-20",
+          "image": "",
+          "first_seen": "2026-06-24T01:27:18+09:00"
         },
         {
           "title": "김포미디어아트센터 - 고향사랑기부제 위기브",
@@ -1075,15 +1102,6 @@
           "published": "2026-06-08",
           "image": "",
           "first_seen": "2026-06-10T01:31:44+09:00"
-        },
-        {
-          "title": "\"폭넓은 현대미술 경험의 향연\"…조형아트서울 2026 '성료' - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5rbHRyUTZKaFVhZERKZi1lalF2YTJiQ1d5ZVlFR1dETE9LWXFKNVFOWS1TN1VHZTNBSjZjMjFxa2FEOHI5S01YQk1HcUYxQmJFa0lhOQ?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-06-08",
-          "image": "",
-          "first_seen": "2026-06-11T07:45:04+09:00"
         }
       ]
     },
@@ -1091,6 +1109,15 @@
       "id": "grants",
       "name": "지원사업",
       "items": [
+        {
+          "title": "문체부·콘진원, ‘2026 케이녹 스페셜라운드’ 성료…콘텐츠 기업 투자유치 지원 - beSUCCESS",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5qcVM4TG0yallSYWFmZ1RZNGtWVUtmLU54ODJEQkx4T0xmRk1hZWRBMldXd3NTY21NbThTN0hzNDVvbVdRRUE?oc=5",
+          "source": "beSUCCESS",
+          "summary": "",
+          "published": "2026-06-23",
+          "image": "",
+          "first_seen": "2026-06-24T01:27:18+09:00"
+        },
         {
           "title": "셀렉트스타, AI 전시 ‘아기상어’ 신뢰성 검증 지원…콘텐츠 AI 시장 공략 - 이데일리",
           "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQX3ZZbHRWRVV0a0FxRVJ5eWlLb1FNWkh1NGd4b2k1Nl9sWXRZNlcxdmZTbjhoeHFVLWR4YnF3b2tFaWpKWjE0SjN6YlNCQldlQU03X2hadmd6TVJuNkxsZ0k5eHZQQXhLT2hPbWllb2doSU90d3UwM3NSNDFUZDlBYQ?oc=5",
@@ -1162,6 +1189,15 @@
           "published": "2026-06-17",
           "image": "",
           "first_seen": "2026-06-22T00:52:14+09:00"
+        },
+        {
+          "title": "문체부 \"대형 IP 육성 등 K-콘텐츠 성장 지원 확대\" - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE00bFM0TmUxRFJyeUJWVkpJcUVBYlBVbC1pUDlEcm80Z1phX0VaWUo1WDhFel92bGR0WkJzUWJ5TjlRTDRGZmkwdm5sQkNKRlk?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-06-17",
+          "image": "",
+          "first_seen": "2026-06-24T01:27:18+09:00"
         },
         {
           "title": "오썸피아, SK플래닛과 전통문화 AI·AR 콘텐츠 만든다 - 서울경제",
@@ -1342,24 +1378,6 @@
           "published": "2026-06-12",
           "image": "",
           "first_seen": "2026-06-13T01:45:04+09:00"
-        },
-        {
-          "title": "제주도, 성평등 영상 콘텐츠 7월30일까지 '전국 공모' - 뉴시스",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBoaFAxTEZoczhkRnNoYmVmNEZ0YjVSVnI5VGRkZkZsNnZOZ3BwdEstRWpQSTYtRVBFdEc3bWNSbkFuQjZ5N2tzRzFaSHpjQmRWTkFuS1ZSazFYVGNWOUlVOdIBeEFVX3lxTE50cTRUSGdXUlVSZGF4emVuWWt1MEtuUnh4cUQzaTZFYVA3QXN5TEI1VFVsbHoyTzlmX2xLVVVGd3FqZmFBOWltTDlTaEpiTFlGVmJZTEh3dk1YX1ZlV0JPNzBEdE9wZkd2ZGFva0dsOExXYWpwUVpvdQ?oc=5",
-          "source": "뉴시스",
-          "summary": "",
-          "published": "2026-06-12",
-          "image": "",
-          "first_seen": "2026-06-13T01:45:04+09:00"
-        },
-        {
-          "title": "제주도, 2026 성평등 영상 콘텐츠 공모전 개최 - 제주환경일보",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB1YTlNbWZXTUZpbndyWERuc2RDdmYxRkZQYnhETHVPWWhSQ3MtbGlHdVNXbU5lQ0RhSWg1QUd5a05ER25QSzlVUTJHemx1eW5zb1lWVUotQVY3TTk1WkZkU3lRZ21zYTll?oc=5",
-          "source": "제주환경일보",
-          "summary": "",
-          "published": "2026-06-12",
-          "image": "",
-          "first_seen": "2026-06-13T07:17:28+09:00"
         }
       ]
     },
@@ -1367,6 +1385,15 @@
       "id": "design",
       "name": "디자인",
       "items": [
+        {
+          "title": "현업이 알아야 할 UX·UI 하반기 트렌드 3선 - 전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1Yck9tYWhBTG5hOFFxdWRMeDZQRXpGYkdaQVU0UWlsWGRIcmp4QlV6R2M1RENiRFJwRUlocW5OYjFHNjRVTm5iOTZuQkdiZw?oc=5",
+          "source": "전자신문",
+          "summary": "",
+          "published": "2026-06-23",
+          "image": "",
+          "first_seen": "2026-06-24T01:27:18+09:00"
+        },
         {
           "title": "AI 시대, UX·UI 디자인의 새 무기는 '하네스' - 전자신문",
           "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBtYkI2TXNtRE04UWxVcFdMVHd1LVU3d3VqZFB1OEQ4cVFDVHEtUkd2aUI3a1Y5cGhxMjdPcElTYnd4UXpIS0NYa0RuNm9tQQ?oc=5",
@@ -1627,15 +1654,6 @@
           "published": "2026-06-09",
           "image": "",
           "first_seen": "2026-06-10T01:31:44+09:00"
-        },
-        {
-          "title": "서울시, 창업역량 강화 프로그램 운영 - 환경포커스",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFAtZVVPR3RjQnRqRTFDaUk1eG5nU0lla3NSQkJqZFVMaVQ1TlBFV0dGMjBQUzFaaHlqbDVKWDZxak16TkN1LVJ3em1tblR1cnBJWG10ajdibUE1WU8zSUE?oc=5",
-          "source": "환경포커스",
-          "summary": "",
-          "published": "2026-06-08",
-          "image": "",
-          "first_seen": "2026-06-19T01:56:31+09:00"
         }
       ]
     },
@@ -1643,6 +1661,24 @@
       "id": "festival",
       "name": "페스티벌",
       "items": [
+        {
+          "title": "어려운 환경도 막지 못한 열기…2026 서울 파크 뮤직 페스티벌 성황리 막 내려 - mbn.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNNFhwcU5velpmNmFkNGdkTHBYcnBjdkFGLXdHS1hiTzdubkZmY0JMVG1zQXJLOTBzS3FsLXc5VU50MlUzU1J0bF95RzVMLWpjMzQ4SEhoTjF5ZmVZVjU1amVkVFNoM0I0RjBySEF2TzF6Y3FhUVE5Qy1GMmNiQlg5NGVTeC1RNHpaY09N0gFMQVVfeXFMUEN0TTJuLWxwQWtnT0hkZVB5ZDJsTFFTV0lzQXdrVkoxUWpSeHZ0d2swSkJxQ0VtWmJMNWZzOFRhbFlSV2hIalJJelJlNw?oc=5",
+          "source": "mbn.co.kr",
+          "summary": "",
+          "published": "2026-06-23",
+          "image": "",
+          "first_seen": "2026-06-24T01:27:18+09:00"
+        },
+        {
+          "title": "“서울 그늘 벗어나라”…경기아트센터, 최초의 공연예술 선순환 플랫폼 띄운다 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE41TE96RVFQUk5MamZPQW9aTmNMaW1ZZVlya2tDZjh0WXlBTjZqUXRmZ0M1QlFXUl9BTFZxOXpud21KMkpvZ1V5dkhWYw?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-06-23",
+          "image": "",
+          "first_seen": "2026-06-24T01:27:18+09:00"
+        },
         {
           "title": "경기아트센터, 최초 '공연예술 선순환 플랫폼' 구축…'G-Arts 페스티벌' 26일 개막 - v.daum.net",
           "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE41VTNCbHVaMXRLT1N2NVdwSzVaNVhTMlRfS090bV9relhzRFEtbkRrSlZFaVZNcXFNeWRWZWdiRXhXNG9OLXpEYnU3Z2Q2akJ1OUlGVg?oc=5",
@@ -1687,6 +1723,15 @@
           "published": "2026-06-15",
           "image": "",
           "first_seen": "2026-06-19T01:56:31+09:00"
+        },
+        {
+          "title": "사물놀이부터 K-POP까지…충남공연단, 베트남 후에 음악페스티벌서 큰 호응 - 뉴스코리아",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBzUHV1Nmc4aVhuVmpOcF82TnpqcWs1ZWl0R3NSczZpR3hMTGFqdjJoWHpPZUt1NTdMMG8wbkxHOHRfR1g5QWpqZjVVM3BNUGdiRzlZUEQyTHlPakJLY3BoMDg4Rjl2a204Z1h5d3pB?oc=5",
+          "source": "뉴스코리아",
+          "summary": "",
+          "published": "2026-06-15",
+          "image": "",
+          "first_seen": "2026-06-24T01:27:18+09:00"
         },
         {
           "title": "강북문화재단, KoCACA 아트페스티벌 우수상 수상 - 신아일보",

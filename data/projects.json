@@ -1,14 +1,36 @@
 {
-  "updated": "2026-06-22T22:29:20.819876+00:00",
+  "updated": "2026-06-23T16:27:25.683570+00:00",
   "source": "github.com/nextsunny-ai",
   "repos": [
+    {
+      "name": "joseon-yokai-home",
+      "description": "",
+      "html_url": "https://github.com/nextsunny-ai/joseon-yokai-home",
+      "homepage": "",
+      "language": "HTML",
+      "pushed_at": "2026-06-23T08:22:13Z",
+      "has_pages": true,
+      "pages_url": "https://nextsunny-ai.github.io/joseon-yokai-home/",
+      "stars": 0
+    },
+    {
+      "name": "joseon-yokai-docs",
+      "description": "",
+      "html_url": "https://github.com/nextsunny-ai/joseon-yokai-docs",
+      "homepage": "",
+      "language": "HTML",
+      "pushed_at": "2026-06-23T06:30:13Z",
+      "has_pages": true,
+      "pages_url": "https://nextsunny-ai.github.io/joseon-yokai-docs/",
+      "stars": 0
+    },
     {
       "name": "sunny-home",
       "description": "Sunny personal home",
       "html_url": "https://github.com/nextsunny-ai/sunny-home",
       "homepage": "",
       "language": "HTML",
-      "pushed_at": "2026-06-22T18:12:33Z",
+      "pushed_at": "2026-06-22T22:29:21Z",
       "has_pages": true,
       "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
       "stars": 0
@@ -110,28 +132,6 @@
       "pushed_at": "2026-05-26T08:22:24Z",
       "has_pages": true,
       "pages_url": "https://nextsunny-ai.github.io/ai-workshop/",
-      "stars": 0
-    },
-    {
-      "name": "firefly-indexer",
-      "description": "Adobe Firefly training-data indexer by SUNNY",
-      "html_url": "https://github.com/nextsunny-ai/firefly-indexer",
-      "homepage": "",
-      "language": "Rust",
-      "pushed_at": "2026-05-19T06:44:22Z",
-      "has_pages": true,
-      "pages_url": "https://nextsunny-ai.github.io/firefly-indexer/",
-      "stars": 0
-    },
-    {
-      "name": "joseon-yokai-6f",
-      "description": "조선요괴전 마리오아울렛 6층 마스터 기획서 v1 (팀 검토용)",
-      "html_url": "https://github.com/nextsunny-ai/joseon-yokai-6f",
-      "homepage": "",
-      "language": "HTML",
-      "pushed_at": "2026-05-18T04:53:18Z",
-      "has_pages": true,
-      "pages_url": "https://nextsunny-ai.github.io/joseon-yokai-6f/",
       "stars": 0
     }
   ]
