@@ -1,7 +1,18 @@
 {
-  "updated": "2026-06-23T16:27:25.683570+00:00",
+  "updated": "2026-06-23T22:06:28.688782+00:00",
   "source": "github.com/nextsunny-ai",
   "repos": [
+    {
+      "name": "sunny-home",
+      "description": "Sunny personal home",
+      "html_url": "https://github.com/nextsunny-ai/sunny-home",
+      "homepage": "",
+      "language": "HTML",
+      "pushed_at": "2026-06-23T16:27:26Z",
+      "has_pages": true,
+      "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
+      "stars": 0
+    },
     {
       "name": "joseon-yokai-home",
       "description": "",
@@ -22,17 +33,6 @@
       "pushed_at": "2026-06-23T06:30:13Z",
       "has_pages": true,
       "pages_url": "https://nextsunny-ai.github.io/joseon-yokai-docs/",
-      "stars": 0
-    },
-    {
-      "name": "sunny-home",
-      "description": "Sunny personal home",
-      "html_url": "https://github.com/nextsunny-ai/sunny-home",
-      "homepage": "",
-      "language": "HTML",
-      "pushed_at": "2026-06-22T22:29:21Z",
-      "has_pages": true,
-      "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
       "stars": 0
     },
     {
