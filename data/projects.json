@@ -1,7 +1,18 @@
 {
-  "updated": "2026-06-24T16:22:32.242682+00:00",
+  "updated": "2026-06-24T22:04:58.354752+00:00",
   "source": "github.com/nextsunny-ai",
   "repos": [
+    {
+      "name": "sunny-home",
+      "description": "Sunny personal home",
+      "html_url": "https://github.com/nextsunny-ai/sunny-home",
+      "homepage": "",
+      "language": "HTML",
+      "pushed_at": "2026-06-24T16:22:33Z",
+      "has_pages": true,
+      "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
+      "stars": 0
+    },
     {
       "name": "jajamaru-showcase",
       "description": "忍者じゃじゃ丸くん REMAKE — SUNNY ENTERTAINMENT production showcase (KO/JA)",
@@ -11,17 +22,6 @@
       "pushed_at": "2026-06-24T01:53:24Z",
       "has_pages": true,
       "pages_url": "https://nextsunny-ai.github.io/jajamaru-showcase/",
-      "stars": 0
-    },
-    {
-      "name": "sunny-home",
-      "description": "Sunny personal home",
-      "html_url": "https://github.com/nextsunny-ai/sunny-home",
-      "homepage": "",
-      "language": "HTML",
-      "pushed_at": "2026-06-23T22:06:29Z",
-      "has_pages": true,
-      "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
       "stars": 0
     },
     {
