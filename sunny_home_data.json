@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-27T06:59:01+09:00",
+  "updated": "2026-06-28T00:16:02+09:00",
   "categories": [
     {
       "id": "ai",
@@ -336,6 +336,15 @@
           "first_seen": "2026-06-27T06:59:01+09:00"
         },
         {
+          "title": "OTT는 선택구매·IPTV는 구독 요금제로…콘텐츠 판매전략 '교차' - 전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE91cUZHTDdYSU9pTFdpOThlZVotN1ZxRzhZaU02aXR3cDFVOXRWS0V5LTF1a0Q0SDlKcW9WZnpuaHFmNXRJNDI4Mm9kQWpFQQ?oc=5",
+          "source": "전자신문",
+          "summary": "",
+          "published": "2026-06-23",
+          "image": "",
+          "first_seen": "2026-06-28T00:16:02+09:00"
+        },
+        {
           "title": "'케이-웹툰' 해외 불법사이트 3곳 폐쇄 - 대한민국 정책브리핑",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5rRkNrR1BSbXRyZEhVR1lKLURETm9yb0JraGRfblg2NFNWMzBNZURpRzlDU1lhUkQ4eWxfTWRNckM1elItUXB0NVc1eU5VektfQUE2bmlTZ3hwRDl5SXNZYktoaUJtTWV3V1ptRA?oc=5",
           "source": "대한민국 정책브리핑",
@@ -541,15 +550,6 @@
           "published": "2026-06-16",
           "image": "",
           "first_seen": "2026-06-27T01:17:07+09:00"
-        },
-        {
-          "title": "삼성은 예술, LG는 OTT…TV 콘텐츠 경쟁 본격화 - 아시아타임즈",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1YOHV5cWFwSTduVGx0S3FuSUR5RUIwUnJPdlloczdHOFlGVjFIWGdIVm5WNEVZRjNoeW90TVMzdUlMLUdEdzJoX3UwTTJ3Zzlwc0tnTEpVZlpZeGZicUE?oc=5",
-          "source": "아시아타임즈",
-          "summary": "",
-          "published": "2026-06-16",
-          "image": "",
-          "first_seen": "2026-06-27T06:59:01+09:00"
         }
       ]
     },
@@ -592,6 +592,15 @@
           "published": "2026-06-23",
           "image": "",
           "first_seen": "2026-06-26T01:25:16+09:00"
+        },
+        {
+          "title": "경기도 공연예술의 새로운 연결 「2026 G-ARTS FESTIVAL」 개막 - 서울뉴스통신",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1zNlhINk4tYjVReW9yQ3dMUzhERGppQ1BPcW9jUVhkLWlkTGpOVWF5ek42c2NLS0R6X05Ia0pTT2paQVpkQVFmTFRSYlNUWFFaZU9qNmFfM3BRTXQ2UHVtRzR0MkhrSWduN3lF?oc=5",
+          "source": "서울뉴스통신",
+          "summary": "",
+          "published": "2026-06-23",
+          "image": "",
+          "first_seen": "2026-06-28T00:16:02+09:00"
         },
         {
           "title": "장한나 사장, 취임 후 첫 공연은 서울 아닌 대전예술의전당? - 조선일보",
@@ -637,6 +646,15 @@
           "published": "2026-06-19",
           "image": "",
           "first_seen": "2026-06-20T01:32:05+09:00"
+        },
+        {
+          "title": "대구국제뮤지컬페스티벌 개막공연 기자간담회 - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4xUFcxeG9rZ3ptMGlmci1oVXFhdVBleExla1dTSlFZTlAxZXZmZTRidXhiY0txXzBaRjhQaFBHLUFNMkJxRjVkUVhsYVZLM0JSSmhRZlRCZm9hRTjSAWBBVV95cUxNb1lxMzQ3cjdSdG16eG1nRGdRcjFLZGE5ODBYRGtDb2RCMDY5ZWZwaklWakZIMTN3Uno2cWFlMmRyR2U3LU9WcVpWRGFlWWhlV096c0FQMzRLbktyX05ZdGg?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-06-19",
+          "image": "",
+          "first_seen": "2026-06-28T00:16:02+09:00"
         },
         {
           "title": "서울시향·LG아트센터, 퇴근길 콘서트 '우리가 사랑한 뮤지컬' - 연합뉴스",
@@ -779,6 +797,15 @@
       "id": "exhibition",
       "name": "전시",
       "items": [
+        {
+          "title": "국립현대미술관 서울관, '이것은 개념미술이 (아니)다' - 아트코리아방송",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA3YllRTE1ubFhDek9OeUJpbXYwYXRTYW5hOE1kMlllaFdUUzFlVEl6WWxiV0dUZGNUWHNRRnZFd0xydU5qeURaQzFEZzg3ejdrVGpZeElYS29UeGZaeXR1OFNka3VLMUZ4NXE0b0RR?oc=5",
+          "source": "아트코리아방송",
+          "summary": "",
+          "published": "2026-06-27",
+          "image": "",
+          "first_seen": "2026-06-28T00:16:02+09:00"
+        },
         {
           "title": "장흥군농어촌신활력센터, AI 미디어아트 ‘장흥, 그리고 나’ 전시 - jhtoday.net",
           "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE45NzUxR1N1azBlZkJraHBjRk1uSW45Qlo1Uk0zUVZOcDkyYlFjdkZTRzFuMVNuNHBYRXo1dXFscnRpeHc2M0NVcjhITnpiVUNmekNZd0p2VE8tRW9HYzFKOXJqeXFTcHM?oc=5",
