@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-28T00:16:02+09:00",
+  "updated": "2026-06-28T06:50:28+09:00",
   "categories": [
     {
       "id": "ai",
@@ -49,6 +49,15 @@
           "published": "2026-06-25",
           "image": "",
           "first_seen": "2026-06-27T01:17:07+09:00"
+        },
+        {
+          "title": "경북도 산업 AI 에이전트 개발 공모사업 선정···국비 25억 원 확보 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9VQzl3Nl9Eb2RVNXZpLTI4LTFaMUhOR3BxRmFQSjNqa3h2cENKdC1YandIbFFnWEdERHloUm9FcHpzREJfZFFOYkRjMzFPY0k?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-06-25",
+          "image": "",
+          "first_seen": "2026-06-28T06:50:28+09:00"
         },
         {
           "title": "[인공지능 줌인] \"학술지도 속았다\"…AI 생성 이미지가 과학계를 위협하고 있다 - 위키리크스한국",
@@ -265,15 +274,6 @@
           "published": "2026-06-17",
           "image": "",
           "first_seen": "2026-06-18T01:55:16+09:00"
-        },
-        {
-          "title": "AI 에이전트 선도 리걸테크 기업들 총출동 - 법률신문",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9kazNYZzI4MDJBVEZIeU5xWVdtaWJwXzFXUWo1UXNZSDBlV08zX3RHYzJBblNRZ0FONVlEaE5Ieno5Ny0wNHlhUU1ta3BCMnBLR0VIVGFTMjNoRHlMQU5wcjdUV2g0Y0JwbFhiaUo2Z2oxUdIBckFVX3lxTE9kazNYZzI4MDJBVEZIeU5xWVdtaWJwXzFXUWo1UXNZSDBlV08zX3RHYzJBblNRZ0FONVlEaE5Ieno5Ny0wNHlhUU1ta3BCMnBLR0VIVGFTMjNoRHlMQU5wcjdUV2g0Y0JwbFhiaUo2Z2oxUQ?oc=5",
-          "source": "법률신문",
-          "summary": "",
-          "published": "2026-06-17",
-          "image": "",
-          "first_seen": "2026-06-18T07:27:53+09:00"
         }
       ]
     },
@@ -825,6 +825,15 @@
           "first_seen": "2026-06-25T01:22:24+09:00"
         },
         {
+          "title": "자연과 기술의 공존을 묻다……서울식물원 곳곳서 설치·미디어 아트 전시 - 뉴스컬처",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1iZTZmNlMwcEYxUFNmRzdNZWwwTG9PSE14eVd2cXJ6TW5Nc3VIWjhMTXpYTmZBal9yZmxKdUVoZW5WdWE3TFN2RzdSdHdaaHhLb05qY3BTLXNsRGxxOUJBMHQ2UUxOdw?oc=5",
+          "source": "뉴스컬처",
+          "summary": "",
+          "published": "2026-06-24",
+          "image": "",
+          "first_seen": "2026-06-28T06:50:28+09:00"
+        },
+        {
           "title": "미디어아트로 마주하는 ‘장흥 그리고 나’… 군민 작가 7인, 빛의 예술로 장흥을 물들이다 - benews.co.kr",
           "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1lWVVzZldIeDEzbU4zSjJ1Q3JtNlpxQ21kd282dWNaVGt6V0hVbHpfaFVfcXI1WVQycGhHNFhQYmJKNW5sbWNQYUFrOGo?oc=5",
           "source": "benews.co.kr",
@@ -1014,6 +1023,15 @@
           "first_seen": "2026-06-17T03:27:12+09:00"
         },
         {
+          "title": "전통 채색화 넘어 ‘한국 현대미술’의 미래를 보다 - 서울경제",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9IdHVoVS1DZXB6cElabFA0RmlETnZONXktWHB5WlYyWkdUb3RacnRmMjBUV1J5ZnVIY2tGU3JtZUZTTlpKR3d4OEdYQ2t0RG1yM1HSAVNBVV95cUxPMDFXTEFRaldXLWJQajQ2eHVJNmpBYV93Wk1VNmllbVJCNlV5aWtxVXlMSTNmRlljV2s5MGFPYXlNRXRjSW1nWXZUMkxkZVhnWE5WZw?oc=5",
+          "source": "서울경제",
+          "summary": "",
+          "published": "2026-06-15",
+          "image": "",
+          "first_seen": "2026-06-28T06:50:28+09:00"
+        },
+        {
           "title": "어린이를 안아주는 공간, 권병준 미디어아트 특별전 - 실버넷뉴스",
           "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5SZnZQMnBlLU1LYUFXM2FaWWY5YXhrTmUycTU4NnBEcEl0NFczX0xKUXVwUXh1NHVpckhJUEs4TTBJMXdla0ZfdXF0YnRpdDJKMHhRd0dYYlpOWDluTVU4YkpvZDNsSmV0VkNYeHpNb9IBc0FVX3lxTE5vRVB4V0Y1b1NScWlKUWhQWUhvUlhQVHdqZlRMRmp5dHJMYWtmVGhEUjFJeF9ySkk3ZkdJWTZUNFVTaVhpRXRsYUtTcV9RNkdHQVdDU0ZoRDlSNFJJRE9sWlEwczFPbXJXLVJtYTl0LUZ1ZGs?oc=5",
           "source": "실버넷뉴스",
@@ -1108,6 +1126,15 @@
           "published": "2026-06-24",
           "image": "",
           "first_seen": "2026-06-25T01:22:24+09:00"
+        },
+        {
+          "title": "문체부∙콘진원, 프랑스 비바테크서 한국공동관 운영∙∙∙K-콘텐츠 유럽 무대 진출 가속화 - 스타트업투데이",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA3Q3NDSDZISzdHcE80ZUlSd3FwUkV6SHlBa3hEN0JDVEtEYmt0Yi04alE2YVF0ZnhqaHNlbFpNMVB5MUkycmRWZHd4MUJtX3FibnpBclpZM1d2d1RXU1dKNm1ST295ZTFucHBrdnF3?oc=5",
+          "source": "스타트업투데이",
+          "summary": "",
+          "published": "2026-06-24",
+          "image": "",
+          "first_seen": "2026-06-28T06:50:28+09:00"
         },
         {
           "title": "문체부·콘진원, ‘2026 케이녹 스페셜라운드’ 성료…콘텐츠 기업 투자유치 지원 - beSUCCESS",
@@ -1315,15 +1342,6 @@
           "published": "2026-06-14",
           "image": "",
           "first_seen": "2026-06-15T00:48:51+09:00"
-        },
-        {
-          "title": "시간마저 무기로 삼는다… K-인디 탄막 슈팅 ‘소울러즈’ 스팀 플레이테스트 시작 - 인디게임닷컴",
-          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1FVzQ4U0t6eFAyRThvc0JVQ1RVdUVFbS04QzNwV01JRG9FWllyMnJ1dGRmUW1tZEtGQmJKNzMxdmFuUG5kV0ppX0N6Qlo?oc=5",
-          "source": "인디게임닷컴",
-          "summary": "",
-          "published": "2026-06-14",
-          "image": "",
-          "first_seen": "2026-06-15T07:00:47+09:00"
         }
       ]
     },
@@ -1573,15 +1591,6 @@
           "published": "2026-06-13",
           "image": "",
           "first_seen": "2026-06-20T01:32:05+09:00"
-        },
-        {
-          "title": "컴투스홀딩스 수집형 RPG 신작 '스타 세일러', 6월 30일 글로벌 출시 - 전자신문",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE4tSWd6R0lRWmpwaWZLcGVXNWZhZ0U3TUZwU0dNbTU0S2dKeFZsUTI5UEJwc2kzd2ZtTWp1a01mWkxDWnZXakxIbEFwQWQ1dw?oc=5",
-          "source": "전자신문",
-          "summary": "",
-          "published": "2026-06-12",
-          "image": "",
-          "first_seen": "2026-06-14T00:42:35+09:00"
         },
         {
           "title": "[ET포토] 데이식스 영케이, '심쿵 눈맞춤' - 전자신문",
