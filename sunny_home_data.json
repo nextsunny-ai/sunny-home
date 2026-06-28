@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-29T00:17:56+09:00",
+  "updated": "2026-06-29T06:51:13+09:00",
   "categories": [
     {
       "id": "ai",
@@ -123,6 +123,15 @@
           "first_seen": "2026-06-24T01:27:18+09:00"
         },
         {
+          "title": "From Zero to Agents: AI 에이전트를 위한 End-to-End 데이터 파이프라인 구축하기 - Snowflake",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE95ei1sUEVnVjdMaXJPN2JFUVVHM0JIYnRRZ1UwQURyLURBT2h1dWpERG5JSVhYUTVsaTJjeG5zVUIyX3k2b2NPRU4zdXVFSFMwSkRyOHZ5ZUw1bmhhRE12M0RmTkVWMDFucXZKYXRmVkNtVDR6NkZJRUp3?oc=5",
+          "source": "Snowflake",
+          "summary": "",
+          "published": "2026-06-23",
+          "image": "",
+          "first_seen": "2026-06-29T06:51:13+09:00"
+        },
+        {
           "title": "서울 중구, 동대문 패션상인에 'AI 패션 이미지 플랫폼' 제공 - 연합뉴스",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1MZzBzcWNkaVY1aVJhRThDdTlvSElzQ3FuejZzY0l5cl9nQmhxd2s1TFA4VjdZWGxiSHktc3FKUzNXS0JscWRkTmJLYVBaeGVoWUZNZlZWTUpMak0wMXdpRtIBYEFVX3lxTE1MZzBzcWNkaVY1aVJhRThDdTlvSElzQ3FuejZzY0l5cl9nQmhxd2s1TFA4VjdZWGxiSHktc3FKUzNXS0JscWRkTmJLYVBaeGVoWUZNZlZWTUpMak0wMXdpRg?oc=5",
           "source": "연합뉴스",
@@ -175,6 +184,15 @@
           "published": "2026-06-22",
           "image": "",
           "first_seen": "2026-06-29T00:17:56+09:00"
+        },
+        {
+          "title": "서울 중구, 동대문 패션상인에 'AI 패션 이미지 플랫폼' 제공 - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8tVUlkRlVKT2NGTWNBVnRLSWR0SDUzV1ppSjU2ajVadkZjYTNOYXQ4UXhNeVlxenB2TzlLODViMGlOd3pPMDJCZUkzSnVac3NaZW1LOEFRcktINTDSAWBBVV95cUxNTGcwc3FjZGlWNWlSYUU4Q3U5b0hJc0Nxbno2c2NJeXJfZ0JocXdrNUxQOFY3WVhsYkh5LXNxSlMzV0tCbHFkZE5iS2FQWnhlaFlGTWZWVk1KTGpNMDF3aUY?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-06-22",
+          "image": "",
+          "first_seen": "2026-06-29T06:51:13+09:00"
         },
         {
           "title": "\"함께 일할 AI 구합니다\"… AI 에이전트 채용 '붐' - 매일경제",
@@ -256,24 +274,6 @@
           "published": "2026-06-18",
           "image": "",
           "first_seen": "2026-06-19T01:56:31+09:00"
-        },
-        {
-          "title": "생성형 AI로 ‘가짜 민심’ 만든다… 댓글·이미지 대량으로 제작 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBHdTJPZGtHNUo4ZTlISXZ3S1dmbWpLRmtfNTlSdDJYeHc5eDRObm4zSS11UnBfNnpOLUE4aG5aSkkxaThUbDZNOWQ4dEVWV2M?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-06-18",
-          "image": "",
-          "first_seen": "2026-06-22T00:52:14+09:00"
-        },
-        {
-          "title": "[이슈&amp;논란] SK텔레콤, 앤트로픽 수출 통제의 배후 기업으로 지목…초고성능 AI모델, 워싱턴 인가제(licensing)로 전환되나 - 뉴스스페이스",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBRczJ1enJIalp1SkZCRFVhQ3BVU0JaY2QzRGVIUUFfa0d3TUg4QkctNlVsaG9KT1hTbHpxdUhUbF84V3ZHZ2JZMEJxTkVVUUQxMWh0ejZSMk5mbHlmQV80ZQ?oc=5",
-          "source": "뉴스스페이스",
-          "summary": "",
-          "published": "2026-06-18",
-          "image": "",
-          "first_seen": "2026-06-25T01:22:24+09:00"
         }
       ]
     },
@@ -281,6 +281,15 @@
       "id": "content_ip",
       "name": "콘텐츠·IP",
       "items": [
+        {
+          "title": "넷플릭스 한국서 OTT '체류시간 점유율 60%' 독주 모드, 시청자 붙잡는 힘은 'K 콘텐츠' - 비즈니스포스트",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1qZjZRQU9LN2JGTVZLTVJ5eWF0R2pmWmRfQXFkMXZLZC0yUzliN2ZsX0dmYTExUXhia291T09XMUo0VWl5Q29JZUlxOVBQTUNfMTIxcENBZ2ZjUGI3TGNUS1o3bHpBWll4bFB3V2prYUotYWs?oc=5",
+          "source": "비즈니스포스트",
+          "summary": "",
+          "published": "2026-06-28",
+          "image": "",
+          "first_seen": "2026-06-29T06:51:13+09:00"
+        },
         {
           "title": "\"K-콘텐츠 일본시장 IP라이선싱 중심에 우뚝\"...콘진원, '콘텐츠도쿄 2026' 한국공동관 운영 - 글로벌이코노믹",
           "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOeldqanZmME1Ia0xkdGZKQ3IxY1RYOC1KNXBjWXNnS0xuWlhHQW5SeGpKZGhGRmZDemN1amRoWUZCa0J1VEh5SmJObTFXd3pjZkU2WDFlRGY4OXFiU196bnphZy1sTmExYU44QTR6N25wN0RkZk5oZi0tbUhBX2FBNE9fV0dPYkVOMnc?oc=5",
@@ -541,15 +550,6 @@
           "published": "2026-06-16",
           "image": "",
           "first_seen": "2026-06-21T06:57:39+09:00"
-        },
-        {
-          "title": "‘2026 월드 웹툰 어워즈’ 후보작 추천 시작 - toptvkorea.com",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE90YlB2MTFCM25UNkJPOFVNZWtIcThsbklaWFN1aVpEaUJvNExzT3pRQjhNQ0hBcjQ3ZXZpazVpQWl0TTJJREh6X0lLcmgwdEU?oc=5",
-          "source": "toptvkorea.com",
-          "summary": "",
-          "published": "2026-06-16",
-          "image": "",
-          "first_seen": "2026-06-27T01:17:07+09:00"
         }
       ]
     },
@@ -601,6 +601,15 @@
           "published": "2026-06-23",
           "image": "",
           "first_seen": "2026-06-28T00:16:02+09:00"
+        },
+        {
+          "title": "“서울 그늘 벗어나라”…경기아트센터, 최초의 공연예술 선순환 플랫폼 띄운다 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE41TE96RVFQUk5MamZPQW9aTmNMaW1ZZVlya2tDZjh0WXlBTjZqUXRmZ0M1QlFXUl9BTFZxOXpud21KMkpvZ1V5dkhWYw?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-06-23",
+          "image": "",
+          "first_seen": "2026-06-29T06:51:13+09:00"
         },
         {
           "title": "장한나 사장, 취임 후 첫 공연은 서울 아닌 대전예술의전당? - 조선일보",
@@ -1146,6 +1155,15 @@
           "first_seen": "2026-06-24T01:27:18+09:00"
         },
         {
+          "title": "생성형 AI로 원주만두축제 홍보…원주문화재단, 영상공모전 개최 - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE92bHB2V2FVdTE4Y19XMkViY2NKVEJiODEzWFk1eEFTN0tpQXJLNUVlYzF5RWYwWndqcTdfYUVaSXpfZUtsdXNCaGV5MXp2YjhMUHdTVVlGbFBuM3fSAWBBVV95cUxPOEI4aUlGeHRCZEVLMnRRNUxFczlHb1NDRTJHX21PRG5EZWRlY3R1QVZJVng1eG5tNmlxMm05UFkzMUk5bUpXdEFjdzVpeEdiMGNIcnBOUmNEdXotY0Q4YlE?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-06-23",
+          "image": "",
+          "first_seen": "2026-06-29T06:51:13+09:00"
+        },
+        {
           "title": "[단독] 문체부, ‘문화정책금융공사’ 설립 검토… 콘텐츠 금융체계 개편 나선다 - 조선비즈 - Chosunbiz",
           "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPSm9SUU1jX25tSzY1QTJsUWt3YmtvaFRQM3hyYm9hRnBlRzA5eUNEYl9idmtWRHh0WkY2ckZHNXhxWFVVTEdwV3kxWnBvb0FqbmpXUHoyUUNybF9xaGlXNi04RVQzenNTb0lRbzVZeVlhUk5oUWp5al9jQ0xYUGdIeTQtYzFiQUHSAZsBQVVfeXFMT3FuNDhWYVNqUzhDeGFZc1J6X2NtSENsR2xyRl9DYzAzZ0d4ZWhrcjFpa0NUczlNQmplUDlPNTFPYzVDWHFOME1zRi1jcFdNWks3bU5HcFl2c3doNkdOTzZwaWd2S3N2Q29wSTIwSU1fV2xCSnVoSDN4WmtJSklNWjg4c1RnTExGMlRPeGRNNm91aGhvUjBiN3F5ekk?oc=5",
           "source": "Chosunbiz",
@@ -1324,15 +1342,6 @@
           "published": "2026-06-16",
           "image": "",
           "first_seen": "2026-06-20T01:32:05+09:00"
-        },
-        {
-          "title": "문체부·콘텐츠진흥원, `거제 야호`·이상우子 밴드 등 ‘중소돌’ 10개 팀 지원 - 디지털데일리",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5Td05QYzlaTDFCVUk1OXB1cTYyNzZrZ2dsX2hmc096cWwxNlpmQTJsd0xJdzRkVHRzTmxhejVDTUxvTElpZUk2VFhLQkpMTmNyY2tXeVItMmxVWXNJZnFUNlZR?oc=5",
-          "source": "디지털데일리",
-          "summary": "",
-          "published": "2026-06-16",
-          "image": "",
-          "first_seen": "2026-06-21T00:45:33+09:00"
         }
       ]
     },
@@ -1575,15 +1584,6 @@
           "first_seen": "2026-06-25T01:22:24+09:00"
         },
         {
-          "title": "[AI넷] [2026년 디지털 디자인의 미래를 정의하는 10가지 UI/UX 트렌드] 모바일 우선(Mobile-first) 접근 방식 역시 여전히 핵심 축이다. 대부분의 디지털 접점이 스마트폰에서 이루어지는 만큼, 빠른 로딩 속도, 터치 최적화 인터페이스, 간결한 사용자 흐름은 기본 요구사 - AI넷",
-          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFAwWGlWRlVfVE1TUmswSWM2SG1JYkp5Wm1UQzd1RTlrYkIwTUYzVjdYVk5PTTQtWS1DN25zR2l5Zzc?oc=5",
-          "source": "AI넷",
-          "summary": "",
-          "published": "2026-06-14",
-          "image": "",
-          "first_seen": "2026-06-15T00:48:51+09:00"
-        },
-        {
           "title": "요즘 디자이너들은 무슨 바이브코딩을 할까? - 브런치",
           "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9wSzJmcWh3ZmFzMHhQS0xWVkZKNzdncTUzeWVCYUNTTWZhdHQ3VllhLURRcS1xbmNGbGtUc2p2bnIxTk5GRWZmT2g1RQ?oc=5",
           "source": "브런치",
@@ -1669,6 +1669,15 @@
           "published": "2026-06-22",
           "image": "",
           "first_seen": "2026-06-29T00:17:56+09:00"
+        },
+        {
+          "title": "인간의 감각과 Ai의 지성이 교차하는 예술 혁명… ‘제6회 AI 아트 페스티벌’ 인사동 역대 최대 규모 개막 - 뉴스N제주",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1zeERlRk85RnJYLWdidHR3MEtnU3d0MzV2OVhDdlBhRU02VHhja281M0hMLWRwQU5XcTBQbWkycEFJQ2FBLXJMSVdXZk1tVVBvRkUyczFJSXphNExSR1ZBcG1oQ2hQZGhuLXJGSg?oc=5",
+          "source": "뉴스N제주",
+          "summary": "",
+          "published": "2026-06-18",
+          "image": "",
+          "first_seen": "2026-06-29T06:51:13+09:00"
         },
         {
           "title": "대구 수성못에서 '한국 vs 멕시코전' 거리 응원 어때요?···2026 수성못 뮤직앤비어 페스티벌 개최 - 대구MBC",
@@ -1768,15 +1777,6 @@
           "published": "2026-06-15",
           "image": "",
           "first_seen": "2026-06-29T00:17:56+09:00"
-        },
-        {
-          "title": "강북문화재단, KoCACA 아트페스티벌 우수상 수상 - 신아일보",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE03WTNqdmtGTE9aUVItMWF6SGxrTE5zQ0Nqc01uUlBzSERKa0xyaEtqeE12VzhJeEZqYXNXaGpRM2luUUZoN2IzcmgyVzJNZGNOcURab3VMb1lRV0RlNGdCM2hsVmhWTkRwYVM1OWRGMmk?oc=5",
-          "source": "신아일보",
-          "summary": "",
-          "published": "2026-06-14",
-          "image": "",
-          "first_seen": "2026-06-15T00:48:51+09:00"
         },
         {
           "title": "강북구, 「코카카 아트페스티벌」 문예회관 우수 사례 발표대회 우수상 수상 - 서울일보",
