@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-30T01:52:59+09:00",
+  "updated": "2026-06-30T07:01:38+09:00",
   "categories": [
     {
       "id": "ai",
@@ -1075,15 +1075,6 @@
           "published": "2026-06-12",
           "image": "",
           "first_seen": "2026-06-21T00:45:33+09:00"
-        },
-        {
-          "title": "세화미술관, 서울 고교생에게 현대미술 무료 관람 쏜다 - 뉴스웍스",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBodl9nSmZUUHJVWUp6NWg5R2o2ZjhJUGVQWnVnY2VXU2I5eFRUeDdVcEtFNlAwRkE2YzR1QjMtTnlxeUVINjhnQ1JsbHg0N1lMa0ZuZW03QUhGM290SGJkMGJUd3FzUlNWNkpWVE5HMNIBc0FVX3lxTFB0ZU9aLXg4RVF0ZGtsdWtPcUdBNnB4Z19fNXlBV0Z0VmkwZW5VdWhpekVMRlBXR2g5UkYyOTFFVmJOSDdiN21iRXFZbzFoU2ZFSlFDTnZnaktoR3FfLW1CYWNXTHVTdzE3dC1RRDNvSGVLU00?oc=5",
-          "source": "뉴스웍스",
-          "summary": "",
-          "published": "2026-06-11",
-          "image": "",
-          "first_seen": "2026-06-16T03:26:54+09:00"
         }
       ]
     },
@@ -1091,6 +1082,24 @@
       "id": "grants",
       "name": "지원사업",
       "items": [
+        {
+          "title": "콘진원, 美 파라마운트·폭스와 사업 논의…K콘텐츠 해외 진출 본격화 - 이데일리",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPZzA2ajBsZG9OR2lSZnNRMHJIbk9rczRoUXE4U1U0a1RXa0h4dl9BZmF4aGVWY0RxZWtvU29EeVE5elJlcTlDczktaFBGTG1jWmtSczB4V05rNUJpaXNWd1dnVlpoWk01d1ZqRjhKbTd0eURRQmtDOGRsN3FmYW5JOQ?oc=5",
+          "source": "이데일리",
+          "summary": "",
+          "published": "2026-06-29",
+          "image": "",
+          "first_seen": "2026-06-30T07:01:38+09:00"
+        },
+        {
+          "title": "수성구, 청년 영상 제작 지원 ‘청년 크리에이터’ 공모 - 시사뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBibFk3TTJMZU9JN3FnT1ZqVnNGMGR3TzA0S1VidFRvbVRvenZDWWJsc21lOUZaTmVodXNqa0Rmak5nSENyT0dScXAyTHREVjdBby1Sbkphck9EXy1DOC1mT2tKYw?oc=5",
+          "source": "시사뉴스",
+          "summary": "",
+          "published": "2026-06-29",
+          "image": "",
+          "first_seen": "2026-06-30T07:01:38+09:00"
+        },
         {
           "title": "직원 '0명 기업’의 기적?…한국콘텐츠진흥원 4억 AI 사업 선정 배경 의문 - 뉴스탑전남",
           "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5ob2M3RHZlVWZ0b1R0WENYaW12Mlk1OW9XdzNhalE3YkFGVTRCUHp5VDluLVZxZm1NM1EyWXZsSWVmQ216MWR2ckxMdXVLRVJBbFFOdDFfcmVvOEVFN0h5S0RhLUN4UQ?oc=5",
@@ -1342,24 +1351,6 @@
           "published": "2026-06-16",
           "image": "",
           "first_seen": "2026-06-17T03:27:12+09:00"
-        },
-        {
-          "title": "오썸피아, SK플래닛과 전통문화 AI·AR 콘텐츠 만든다 - 서울경제",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9GQm1MOUtpVi1mZF81SEJ6ODdhTFRSQVRGV0YwbDBqRkVFMnY0ZnlDNFNKOFpYNjQ3SW0weW83NXFLZVczY3NxT2dsMEtVUlgtX0HSAVNBVV95cUxNUDFpNnNPZzF3b2NTZ2tZU0NRMnB1b1hTeUdrVW9RUV83d0hzSXdPS2pLNzktSUxlNTVYaEpUZTFXZnhnaWlNVmZvX1c1QlR5b3F2Zw?oc=5",
-          "source": "서울경제",
-          "summary": "",
-          "published": "2026-06-16",
-          "image": "",
-          "first_seen": "2026-06-17T07:45:45+09:00"
-        },
-        {
-          "title": "문체부, 중소기획사 10개 그룹 해외 진출 지원 사업 추진 - 지디넷코리아",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE50ZVJUOF9qdWhfVEY5X3diTll2M3NsaHRPbjBLY3BQM2lZMld4TXMzeldtQjl1TGRPbXV2S0FMNUJDNWphZTRrbDFlQTBqZGNfNm05enRR?oc=5",
-          "source": "지디넷코리아",
-          "summary": "",
-          "published": "2026-06-16",
-          "image": "",
-          "first_seen": "2026-06-18T01:55:16+09:00"
         }
       ]
     },
@@ -1593,15 +1584,6 @@
           "first_seen": "2026-06-18T07:27:53+09:00"
         },
         {
-          "title": "[위클리 디자인] 매일 보는 어플리케이션 속 디자인 이야기 - 디자인플러스",
-          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1WVWpibktyQXdGV3R3bGh1Wk5KdkRIRzNhNldRS3FpSDJ3UGtnRDNtd1NqV2lHeU54VXZDSVpmdnVZX09vZE94SkFkQjk?oc=5",
-          "source": "디자인플러스",
-          "summary": "",
-          "published": "2026-06-15",
-          "image": "",
-          "first_seen": "2026-06-16T03:26:54+09:00"
-        },
-        {
           "title": "AX 시대의 브랜딩 : 하이 파이브 26 - 브런치",
           "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9HR0h4VHZyUEZwR1RZMjI2REJjYzFyZTZyZGZabEJEYVhYc08xSmFub1M0N1hpMlNHSHVHYzR0emlUWjN6eDlFVWVobXk0Zw?oc=5",
           "source": "브런치",
@@ -1633,6 +1615,15 @@
           "published": "2026-06-26",
           "image": "",
           "first_seen": "2026-06-30T01:52:59+09:00"
+        },
+        {
+          "title": "[패트롤] 구리시-남양주시-양평군-포천시-하남시 - 에너지경제신문",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5YTWFSNWdZUms2NW1DWVItemhJbzhabjhKM3F5bU9TdklzUnVFYl9tYmdtQzd2a1lPcU9kRkNzd1hPOUUwMVlZMGdocjFxMk1BTWhLMlJuZDdLUU0?oc=5",
+          "source": "에너지경제신문",
+          "summary": "",
+          "published": "2026-06-25",
+          "image": "",
+          "first_seen": "2026-06-30T07:01:38+09:00"
         },
         {
           "title": "어려운 환경도 막지 못한 열기…2026 서울 파크 뮤직 페스티벌 성황리 막 내려 - mbn.co.kr",
@@ -1768,15 +1759,6 @@
           "published": "2026-06-16",
           "image": "",
           "first_seen": "2026-06-30T01:52:59+09:00"
-        },
-        {
-          "title": "'EDC 코리아' 10월 인천 개최…\"한국의 EDM 시장은 최고\" - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBHSWNtWGFUZ3VKUk91OXFkRndMcFllaGhwRlVHTzQzSnY1LWJhM08wbTRvUlhhMEY5TlFPdmxaNVpKcllheGlRblQ0dVlzel9OSjhOemhldUx2UW5zNlVEeNIBYEFVX3lxTFBHSWNtWGFUZ3VKUk91OXFkRndMcFllaGhwRlVHTzQzSnY1LWJhM08wbTRvUlhhMEY5TlFPdmxaNVpKcllheGlRblQ0dVlzel9OSjhOemhldUx2UW5zNlVEeA?oc=5",
-          "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-06-15",
-          "image": "",
-          "first_seen": "2026-06-16T03:26:54+09:00"
         },
         {
           "title": "충남공연단, ‘2026 후에 음악 페스티벌’서 공연 펼쳐 - 특급뉴스",
