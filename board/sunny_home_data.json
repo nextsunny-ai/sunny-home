@@ -1,10 +1,19 @@
 {
-  "updated": "2026-07-06T00:13:08+09:00",
+  "updated": "2026-07-06T06:47:10+09:00",
   "categories": [
     {
       "id": "ai",
       "name": "AI 트렌드",
       "items": [
+        {
+          "title": "이미지 생성 AI 미드저니, 할리우드와 저작권 소송 점입가경 - IT조선",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBmZlhqTHRNQUpuWlg5YS0wTEZOQ0VEUml2ZC1Sc0RCdEhMd1g2RUdyUEJSb3VyWk9UZk1ZeU56b3czV01HX0dGc0duZWxOT0RFV19JQ3ZGME5XSEFVZ0EyMnlCeHJHak5SMUZBN1V5d0XSAXRBVV95cUxOREo0UjY2TTdTZjdHeWlrVkh3OElvQy1UcGZ4emllQWFGYS1iMnNfNlVrSGZ3Tld4Z2R0WGlHZWlockNlN2xZbG95dExUZ3pXbUJweUMyT19LNEVxcWdBWGxEc1c2MXFwT1JYZ0VCU0NLUC15cw?oc=5",
+          "source": "IT조선",
+          "summary": "",
+          "published": "2026-07-05",
+          "image": "",
+          "first_seen": "2026-07-06T06:47:10+09:00"
+        },
         {
           "title": "구글이 공개한 AI 에이전트 제작 노하우를 가져다 쓰는 법 - 요즘IT",
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ZWlNvM3ZoZVc5Z2xzMDZHaGpXYXRmejBTWjlRQm1jcG5BTjdJYnBsTnZ5MWFvY25rMW9jVG95NnZ1M0FKUS1XeGlUNzFOZ2UxMHVMNE16QUI2Zw?oc=5",
@@ -13,6 +22,15 @@
           "published": "2026-07-03",
           "image": "",
           "first_seen": "2026-07-04T00:52:37+09:00"
+        },
+        {
+          "title": "스스로 생각·행동 'AI 에이전트', 기존 AI보다 전력 136배 사용 - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBoeUdVd2t3Q0gyNUxQMUpCdnhUSjd5SnNXZzUtS3QzaVJxbl9xMFZqc19YRDBqN2VidHd4c3lERHpISGpBRjQwc2lVVThNS2FPY1FqYm5qamNXd0nSAWBBVV95cUxQdGtVOWloU0xJYV9RdTZMdEVCdHhMSjU0WWsySVd3OWZWOWRqZ2Z3d2VIYUtGRFZqSXp4UzVPSGZhblRYYXdJRnkzUXotZ2dtWEVKWFFSbGZCcnMxR1JQMXg?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-07-03",
+          "image": "",
+          "first_seen": "2026-07-06T06:47:10+09:00"
         },
         {
           "title": "미국 ‘앤스로픽의 클로드 첨단 AI 모델’ 금지 해제 - VOA 한국어 홈페이지",
@@ -112,6 +130,15 @@
           "published": "2026-07-01",
           "image": "",
           "first_seen": "2026-07-03T01:05:28+09:00"
+        },
+        {
+          "title": "앤트로픽, 클로드 코드가 147개 중국 도메인 연계 사용자 은밀 추적한 사실 드러나 역풍 - Yellow.com",
+          "url": "https://news.google.com/rss/articles/CBMi6AJBVV95cUxOUmdaVGxpUjVQS0lSMkZ3X21GRkxma2g1TFJZTUxfVEN2X211dlNKSVhqdXlnYnNjdHlpN3FLV1hhdzFmNVRVLTNXcHo3anVmUkJaQ1VMc0hiZ0lFbmFRZTh3SkhhNVpOUzZjbFRUSUgtN19jV3N4SU5xOHYtM1NLTUlKaFIwUGpyR094cko2Y1JqU3JGa2xSNi1KX2ZleUhDMDNhUWRHNnd4bVFmbmMtUkFtVVNfSll3bzhOM0h6bmR6MUNDY2xkcGM0a1JFdzllODZMam1wN205SkhtNU5uRXN2dDlJdS11UU03SjNYeXV1RngxeGphUU5yckNPYy1ZU0lHeklzekZRcWRrOFlLNS01a0RiS0x3c3FES1dhU21IQlNVeGpzWkdxcnRDQ0VXcGdoMldOdWNMZ3RRSjFYS0sxMXpsNjA3akJMcDVwdlJpM0FzazMtRlBLRndrZ0x2TGZ4WTVJcGI?oc=5",
+          "source": "Yellow.com",
+          "summary": "",
+          "published": "2026-07-01",
+          "image": "",
+          "first_seen": "2026-07-06T06:47:10+09:00"
         },
         {
           "title": "미국 정부 명령에 따라 Anthropic, Claude Fable 5와 Mythos 5 중단 - Yellow.com",
@@ -247,33 +274,6 @@
           "published": "2026-06-26",
           "image": "",
           "first_seen": "2026-07-02T01:27:15+09:00"
-        },
-        {
-          "title": "생성형 AI 이미지 - 전자신문",
-          "url": "https://news.google.com/rss/articles/CBMipARBVV95cUxNLXNqVVFNaWRjM1NrSVE3dDlLb0xGRk1Fank5TGZEeUZrTUJJT00tdlFaaGFnZ1Q5aHFmWEl6NXJ4S18tZXd2WlV5QVdtYnpzV3JvTmJUMG9HcTRLeUhCYzRJdEpidnpmalhlMXRPZkczQUFVVFhVRk80bVRFeFlWdU9MNEd4U3JJYmNZVUJIZzdkb3o4cFJJdldaSGlWbGtJTTdxY3hlX0l0MWxHcC1EMTVvbWdUZ3lKTmV1TFBSNzIza1laYXBVelhGRGdPbTJDQkVULTByZHR0RmduNDQwc1huWTRrbE1WQWhlSHlSS2xpLVhjLU41Zl9GZmtVSF9pUWt2cE5IZkE4aUFhaU0wQmFrQUZtakxWQ2ctYk1RV2RrRUxGd1JQaHRLY01PSWVXQVhqdEdxbGhiZy00Xzc0MnRVRTdLaHhET1RaSzNQQ29kVkVTRlVFYnRtVlhrMVJFREplUFd1TVltQkdoWEhqZzNUZjVPNnV4WDdxLTcwR0FIOHdWSHVfd0hnTHVrN0lzWXpGZkxNUWU1RWhrRXNiQzl4R2VHei01TXlYbEVQcFhJcDh3dkhEZmJ3MXBkOXdNU2VtVzZlV2gwSXhmNTFQSGF0Y19GNXIyeHZfTG55VngyaVF4R3ZNcGlJNnJzbjJsd3kxMGFCUF9KOFhZTkpnWkRnVjRfNjNkdFFyOUpaWmJLVDdCU1Z5NnVNSGRBYXE1YzRpOA?oc=5",
-          "source": "전자신문",
-          "summary": "",
-          "published": "2026-06-25",
-          "image": "",
-          "first_seen": "2026-06-26T01:25:16+09:00"
-        },
-        {
-          "title": "알리바바 주가, Anthropic의 AI 모델 무단 추출 의혹에 하락 - Investing.com 한국어",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE44Y2s5RTlnMEFILTNsVUJxS0J4MDQtak9JOTdodTNyelliTElsaFJ0R2hYVFdNZTlrSm5JYVFCRkItNlR1SkRaV0Nqdm5pdzlZSFZFbG5uLXBwRXc3dDRHNG9POTRBcXdlM0tsWVBTWC0?oc=5",
-          "source": "Investing.com 한국어",
-          "summary": "",
-          "published": "2026-06-25",
-          "image": "",
-          "first_seen": "2026-06-26T07:14:13+09:00"
-        },
-        {
-          "title": "토마토시스템, AI컨퍼런스 참가…'엑스빌더6 아이젠'으로 AI 에이전트 기반 개발 혁신 - 전자신문",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5xWVJMdnlhVTZwQ2dzY01xWWl6WVRuUk1NVHJfbkxwWUlIVThoQjVSRnUxdXFNbWgwUUlwcXdUNncyeGw1QUJPazFzSXFfZw?oc=5",
-          "source": "전자신문",
-          "summary": "",
-          "published": "2026-06-25",
-          "image": "",
-          "first_seen": "2026-06-27T01:17:07+09:00"
         }
       ]
     },
@@ -507,15 +507,6 @@
           "first_seen": "2026-06-26T01:25:16+09:00"
         },
         {
-          "title": "“글로벌 콘텐츠 IP 시장 선점 실태 진단과 독자적 법제화 방안 모색”:동아경제신문 &amp; daenews.co.kr - 동아경제",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE4xckl2NFlOQjV0eVNoMlJURFpUMjVCT3RmX3M2MDkyTFJpUDJpT2Z6OEl6WS1CZ3dMdGRna3R5dk5TVENNQkHSAWJBVV95cUxQUjhaYUtEeF81TXpiWDZQRERiUTdXaVZnYnUyeU1GbzhRbG5US3cxb0RwcE0yNEdGcW1kNnZTWmFmTEF6clk5SFJ1akloMi04NWR4cXlMYkwwM05HdTJyUU5fQQ?oc=5",
-          "source": "동아경제",
-          "summary": "",
-          "published": "2026-06-21",
-          "image": "",
-          "first_seen": "2026-06-22T00:52:14+09:00"
-        },
-        {
           "title": "[콘텐츠 큐레이션]열정과 승리 담았다…월드컵 백배 즐길 수 있는 OTT - 블로터",
           "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1xamZsTVZVOTN0TmFycFNCQmNrN05QZEUzUERORmR0bW5kRG9RZUFkclE0dTZqam1qNFlzdlI0UEhMSVA0UXJkUEpTY1pVYTNQbzhqQ2NFbk5HbnpNUXBKUllvU1dzQTRz0gFsQVVfeXFMTUhVVDNFT24yWGNfSW9FV0lfMEtxTkFtTGNtOV8zMGktMDM0V0JVSFAycTRYblc4YTRsbUxWbS1ZQnptbm5sM2RlUEdvUXJScWMzUHl2Z0dUYjYzY3c4UnFybnRHXzZJREhfN2xr?oc=5",
           "source": "블로터",
@@ -541,15 +532,6 @@
           "published": "2026-06-18",
           "image": "",
           "first_seen": "2026-06-30T01:52:59+09:00"
-        },
-        {
-          "title": "OTT 경쟁력이 K콘텐츠 미래…\"정부 지원 확대 시급\" - 한국경제",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5tYVNkbXBFZ2g3QXVGcHYxbXQ4UElsVFBINDlCd1ppMFBGNUJWb1hqd3dSX2pCRVd3WmJSUktBOUI5NUNnUnpwVy0tT2dLUHB0UlEzUHBVMWg0Z9IBVEFVX3lxTE5xM3ZvT0o5Y3VmUFdZSVZDQnd3eEVKc1l6cjFGUkM1VWpDeXA1Q3gyWnA4Y0p6M1NNWWIxbC1KX1l5V3BrVEM1OE1SN2djMkFPd0NFcw?oc=5",
-          "source": "한국경제",
-          "summary": "",
-          "published": "2026-06-17",
-          "image": "",
-          "first_seen": "2026-06-22T00:52:14+09:00"
         }
       ]
     },
@@ -557,6 +539,15 @@
       "id": "performance",
       "name": "공연",
       "items": [
+        {
+          "title": "예산군문예회관, 뮤지컬 ‘어느 60대 노부부 이야기’ 공연 개최 - 한국방송뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8zQWhDSlJncXZIZGlGTWgtc0Nub09IenJpZWxLVWVudkE0S0VFQjZnRTR6VDlWSXVRdjhMUmUyOFBHSTJ6dFVvRDBIaHVLWFpySmI4OElCc2FyeVhWM2c?oc=5",
+          "source": "한국방송뉴스",
+          "summary": "",
+          "published": "2026-07-03",
+          "image": "",
+          "first_seen": "2026-07-06T06:47:10+09:00"
+        },
         {
           "title": "뮤지컬 ‘라인업’, 2026년 하반기 학교로 찾아간다 - 유교신문",
           "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE14TFI2cENaVkg1NGxCV3gxQWE2VU9ybHRhUElUcVY3cGpSMjRFX3UySUR4UFJDellMSmVGVUFfSzU1a1lHTEkxOGpCaGdPaFhRNTZuTVY4Q3lTYnV4YXc?oc=5",
@@ -610,6 +601,15 @@
           "published": "2026-06-30",
           "image": "",
           "first_seen": "2026-07-03T01:05:28+09:00"
+        },
+        {
+          "title": "화랑초, 학생들이 직접 꽃 피운 ‘성장 뮤지컬’ 공연 - 투데이안산",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBJRFNFb2hKUlN1TGFDaFhmb0pHOUU0WVBtVDM1RlRBd3IzVWdsdU53TFJVZEpGUUEycmtpbm0zU01qMDJGc19EcXBTejZTck15Vjd5b2JHQ3F3a3FGTnNiUEtiVVpCYk5mdUFsYmFn0gFyQVVfeXFMTy13U2tvSExTTGxxQ1JYSHBuZmZDU2RQWlNlY1hsRUtSU3o2Tlc0VVBIM0xtN3ljbW45M3VCVkF4N2FfbDVfY3NmOUczZDNyLUg2OHFCdW5UQ3VGWThTNGRtUjFlTVJQSGNBM2RvWE91UkZB?oc=5",
+          "source": "투데이안산",
+          "summary": "",
+          "published": "2026-06-30",
+          "image": "",
+          "first_seen": "2026-07-06T06:47:10+09:00"
         },
         {
           "title": "문경문화예술회관 2026년 공연한데이 시리즈 7 뮤지컬 담배가게 아가씨 - 경상투데이",
@@ -797,6 +797,15 @@
       "id": "exhibition",
       "name": "전시",
       "items": [
+        {
+          "title": "한중 미디어아트 교류전…오는 7일 이이남스튜디오서 개막 - KBC광주방송",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBzdVRJWGdPZzNRV3plNjVDU1REaGhGWVlOeW56YlBIdWl3cUYwM3N6QVgtMUpKZnlULXl6TU4xUUNjODAtM29mbDZ2ZXVKWDVmSlpydG9LWVJWNEJGZVV0TQ?oc=5",
+          "source": "KBC광주방송",
+          "summary": "",
+          "published": "2026-07-05",
+          "image": "",
+          "first_seen": "2026-07-06T06:47:10+09:00"
+        },
         {
           "title": "2026 제14회 SMAF 서울현대미술페스타 개막-국제 현대미술 교류의 장 - 아트코리아방송",
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0zbFA4aUp3c2tRUjNZRjBPdWVVU0U1RHZIWU1VaFVBdmItd2lCT0pRNEd6Sng1UzBtOFZqYVVDVDhkZDZoc0J1VkFQYlo1RV90OXJfTnNiS2MtUFFtOEREZ1d3eEphUzFaTXFSa3hn?oc=5",
@@ -1227,15 +1236,6 @@
           "first_seen": "2026-07-05T00:05:49+09:00"
         },
         {
-          "title": "셀렉트스타, AI 전시 ‘아기상어’ 신뢰성 검증 지원…콘텐츠 AI 시장 공략 - 이데일리",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQX3ZZbHRWRVV0a0FxRVJ5eWlLb1FNWkh1NGd4b2k1Nl9sWXRZNlcxdmZTbjhoeHFVLWR4YnF3b2tFaWpKWjE0SjN6YlNCQldlQU03X2hadmd6TVJuNkxsZ0k5eHZQQXhLT2hPbWllb2doSU90d3UwM3NSNDFUZDlBYQ?oc=5",
-          "source": "이데일리",
-          "summary": "",
-          "published": "2026-06-18",
-          "image": "",
-          "first_seen": "2026-06-22T00:52:14+09:00"
-        },
-        {
           "title": "중부대, 고양시와 함께 전국 청소년 영상 공모전 개최 - 경기일보",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBDbTZLaGlGSW8yYUZfR0FvZERQVUFEdFYxblhNLUlRYUdVcTM1TWpPSF9DMjNfSVJHVlRBZU9hWXN5akRvbUEyb2RMbm5haU5TZUVLaWRIVDVBM3c?oc=5",
           "source": "경기일보",
@@ -1261,15 +1261,6 @@
           "published": "2026-06-18",
           "image": "",
           "first_seen": "2026-07-02T07:10:36+09:00"
-        },
-        {
-          "title": "K팝 '허리' 강화한다…중소기획사 10곳에 최대 3억 원 지원 - 대한민국 정책브리핑",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA3QkpiX2RlYkVsMHFUUWhTWm5OU1JRXzh4SC1JSHNMODVGQ3R4TXJWdXY1cnJYRy1CMHVhQy1VdXd6ZjUxM2s2Q0pnUm9FUG5qMDN6cFVDTFZ1ZXI0ak9TSXd6UVU5TzRuNUdrYg?oc=5",
-          "source": "대한민국 정책브리핑",
-          "summary": "",
-          "published": "2026-06-17",
-          "image": "",
-          "first_seen": "2026-06-22T00:52:14+09:00"
         },
         {
           "title": "문체부 \"대형 IP 육성 등 K-콘텐츠 성장 지원 확대\" - v.daum.net",
@@ -1528,15 +1519,6 @@
           "published": "2026-06-18",
           "image": "",
           "first_seen": "2026-06-22T07:06:53+09:00"
-        },
-        {
-          "title": "유한킴벌리, ‘우리강산 푸르게 푸르게’ 캠페인 비주얼 아이덴티티 리브랜딩 - 디자인플러스",
-          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBSdW1Hc3AxWURjQ2dEeklRMHJrR1c0NllyV2R6TmlibVRwUl9ET215R3gybjZNNFlzYzhTNlBsQUNfRzdEOU1HQ1hVdTY?oc=5",
-          "source": "디자인플러스",
-          "summary": "",
-          "published": "2026-06-17",
-          "image": "",
-          "first_seen": "2026-06-22T00:52:14+09:00"
         },
         {
           "title": "지구를 반전한 유니버설 뮤직 리브랜딩 - 디자인 나침반",
