@@ -1,10 +1,19 @@
 {
-  "updated": "2026-07-10T01:27:36+09:00",
+  "updated": "2026-07-10T07:10:36+09:00",
   "categories": [
     {
       "id": "ai",
       "name": "AI 트렌드",
       "items": [
+        {
+          "title": "OpenAI, GPT-5.6 모델 기반 ’ChatGPT Work’ 출시 - Investing.com 한국어",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE84OFhkc3dYUVJWTUhnc1Q2THRNczBZcDUteU40UWJkcC1jc1hzVmlieDRRdk44Q0pjZzZ2aVhCenY0Ty1YXzdCbGh3dDVZTjJZTVNHTlVMTjZuZXdVbnByWDZqU0JkdUVFSk5sSmt2ZkkzdEVKeENN?oc=5",
+          "source": "Investing.com 한국어",
+          "summary": "",
+          "published": "2026-07-10",
+          "image": "",
+          "first_seen": "2026-07-10T07:10:36+09:00"
+        },
         {
           "title": "OpenAI, ChatGPT용 GPT-Live 음성 모델 출시 - Investing.com 한국어",
           "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1FUmtsLVFSS3RqS3JIUDRwOHotU3JaYThwcVhuU0htVWxEaFhoeEN1LWFnLXRNQy1BeExDWkhUcUJEbjBIQmtOcjFvV3gyZnFSUkV4U01QNlgyeWxFaDlvcDh1Y0o5S3d0YUxWd2tWU1lLV1hncXA0?oc=5",
@@ -96,6 +105,15 @@
           "first_seen": "2026-07-09T06:55:46+09:00"
         },
         {
+          "title": "AI 국가대표 4팀, 8월 재격돌…승부처는 'AI 에이전트' - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA5Z2RaUGpZNF9QNWZBVm52MElIRW5VT0puMVE4Z2J1YThGOC1JdW5BNkJXOXdHTlBmQ1NsZjcxQ0w2emRuV2V0ZWU4QlVJLVNxQkxCVmdxWlFOYVnSAWBBVV95cUxPX0lxTE9UbkJTOUd0aUhWdUVtN1RWcVFITl9JcU9jX1ZLMGw2cEFqa3BYaVJKZ0dqRHpmTDl5SF9kQzZBbEtRSjk5OWVDdVBmeTBKYU1VMHhybFBvbVJ4TzA?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-07-07",
+          "image": "",
+          "first_seen": "2026-07-10T07:10:36+09:00"
+        },
+        {
           "title": "中 알리바바, 앤트로픽 코딩 AI '클로드 코드' 사용 금지 선언 - 헬로티",
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9qQThVSGhVWXk5U0k3UWlMOTl1M0tJOXI4eXFGb1BHdGh6cjVPeTJpcFdZdzRxTjZYa0ppQXVaaWhZOU5jWmFRdEJkQ25sQlZvQzJFTUJDZy1vcFI4dEMw?oc=5",
           "source": "헬로티",
@@ -139,6 +157,15 @@
           "published": "2026-07-06",
           "image": "",
           "first_seen": "2026-07-09T06:55:46+09:00"
+        },
+        {
+          "title": "中 바이트댄스·알리바바, 개인화 AI 에이전트 중단…새 규제 앞두고 제동 - 연합뉴스TV",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE01UGVQRG54N0drOVE4dEVrblJZLUxpNUtRNGhpVnhyZnZwMVBObk1LVWh4VGN1Tl80OG8yQm10S0V2NThvUEl5NWQ0ZERYbGxJQVJua05aTW9DX3F3Vl9ONzh5NDFTams?oc=5",
+          "source": "연합뉴스TV",
+          "summary": "",
+          "published": "2026-07-06",
+          "image": "",
+          "first_seen": "2026-07-10T07:10:36+09:00"
         },
         {
           "title": "이미지 생성 AI 미드저니, 할리우드와 저작권 소송 점입가경 - IT조선",
@@ -247,33 +274,6 @@
           "published": "2026-07-02",
           "image": "",
           "first_seen": "2026-07-05T00:05:49+09:00"
-        },
-        {
-          "title": "앤트로픽 'Fable 5' 7월 1일 재배포...구독 요금제 이용엔 제약 강화...수출통제 해제로 서비스는 재개하지만 주간 한도 절반만 한시 포함, 7월 7일부터는 별도 '사용 크레딧'으로 전환 - 한국정보기술진흥원",
-          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1UVjN2VWRRVU5GeF9DRUlyQ1VwM0hkX3pGam9JWi1aWjB1SWlLbnZEdUM3U0owYVhUZGZlU0Qwd1Q?oc=5",
-          "source": "한국정보기술진흥원",
-          "summary": "",
-          "published": "2026-07-02",
-          "image": "",
-          "first_seen": "2026-07-07T01:51:51+09:00"
-        },
-        {
-          "title": "앤트로픽, 향상된 AI 성능의 클로드 소네트 5 출시 - Investing.com 한국어",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1jaVhiQWdXeXI3TWhrUXpLQ0NQay1YaEZ4VVNiVXFVNlZER1d5d05ZOTZyanRWbzYxTUJ1VG9WRXdIRDZUWGw2cGM5R2NoWXNoSXZVVWotSGdGSWFCa0hXZGZBUXFXbTA1SkZSd1lIS2tDOHRWUmVB?oc=5",
-          "source": "Investing.com 한국어",
-          "summary": "",
-          "published": "2026-07-01",
-          "image": "",
-          "first_seen": "2026-07-01T07:06:01+09:00"
-        },
-        {
-          "title": "앤트로픽, '클로드 페이블 5·미토스 5' 수출통제 해제…7월 1일부터 서비스 순차 복원 - 인공지능신문",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBBN0JoblhDaGRHeUpOc1RhWVN5QUcxdlBFUmRMekxhZktvTHVpYWpKMXFteXlrald2Y3dlbWU5Ukc1TGhQQTRSRV9XOXRlU2RoN2RfbkwtMlBJTllUNnpxbUdoUzNibTg?oc=5",
-          "source": "인공지능신문",
-          "summary": "",
-          "published": "2026-07-01",
-          "image": "",
-          "first_seen": "2026-07-02T01:27:15+09:00"
         }
       ]
     },
@@ -334,6 +334,15 @@
           "published": "2026-07-06",
           "image": "",
           "first_seen": "2026-07-07T01:51:51+09:00"
+        },
+        {
+          "title": "1050 사로잡은 '숏폼'...OTT, 예능까지 1분짜리로 만든다 - 지디넷코리아",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9MSlJxbHZ1aXVsanhIalN2RFp3bzlQOE1uS3hEX05WLXdKRmRTM3psVlp2QW84X0szaXZRRU1JaVgzRkRYZFEydjluS0pkLWduYlBaQXpB?oc=5",
+          "source": "지디넷코리아",
+          "summary": "",
+          "published": "2026-07-05",
+          "image": "",
+          "first_seen": "2026-07-10T07:10:36+09:00"
         },
         {
           "title": "'상상력 화수분' K-웹툰, 글로벌 OTT 흥행 보증 수표된 3가지 이유[웹툰 원작 전성시대②] - 뉴시스",
@@ -541,15 +550,6 @@
           "published": "2026-06-24",
           "image": "",
           "first_seen": "2026-07-05T00:05:49+09:00"
-        },
-        {
-          "title": "“조회 수 시대 끝났다”…‘대박 IP’ 찾아 글로벌로 - 이코노미스트",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1XUFdzaGY2Zkh3WS1iYk1BQnpJNEkxQkQwNS03QXZ0MzlwX2pxQU16RkpMQm5DY1dnR3E5SEpodDNwYTUwUm1WWDY1ZHE1WEpjRHBpQ0FYcWVHUXlWVkdpcFNB?oc=5",
-          "source": "이코노미스트",
-          "summary": "",
-          "published": "2026-06-23",
-          "image": "",
-          "first_seen": "2026-06-27T06:59:01+09:00"
         }
       ]
     },
@@ -933,6 +933,15 @@
           "first_seen": "2026-07-07T01:51:51+09:00"
         },
         {
+          "title": "\"오타쿠 문화를 예술 영역으로\"…'日현대미술가' 미스터, 10여년 만에 서울 전시 - 뉴스1",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1ib18tRWktdnRldWVtbnE0d0NmQ2cwT0FMNlpOMWF3VFh6dURKYUhTYmZoY2IxRjI3SWpxQ3d0NmwwR0l0Wi1RMl94QjJYLXBiR3hVV2tVaEVmQllXSkxIRkJqRlRESWhvMDN2cENVZERadw?oc=5",
+          "source": "뉴스1",
+          "summary": "",
+          "published": "2026-07-02",
+          "image": "",
+          "first_seen": "2026-07-10T07:10:36+09:00"
+        },
+        {
           "title": "공항서 미술 만난다…김포·김해공항서 조각·미디어아트 전시 - 경기일보",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1veDQ0TGFyZjBhMkRVbG1rSmg3VzlZeFIwT2s1UmVDWHAzT1J6MmpBanU2OG1OUWF1OE1WMUViYkVFQnZrajNBSTlZZENWTmFsM1RtRmZMcmVIT2s?oc=5",
           "source": "경기일보",
@@ -1210,6 +1219,15 @@
         },
         {
           "title": "“역사·설화 담은 영상 만든다”…‘스토리 인 충북’ 공모 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBLNnByV242SmJ0elFwRWxneTZMNU5XLURlc2trcmtWVkZnNVh4REZaM0hndmswSFdtS0ExR1B2dlZ4aW5xLUE?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-07-06",
+          "image": "",
+          "first_seen": "2026-07-10T07:10:36+09:00"
+        },
+        {
+          "title": "“역사·설화 담은 영상 만든다”…‘스토리 인 충북’ 공모 - v.daum.net",
           "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1VSmc5MFN6RkNWU3E5Y1RBOFBOV25RYnNxbzlwWDhwdlVNNzdraFhjUGE3ZTUwRUx2X2NMakdkVkxETjRyUTdRSE5BVkJaOVE?oc=5",
           "source": "v.daum.net",
           "summary": "",
@@ -1342,15 +1360,6 @@
           "published": "2026-06-25",
           "image": "",
           "first_seen": "2026-07-07T01:51:51+09:00"
-        },
-        {
-          "title": "문체부∙콘진원, 프랑스 비바테크서 한국공동관 운영∙∙∙K-콘텐츠 유럽 무대 진출 가속화 - 스타트업투데이",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA3Q3NDSDZISzdHcE80ZUlSd3FwUkV6SHlBa3hEN0JDVEtEYmt0Yi04alE2YVF0ZnhqaHNlbFpNMVB5MUkycmRWZHd4MUJtX3FibnpBclpZM1d2d1RXU1dKNm1ST295ZTFucHBrdnF3?oc=5",
-          "source": "스타트업투데이",
-          "summary": "",
-          "published": "2026-06-24",
-          "image": "",
-          "first_seen": "2026-06-28T06:50:28+09:00"
         }
       ]
     },
