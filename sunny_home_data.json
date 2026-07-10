@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-11T01:24:58+09:00",
+  "updated": "2026-07-11T06:47:57+09:00",
   "categories": [
     {
       "id": "ai",
@@ -123,6 +123,15 @@
           "first_seen": "2026-07-11T01:24:58+09:00"
         },
         {
+          "title": "Omnigent의 컨텍스트 정책: 세션 상태를 활용한 AI 에이전트의 효과적인 관리 - Databricks",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVkpjdkZzNVVkZjZ2OVhhNElNam4wOFBPNUx4T2ltYmd4dXVxblgtWWhxRWpwUVp4S09TM255eml1VWsxekwwdENmdFY2V015ZTdKTWpWNkR6bnI4dDdYcmttblVIeS1GM2ZEYzRuLW9JcHQwUy1PVHd2TmFfTkRjVGRCR3hQRUF2T3FRbFRCb0F0Z2Z0akpwMVprVE9qcVdRWldvZGpYYXdSMms?oc=5",
+          "source": "Databricks",
+          "summary": "",
+          "published": "2026-07-08",
+          "image": "",
+          "first_seen": "2026-07-11T06:47:57+09:00"
+        },
+        {
           "title": "AI 에이전트가 전체 랜섬웨어 공격 주도... ‘제이드퍼퍼’(JadePuffer) 공격 포착 - 보안뉴스",
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1CcVB1SDhZbkhRbEZQQnp4ckJoVWRiM1NMWXdnTGVOaEEzQVlyOWFOM2tRakZIWTZTY0twb0lzMTRIc2R2UWhYUWE4M0h6M0hjeTJkb2J4d2RIUVRraUJjdWw4NEd2Zy05TmxRVjl3?oc=5",
           "source": "보안뉴스",
@@ -240,6 +249,15 @@
           "first_seen": "2026-07-09T01:01:52+09:00"
         },
         {
+          "title": "AI 에이전트 전력 소모, 생성형 AI보다 최대 136배 많다 - 조선비즈 - Chosunbiz",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNc0thQk5ENUVUN3JNOWEzaTZRckZqZWhBRlRLU3A3ZWtkeU96UkFYb1dfbDdRVk9rWl9DTjFGNzRXMTJENHpVYUxqN2N0bF9lcXQxYWNFU05qank3VFFmVkpUUS14ajYwMVV6M1pnWTVBd1RrSlNDWjByTkgwaDdsQmNR0gGWAUFVX3lxTE5yYUdWUWRWbzNJbDZlMGpSZTNyQ1JVbXdGLTNYZ3UxcVRBRk1oclE0aGdmZ1hxVFZLOU84ZjZpNVd2M3JUUkt6UTJGcUhqWDcxMXBwbXRJanVUU1ktOXlUN2hFaHUzUW1kc1ZzLTVZNWxhV0ZkeUFQcG9KVk1fQjNkbGg2SlZweC1xQzc0OGZLYV9JdkFaQQ?oc=5",
+          "source": "Chosunbiz",
+          "summary": "",
+          "published": "2026-07-05",
+          "image": "",
+          "first_seen": "2026-07-11T06:47:57+09:00"
+        },
+        {
           "title": "구글이 공개한 AI 에이전트 제작 노하우를 가져다 쓰는 법 - 요즘IT",
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ZWlNvM3ZoZVc5Z2xzMDZHaGpXYXRmejBTWjlRQm1jcG5BTjdJYnBsTnZ5MWFvY25rMW9jVG95NnZ1M0FKUS1XeGlUNzFOZ2UxMHVMNE16QUI2Zw?oc=5",
           "source": "요즘IT",
@@ -256,24 +274,6 @@
           "published": "2026-07-03",
           "image": "",
           "first_seen": "2026-07-06T06:47:10+09:00"
-        },
-        {
-          "title": "AI 에이전트 시대를 이끄는 CIO의 조건…디지털 리더십 전략 7선 - cio.com",
-          "url": "https://news.google.com/rss/articles/CBMixgJBVV95cUxQZVY5UklzUXBMd2ZDQjlEY1NKS3oxN2I1LUdGOVZSblRmUkZ0c21ocnR4aW03dTlzY1c4X2tSeVd3ZVNMTDA0Tm1rQ2VuSmhwVDhha0Y4dUczbGkzMUtNM0k0TFMzQXV1T19xNFhoWnVlbnF0Y1VvR0RjV1dKdXUwWTVPbktMcDA5bFlab3ZYWERBOGlWRGxGbF9BTnQ1ZS1QdEtaelRWRGVzMU9aaExRUDBlbG1mNkhFaHdtSkVBM1lUX253bm43WWRRdVFZdVQzN25aczRkRXJoNGl6T3U4ZTFpZHdTaE85dXJtcHMzVmZnYTZLUzNHMmdMVnUwWXhOYjNIalJITFF2VE9keFZQX2RJMEdsaXI4OUZYdnh2emNBbVZ3b25keWl3T19McUFlQTJEVENnX2lFWmRLTXBnVm9GUjl5UQ?oc=5",
-          "source": "cio.com",
-          "summary": "",
-          "published": "2026-07-03",
-          "image": "",
-          "first_seen": "2026-07-07T01:51:51+09:00"
-        },
-        {
-          "title": "미국 ‘앤스로픽의 클로드 첨단 AI 모델’ 금지 해제 - VOA 한국어 홈페이지",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9EVTduYk82V1hZZ3o0M3VKUUs2YjdrLWFXQ0l0Vk82a1NMay1jZUN0djNPT1lXaTRJWm54MU1mYTVSWHdUU3FTRHBfaXlCckViMjBqX0ZMZk8wSml2R1UzeFVWQmk5YlFPeXlwRWRPeEVTd3pjYlNfSTNMTdIBe0FVX3lxTE9EVTduYk82V1hZZ3o0M3VKUUs2YjdrLWFXQ0l0Vk82a1NMay1jZUN0djNPT1lXaTRJWm54MU1mYTVSWHdUU3FTRHBfaXlCckViMjBqX0ZMZk8wSml2R1UzeFVWQmk5YlFPeXlwRWRPeEVTd3pjYlNfSTNMTQ?oc=5",
-          "source": "VOA 한국어 홈페이지",
-          "summary": "",
-          "published": "2026-07-02",
-          "image": "",
-          "first_seen": "2026-07-03T01:05:28+09:00"
         }
       ]
     },
@@ -316,6 +316,15 @@
           "published": "2026-07-09",
           "image": "",
           "first_seen": "2026-07-10T01:27:36+09:00"
+        },
+        {
+          "title": "웹툰 IP 산업화 해법 찾는다…민주당 문화예술특위 국회 세미나 - 스트레이트뉴스",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE12emd5ZndERzhCalUtVkZVeDBzY3hqZ2NKaUVHbFJ6YmxDRlJOcVdTVzdySU9pTUlYaU1GbWpoaDdKYk1ySzEtX2Y5c2NuU2lsZFhpQlhzQ1JkTGNvNG5qaVYzd242M0Zoc2NvbnJoNnp1ejI4OEcw0gF3QVVfeXFMTXZ6Z3lmd0RHOEJqVS1WRlV4MHNjeGpnY0ppRUdsUnpibENGUk5xV1NXN3JJT2lNSVhpTUZtamhoN0piTXJLMS1fZjlzY25TaWxkWGlCWHNDUmRMY280bmppVjN3bjYzRmhzY29ucmg2enV6Mjg4RzA?oc=5",
+          "source": "스트레이트뉴스",
+          "summary": "",
+          "published": "2026-07-09",
+          "image": "",
+          "first_seen": "2026-07-11T06:47:57+09:00"
         },
         {
           "title": "‘이태원 클라쓰’ 대만판 드라마 ‘파이어드 업!’ 31일 공개...K웹툰 IP 확장 - ppss.kr",
@@ -541,15 +550,6 @@
           "published": "2026-06-25",
           "image": "",
           "first_seen": "2026-07-05T00:05:49+09:00"
-        },
-        {
-          "title": "K-콘텐츠, 일본 최대 콘텐츠박람회서 저력 입증…1330만 달러 수출상담 - 재외동포신문",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1nYk9BUHhhMlo3TllldUhFNGx2ajJMa1hSRUxJVlZaRmZCT0FOSEhHOFBpSGRzMldwZTA0Q0gtNzY1M3hGU3VtT2p5UWNSTjNoNmpGY2QwY1hWVkIzYmlDNjMySTB4cDRYTTF1Uw?oc=5",
-          "source": "재외동포신문",
-          "summary": "",
-          "published": "2026-06-24",
-          "image": "",
-          "first_seen": "2026-07-02T07:10:36+09:00"
         }
       ]
     },
