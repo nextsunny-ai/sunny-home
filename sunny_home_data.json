@@ -1,10 +1,19 @@
 {
-  "updated": "2026-07-11T23:53:57+09:00",
+  "updated": "2026-07-12T06:36:41+09:00",
   "categories": [
     {
       "id": "ai",
       "name": "AI 트렌드",
       "items": [
+        {
+          "title": "AI 에이전트 스타트업, AI 에이전트로 1500억 투자 유치…\"130여 투자자 응대\" - AI타임스",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0tNHh0TzdfcU1CangwWEoxdTdUV0ozR3VYZV9rU3lGNUFYT19pOW9ncjlYV3NYTzZibjZ6djkxMmZIekxTS3VLVE9tcjFJbHpVSmpST3RnYVI4ZXYzWEZucFB3X0syb21Ndnc?oc=5",
+          "source": "AI타임스",
+          "summary": "",
+          "published": "2026-07-11",
+          "image": "",
+          "first_seen": "2026-07-12T06:36:41+09:00"
+        },
         {
           "title": "OpenAI, GPT-5.6 모델 기반 ’ChatGPT Work’ 출시 - Investing.com 한국어",
           "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE84OFhkc3dYUVJWTUhnc1Q2THRNczBZcDUteU40UWJkcC1jc1hzVmlieDRRdk44Q0pjZzZ2aVhCenY0Ty1YXzdCbGh3dDVZTjJZTVNHTlVMTjZuZXdVbnByWDZqU0JkdUVFSk5sSmt2ZkkzdEVKeENN?oc=5",
@@ -265,15 +274,6 @@
           "published": "2026-07-05",
           "image": "",
           "first_seen": "2026-07-11T06:47:57+09:00"
-        },
-        {
-          "title": "구글이 공개한 AI 에이전트 제작 노하우를 가져다 쓰는 법 - 요즘IT",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ZWlNvM3ZoZVc5Z2xzMDZHaGpXYXRmejBTWjlRQm1jcG5BTjdJYnBsTnZ5MWFvY25rMW9jVG95NnZ1M0FKUS1XeGlUNzFOZ2UxMHVMNE16QUI2Zw?oc=5",
-          "source": "요즘IT",
-          "summary": "",
-          "published": "2026-07-03",
-          "image": "",
-          "first_seen": "2026-07-04T00:52:37+09:00"
         }
       ]
     },
@@ -307,6 +307,15 @@
           "published": "2026-07-10",
           "image": "",
           "first_seen": "2026-07-11T01:24:58+09:00"
+        },
+        {
+          "title": "'김부장' '참교육' 돌풍…K-웹툰, 넷플릭스 접수 - 주간현대",
+          "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFB2T2p5TVFvdC1oSkxfOVFxZlJJYnU0WUttWTVtNWgzeE5VWVpwbnd0dUpMbFE5aU5CODc0RzdKbWJEZHdrM2d0c3p3?oc=5",
+          "source": "주간현대",
+          "summary": "",
+          "published": "2026-07-10",
+          "image": "",
+          "first_seen": "2026-07-12T06:36:41+09:00"
         },
         {
           "title": "무료로 즐기는 국내 최대 콘텐츠 IP 축제…'캐릭터 라이선싱 페어 2026' 7월16일 개막 - 피플게이트",
@@ -541,15 +550,6 @@
           "published": "2026-06-29",
           "image": "",
           "first_seen": "2026-07-01T01:22:41+09:00"
-        },
-        {
-          "title": "넷플릭스 한국서 OTT '체류시간 점유율 60%' 독주 모드, 시청자 붙잡는 힘은 'K 콘텐츠' - 비즈니스포스트",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1qZjZRQU9LN2JGTVZLTVJ5eWF0R2pmWmRfQXFkMXZLZC0yUzliN2ZsX0dmYTExUXhia291T09XMUo0VWl5Q29JZUlxOVBQTUNfMTIxcENBZ2ZjUGI3TGNUS1o3bHpBWll4bFB3V2prYUotYWs?oc=5",
-          "source": "비즈니스포스트",
-          "summary": "",
-          "published": "2026-06-28",
-          "image": "",
-          "first_seen": "2026-06-29T06:51:13+09:00"
         }
       ]
     },
@@ -583,6 +583,15 @@
           "published": "2026-07-08",
           "image": "",
           "first_seen": "2026-07-11T23:53:57+09:00"
+        },
+        {
+          "title": "경기아트센터, 7월 '2026 G-ARTS FESTIVAL' 클래식·뮤지컬 등 공연 - 경인종합일보",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE92WUcyOHBjWlNKcEx2clpFcnpYUnFTTDh1UkNTcDJlUjdFOVVIU3lHRkoxNW95RWhidEZkQVI5YzVVYjRINXlrT0lFTlk4aFF1YVZPUTBmVzFpaGJlci1TbFlXcUczSGRSOXZkNGJMUUpmQdIBckFVX3lxTE92WUcyOHBjWlNKcEx2clpFcnpYUnFTTDh1UkNTcDJlUjdFOVVIU3lHRkoxNW95RWhidEZkQVI5YzVVYjRINXlrT0lFTlk4aFF1YVZPUTBmVzFpaGJlci1TbFlXcUczSGRSOXZkNGJMUUpmQQ?oc=5",
+          "source": "경인종합일보",
+          "summary": "",
+          "published": "2026-07-08",
+          "image": "",
+          "first_seen": "2026-07-12T06:36:41+09:00"
         },
         {
           "title": "올여름 휴가는 공연축제로... 2026 아르코 썸 페스타로 떠나는 ‘공연예술 바캉스’ - 서울자치신문",
@@ -619,6 +628,15 @@
           "published": "2026-07-07",
           "image": "",
           "first_seen": "2026-07-11T23:53:57+09:00"
+        },
+        {
+          "title": "전국 공연축제 15개를 하나로 묶었다…7~9월 '아르코 썸 페스타' - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFA5enFlQ3Y2OTBRUmxhcHhBMWh4ZzVXNFhYaEJGZ2J4WUFKN2c4eFVtS0ZaTEExT0ZZam9vRDBPWExwMkxKalE?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-07-07",
+          "image": "",
+          "first_seen": "2026-07-12T06:36:41+09:00"
         },
         {
           "title": "‘2026 창작산실’ 선정 김소라 감독…지역 뮤지컬 경쟁력 입증 - 전북일보 인터넷신문",
@@ -808,24 +826,6 @@
           "published": "2026-06-29",
           "image": "",
           "first_seen": "2026-06-30T01:52:59+09:00"
-        },
-        {
-          "title": "뮤지컬부터 판소리까지...인천문화예술회관, 2026 하반기 ‘커피콘서트’ 라인업 공개 - 미디어인천신문",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE54T0dGQkF6ZjVFVGNqZnZBTjBPNG1zYy1yMkswRXJZZm00Y19EblVOVFRRZjlmME5nckhub1hkQ19EUUxlMXRmUU1PQVVScXVXWlJ2Zk9sMUQ4VDdwSE5pcVpyQ2ZacV9pdXVn?oc=5",
-          "source": "미디어인천신문",
-          "summary": "",
-          "published": "2026-06-29",
-          "image": "",
-          "first_seen": "2026-06-30T01:52:59+09:00"
-        },
-        {
-          "title": "2,000대 드론이 수놓는 서울의 밤⋯ ‘2026 한강 불빛 공연’ 여의도서 개막 - 은평시민신문",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9nYXV0UVk5cjJ4M2hpY2NacFR4TUM3S1NnazZId1ZxLUZCOUtLQmdaako0RkVMMWlaVnRiNi1XX2IzcExySGxveHk5SHhwQXZNOU1fRUhGU3VhVFY0Mnp0RVRTQ29sRW8?oc=5",
-          "source": "은평시민신문",
-          "summary": "",
-          "published": "2026-06-25",
-          "image": "",
-          "first_seen": "2026-07-02T01:27:15+09:00"
         }
       ]
     },
@@ -1039,15 +1039,6 @@
           "published": "2026-06-28",
           "image": "",
           "first_seen": "2026-07-01T07:06:01+09:00"
-        },
-        {
-          "title": "국립현대미술관 서울관, '이것은 개념미술이 (아니)다' - 아트코리아방송",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA3YllRTE1ubFhDek9OeUJpbXYwYXRTYW5hOE1kMlllaFdUUzFlVEl6WWxiV0dUZGNUWHNRRnZFd0xydU5qeURaQzFEZzg3ejdrVGpZeElYS29UeGZaeXR1OFNka3VLMUZ4NXE0b0RR?oc=5",
-          "source": "아트코리아방송",
-          "summary": "",
-          "published": "2026-06-27",
-          "image": "",
-          "first_seen": "2026-06-28T00:16:02+09:00"
         },
         {
           "title": "길버트와 조지, 로버트 라우센버그 《스펙트로신테시스 서울》에 참여 아트선재센터에서 개최되는 기획 그룹전 - Thaddaeus Ropac",
@@ -1367,6 +1358,15 @@
       "id": "design",
       "name": "디자인",
       "items": [
+        {
+          "title": "\"지역 자산 디자인하고 로컬 브랜딩하자\" - 세종의소리",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE0wQ3ZYd0haMlpIUVZFeF94c25vREFWanFQcGozaWV1NjBqWHlGUWsxZ3k4SGRmN1JQY3JvVE4zTWp5NUlleGQ5a0wwSUQyRi1SaFdtX0ZoMEd1ZTNDaklWeVFnRDVZUE0?oc=5",
+          "source": "세종의소리",
+          "summary": "",
+          "published": "2026-07-12",
+          "image": "",
+          "first_seen": "2026-07-12T06:36:41+09:00"
+        },
         {
           "title": "ep.01 브랜드, 브랜딩 &amp; 두 선구자들 - 브런치",
           "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFBLb0lxRWdNSFN4enpyNFQ3UkFxcWdyd1VnNk8zX3B1Y2tKZVQ4UGVxTU9ySWVIM2xIWHlCeUdwbWtfZw?oc=5",
@@ -1761,6 +1761,15 @@
           "first_seen": "2026-07-08T01:31:25+09:00"
         },
         {
+          "title": "원윤 작가, 고양이와 아이스크림 꽃다발로 전하는 ‘달콤한 인생’의 위로-'2026 제2회 애니멀 아트 페스티벌' 참여 - 아트코리아방송",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE93MEhyTmZHQnRWdWJPVEx6elZJSW02ZHVBbEgyajNkNDF3eWtUQlNFRVkxdWJNZlEyWFZwUU1Kc012eTEyNTNYcGo3QWFiQjZVanczMVRYM1VHWWFWRnRvcWtWRnh0QUdqRXhVM2x3?oc=5",
+          "source": "아트코리아방송",
+          "summary": "",
+          "published": "2026-07-06",
+          "image": "",
+          "first_seen": "2026-07-12T06:36:41+09:00"
+        },
+        {
           "title": "키메라 영 총기획 '2026 제2회 애니멀 아트 페스티벌', 생명의 우주를 예술로 연결하다 - 아트코리아방송",
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1idmNxTW9OOUYzdmJjM0ExNjljODl5dFpSUWp5ajhoSkJtYTlIZVF3REhsQm0zZTRXdHNXdkdHN0tsSTZ5Nmt5WkJaVzVReFJkTjdLcjQyR2NCbnVmQkFxbGo0MnBhOUJYRl9fVDJn?oc=5",
           "source": "아트코리아방송",
@@ -1872,15 +1881,6 @@
           "title": "(재)아산문화재단, '2026 도고 옹기 뮤직페스티벌' 개최 - 한국시사경제",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1CS3FrcjZuaEdVZjRQUzlVaERkRzBURU9vOVBCWW9Hc0hZZEtXWFFrc3VkYUJ6a2pEbW9ZQTZCdlpUVEZZbmxYaGhRcW9rZFcwcHd2ZFhrTGVlSVZkaW5lcXBJSWlheTJWZnc?oc=5",
           "source": "한국시사경제",
-          "summary": "",
-          "published": "2026-07-01",
-          "image": "",
-          "first_seen": "2026-07-04T00:52:37+09:00"
-        },
-        {
-          "title": "제4회 오티즘 엑스포, 다채로운 문화예술 축제 ‘오티즘아트페스티벌’ 개최 - 에이블뉴스",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1pWkJsRUhtODdRbXdfVEs4Vzgtb2NzaEVMUzdsSVZtZmEzSkpadFNYeHVpaWQ4anFQbm03WWNUNUJ6LU5OQnJrUTF2Qkl5WkxHQkh6d2FlVGQ0emEyZWNaYkpObzFkLUNILUhnQVN30gFyQVVfeXFMUFRwa3Y0WEJEZU04ZVRnS1dzTE5qWXJ2ZkwxeGt6Ulc4QkNMRmFJREVyMFl4QWY5ZzQyTTFJUm56dkU4Q1pyUlZEZ0tKcTVlbmJONUhReVYxOG1EaXNHSktnMzRKd2xodTA2dWJqcTlfNmR3?oc=5",
-          "source": "에이블뉴스",
           "summary": "",
           "published": "2026-07-01",
           "image": "",
