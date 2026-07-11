@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-11T06:47:57+09:00",
+  "updated": "2026-07-11T23:53:57+09:00",
   "categories": [
     {
       "id": "ai",
@@ -58,6 +58,15 @@
           "published": "2026-07-09",
           "image": "",
           "first_seen": "2026-07-10T01:27:36+09:00"
+        },
+        {
+          "title": "ChatGPT는 더 큰 목표를 함께 실현하는 파트너로 나아갑니다 - OpenAI",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5XMVFQalZDVVF0QWp4bVlLcXhMRU9EenJkVlRaSXVSWWR4X2FiRW56cTl2VVRaV292NDBDY2tucHdia0E0UjRhYUVKTy1UcS13aEJuR1JkTmRWeGhBM3U5ejRVWndlUWN6al9hQnBXaFNTa3l1dWNJ?oc=5",
+          "source": "OpenAI",
+          "summary": "",
+          "published": "2026-07-09",
+          "image": "",
+          "first_seen": "2026-07-11T23:53:57+09:00"
         },
         {
           "title": "Anthropic, 클로드 코워크 모바일 및 웹 출시…원격 근무 지원 확대 - Investing.com 한국어",
@@ -265,15 +274,6 @@
           "published": "2026-07-03",
           "image": "",
           "first_seen": "2026-07-04T00:52:37+09:00"
-        },
-        {
-          "title": "스스로 생각·행동 'AI 에이전트', 기존 AI보다 전력 136배 사용 - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBoeUdVd2t3Q0gyNUxQMUpCdnhUSjd5SnNXZzUtS3QzaVJxbl9xMFZqc19YRDBqN2VidHd4c3lERHpISGpBRjQwc2lVVThNS2FPY1FqYm5qamNXd0nSAWBBVV95cUxQdGtVOWloU0xJYV9RdTZMdEVCdHhMSjU0WWsySVd3OWZWOWRqZ2Z3d2VIYUtGRFZqSXp4UzVPSGZhblRYYXdJRnkzUXotZ2dtWEVKWFFSbGZCcnMxR1JQMXg?oc=5",
-          "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-07-03",
-          "image": "",
-          "first_seen": "2026-07-06T06:47:10+09:00"
         }
       ]
     },
@@ -281,6 +281,15 @@
       "id": "content_ip",
       "name": "콘텐츠·IP",
       "items": [
+        {
+          "title": "콘텐츠 넘어 ‘체류시간’ 경쟁…OTT 전략이 바뀐다 - 서울경제TV",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBKQ0RnWjdIUGFyMzdXVFhha3ZLS3R0YnRWaEtKZ0RSeHRDTDBUMHRjakptMWlod3hiRHpxTnpNUy1EcERYQ3Nldk9XMFp3bzgwOUk3S1dkdGRPb0VMRHZZVlQ2b0Q?oc=5",
+          "source": "서울경제TV",
+          "summary": "",
+          "published": "2026-07-11",
+          "image": "",
+          "first_seen": "2026-07-11T23:53:57+09:00"
+        },
         {
           "title": "'캐릭터 라이선싱 페어 2026' 개최…K캐릭터 콘텐츠 IP 무대 확장 - 뉴스핌",
           "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1pYl9UcmF4RDN3Y25kdFZVeURzVC1WTWc5NVJXR05LR0JJTE5qWXVwd2EzUDFldk1zcndmTkplS2JHQTVCYWJFVWpYcUFFMTBvNC1EVDFTR0t1WUFh?oc=5",
@@ -541,15 +550,6 @@
           "published": "2026-06-28",
           "image": "",
           "first_seen": "2026-06-29T06:51:13+09:00"
-        },
-        {
-          "title": "성장통 맞은 2조 K-웹툰…내수 정체 속 해외·IP로 활로 찾는다 - 이슈인사이트",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBRU0dmUHR1dnR6M0xFdVNrUTRONlNxd0pWTTB6bnNVWFdUVWp1UzBDeF9uZ2c2aktjelNmUjZoYXFjMVBXQjdRU2JjSUV0VHE0cE5DZUxiN3p5SHBJaEJMWGVmaWRFRmtham10SFRCYkc?oc=5",
-          "source": "이슈인사이트",
-          "summary": "",
-          "published": "2026-06-25",
-          "image": "",
-          "first_seen": "2026-07-05T00:05:49+09:00"
         }
       ]
     },
@@ -574,6 +574,15 @@
           "published": "2026-07-08",
           "image": "",
           "first_seen": "2026-07-09T01:01:52+09:00"
+        },
+        {
+          "title": "아비뇽 페스티벌서 한국 공연에 관객 호응…현지 언론도 주목 - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1PUENWT0RSNkRoS0VzaFpSTmJVV3g2a2FkeFRwVEsyZ2h3N1gtWmlMekhJNS1TeXpPeHdlZXhfdHEzdFpvT1gxSHNLZjQ1UVZFR0U1T3lLTGdOSkXSAWBBVV95cUxQNHFQMHlDSWhHOXF5VGJfMWp1bzhZVnc3R293UmswenlnNndWbXpVQ1NJb0RUR0VDM1RoMGluc1NJWEhrRUFfU2RTamJqQmFYZkxiZHc3bEozend5NmJUSEc?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-07-08",
+          "image": "",
+          "first_seen": "2026-07-11T23:53:57+09:00"
         },
         {
           "title": "올여름 휴가는 공연축제로... 2026 아르코 썸 페스타로 떠나는 ‘공연예술 바캉스’ - 서울자치신문",
@@ -601,6 +610,15 @@
           "published": "2026-07-07",
           "image": "",
           "first_seen": "2026-07-10T01:27:36+09:00"
+        },
+        {
+          "title": "올여름 휴가는 공연축제로 ……2026 아르코 썸 페스타로 떠나는 ‘공연예술 바캉스’ - K스피릿",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE44M0xDRExwXzh2akktTVI1MHhENFdXdERLTDRJU3RMWVBwNTdVTU9keTg5U25XaUF4OVFCMGZlNzBlUUhIejl6bUhtdHN4TFExOFN0TDZDd0lvaGFpOGFVUE1KS0JVLV8yMzBnQnFVZErSAXNBVV95cUxQeHA5NGx1U1RaUUN0TTB0cUROMlpMcldUX3NZMk1qbEFfSzJZTXZOOVlzZlRJX05RazRYMzFUNldqZ2o3ck1HVlctNldxUUFHWkRmR3pLMmlscy1PczZnbmo5WXVvUHFfMHFhNE1XMXpsdWxv?oc=5",
+          "source": "K스피릿",
+          "summary": "",
+          "published": "2026-07-07",
+          "image": "",
+          "first_seen": "2026-07-11T23:53:57+09:00"
         },
         {
           "title": "‘2026 창작산실’ 선정 김소라 감독…지역 뮤지컬 경쟁력 입증 - 전북일보 인터넷신문",
@@ -682,6 +700,15 @@
           "published": "2026-07-06",
           "image": "",
           "first_seen": "2026-07-09T06:55:46+09:00"
+        },
+        {
+          "title": "[문화 트렌드] (재)부산문화회관 2026 기획공연, 여름방학을 맞아 뮤지컬 '알사탕' 개최 外 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE91VXpmbE42bzd0N19NQ2lzOW5KaS1Rb3pSaFlUZDRadjVtYTI3YnZtendVaXFiQ3lUWkNXMnp3bUpFR2NER2dEc2JsN005Y0U1dVpvZw?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-07-06",
+          "image": "",
+          "first_seen": "2026-07-11T23:53:57+09:00"
         },
         {
           "title": "예산군문예회관, 뮤지컬 ‘어느 60대 노부부 이야기’ 공연 개최 - 한국방송뉴스",
@@ -799,33 +826,6 @@
           "published": "2026-06-25",
           "image": "",
           "first_seen": "2026-07-02T01:27:15+09:00"
-        },
-        {
-          "title": "경기도 공연예술의 새로운 연결 「2026 G-ARTS FESTIVAL」 개막 - 서울뉴스통신",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1zNlhINk4tYjVReW9yQ3dMUzhERGppQ1BPcW9jUVhkLWlkTGpOVWF5ek42c2NLS0R6X05Ia0pTT2paQVpkQVFmTFRSYlNUWFFaZU9qNmFfM3BRTXQ2UHVtRzR0MkhrSWduN3lF?oc=5",
-          "source": "서울뉴스통신",
-          "summary": "",
-          "published": "2026-06-23",
-          "image": "",
-          "first_seen": "2026-06-28T00:16:02+09:00"
-        },
-        {
-          "title": "“서울 그늘 벗어나라”…경기아트센터, 최초의 공연예술 선순환 플랫폼 띄운다 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE41TE96RVFQUk5MamZPQW9aTmNMaW1ZZVlya2tDZjh0WXlBTjZqUXRmZ0M1QlFXUl9BTFZxOXpud21KMkpvZ1V5dkhWYw?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-06-23",
-          "image": "",
-          "first_seen": "2026-06-29T06:51:13+09:00"
-        },
-        {
-          "title": "\"누구나 삶의 의미 찾으려 싸워… 운명에 맞선 베토벤 역시 그랬다\" - 조선일보",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNcmZPb2JrNTZxcWxvOVEtblVfV2ZRcTRVaFdIbXpsemR4REFWZXhVNVNFYmF2RE9ENXIwZkoyenV0LWVkeEcwbGFCa0ZqY3FqSmtBSXg2NUtPeDFNUHhsaFRmcW80NGpDZTRHRXRfTWdhbFU5VFFKd01LR0VhalJCSVJtSHNfNldfdUU3SHBSX1JCWDBEdVE?oc=5",
-          "source": "조선일보",
-          "summary": "",
-          "published": "2026-06-23",
-          "image": "",
-          "first_seen": "2026-07-04T00:52:37+09:00"
         }
       ]
     },
@@ -1084,15 +1084,6 @@
           "published": "2026-06-22",
           "image": "",
           "first_seen": "2026-07-05T06:44:31+09:00"
-        },
-        {
-          "title": "[비평] 데미안 허스트 전시가 던지는 질문 - 우리는 서구의 시각을 좇는 것은 아닌가? - d-art.co.kr",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9PMWVjZzQ3OWJ2MnA2VWRNcHNOQnJSRlR3XzlpSHhRekhndGU5MzZ4TndRX2VhaXRPLWpWU1BfRjJ6blZkbEkybDE1R0xkN21lZ0ttTmtXaVNiZWQ3aUhoLVN5VVNJc3M?oc=5",
-          "source": "d-art.co.kr",
-          "summary": "",
-          "published": "2026-06-20",
-          "image": "",
-          "first_seen": "2026-06-27T06:59:01+09:00"
         }
       ]
     },
@@ -1272,6 +1263,15 @@
           "first_seen": "2026-07-11T01:24:58+09:00"
         },
         {
+          "title": "코웨이, 비렉스 AI 영상 광고·숏폼 공모전 개최 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE56NTdkWGlSSnF6RHhSeFRvSzRfcXRtMTY5R1VsQ1RKNHFYM3FZb1g0Mmx5QzVmUm1PdDdLSEdta2Q4R3NvMFVJSGg3X0pRa0E?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-07-06",
+          "image": "",
+          "first_seen": "2026-07-11T23:53:57+09:00"
+        },
+        {
           "title": "“역사·설화 담은 영상 만든다”…‘스토리 인 충북’ 공모 - v.daum.net",
           "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1VSmc5MFN6RkNWU3E5Y1RBOFBOV25RYnNxbzlwWDhwdlVNNzdraFhjUGE3ZTUwRUx2X2NMakdkVkxETjRyUTdRSE5BVkJaOVE?oc=5",
           "source": "v.daum.net",
@@ -1360,15 +1360,6 @@
           "published": "2026-06-29",
           "image": "",
           "first_seen": "2026-06-30T07:01:38+09:00"
-        },
-        {
-          "title": "K방송영상콘텐츠 해외로…해외 방송영상마켓 참가기업 모집 - 뉴스핌",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5obnM4UmZ2MmpZSlZPWjF0cHRBcE41dnZQd1VYRFc4ck52V0JNcDdzalN3NFdrTTdkVDBwV2tCVFRrR2llTXcwallwLTRVdTl3XzRQTXplcVMteWhN?oc=5",
-          "source": "뉴스핌",
-          "summary": "",
-          "published": "2026-06-29",
-          "image": "",
-          "first_seen": "2026-07-09T01:01:52+09:00"
         }
       ]
     },
@@ -1376,6 +1367,15 @@
       "id": "design",
       "name": "디자인",
       "items": [
+        {
+          "title": "ep.01 브랜드, 브랜딩 &amp; 두 선구자들 - 브런치",
+          "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFBLb0lxRWdNSFN4enpyNFQ3UkFxcWdyd1VnNk8zX3B1Y2tKZVQ4UGVxTU9ySWVIM2xIWHlCeUdwbWtfZw?oc=5",
+          "source": "브런치",
+          "summary": "",
+          "published": "2026-07-11",
+          "image": "",
+          "first_seen": "2026-07-11T23:53:57+09:00"
+        },
         {
           "title": "피그마 컨피그 2026, 디자이너가 주목해야 할 내용 - 디지털 인사이트 DIGITAL iNSIGHT",
           "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxNNFdzeFBBMjBxMEJ3NUZkMlJNaXBOWE1hTkY2YW53NEZaYnZuUF9fdWl2Z2dqYXFJU1J3Zk1haTFGUmFfLVhBZmJkTHVraWZHLXItQzJsak1GYVQ0SHowVlB3S19MYlpFdXJyX203SHNWZTJ4VU9OY2RWY2d2bXVEc21hSTBoUUVjRXJPbHhrNmtwRHBQWGFNQ09lOG9PR1BpMzJVdHl0UkF2RGJ4Yk5zeFh2YS1ibk11S25yZEROb0tOZnRrS25peTdWd2luOWRPUE1FeThXTzNqTjhrZ2JwOEhsVTkwZzVlQVB2WXRzajd6NXdzUFBYenl4RnE4c3ZhdUZhazY0S3phZ0RiN2RJd2dwdlVUTGNNamhWUWVn?oc=5",
@@ -1566,15 +1566,6 @@
           "first_seen": "2026-06-30T01:52:59+09:00"
         },
         {
-          "title": "듀당스, 딸기모찌 브랜드 ‘연백 1227’ 리브랜딩 공개 - 한국경제",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1XN1ZfYXU2clVIMDl0ejBwa0F5blFuMzlOci01V3ZSQTV2UFk4MFI2bXJNNmlPOVFoeHhIVmxYQUF1NDFrUFlkTTE4YnhOeWRUeElHctIBVEFVX3lxTE1XN1ZfYXU2clVIMDl0ejBwa0F5blFuMzlOci01V3ZSQTV2UFk4MFI2bXJNNmlPOVFoeHhIVmxYQUF1NDFrUFlkTTE4YnhOeWRUeElHcg?oc=5",
-          "source": "한국경제",
-          "summary": "",
-          "published": "2026-06-26",
-          "image": "",
-          "first_seen": "2026-06-27T06:59:01+09:00"
-        },
-        {
           "title": "04화 브랜딩, 한 번쯤 해보고 싶었지만 - 브런치",
           "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE8xTldQdi04WHpUcWxqek1lS19BY2lKeXh2ck1CQnFMa0FzeHhpeDA3SUJRWjRZNzYxQzRGOGVMd0xjUmVUYTJtS01HRQ?oc=5",
           "source": "브런치",
@@ -1651,6 +1642,15 @@
           "published": "2026-07-09",
           "image": "",
           "first_seen": "2026-07-11T01:24:58+09:00"
+        },
+        {
+          "title": "한국타이어, 'S2O KOREA 2026' 참가…페스티벌·모터컬처 조합 - 머니투데이 - 머니투데이",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFA0eWswVjR3Z3NxODdncW5xSFFOY29GNjVKSVR0UVVJOXJ6OEExYUdlNkJYakFqTUYybERISGVCUGxndmpsTWFZdW9TT2VTck1IQW1xNUZvOHplWklpd29jQUNiVXFxX1VuS3QzLWEtbWFqUdIBckFVX3lxTFA0eWswVjR3Z3NxODdncW5xSFFOY29GNjVKSVR0UVVJOXJ6OEExYUdlNkJYakFqTUYybERISGVCUGxndmpsTWFZdW9TT2VTck1IQW1xNUZvOHplWklpd29jQUNiVXFxX1VuS3QzLWEtbWFqUQ?oc=5",
+          "source": "머니투데이",
+          "summary": "",
+          "published": "2026-07-09",
+          "image": "",
+          "first_seen": "2026-07-11T23:53:57+09:00"
         },
         {
           "title": "[문화 트렌드] 서울아트굿즈페스티벌 2026 참여 부스 모집 外 - v.daum.net",
@@ -1885,15 +1885,6 @@
           "published": "2026-07-01",
           "image": "",
           "first_seen": "2026-07-04T00:52:37+09:00"
-        },
-        {
-          "title": "레이든 '한국 DJ 최초' 英 음악 페스티벌 무대 올랐다 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBvWm1NcVI1a01fTmFQeVdLeDlEbHF4MlN6RVo5aU5BNWRzdW9IN2VtaGpWcVVKaUZJUmtCczVXUXBfLW0tc2RaSWs0YlA0RWs?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-06-30",
-          "image": "",
-          "first_seen": "2026-07-02T01:27:15+09:00"
         }
       ]
     }
