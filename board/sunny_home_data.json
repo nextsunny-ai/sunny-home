@@ -1,10 +1,19 @@
 {
-  "updated": "2026-07-15T06:43:32+09:00",
+  "updated": "2026-07-16T00:26:14+09:00",
   "categories": [
     {
       "id": "ai",
       "name": "AI 트렌드",
       "items": [
+        {
+          "title": "베이글코드, 전사 개인 AI 에이전트 업무 인프라 구축 - 디일렉",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1GbXBvTVYwQkhUTjVRZDdKSU53V01jNW5FTnBJMDdxVEZzV1BXQjBxbmZlYmVQa3VvdnZpNzVHWW5oMnZ6NjVjNUU1T0xWR2YtZk4zOGlyQXpCSnd0bEEwcmNuaklLZw?oc=5",
+          "source": "디일렉",
+          "summary": "",
+          "published": "2026-07-15",
+          "image": "",
+          "first_seen": "2026-07-16T00:26:14+09:00"
+        },
         {
           "title": "LTM Partners with Anthropic to Accelerate Claude Adoption and Expand Enterprise Delivery - 뉴스와이어",
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5uNkdqRDlSaGtYSVFSZlhnV1pndHJTTXlRZUREN19BN1ZaNWFGWGRCcnJFbW55Q2pFWnoyRlJVOGQ2c0Q4c0hmcTdmS1BtcTlxQl84T21hSXlLTVVTM3Jj?oc=5",
@@ -13,6 +22,24 @@
           "published": "2026-07-14",
           "image": "",
           "first_seen": "2026-07-15T00:23:25+09:00"
+        },
+        {
+          "title": "[AI픽] 카카오워크 2.0 공개…AI 에이전트 품은 협업툴 진화 - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5vS21PYlVDNFdNU0N6bERqelQ0NGNKeWhmUEVwdEZuTmZQOG52U2k2TWt1ZFJYbUtYejFaWXd3QzJCZmk4NEsxcnByczdxbUlrV0JRQjNyd2c0b0R1TkxXQtIBYEFVX3lxTE5vS21PYlVDNFdNU0N6bERqelQ0NGNKeWhmUEVwdEZuTmZQOG52U2k2TWt1ZFJYbUtYejFaWXd3QzJCZmk4NEsxcnByczdxbUlrV0JRQjNyd2c0b0R1TkxXQg?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-07-14",
+          "image": "",
+          "first_seen": "2026-07-16T00:26:14+09:00"
+        },
+        {
+          "title": "2026 상반기 AI 트렌드 결산 — 키워드로 읽는 ‘AI 대전환’ - SK텔레콤 뉴스룸",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBLZkFHek1BQ0NyYTBqY3NabDBaa2pzcTJKZ0ZYNi14a0xrU0dPd1dKX09TV0FZQWgzWnRCVmhxNGNXSUhhblFDMQ?oc=5",
+          "source": "SK텔레콤 뉴스룸",
+          "summary": "",
+          "published": "2026-07-14",
+          "image": "",
+          "first_seen": "2026-07-16T00:26:14+09:00"
         },
         {
           "title": "메타, 인스타 AI 이미지 생성 기능 사흘 만에 중단 - 조선일보",
@@ -231,6 +258,15 @@
           "first_seen": "2026-07-14T01:33:58+09:00"
         },
         {
+          "title": "클로드 코워크, 모바일·웹으로 확장… 노트북 꺼져도 작업 계속 - 와우테일",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5oc2J1eWE4ZTM2aUhISDM5VDYxM0hZNHFLZllyX1ZiYUMxUUt2bzl0WmlaWEEwa29mcUdTaDFzdk1HVWdoZG16aFVtc0lvU1U?oc=5",
+          "source": "와우테일",
+          "summary": "",
+          "published": "2026-07-08",
+          "image": "",
+          "first_seen": "2026-07-16T00:26:14+09:00"
+        },
+        {
           "title": "AI 에이전트가 전체 랜섬웨어 공격 주도... ‘제이드퍼퍼’(JadePuffer) 공격 포착 - 보안뉴스",
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1CcVB1SDhZbkhRbEZQQnp4ckJoVWRiM1NMWXdnTGVOaEEzQVlyOWFOM2tRakZIWTZTY0twb0lzMTRIc2R2UWhYUWE4M0h6M0hjeTJkb2J4d2RIUVRraUJjdWw4NEd2Zy05TmxRVjl3?oc=5",
           "source": "보안뉴스",
@@ -238,42 +274,6 @@
           "published": "2026-07-07",
           "image": "",
           "first_seen": "2026-07-09T01:01:52+09:00"
-        },
-        {
-          "title": "질의응답까지 포럼을 이끈 AI 에이전트 '통통 3.0' - OhmyNews",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOYzRKcDZEWUw2Rk9yaks5TnNaejBYaFktWXJ1cWJYaVRTQ3VWWnYtMUMzUEZlU05qNnd6V2tLM05heWQyU2MwRy1Na3JZUHdvUzJpa05QcVRHZUxlSmFKSEVwU2hzQjg3LU9GTmRHZE83YUxKd0MyZHpBS3c1OTE0XzN0X1h1N1J5cnc?oc=5",
-          "source": "OhmyNews",
-          "summary": "",
-          "published": "2026-07-07",
-          "image": "",
-          "first_seen": "2026-07-09T06:55:46+09:00"
-        },
-        {
-          "title": "AI 국가대표 4팀, 8월 재격돌…승부처는 'AI 에이전트' - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA5Z2RaUGpZNF9QNWZBVm52MElIRW5VT0puMVE4Z2J1YThGOC1JdW5BNkJXOXdHTlBmQ1NsZjcxQ0w2emRuV2V0ZWU4QlVJLVNxQkxCVmdxWlFOYVnSAWBBVV95cUxPX0lxTE9UbkJTOUd0aUhWdUVtN1RWcVFITl9JcU9jX1ZLMGw2cEFqa3BYaVJKZ0dqRHpmTDl5SF9kQzZBbEtRSjk5OWVDdVBmeTBKYU1VMHhybFBvbVJ4TzA?oc=5",
-          "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-07-07",
-          "image": "",
-          "first_seen": "2026-07-10T07:10:36+09:00"
-        },
-        {
-          "title": "中 알리바바, 앤트로픽 코딩 AI '클로드 코드' 사용 금지 선언 - 헬로티",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9qQThVSGhVWXk5U0k3UWlMOTl1M0tJOXI4eXFGb1BHdGh6cjVPeTJpcFdZdzRxTjZYa0ppQXVaaWhZOU5jWmFRdEJkQ25sQlZvQzJFTUJDZy1vcFI4dEMw?oc=5",
-          "source": "헬로티",
-          "summary": "",
-          "published": "2026-07-06",
-          "image": "",
-          "first_seen": "2026-07-07T01:51:51+09:00"
-        },
-        {
-          "title": "KAIST 석사과정 AI에이전트로 주식 자동매매…수익률은 - 지디넷코리아",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE54VS1jTnNMNUxKaXJtaUJ4TEp6YWpSb3k4TEtiOFh4MnVYODRxS1pGQ3hZMFZjakh4RHVNMmZoSGx2Z2RROFdaclN3alhpZFh3alc2dm1n?oc=5",
-          "source": "지디넷코리아",
-          "summary": "",
-          "published": "2026-07-06",
-          "image": "",
-          "first_seen": "2026-07-08T01:31:25+09:00"
         }
       ]
     },
@@ -281,6 +281,15 @@
       "id": "content_ip",
       "name": "콘텐츠·IP",
       "items": [
+        {
+          "title": "OTT도 AI 플랫폼으로 진화한다…콘텐츠 추천 넘어 제작ㆍ광고까지 혁신 - 아이티데일리",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1ZeUdOcGJLTUFhc1hBYjN1UzJKUE5DQXMxMUpUQTV1TTlzdDdHMzdFcTdaYV85SkQ0LVVWS2RUeC1QejZfdmVzQUFpZm52NWZINUVId01mV1RXWERfMmZPdXItaXl1d0c0?oc=5",
+          "source": "아이티데일리",
+          "summary": "",
+          "published": "2026-07-15",
+          "image": "",
+          "first_seen": "2026-07-16T00:26:14+09:00"
+        },
         {
           "title": "결국 돌고돌아 다시 TV처럼… 24시간 송출로 회귀하는 OTT - 조선일보",
           "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPdXA2YTU2NXllUVkzX004d3JYX0RFdDBNQTN5UGRheXVOLUdIUEJrb1dETWFaNzg1MEdNQW1XMTVJckY5T2NVY3RvemRLVmVyR0FfMllkRDluS1hQX3o2SmFOWC1pU1Y0eGVmNWxLS00zUTZQOFNiTWhGeFUySzlod1JmRQ?oc=5",
@@ -316,6 +325,24 @@
           "published": "2026-07-13",
           "image": "",
           "first_seen": "2026-07-15T00:23:25+09:00"
+        },
+        {
+          "title": "K-웹툰 보러 독일 팬 1000명 북적…코트라, 프랑크푸르트 체험관 운영 - 헤럴드경제",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1PRU5YRjhoWmxsVXBIZ3dGcEpreHR1Yi1WQ1dYb2hxX1EyODdOdFpvV1JiM3VoOFh0VEpsVTdaQkE0ZFpKRkZBOXhIVEpTd0RKekFkSEZn?oc=5",
+          "source": "헤럴드경제",
+          "summary": "",
+          "published": "2026-07-13",
+          "image": "",
+          "first_seen": "2026-07-16T00:26:14+09:00"
+        },
+        {
+          "title": "[기고] \"AI 시대 콘텐츠 경쟁력은 IP 가치사슬과 데이터 기반 민관협력에 달려 있다\" - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9VUXRpbVM0ZVJoY0NhZkdoVEdnN085RVFNNU1fNWFPNk9Bdnc4UkRkbjRiTDR1a25QVzVJNEdCVmk1Zjl4SkE?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-07-13",
+          "image": "",
+          "first_seen": "2026-07-16T00:26:14+09:00"
         },
         {
           "title": "독일, K-웹툰에 반하다...'세계 4위권 만화시장' 홀려 - 재외동포신문",
@@ -523,33 +550,6 @@
           "published": "2026-07-02",
           "image": "",
           "first_seen": "2026-07-09T01:01:52+09:00"
-        },
-        {
-          "title": "“넷플릭스 보고 한국행 티켓 끊는다”…K-콘텐츠가 촉발한 OTT 투어리즘 - 동아일보",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE83QV9lNnRIbnNFSG43bXROTnZUVzh1emViUm43QWNoT2VXdTVjaU14M3UwVklOTWNRekl0MS12QTZxODI4S2theE5BNVpKN3RxOWxqVmh0VDFnV05QaWRXZmpTNFpzd9IBZkFVX3lxTE83QV9lNnRIbnNFSG43bXROTnZUVzh1emViUm43QWNoT2VXdTVjaU14M3UwVklOTWNRekl0MS12QTZxODI4S2theE5BNVpKN3RxOWxqVmh0VDFnV05QaWRXZmpTNFpzdw?oc=5",
-          "source": "동아일보",
-          "summary": "",
-          "published": "2026-07-01",
-          "image": "",
-          "first_seen": "2026-07-02T01:27:15+09:00"
-        },
-        {
-          "title": "드라마 보고 비행기 탄다…'OTT 투어리즘' 만드는 K-콘텐츠 [엔터코노미] - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5tS1RGbEM3Nk1aNUdwdS16eDgtWlBvbUlQRFExRVlnTTg3eXlwczN6cWpBQWotUHZwYURFclV6LWVxd19TcDJqMklQX04tQW8?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-07-01",
-          "image": "",
-          "first_seen": "2026-07-02T01:27:15+09:00"
-        },
-        {
-          "title": "드라마 보고 비행기 탄다…'OTT 투어리즘' 만드는 K-콘텐츠 [엔터코노미] - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBCRFFBVHBNRkFrMTBiQi1sM0RqdW1tcWJPWlBfY0hYT0JLVDh1anduMlRIblYwTmdtZmNRUmVOakJOWl95VUE?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-07-01",
-          "image": "",
-          "first_seen": "2026-07-03T01:05:28+09:00"
         }
       ]
     },
@@ -592,6 +592,15 @@
           "published": "2026-07-13",
           "image": "",
           "first_seen": "2026-07-14T01:33:58+09:00"
+        },
+        {
+          "title": "서울시향, ‘퇴근길 토크 콘서트’ 개최…서울 도심서 즐기는 유럽 음악축제 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAyLTNVeU44d3dwWTRXWmtFdk9GNVhfVHRTampDVl80TVZyR3dOR0RrMVZqN0h3OVN3MHF1UVptWWNsSXFiTWFTSDA1WU9TUnc?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-07-13",
+          "image": "",
+          "first_seen": "2026-07-16T00:26:14+09:00"
         },
         {
           "title": "삼성 TV 플러스로 뮤지컬 콘텐츠 즐기세요 - Samsung Global Newsroom",
@@ -817,15 +826,6 @@
           "published": "2026-07-03",
           "image": "",
           "first_seen": "2026-07-10T01:27:36+09:00"
-        },
-        {
-          "title": "뮤지컬 ‘유앤잇’, 대구·서울 이어 8월 런던서 공연 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9ZNERtTDNrWmRQeWNrRFhFZmZwNHA4Z1pSTUpySGx2cFd3b0JaT3BuSXMwNEYtM2FBUTlxaFJGQW4wbW1KeGc?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-07-03",
-          "image": "",
-          "first_seen": "2026-07-11T01:24:58+09:00"
         }
       ]
     },
@@ -833,6 +833,33 @@
       "id": "exhibition",
       "name": "전시",
       "items": [
+        {
+          "title": "양양군, 주민 참여 AI 미디어아트 전시 '맛을 깨우는 빛' 개최 - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5jMEJuY3FEV1FaMmJoZlBWXzdqcmtJQjFWUGJ2TGhraGpRTldGdkxfMkJNNDEtcFlRZXN3bmEyTkVyOVFURnFTSW0zeFhHbWZTVnJTekpLX2lTNDQ?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-07-15",
+          "image": "",
+          "first_seen": "2026-07-16T00:26:14+09:00"
+        },
+        {
+          "title": "양양서 AI 미디어아트 전시…주민이 만든 지역 이야기 선보인다 - 쿠키뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5tVEdfYTMyT3NYN2RZRVVES1d2S3hheWlWQXl3dlkwUEpZdVRja0ZEVzMzR0p1UGZTeGpVU0x2Y25wcVBfRXRrTlByMHMxUzBlaTQ1UzdoTTFtXzVRWFF2elZjSQ?oc=5",
+          "source": "쿠키뉴스",
+          "summary": "",
+          "published": "2026-07-15",
+          "image": "",
+          "first_seen": "2026-07-16T00:26:14+09:00"
+        },
+        {
+          "title": "양양문화재단, AI 미디어아트 전시 개최 - 전국매일신문",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBMTm5vZWJPN1BXdExESFpNRkF3SWZDZC12VERhUTVsRUY0SDJENDNxTGlHcmcxaHpXbTJHUzFjaFJwMXdCSzM4cUxXWTNpdHVyMEowS0l3bno3WTJXVm1EczNxd1lJeGVUZ0NqbDFR?oc=5",
+          "source": "전국매일신문",
+          "summary": "",
+          "published": "2026-07-15",
+          "image": "",
+          "first_seen": "2026-07-16T00:26:14+09:00"
+        },
         {
           "title": "이이남 작가, 서울신라호텔서 구글과 협업 미디어아트 공개 - KBC광주방송",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1BSS1MYmIxQWREMi0yTjVVd0N5Vl8tcm5VQnRfc3lLd193M3NQemNkQWRrdDhDeTJHWEY4T1JXYjdoQ3I4YUxGQjJTbWJITzZGUjVrN2xJYU51dExTRnplbg?oc=5",
@@ -1059,15 +1086,6 @@
           "first_seen": "2026-07-03T01:05:28+09:00"
         },
         {
-          "title": "무용부터 미디어아트까지…종로구, 북촌서 11주간 릴레이 전시 - 아시아투데이",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5BaWg0ZjE5dlJ4SnhCTWl0SUdoWTUwRWFMamJDdkowSFpjUk5xTW9BclF5bm1yM3g0ejlRN1ZESC1jb0c3WE14Q05hMmstaTNOT2NYZDJGd2x6R1JwWkRjY0Y5TEI3NzhxV2JHcHR3?oc=5",
-          "source": "아시아투데이",
-          "summary": "",
-          "published": "2026-06-28",
-          "image": "",
-          "first_seen": "2026-07-01T07:06:01+09:00"
-        },
-        {
           "title": "충북문화재단, 현대미술동인 ‘SLIPPER’ 단체전 ‘테·이·크·아·웃’ 개최 - v.daum.net",
           "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1HVXFZVlM1ekVQQzAwNUEtckhwYTFYS3BJcE1LYVZjXzNpN1c1cTZUcWhsV3Z3SDlBYXFybUFRTW90QWVXWmRJMVc3b0JjTlE?oc=5",
           "source": "v.daum.net",
@@ -1082,6 +1100,33 @@
       "id": "grants",
       "name": "지원사업",
       "items": [
+        {
+          "title": "콘진원, ‘글로벌 비즈니스 라운드테이블’ 참가기업 모집 - 벤처타임즈",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1yNXJSRUhMTFYxMUV6UUhNSGJDQ0JGVGsydkItMWRkMmU4TXhuRV9XZTlCaHRSRVVxTk9IRW1fdVg3UWRaNWNVVVNnclNYMjI3TEYwNldHQjJ2NmZ4RTBuQmtDT2J3Zw?oc=5",
+          "source": "벤처타임즈",
+          "summary": "",
+          "published": "2026-07-15",
+          "image": "",
+          "first_seen": "2026-07-16T00:26:14+09:00"
+        },
+        {
+          "title": "JTBC 회생 사태에 문체부 “콘텐츠 제작지원 및 저금리 융자지원 규모 확대” - 디지털데일리",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFAwd2lKY1A0VkdldnBFRmphd1B6ZzgtNDBBdnJTX216OEJsRUdyeVRDU05VaXBXcVg3UlczS2Q3Z3hmOHlPeHVUQTRfczZRZmV4dlc0T0xEYmhCWDJkaWl4aEV0RnU?oc=5",
+          "source": "디지털데일리",
+          "summary": "",
+          "published": "2026-07-15",
+          "image": "",
+          "first_seen": "2026-07-16T00:26:14+09:00"
+        },
+        {
+          "title": "시민 카메라로 담는 부산 도시재생… 부산도시공사, 영상 콘텐츠 공모 - 아시아경제",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBPRnBaSnVqc3ozWFpIT3VBWkd0OUxNZTBuWmNuR3NjdDYzLTIycUEzM0xwcmVKVXZBRUR3YkZPdFIxTVRlaTFUbmhGWWI4TmhzUWRDczJKLVRQRDlBZHl3UQ?oc=5",
+          "source": "아시아경제",
+          "summary": "",
+          "published": "2026-07-15",
+          "image": "",
+          "first_seen": "2026-07-16T00:26:14+09:00"
+        },
         {
           "title": "정부 \"AI 콘텐츠진흥법 연내 발의…게임 지원 예산도 확대\" - v.daum.net",
           "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBCLXZzRjNubzNOYlVVQlRLUHdVLW9rOUZVYUM1SW1qakxLNEJmLU50Z0ZLVDRBQXNHV2FaSmZEMGFvM0VHclE?oc=5",
@@ -1108,6 +1153,15 @@
           "published": "2026-07-14",
           "image": "",
           "first_seen": "2026-07-15T06:43:32+09:00"
+        },
+        {
+          "title": "정부 \"AI 콘텐츠진흥법 연내 발의…게임 지원 예산도 확대\" - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1uazNxem00WWNWR05HZzBETTJjbWUwYWVLUW1HZE5zdmw2ZVg1MzdpNTFISmpueE1UTXl2T1ZFREtUQmwyRGNueXpQWHlfaDVSSWNScQ?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-07-14",
+          "image": "",
+          "first_seen": "2026-07-16T00:26:14+09:00"
         },
         {
           "title": "문체부·저작권위, K-콘텐츠 해외 저작권 등록·출원 지원사업 2차 공모 - 비욘드포스트",
@@ -1315,42 +1369,6 @@
           "published": "2026-07-06",
           "image": "",
           "first_seen": "2026-07-11T01:24:58+09:00"
-        },
-        {
-          "title": "코웨이, 비렉스 AI 영상 광고·숏폼 공모전 개최 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE56NTdkWGlSSnF6RHhSeFRvSzRfcXRtMTY5R1VsQ1RKNHFYM3FZb1g0Mmx5QzVmUm1PdDdLSEdta2Q4R3NvMFVJSGg3X0pRa0E?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-07-06",
-          "image": "",
-          "first_seen": "2026-07-11T23:53:57+09:00"
-        },
-        {
-          "title": "“역사·설화 담은 영상 만든다”…‘스토리 인 충북’ 공모 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1VSmc5MFN6RkNWU3E5Y1RBOFBOV25RYnNxbzlwWDhwdlVNNzdraFhjUGE3ZTUwRUx2X2NMakdkVkxETjRyUTdRSE5BVkJaOVE?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-07-05",
-          "image": "",
-          "first_seen": "2026-07-10T01:27:36+09:00"
-        },
-        {
-          "title": "AI로 지진 행동요령 알린다…행안부, 국민 영상 공모전 개최 - 지디넷코리아",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBYSldrRUpCN0VYREVOb1hmd0ZkeFpFcjJoWWNibERnNENGMklkVThDY1hMQWozSU5hMUh4dnNhWnpQbmkxNnE3X1FnQ1hFXzlwUURFQTF3?oc=5",
-          "source": "지디넷코리아",
-          "summary": "",
-          "published": "2026-07-05",
-          "image": "",
-          "first_seen": "2026-07-12T23:56:45+09:00"
-        },
-        {
-          "title": "시청자미디어대상 방송영상 공모전…9월 7일까지 접수 - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9QaWxpaUR6X2dZdWdfcWs3OXJwSW83cVhxdnNEVE1Gb0dvc2FvZEg0a1BXdmo3SUE2Y1liWFZHTnRWMkc2UDNyUHBwdjBnYWdBYjU0amZRcGNYNlRHTzRTa9IBYEFVX3lxTE9QaWxpaUR6X2dZdWdfcWs3OXJwSW83cVhxdnNEVE1Gb0dvc2FvZEg0a1BXdmo3SUE2Y1liWFZHTnRWMkc2UDNyUHBwdjBnYWdBYjU0amZRcGNYNlRHTzRTaw?oc=5",
-          "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-07-03",
-          "image": "",
-          "first_seen": "2026-07-04T00:52:37+09:00"
         }
       ]
     },
@@ -1358,6 +1376,24 @@
       "id": "design",
       "name": "디자인",
       "items": [
+        {
+          "title": "‘미감과 혁신성’ 다 잡았다… 빅크, 어워즈 2관왕 달성 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE84RVpnZkNrcFp4WTJVM1pKcS1ZYXRQb1J5S2N2R3B2d3FlU294T1QwOUVxT2ZUVUxWNXpHY3ZPU3UwZHFlbFFnSW9tcjJqQS1WRl9qeg?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-07-15",
+          "image": "",
+          "first_seen": "2026-07-16T00:26:14+09:00"
+        },
+        {
+          "title": "브랜드에 디자인을 입히다… 지역기업 성장 파트너 '디자인그룹 앤(ANN)' - 영남경제",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9MSFJnRHQyQXBERk9SbHJZRlY5OUZiTzhjaHkwUW84dm9TOXl3ajVOdEw2aGc0ZjlYeG9weDB0eHdyaUZ2WHNINzlOeFprZ0JZU1FyUVlrcTRpbVM2RXhPRGhfLWFtODQ?oc=5",
+          "source": "영남경제",
+          "summary": "",
+          "published": "2026-07-15",
+          "image": "",
+          "first_seen": "2026-07-16T00:26:14+09:00"
+        },
         {
           "title": "미래를 읽는 네 개의 디자인 키워드, iF 디자인 트렌드 리포트 2026 - 디자인플러스",
           "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5YZTNlNEFvVGo5NXpRYWdLTzM5bDRtTkJWaHlOME5qbjhmN3JqQ3NvQW91SlJXQWtuVWljbURyd3Z1enFtTUh1WTM1S3k?oc=5",
@@ -1609,15 +1645,6 @@
           "published": "2026-06-24",
           "image": "",
           "first_seen": "2026-07-08T01:31:25+09:00"
-        },
-        {
-          "title": "[현장] “AI·SW로 취업 문 열다” 미림마이스터고 실력 증명 무대 ‘뉴미디어 IT쇼 및 잡매칭데이’ 개막 - 마이데일리",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFByQS1idGRUTG00UHF0MkR1U3BBOFQtekdmT2Z0QzA5NEtucXBGbUNrZVIyTkJOQlZfcm5sb3NlMjdGT1BYTzV2RmI3dFFzLXMweHRtLUR2bUkwMFlTd0EteQ?oc=5",
-          "source": "마이데일리",
-          "summary": "",
-          "published": "2026-06-19",
-          "image": "",
-          "first_seen": "2026-07-03T01:05:28+09:00"
         }
       ]
     },

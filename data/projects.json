@@ -1,14 +1,25 @@
 {
-  "updated": "2026-07-14T21:43:42.601829+00:00",
+  "updated": "2026-07-15T15:26:21.430820+00:00",
   "source": "github.com/nextsunny-ai",
   "repos": [
+    {
+      "name": "goods-factory",
+      "description": "GOODS FACTORY — 굿즈 기획·제작 원스톱 웹앱 (기획·시장분석·굿즈선정·디자인·목업·스케줄·발주)",
+      "html_url": "https://github.com/nextsunny-ai/goods-factory",
+      "homepage": "",
+      "language": "JavaScript",
+      "pushed_at": "2026-07-15T15:08:04Z",
+      "has_pages": true,
+      "pages_url": "https://nextsunny-ai.github.io/goods-factory/",
+      "stars": 0
+    },
     {
       "name": "sunny-home",
       "description": "Sunny personal home",
       "html_url": "https://github.com/nextsunny-ai/sunny-home",
       "homepage": "",
       "language": "HTML",
-      "pushed_at": "2026-07-14T15:23:33Z",
+      "pushed_at": "2026-07-14T21:43:43Z",
       "has_pages": true,
       "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
       "stars": 0
@@ -121,17 +132,6 @@
       "pushed_at": "2026-05-31T14:17:53Z",
       "has_pages": true,
       "pages_url": "https://nextsunny-ai.github.io/retro-remake-report/",
-      "stars": 0
-    },
-    {
-      "name": "ai-workshop",
-      "description": "AI Workshop — Birch Sound, 42 slides + PDF",
-      "html_url": "https://github.com/nextsunny-ai/ai-workshop",
-      "homepage": "",
-      "language": "HTML",
-      "pushed_at": "2026-05-26T08:22:24Z",
-      "has_pages": true,
-      "pages_url": "https://nextsunny-ai.github.io/ai-workshop/",
       "stars": 0
     }
   ]
