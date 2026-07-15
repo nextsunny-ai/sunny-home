@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-16T00:26:14+09:00",
+  "updated": "2026-07-16T06:44:30+09:00",
   "categories": [
     {
       "id": "ai",
@@ -13,6 +13,15 @@
           "published": "2026-07-15",
           "image": "",
           "first_seen": "2026-07-16T00:26:14+09:00"
+        },
+        {
+          "title": "오라클, ‘퓨전 에이전틱 애플리케이션’ 개발 플랫폼 공개…기업용 AI 에이전트 시대 본격화 - 인공지능신문",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1aOU1udU5SWmFaSnhwQjhXVmJmOTRLS21aOXg5OE1EMm52U0M4T1BaaU9EeEJJR2tXSTNlbFd3SVpkNmNBWm9kQktJMGhQa211M1NPb1ExNjhQS2NlOVR3MGlKODBvQlk?oc=5",
+          "source": "인공지능신문",
+          "summary": "",
+          "published": "2026-07-15",
+          "image": "",
+          "first_seen": "2026-07-16T06:44:30+09:00"
         },
         {
           "title": "LTM Partners with Anthropic to Accelerate Claude Adoption and Expand Enterprise Delivery - 뉴스와이어",
@@ -265,15 +274,6 @@
           "published": "2026-07-08",
           "image": "",
           "first_seen": "2026-07-16T00:26:14+09:00"
-        },
-        {
-          "title": "AI 에이전트가 전체 랜섬웨어 공격 주도... ‘제이드퍼퍼’(JadePuffer) 공격 포착 - 보안뉴스",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1CcVB1SDhZbkhRbEZQQnp4ckJoVWRiM1NMWXdnTGVOaEEzQVlyOWFOM2tRakZIWTZTY0twb0lzMTRIc2R2UWhYUWE4M0h6M0hjeTJkb2J4d2RIUVRraUJjdWw4NEd2Zy05TmxRVjl3?oc=5",
-          "source": "보안뉴스",
-          "summary": "",
-          "published": "2026-07-07",
-          "image": "",
-          "first_seen": "2026-07-09T01:01:52+09:00"
         }
       ]
     },
@@ -861,6 +861,15 @@
           "first_seen": "2026-07-16T00:26:14+09:00"
         },
         {
+          "title": "양양서 생성형 AI 활용 미디어아트 전시회 개최 - 2news.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9lQmV5Y1NZbWI3bFpKRTB1dElPUFZlSmtLd1N4clRNMVpxaHhUdlFEYW1lRXJSYXVzcjJGQWM5Z1owaFVXODFKTVJPLXlnajhPYktwbnN4QTBHRlhrYVVWVm1CUi1qMmRY?oc=5",
+          "source": "2news.co.kr",
+          "summary": "",
+          "published": "2026-07-15",
+          "image": "",
+          "first_seen": "2026-07-16T06:44:30+09:00"
+        },
+        {
           "title": "이이남 작가, 서울신라호텔서 구글과 협업 미디어아트 공개 - KBC광주방송",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1BSS1MYmIxQWREMi0yTjVVd0N5Vl8tcm5VQnRfc3lLd193M3NQemNkQWRrdDhDeTJHWEY4T1JXYjdoQ3I4YUxGQjJTbWJITzZGUjVrN2xJYU51dExTRnplbg?oc=5",
           "source": "KBC광주방송",
@@ -1023,6 +1032,15 @@
           "first_seen": "2026-07-07T01:51:51+09:00"
         },
         {
+          "title": "인터컨티넨탈 파르나스, 로비서 현대미술 기획전 개최 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBGMjh5OWJOSXp3bmJHZW9xVmFhbmNvTEMzVXYwdnJnbDBrb2k4M0lZSXdYQTcxQUJqamppNTVpelRGbGhDQ0N4MHNTbDZHOHM?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-07-03",
+          "image": "",
+          "first_seen": "2026-07-16T06:44:30+09:00"
+        },
+        {
           "title": "\"오타쿠 문화를 예술 영역으로\"…'日현대미술가' 미스터, 10여년 만에 서울 전시 - 뉴스1",
           "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1ib18tRWktdnRldWVtbnE0d0NmQ2cwT0FMNlpOMWF3VFh6dURKYUhTYmZoY2IxRjI3SWpxQ3d0NmwwR0l0Wi1RMl94QjJYLXBiR3hVV2tVaEVmQllXSkxIRkJqRlRESWhvMDN2cENVZERadw?oc=5",
           "source": "뉴스1",
@@ -1030,15 +1048,6 @@
           "published": "2026-07-02",
           "image": "",
           "first_seen": "2026-07-10T07:10:36+09:00"
-        },
-        {
-          "title": "공항서 미술 만난다…김포·김해공항서 조각·미디어아트 전시 - 경기일보",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1veDQ0TGFyZjBhMkRVbG1rSmg3VzlZeFIwT2s1UmVDWHAzT1J6MmpBanU2OG1OUWF1OE1WMUViYkVFQnZrajNBSTlZZENWTmFsM1RtRmZMcmVIT2s?oc=5",
-          "source": "경기일보",
-          "summary": "",
-          "published": "2026-07-01",
-          "image": "",
-          "first_seen": "2026-07-02T01:27:15+09:00"
         },
         {
           "title": "[단독] “원화인 줄 알고 갔는데 미디어아트?”…예술의전당 고야전, 불만 확산 - 위메이크뉴스",
@@ -1555,24 +1564,6 @@
           "published": "2026-07-02",
           "image": "",
           "first_seen": "2026-07-05T00:05:49+09:00"
-        },
-        {
-          "title": "누구나 만드는 시대. 결국 디자이너의 역할은. (1) - 브런치",
-          "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTFBNYmFzSVRZdVlfa2NacnFfamNHZDVxZG95a2tiMXFiakJ6OF83RnlfRnFiZWdRQXpfaTNSTUhQN3YtbDdP?oc=5",
-          "source": "브런치",
-          "summary": "",
-          "published": "2026-07-01",
-          "image": "",
-          "first_seen": "2026-07-02T01:27:15+09:00"
-        },
-        {
-          "title": "벤처타임즈-예신뷰, 벤처기업 무료 브랜딩 지원 위한 MOU 체결 - 뉴스와이어",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5UMVhYaE5UZEZYYi0tMlo1cnFSeDNJTDV6Qy1VaF9mWkRQZGpZbUJwZU4xX3Buc2pNcU96VjN4YVRrRnVWWWxyeml6WTFGVGRXN2VEemJYVWlFVm9aVmU4?oc=5",
-          "source": "뉴스와이어",
-          "summary": "",
-          "published": "2026-07-01",
-          "image": "",
-          "first_seen": "2026-07-02T01:27:15+09:00"
         },
         {
           "title": "누구나 만드는 시대. 결국 디자이너의 역할은. (1) - 브런치",
