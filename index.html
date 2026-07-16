@@ -1467,6 +1467,144 @@ body {
     </div>
   </section>
 
+  <!-- ═══ MY PRODUCTS & LINKS ═══ (공개 · 대표님 라이브 서비스 한눈에, 2026-07-16 리안 v6) -->
+  <style>
+  .products-section, .live-section { padding: 56px 56px 64px; max-width: 1400px; margin: 0 auto; }
+  .prod-sub { color: var(--text-mute); font-size: 0.78rem; margin-top: -22px; margin-bottom: 22px; line-height: 1.5; }
+  .prod-group-label {
+    font-family: var(--mono); font-size: 0.62rem; font-weight: 700;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-mute);
+    margin: 26px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border);
+  }
+  .prod-group-label:first-of-type { margin-top: 4px; }
+  .prod-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 12px;
+  }
+  .prod-card {
+    background: var(--bg-elevated); border: 1px solid var(--border);
+    border-radius: 12px; padding: 15px 16px 14px;
+    text-decoration: none; color: inherit;
+    display: flex; flex-direction: column; gap: 6px;
+    min-height: 44px;
+    transition: transform .15s var(--ease), box-shadow .15s var(--ease), border-color .15s var(--ease);
+  }
+  .prod-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); border-color: var(--orange); }
+  .prod-card-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  .prod-name { font-size: 0.9rem; font-weight: 700; letter-spacing: -0.01em; }
+  .prod-badge {
+    font-family: var(--mono); font-size: 0.5rem; font-weight: 700;
+    letter-spacing: 0.08em; padding: 3px 7px; border-radius: 999px;
+    flex-shrink: 0; text-transform: uppercase;
+  }
+  .prod-badge.live    { background: #DCFCE7; color: #15803D; }
+  .prod-badge.flagship{ background: #FEF3C7; color: #92400E; }
+  .prod-badge.beta    { background: var(--orange-soft); color: var(--deep-orange); }
+  .prod-host { font-size: 0.62rem; color: var(--text-mute); font-family: var(--mono); letter-spacing: 0.02em; word-break: break-all; }
+  .prod-desc { font-size: 0.76rem; color: var(--text-sub); line-height: 1.5; margin-top: 1px; }
+
+  /* Live status (대표님 전용 · 로그인 후에만) */
+  .live-card { background: var(--bg); border: 1px dashed var(--border); border-radius: 12px; padding: 18px 18px 20px; display: flex; flex-direction: column; gap: 10px; }
+  .live-card-title { font-size: 0.86rem; font-weight: 700; letter-spacing: -0.005em; }
+  .live-ph { font-size: 0.74rem; color: var(--text-mute); line-height: 1.55; }
+  .live-ph .dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--amber); margin-right: 6px; vertical-align: middle; }
+  .live-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin-top: 6px; }
+  .live-dash-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    margin-top: 18px; min-height: 44px; padding: 11px 20px;
+    background: var(--bg-elevated); color: var(--text-sub);
+    border: 1px dashed var(--border-accent); border-radius: 10px;
+    font-size: 0.78rem; font-weight: 600; text-decoration: none;
+    transition: all .15s var(--ease);
+  }
+  .live-dash-btn:hover { border-style: solid; border-color: var(--orange); color: var(--text); }
+  .live-lock-tag { font-family: var(--mono); font-size: 0.58rem; font-weight: 700; letter-spacing: 0.1em; color: var(--deep-orange); text-transform: uppercase; }
+
+  @media (max-width: 1024px) { .products-section, .live-section { padding: 48px 32px; } }
+  @media (max-width: 640px)  {
+    .products-section, .live-section { padding: 40px 16px; }
+    .prod-grid { grid-template-columns: 1fr; }
+    .prod-name { font-size: 0.86rem; }
+  }
+  </style>
+  <section class="products-section reveal" id="products-section">
+    <div class="section-eyebrow">Products & Links</div>
+    <div class="section-header">내 제품 · 링크</div>
+    <div class="prod-sub">운영 중인 서비스로 바로 가기 — 링크 찾아 헤매지 않게</div>
+
+    <div class="prod-group-label">라이브 서비스</div>
+    <div class="prod-grid">
+      <a href="https://nextsunny-ai.github.io/firefly-indexer" target="_blank" rel="noopener" class="prod-card">
+        <div class="prod-card-top"><span class="prod-name">Firefly Indexer</span><span class="prod-badge flagship">정식출시</span></div>
+        <div class="prod-host">nextsunny-ai.github.io/firefly-indexer</div>
+        <div class="prod-desc">어도비 파이어플라이 인덱서. 관계자 실사용 중.</div>
+      </a>
+      <a href="https://sunnyremover.com" target="_blank" rel="noopener" class="prod-card">
+        <div class="prod-card-top"><span class="prod-name">SUNNY REMOVER</span><span class="prod-badge live">Live</span></div>
+        <div class="prod-host">sunnyremover.com</div>
+        <div class="prod-desc">워터마크 · 배경(누끼) 제거 통합. 브라우저 완결.</div>
+      </a>
+      <a href="https://sunnyeditor.com" target="_blank" rel="noopener" class="prod-card">
+        <div class="prod-card-top"><span class="prod-name">써니에디터</span><span class="prod-badge live">Live</span></div>
+        <div class="prod-host">sunnyeditor.com</div>
+        <div class="prod-desc">HTML · ZIP · 폴더 편집기. 한 · 영.</div>
+      </a>
+      <a href="https://story.sunnytoon.com" target="_blank" rel="noopener" class="prod-card">
+        <div class="prod-card-top"><span class="prod-name">Story Maker</span><span class="prod-badge live">Live</span></div>
+        <div class="prod-host">story.sunnytoon.com</div>
+        <div class="prod-desc">시나리오 · 드라마 · 웹소설 작성 도구.</div>
+      </a>
+      <a href="https://agent.sunnytoon.com" target="_blank" rel="noopener" class="prod-card">
+        <div class="prod-card-top"><span class="prod-name">Agent Pro</span><span class="prod-badge live">Live</span></div>
+        <div class="prod-host">agent.sunnytoon.com</div>
+        <div class="prod-desc">12 페르소나 · 회사별 실행. 데스크탑 앱 준비.</div>
+      </a>
+      <a href="https://visual.sunnytoon.com" target="_blank" rel="noopener" class="prod-card">
+        <div class="prod-card-top"><span class="prod-name">Visual Maker</span><span class="prod-badge live">Live</span></div>
+        <div class="prod-host">visual.sunnytoon.com</div>
+        <div class="prod-desc">이미지 생산 도구 (리안 메인). 맥미니 운영.</div>
+      </a>
+    </div>
+
+    <div class="prod-group-label">진행 제품 · 시안</div>
+    <div class="prod-grid">
+      <a href="https://nextsunny-ai.github.io/goods-factory" target="_blank" rel="noopener" class="prod-card">
+        <div class="prod-card-top"><span class="prod-name">굿즈 팩토리</span><span class="prod-badge beta">테스트</span></div>
+        <div class="prod-host">nextsunny-ai.github.io/goods-factory</div>
+        <div class="prod-desc">굿즈 자동 제작 · 제안서. 출시 컨펌 대기.</div>
+      </a>
+      <a href="https://nextsunny-ai.github.io/jajamaru-showcase" target="_blank" rel="noopener" class="prod-card">
+        <div class="prod-card-top"><span class="prod-name">자자마루 쇼케이스</span><span class="prod-badge live">Live</span></div>
+        <div class="prod-host">nextsunny-ai.github.io/jajamaru-showcase</div>
+        <div class="prod-desc">3D 토이 쇼케이스. 한 · 일 병기.</div>
+      </a>
+    </div>
+
+    <div class="prod-group-label">회사별</div>
+    <div class="prod-grid">
+      <a href="https://sunnyent.co.kr" target="_blank" rel="noopener" class="prod-card">
+        <div class="prod-card-top"><span class="prod-name">써니엔터</span><span class="prod-badge live">Live</span></div>
+        <div class="prod-host">sunnyent.co.kr</div>
+        <div class="prod-desc">회사 홈 v5 (시네마틱 에디토리얼).</div>
+      </a>
+      <a href="https://nextsunny-ai.github.io/nextart-home" target="_blank" rel="noopener" class="prod-card">
+        <div class="prod-card-top"><span class="prod-name">넥스트아트</span><span class="prod-badge live">Live</span></div>
+        <div class="prod-host">nextsunny-ai.github.io/nextart-home</div>
+        <div class="prod-desc">넥스트아트 회사 홈.</div>
+      </a>
+      <a href="https://www.birchsound.net" target="_blank" rel="noopener" class="prod-card">
+        <div class="prod-card-top"><span class="prod-name">버치사운드</span><span class="prod-badge live">Live</span></div>
+        <div class="prod-host">www.birchsound.net</div>
+        <div class="prod-desc">영문 글로벌 회사 사이트.</div>
+      </a>
+      <a href="https://nextsunny-ai.github.io/goodsmoment-preview" target="_blank" rel="noopener" class="prod-card">
+        <div class="prod-card-top"><span class="prod-name">굿즈모먼트</span><span class="prod-badge beta">프리뷰</span></div>
+        <div class="prod-host">nextsunny-ai.github.io/goodsmoment-preview</div>
+        <div class="prod-desc">굿즈모먼트 프리뷰.</div>
+      </a>
+    </div>
+  </section>
+
   <!-- ═══ QUICK LINKS ═══ (자주 가는 사이트 · 옛 Tools 대체) -->
   <section class="quick-links-section reveal" id="quick-links-section" style="padding: 56px 56px 64px; max-width: 1400px; margin: 0 auto;">
     <div class="section-eyebrow">Bookmarks</div>
@@ -1481,6 +1619,28 @@ body {
 
 
   <!-- ★ 2026-05-14: 옛 NEWS·DEADLINES 섹션 제거 (= 달력·뉴스 = 인트로로 이동) -->
+
+  <!-- ═══ LIVE STATUS ═══ (★ 대표님 로그인(토큰) 후에만 노출 · 비로그인 숨김, 2026-07-16 리안 v6) -->
+  <section class="live-section reveal" id="live-status-section" style="display:none;" aria-hidden="true">
+    <div class="section-eyebrow"><span class="live-lock-tag">Private · 대표님 전용</span></div>
+    <div class="section-header">라이브 현황 · 최근 작업</div>
+    <div class="prod-sub">12 에이전트 야간 작업 · 서비스 상태를 한 곳에 — 데이터 연결은 테오가 붙입니다.</div>
+    <div class="live-grid">
+      <div class="live-card">
+        <div class="live-card-title">최근 작업</div>
+        <div class="live-ph"><span class="dot"></span>곧 연결 · 헤드리스 워커 작업 로그</div>
+      </div>
+      <div class="live-card">
+        <div class="live-card-title">서비스 상태</div>
+        <div class="live-ph"><span class="dot"></span>곧 연결 · 라이브 서비스 헬스체크</div>
+      </div>
+      <div class="live-card">
+        <div class="live-card-title">대기 중 결정</div>
+        <div class="live-ph"><span class="dot"></span>곧 연결 · 컨펌 대기 항목</div>
+      </div>
+    </div>
+    <a href="https://dash.sunnytoon.com" target="_blank" rel="noopener" class="live-dash-btn">대시보드 열기 (비번 보호) · 준비 중 →</a>
+  </section>
 
   <!-- ═══ ADMIN HUB ═══ (= 3 프로그램 관리 진입 + 페르소나, 디자인 토큰 일관) -->
   <section class="admin-section reveal" id="admin-section">
@@ -1579,6 +1739,17 @@ body {
   .tq-en { display: block; font-size: 0.54rem; color: var(--text-mute); font-family: var(--mono); margin-left: 0; margin-top: 2px; letter-spacing: 0.1em; font-weight: 600; opacity: 0.6; }
   .tq-role { font-size: 0.65rem; color: var(--text-sub); white-space: normal; line-height: 1.25; margin-top: 4px; }
   .tq-co { display: inline-block; font-size: 0.55rem; font-family: var(--mono); letter-spacing: 0.06em; padding: 2px 6px; border-radius: 999px; margin-top: 5px; }
+  /* ★ 2026-07-16 리안 v6: 텔레그램 '일 시키기' 버튼 (카드 클릭=채팅 모달은 그대로 유지) */
+  .tq-tg-btn {
+    display: flex; align-items: center; justify-content: center;
+    width: 100%; margin-top: 7px; min-height: 34px; padding: 6px 8px;
+    font-size: 0.64rem; font-weight: 700; letter-spacing: 0.01em;
+    color: var(--deep-orange); text-decoration: none;
+    background: var(--orange-soft); border: 1px solid var(--border-accent);
+    border-radius: 8px; transition: all .15s var(--ease);
+  }
+  .tq-tg-btn:hover { background: var(--orange); color: #fff; border-color: var(--orange); }
+  @media (max-width: 640px) { .tq-tg-btn { min-height: 44px; font-size: 0.7rem; } }
 
   /* ★ 섹션 박스 (= 위아래 구분, 2026-05-11 대표님 명시) */
   .mid,
@@ -2321,6 +2492,17 @@ function updateKeyBtnUI() {
   if(!b) return;
   if(getApiKey()) { b.classList.add('has-key'); l.textContent = '키 저장됨'; i.textContent = '✓'; }
   else { b.classList.remove('has-key'); l.textContent = 'API 키 설정'; i.textContent = '🔑'; }
+  updateLiveStatusVisibility();
+}
+
+// ★ 2026-07-16 리안 v6: '라이브 현황' 섹션 = 대표님 로그인(OAuth/API 토큰 저장) 후에만 노출.
+// 토큰 = getApiKey() 가 있으면 = 대표님 본인 기기 = 노출, 없으면(게스트·공개) = 숨김.
+function updateLiveStatusVisibility() {
+  const sec = document.getElementById('live-status-section');
+  if(!sec) return;
+  const on = !!getApiKey();
+  sec.style.display = on ? '' : 'none';
+  sec.setAttribute('aria-hidden', on ? 'false' : 'true');
 }
 
 function renderTeamGrid() {
@@ -2471,7 +2653,11 @@ function renderTeamQuick() {
   const g = document.getElementById('teamQuick');
   if(!g) return;
   const visible = TEAM.filter(p => isPersonaVisible(p.id));
-  g.innerHTML = visible.map(p => `
+  g.innerHTML = visible.map(p => {
+    // ★ 2026-07-16 리안 v6: 텔레그램 딥링크 = 노트북(웹·데스크톱 앱)·폰 양쪽에서 열림.
+    // '<이름>야 ' 로 대화가 미리 채워진 채 @NextSunnybot 이 열림.
+    const tgLink = 'https://t.me/' + TG_BOT_USERNAME + '?text=' + encodeURIComponent(p.name + '야 ');
+    return `
     <div class="tq-item" onclick="openPersonaModal('${p.id}')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPersonaModal('${p.id}')}">
       <img src="${p.avatar}" alt="${p.name}" class="tq-avatar" onerror="this.style.background='${p.color}';this.style.padding='0';this.outerHTML='<div class=&quot;tq-avatar&quot; style=&quot;background:${p.color};display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:13px&quot;>${p.name.charAt(0)}</div>'">
       <div class="tq-info">
@@ -2479,8 +2665,10 @@ function renderTeamQuick() {
         <div class="tq-role">${p.role}</div>
       </div>
       <span class="tq-co" style="background:${p.color}1a;color:${p.color}">${p.co}</span>
+      <a class="tq-tg-btn" href="${tgLink}" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="텔레그램으로 ${p.name}에게 일 시키기">일 시키기</a>
     </div>
-  `).join('');
+  `;
+  }).join('');
 }
 
 function escapeHtml(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
