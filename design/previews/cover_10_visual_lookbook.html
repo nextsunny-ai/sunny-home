@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>10 — Visual Lookbook · Magazine</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,700;1,6..96,400;1,6..96,500&family=Noto+Serif+KR:wght@400;500;600&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { width: 100%; }
+body {
+  background: #E9E4D8;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Serif KR', serif;
+}
+.slide {
+  width: 100%;
+  max-width: 1920px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  position: relative;
+  background: #F3EFE7;
+  overflow: hidden;
+}
+.slide + .slide { margin-top: 24px; }
+.slide.framed { padding: 26px; }
+
+/* ── 공통: 폴리오·크레딧·캡션·그레인 ── */
+.folio {
+  position: absolute;
+  left: 0; right: 0;
+  bottom: 4.5%;
+  z-index: 6;
+  text-align: center;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+}
+.folio.on-photo { color: rgba(251, 247, 238, 0.9); }
+.folio.on-paper { color: #221C16; }
+.credit {
+  position: absolute;
+  right: 3%;
+  bottom: 4.5%;
+  z-index: 6;
+  font-family: 'Bodoni Moda', serif;
+  font-style: italic;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+}
+.credit.on-photo { color: rgba(251, 247, 238, 0.75); }
+.credit.on-paper { color: rgba(34, 28, 22, 0.6); }
+.photo-caption {
+  position: absolute;
+  left: 3%;
+  bottom: 4.5%;
+  z-index: 6;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: rgba(251, 247, 238, 0.9);
+}
+.grain {
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-radial-gradient(circle at 21% 37%, rgba(255, 248, 236, 0.03) 0 1px, transparent 1px 3px),
+    repeating-radial-gradient(circle at 69% 71%, rgba(40, 26, 14, 0.05) 0 1px, transparent 1px 4px);
+  mix-blend-mode: overlay;
+}
+.vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 135% 110% at 50% 42%, transparent 60%, rgba(46, 32, 18, 0.34) 100%);
+}
+
+/* ════ 1. 커버 — 사구 + 인물 + 디돈 마스트헤드 ════ */
+.plate {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(180deg,
+    #D9BC9B 0%, #E3C6A2 22%, #EED3AB 38%, #D9B488 50%,
+    #B68F63 62%, #8F6E48 78%, #6E5436 100%);
+}
+.plate .sun {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle 7% at 67% 30%, rgba(250, 233, 205, 0.95) 0%, rgba(248, 222, 182, 0.5) 55%, transparent 78%),
+    radial-gradient(ellipse 70% 40% at 65% 34%, rgba(243, 214, 172, 0.45) 0%, transparent 70%);
+}
+.dune { position: absolute; left: 0; right: 0; bottom: 0; }
+.dune.d1 {
+  height: 52%;
+  background: linear-gradient(105deg, #C49A6A 0%, #B0855A 48%, #7E5F3E 52%, #6B4F33 100%);
+  clip-path: polygon(0 64%, 22% 38%, 47% 26%, 70% 40%, 100% 30%, 100% 100%, 0 100%);
+}
+.dune.d2 {
+  height: 38%;
+  background: linear-gradient(80deg, #8A6843 0%, #75573A 46%, #4E3A26 54%, #44331F 100%);
+  clip-path: polygon(0 44%, 28% 62%, 55% 38%, 78% 56%, 100% 44%, 100% 100%, 0 100%);
+}
+.dune.d3 {
+  height: 22%;
+  background: linear-gradient(180deg, #3B2C1C 0%, #2C2014 100%);
+  clip-path: polygon(0 58%, 30% 40%, 62% 60%, 100% 38%, 100% 100%, 0 100%);
+}
+.figure {
+  position: absolute;
+  left: 55.2%; bottom: 41.5%;
+  width: 3.4%; height: 17%;
+}
+.figure .head {
+  position: absolute;
+  left: 50%; top: 0;
+  width: 34%; aspect-ratio: 1;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: #241A10;
+}
+.figure .bodyy {
+  position: absolute;
+  left: 50%; top: 16%;
+  width: 100%; height: 84%;
+  transform: translateX(-50%);
+  background: #241A10;
+  clip-path: polygon(38% 0, 62% 0, 78% 38%, 96% 100%, 4% 100%, 22% 38%);
+}
+.figure .shadowy {
+  position: absolute;
+  left: -160%; bottom: -3%;
+  width: 200%; height: 5%;
+  background: linear-gradient(90deg, transparent 0%, rgba(30, 20, 10, 0.5) 70%, rgba(30, 20, 10, 0.6) 100%);
+  transform: skewX(48deg);
+}
+.masthead {
+  position: absolute;
+  left: 0; right: 0;
+  top: 10%;
+  z-index: 6;
+  text-align: center;
+  color: #FBF7EE;
+}
+.masthead .issue {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+.masthead h1 {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 196px;
+  font-weight: 500;
+  line-height: 0.9;
+  letter-spacing: 0.01em;
+}
+.masthead h1 em { font-style: italic; font-weight: 400; }
+.masthead .deck {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 0.32em;
+  margin-top: 26px;
+  color: rgba(251, 247, 238, 0.92);
+}
+
+/* ════ 2. 풀블리드 화보 — 새벽 호수 ════ */
+.lake {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,
+    #C8BBA6 0%, #D8C8AC 30%, #E6D4B2 46%, #CBBA9B 52%,
+    #A2937B 60%, #7E715C 76%, #585040 100%);
+}
+.lake .lowsun {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle 5.5% at 38% 44%, rgba(250, 236, 208, 0.9) 0%, rgba(246, 224, 186, 0.4) 55%, transparent 78%),
+    radial-gradient(ellipse 60% 30% at 38% 48%, rgba(240, 216, 176, 0.4) 0%, transparent 70%);
+}
+.lake .island {
+  position: absolute;
+  left: 0; right: 0; bottom: 46%;
+  height: 12%;
+  background: #5E523E;
+  clip-path: polygon(0 78%, 8% 64%, 16% 72%, 24% 58%, 31% 70%, 36% 66%, 100% 100%, 0 100%);
+  opacity: 0.85;
+}
+.lake .island.far {
+  bottom: 50%;
+  height: 8%;
+  opacity: 0.4;
+  clip-path: polygon(58% 100%, 66% 52%, 74% 78%, 83% 44%, 92% 70%, 100% 58%, 100% 100%);
+}
+.lake .water {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 48%;
+  background:
+    repeating-linear-gradient(180deg,
+      rgba(244, 226, 196, 0.12) 0 2px, transparent 2px 14px,
+      rgba(60, 52, 40, 0.1) 14px 15px, transparent 15px 30px),
+    linear-gradient(180deg, #B4A488 0%, #8A7C64 40%, #564E3E 100%);
+}
+.lake .glimmer {
+  position: absolute;
+  left: 30%; bottom: 24%;
+  width: 16%; height: 22%;
+  background: repeating-linear-gradient(180deg,
+    rgba(250, 234, 202, 0.5) 0 2px, transparent 2px 9px);
+  opacity: 0.6;
+}
+.lake .mistband {
+  position: absolute;
+  left: 0; right: 0; bottom: 42%;
+  height: 10%;
+  background: linear-gradient(180deg, transparent 0%, rgba(238, 222, 192, 0.4) 50%, transparent 100%);
+}
+
+/* ════ 3. 시리즈 그리드 — 여백 프레임 ════ */
+.series {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0 86px;
+  gap: 40px;
+}
+.series .chapter {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: #221C16;
+}
+.series .chapter em { font-style: italic; text-transform: none; letter-spacing: 0.1em; }
+.series .row {
+  flex: 1;
+  display: flex;
+  gap: 56px;
+  align-items: stretch;
+  min-height: 0;
+}
+.series figure {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 380px;
+}
+.series .sphoto { flex: 1; position: relative; overflow: hidden; }
+.series figcaption {
+  font-family: 'Bodoni Moda', serif;
+  font-style: italic;
+  font-size: 14px;
+  text-align: center;
+  color: rgba(34, 28, 22, 0.75);
+  letter-spacing: 0.06em;
+}
+/* Plate I — 사구 디테일 */
+.sp1 { background: linear-gradient(118deg, #D9B88C 0%, #C8A270 44%, #8A6A44 50%, #6E5436 100%); }
+.sp1::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(28deg, transparent 0 26px, rgba(110, 84, 54, 0.14) 26px 28px);
+}
+/* Plate II — 걷는 인물 */
+.sp2 { background: linear-gradient(180deg, #E4CCA4 0%, #D2B589 55%, #A8895E 78%, #7E6342 100%); }
+.sp2 .wfig { position: absolute; left: 56%; bottom: 26%; width: 9%; height: 30%; }
+.sp2 .wfig .head { position: absolute; left: 50%; top: 0; width: 36%; aspect-ratio: 1; transform: translateX(-50%); border-radius: 50%; background: #2A1E12; }
+.sp2 .wfig .bodyy { position: absolute; left: 50%; top: 17%; width: 100%; height: 83%; transform: translateX(-50%); background: #2A1E12; clip-path: polygon(36% 0, 64% 0, 74% 42%, 92% 100%, 58% 100%, 50% 55%, 42% 100%, 8% 100%, 26% 42%); }
+.sp2 .wshadow { position: absolute; left: 30%; bottom: 24%; width: 30%; height: 2.5%; background: linear-gradient(90deg, transparent, rgba(40, 26, 14, 0.45)); transform: skewX(52deg); }
+/* Plate III — 갈대밭 */
+.sp3 { background: linear-gradient(180deg, #DCC9A4 0%, #C9B488 46%, #97804F 70%, #6B5A36 100%); }
+.sp3::before {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 62%;
+  background: repeating-linear-gradient(86deg,
+    rgba(74, 60, 34, 0.5) 0 2px, transparent 2px 9px,
+    rgba(104, 86, 50, 0.4) 9px 10px, transparent 10px 17px);
+}
+.sphoto .pgrain {
+  position: absolute;
+  inset: 0;
+  background-image: repeating-radial-gradient(circle at 31% 47%, rgba(255, 248, 236, 0.03) 0 1px, transparent 1px 3px);
+  mix-blend-mode: overlay;
+}
+
+/* ════ 4. 텍스트 인터루드 — 세리프 인용 ════ */
+.interlude {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 40px;
+  padding: 0 16%;
+}
+.interlude .num {
+  font-family: 'Bodoni Moda', serif;
+  font-style: italic;
+  font-size: 44px;
+  font-weight: 400;
+  color: rgba(34, 28, 22, 0.85);
+}
+.interlude blockquote {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.72;
+  letter-spacing: -0.005em;
+  color: #221C16;
+  text-wrap: balance;
+  border: 0;
+}
+.interlude .attribution {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: rgba(34, 28, 22, 0.6);
+}
+
+/* ════ 5. 콜로폰 ════ */
+.colophon {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+}
+.colophon .fin {
+  font-family: 'Bodoni Moda', serif;
+  font-style: italic;
+  font-size: 150px;
+  font-weight: 400;
+  color: #221C16;
+  line-height: 1;
+}
+.colophon dl {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 14px 36px;
+  font-size: 15px;
+}
+.colophon dt {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 12.5px;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(34, 28, 22, 0.55);
+  text-align: right;
+  align-self: center;
+}
+.colophon dd { font-family: 'Noto Serif KR', serif; color: #221C16; }
+</style>
+</head>
+<body>
+
+<!-- 1. 커버 -->
+<section class="slide framed">
+  <div class="plate">
+    <div class="sun"></div>
+    <div class="dune d1"></div>
+    <div class="figure">
+      <span class="shadowy"></span>
+      <span class="head"></span>
+      <span class="bodyy"></span>
+    </div>
+    <div class="dune d2"></div>
+    <div class="dune d3"></div>
+    <div class="grain"></div>
+    <div class="vignette"></div>
+    <header class="masthead">
+      <div class="issue">Vol. 04 — Autumn · Winter 2026</div>
+      <h1>After <em>Light</em></h1>
+      <div class="deck">시즌 룩북 · 키비주얼 컬렉션</div>
+    </header>
+    <div class="folio on-photo">N° 01 — 12</div>
+    <div class="credit on-photo">ph. Dusk Ridge, 2026</div>
+  </div>
+</section>
+
+<!-- 2. 풀블리드 화보 — 새벽 호수 -->
+<section class="slide">
+  <div class="lake">
+    <div class="lowsun"></div>
+    <div class="island far"></div>
+    <div class="island"></div>
+    <div class="water"></div>
+    <div class="glimmer"></div>
+    <div class="mistband"></div>
+  </div>
+  <div class="grain"></div>
+  <div class="vignette"></div>
+  <div class="photo-caption">Cut 02 — Still Water</div>
+  <div class="folio on-photo">N° 02 — 12</div>
+  <div class="credit on-photo">ph. Lake Mist, 2026</div>
+</section>
+
+<!-- 3. 시리즈 그리드 -->
+<section class="slide framed">
+  <div class="series">
+    <div class="chapter">II — <em>Dune Studies</em></div>
+    <div class="row">
+      <figure>
+        <div class="sphoto sp1"><span class="pgrain"></span></div>
+        <figcaption>Plate I — 모래의 결, 정오</figcaption>
+      </figure>
+      <figure>
+        <div class="sphoto sp2">
+          <span class="wshadow"></span>
+          <span class="wfig"><span class="head"></span><span class="bodyy"></span></span>
+          <span class="pgrain"></span>
+        </div>
+        <figcaption>Plate II — 능선을 걷다</figcaption>
+      </figure>
+      <figure>
+        <div class="sphoto sp3"><span class="pgrain"></span></div>
+        <figcaption>Plate III — 바람의 방향</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="folio on-paper">N° 04 — 12</div>
+</section>
+
+<!-- 4. 텍스트 인터루드 -->
+<section class="slide framed">
+  <div class="interlude">
+    <div class="num">III.</div>
+    <blockquote>빛이 사라진 뒤에야 풍경의 윤곽이 남는다.<br/>이번 시즌의 사진은 형태가 아니라 잔상을 기록한다.</blockquote>
+    <div class="attribution">Art Direction Note</div>
+  </div>
+  <div class="folio on-paper">N° 07 — 12</div>
+</section>
+
+<!-- 5. 콜로폰 -->
+<section class="slide framed">
+  <div class="colophon">
+    <div class="fin">Fin.</div>
+    <dl>
+      <dt>Photography</dt><dd>Studio Name</dd>
+      <dt>Art Direction</dt><dd>Director Name</dd>
+      <dt>Season</dt><dd>Autumn · Winter 2026</dd>
+      <dt>Contact</dt><dd>name@studio.com</dd>
+    </dl>
+  </div>
+  <div class="folio on-paper">N° 12 — 12</div>
+</section>
+
+<script>
+// capture helper: ?only=N — 해당 슬라이드만 표시 (캡처용)
+(function () {
+  var n = new URLSearchParams(location.search).get('only');
+  if (!n) return;
+  document.querySelectorAll('.slide').forEach(function (s, i) {
+    if (String(i + 1) !== n) s.style.display = 'none';
+    else s.style.marginTop = '0';
+  });
+})();
+</script>
+</body>
+</html>

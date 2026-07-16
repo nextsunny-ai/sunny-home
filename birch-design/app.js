@@ -139,6 +139,51 @@ const STYLES = [
       '레이아웃': '3-layer 아키텍처 다이어그램 · 다크 코드 카드',
       '용도': 'AR/VR · 앱 개발 기획서 · 기술 명세'
     }
+  },
+  {
+    id: '10',
+    name: '비주얼 룩북',
+    subName: 'Visual Lookbook',
+    desc: '매거진 에디토리얼. 풀블리드 사진 + 디돈 세리프 마스트헤드 + 페이퍼 프레임.',
+    cover: 'previews/cover_10_visual_lookbook.html',
+    meta: {
+      '배경': '#F3EFE7 페이퍼 프레임 + 풀블리드 포토',
+      '텍스트': '#FBF7EE (사진 위) · #221C16',
+      '액센트': '디돈 세리프 타이포 (별도 액센트색 없음)',
+      '폰트': 'Bodoni Moda · Noto Serif KR',
+      '레이아웃': '페이퍼 프레임 · 풀블리드 · 세리프 마스트헤드 · 폴리오',
+      '용도': '페스티벌 키비주얼 덱 · 작품 포트폴리오'
+    }
+  },
+  {
+    id: '11',
+    name: '전시 공간 제안서',
+    subName: 'Exhibition Proposal',
+    desc: '시네마틱 몰입형. 다크 + 연출컷 풀블리드 + 빛 2온도 (앰버·문라이트).',
+    cover: 'previews/cover_11_exhibition_proposal.html',
+    meta: {
+      '배경': '#0B0B10 (다크)',
+      '텍스트': '#ECE9E2 (웜 화이트)',
+      '액센트': '앰버 #E8A85C · 문라이트 #9FB4C8 — 빛 2온도만',
+      '폰트': 'Anton · Pretendard',
+      '레이아웃': '풀블리드 연출컷 · 씬 투어 4분할 · 다크 라인 도면',
+      '용도': '몰입형 전시 · 미디어아트 · 팝업 제안'
+    }
+  },
+  {
+    id: '12',
+    name: '제품 카탈로그',
+    subName: 'Product Catalog',
+    desc: '모노크롬 모듈러 카탈로그. 피처드 셀 + 인덱스 캡션 + 스펙 시트.',
+    cover: 'previews/cover_12_product_catalog.html',
+    meta: {
+      '배경': '#F4F4F1 · 셀 #EBEBE7',
+      '텍스트': '#26262A',
+      '액센트': '모노크롬 (액센트색 없음 · 숫자는 tabular)',
+      '폰트': 'Manrope · Pretendard',
+      '레이아웃': '모듈러 그리드 (피처드 2×2 + 1×1) · 스펙 라인',
+      '용도': '굿즈 · IP 상품 카탈로그'
+    }
   }
 ];
 
@@ -345,7 +390,7 @@ let currentStyle = null;
 
 function openModal(s) {
   currentStyle = s;
-  modalIndex.textContent = `${s.id} / 06 · ${s.subName}`;
+  modalIndex.textContent = `${s.id} / ${String(STYLES.length).padStart(2, '0')} · ${s.subName}`;
   modalTitle.textContent = s.name;
   modalDesc.textContent = s.desc;
   modalMeta.innerHTML = Object.entries(s.meta).map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join('');

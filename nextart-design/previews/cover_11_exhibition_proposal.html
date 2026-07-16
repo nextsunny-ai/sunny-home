@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>11 — Exhibition Proposal · Immersive</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { width: 100%; }
+body {
+  background: #060609;
+  margin: 0;
+  padding: 0;
+  font-family: 'Pretendard Variable', Pretendard, sans-serif;
+  color: #ECE9E2;
+}
+.slide {
+  width: 100%;
+  max-width: 1920px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  background: #0B0B10;
+  position: relative;
+  overflow: hidden;
+}
+.slide + .slide { margin-top: 24px; }
+
+/* ── 공통 ── */
+.run-head {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  z-index: 8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  padding: 0 56px;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(236, 233, 226, 0.66);
+  border-bottom: 1px solid rgba(236, 233, 226, 0.16);
+}
+.run-head .no { color: #E8A85C; }
+.grain {
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  background-image:
+    repeating-radial-gradient(circle at 19% 33%, rgba(236, 226, 208, 0.02) 0 1px, transparent 1px 3px),
+    repeating-radial-gradient(circle at 71% 67%, rgba(0, 0, 0, 0.06) 0 1px, transparent 1px 4px);
+  pointer-events: none;
+}
+.vignette {
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  background: radial-gradient(ellipse 130% 105% at 50% 45%, transparent 55%, rgba(3, 3, 5, 0.6) 100%);
+  pointer-events: none;
+}
+.silhouette { position: absolute; }
+.silhouette::before {
+  /* 머리 */
+  content: '';
+  position: absolute;
+  left: 50%; top: 0;
+  width: 38%; aspect-ratio: 1;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: #040406;
+}
+.silhouette::after {
+  /* 몸통·다리 */
+  content: '';
+  position: absolute;
+  left: 50%; top: 17%;
+  width: 100%; height: 83%;
+  transform: translateX(-50%);
+  background: #040406;
+  clip-path: polygon(30% 0, 70% 0, 84% 30%, 78% 100%, 56% 100%, 50% 48%, 44% 100%, 22% 100%, 16% 30%);
+}
+
+/* ════ 1. 커버 — 빛기둥 홀 ════ */
+.hall {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 90% 50% at 50% 110%, #1A1410 0%, transparent 70%),
+    linear-gradient(180deg, #08080C 0%, #0C0B10 55%, #14100C 100%);
+}
+.shaft {
+  position: absolute;
+  top: 0;
+  height: 78%;
+  background: linear-gradient(180deg,
+    rgba(232, 168, 92, 0.42) 0%,
+    rgba(232, 168, 92, 0.18) 45%,
+    rgba(232, 168, 92, 0.04) 80%,
+    transparent 100%);
+}
+.shaft.cool {
+  background: linear-gradient(180deg,
+    rgba(159, 180, 200, 0.30) 0%,
+    rgba(159, 180, 200, 0.12) 45%,
+    rgba(159, 180, 200, 0.03) 80%,
+    transparent 100%);
+}
+.s1 { left: 12%; width: 5%; transform: skewX(-3deg); }
+.s2 { left: 27%; width: 7%; transform: skewX(-1.5deg); }
+.s3 { left: 46%; width: 9%; }
+.s4 { left: 66%; width: 6%; transform: skewX(1.5deg); }
+.s5 { left: 81%; width: 4.5%; transform: skewX(3deg); }
+.pool {
+  position: absolute;
+  bottom: 4%;
+  height: 9%;
+  background: radial-gradient(ellipse at center, rgba(232, 168, 92, 0.30) 0%, transparent 70%);
+}
+.pool.cool { background: radial-gradient(ellipse at center, rgba(159, 180, 200, 0.22) 0%, transparent 70%); }
+.p1 { left: 9%; width: 11%; }
+.p2 { left: 24%; width: 13%; }
+.p3 { left: 43%; width: 15%; }
+.p4 { left: 63%; width: 12%; }
+.p5 { left: 78%; width: 10%; }
+.fog {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 55% 18% at 30% 78%, rgba(214, 168, 110, 0.10) 0%, transparent 75%),
+    radial-gradient(ellipse 48% 14% at 70% 82%, rgba(159, 180, 200, 0.07) 0%, transparent 75%),
+    radial-gradient(ellipse 70% 22% at 50% 70%, rgba(208, 170, 120, 0.06) 0%, transparent 80%);
+}
+.hall-floorline {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 12%;
+  background: linear-gradient(180deg, transparent 0%, rgba(4, 4, 6, 0.85) 100%);
+}
+.cover-title {
+  position: absolute;
+  left: 56px; bottom: 96px;
+  z-index: 8;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  max-width: 64%;
+}
+.cover-title .label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(236, 233, 226, 0.7);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.cover-title .label::before { content: ''; width: 34px; height: 1px; background: #E8A85C; }
+.cover-title h1 {
+  font-family: 'Anton', 'Pretendard Variable', sans-serif;
+  font-size: 172px;
+  font-weight: 400;
+  line-height: 0.92;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #F2EEE6;
+}
+.cover-title .sub {
+  font-size: 19px;
+  font-weight: 400;
+  color: rgba(236, 233, 226, 0.78);
+  letter-spacing: 0.02em;
+}
+.cover-meta {
+  position: absolute;
+  right: 56px; bottom: 96px;
+  z-index: 8;
+  display: grid;
+  gap: 12px;
+  text-align: right;
+  font-size: 13px;
+}
+.cover-meta dt {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: rgba(236, 233, 226, 0.45);
+  margin-bottom: 3px;
+}
+.cover-meta dd { color: rgba(236, 233, 226, 0.85); }
+
+/* ════ 2. 컨셉 — 회랑 끝의 문 ════ */
+.corridor {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, #07070B 0%, #0B0A0F 60%, #0E0C0E 100%);
+}
+.corridor .wall {
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 38%;
+  background: linear-gradient(90deg, #0A0A0E 0%, #131017 100%);
+}
+.corridor .wall.left { left: 0; clip-path: polygon(0 0, 100% 22%, 100% 78%, 0 100%); }
+.corridor .wall.right { right: 0; transform: scaleX(-1); clip-path: polygon(0 0, 100% 22%, 100% 78%, 0 100%); }
+.corridor .wallseam {
+  position: absolute;
+  top: 22%; bottom: 22%;
+  width: 1px;
+  background: rgba(232, 168, 92, 0.14);
+}
+.corridor .portal {
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 13%; aspect-ratio: 0.62;
+  transform: translate(-50%, -52%);
+  background:
+    radial-gradient(ellipse 100% 60% at 50% 35%, rgba(248, 212, 152, 0.95) 0%, rgba(238, 184, 112, 0.75) 50%, rgba(212, 148, 80, 0.5) 100%);
+  border-radius: 999px 999px 0 0;
+}
+.corridor .portal-halo {
+  position: absolute;
+  left: 50%; top: 46%;
+  width: 34%; aspect-ratio: 1.6;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(ellipse at center, rgba(232, 176, 104, 0.22) 0%, transparent 68%);
+}
+.corridor .floor-reflect {
+  position: absolute;
+  left: 38%; bottom: 0;
+  width: 24%; height: 26%;
+  background: linear-gradient(180deg, rgba(238, 188, 118, 0.28) 0%, transparent 80%);
+  clip-path: polygon(34% 0, 66% 0, 100% 100%, 0 100%);
+}
+.corridor .mist {
+  position: absolute;
+  left: 0; right: 0; bottom: 18%;
+  height: 16%;
+  background: radial-gradient(ellipse 60% 100% at 50% 50%, rgba(220, 178, 120, 0.10) 0%, transparent 75%);
+}
+.concept-copy {
+  position: absolute;
+  left: 56px; bottom: 88px;
+  z-index: 8;
+  max-width: 46%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.concept-copy .tag {
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #E8A85C;
+}
+.concept-copy p {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: #F2EEE6;
+}
+.concept-copy small {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: rgba(236, 233, 226, 0.62);
+  max-width: 40ch;
+}
+
+/* ════ 3. 씬 투어 — 4분할 ════ */
+.tour {
+  position: absolute;
+  inset: 56px 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+  background: #060609;
+}
+.scene { position: relative; overflow: hidden; display: grid; grid-template-rows: 1fr auto; }
+.scene .view { position: relative; overflow: hidden; }
+.scene .desc {
+  padding: 20px 22px 26px;
+  background: #0B0B10;
+  border-top: 1px solid rgba(236, 233, 226, 0.14);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 118px;
+}
+.scene .desc .sc-no {
+  font-family: 'Anton', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #E8A85C;
+}
+.scene .desc .sc-no.cool { color: #9FB4C8; }
+.scene .desc .sc-name { font-size: 17px; font-weight: 700; letter-spacing: -0.01em; }
+.scene .desc .sc-line {
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: rgba(236, 233, 226, 0.6);
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.scene .desc .sc-line .area { color: rgba(236, 233, 226, 0.45); white-space: nowrap; }
+/* SCENE 01 — 진입 · 문라이트 게이트 */
+.sc-gate { background: linear-gradient(180deg, #07080C 0%, #0B0D12 100%); }
+.sc-gate .gate {
+  position: absolute;
+  left: 50%; top: 16%;
+  width: 44%; height: 64%;
+  transform: translateX(-50%);
+  background: linear-gradient(180deg, rgba(189, 206, 222, 0.85) 0%, rgba(159, 180, 200, 0.5) 55%, rgba(110, 128, 146, 0.3) 100%);
+  clip-path: polygon(50% 0, 100% 26%, 100% 100%, 0 100%, 0 26%);
+}
+.sc-gate .gatepool {
+  position: absolute;
+  left: 50%; bottom: 4%;
+  width: 60%; height: 10%;
+  transform: translateX(-50%);
+  background: radial-gradient(ellipse at center, rgba(159, 180, 200, 0.28) 0%, transparent 70%);
+}
+/* SCENE 02 — 회랑 · 앰버 샤프트 */
+.sc-corr { background: linear-gradient(180deg, #0A0908 0%, #100D0A 100%); }
+.sc-corr .sh {
+  position: absolute;
+  top: 0;
+  height: 72%;
+  background: linear-gradient(180deg, rgba(232, 168, 92, 0.4) 0%, rgba(232, 168, 92, 0.08) 75%, transparent 100%);
+}
+.sc-corr .shA { left: 16%; width: 13%; transform: skewX(-2deg); }
+.sc-corr .shB { left: 44%; width: 17%; }
+.sc-corr .shC { left: 72%; width: 11%; transform: skewX(2deg); }
+.sc-corr .floorpool {
+  position: absolute;
+  left: 20%; bottom: 4%;
+  width: 60%; height: 9%;
+  background: radial-gradient(ellipse at center, rgba(232, 168, 92, 0.3) 0%, transparent 70%);
+}
+/* SCENE 03 — 몰입홀 · 미디어 면 */
+.sc-media { background: linear-gradient(180deg, #08070A 0%, #0C0A0C 100%); }
+.sc-media .wall {
+  position: absolute;
+  left: 8%; top: 12%;
+  width: 84%; height: 52%;
+  background:
+    radial-gradient(ellipse 70% 80% at 36% 40%, rgba(238, 196, 128, 0.9) 0%, rgba(196, 148, 92, 0.55) 55%, rgba(120, 92, 62, 0.35) 100%);
+}
+.sc-media .wallreflect {
+  position: absolute;
+  left: 8%; top: 66%;
+  width: 84%; height: 24%;
+  background: linear-gradient(180deg, rgba(238, 196, 128, 0.16) 0%, transparent 85%);
+}
+/* SCENE 04 — 아웃트로 · 문라이트 포켓 */
+.sc-out { background: linear-gradient(180deg, #07080B 0%, #0A0C10 100%); }
+.sc-out .moon {
+  position: absolute;
+  left: 50%; top: 30%;
+  width: 26%; aspect-ratio: 1;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: radial-gradient(circle at 42% 38%, rgba(208, 222, 236, 0.9) 0%, rgba(159, 180, 200, 0.55) 60%, rgba(110, 128, 146, 0.3) 100%);
+}
+.sc-out .moonpool {
+  position: absolute;
+  left: 50%; bottom: 5%;
+  width: 56%; height: 9%;
+  transform: translateX(-50%);
+  background: radial-gradient(ellipse at center, rgba(159, 180, 200, 0.24) 0%, transparent 70%);
+}
+
+/* ════ 4. 공간 구성 — 다크 라인 도면 ════ */
+.plan-wrap {
+  position: absolute;
+  inset: 56px 0 0 0;
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+}
+.darkplan {
+  position: relative;
+  margin: 44px 0 44px 56px;
+  border: 1px solid rgba(236, 233, 226, 0.25);
+  background:
+    repeating-linear-gradient(0deg, rgba(236, 233, 226, 0.04) 0 1px, transparent 1px 40px),
+    repeating-linear-gradient(90deg, rgba(236, 233, 226, 0.04) 0 1px, transparent 1px 40px);
+}
+.darkplan .room { position: absolute; border: 1.5px solid rgba(236, 233, 226, 0.8); }
+.darkplan .r1 { left: 8%; top: 10%; width: 42%; height: 48%; }
+.darkplan .r2 { left: 50%; top: 10%; width: 40%; height: 32%; }
+.darkplan .r3 { left: 50%; top: 42%; width: 40%; height: 42%; }
+.darkplan .r4 { left: 8%; top: 58%; width: 42%; height: 26%; }
+.darkplan .door { position: absolute; background: #0B0B10; }
+.darkplan .d1 { left: 48.5%; top: 26%; width: 3%; height: 12%; }
+.darkplan .d2 { left: 62%; top: 40.5%; width: 9%; height: 3%; }
+.darkplan .zone {
+  position: absolute;
+  font-family: 'Anton', sans-serif;
+  font-size: 17px;
+  letter-spacing: 0.1em;
+  color: #E8A85C;
+}
+.darkplan .zone.cool { color: #9FB4C8; }
+.darkplan .dim {
+  position: absolute;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: rgba(236, 233, 226, 0.55);
+}
+.darkplan .flow {
+  position: absolute;
+  border-top: 2px dashed rgba(232, 168, 92, 0.65);
+}
+.darkplan .scale {
+  position: absolute;
+  right: 14px; bottom: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: rgba(236, 233, 226, 0.5);
+}
+.plan-side {
+  padding: 44px 56px 44px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.plan-side h2 { font-size: 38px; font-weight: 700; letter-spacing: -0.02em; }
+.plan-side h2 small {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(236, 233, 226, 0.5);
+  margin-top: 10px;
+}
+.zlist { display: flex; flex-direction: column; }
+.zlist .zrow {
+  display: grid;
+  grid-template-columns: 92px 1fr auto;
+  gap: 18px;
+  padding: 14px 0;
+  border-top: 1px solid rgba(236, 233, 226, 0.16);
+  align-items: baseline;
+}
+.zlist .zrow:last-child { border-bottom: 1px solid rgba(236, 233, 226, 0.16); }
+.zlist .zid {
+  font-family: 'Anton', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  color: #E8A85C;
+}
+.zlist .zid.cool { color: #9FB4C8; }
+.zlist .zname { font-size: 16px; font-weight: 700; }
+.zlist .zname small {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 400;
+  color: rgba(236, 233, 226, 0.55);
+  margin-top: 3px;
+  line-height: 1.5;
+}
+.zlist .zarea { font-size: 13px; font-weight: 500; color: rgba(236, 233, 226, 0.7); }
+.ztotal {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-top: 2px solid rgba(236, 233, 226, 0.5);
+  padding-top: 14px;
+}
+.ztotal .v { color: #E8A85C; }
+
+/* ════ 5. 운영 — 다크 표 ════ */
+.ops {
+  position: absolute;
+  inset: 56px 0 0 0;
+  padding: 44px 56px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.ops h2 { font-size: 38px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 30px; }
+.ops h2 small {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(236, 233, 226, 0.5);
+  margin-top: 10px;
+}
+.otable .hrow, .otable .drow {
+  display: grid;
+  grid-template-columns: 52px 1.1fr 1fr 1.7fr 1fr;
+  gap: 20px;
+  align-items: baseline;
+  padding: 13px 0;
+}
+.otable .hrow {
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(236, 233, 226, 0.55);
+  border-top: 2px solid rgba(236, 233, 226, 0.5);
+  border-bottom: 1px solid rgba(236, 233, 226, 0.3);
+}
+.otable .drow { border-bottom: 1px solid rgba(236, 233, 226, 0.14); font-size: 14.5px; }
+.otable .num {
+  font-family: 'Anton', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: #E8A85C;
+}
+.otable .phase { font-weight: 700; }
+.otable .sub2 { font-size: 13px; color: rgba(236, 233, 226, 0.65); }
+.scope {
+  margin-top: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  gap: 40px;
+  border-top: 2px solid rgba(236, 233, 226, 0.5);
+  padding-top: 22px;
+}
+.scope .col .sk {
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #E8A85C;
+  margin-bottom: 10px;
+}
+.scope .col ul { list-style: none; }
+.scope .col li {
+  font-size: 13px;
+  line-height: 1.75;
+  color: rgba(236, 233, 226, 0.75);
+}
+.scope .contact {
+  text-align: right;
+  font-size: 12.5px;
+  font-weight: 500;
+  line-height: 1.9;
+  color: rgba(236, 233, 226, 0.6);
+  letter-spacing: 0.04em;
+}
+</style>
+</head>
+<body>
+
+<!-- 1. 커버 — 빛기둥 홀 -->
+<section class="slide">
+  <div class="hall">
+    <span class="shaft s1 cool"></span>
+    <span class="shaft s2"></span>
+    <span class="shaft s3"></span>
+    <span class="shaft s4"></span>
+    <span class="shaft s5 cool"></span>
+    <span class="pool p1 cool"></span>
+    <span class="pool p2"></span>
+    <span class="pool p3"></span>
+    <span class="pool p4"></span>
+    <span class="pool p5 cool"></span>
+    <div class="fog"></div>
+    <span class="silhouette" style="left:30%; bottom:6%; width:2.3%; height:16%;"></span>
+    <span class="silhouette" style="left:48%; bottom:6%; width:2.6%; height:18%;"></span>
+    <span class="silhouette" style="left:53%; bottom:6%; width:2.0%; height:14%;"></span>
+    <span class="silhouette" style="left:70%; bottom:6%; width:2.2%; height:15%;"></span>
+    <div class="hall-floorline"></div>
+  </div>
+  <div class="grain"></div>
+  <div class="vignette"></div>
+  <div class="cover-title">
+    <div class="label">Immersive Exhibition Proposal — 2026</div>
+    <h1>Night<br/>Walk</h1>
+    <div class="sub">몰입형 미디어 전시 — 공간 연출 제안</div>
+  </div>
+  <dl class="cover-meta">
+    <div><dt>Client</dt><dd>Client Name</dd></div>
+    <div><dt>Venue</dt><dd>Hall A — 480㎡</dd></div>
+    <div><dt>Period</dt><dd>2026.10 — 2027.01</dd></div>
+  </dl>
+</section>
+
+<!-- 2. 컨셉 — 회랑 끝의 문 -->
+<section class="slide">
+  <div class="run-head">
+    <span>Night Walk — Proposal</span>
+    <span><span class="no">02</span> · Concept</span>
+  </div>
+  <div class="corridor">
+    <span class="wall left"></span>
+    <span class="wall right"></span>
+    <span class="wallseam" style="left:38%;"></span>
+    <span class="wallseam" style="right:38%;"></span>
+    <span class="portal-halo"></span>
+    <span class="portal"></span>
+    <span class="floor-reflect"></span>
+    <span class="mist"></span>
+    <span class="silhouette" style="left:48.8%; bottom:24%; width:1.8%; height:12%;"></span>
+  </div>
+  <div class="grain"></div>
+  <div class="vignette"></div>
+  <div class="concept-copy">
+    <span class="tag">Concept</span>
+    <p>관람객은 전시를 보지 않는다,<br/>통과한다.</p>
+    <small>조도 3lx의 어둠을 기준으로 빛·안개·사운드가 동선을 이끈다. 전시물 앞에 서는 대신, 장면 속을 걸어서 지나가는 구성.</small>
+  </div>
+</section>
+
+<!-- 3. 씬 투어 — 4분할 -->
+<section class="slide">
+  <div class="run-head">
+    <span>Night Walk — Proposal</span>
+    <span><span class="no">03</span> · Scene Tour</span>
+  </div>
+  <div class="tour">
+    <div class="scene">
+      <div class="view sc-gate">
+        <span class="gate"></span>
+        <span class="gatepool"></span>
+        <span class="silhouette" style="left:46%; bottom:7%; width:9%; height:22%;"></span>
+      </div>
+      <div class="desc">
+        <span class="sc-no cool">Scene 01</span>
+        <span class="sc-name">진입 — 달빛 게이트</span>
+        <span class="sc-line"><span>문라이트 단일 광원 · 암순응 구간</span><span class="area">80㎡</span></span>
+      </div>
+    </div>
+    <div class="scene">
+      <div class="view sc-corr">
+        <span class="sh shA"></span><span class="sh shB"></span><span class="sh shC"></span>
+        <span class="floorpool"></span>
+        <span class="silhouette" style="left:36%; bottom:7%; width:8.5%; height:20%;"></span>
+        <span class="silhouette" style="left:58%; bottom:7%; width:7%; height:17%;"></span>
+      </div>
+      <div class="desc">
+        <span class="sc-no">Scene 02</span>
+        <span class="sc-name">회랑 — 빛기둥 행렬</span>
+        <span class="sc-line"><span>앰버 샤프트 12열 · 안개 연출</span><span class="area">110㎡</span></span>
+      </div>
+    </div>
+    <div class="scene">
+      <div class="view sc-media">
+        <span class="wall"></span>
+        <span class="wallreflect"></span>
+        <span class="silhouette" style="left:24%; bottom:6%; width:8.5%; height:21%;"></span>
+        <span class="silhouette" style="left:64%; bottom:6%; width:7.5%; height:18%;"></span>
+      </div>
+      <div class="desc">
+        <span class="sc-no">Scene 03</span>
+        <span class="sc-name">몰입홀 — 미디어 면</span>
+        <span class="sc-line"><span>3면 프로젝션 · 바닥 반사</span><span class="area">120㎡</span></span>
+      </div>
+    </div>
+    <div class="scene">
+      <div class="view sc-out">
+        <span class="moon"></span>
+        <span class="moonpool"></span>
+        <span class="silhouette" style="left:47%; bottom:6%; width:8%; height:19%;"></span>
+      </div>
+      <div class="desc">
+        <span class="sc-no cool">Scene 04</span>
+        <span class="sc-name">아웃트로 — 잔상의 방</span>
+        <span class="sc-line"><span>문라이트 오브제 · 포토 스팟</span><span class="area">60㎡</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. 공간 구성 — 다크 라인 도면 -->
+<section class="slide">
+  <div class="run-head">
+    <span>Night Walk — Proposal</span>
+    <span><span class="no">04</span> · Floor Plan</span>
+  </div>
+  <div class="plan-wrap">
+    <div class="darkplan">
+      <span class="room r1"></span><span class="room r2"></span><span class="room r3"></span><span class="room r4"></span>
+      <span class="door d1"></span><span class="door d2"></span>
+      <span class="zone cool" style="left:26%; top:30%;">01</span>
+      <span class="zone" style="left:67%; top:22%;">02</span>
+      <span class="zone" style="left:67%; top:58%;">03</span>
+      <span class="zone cool" style="left:26%; top:66%;">04</span>
+      <span class="dim" style="left:10%; top:13%;">80㎡</span>
+      <span class="dim" style="left:52%; top:13%;">110㎡</span>
+      <span class="dim" style="left:52%; top:78%;">120㎡</span>
+      <span class="dim" style="left:10%; top:78%;">60㎡</span>
+      <span class="flow" style="left:14%; top:48%; width:32%;"></span>
+      <span class="flow" style="left:54%; top:48%; width:26%; transform:rotate(26deg);"></span>
+      <span class="scale">Scale 1:200</span>
+    </div>
+    <div class="plan-side">
+      <h2>공간 구성<small>Floor Plan · Zoning</small></h2>
+      <div class="zlist">
+        <div class="zrow">
+          <span class="zid cool">Scene 01</span>
+          <span class="zname">진입 — 달빛 게이트<small>암순응 + 사운드 도입 · 운영 동선 분리</small></span>
+          <span class="zarea">80㎡</span>
+        </div>
+        <div class="zrow">
+          <span class="zid">Scene 02</span>
+          <span class="zname">회랑 — 빛기둥 행렬<small>앰버 샤프트 12열 · 헤이즈 2기</small></span>
+          <span class="zarea">110㎡</span>
+        </div>
+        <div class="zrow">
+          <span class="zid">Scene 03</span>
+          <span class="zname">몰입홀 — 미디어 면<small>3면 프로젝션 8K · 바닥 미러 마감</small></span>
+          <span class="zarea">120㎡</span>
+        </div>
+        <div class="zrow">
+          <span class="zid cool">Scene 04</span>
+          <span class="zname">아웃트로 — 잔상의 방<small>문라이트 오브제 · 포토 스팟 · 굿즈 연결</small></span>
+          <span class="zarea">60㎡</span>
+        </div>
+      </div>
+      <div class="ztotal"><span>Total — 공용부 포함</span><span class="v">480㎡</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. 운영 — 일정·예산·제작 범위 -->
+<section class="slide">
+  <div class="run-head">
+    <span>Night Walk — Proposal</span>
+    <span><span class="no">05</span> · Production</span>
+  </div>
+  <div class="ops">
+    <h2>일정 · 예산 · 제작 범위<small>Schedule · Budget · Scope</small></h2>
+    <div class="otable">
+      <div class="hrow">
+        <span>N°</span><span>단계</span><span>기간</span><span>내용</span><span>예산 범위</span>
+      </div>
+      <div class="drow">
+        <span class="num">01</span><span class="phase">연출 설계</span>
+        <span class="sub2">2026.07 — 08</span><span class="sub2">씬별 연출안 · 조명/미디어 설계 · 인허가</span><span class="sub2">₩ 45 — 60M</span>
+      </div>
+      <div class="drow">
+        <span class="num">02</span><span class="phase">제작 · 시공</span>
+        <span class="sub2">2026.08 — 09</span><span class="sub2">구조물 · 프로젝션 설비 · 조명 · 헤이즈</span><span class="sub2">₩ 290 — 360M</span>
+      </div>
+      <div class="drow">
+        <span class="num">03</span><span class="phase">설치 · 캘리브레이션</span>
+        <span class="sub2">2026.09 — 10</span><span class="sub2">현장 설치 · 미디어 맵핑 · 조도 튜닝</span><span class="sub2">₩ 70 — 90M</span>
+      </div>
+      <div class="drow">
+        <span class="num">04</span><span class="phase">운영 · 철거</span>
+        <span class="sub2">2026.10 — 2027.01</span><span class="sub2">운영 인력 · 유지보수 · 원상 복구</span><span class="sub2">₩ 95 — 115M</span>
+      </div>
+    </div>
+    <div class="scope">
+      <div class="col">
+        <div class="sk">공간 연출</div>
+        <ul>
+          <li>씬 구성 · 동선 설계</li>
+          <li>조명 · 헤이즈 · 마감</li>
+        </ul>
+      </div>
+      <div class="col">
+        <div class="sk">미디어 콘텐츠</div>
+        <ul>
+          <li>3면 프로젝션 콘텐츠 제작</li>
+          <li>사운드스케이프 · 인터랙션</li>
+        </ul>
+      </div>
+      <div class="col">
+        <div class="sk">운영</div>
+        <ul>
+          <li>운영 매뉴얼 · 인력 교육</li>
+          <li>유지보수 · 철거 원상 복구</li>
+        </ul>
+      </div>
+      <div class="contact">
+        Producer — name@studio.com<br/>
+        예산 = 마감 사양 확정 전 범위 기준
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+// capture helper: ?only=N — 해당 슬라이드만 표시 (캡처용)
+(function () {
+  var n = new URLSearchParams(location.search).get('only');
+  if (!n) return;
+  document.querySelectorAll('.slide').forEach(function (s, i) {
+    if (String(i + 1) !== n) s.style.display = 'none';
+    else s.style.marginTop = '0';
+  });
+})();
+</script>
+</body>
+</html>
