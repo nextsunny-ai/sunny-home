@@ -1,7 +1,40 @@
 {
-  "updated": "2026-07-15T21:44:37.224955+00:00",
+  "updated": "2026-07-16T15:38:26.831040+00:00",
   "source": "github.com/nextsunny-ai",
   "repos": [
+    {
+      "name": "sunny-remover",
+      "description": "SUNNY REMOVER — remove watermarks from AI images, in-browser. No upload, free.",
+      "html_url": "https://github.com/nextsunny-ai/sunny-remover",
+      "homepage": "",
+      "language": "HTML",
+      "pushed_at": "2026-07-16T15:26:15Z",
+      "has_pages": true,
+      "pages_url": "https://nextsunny-ai.github.io/sunny-remover/",
+      "stars": 0
+    },
+    {
+      "name": "sunny-upscaler",
+      "description": "SUNNY UPSCALER — AI image upscaler that runs entirely in your browser. 2x/4x, no upload, free.",
+      "html_url": "https://github.com/nextsunny-ai/sunny-upscaler",
+      "homepage": "",
+      "language": "HTML",
+      "pushed_at": "2026-07-16T15:16:31Z",
+      "has_pages": true,
+      "pages_url": "https://nextsunny-ai.github.io/sunny-upscaler/",
+      "stars": 0
+    },
+    {
+      "name": "sunny-home",
+      "description": "Sunny personal home",
+      "html_url": "https://github.com/nextsunny-ai/sunny-home",
+      "homepage": "",
+      "language": "HTML",
+      "pushed_at": "2026-07-16T07:23:30Z",
+      "has_pages": true,
+      "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
+      "stars": 0
+    },
     {
       "name": "goods-factory",
       "description": "GOODS FACTORY — 굿즈 기획·제작 원스톱 웹앱 (기획·시장분석·굿즈선정·디자인·목업·스케줄·발주)",
@@ -11,17 +44,6 @@
       "pushed_at": "2026-07-15T15:52:10Z",
       "has_pages": true,
       "pages_url": "https://nextsunny-ai.github.io/goods-factory/",
-      "stars": 0
-    },
-    {
-      "name": "sunny-home",
-      "description": "Sunny personal home",
-      "html_url": "https://github.com/nextsunny-ai/sunny-home",
-      "homepage": "",
-      "language": "HTML",
-      "pushed_at": "2026-07-15T15:26:22Z",
-      "has_pages": true,
-      "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
       "stars": 0
     },
     {
@@ -55,17 +77,6 @@
       "pushed_at": "2026-06-23T06:30:13Z",
       "has_pages": true,
       "pages_url": "https://nextsunny-ai.github.io/joseon-yokai-docs/",
-      "stars": 0
-    },
-    {
-      "name": "sunny-remover",
-      "description": "SUNNY REMOVER — remove watermarks from AI images, in-browser. No upload, free.",
-      "html_url": "https://github.com/nextsunny-ai/sunny-remover",
-      "homepage": "",
-      "language": "HTML",
-      "pushed_at": "2026-06-12T12:23:50Z",
-      "has_pages": true,
-      "pages_url": "https://nextsunny-ai.github.io/sunny-remover/",
       "stars": 0
     },
     {
@@ -121,17 +132,6 @@
       "pushed_at": "2026-06-01T14:46:47Z",
       "has_pages": true,
       "pages_url": "https://nextsunny-ai.github.io/nory-festival-storytelling/",
-      "stars": 0
-    },
-    {
-      "name": "retro-remake-report",
-      "description": "써니엔터 레트로 리메이크 사업 전략보고서 v2.1",
-      "html_url": "https://github.com/nextsunny-ai/retro-remake-report",
-      "homepage": "",
-      "language": "HTML",
-      "pushed_at": "2026-05-31T14:17:53Z",
-      "has_pages": true,
-      "pages_url": "https://nextsunny-ai.github.io/retro-remake-report/",
       "stars": 0
     }
   ]
