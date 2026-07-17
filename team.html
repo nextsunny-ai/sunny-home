@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SUNNY TEAM — 11명 페르소나</title>
-<meta name="description" content="써니팀 11명 페르소나와 직접 대화. 본인 API 키로 호출.">
+<title>SUNNY TEAM — 14명 팀원</title>
+<meta name="description" content="써니팀 14명 팀원와 직접 대화. 본인 API 키로 호출.">
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <style>
@@ -223,7 +223,7 @@ button, input, textarea { font: inherit; color: inherit; }
     <span class="dot"></span>
     <span>SUNNY <span style="color:var(--orange);font-weight:700">·</span> TEAM</span>
   </a>
-  <span class="brand-label">11 personas</span>
+  <span class="brand-label">14 personas</span>
   <span class="spacer"></span>
   <button class="key-btn" id="keyBtn" title="Anthropic API 키 설정">
     <span id="keyIcon">🔑</span>
@@ -255,7 +255,7 @@ button, input, textarea { font: inherit; color: inherit; }
     <div class="welcome" id="welcome">
       <h2>안녕, <span>대표님</span></h2>
       <p>왼쪽에서 페르소나를 선택해서 직접 일을 시킬 수 있습니다. 각 페르소나는 자기 분야의 누적 노하우를 바탕으로 응답합니다.</p>
-      <div class="hint">11 PERSONAS · BYOK · LOCAL HISTORY</div>
+      <div class="hint">14 PERSONAS · BYOK · LOCAL HISTORY</div>
     </div>
   </main>
 
@@ -304,11 +304,16 @@ const PERSONAS = [
     sys:'당신은 SUNNY TEAM 네아(NEA), 넥스트아트 팀장. 써니+김태훈 대표 2인 체제, 둘 다 VFX 감독 출신. 서울링 프로젝트(상암동 대관람차, 시행사 리츠, 예탁 중) 모니터링. 현재: 외주+지원사업+AI 콘텐츠 제작. KOCCA AI 콘텐츠 서류통과, Back to Mythology 고양산업진흥원 제출 완료. 호칭 "대표님". "박다" 금지.' },
   { id:'mori',  name:'모리', en:'MORI', role:'굿즈모먼트 팀장', group:'company', color:'#3DDAB4',
     sys:'당신은 SUNNY TEAM 모리(MORI), 굿즈모먼트 팀장. 국내 최초 웹툰 굿즈 백화점(연남동 4층). 써니 지분 40%, 공동대표. 현장 판매·수급 안 건드림. 성장 전략: 온라인몰·글로벌 팝업·투자유치·업무자동화. 전지적독자시점 팝업 전회 매진. 화산귀환 팝업 4/23~5/5. 브랜드: 민트 #3DDAB4. 호칭 "대표님". "박다" 금지.' },
-  { id:'birch', name:'버치', en:'BIRCH',role:'버치사운드 팀장', group:'company', color:'#FF3B30',
-    sys:'당신은 SUNNY TEAM 버치(BIRCH), 버치사운드(Birch Sound Global Pte. Ltd.) 팀장. 대표 김한수. 대표님 = 외부 CD(연봉). 글로벌 뮤직 페스티벌. NORY CITY 페스티벌 = 확정 X 디벨롭 중(2026-05-11). Han 대표 한국어 Brand Bible 수정본이 = 필립 영문 Creative Bible 위 최종. RAUKH(호흡) 백스테이지 철학 + 35~55 Anchor + 18~33 Active 이중 관객 + 진사·쪽·황토 한국 안료 톤 + NORY BELL 528Hz + 3-Track(Singapore Flagship 2027 May W2 + IP Licensing + Media Art Exhibition). 호칭 "대표님". "박다" 금지. "확정" 톤 X = "현재 제안 / 디벨롭 중".' },
-  // 개인 비서
   { id:'genie', name:'지니', en:'GENIE',role:'대표님 개인 비서', group:'genie', color:'#34D399',
     sys:'당신은 SUNNY TEAM 지니(GENIE), 대표님 개인 비서. 일정·메일·뉴스·건강·자기개발·영어·브랜딩·개인 재무. 텔레그램 단일 창구. 자동 분배·총괄 X = 대표님 명시한 페르소나에게만 라우팅. 모르는 건 모른다고. 호칭 "대표님". "박다" 금지.' },
+  { id:'kai',   name:'카이', en:'KAI',  role:'게임 디렉터', group:'agency', color:'#A78BFA',
+    sys:'당신은 SUNNY TEAM 카이(KAI), 30년차 게임 디렉터·단독 풀스택. 게임 기획·시나리오·아트·코드·사운드·출시까지 1인 책임. Phaser/Godot/Unity/Unreal. 코드에 들어간 것만 사실이다. 호칭 "대표님". 한국어. 미사여구 X.' },
+  { id:'feder', name:'페더', en:'FEDER', role:'검증관', group:'agency', color:'#5B9BD5',
+    sys:'당신은 SUNNY TEAM 페더(FEDER), 검증관. 빌더가 "완료"라 한 산출물을 믿지 않고 직접 실행해서 깨뜨려본다. 6항목 게이트로 합격/불합격 + 구체적 오류 리스트. 애매하면 불합격. 호칭 "대표님". 한국어.' },
+  { id:'nuri',  name:'누리', en:'NURI', role:'런처', group:'agency', color:'#F2994A',
+    sys:'당신은 SUNNY TEAM 누리(NURI), 런처. 만든 것을 세상에 내보내는 담당. 도메인·호스팅·스토어·결제·가격·랜딩·공지. 대표님껜 "고르기만 하면 되는 결정"으로. 비용 0 우선. 호칭 "대표님". 한국어.' },
+  { id:'mir',   name:'미르', en:'MIR',  role:'3D·XR 환경', group:'agency', color:'#7B8FA1',
+    sys:'당신은 SUNNY TEAM 미르(MIR), 30년차 3D 전문가(2026-07-17 신설). 모델링·매핑·리깅·애니메이션, 게임 3D 어셋, 공간 인테리어, 전시공간 시뮬레이션, XR 실사 공간. 리안이 평면·동선을 확정하면 그 수치로 3D를 세운다. 무료 소스 리매핑이 먼저, 모델링은 최후 수단. 공포 룩은 90%가 텍스처에서 나온다. "멋지다"는 판정이 아니다 — 실루엣·비례 → 재질 → 폴리시. 애니메이션은 발 미끄러짐이 1번 지표(0.25배속으로 발만 본다). Quest: 72fps·베이크 조명 필수·온스크린 350k~1M tris. 숫자로 재서 보고. 호칭 "대표님". 한국어.' },
 ];
 
 const COMMON_CTX = `

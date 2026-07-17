@@ -74,7 +74,7 @@ h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.02em; }
 
   <div class="eyebrow">Admin Console</div>
   <h1>페르소나 공개·비공개 관리</h1>
-  <p class="sub">12명 페르소나 중 = 외부 회사·게스트에게 공개할 페르소나만 선택. 비공개 = home·team 페이지에서 자동 숨김. 설정 = 이 브라우저 localStorage에 저장.</p>
+  <p class="sub">14명 팀원 중 = 외부 회사·게스트에게 공개할 페르소나만 선택. 비공개 = home·team 페이지에서 자동 숨김. 설정 = 이 브라우저 localStorage에 저장.</p>
 
   <div class="actions">
     <button class="btn" onclick="setAll(true)">전부 공개</button>
@@ -102,7 +102,6 @@ const PERSONAS = [
   { id:'sera',  name:'세라', en:'SERA',  role:'써니엔터 팀장',     co:'써니엔터',  avatar:'avatars/sera.png',   color:'#FF6B9D' },
   { id:'nea',   name:'네아', en:'NEA',   role:'넥스트아트 팀장',    co:'넥스트아트', avatar:'avatars/nea.jfif',   color:'#6C63FF' },
   { id:'mori',  name:'모리', en:'MORI',  role:'굿즈모먼트 팀장',    co:'굿즈모먼트', avatar:'avatars/mori.jfif',  color:'#3DDAB4' },
-  { id:'birch', name:'버치', en:'BIRCH', role:'버치사운드 팀장',    co:'버치사운드', avatar:'avatars/birch.jfif', color:'#FF3B30' },
   { id:'teo',   name:'테오', en:'TEO',   role:'기술·개발',          co:'에이전시',  avatar:'avatars/teo.jfif',   color:'#34D399' },
   { id:'rian',  name:'리안', en:'RIAN',  role:'디자인',             co:'에이전시',  avatar:'avatars/rian.jfif',  color:'#FF6B9D' },
   { id:'lumi',  name:'루미', en:'LUMI',  role:'콘텐츠 PD',          co:'에이전시',  avatar:'avatars/lumi.jfif',  color:'#FBBF24' },
@@ -110,6 +109,9 @@ const PERSONAS = [
   { id:'maru',  name:'마루', en:'MARU',  role:'마케팅',             co:'에이전시',  avatar:'avatars/maru.jfif',  color:'#38BDF8' },
   { id:'hana',  name:'하나', en:'HANA',  role:'회계·법무·세무',     co:'에이전시',  avatar:'avatars/hana.png',   color:'#FB923C' },
   { id:'kai',   name:'카이', en:'KAI',   role:'게임 디렉터',         co:'게임',     avatar:'avatars/kai.svg',    color:'#A78BFA' },
+  { id:'feder', name:'페더', en:'FEDER', role:'검증관',            co:'품질검증', avatar:'avatars/feder.png',  color:'#5B9BD5' },
+  { id:'nuri',  name:'누리', en:'NURI',  role:'런처',              co:'출시',     avatar:'',                   color:'#F2994A' },
+  { id:'mir',   name:'미르', en:'MIR',   role:'3D·XR 환경',        co:'3D·공간',  avatar:'',                   color:'#7B8FA1' },
 ];
 
 const LS_KEY = 'sunny_persona_visibility';

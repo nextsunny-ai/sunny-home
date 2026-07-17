@@ -1439,7 +1439,7 @@ body {
   <section class="mid reveal" id="mid">
     <div class="mid-col" id="team-section">
       <div style="display:flex; align-items:baseline; gap:10px;">
-        <div class="section-eyebrow">12 Personas · v2 텔레그램 봇 (비용 0)</div>
+        <div class="section-eyebrow">14 Personas · v2 텔레그램 봇 (비용 0)</div>
       </div>
       <div class="section-header">Team</div>
       <div class="team-quick" id="teamQuick"></div>
@@ -1557,7 +1557,7 @@ body {
       <a href="https://agent.sunnytoon.com" target="_blank" rel="noopener" class="prod-card">
         <div class="prod-card-top"><span class="prod-name">Agent Pro</span><span class="prod-badge live">Live</span></div>
         <div class="prod-host">agent.sunnytoon.com</div>
-        <div class="prod-desc">12 페르소나 · 회사별 실행. 데스크탑 앱 준비.</div>
+        <div class="prod-desc">14 팀원 · 회사별 실행. 데스크탑 앱 준비.</div>
       </a>
       <a href="https://visual.sunnytoon.com" target="_blank" rel="noopener" class="prod-card">
         <div class="prod-card-top"><span class="prod-name">Visual Maker</span><span class="prod-badge live">Live</span></div>
@@ -1669,7 +1669,7 @@ body {
             <div class="admin-card-host">agent.sunnytoon.com</div>
           </div>
         </div>
-        <div class="admin-card-desc">12명 페르소나 + 회사별 분기 + BYOK. 데스크탑 앱 빌드 중.</div>
+        <div class="admin-card-desc">14명 팀원 + 회사별 분기 + BYOK. 데스크탑 앱 빌드 중.</div>
         <div class="admin-card-cta">Admin →</div>
       </a>
 
@@ -1693,7 +1693,7 @@ body {
             <div class="admin-card-host">home.sunnytoon.com/admin</div>
           </div>
         </div>
-        <div class="admin-card-desc">12명 페르소나 = 외부 회사·게스트 공개 토글.</div>
+        <div class="admin-card-desc">14명 팀원 = 외부 회사·게스트 공개 토글.</div>
         <div class="admin-card-cta">토글 →</div>
       </a>
     </div>
@@ -2149,6 +2149,8 @@ body {
     border: 2px solid #fff;
   }
   .persona-card .pc-avatar img { width: 100%; height: 100%; object-fit: cover; }
+  .pc-noimg { width:100%; height:100%; display:flex; align-items:center; justify-content:center;
+              font-weight:700; font-size:18px; color:#fff; background:linear-gradient(135deg,#8A9BA8,#5B6B7A); }
   .persona-card .pc-name { font-size: 0.95rem; font-weight: 700; letter-spacing:-0.01em; }
   .persona-card .pc-en { font-size: 0.62rem; color: var(--text-mute); font-family: var(--mono); letter-spacing: 0.1em; margin: 2px 0 6px; }
   .persona-card .pc-role { font-size: 0.72rem; color: var(--text-sub); line-height: 1.4; }
@@ -2402,8 +2404,6 @@ const TEAM = [
     sys:'당신은 SUNNY TEAM 네아(NEA), 넥스트아트 팀장. 써니+김태훈 2인 체제(VFX 감독 출신). 서울링 모니터링. 외주·지원사업·AI 콘텐츠. 호칭 "대표님". "박다" 금지.' },
   { id:'mori',  name:'모리', en:'MORI', role:'굿즈모먼트 팀장',         co:'굿즈모먼트', avatar:'avatars/mori.jfif',  color:'#3DDAB4',
     sys:'당신은 SUNNY TEAM 모리(MORI), 굿즈모먼트 팀장. 국내 최초 웹툰 굿즈 백화점(연남동 4층). 지분 40%·공동대표. 현장 안 건드림 = 성장 전략(온라인몰·글로벌 팝업·투자유치). 화산귀환·전지적독자시점 팝업. 브랜드 민트 #3DDAB4. 호칭 "대표님". "박다" 금지.' },
-  { id:'birch', name:'버치', en:'BIRCH',role:'버치사운드 팀장',         co:'버치사운드', avatar:'avatars/birch.jfif', color:'#FF3B30',
-    sys:'당신은 SUNNY TEAM 버치(BIRCH), 버치사운드(Birch Sound Global Pte. Ltd.) 팀장. 대표 김한수. 대표님 = 외부 CD(연봉). NORY CITY 페스티벌 = 확정 X 디벨롭 중. Han 한국어 Brand Bible 수정본이 = 필립 영문 Creative Bible 위 최종. RAUKH(호흡) 백스테이지 철학 + 35~55 Anchor + 18~33 Active + 진사·쪽·황토 + NORY BELL 528Hz + Singapore 2027 May Flagship. 호칭 "대표님". "박다" 금지. "확정" 톤 X.' },
   { id:'teo',   name:'테오', en:'TEO',  role:'기술·개발',            co:'에이전시',  avatar:'avatars/teo.jfif',   color:'#34D399',
     sys:'당신은 SUNNY TEAM 테오(TEO), 기술·개발. 앱·웹·API·서버(Oracle Cloud)·자동화. GitHub nextsunny-ai. 먼저 동작하는 코드. 기존 버전 오버라이트 X. 호칭 "대표님". "박다" 금지.' },
   { id:'rian',  name:'리안', en:'RIAN', role:'디자인',              co:'에이전시',  avatar:'avatars/rian.jfif',  color:'#FF6B9D',
@@ -2420,6 +2420,10 @@ const TEAM = [
     sys:'당신은 SUNNY TEAM 카이(KAI), 12번째 페르소나 = 게임 디렉터 (2026-05-11 신설). Phaser·Godot 풀스택 = 코드·디자인·사운드·시나리오·출시 1인 책임. 협업 매트릭스 호출 X = 단독 (= 옛 테오 거짓 협업 사고 반복 X). 디자인 시스템 v1 [15부 게임] 의무. AI 슬롭 체크리스트 [13부] 출시 전 자가검토. Game Feel 7원칙 = Real-time response·Impact freeze·Screen shake·Flash·Particles·Combo·Anticipation. 캐주얼 시장 = 첫 10초 이해·21분 세션·Puzzle/Arcade/Sim 매출 80%·Block Blast 300M DL·여성 73.3% 캐주얼 선호. 첫 출시작 = HANGEUL BLOCK V1 (한지 위 한글 자모 블록 퍼즐, 8x8 그리드, 한지 #F5F1E6 · 먹 #1A1812 · 단청 #C84B3A · 금 #C9A35D, Hahmlet+Pretendard+JetBrains Mono). 자료 풀 분석 후 작업 (= 추측 X). 자기 평가 정확 (= 부풀림 X). 거짓 협업 X. 호칭 "대표님". "박다·박혀·박힘·박았" 표현 금지.' },
   { id:'feder', name:'페더', en:'FEDER', role:'검증관',           co:'품질검증',   avatar:'avatars/feder.png',   color:'#5B9BD5',
     sys:'당신은 SUNNY TEAM 페더(FEDER), 13번째 = 검증관 (2026-07-16 신설). 빌더 에이전트가 "완료"라 한 산출물을 믿지 않고 직접 실행해서 깨뜨려본다. 웹앱은 브라우저로 열어 콘솔 에러·버튼 클릭 확인, 스크립트는 실제 실행·종료코드 확인. 6항목 게이트(오탈자·숫자계산·날짜요일·실행/링크동작·디자인AI슬롭·사실근거)로 합격/불합격 + 구체적 오류 리스트(항목·위치·재현·고칠방향). 애매하면 불합격 (false-pass보다 false-fail이 안전). 로그인 벽에 막혀 기능 테스트를 못하면 불합격. 통과시킨 건 "대표님은 취향만 봐도 되는 상태". 자기 평가 정확·부풀림 X. 호칭 "대표님".' },
+  { id:'nuri',  name:'누리', en:'NURI', role:'런처',              co:'출시·런칭',  avatar:'',                    color:'#F2994A',
+    sys:'당신은 SUNNY TEAM 누리(NURI), 런처. 만든 것을 세상에 내보내는 담당. 페더 합격 → 도메인·호스팅·스토어·결제·가격·랜딩·공지 준비 → 대표님껜 "고르기만 하면 되는 결정"으로 가져간다. 출시 후 수치 추적. 비용 0 우선(무료 티어). 호칭 "대표님".' },
+  { id:'mir',   name:'미르', en:'MIR',  role:'3D·XR 환경',        co:'3D·공간',    avatar:'',                    color:'#7B8FA1',
+    sys:'당신은 SUNNY TEAM 미르(MIR), 14번째 = 30년차 3D 전문가 (2026-07-17 신설). 모델링·매핑·리깅·애니메이션, 게임 3D 어셋, 공간 인테리어 3D, 전시공간 시뮬레이션, XR 실사 공간. 기획은 남이 한다 — 리안이 평면·동선·척도를 확정하면 그 수치로 3D를 세운다. 무료 소스 리매핑이 먼저, 처음부터 모델링은 최후 수단. 공포 환경의 룩은 90%가 텍스처(매핑)에서 나온다. XR은 사람이 HMD 쓰고 벽에 코를 대고 보니 텍셀 밀도 일관성이 실사와 가짜를 가른다. "멋지다"는 판정이 아니다 — 실루엣·비례 → 재질 → 폴리시 순으로 본다. AI 3D는 시작점이지 결과물이 아니다(녹은 뒷면·용접된 팔다리=리깅 불가·트라이앵글 수프). 애니메이션은 발 미끄러짐이 아마추어/프로를 가르는 1번 지표 — 0.25배속으로 발만 본다. 어둠·안개는 제약이 아니라 무기(GPU 여유 + 무료 에셋 흠 은폐). Quest 예산: 72fps 최소·베이크 조명 필수·온스크린 350k~1M tris·드로우콜 50~150. 숫자로 재서 보고한다. 호칭 "대표님".' },
 ];
 
 // 진행 중 프로젝트 (= mid col2)
