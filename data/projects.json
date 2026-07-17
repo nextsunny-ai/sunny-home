@@ -1,7 +1,18 @@
 {
-  "updated": "2026-07-16T21:52:37.757552+00:00",
+  "updated": "2026-07-17T15:13:31.378510+00:00",
   "source": "github.com/nextsunny-ai",
   "repos": [
+    {
+      "name": "sunny-home",
+      "description": "Sunny personal home",
+      "html_url": "https://github.com/nextsunny-ai/sunny-home",
+      "homepage": "",
+      "language": "HTML",
+      "pushed_at": "2026-07-17T14:28:28Z",
+      "has_pages": true,
+      "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
+      "stars": 0
+    },
     {
       "name": "sunny-remover",
       "description": "SUNNY REMOVER — remove watermarks from AI images, in-browser. No upload, free.",
@@ -11,17 +22,6 @@
       "pushed_at": "2026-07-16T15:58:24Z",
       "has_pages": true,
       "pages_url": "https://nextsunny-ai.github.io/sunny-remover/",
-      "stars": 0
-    },
-    {
-      "name": "sunny-home",
-      "description": "Sunny personal home",
-      "html_url": "https://github.com/nextsunny-ai/sunny-home",
-      "homepage": "",
-      "language": "HTML",
-      "pushed_at": "2026-07-16T15:38:27Z",
-      "has_pages": true,
-      "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
       "stars": 0
     },
     {
