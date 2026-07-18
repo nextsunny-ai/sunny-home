@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-18T06:38:44+09:00",
+  "updated": "2026-07-18T23:52:55+09:00",
   "categories": [
     {
       "id": "ai",
@@ -40,6 +40,15 @@
           "published": "2026-07-16",
           "image": "",
           "first_seen": "2026-07-18T00:13:24+09:00"
+        },
+        {
+          "title": "앤트로픽, 100만 토큰당 10달러에 Claude Mythos 5 출시… “지금까지 가장 강력한 모델” 자처 - Yellow.com",
+          "url": "https://news.google.com/rss/articles/CBMinARBVV95cUxNcllEbjVTaXNKODdCdDBjOVFkNGRKcXhlUVI5c0F1M3hBb1lNeFh6ZHNtOXo1R2Y4OGM3UXBMMFZJc0pBUGhMQ1k5NW1kYXNfUVotXzg1NmJGQXp3dnJhcHcwcHZvSjExdUt6RmZtb2IwYTJsQWF4cnoyOVBIUFk0amhGcDlrVXhhYWZEb0dqcUVDOWpKVkI4U0JpekIwYWVhdnJfemhwcVVLSDVqYWxPS25rNzh4UTJKU3FkLXFVVGFuSER3dzRlaWl1cUlkd1J0UC0zMWRHeHp6ekw3TWc4OFF1R3hyTmE0NVZHS2Z1TnNaX2RrUGtBTWJvUzNnYXBmRV83TGpraXlSLVF1VVdFV09CY2dSelBxVHd5aE5wQmtNX0l2VU5VVW5xVTM1VWVhWDQyWVN2emNmTUpiX3lnbVF0cG51X01YSkRpQ01UWV91NVFoM1J6bm0tUGlzQllmTjN0SUVGWVVtUVcxcmMtTkR5YUlwWDFNcEFPTV9BMlB5dVpEalp6aTFBdi1JNDFPdHFLM0t5WU9qdFNZSDBNc3FGdVp6eVFXVzRoWG93ZkxVZ2VkYkxLQUgzTFo2RzFoV0k5a3hIblB3dFhZa09sa3k5bkp0bHN0VzBPRjZKWDExRXFEanczY1FFVU5yWXNra1hWNFFDczhtUnZ4UFFXYzlBSnpFQTFyUlVUcWRBd2VndHRpX0lwM1ZIaFI?oc=5",
+          "source": "Yellow.com",
+          "summary": "",
+          "published": "2026-07-16",
+          "image": "",
+          "first_seen": "2026-07-18T23:52:55+09:00"
         },
         {
           "title": "베이글코드, 전사 개인 AI 에이전트 업무 인프라 구축 - 디일렉",
@@ -265,15 +274,6 @@
           "published": "2026-07-09",
           "image": "",
           "first_seen": "2026-07-11T23:53:57+09:00"
-        },
-        {
-          "title": "중국, 앤트로픽의 ‘클로드 코드’에 '백도어' 보안 경고 발령 - 뉴스타운",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1SVmNJTjc2V0xQUEJVVGFfMl96eUFLQVA1QnNrSnFVZm1JR1N5cHlzQVBrVUE2WEJ3UFVpeWxCLWFWNU5ZS1Z1UXJDY3lWTG5ibmFqeFprSHpfZnVadVJFWG9Bbi1aelJhQTdfdDJR?oc=5",
-          "source": "뉴스타운",
-          "summary": "",
-          "published": "2026-07-09",
-          "image": "",
-          "first_seen": "2026-07-14T01:33:58+09:00"
         }
       ]
     },
@@ -281,6 +281,15 @@
       "id": "content_ip",
       "name": "콘텐츠·IP",
       "items": [
+        {
+          "title": "넘겨보던 K웹툰 공연장으로… ‘웹툰 IP’ 뮤지컬화 잇따라 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBsbFpCMGZoeEo5b0Q0U2d0SjQyVFV6aVAtZGJQN3JpazR0azBEZ0V4cE5rM2JSMEFFRF9PNXRhdVhCMnNGTGhISk8wb1R3QkU?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-07-18",
+          "image": "",
+          "first_seen": "2026-07-18T23:52:55+09:00"
+        },
         {
           "title": "이마트24, 콘진원과 중소 콘텐츠IP 공동상품 개발 - 스트레이트뉴스",
           "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9TeExIQkM2SzVtSHFXWXJoa1hQQ2prcDVZODVhVVlRSUFKRERzY0YzSmhaMWdndXlkU2RJT3I5MHgta2NXc2ZEY0hNek1QS1dOTE5NWVFabkhOV3ppb0p3OE1qX1NFVTRiSHhOTjcwek1jcGFveFlZ0gF3QVVfeXFMT1N4TEhCQzZLNW1IcVdZcmhrWFBDamtwNVk4NWFVWVFJQUpERHNjRjNKaFoxZ2d1eWRTZElPcjkweC1rY1dzZkRjSE16TVBLV05MTk1ZUVpuSE5XemlvSnc4TWpfU0VVNGJIeE5ONzB6TWNwYW94WVk?oc=5",
@@ -307,6 +316,15 @@
           "published": "2026-07-17",
           "image": "",
           "first_seen": "2026-07-18T00:13:24+09:00"
+        },
+        {
+          "title": "'김부장' TV와 OTT 동시 흥행…K-콘텐츠 새 '공식' 되나 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBWQkVOS2cydGQ5Y2s5UUZhSFEzQkJmN1BxQ2dhb3RmdW1sbjdsaThOTkk1LU05dWllc1NfUDFmSjN6bkFxQXc?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-07-17",
+          "image": "",
+          "first_seen": "2026-07-18T23:52:55+09:00"
         },
         {
           "title": "캐릭터에서 산업으로…콘텐츠 IP의 확장 - 아시아투데이",
@@ -532,24 +550,6 @@
           "published": "2026-07-09",
           "image": "",
           "first_seen": "2026-07-11T06:47:57+09:00"
-        },
-        {
-          "title": "‘이태원 클라쓰’ 대만판 드라마 ‘파이어드 업!’ 31일 공개...K웹툰 IP 확장 - ppss.kr",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA1LXAxeWdDWlR1cVNmTFFVSnFZTnJrQ3lpY045VDYyc3p6SkRFXzl0aVNMZjJfVlJQTlhpdWc1SXgtU0JKRVJwcXNFenhjdlJraF90VlVHZHEwVzd0S1ZWbk9Vd2k?oc=5",
-          "source": "ppss.kr",
-          "summary": "",
-          "published": "2026-07-08",
-          "image": "",
-          "first_seen": "2026-07-09T01:01:52+09:00"
-        },
-        {
-          "title": "웹툰이 게임을 삼켰다…'나혼렙'이 연 원작 IP 트랜스미디어 시대 - 이슈인사이트",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1wSEszS2JqdW5ZLVBFMVBSSTFQNDlOZm1kUHBIanQ4NWpTcTRYdUctTEV0Ui11UWQyWGRwcnYxZmU5OE5udE84UmNraV83cDdmWlh0cGRhR1Y3OVhUYWtkQno5YVFJZF9OTEU5cTJGYjU?oc=5",
-          "source": "이슈인사이트",
-          "summary": "",
-          "published": "2026-07-08",
-          "image": "",
-          "first_seen": "2026-07-10T01:27:36+09:00"
         }
       ]
     },
@@ -843,6 +843,15 @@
           "first_seen": "2026-07-17T06:52:31+09:00"
         },
         {
+          "title": "제1회 디지털 미디어아트 페스타 'DMAF 2026' 개막 - 아트코리아방송",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1oNHV6WjZVU3hJVUJtTWNoWU8xMFZHeXhDaXY3TFR5elZWOUp3MjVqNzZ5ZWhkTEM5OTA2YVB6a1liMFBaZHZGMWUzc2ZVWE14V2ZBc1BndmNRZGdaeEhGWTMxOE1BbzBfM003ZWV3?oc=5",
+          "source": "아트코리아방송",
+          "summary": "",
+          "published": "2026-07-17",
+          "image": "",
+          "first_seen": "2026-07-18T23:52:55+09:00"
+        },
+        {
           "title": "조각에 앉고, 빛을 걷는다 - MMCA 과천 40주년 전시 ‘빛의 상상들’ - d-art.co.kr",
           "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE83REZzcmxpZlB1SlpIOVNKRC1QU2VITVZQMndEQU1EZkx6MVpMek1PNjBiWkJ1aC0yRDZlNlpES2QtVXlfVmlpVE1lbDd0UExHNFhkU0JDNDBQcHE3OHVGQ19VYTltbkk?oc=5",
           "source": "d-art.co.kr",
@@ -1101,6 +1110,24 @@
           "first_seen": "2026-07-17T00:38:19+09:00"
         },
         {
+          "title": "서울교통공사, '2026 유튜브 영상 공모전' 개최…숏폼 신설로 시민 참여 확대 - 이로운넷",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1WR1JNTmlDNnNnSmM2YjQzaXhxdVR2YXRPU0VISjQ1UDBRaWNuVXJDRUFiZ01rX3A2WWQtRGpremp2dVhSZ01IVWhFQndnRF9XTXYyYkQ4Rmt0elcwOUVJTGxtVzZ6Zw?oc=5",
+          "source": "이로운넷",
+          "summary": "",
+          "published": "2026-07-16",
+          "image": "",
+          "first_seen": "2026-07-18T23:52:55+09:00"
+        },
+        {
+          "title": "서울지하철 이야기 쇼츠로 담는다…서울교통공사, 영상공모전 개최 - 머니투데이 - 머니투데이",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9ZajVVQ1p0ZHp4NzBxbWNoSkNxQzd6V01XVkZUWVY2d3BtdHBzbm1DV2J4MUg1ZzZFTWszV0JnZWZBOHFrQThmZFNCTmdhZDZhMUhIWkZ0aGsxS21qMEhGRGE2Sk9qdEx3eGktSTFqVdIBb0FVX3lxTE9ZajVVQ1p0ZHp4NzBxbWNoSkNxQzd6V01XVkZUWVY2d3BtdHBzbm1DV2J4MUg1ZzZFTWszV0JnZWZBOHFrQThmZFNCTmdhZDZhMUhIWkZ0aGsxS21qMEhGRGE2Sk9qdEx3eGktSTFqVQ?oc=5",
+          "source": "머니투데이",
+          "summary": "",
+          "published": "2026-07-16",
+          "image": "",
+          "first_seen": "2026-07-18T23:52:55+09:00"
+        },
+        {
           "title": "콘진원, ‘글로벌 비즈니스 라운드테이블’ 참가기업 모집 - 벤처타임즈",
           "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1yNXJSRUhMTFYxMUV6UUhNSGJDQ0JGVGsydkItMWRkMmU4TXhuRV9XZTlCaHRSRVVxTk9IRW1fdVg3UWRaNWNVVVNnclNYMjI3TEYwNldHQjJ2NmZ4RTBuQmtDT2J3Zw?oc=5",
           "source": "벤처타임즈",
@@ -1342,24 +1369,6 @@
           "published": "2026-07-07",
           "image": "",
           "first_seen": "2026-07-09T06:55:46+09:00"
-        },
-        {
-          "title": "SBS A&amp;T 컨소시엄, 'AI 멀티 에이전트 기반 미디어 크리에이터 양성과정' 1기 오리엔테이션 개최 - 전자신문",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE8wVUNFNFItLVBZUnlvOTF3ZG92YzBPT0NVTEJINVZ3OFY1UHIzZFQ5Z2p3WW1Tc21SSjdBWmxIZjZpTEh5UW41ZjZTTHBRQQ?oc=5",
-          "source": "전자신문",
-          "summary": "",
-          "published": "2026-07-07",
-          "image": "",
-          "first_seen": "2026-07-11T01:24:58+09:00"
-        },
-        {
-          "title": "5년 차 제작사의 반란…부뚜막고양이, 자체 영상 IP로 40개국 글로벌 시장 뚫었다 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5URDZaU2NGS3lBbGZXYkxQQTZkTldTVkZJVl84MlA0SGJqMTAzMFQ5OWpVSHBGbEREZHdVZU5VRlpsTGZYREh2N21yVQ?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-07-07",
-          "image": "",
-          "first_seen": "2026-07-18T00:13:24+09:00"
         }
       ]
     },
@@ -1367,6 +1376,15 @@
       "id": "design",
       "name": "디자인",
       "items": [
+        {
+          "title": "한영석의발효연구소 '도한', 2026 레드닷 디자인 어워드 본상 수상 - 서울경제TV",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5wbFlZeVFObFc2Y2VKVWxidk5OUVNuVDJNR2JhNlJGSzBqMFdPbEhxbU5BOXAyMTFEUUdaeE01OU9WTFU1azVLMU1iYzliMm1HdHdTQ19rRkRFZHVCbVhERG0zWDA?oc=5",
+          "source": "서울경제TV",
+          "summary": "",
+          "published": "2026-07-17",
+          "image": "",
+          "first_seen": "2026-07-18T23:52:55+09:00"
+        },
         {
           "title": "‘미감과 혁신성’ 다 잡았다… 빅크, 어워즈 2관왕 달성 - v.daum.net",
           "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE84RVpnZkNrcFp4WTJVM1pKcS1ZYXRQb1J5S2N2R3B2d3FlU294T1QwOUVxT2ZUVUxWNXpHY3ZPU3UwZHFlbFFnSW9tcjJqQS1WRl9qeg?oc=5",
@@ -1607,6 +1625,15 @@
       "id": "festival",
       "name": "페스티벌",
       "items": [
+        {
+          "title": "제1회 백남준미디어아트페스티벌 ‘백남준의 행성’ - 동방일보",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBOdklLUHFIN0VFZmV6VUswMUthNFY2NGN2cUZUelhSS0ZVMWpiTDlEaThjbXBieGlORWk1aGNfYTFZVjNlNWdFaFNES0VuME9uNWs3NGotWlJTck9wZngxejR6Zk9PUDJVbE9rc0JqdW5aUQ?oc=5",
+          "source": "동방일보",
+          "summary": "",
+          "published": "2026-07-18",
+          "image": "",
+          "first_seen": "2026-07-18T23:52:55+09:00"
+        },
         {
           "title": "작가 중심의 아트축제 '어반브레이크·토이콘서울'통합버전 코엑스서 30일 개막 - 뉴스핌",
           "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1VME5CV0RhWW9PU0E3NTN1alJfUkFSZ3NqeVlNMEZOaFFRc1ZkazRkc1NaVVozbko2S081RmkwdlBLa2tvTjBYZG04SlpRTGlWcVptcW83enlOZ0pv?oc=5",
@@ -1867,15 +1894,6 @@
           "published": "2026-07-06",
           "image": "",
           "first_seen": "2026-07-08T01:31:25+09:00"
-        },
-        {
-          "title": "원윤 작가, 고양이와 아이스크림 꽃다발로 전하는 ‘달콤한 인생’의 위로-'2026 제2회 애니멀 아트 페스티벌' 참여 - 아트코리아방송",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE93MEhyTmZHQnRWdWJPVEx6elZJSW02ZHVBbEgyajNkNDF3eWtUQlNFRVkxdWJNZlEyWFZwUU1Kc012eTEyNTNYcGo3QWFiQjZVanczMVRYM1VHWWFWRnRvcWtWRnh0QUdqRXhVM2x3?oc=5",
-          "source": "아트코리아방송",
-          "summary": "",
-          "published": "2026-07-06",
-          "image": "",
-          "first_seen": "2026-07-12T06:36:41+09:00"
         }
       ]
     }
