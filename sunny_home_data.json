@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-19T23:55:52+09:00",
+  "updated": "2026-07-20T06:38:42+09:00",
   "categories": [
     {
       "id": "ai",
@@ -558,6 +558,15 @@
       "name": "공연",
       "items": [
         {
+          "title": "경기문화재단, ‘2026 공연예술 활성화 쇼케이스-스테이G’ 개최 - 경기일보",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBRUU1nN1l3QnBwdjIxek1YcGY0M0ROY2dXNjNxSmVJNjZFQWxsZ2liRG5aN3R1dGY3ZFE5LWhxZ3cyVEx0TkE3c3otSjNVcG92ZjNiWDh4dml2NEk?oc=5",
+          "source": "경기일보",
+          "summary": "",
+          "published": "2026-07-19",
+          "image": "",
+          "first_seen": "2026-07-20T06:38:42+09:00"
+        },
+        {
           "title": "빅뱅 20주년에 흠뻑쇼·워터밤까지…'공연 바캉스' 떠나볼까 - 연합뉴스",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB3M2VnOUJrdmFmYkV4TXpUSmJyclh1NzR1UEVyV3JFanlmMXRsR1RmWVpRamJUQnNnSzRYWGVpQWotLUJ1MzhtVk4xWW1jb29mS05aWThqZ2RUTkNFZEVNVtIBYEFVX3lxTFB3M2VnOUJrdmFmYkV4TXpUSmJyclh1NzR1UEVyV3JFanlmMXRsR1RmWVpRamJUQnNnSzRYWGVpQWotLUJ1MzhtVk4xWW1jb29mS05aWThqZ2RUTkNFZEVNVg?oc=5",
           "source": "연합뉴스",
@@ -817,15 +826,6 @@
           "published": "2026-07-06",
           "image": "",
           "first_seen": "2026-07-09T01:01:52+09:00"
-        },
-        {
-          "title": "[문화 트렌드] (재)부산문화회관 2026 기획공연, 여름방학을 맞아 뮤지컬 '알사탕' 개최 外 - 베이비뉴스",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE41cExldjVaX2Jpa19NRkVhdHlRY1YycUd6UUlWendzYmo3U05CYnlOajlHWWdRaV9vTnVvY0k0cVphUFN1QndOeXhoWXFRT3V5SUpIeTRnT2hnUDc2VElNMXhpLTh6WUZKUjZZcA?oc=5",
-          "source": "베이비뉴스",
-          "summary": "",
-          "published": "2026-07-06",
-          "image": "",
-          "first_seen": "2026-07-09T06:55:46+09:00"
         }
       ]
     },
@@ -1447,6 +1447,15 @@
           "published": "2026-07-15",
           "image": "",
           "first_seen": "2026-07-17T00:38:19+09:00"
+        },
+        {
+          "title": "안경부터 찻잔까지, 출판사×브랜드 협업 4 - 디자인플러스",
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE45bDZkeTdLZmNDRWctVnZ6MVdwa3BSbjR3eDVhUnVLckpvNkFkMkxNc2VKNU8yU0pQbWUwLXA1QmlRNHZseTQ1TVFoX04?oc=5",
+          "source": "디자인플러스",
+          "summary": "",
+          "published": "2026-07-15",
+          "image": "",
+          "first_seen": "2026-07-20T06:38:42+09:00"
         },
         {
           "title": "미래를 읽는 네 개의 디자인 키워드, iF 디자인 트렌드 리포트 2026 - 디자인플러스",
