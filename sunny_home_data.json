@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-21T00:50:28+09:00",
+  "updated": "2026-07-21T06:53:50+09:00",
   "categories": [
     {
       "id": "ai",
@@ -13,6 +13,15 @@
           "published": "2026-07-20",
           "image": "",
           "first_seen": "2026-07-21T00:50:28+09:00"
+        },
+        {
+          "title": "엔비디아 메트로폴리스, 코스모스 기반 비전 AI 에이전트 개발 가속하는 에이전트 지원 라이브러리 제공 - 인공지능신문",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1wQ3Z6a1QtSzU4cEtOZmxGR0lpWlFvanIwU09BNl95SnBYVGtZNGsyZUxuVUJESDViaUhNUlJEZHlkeWxKcTNuRFpnelJlY3F5TUlhWlBkRXhDVVQ2LUlJTTJiNEktOE0?oc=5",
+          "source": "인공지능신문",
+          "summary": "",
+          "published": "2026-07-20",
+          "image": "",
+          "first_seen": "2026-07-21T06:53:50+09:00"
         },
         {
           "title": "[AI는 지금] AI 에이전트 늘수록 비용 '눈덩이'…코히어, SaaS 비용 구조 정조준 - 지디넷코리아",
@@ -265,15 +274,6 @@
           "published": "2026-07-10",
           "image": "",
           "first_seen": "2026-07-11T01:24:58+09:00"
-        },
-        {
-          "title": "서울시, 'AI 에이전트' 구축 착수…문서 요약·회의실 예약 자동화 - 전자신문",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFB3NV83LTZKTWxnMFdVWmRpRGhvVDV5UC04bnJwTTFKZ0hWemU0cURmUE9XVjB1QzRic1lHbW9SazBZdHp3LUNlb2VjcXA4dw?oc=5",
-          "source": "전자신문",
-          "summary": "",
-          "published": "2026-07-10",
-          "image": "",
-          "first_seen": "2026-07-12T23:56:45+09:00"
         }
       ]
     },
@@ -307,6 +307,15 @@
           "published": "2026-07-18",
           "image": "",
           "first_seen": "2026-07-19T06:37:40+09:00"
+        },
+        {
+          "title": "이마트24, 한국콘텐츠진흥원과 맞손…국내 콘텐츠 IP 사업화 지원 - 미래경제",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5FQWhLVGt3bzY3T1JpZlZWd3JTdEpUNzVHV3FHbEh1WF9NSnc2bWxtNVBiajh2YzQxQ255TFBZclZQajNsVEdqR0xpcUlTV014ZXZxWEJsMm1hcjRDaXRLSHBIbk9MREFoWUE0ZQ?oc=5",
+          "source": "미래경제",
+          "summary": "",
+          "published": "2026-07-18",
+          "image": "",
+          "first_seen": "2026-07-21T06:53:50+09:00"
         },
         {
           "title": "이마트24, 콘진원과 중소 콘텐츠IP 공동상품 개발 - 스트레이트뉴스",
@@ -537,15 +546,6 @@
           "title": "'캐릭터 라이선싱 페어 2026' 개최…K캐릭터 콘텐츠 IP 무대 확장 - 뉴스핌",
           "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1pYl9UcmF4RDN3Y25kdFZVeURzVC1WTWc5NVJXR05LR0JJTE5qWXVwd2EzUDFldk1zcndmTkplS2JHQTVCYWJFVWpYcUFFMTBvNC1EVDFTR0t1WUFh?oc=5",
           "source": "뉴스핌",
-          "summary": "",
-          "published": "2026-07-10",
-          "image": "",
-          "first_seen": "2026-07-11T01:24:58+09:00"
-        },
-        {
-          "title": "인기 K-캐릭터 한자리…'캐릭터 라이선싱 페어' 16일 개막 - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA2ZFJONzNnU0pMOW9kUEdBaW9NWEpYR1oxOHFYUmdQRlFGdmF1Z0lEaE04QlhVYjNJRy1oMTZtUm1wUGIwM1JJV2tqTVl2NkNKTXhKNHlORHFLN0Q5NHVCNdIBYEFVX3lxTFA2ZFJONzNnU0pMOW9kUEdBaW9NWEpYR1oxOHFYUmdQRlFGdmF1Z0lEaE04QlhVYjNJRy1oMTZtUm1wUGIwM1JJV2tqTVl2NkNKTXhKNHlORHFLN0Q5NHVCNQ?oc=5",
-          "source": "연합뉴스",
           "summary": "",
           "published": "2026-07-10",
           "image": "",
@@ -808,24 +808,6 @@
           "published": "2026-07-07",
           "image": "",
           "first_seen": "2026-07-12T06:36:41+09:00"
-        },
-        {
-          "title": "‘2026 창작산실’ 선정 김소라 감독…지역 뮤지컬 경쟁력 입증 - 전북일보 인터넷신문",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBjejJ1UWJVenY4dWJkN0lvQV9EU1JWSVJrTzRoaDR2Y2xUeFlnQjA4dEdtQkQ4YXdOSlpMR251czZ5b2g2ZVhVTUU1TnA2ZTFrR2U1Yk1TaWnSAVhBVV95cUxQY3oydVFiVXp2OHViZDdJb0FfRFNSVklSa080aGg0dmNsVHhZZ0IwOHRHbUJEOGF3TkpaTEdudXM2eW9oNmVYVU1FNU5wNmUxa0dlNWJNU2lp?oc=5",
-          "source": "전북일보 인터넷신문",
-          "summary": "",
-          "published": "2026-07-06",
-          "image": "",
-          "first_seen": "2026-07-07T01:51:51+09:00"
-        },
-        {
-          "title": "[공연소식] 가족 뮤지컬 '고래밥' 초연…동명 과자 모티브 - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5FenYtUVczemEwMFlfSVFfVXY1UUxJaUI1ZkpVZzY3V0RwVERYcVVrTmhkaGY5NnMtWGRaZENsbDNMRWxqNG9hNmdHakU5SF9kVWJDMGZQUUgzNHB4QklvcNIBYEFVX3lxTE5FenYtUVczemEwMFlfSVFfVXY1UUxJaUI1ZkpVZzY3V0RwVERYcVVrTmhkaGY5NnMtWGRaZENsbDNMRWxqNG9hNmdHakU5SF9kVWJDMGZQUUgzNHB4QklvcA?oc=5",
-          "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-07-06",
-          "image": "",
-          "first_seen": "2026-07-07T01:51:51+09:00"
         }
       ]
     },
@@ -1066,24 +1048,6 @@
           "published": "2026-07-05",
           "image": "",
           "first_seen": "2026-07-08T01:31:25+09:00"
-        },
-        {
-          "title": "한국멀티미디어음악학회, 미디어아트 전시 '디스토피아-소멸된 소리' 개막 - 더퍼스트미디어",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5XNDc5azZVUWJsWllrM2RfWm8xN0djNWRpeExIYVJvOElmaG5adllKNmZmVjdrVjZ3RGNUamhUVlRpR2dXWlUyQUJqSVp2QWR2WHFRYXJHbURHNzNtLXA5eXdhdjZhOUxhVjNvV0xlUUxWd9IBdEFVX3lxTE0xQzU0NkFUb1FPRTYycU5zLUh5eUpsOWNGcGtpeHlCWnlUVmpVeEk2LTMxNnUxQjNFb3BXRm5tRGxVTXZwanNGem9VMnAxQzdMVEtWU2JWeXBiMkJ4UUdabTZjT09KTHhmZGJ1TzM5eXJ2NXl4?oc=5",
-          "source": "더퍼스트미디어",
-          "summary": "",
-          "published": "2026-07-03",
-          "image": "",
-          "first_seen": "2026-07-07T01:51:51+09:00"
-        },
-        {
-          "title": "인터컨티넨탈 파르나스, 로비서 현대미술 기획전 개최 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBlalU3UVpsR2kyTlVDLXloLXBTN0gxUjRnTjd0aG95MklMV1ZrZU5oTEtzME5IcnVhWTVuWGk0R3Qtc0puRUE?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-07-03",
-          "image": "",
-          "first_seen": "2026-07-07T01:51:51+09:00"
         },
         {
           "title": "인터컨티넨탈 파르나스, 로비서 현대미술 기획전 개최 - v.daum.net",
@@ -1386,6 +1350,15 @@
       "name": "디자인",
       "items": [
         {
+          "title": "디자이너가 이제 '목업'이 아니라 ' 제품'을 만든다 - 브런치",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1WUUtTb0NsVUlzdVIyMURJOGZKZDgzek9WejF6SV8xQTFKcmlyOFF3TkZVYjNhZnVEVHpKcWt2RWY3cEkySXNYUQ?oc=5",
+          "source": "브런치",
+          "summary": "",
+          "published": "2026-07-21",
+          "image": "",
+          "first_seen": "2026-07-21T06:53:50+09:00"
+        },
+        {
           "title": "선문대, 아산시·호찌민시 공공 브랜딩디자인 프로젝트 수행 - 아시아투데이",
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5MY2FKNlJiVEt4cFFwZmxFN3VOSzFkTkJ6UnR2c25jMlFWd3FBSUxaYnlQSTlGZXVKdHNfWXBXa0M4N19LR3lsckc4UFBVVlM4Nkk4ekJ6bDI2RUVnUUpGazVoNmNacld3Y0M2OC1B?oc=5",
           "source": "아시아투데이",
@@ -1618,15 +1591,6 @@
           "published": "2026-07-06",
           "image": "",
           "first_seen": "2026-07-09T01:01:52+09:00"
-        },
-        {
-          "title": "2026 IT 산업 트렌드,UXUI 디자인 트렌드 - 브런치",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5oQjRLQUEzUHVIUHZwLXEySXNGMk1SVzBGVWFMV0xIdlU1bXM5LXFXc3FpVTdJR3hKZUR0d3RQS0dpUXlOQ0NOd2plUzhSeVBlQ1E?oc=5",
-          "source": "브런치",
-          "summary": "",
-          "published": "2026-07-05",
-          "image": "",
-          "first_seen": "2026-07-07T01:51:51+09:00"
         },
         {
           "title": "디자인 교육 플랫폼 '서울디자인런', 창업가 키우기 시동 - 경남도민뉴스",
@@ -1912,15 +1876,6 @@
           "published": "2026-07-07",
           "image": "",
           "first_seen": "2026-07-13T06:36:38+09:00"
-        },
-        {
-          "title": "박삼화 작가, '2026 제2회 애니멀 아트 페스티벌' 참여- - 아트코리아방송",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1vblFkbkNCTGlDa1NNQU1WcENWSl9xOW9odFFsU3FHN2JzYzZQeG5XTjd1THVsNE5lY0VqekFQS3AxR000RlE3WWhfUE5BLXhSdFdnSkR1dzl0OW4yZVhoQVVkQ0g5YzYxUFFyYVh3?oc=5",
-          "source": "아트코리아방송",
-          "summary": "",
-          "published": "2026-07-06",
-          "image": "",
-          "first_seen": "2026-07-07T01:51:51+09:00"
         },
         {
           "title": "세종문화회관, 서울아트굿즈페스티벌 2026 참여 부스 모집 - 뉴스핌",
