@@ -1,10 +1,19 @@
 {
-  "updated": "2026-07-22T00:43:41+09:00",
+  "updated": "2026-07-22T06:51:04+09:00",
   "categories": [
     {
       "id": "ai",
       "name": "AI 트렌드",
       "items": [
+        {
+          "title": "클립아트코리아 AI 스튜디오, 저작권 인증 라이선스 콘텐츠와 생성 AI 결합… “상업적 활용을 고려한 콘텐츠 제작 환경 지원” - 매드타임스",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA0OHEtSTE1aHc4R053eGZIQXhPa3czOXFNeWJhbTNCcUptd3c5Y2lzbW95RHA1NndJMHA4ZjM2UllpVEY2cGVyWG9FTUVxYndGQXdGRzNuUG5vSlNlM2lPOHEzR1ZMdWc0RjM5bQ?oc=5",
+          "source": "매드타임스",
+          "summary": "",
+          "published": "2026-07-22",
+          "image": "",
+          "first_seen": "2026-07-22T06:51:04+09:00"
+        },
         {
           "title": "LG유플러스, 에릭슨과 AI 네트워크 개발 협력…AI 에이전트 만든다 - 전기신문",
           "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBWdXptTUFzTkd5ZVFsdmladzlPRWZMTUZaaDFxT1JlaEh6TXBoUFo5UzNFSkFNQlE1c1RJck5LMWJPV0pwN0ZMZHJIWVlFU2FvNlBPbDM4cEJzNXRlWWQ0d1QxOV9KVG9zdDVlVWp0dlfSAXBBVV95cUxQVnV6bU1Bc05HeWVRbHZpWnc5T0VmTE1GWmgxcU9SZWhIek1waFBaOVMzRUpBTUJRNXNUSXJOSzFiT1dKcDdGTGRySFlZRVNhbzZQT2wzOHBCczV0ZVlkNHdUMTlfSlRvc3Q1ZVVqdHZX?oc=5",
@@ -150,6 +159,15 @@
           "first_seen": "2026-07-22T00:43:41+09:00"
         },
         {
+          "title": "공개된 콘텐츠로 ‘이미지 생성’ 제동… 리스크 커진 AI 산업 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE92SmVaOS1CVU9iZWhuN0puRkJ3d04wbXNSUWRZbEUtU3d6R1BjZXBJZ09ZeHlNUHE1TXhjSDlEYjdwTWxUQ1FEMU9DOA?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-07-15",
+          "image": "",
+          "first_seen": "2026-07-22T06:51:04+09:00"
+        },
+        {
           "title": "LTM Partners with Anthropic to Accelerate Claude Adoption and Expand Enterprise Delivery - 뉴스와이어",
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5uNkdqRDlSaGtYSVFSZlhnV1pndHJTTXlRZUREN19BN1ZaNWFGWGRCcnJFbW55Q2pFWnoyRlJVOGQ2c0Q4c0hmcTdmS1BtcTlxQl84T21hSXlLTVVTM3Jj?oc=5",
           "source": "뉴스와이어",
@@ -256,24 +274,6 @@
           "published": "2026-07-12",
           "image": "",
           "first_seen": "2026-07-21T00:50:28+09:00"
-        },
-        {
-          "title": "AI 에이전트 스타트업, AI 에이전트로 1500억 투자 유치…\"130여 투자자 응대\" - AI타임스",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0tNHh0TzdfcU1CangwWEoxdTdUV0ozR3VYZV9rU3lGNUFYT19pOW9ncjlYV3NYTzZibjZ6djkxMmZIekxTS3VLVE9tcjFJbHpVSmpST3RnYVI4ZXYzWEZucFB3X0syb21Ndnc?oc=5",
-          "source": "AI타임스",
-          "summary": "",
-          "published": "2026-07-11",
-          "image": "",
-          "first_seen": "2026-07-12T06:36:41+09:00"
-        },
-        {
-          "title": "[AI돋보기] '챗봇'은 옛말…알아서 일하는 'AI 에이전트' 뜬다 - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBhQy10LTVJU0FFdEdvZi1qbmtvQTZmd0R3YTN0TndOdzNXalY0TnBmV0hLNDlUcHRzaTNmb3p1OGFMbzI3dkhlQWt4TWl3VFBmUEZVMkE2eE1UclHSAWBBVV95cUxQRHdjdFNUUVFqZzRfalQ4LVp6ZTRhUFRPVllpckF2RlE1VTA4YmFQT2hVaXk4a3NmNExNYzg3WGtwUDBqOEhVczZmUnNiSkFaazR6WUlpTlBON2J5Vkh0czQ?oc=5",
-          "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-07-11",
-          "image": "",
-          "first_seen": "2026-07-15T00:23:25+09:00"
         }
       ]
     },
@@ -783,24 +783,6 @@
           "first_seen": "2026-07-12T06:36:41+09:00"
         },
         {
-          "title": "올여름 휴가는 공연축제로... 2026 아르코 썸 페스타로 떠나는 ‘공연예술 바캉스’ - 서울자치신문",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5ydXRxN1dyd3d2dlBNbFJDc0xMcUxvR0xpa2xjN3NuUzliZndWN1c3Y0hqQ1BzQzYwZ3ZSRWxvUFpYOHhxcmdVazRJbGZic21jZkZFS1I1R0xwUTFka2dPakNwQ29haGFk?oc=5",
-          "source": "서울자치신문",
-          "summary": "",
-          "published": "2026-07-07",
-          "image": "",
-          "first_seen": "2026-07-08T01:31:25+09:00"
-        },
-        {
-          "title": "전국 15개 공연축제, 여름 여행지가 되다…2026 아르코 썸 페스타 - 서울문화투데이",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1iU1pMTzJob2d4YlpSWFpnN19uTFhJM0pjaDlzYXBSSlpRNUNsc0RodUZ1Z0RsT3oxRzRFQ09aWVdlc2ZoYzZZWktwaDlJQUltclhQb202bDhfZjBpY1lWbDBJSnF3UUlFV1E?oc=5",
-          "source": "서울문화투데이",
-          "summary": "",
-          "published": "2026-07-07",
-          "image": "",
-          "first_seen": "2026-07-08T01:31:25+09:00"
-        },
-        {
           "title": "올여름 휴가는 공연축제로 ……2026 아르코 썸 페스타로 떠나는 ‘공연예술 바캉스’ - K스피릿",
           "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBDeDB0ZWQwVE56ZzhHUlpYcWtEOGxidTRPdUFFU3ZjdGVDaENodEMwLWpWZzBGeFZQNmdWNnhRZFJVbG1WeU1QU0VhcGpUR29JMnRlNmJNRUxZeDd0N3FFVkRFMG4yYkhjUlBWNHByMNIBc0FVX3lxTFB4cDk0bHVTVFpRQ3RNMHRxRE4yWkxyV1Rfc1kyTWpsQV9LMllNdk45WXNmVElfTlFrNFgzMVQ2V2pnajdyTUdWVy02V3FRQUdaRGZHeksyaWxzLU9zNmduajlZdW9QcV8wcWE0TVcxemx1bG8?oc=5",
           "source": "K스피릿",
@@ -868,6 +850,15 @@
           "published": "2026-07-20",
           "image": "",
           "first_seen": "2026-07-22T00:43:41+09:00"
+        },
+        {
+          "title": "장애예술계 최초의 미디어아트 전시회… ‘미디어 술래(術來)’ 개막 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5fNmswMkY2blRZZHlWTDNwRXdfZVF6X01xY3ZUdUlhWHAxRkR6a0lIV1JqNUlrUjNDQ1FfaXp4N0JDYXJxYUUyM0hROG1PeS1ENUVabg?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-07-20",
+          "image": "",
+          "first_seen": "2026-07-22T06:51:04+09:00"
         },
         {
           "title": "대구서 만나는 백남준과 김치앤칩스…한국 미디어아트 40년 잇는다 - kyongbuk.co.kr",
@@ -1068,15 +1059,6 @@
           "first_seen": "2026-07-10T01:27:36+09:00"
         },
         {
-          "title": "전시회 「이것은 개념미술이 (아니)다」 국현 “과연 무엇이 예술인가… 한국 현대미술 맥락에서 개념미술 재조명” [김용출의 미술의마음] - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9FckgxMUpaTmVaZUxVV0d0SUNOekprN3JPZy00MWpqVFh5dWR0RUJ0MG5Qc1lockM5U0xVTFhDd09tLTRaMThnOV9jM0M1bVU?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-07-05",
-          "image": "",
-          "first_seen": "2026-07-08T01:31:25+09:00"
-        },
-        {
           "title": "인터컨티넨탈 파르나스, 로비서 현대미술 기획전 개최 - v.daum.net",
           "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBGMjh5OWJOSXp3bmJHZW9xVmFhbmNvTEMzVXYwdnJnbDBrb2k4M0lZSXdYQTcxQUJqamppNTVpelRGbGhDQ0N4MHNTbDZHOHM?oc=5",
           "source": "v.daum.net",
@@ -1263,6 +1245,15 @@
           "first_seen": "2026-07-22T00:43:41+09:00"
         },
         {
+          "title": "문체부, JTBC 회생 관련 긴급 간담회…\"저금리 융자 지원 확대\" - 연합뉴스TV",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5Pbldldjl5UnBZNkQ4cm1QZjVKbUVsU2dBY0lTcU0zclJ3NWtQVG5nbUhJaGxtSkd1VFctR1NFR1RScTQ3dy0zbHdCc0xKN3Q0UnJsNnVfYUVDOXpKN0x4TmY5M2tzT0U?oc=5",
+          "source": "연합뉴스TV",
+          "summary": "",
+          "published": "2026-07-15",
+          "image": "",
+          "first_seen": "2026-07-22T06:51:04+09:00"
+        },
+        {
           "title": "정부 \"AI 콘텐츠진흥법 연내 발의…게임 지원 예산도 확대\" - v.daum.net",
           "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBCLXZzRjNubzNOYlVVQlRLUHdVLW9rOUZVYUM1SW1qakxLNEJmLU50Z0ZLVDRBQXNHV2FaSmZEMGFvM0VHclE?oc=5",
           "source": "v.daum.net",
@@ -1356,15 +1347,6 @@
           "title": "인기 K-캐릭터 한자리…'캐릭터 라이선싱 페어' 16일 개막 - 연합뉴스",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA2ZFJONzNnU0pMOW9kUEdBaW9NWEpYR1oxOHFYUmdQRlFGdmF1Z0lEaE04QlhVYjNJRy1oMTZtUm1wUGIwM1JJV2tqTVl2NkNKTXhKNHlORHFLN0Q5NHVCNdIBYEFVX3lxTFA2ZFJONzNnU0pMOW9kUEdBaW9NWEpYR1oxOHFYUmdQRlFGdmF1Z0lEaE04QlhVYjNJRy1oMTZtUm1wUGIwM1JJV2tqTVl2NkNKTXhKNHlORHFLN0Q5NHVCNQ?oc=5",
           "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-07-10",
-          "image": "",
-          "first_seen": "2026-07-11T01:24:58+09:00"
-        },
-        {
-          "title": "포천시종합사회복지관, 쇼트폼 영상 공모전 개최 - 포천일보",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4tQ1ZfMlI1R3YyQU5NVHFwa0xLVEFxcm8tWGxlUGVOVlZKVkM2eDc2a1hORWp1clFTOEJ0TjBkY3NsTzZlZWRDOWVpcFpnLUpyZ3g5MXZXZ2VkYzA5WGJ6Y1RzM2FuZw?oc=5",
-          "source": "포천일보",
           "summary": "",
           "published": "2026-07-10",
           "image": "",
@@ -1671,6 +1653,15 @@
           "first_seen": "2026-07-22T00:43:41+09:00"
         },
         {
+          "title": "부평구, 음악 축제 '2026 뮤직 플로우 페스티벌' 8월 29일 개최 - 포커스인천",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBwczc3QnR2MFlBNnNnTUdaR3p4V1F6TGtOdE9SbktxeUhKTXE3YVZGdS1sdE5tY0hVSEJFNzJOYzZZcW1Qb2VySVVvYnJtMGdHYWVZd3A3THZiNmZDRlEwbVhBS0lUU3U1azhzMmRn0gFwQVVfeXFMTXVpc0paUUt4WHpmN3BMdnZrU3p1dEZ6eVk5TG1zbXRvMzNxYXJ4ZWhFNUNvM3Zzd1ZVeFdOMzdXQUxzdFZvaGQyS0RrQUV1Ql9HSTZQWVNDaTZGUE5wWWFjQ29Ld1REb290bnRya0pwbA?oc=5",
+          "source": "포커스인천",
+          "summary": "",
+          "published": "2026-07-21",
+          "image": "",
+          "first_seen": "2026-07-22T06:51:04+09:00"
+        },
+        {
           "title": "백남준아트센터, ‘제1회 백남준미디어아트 페스티벌 - 백남준의 행성’ 개최 - 서울뉴스통신",
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE03TXF0MXVJZlZBYkFGNGhxZ3BvMm5TaWJweVVaTldGX2JsbVpNa1NlSVlmOUNUendZY1QyR0JncEpQTkZlNzViOUloVGEyWkNhTjQ3Nm9IcEVUbmJvSXZmczFHQ2RVWURsUGpF?oc=5",
           "source": "서울뉴스통신",
@@ -1867,24 +1858,6 @@
           "published": "2026-07-08",
           "image": "",
           "first_seen": "2026-07-14T01:33:58+09:00"
-        },
-        {
-          "title": "올여름 휴가는 공연축제로 ……2026 아르코 썸 페스타로 떠나는 ‘공연예술 바캉스’ - K스피릿",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB4cDk0bHVTVFpRQ3RNMHRxRE4yWkxyV1Rfc1kyTWpsQV9LMllNdk45WXNmVElfTlFrNFgzMVQ2V2pnajdyTUdWVy02V3FRQUdaRGZHeksyaWxzLU9zNmduajlZdW9QcV8wcWE0TVcxemx1bG_SAXNBVV95cUxQeHA5NGx1U1RaUUN0TTB0cUROMlpMcldUX3NZMk1qbEFfSzJZTXZOOVlzZlRJX05RazRYMzFUNldqZ2o3ck1HVlctNldxUUFHWkRmR3pLMmlscy1PczZnbmo5WXVvUHFfMHFhNE1XMXpsdWxv?oc=5",
-          "source": "K스피릿",
-          "summary": "",
-          "published": "2026-07-07",
-          "image": "",
-          "first_seen": "2026-07-08T01:31:25+09:00"
-        },
-        {
-          "title": "취향이 모여 예술이 되다…'서울아트굿즈페스티벌' 9월 개최 - 뉴데일리",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOYkFyZE52S3drdGJHQzN5ZzdIUk5RbW83cFIyUXpkbExWWHV0S0tFUnRWOFJialNPZjV3RVZqSVY2RTNRWDVQUVVDWi05cThWck5yNXNmMTBjUDFkYlNGX3A5X2dNUEZWMmxweUFmMzVRdktpWXpXaFVfSndJTHJXVdIBgAFBVV95cUxOYkFyZE52S3drdGJHQzN5ZzdIUk5RbW83cFIyUXpkbExWWHV0S0tFUnRWOFJialNPZjV3RVZqSVY2RTNRWDVQUVVDWi05cThWck5yNXNmMTBjUDFkYlNGX3A5X2dNUEZWMmxweUFmMzVRdktpWXpXaFVfSndJTHJXVQ?oc=5",
-          "source": "뉴데일리",
-          "summary": "",
-          "published": "2026-07-07",
-          "image": "",
-          "first_seen": "2026-07-08T01:31:25+09:00"
         },
         {
           "title": "올여름 휴가는 공연축제로 ……2026 아르코 썸 페스타로 떠나는 ‘공연예술 바캉스’ - K스피릿",
