@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-23T00:42:54+09:00",
+  "updated": "2026-07-23T06:52:58+09:00",
   "categories": [
     {
       "id": "ai",
@@ -51,6 +51,15 @@
           "first_seen": "2026-07-23T00:42:54+09:00"
         },
         {
+          "title": "알리바바, 이미지 생성 AI '퀜-이미지 3.0' 공개...핵심은 '진짜같음'...4500토큰짜리 긴 지시문 한 번에 소화해 신문 지면·수식 논문·다층 UI까지 그려내, 다만 가중치·벤치마크·기술보고서는 이번엔 함께 내놓지 않아 - 한국정보기술진흥원",
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFB3Z2oxYVQ5Z1lMNTVfTkxtdDVhZ3g2alVZOG5XMVdyVHBmZjQ1SkFkRk1jQmN6a3ljcldIUzhuYVc?oc=5",
+          "source": "한국정보기술진흥원",
+          "summary": "",
+          "published": "2026-07-22",
+          "image": "",
+          "first_seen": "2026-07-23T06:52:58+09:00"
+        },
+        {
           "title": "LG유플러스, 에릭슨과 AI 네트워크 개발 협력…AI 에이전트 만든다 - 전기신문",
           "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBWdXptTUFzTkd5ZVFsdmladzlPRWZMTUZaaDFxT1JlaEh6TXBoUFo5UzNFSkFNQlE1c1RJck5LMWJPV0pwN0ZMZHJIWVlFU2FvNlBPbDM4cEJzNXRlWWQ0d1QxOV9KVG9zdDVlVWp0dlfSAXBBVV95cUxQVnV6bU1Bc05HeWVRbHZpWnc5T0VmTE1GWmgxcU9SZWhIek1waFBaOVMzRUpBTUJRNXNUSXJOSzFiT1dKcDdGTGRySFlZRVNhbzZQT2wzOHBCczV0ZVlkNHdUMTlfSlRvc3Q1ZVVqdHZX?oc=5",
           "source": "전기신문",
@@ -85,6 +94,15 @@
           "published": "2026-07-20",
           "image": "",
           "first_seen": "2026-07-21T06:53:50+09:00"
+        },
+        {
+          "title": "[AI 뉴스] 클로드 코드에 ‘내장 브라우저’ 탑재…검색부터 클릭·입력까지 직접 수행 - 아웃소싱타임스",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE95TWRGb0ZmT0pwNGJWekZXSFZfc3JvMUUxUmxSTC1wdVNoQm1GUEI0Q0JTSlJXeTdYdVdncUk3cm5lanE1Yk1WN0FYWGo2dlVRMktHdFBYVFhzOFF4b1JIVHdDTnNPUjZ0eGJRb19LWlFhZw?oc=5",
+          "source": "아웃소싱타임스",
+          "summary": "",
+          "published": "2026-07-20",
+          "image": "",
+          "first_seen": "2026-07-23T06:52:58+09:00"
         },
         {
           "title": "[AI는 지금] AI 에이전트 늘수록 비용 '눈덩이'…코히어, SaaS 비용 구조 정조준 - 지디넷코리아",
@@ -256,24 +274,6 @@
           "published": "2026-07-13",
           "image": "",
           "first_seen": "2026-07-15T00:23:25+09:00"
-        },
-        {
-          "title": "메타, 인스타 AI 이미지 생성 기능 사흘 만에 중단 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9DbkE5WUZXQ0JwX1ZBZDFESlVrc2wyX2tVOHFiV0JpMEU1LVk3dTRVMDVFOEM1RVF4TWpEdzFxZWJIaDQxaTJDelNNdw?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-07-13",
-          "image": "",
-          "first_seen": "2026-07-22T00:43:41+09:00"
-        },
-        {
-          "title": "내 인스타 사진으로 AI 이미지 생성?…메타, 사흘 만에 철회 - 동아일보",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE04dEJ0TnVkb0VhazBmajh0OUVmMnoxTkp6cGF2TERGQzQ2RUdzNW9QejZBSmZlRVdDdV9HaFR2OWxmUU0zeWtCV2NpWUZzZ0xvSWRtSEttYTBTQlRJQmZTeTZzbUEwQl9XSl9QT0JZSWhRVWfSAWZBVV95cUxON1dwS19qSEJULUtEQXhwQ1V0Z2d1RDJ4b3dNOUVwUmNKZUVOZ2xSdVJoZ2sya3JIV3VoaE5WUzZUakxudDhXNjNfLVZMSnRDWnJwV2hCOEdKSFB1UWxaVlktLWMtMFE?oc=5",
-          "source": "동아일보",
-          "summary": "",
-          "published": "2026-07-12",
-          "image": "",
-          "first_seen": "2026-07-12T23:56:45+09:00"
         }
       ]
     },
@@ -756,24 +756,6 @@
           "first_seen": "2026-07-18T00:13:24+09:00"
         },
         {
-          "title": "경기아트센터, 7월 ′2026 G-ARTS FESTIVAL′ 클래식·뮤지컬 등 공연 - KPI뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE16TW5UZUlTZWp5ZUNFd2JQdnZCUTNwX1QxMGxFTm9OVm5YQkh5WXhyaXRLYkNXaHIxWUdLWkQxWmM2alA0RmtJWFBldGItSGtpOWVJ0gFTQVVfeXFMTXpNblRlSVNlanllQ0V3YlB2dkJRM3BfVDEwbEVOb05WblhCSHlZeHJpdEtiQ1docjFZR0taRDFaYzZqUDRGa0lYUGV0Yi1Ia2k5ZUk?oc=5",
-          "source": "KPI뉴스",
-          "summary": "",
-          "published": "2026-07-08",
-          "image": "",
-          "first_seen": "2026-07-09T01:01:52+09:00"
-        },
-        {
-          "title": "아비뇽 페스티벌 ‘한국어 특집’, 공식 프로그램 9편 상연 - 서울문화투데이",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE51WkNMRGZfSWtkSEV4NndPUFVvNzctZEpKRVQ0Vi12MzVoWkFmTjdSOEEzZkpQdFMxUkpqTXlpZERLeFpCX0oxdy1zeTVVTlM1aGF0T0t1bmNIYXQ3ZHlvM0NmTDdpZnNQS1E?oc=5",
-          "source": "서울문화투데이",
-          "summary": "",
-          "published": "2026-07-08",
-          "image": "",
-          "first_seen": "2026-07-09T01:01:52+09:00"
-        },
-        {
           "title": "아비뇽 페스티벌서 한국 공연에 관객 호응…현지 언론도 주목 - 연합뉴스",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1PUENWT0RSNkRoS0VzaFpSTmJVV3g2a2FkeFRwVEsyZ2h3N1gtWmlMekhJNS1TeXpPeHdlZXhfdHEzdFpvT1gxSHNLZjQ1UVZFR0U1T3lLTGdOSkXSAWBBVV95cUxQNHFQMHlDSWhHOXF5VGJfMWp1bzhZVnc3R293UmswenlnNndWbXpVQ1NJb0RUR0VDM1RoMGluc1NJWEhrRUFfU2RTamJqQmFYZkxiZHc3bEozend5NmJUSEc?oc=5",
           "source": "연합뉴스",
@@ -868,6 +850,15 @@
           "published": "2026-07-20",
           "image": "",
           "first_seen": "2026-07-22T06:51:04+09:00"
+        },
+        {
+          "title": "장애예술계 최초의 미디어아트 전시회… ‘미디어 술래(術來)’ 개막 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5iZlhqaWNvejNHYWdkbWhhWGlad2Z0Mkt5clZfbm5IY2pVNmdVeXhOLW0tOVlJQlVERHB0dlg0enZ1ZlU5RGc?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-07-20",
+          "image": "",
+          "first_seen": "2026-07-23T06:52:58+09:00"
         },
         {
           "title": "대구서 만나는 백남준과 김치앤칩스…한국 미디어아트 40년 잇는다 - kyongbuk.co.kr",
@@ -1030,33 +1021,6 @@
           "published": "2026-07-09",
           "image": "",
           "first_seen": "2026-07-15T00:23:25+09:00"
-        },
-        {
-          "title": "명지대, '서울로미디어캔버스 대학협력전'서 미디어아트 전시 - 뉴시스",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBoMHhfNDJUUW5zTzhxV05aTHJDeEV1NkxFWjNwc2w5WFZESnhTajhiMDg2MEYtanpMNnhQdkx5amVSNkZacUoyX213ZGduWEVES0FTanZMc2NtVjlTZ3VZVdIBeEFVX3lxTE1vdWtqclAwQ1dEQzlSMzJWaHZydzAxeFRfMmw2bW9FckowWWFmbUpOcm92MnlJVmxmUFR1TWNwcUFyb211Mms0YV9IYWg1NUN2Z3RpY2J4M1hnN08tZDBUSHk3T2N5NHdVelJVMXVHNGxURVJUamgxdw?oc=5",
-          "source": "뉴시스",
-          "summary": "",
-          "published": "2026-07-08",
-          "image": "",
-          "first_seen": "2026-07-09T01:01:52+09:00"
-        },
-        {
-          "title": "[전시리뷰]미술관으로 간 트로트…산업도시 울산, 미디어아트로 피어나다 - iusm.co.kr",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB5TmpPQXBYS3JUeUJuUTBvTGZ5RHJVUzBhNVFnanlhZlZOX0gyN0RJcjJHekhDaVo5NFE1UUFvbmJBMzg5RUZWak55Rm1CelNrN2NTdXoyd2FwZXJJYi1UaFdBOTM1d1BrbVHSAW5BVV95cUxPT2hCOGRVbFhveTRzUmstRXRUdGNyQWhFQnJVM25reGNUYWJMU0M0cnMzbEJIckdhMUs3Nm5DSEN3NkhCSmZjamhGU25pM3N4b3VQalBfZXZROTVnd2xMZWZoOEJGeG9WVllDYW85UQ?oc=5",
-          "source": "iusm.co.kr",
-          "summary": "",
-          "published": "2026-07-08",
-          "image": "",
-          "first_seen": "2026-07-09T01:01:52+09:00"
-        },
-        {
-          "title": "국립현대미술관 “데미안 허스트”전, 관람객수 역대 최다 기록 - K-ARTNOW",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9RT25mUHQ1R2FKQU1ueVF0ZVc5ejQ4Nk5LRDlqVjBEbF8taVpxeks5cEZkWEphRm9NRjZFM1F3ZzVGdWJ1UGV2VGJzcmJUZXpvX1BNeUtPWW9hQmUybDRz?oc=5",
-          "source": "K-ARTNOW",
-          "summary": "",
-          "published": "2026-07-07",
-          "image": "",
-          "first_seen": "2026-07-09T01:01:52+09:00"
         },
         {
           "title": "청소년이 만드는 미디어아트, ‘미디어판타GY’ 참가 학교 모집 - 고양신문",
@@ -1770,6 +1734,15 @@
           "first_seen": "2026-07-15T06:43:32+09:00"
         },
         {
+          "title": "쿠키런과 아트 페스티벌이 만났다 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB1WXktb21tdmhRQ3JUZVMyM1h2emRXbXRiSENxQkdZYjJBalRnaVZMajR2bkMzZmUzRDkyb3VoYkNvOTFwcXhaME5wSzZlMkE?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-07-13",
+          "image": "",
+          "first_seen": "2026-07-23T06:52:58+09:00"
+        },
+        {
           "title": "소하 작가, 애니멀 아트 페스티벌 특별 개인전 - 아트코리아방송",
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8xd0ZRZmRPU1NlNTdIeUE3aUduWHA1Zzkta3FmNG55X3p0VEFMNjJ2aTU2WmpaUHctQ2xxbU13RS1wRVZ0bmJ6Ml9lSno2WVRNblJYbWtiZ2FVS0w3dmc1SFdQM0xiSWNLanFzMkh3?oc=5",
           "source": "아트코리아방송",
@@ -1824,24 +1797,6 @@
           "first_seen": "2026-07-18T00:13:24+09:00"
         },
         {
-          "title": "[문화 트렌드] 서울아트굿즈페스티벌 2026 참여 부스 모집 外 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBLWkJkdUxhZFZBVXBHQUNUNWRuRDdqTDJ0bkdEM3Y1d0VfRFVrYmR5YTl2aklTX1BnYlc0eHkxcVRSTnhLX3JiTDlidw?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-07-08",
-          "image": "",
-          "first_seen": "2026-07-09T01:01:52+09:00"
-        },
-        {
-          "title": "[D-BIZ Animal Art Festival] 제2회 애니멀 아트 페스티벌, 7월 29일 인사동서 개최…생명 공존의 메시지 전달 - 데일리비즈온",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5oWWhPYVV2aGNRd21TTW5ZVjREZkJMWk9VQldrSGlmOEh4WFFILTUtaDJRSEVFMDNqcUV2cGFmMnh2clN4cFVnc2pPY0pvMlZmbWFWeUVMWE8waER2Uk01ZzdmY2l1eTg3STFhXw?oc=5",
-          "source": "데일리비즈온",
-          "summary": "",
-          "published": "2026-07-08",
-          "image": "",
-          "first_seen": "2026-07-09T01:01:52+09:00"
-        },
-        {
           "title": "일본 도쿄 시부야서 대박 터진 '인천펜타포트'...쇼케이스 성황 - 경기일보",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE03czVqbDFSR3BXZWVkZzJtVFhWZ2pEeHNSVjRqMWl4dC14NVptOThrWVFDTEdXZGRYNnNoOXRyMGpDRFdMaWRzaUJoYjFENU5XMzhicjF0QWJMNDg?oc=5",
           "source": "경기일보",
@@ -1867,24 +1822,6 @@
           "published": "2026-07-08",
           "image": "",
           "first_seen": "2026-07-14T01:33:58+09:00"
-        },
-        {
-          "title": "올여름 휴가는 공연축제로 ……2026 아르코 썸 페스타로 떠나는 ‘공연예술 바캉스’ - K스피릿",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE44M0xDRExwXzh2akktTVI1MHhENFdXdERLTDRJU3RMWVBwNTdVTU9keTg5U25XaUF4OVFCMGZlNzBlUUhIejl6bUhtdHN4TFExOFN0TDZDd0lvaGFpOGFVUE1KS0JVLV8yMzBnQnFVZErSAXNBVV95cUxQeHA5NGx1U1RaUUN0TTB0cUROMlpMcldUX3NZMk1qbEFfSzJZTXZOOVlzZlRJX05RazRYMzFUNldqZ2o3ck1HVlctNldxUUFHWkRmR3pLMmlscy1PczZnbmo5WXVvUHFfMHFhNE1XMXpsdWxv?oc=5",
-          "source": "K스피릿",
-          "summary": "",
-          "published": "2026-07-07",
-          "image": "",
-          "first_seen": "2026-07-09T01:01:52+09:00"
-        },
-        {
-          "title": "전국 15개 공연축제, 여름 여행지가 되다…2026 아르코 썸 페스타 - 서울문화투데이",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1iU1pMTzJob2d4YlpSWFpnN19uTFhJM0pjaDlzYXBSSlpRNUNsc0RodUZ1Z0RsT3oxRzRFQ09aWVdlc2ZoYzZZWktwaDlJQUltclhQb202bDhfZjBpY1lWbDBJSnF3UUlFV1E?oc=5",
-          "source": "서울문화투데이",
-          "summary": "",
-          "published": "2026-07-07",
-          "image": "",
-          "first_seen": "2026-07-09T01:01:52+09:00"
         },
         {
           "title": "올여름 휴가는 공연축제로 ……2026 아르코 썸 페스타로 떠나는 ‘공연예술 바캉스’ - K스피릿",
