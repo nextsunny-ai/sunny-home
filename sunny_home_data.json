@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-25T00:25:29+09:00",
+  "updated": "2026-07-25T06:52:03+09:00",
   "categories": [
     {
       "id": "ai",
@@ -49,6 +49,24 @@
           "published": "2026-07-24",
           "image": "",
           "first_seen": "2026-07-25T00:25:29+09:00"
+        },
+        {
+          "title": "코빗, AI 에이전트로 코인 거래하는 '코빗 CLI' 출시 - 연합인포맥스",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9PbEFvUXpmWkhrcTFsVVYtbDlSOVVWektSZDRJbDU4OGE2Tmo0dEFPU0ZRcUpYMlZkN2lXSmM5azZIem9OdGVpal9hcnEzdjhzMW9FNXhVSzNMQXRGbmVjQ3l4WmlkS2RPMHBKSndCdVg?oc=5",
+          "source": "연합인포맥스",
+          "summary": "",
+          "published": "2026-07-24",
+          "image": "",
+          "first_seen": "2026-07-25T06:52:03+09:00"
+        },
+        {
+          "title": "MS, 'MAI-이미지-2.5-프로' 등 출시...\"오픈AI 모델 본격 대체\" - AI타임스",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1kcHF1Q0VBcVVKaXd4UXdGUE9NemFySWVXNVlDZXhiek1mdWhIZnpUX3d2S2pjbDc3Z2RGYzR0UVJWRWZTSndTNUFGVmFyQXAxQzZVWVdKVldOYTNoUEdkRFFQVmhjTmdyWWc?oc=5",
+          "source": "AI타임스",
+          "summary": "",
+          "published": "2026-07-24",
+          "image": "",
+          "first_seen": "2026-07-25T06:52:03+09:00"
         },
         {
           "title": "클립아트코리아 AI 스튜디오, 저작권 인증 라이선스 콘텐츠와 생성 AI 결합… “상업적 활용을 고려한 콘텐츠 제작 환경 지원” - 매드타임스",
@@ -240,6 +258,15 @@
           "first_seen": "2026-07-18T23:52:55+09:00"
         },
         {
+          "title": "Supply Co. 아카이브 - OpenAI",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5abmZ0OWprYUx0a3pzaTkxOUFTOERpV3VJNlFHZ3BFZ2tsRXlSel9Pakp3Vkd4UnV5dWRfb3VfcGpEdjd4UVI5MlVjVkxvVVh5Wnc?oc=5",
+          "source": "OpenAI",
+          "summary": "",
+          "published": "2026-07-16",
+          "image": "",
+          "first_seen": "2026-07-25T06:52:03+09:00"
+        },
+        {
           "title": "베이글코드, 전사 개인 AI 에이전트 업무 인프라 구축 - 디일렉",
           "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1GbXBvTVYwQkhUTjVRZDdKSU53V01jNW5FTnBJMDdxVEZzV1BXQjBxbmZlYmVQa3VvdnZpNzVHWW5oMnZ6NjVjNUU1T0xWR2YtZk4zOGlyQXpCSnd0bEEwcmNuaklLZw?oc=5",
           "source": "디일렉",
@@ -247,33 +274,6 @@
           "published": "2026-07-15",
           "image": "",
           "first_seen": "2026-07-16T00:26:14+09:00"
-        },
-        {
-          "title": "오라클, ‘퓨전 에이전틱 애플리케이션’ 개발 플랫폼 공개…기업용 AI 에이전트 시대 본격화 - 인공지능신문",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1aOU1udU5SWmFaSnhwQjhXVmJmOTRLS21aOXg5OE1EMm52U0M4T1BaaU9EeEJJR2tXSTNlbFd3SVpkNmNBWm9kQktJMGhQa211M1NPb1ExNjhQS2NlOVR3MGlKODBvQlk?oc=5",
-          "source": "인공지능신문",
-          "summary": "",
-          "published": "2026-07-15",
-          "image": "",
-          "first_seen": "2026-07-16T06:44:30+09:00"
-        },
-        {
-          "title": "LTM, 앤트로픽과 파트너십 체결… 클로드 도입 가속화 및 엔터프라이즈 딜리버리 확대 - koreasprint.com",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1za2hMdlVzWGNlSW1wbEdZaURtbjR3MVlJWmhUQW83WEM2a193emNaVzNlTHBENXhyblk3Vk54M3o2cGMyWW9vaEhES3dzeDUxU3VsVmdoQ0F3M2hxS3lKVUo1UmlfR2hoam1fc0J3?oc=5",
-          "source": "koreasprint.com",
-          "summary": "",
-          "published": "2026-07-15",
-          "image": "",
-          "first_seen": "2026-07-17T06:52:31+09:00"
-        },
-        {
-          "title": "공개된 콘텐츠로 ‘이미지 생성’ 제동… 리스크 커진 AI 산업 - 세계일보",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBwTUZ3LXN5OVJ1YUdsejVqQW4xVG1OSDFYQXkwcmlaalFUcmlsX2otVFNuM3p1aVprR0xPZ0pJRXc0Y09GYkR3QmlNaUY5dERzam5Ga3NzYVXSAVRBVV95cUxNdDdldEF6NC1ObmNhWnRwcDVCQzc1SHB1TndWYXAwM1UxamxsRGFHMXEzMzJrM3BPUWRwRG12cUhHV2FReHFrd2ZQSFRBMHFhZm1POU8?oc=5",
-          "source": "세계일보",
-          "summary": "",
-          "published": "2026-07-15",
-          "image": "",
-          "first_seen": "2026-07-21T00:50:28+09:00"
         }
       ]
     },
@@ -289,6 +289,15 @@
           "published": "2026-07-23",
           "image": "",
           "first_seen": "2026-07-25T00:25:29+09:00"
+        },
+        {
+          "title": "찍고 소장하는 K웹툰…태피툰, 포토이즘과 글로벌 협업 - 노컷뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5jWDY4aHcxM1RabUg4Q3RsTms3TWk1LTI2YXp2U3diU25zRUcxRUpsa2tkcE9PYVkxOWtKeWpFTnV1ZHJ1VEp1aTdNYTQ4TFNIaGc?oc=5",
+          "source": "노컷뉴스",
+          "summary": "",
+          "published": "2026-07-23",
+          "image": "",
+          "first_seen": "2026-07-25T06:52:03+09:00"
         },
         {
           "title": "스텔라앤, COL그룹과 K-웹툰 기반 숏폼 애니메이션 협력 논의 - 세계일보",
@@ -334,6 +343,15 @@
           "published": "2026-07-20",
           "image": "",
           "first_seen": "2026-07-21T00:50:28+09:00"
+        },
+        {
+          "title": "콘진원, ‘K-콘텐츠 IP 엑셀레이트 데이 2026’ 성료 - 벤처타임즈",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE52VWc5Mm05WUE4WUIzVDhJaWNlNDRaME9BeVRqTkdGM3J4ZjQ0a0U3M0xGMEpKLXdBZzhOT2JEam5HZEgwc01EcmtvcHVZUmJzMXFMSnJQT2w1TTQtbDRIQTlYelBtQQ?oc=5",
+          "source": "벤처타임즈",
+          "summary": "",
+          "published": "2026-07-20",
+          "image": "",
+          "first_seen": "2026-07-25T06:52:03+09:00"
         },
         {
           "title": "넘겨보던 K웹툰 공연장으로… ‘웹툰 IP’ 뮤지컬화 잇따라 - v.daum.net",
@@ -532,24 +550,6 @@
           "published": "2026-07-13",
           "image": "",
           "first_seen": "2026-07-15T00:23:25+09:00"
-        },
-        {
-          "title": "[기고] \"AI 시대 콘텐츠 경쟁력은 IP 가치사슬과 데이터 기반 민관협력에 달려 있다\" - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1aNlZIb0xQcFk0N0hwYXUtbGZiUzM1Z0kwN09Kcy1pcWJQT0U5SlZaSUtMeDJ2Z2JVZHNHSWtZWWVWMkZYSHR6M3RIUGR0bVEwYnlKcA?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-07-13",
-          "image": "",
-          "first_seen": "2026-07-15T00:23:25+09:00"
-        },
-        {
-          "title": "K-웹툰 보러 독일 팬 1000명 북적…코트라, 프랑크푸르트 체험관 운영 - 헤럴드경제",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1PRU5YRjhoWmxsVXBIZ3dGcEpreHR1Yi1WQ1dYb2hxX1EyODdOdFpvV1JiM3VoOFh0VEpsVTdaQkE0ZFpKRkZBOXhIVEpTd0RKekFkSEZn?oc=5",
-          "source": "헤럴드경제",
-          "summary": "",
-          "published": "2026-07-13",
-          "image": "",
-          "first_seen": "2026-07-16T00:26:14+09:00"
         }
       ]
     },
@@ -1012,15 +1012,6 @@
           "published": "2026-07-11",
           "image": "",
           "first_seen": "2026-07-12T23:56:45+09:00"
-        },
-        {
-          "title": "골방에서 갤러리로…현대미술의 중추가 된 ‘오타쿠’ 서울 왔다 - 한국경제",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE4tY2d5ZGkwZHVleTAzZWN1YWRqaEVNYUVWb25vcEwzaDNJZzIwNGJPR0xCLWZjOEdsVlpVTWdyaVc5cjhpclp5YXdRV2FJOFFtbDM2S9IBVEFVX3lxTE4tY2d5ZGkwZHVleTAzZWN1YWRqaEVNYUVWb25vcEwzaDNJZzIwNGJPR0xCLWZjOEdsVlpVTWdyaVc5cjhpclp5YXdRV2FJOFFtbDM2Sw?oc=5",
-          "source": "한국경제",
-          "summary": "",
-          "published": "2026-07-10",
-          "image": "",
-          "first_seen": "2026-07-11T01:24:58+09:00"
         },
         {
           "title": "골방에서 갤러리로…현대미술의 중추가 된 ‘오타쿠’ 서울 왔다 - 한국경제",
@@ -1548,6 +1539,15 @@
           "first_seen": "2026-07-22T00:43:41+09:00"
         },
         {
+          "title": "‘미감과 혁신성’ 다 잡았다… 빅크, 어워즈 2관왕 달성 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9idmRtWlNpY2R0cXB0THVicUZxSzl5X2VndEZoMWtEVkR2elNoVDVjamY1NFFNUnhIdU00aWdiLTJudXE0dWc?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-07-15",
+          "image": "",
+          "first_seen": "2026-07-25T06:52:03+09:00"
+        },
+        {
           "title": "미래를 읽는 네 개의 디자인 키워드, iF 디자인 트렌드 리포트 2026 - 디자인플러스",
           "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5YZTNlNEFvVGo5NXpRYWdLTzM5bDRtTkJWaHlOME5qbjhmN3JqQ3NvQW91SlJXQWtuVWljbURyd3Z1enFtTUh1WTM1S3k?oc=5",
           "source": "디자인플러스",
@@ -1609,15 +1609,6 @@
           "published": "2026-07-12",
           "image": "",
           "first_seen": "2026-07-17T00:38:19+09:00"
-        },
-        {
-          "title": "ep.01 브랜드, 브랜딩 &amp; 두 선구자들 - 브런치",
-          "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFBLb0lxRWdNSFN4enpyNFQ3UkFxcWdyd1VnNk8zX3B1Y2tKZVQ4UGVxTU9ySWVIM2xIWHlCeUdwbWtfZw?oc=5",
-          "source": "브런치",
-          "summary": "",
-          "published": "2026-07-11",
-          "image": "",
-          "first_seen": "2026-07-11T23:53:57+09:00"
         }
       ]
     },
@@ -1804,15 +1795,6 @@
           "published": "2026-07-11",
           "image": "",
           "first_seen": "2026-07-14T01:33:58+09:00"
-        },
-        {
-          "title": "한국타이어, 'S2O KOREA 2026' 참가…페스티벌·모터컬처 조합 - 머니투데이 - 머니투데이",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9YejBYWXJJM2djUlg0UC1zX3FTRm0tU3FTdkctY0FaM1hOZEtMeldsa1JpTm9NYUxiRkRIQWVlX3VHaGtYWDRZWC1kQUVCb085MmVJLTBlQTNsR3ZraTdmMHJ1ZzA4MWpPNFhqQ9IBckFVX3lxTFA0eWswVjR3Z3NxODdncW5xSFFOY29GNjVKSVR0UVVJOXJ6OEExYUdlNkJYakFqTUYybERISGVCUGxndmpsTWFZdW9TT2VTck1IQW1xNUZvOHplWklpd29jQUNiVXFxX1VuS3QzLWEtbWFqUQ?oc=5",
-          "source": "머니투데이",
-          "summary": "",
-          "published": "2026-07-09",
-          "image": "",
-          "first_seen": "2026-07-11T01:24:58+09:00"
         },
         {
           "title": "한국타이어, 'S2O KOREA 2026' 참가…페스티벌·모터컬처 조합 - 머니투데이 - 머니투데이",
