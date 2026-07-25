@@ -1,10 +1,19 @@
 {
-  "updated": "2026-07-26T00:02:41+09:00",
+  "updated": "2026-07-26T06:41:42+09:00",
   "categories": [
     {
       "id": "ai",
       "name": "AI 트렌드",
       "items": [
+        {
+          "title": "알리바바, 차세대 이미지 생성 AI '큐웬 이미지 3.0' 공개… \"보기 좋은 이미지 넘어 실용적 생산성 도구로\" - 인공지능신문",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9MeGx6SDA0LVJXbG92dFI1VUMwTExzeUgyeXpWTmtLTmRZV1BsZXVkbmxoZG1tX19pUXdHeGE0d1ZLQ0s5VWg3M05oM3NscXdYbmdSMzZjeHk3VkFaaTBXLVh3MmQyeUE?oc=5",
+          "source": "인공지능신문",
+          "summary": "",
+          "published": "2026-07-25",
+          "image": "",
+          "first_seen": "2026-07-26T06:41:42+09:00"
+        },
         {
           "title": "\"한국형 AI 에이전트 키운다\"···KAIST·엔비디아 공동연구소 설립 - 헬로디디",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1XTEtGcDNoRWhkRHNJWVFsUVhUTTRLWlloZk5fajVUNnpMSnB2ZHQxR21UQm1TbXZCNDRxbk40d2c2YXJla3J3cmRDQ3lqV3A4czJzbkNETWxGdE9Mb3FZQ1NGc0xCS24xRGc?oc=5",
@@ -265,15 +274,6 @@
           "published": "2026-07-16",
           "image": "",
           "first_seen": "2026-07-18T23:52:55+09:00"
-        },
-        {
-          "title": "Supply Co. 아카이브 - OpenAI",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5abmZ0OWprYUx0a3pzaTkxOUFTOERpV3VJNlFHZ3BFZ2tsRXlSel9Pakp3Vkd4UnV5dWRfb3VfcGpEdjd4UVI5MlVjVkxvVVh5Wnc?oc=5",
-          "source": "OpenAI",
-          "summary": "",
-          "published": "2026-07-16",
-          "image": "",
-          "first_seen": "2026-07-25T06:52:03+09:00"
         }
       ]
     },
@@ -781,24 +781,6 @@
           "published": "2026-07-09",
           "image": "",
           "first_seen": "2026-07-18T00:13:24+09:00"
-        },
-        {
-          "title": "경기아트센터, 7월 '2026 G-ARTS FESTIVAL' 클래식·뮤지컬 등 공연 - 경인종합일보",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE92WUcyOHBjWlNKcEx2clpFcnpYUnFTTDh1UkNTcDJlUjdFOVVIU3lHRkoxNW95RWhidEZkQVI5YzVVYjRINXlrT0lFTlk4aFF1YVZPUTBmVzFpaGJlci1TbFlXcUczSGRSOXZkNGJMUUpmQdIBckFVX3lxTE92WUcyOHBjWlNKcEx2clpFcnpYUnFTTDh1UkNTcDJlUjdFOVVIU3lHRkoxNW95RWhidEZkQVI5YzVVYjRINXlrT0lFTlk4aFF1YVZPUTBmVzFpaGJlci1TbFlXcUczSGRSOXZkNGJMUUpmQQ?oc=5",
-          "source": "경인종합일보",
-          "summary": "",
-          "published": "2026-07-08",
-          "image": "",
-          "first_seen": "2026-07-12T06:36:41+09:00"
-        },
-        {
-          "title": "전국 공연축제 15개를 하나로 묶었다…7~9월 '아르코 썸 페스타' - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFA5enFlQ3Y2OTBRUmxhcHhBMWh4ZzVXNFhYaEJGZ2J4WUFKN2c4eFVtS0ZaTEExT0ZZam9vRDBPWExwMkxKalE?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-07-07",
-          "image": "",
-          "first_seen": "2026-07-12T06:36:41+09:00"
         }
       ]
     },
@@ -832,6 +814,15 @@
           "published": "2026-07-23",
           "image": "",
           "first_seen": "2026-07-24T00:55:21+09:00"
+        },
+        {
+          "title": "사라진 흔적부터 AI로 재구성한 역사까지…'올해의 작가상 2026' - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE90eVZUd3hNQWp0Vm9uSUxEazVvbmxEcTZTYjVsNmRBeUJXRGRCbExaTHRpRVVwNnhFMXlCZE9pT213ekJvTDdZQS1SckpVVzhfbndIbWZ2TFJmTk3SAWBBVV95cUxNZ1NKbTA4Q3Uzc3NJTXF3UDk2OUNzUFV6eHpBSzgyX1J2ZGxhb2d1UEdqSFNaWkdFSTNxby0ySXhpTS1aUkMyQl80TXFhYkxhcGlqZmhLSS1fNnQ1NGpMRWc?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-07-23",
+          "image": "",
+          "first_seen": "2026-07-26T06:41:42+09:00"
         },
         {
           "title": "필리핀 관광부, 미디어아트 전시 공식 후원…기후위기·해양생태계 경각심 일깨워 - 비즈월드",
@@ -1600,15 +1591,6 @@
           "published": "2026-07-13",
           "image": "",
           "first_seen": "2026-07-14T01:33:58+09:00"
-        },
-        {
-          "title": "\"지역 자산 디자인하고 로컬 브랜딩하자\" - 세종의소리",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE0wQ3ZYd0haMlpIUVZFeF94c25vREFWanFQcGozaWV1NjBqWHlGUWsxZ3k4SGRmN1JQY3JvVE4zTWp5NUlleGQ5a0wwSUQyRi1SaFdtX0ZoMEd1ZTNDaklWeVFnRDVZUE0?oc=5",
-          "source": "세종의소리",
-          "summary": "",
-          "published": "2026-07-12",
-          "image": "",
-          "first_seen": "2026-07-12T06:36:41+09:00"
         },
         {
           "title": "포토이즘의 새로운 브랜드 디자인 - 브런치",
