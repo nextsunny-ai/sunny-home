@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-29T01:04:48+09:00",
+  "updated": "2026-07-29T06:53:22+09:00",
   "categories": [
     {
       "id": "ai",
@@ -49,6 +49,15 @@
           "published": "2026-07-26",
           "image": "",
           "first_seen": "2026-07-27T00:05:33+09:00"
+        },
+        {
+          "title": "히타치, 시스템 개발 전 과정에 ‘AI 에이전트’ 투입… 생산성 30% 향상 선언 - 글로벌이코노믹",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVDcwNnNDQ2F0XzdNemk5MUY4MnVPS3k5MzJhaFg1eGdQYnI1TC1wUFZYTkhHTFRUZmpnZUhSbUVrN2RsSE5Gbl9pUE1DOFZld2l6WjJiRGZ4RXJFMnRlMkUtbjZPc2otcmc5S0hnODRGdDZuYWVPOHYxY1FZVldnXzZjZVYzdTN1?oc=5",
+          "source": "글로벌이코노믹",
+          "summary": "",
+          "published": "2026-07-26",
+          "image": "",
+          "first_seen": "2026-07-29T06:53:22+09:00"
         },
         {
           "title": "알리바바, 차세대 이미지 생성 AI '큐웬 이미지 3.0' 공개… \"보기 좋은 이미지 넘어 실용적 생산성 도구로\" - 인공지능신문",
@@ -261,15 +270,6 @@
           "title": "Lakebase Postgres로 AI 에이전트 오케스트레이션 간소화하기 - Databricks",
           "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNVzNtR3RuSjJyQUdobUNzWGZzTmYxb1FuVENZU1k3bnJLbV9mT3JGdTJhbnc2b20ydFlMV2IwdW9Pdi1naFhHX240Z1Vnbm1hVHVRT1ZNYnFQeVNuRUdkdFRzMmFQbVB5ZXltelVmTTItVzZDdjFpbF93T21oal93aVZtdXZHUFVYYV9keQ?oc=5",
           "source": "Databricks",
-          "summary": "",
-          "published": "2026-07-22",
-          "image": "",
-          "first_seen": "2026-07-28T01:19:54+09:00"
-        },
-        {
-          "title": "오픈AI, 국내 첫 챗GPT 광고 캠페인…한국 정서 담았다 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBobVFnVEU1MUZzUU1JN2o5Q1M5MUNlXy1LcEthX09jUWdMQjB3VF9ZeXZmVVBId2p0T01zb0tHdGVmV2g1a3c?oc=5",
-          "source": "v.daum.net",
           "summary": "",
           "published": "2026-07-22",
           "image": "",
@@ -583,6 +583,24 @@
           "published": "2026-07-27",
           "image": "",
           "first_seen": "2026-07-28T06:54:28+09:00"
+        },
+        {
+          "title": "여름 축제, 진짜가 나타났다! '한강 페스티벌' 개막 - 서울특별시",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1GTzVReUhFWWlxMlRTUEd1NVBwZVg4LTRUeE9PclpYNGprVnV0RU5LaDI0dXM3NS1la1R1RE13cEVockxrYnBNWGZYa1JTSXNCMFpuUC1pa2s?oc=5",
+          "source": "서울특별시",
+          "summary": "",
+          "published": "2026-07-27",
+          "image": "",
+          "first_seen": "2026-07-29T06:53:22+09:00"
+        },
+        {
+          "title": "2026 여름 한강페스티벌, 8월1~16일 개최 - TBS 서울",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQSTUybFMyYlAxRVlYVngyMUwyOHoyWXc1N2RKcWE5dUVtOFR3elFmVm1jZGlFS0tyLVgtdkZDNFJsaEF0b1RNdmZiTHBNNUpmTmwwNUsyYThCRXFhMnpKYXZyX1o5dnI3cHJ1TW9abWVNal96cUlXOTdDSDF1SVlfeVd2MmFTYnhMUmc?oc=5",
+          "source": "TBS 서울",
+          "summary": "",
+          "published": "2026-07-27",
+          "image": "",
+          "first_seen": "2026-07-29T06:53:22+09:00"
         },
         {
           "title": "군포문화재단, 창작뮤지컬 ‘2026 군포 뮤지컬 스테이션 59.9’ 공연 - 경기일보",
@@ -1065,6 +1083,15 @@
           "first_seen": "2026-07-29T01:04:48+09:00"
         },
         {
+          "title": "게임사 붙잡는 한국·유럽...초기 개발부터 세액공제까지 - 플레이포럼",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9fcVZwNVZWSkMxMGlFODFiSFhpbkNNdldOQ19KeHlLTGhIM2VBbElLLTgtVzF0cXFrNlpMaHY4MGRXXzFpTldOVXQxb1hVcG1VMEh5LW1RS3V0aFhwQjBuRFI0c2ItcmVna0JZTg?oc=5",
+          "source": "플레이포럼",
+          "summary": "",
+          "published": "2026-07-28",
+          "image": "",
+          "first_seen": "2026-07-29T06:53:22+09:00"
+        },
+        {
           "title": "제작비 부담·투자 위축 해법 찾는다… 콘진원, 방송영상 제작사 간담회 개최 - 스타트업엔(StartupN)",
           "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE94aVpSb3dsNUdnZTlhbmdsRjRFdGFmN1RBS2lHVjdhWHd6OTladmpFZGFRZTFTOTczRXZWTTFvdWk4OWYyZ01XSGFYNVlCVFVPU096SjJXaG5xX29OTmhGT1V3Y1pqbElK0gFsQVVfeXFMTUJMMDF2M2JnQ09oOWxzaUkxZmZ2ZUl5SExOSHlVX0RmYUw5Y1ZIZC1LQ2l6c05UdUhQOS1LbnZUQVFNNEkwc095ellSTWpISjFwTUZOX0hrc09wZ2VSVVBydmZSbnozREpndDlu?oc=5",
           "source": "스타트업엔(StartupN)",
@@ -1302,15 +1329,6 @@
           "title": "콘진원, ‘글로벌 비즈니스 라운드테이블’ 참가기업 모집 - 벤처타임즈",
           "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1yNXJSRUhMTFYxMUV6UUhNSGJDQ0JGVGsydkItMWRkMmU4TXhuRV9XZTlCaHRSRVVxTk9IRW1fdVg3UWRaNWNVVVNnclNYMjI3TEYwNldHQjJ2NmZ4RTBuQmtDT2J3Zw?oc=5",
           "source": "벤처타임즈",
-          "summary": "",
-          "published": "2026-07-15",
-          "image": "",
-          "first_seen": "2026-07-16T00:26:14+09:00"
-        },
-        {
-          "title": "JTBC 회생 사태에 문체부 “콘텐츠 제작지원 및 저금리 융자지원 규모 확대” - 디지털데일리",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFAwd2lKY1A0VkdldnBFRmphd1B6ZzgtNDBBdnJTX216OEJsRUdyeVRDU05VaXBXcVg3UlczS2Q3Z3hmOHlPeHVUQTRfczZRZmV4dlc0T0xEYmhCWDJkaWl4aEV0RnU?oc=5",
-          "source": "디지털데일리",
           "summary": "",
           "published": "2026-07-15",
           "image": "",
@@ -1759,15 +1777,6 @@
           "published": "2026-07-15",
           "image": "",
           "first_seen": "2026-07-28T01:19:54+09:00"
-        },
-        {
-          "title": "쿠키런과 아트 페스티벌이 만났다 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5EMU5CVi1OUEFKcDlxLTV0WFk5ZE9xM0tTbXlNdm1EU3Ixc3NOV0tkdzRGbDBMU2FmekdtUEJTWWIzeXdRM3Fza2FkeGNzelpiMGVPZw?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-07-13",
-          "image": "",
-          "first_seen": "2026-07-15T06:43:32+09:00"
         },
         {
           "title": "쿠키런과 아트 페스티벌이 만났다 - v.daum.net",
