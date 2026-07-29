@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-30T00:48:50+09:00",
+  "updated": "2026-07-30T06:44:00+09:00",
   "categories": [
     {
       "id": "ai",
@@ -195,6 +195,15 @@
           "first_seen": "2026-07-28T01:19:54+09:00"
         },
         {
+          "title": "오픈AI, ‘챗GPT 헬스’ 美 출시… 맞춤형 건강 답변 제공 - IT조선",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBsNHVfNERlYXRjZVEwdHNIQ3V4V2xJSnNDSkZFMk1iYWVSUW9WR0xuV1BYYmc1NmdEZGZsZFJtODVyb0tzNFZFWlE3azdaNnB2UU1pUURSM1BkbjdoYmNXbXNyUUNheTk2Q3JUc2xrNG7SAXRBVV95cUxOc2dQcnVmSUhMRU5jYVBvT3MzeEFPNl9GWTdiVjZNSFlQREZtaUFidEVkU0ltdFFsWXo3MEFXZm51V1RFVUV0eGdQYllHb0psVlhxc0N4TkE0dmhDYVJmenUxNmlpbWtiTUxna1ByMV9XMFdfTg?oc=5",
+          "source": "IT조선",
+          "summary": "",
+          "published": "2026-07-24",
+          "image": "",
+          "first_seen": "2026-07-30T06:44:00+09:00"
+        },
+        {
           "title": "앤트로픽, '클로드 오푸스 5' 전격 출시… \"최고 수준 추론 성능, 절반 비용으로 구현\" - 인공지능신문",
           "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1TRGpULUFReWtVQm1QZGlDMHZVRndsY2lOdWRHaU1fbk1Ka3lSdVl3U1lpTzFWVnpBa0hGVmY2S05WdWNFMlV4ZE45NGxLMl9iNzBiSHV6RkhqX2xfY3VqSjNwNUUwSEE?oc=5",
           "source": "인공지능신문",
@@ -265,15 +274,6 @@
           "published": "2026-07-22",
           "image": "",
           "first_seen": "2026-07-23T00:42:54+09:00"
-        },
-        {
-          "title": "알리바바, 이미지 생성 AI '퀜-이미지 3.0' 공개...핵심은 '진짜같음'...4500토큰짜리 긴 지시문 한 번에 소화해 신문 지면·수식 논문·다층 UI까지 그려내, 다만 가중치·벤치마크·기술보고서는 이번엔 함께 내놓지 않아 - 한국정보기술진흥원",
-          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFB3Z2oxYVQ5Z1lMNTVfTkxtdDVhZ3g2alVZOG5XMVdyVHBmZjQ1SkFkRk1jQmN6a3ljcldIUzhuYVc?oc=5",
-          "source": "한국정보기술진흥원",
-          "summary": "",
-          "published": "2026-07-22",
-          "image": "",
-          "first_seen": "2026-07-23T06:52:58+09:00"
         }
       ]
     },
@@ -1651,6 +1651,15 @@
           "published": "2026-07-27",
           "image": "",
           "first_seen": "2026-07-30T00:48:50+09:00"
+        },
+        {
+          "title": "YB‧김연우‧소란‧옥상달빛‧홍이삭…'블루웨이브 뮤직페스티벌 2026' - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5mZzRQUlZ6LUZ5Z3B2WnJOZXlXZXNuY01rSE91VjNRUEwzaEJxdHAtSWM2c3V1b3BaVTJVd2FVZ0N0UktfbWdHTGdNOA?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-07-27",
+          "image": "",
+          "first_seen": "2026-07-30T06:44:00+09:00"
         },
         {
           "title": "한국음악협회, '2026 국악관현악축제' 내달 개최 - v.daum.net",
