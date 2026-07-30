@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-31T00:51:30+09:00",
+  "updated": "2026-07-31T06:55:38+09:00",
   "categories": [
     {
       "id": "ai",
@@ -76,6 +76,15 @@
           "published": "2026-07-29",
           "image": "",
           "first_seen": "2026-07-31T00:51:30+09:00"
+        },
+        {
+          "title": "“AI 에이전트 관리·감독”...스노우플레이크, 코텍스 AI 게이트웨이 출시 - 전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9BRjZMQ1dBRWk0U3pRd1MyTE5wVVBSMjNodnpNcnJ6b2s4cFJLSndlTTJtQV9Uc1dVSnNIQjlZRnBLNWVWQlpqcnhieTVVdw?oc=5",
+          "source": "전자신문",
+          "summary": "",
+          "published": "2026-07-29",
+          "image": "",
+          "first_seen": "2026-07-31T06:55:38+09:00"
         },
         {
           "title": "라이너 AI 에이전트, 삼성물산 스마트 빌딩 운영 두뇌 된다 - 지디넷코리아",
@@ -265,15 +274,6 @@
           "published": "2026-07-23",
           "image": "",
           "first_seen": "2026-07-27T00:05:33+09:00"
-        },
-        {
-          "title": "카이스트, AI 에이전트 협업 기술로 ‘국제 물리 챌린지’ 우승 - 한국대학신문",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBid3paWkZVSldpZm14d1ZKejBJNVRRTWJOeVBFMUZqM19aYXZSOWZZbXlTYUtnU25TME9pdVlkSlFoZWVKNGlBbkU5bWxUS0ZITGxSU2E3WDdCN3N2ckE3UWxKQXREdw?oc=5",
-          "source": "한국대학신문",
-          "summary": "",
-          "published": "2026-07-23",
-          "image": "",
-          "first_seen": "2026-07-27T06:44:56+09:00"
         }
       ]
     },
@@ -408,6 +408,15 @@
           "first_seen": "2026-07-26T00:02:41+09:00"
         },
         {
+          "title": "‘알라미’ 딜라이트룸, K-pop·웹툰 IP 협업 확대…이환진 전 SBS PD 영입 - beSUCCESS",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9NNjQ4WmpRblFwMHQyR0JqbXhZY1dIUlQ5ZERWb1ZUZFR1X3lGN1M3azc4MmlNSl95RGt4bWFzYV9DTy1sMmc?oc=5",
+          "source": "beSUCCESS",
+          "summary": "",
+          "published": "2026-07-21",
+          "image": "",
+          "first_seen": "2026-07-31T06:55:38+09:00"
+        },
+        {
           "title": "\"콘텐츠, 잘 만들기만 해선 안 됩니다…이젠 IP로 돈 벌 차례\" - 뉴시스",
           "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1jdFVoLVVMMG5qaWRnRXNDMDBoeFVqWXBlbW12S0pzZmQ1QlRoeEctZjJtMV9FZVZMX28yeHZVWlJpRE5GWWxaYXBsa1NnRGNVQThmTk1CNElfQ3cxVkRDMGJzVVcxcUVKSEc1TXVlY1dEQkZZY1pBQ9IBeEFVX3lxTE1jdFVoLVVMMG5qaWRnRXNDMDBoeFVqWXBlbW12S0pzZmQ1QlRoeEctZjJtMV9FZVZMX28yeHZVWlJpRE5GWWxaYXBsa1NnRGNVQThmTk1CNElfQ3cxVkRDMGJzVVcxcUVKSEc1TXVlY1dEQkZZY1pBQw?oc=5",
           "source": "뉴시스",
@@ -537,15 +546,6 @@
           "title": "이마트24-콘진원, 국내 콘텐츠 산업 성장 지원 위해 업무협약 - 연합뉴스",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBDajRKOVg4NVBCaEVIQ0RTazhiM0lWN1pjR2w5SE44LUpNVlJuV3duMlN2eUxWeFFyWTVTWHgxYkZadlpqTXVqenZERTNqLS1JcEg0OEd6X21hSTjSAWBBVV95cUxNZVhkX2pUV3Vva2N5Q2ZpRU44V2FhN3F6N1BCbmtpZUR6VDRnSG5GUk9TMmxYLWd3VFF1aXVCeExzWHhVTWZIN0daak41SjdVLWI0anJyWEtJNTlWNERLaUU?oc=5",
           "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-07-17",
-          "image": "",
-          "first_seen": "2026-07-21T00:50:28+09:00"
-        },
-        {
-          "title": "'김부장' TV와 OTT 동시 흥행…K-콘텐츠 새 '공식' 되나 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE52VXotSE01ZWd4N0MwRWJSOVpWTmRxZi1oNnlaallhLUswUEUxM0VIcVlpT2x3VjFQd3RRZnhuRUl0SVQ2U2FSYnpHbjB0a2c?oc=5",
-          "source": "v.daum.net",
           "summary": "",
           "published": "2026-07-17",
           "image": "",
@@ -967,15 +967,6 @@
           "published": "2026-07-19",
           "image": "",
           "first_seen": "2026-07-19T23:55:52+09:00"
-        },
-        {
-          "title": "안과 밖을 이어주는 빛… 현대 미술 전시 40년의 이야기를 들려주다 - 조선일보",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPdU1aYzNONUNoQktqMUV4bUN0S3d1Wm5XM2taa1M5a0p3UWFLa2xIU3dWMnV3YmlfY2pwMFNCWENUci1EbS16dUxhR3E5bVFsZV9tRG5nMHZMZEVYR1ducko4V1hXLTh0UUpMSXJQa0c1Z2xvX3g4YTlaZ1o2S1hkX3BVa3gxVk9sZnJJRWY0eU9JRHdo?oc=5",
-          "source": "조선일보",
-          "summary": "",
-          "published": "2026-07-17",
-          "image": "",
-          "first_seen": "2026-07-17T06:52:31+09:00"
         },
         {
           "title": "제1회 디지털 미디어아트 페스타 'DMAF 2026' 개막 - 아트코리아방송",
