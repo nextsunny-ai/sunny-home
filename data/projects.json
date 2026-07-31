@@ -1,27 +1,27 @@
 {
-  "updated": "2026-07-30T21:55:45.528219+00:00",
+  "updated": "2026-07-31T16:01:42.962897+00:00",
   "source": "github.com/nextsunny-ai",
   "repos": [
-    {
-      "name": "sunny-home",
-      "description": "Sunny personal home",
-      "html_url": "https://github.com/nextsunny-ai/sunny-home",
-      "homepage": "",
-      "language": "HTML",
-      "pushed_at": "2026-07-30T15:51:40Z",
-      "has_pages": true,
-      "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
-      "stars": 0
-    },
     {
       "name": "nextart-preview",
       "description": "넥스트아트 홈페이지 리뉴얼 v4 - 컨펌용 미리보기",
       "html_url": "https://github.com/nextsunny-ai/nextart-preview",
       "homepage": "",
       "language": "HTML",
-      "pushed_at": "2026-07-30T04:36:02Z",
+      "pushed_at": "2026-07-31T12:15:51Z",
       "has_pages": true,
       "pages_url": "https://nextsunny-ai.github.io/nextart-preview/",
+      "stars": 0
+    },
+    {
+      "name": "sunny-home",
+      "description": "Sunny personal home",
+      "html_url": "https://github.com/nextsunny-ai/sunny-home",
+      "homepage": "",
+      "language": "HTML",
+      "pushed_at": "2026-07-30T21:55:46Z",
+      "has_pages": true,
+      "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
       "stars": 0
     },
     {
