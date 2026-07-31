@@ -1,10 +1,28 @@
 {
-  "updated": "2026-08-01T01:01:35+09:00",
+  "updated": "2026-08-01T06:54:15+09:00",
   "categories": [
     {
       "id": "ai",
       "name": "AI 트렌드",
       "items": [
+        {
+          "title": "앤트로픽, 테스트 오류로 인한 자사 AI 해킹 사실 공개 - VOA 한국어 홈페이지",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1td2twb3h2aFRVOXF0VnVKV0JXRVk2S0hGVzNYNV9vcU92aWxIaEVobE53aTU1QWdLTGk0MEEwQl9zR2c1NXBETGR2V2pFSFYzbGJkempTZVdORHJxalB2eXhaVzlXODRXenktdmFyWmpZVjlBemFKMGQzWFBHc1XSAX9BVV95cUxNbXdrcG94dmhUVTlxdFZ1SldCV0VZNktIRlczWDVfb3FPdmlsSGhFaGxOd2k1NUFnS0xpNDBBMEJfc0dnNTVwRExkdldqRUhWM2xiZHpqU2VXTkRycWpQdnl4Wlc5Vzg0V3p5LXZhclpqWVY5QXphSjBkM1hQR3NV?oc=5",
+          "source": "VOA 한국어 홈페이지",
+          "summary": "",
+          "published": "2026-08-01",
+          "image": "",
+          "first_seen": "2026-08-01T06:54:15+09:00"
+        },
+        {
+          "title": "AI 이미지 생성 기능 추가한 구글 어스, 가짜 위성 사진 소굴 되나 - 파이낸셜뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4xbFYzUUhRaDNNa3RtWlJlQlRFaDlTWFRiUk1CUWNiZDNVNHlYb0piTTFSV0dHanJwMWdFRXNyb01IQ3ZqVHNJYkRTOHRHQk5UaW5nUUdvVVVaUQ?oc=5",
+          "source": "파이낸셜뉴스",
+          "summary": "",
+          "published": "2026-08-01",
+          "image": "",
+          "first_seen": "2026-08-01T06:54:15+09:00"
+        },
         {
           "title": "Anthropic, 테스트 중 클로드 AI가 3개 기관 시스템에 무단 접근 - Investing.com 한국어",
           "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE40d09JcDVKLW5MNkl6OEF6MVpxaWY0Y05SYTZhNXN0b1c4VUtlYjF2Q01KRHZLTXNNOWVYSGdNU01IZXpwNWsyQ0ZyQ0dIbjZoc1RfLXVDTkRyUW1wRWI0QXprMDEzWFJ4QWtFUnBadzk?oc=5",
@@ -58,6 +76,15 @@
           "published": "2026-07-30",
           "image": "",
           "first_seen": "2026-08-01T01:01:35+09:00"
+        },
+        {
+          "title": "문페이, AI 에이전트 거래·결제 지원 '페이박스' 출시 - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBFUnNBNm9HZlkwY2doNVNna25YS2xaaU93aldzRGVJeHZJY2hkWkpURjBWUHFGMGhTTWtiaXVnY2tTVl9IVkZFNWhqRkRwWEdJWTA4VjUyQk5MaFnSAWBBVV95cUxQc3YydkRFT1hSQ0tibWlDOXVXRkRrcXlyZks0c2hBdzNBbHJ1UDM0TWstRVZyNy1ob2d0TjZnY0pwWTU3bVB2UWppaXFzVEh2emN4UnJGYkgxYU9FMmtVaEg?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-07-30",
+          "image": "",
+          "first_seen": "2026-08-01T06:54:15+09:00"
         },
         {
           "title": "24시간 개인 AI 에이전트 '제미나이 스파크' 를 선보입니다 - blog.google",
@@ -247,33 +274,6 @@
           "published": "2026-07-24",
           "image": "",
           "first_seen": "2026-07-25T06:52:03+09:00"
-        },
-        {
-          "title": "MS, 'MAI-이미지-2.5-프로' 등 출시...\"오픈AI 모델 본격 대체\" - AI타임스",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1kcHF1Q0VBcVVKaXd4UXdGUE9NemFySWVXNVlDZXhiek1mdWhIZnpUX3d2S2pjbDc3Z2RGYzR0UVJWRWZTSndTNUFGVmFyQXAxQzZVWVdKVldOYTNoUEdkRFFQVmhjTmdyWWc?oc=5",
-          "source": "AI타임스",
-          "summary": "",
-          "published": "2026-07-24",
-          "image": "",
-          "first_seen": "2026-07-25T06:52:03+09:00"
-        },
-        {
-          "title": "앤트로픽, 100만 토큰당 10달러에 Claude Mythos 5 출시… “지금까지 가장 강력한 모델” 자처 - Yellow.com",
-          "url": "https://news.google.com/rss/articles/CBMinARBVV95cUxNcllEbjVTaXNKODdCdDBjOVFkNGRKcXhlUVI5c0F1M3hBb1lNeFh6ZHNtOXo1R2Y4OGM3UXBMMFZJc0pBUGhMQ1k5NW1kYXNfUVotXzg1NmJGQXp3dnJhcHcwcHZvSjExdUt6RmZtb2IwYTJsQWF4cnoyOVBIUFk0amhGcDlrVXhhYWZEb0dqcUVDOWpKVkI4U0JpekIwYWVhdnJfemhwcVVLSDVqYWxPS25rNzh4UTJKU3FkLXFVVGFuSER3dzRlaWl1cUlkd1J0UC0zMWRHeHp6ekw3TWc4OFF1R3hyTmE0NVZHS2Z1TnNaX2RrUGtBTWJvUzNnYXBmRV83TGpraXlSLVF1VVdFV09CY2dSelBxVHd5aE5wQmtNX0l2VU5VVW5xVTM1VWVhWDQyWVN2emNmTUpiX3lnbVF0cG51X01YSkRpQ01UWV91NVFoM1J6bm0tUGlzQllmTjN0SUVGWVVtUVcxcmMtTkR5YUlwWDFNcEFPTV9BMlB5dVpEalp6aTFBdi1JNDFPdHFLM0t5WU9qdFNZSDBNc3FGdVp6eVFXVzRoWG93ZkxVZ2VkYkxLQUgzTFo2RzFoV0k5a3hIblB3dFhZa09sa3k5bkp0bHN0VzBPRjZKWDExRXFEanczY1FFVU5yWXNra1hWNFFDczhtUnZ4UFFXYzlBSnpFQTFyUlVUcWRBd2VndHRpX0lwM1ZIaFI?oc=5",
-          "source": "Yellow.com",
-          "summary": "",
-          "published": "2026-07-24",
-          "image": "",
-          "first_seen": "2026-07-27T06:44:56+09:00"
-        },
-        {
-          "title": "삼성SDS, 앤트로픽과 전략적 파트너십 체결… 클로드 기반 엔터프라이즈 AI 사업 확대 | 언론보도 | 삼성SDS - Samsung SDS America",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1wbVhmZXFSUVllanppcEJaMldxdHdGcFhUXzh3VkxTZ2QwR3hOa3ZrY2o2bWdQNVhmQ3Fnekg3czhrRzdZTGRZMXdvVWtlVk1YZERjdmtCTGRuU3duNlkydGNNb0dVWGUxNWVJQmRZUGR1QkZGUWFv?oc=5",
-          "source": "Samsung SDS America",
-          "summary": "",
-          "published": "2026-07-24",
-          "image": "",
-          "first_seen": "2026-07-28T01:19:54+09:00"
         }
       ]
     },
@@ -352,6 +352,15 @@
           "published": "2026-07-23",
           "image": "",
           "first_seen": "2026-07-25T06:52:03+09:00"
+        },
+        {
+          "title": "태피툰, 10주년 맞아 포토이즘과 맞손…글로벌 9개국서 웹툰 프레임 출시 - beSUCCESS",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBaOEhMRnlsMFBjN1ZqV245ekNGeDRicjNaZ2VCblQ3YWR1OW82LU1fVi1MZnJheGFkSWp5U0xqdDd6eGJtUVE?oc=5",
+          "source": "beSUCCESS",
+          "summary": "",
+          "published": "2026-07-23",
+          "image": "",
+          "first_seen": "2026-08-01T06:54:15+09:00"
         },
         {
           "title": "스텔라앤, COL그룹과 K-웹툰 기반 숏폼 애니메이션 협력 논의 - 세계일보",
@@ -709,6 +718,15 @@
           "published": "2026-07-20",
           "image": "",
           "first_seen": "2026-07-21T00:50:28+09:00"
+        },
+        {
+          "title": "12개월 아기도 즐길 수 있는 공연…아시테지 국제여름축제 개막 - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB1V184QlJ6MVFHNzVIc29iQ3FnSnREMEdKVF84U2tydFNmQVQyZFM4YmVnQXpWblFrYmdUU2o1WEZpbmhaQmU5dk1BSG9JRU5VWkN2dFJtYXVzS1XSAWBBVV95cUxPM25RbVdoaDY4M3g0aGtseWtiTTRRYkxIUmg2S29oNlllamtFRzlXd3c3V09WQVFEVmpGZnBnR0dreklnM1NsWGpwWGx6bW9EdW9LbktHU2tGS2JjVEg1ank?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-07-20",
+          "image": "",
+          "first_seen": "2026-08-01T06:54:15+09:00"
         },
         {
           "title": "경기문화재단, ‘2026 공연예술 활성화 쇼케이스-스테이G’ 개최 - 경기일보",
@@ -1518,6 +1536,15 @@
           "first_seen": "2026-08-01T01:01:35+09:00"
         },
         {
+          "title": "'2026 제2회 애니멀 아트 페스티벌' 전시작품 현장 - 아트코리아방송",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5Ld1VBT0hUZ3lRdklyZVE1dTJSSElVbXRBb2pCaGVfWWxyUmRHeUY3eHB0c3Q3M28xZXpYNDZUd3d0d2E5UVM2SGtLQmY3aWtOQ2MzSk5ob0J2b05fOVNVcmhGVExUcUJjbzdOejdB?oc=5",
+          "source": "아트코리아방송",
+          "summary": "",
+          "published": "2026-07-31",
+          "image": "",
+          "first_seen": "2026-08-01T06:54:15+09:00"
+        },
+        {
           "title": "발달장애인들의 음악 축제…'그레이트 뮤직 페스티벌' 9월 개최 - 연합뉴스",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1BemE1czR3MVoxQlZfOWQ3YzdHT281M1JxdVpHRWJ6ZTJVUXlRQWxHSmVsWmlxUEtKWms3RmwwUkdxb3VlUUFwdDFTRUN6Y2N1d2lQV1lJdktKMWFoZmFjbNIBYEFVX3lxTE1BemE1czR3MVoxQlZfOWQ3YzdHT281M1JxdVpHRWJ6ZTJVUXlRQWxHSmVsWmlxUEtKWms3RmwwUkdxb3VlUUFwdDFTRUN6Y2N1d2lQV1lJdktKMWFoZmFjbA?oc=5",
           "source": "연합뉴스",
@@ -1561,6 +1588,15 @@
           "published": "2026-07-30",
           "image": "",
           "first_seen": "2026-08-01T01:01:35+09:00"
+        },
+        {
+          "title": "인천 펜타포트, 글로벌 음악관광 모델 구축…‘2026 라운드 뮤직 포럼 인 코리아’ 개최 [2026 인천펜타포트 락 페스티벌] - 경기일보",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE13Z3BiaGVLaWZ2R1pYanI2RVE3MVhrTWRRMnRZWmd3dFR1aEhpUnByZUJlYkVLOXdYdDAyeml1Sk1nNFY5LVJldjlPcEtXTS1DbjFmTUU3QW54R1U?oc=5",
+          "source": "경기일보",
+          "summary": "",
+          "published": "2026-07-30",
+          "image": "",
+          "first_seen": "2026-08-01T06:54:15+09:00"
         },
         {
           "title": "355명의 아티스트가 펼치는 축제… ‘어반브레이크 &amp; 토이콘 서울 2026’ - K스피릿",
@@ -1759,24 +1795,6 @@
           "published": "2026-07-18",
           "image": "",
           "first_seen": "2026-07-18T23:52:55+09:00"
-        },
-        {
-          "title": "동시대와 공명하는 백남준의 행성적 사유 ‘백남준미디어아트페스티벌’ 개막 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1Jeko0YkV0Q29fVS0xeEdVQzNLQmZoRzhEODZHdW5JRXFIMmM3YkJCakhNeXNZeldOT1BLVi03U0VGV3JkNXhvRzAwOUluMDg?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-07-18",
-          "image": "",
-          "first_seen": "2026-07-28T01:19:54+09:00"
-        },
-        {
-          "title": "어반브레이크 · 토이콘 서울, 통합 축제로 7월 30일 코엑스 개최 - 사회적경제뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiP0FVX3lxTE45SGlJVEVYWFJZMUd1Sm5xMFdrbTR6RVE0UllLMjNCaEtHSnhwVnl3X2pab1lvaTlCRUFjRUhZVQ?oc=5",
-          "source": "사회적경제뉴스",
-          "summary": "",
-          "published": "2026-07-15",
-          "image": "",
-          "first_seen": "2026-07-28T01:19:54+09:00"
         }
       ]
     }
