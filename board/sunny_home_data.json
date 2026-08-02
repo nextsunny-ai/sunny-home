@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-03T00:01:55+09:00",
+  "updated": "2026-08-03T06:41:59+09:00",
   "categories": [
     {
       "id": "ai",
@@ -13,6 +13,15 @@
           "published": "2026-08-02",
           "image": "",
           "first_seen": "2026-08-03T00:01:55+09:00"
+        },
+        {
+          "title": "[만나보니] \"AI 에이전트 원년…성패는 보안·워크플로우\" - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1fMGZ5RDFjaUpVS2NldDc5bnRpeVBhNmRkaWI0ZE41eWZKRlh3ZHBocEdERzhVeVlDMGlITHFIY3EydTJ2YlRTWERVclcxb3ZrdUdDbF9hU0ZaSm_SAWBBVV95cUxPbEFiN1JuSTZLWG5yQkp4d055SlI4bF9XTnRuYmw2c0pTUVMzNGZCUkFVQkFfRjBfWHdoVEtJOGgyckJON2FFUFMtWm5VS2p3V3dDcTFkWUtvdFRJX1hSbWM?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-08-02",
+          "image": "",
+          "first_seen": "2026-08-03T06:41:59+09:00"
         },
         {
           "title": "앤트로픽, 테스트 오류로 인한 자사 AI 해킹 사실 공개 - VOA 한국어 홈페이지",
@@ -141,6 +150,15 @@
           "first_seen": "2026-08-03T00:01:55+09:00"
         },
         {
+          "title": "오픈AI, '학술 연구자를 위한 챗GPT' 출시… 한국 17곳 대상 기관 포함 - 테크수다",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQX2tjdDREVEZ1S2VDZ0JGbVJNcDZHX0dBQm9WaldWekNaVXZrX2RRWEZRUGVrd0pyMnljT0cwS3VrRW5WM21jTF9nd2ROU0k3NmNIckgxQS1BY09UMENxR0ZNN3QxYkV0VkVFM2NlSkRRRHhzQ2Y3Z0xVNGxEdkZ2ekRwM3RuUdIBiwFBVV95cUxQRUNTSEhHTDdnWWhRaGpjbzgwZlExUFRhUTdldmpMWXpCQ3BSci10bUVXNkVWem1DYTl3YnlGdmh1VnRtS3d5ZmNwRy13c0NacWpxYWl5cFlaM2xISnpZamRtMUd2YVY5cGlkN0NRa3lxU3B4WEFMbmZWNy03SHJ1SlpSZTMxdjU5Wkdr?oc=5",
+          "source": "테크수다",
+          "summary": "",
+          "published": "2026-07-30",
+          "image": "",
+          "first_seen": "2026-08-03T06:41:59+09:00"
+        },
+        {
           "title": "24시간 개인 AI 에이전트 '제미나이 스파크' 를 선보입니다 - blog.google",
           "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5SRnluMnFGX3NlMEV3dTh5ZEVQNUozWThGWWktYmJPN3dlT1JMVFdVazM2cnY0ZXF4RmktenE1UDNrSWhnc1J1VVJIaFhyLTJyTFpxVGpjaGhOd1VuME85Mk5BcnlLazg?oc=5",
           "source": "blog.google",
@@ -256,24 +274,6 @@
           "published": "2026-07-26",
           "image": "",
           "first_seen": "2026-07-29T06:53:22+09:00"
-        },
-        {
-          "title": "알리바바, 차세대 이미지 생성 AI '큐웬 이미지 3.0' 공개… \"보기 좋은 이미지 넘어 실용적 생산성 도구로\" - 인공지능신문",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9MeGx6SDA0LVJXbG92dFI1VUMwTExzeUgyeXpWTmtLTmRZV1BsZXVkbmxoZG1tX19pUXdHeGE0d1ZLQ0s5VWg3M05oM3NscXdYbmdSMzZjeHk3VkFaaTBXLVh3MmQyeUE?oc=5",
-          "source": "인공지능신문",
-          "summary": "",
-          "published": "2026-07-25",
-          "image": "",
-          "first_seen": "2026-07-26T06:41:42+09:00"
-        },
-        {
-          "title": "삼성SDS·앤트로픽, ‘클로드’ 기반 기업용 AI 사업 확대 - IT조선",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4waVJPdmZRTnhBdnV0Q3h3WjBNSVpLZTNBMDFfaGhSLXNwd1VqZ1IzWkc2TzJ5RHdQcHlKX1l2aW5KY0FnVmJmb0FmMGxpU2hPUUpSNlJKNlZvdWtKcDJGT1NPZV81a3VPMjcwQlB1blPSAXRBVV95cUxOMnJhUW5wbGxUeDN2WVhnWFNsQ2dNZmJWYVIzV1FhN2RnTW5TdjNQcHNaQjR4bDJmRjFVVFc2Y29OSnBjdnhNTGFWMWVrWEJ2VjNWeW9oaWhKR3l6akgwQlBoUzdyR2dQZXN2OWl3NlhkeU5Qaw?oc=5",
-          "source": "IT조선",
-          "summary": "",
-          "published": "2026-07-25",
-          "image": "",
-          "first_seen": "2026-07-29T01:04:48+09:00"
         }
       ]
     },
@@ -435,6 +435,15 @@
           "first_seen": "2026-08-02T06:41:41+09:00"
         },
         {
+          "title": "스텔라앤, COL그룹과 K-웹툰 기반 숏폼 애니메이션 협력 논의 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1QQTBOU0Z1NUJtSGt6SFByRWJ4NE5ubUx1Y2ZNX09CUVE2dmxaX1JsbGpPeDVoa19OUWRfZEZGWUtzb09jOG5WNUhXbWlGV2M?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-07-22",
+          "image": "",
+          "first_seen": "2026-08-03T06:41:59+09:00"
+        },
+        {
           "title": "콘진원, 싱가포르서 K-콘텐츠 IP 행사...국내 콘텐츠 10개사 상담 187건 - 글로벌이코노믹",
           "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPUF9rMy0xeW1nTXluNXlYM3ZVd2g2R1ZfdlZzWU9iZzV1YVV0aTVOeTJHT0xWRy1Xc21KdkVjZl9GdHpTWTRSVDdHZFZiTE84TGpScGNWVXl0blRLMEJteHc0SjdWaFRLZEx4ZUN0ZndKeENISU1TYmFlNXdnWWZSNFBLbGZnbWJUenc?oc=5",
           "source": "글로벌이코노믹",
@@ -537,15 +546,6 @@
           "title": "넘겨보던 K웹툰 공연장으로… ‘웹툰 IP’ 뮤지컬화 잇따라 - KBS 뉴스",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE14RWZZVlduTktnY3ZEWkhLTHFOaExWa0hFaEh0U0g2Mmt6WXUxWWxOWU9zMzE5UUZ1ZTZpNklVZE5ObVNvbGg1cGhHY0pKazYwWGlqcm9BaEhGcjQ?oc=5",
           "source": "KBS 뉴스",
-          "summary": "",
-          "published": "2026-07-18",
-          "image": "",
-          "first_seen": "2026-07-26T00:02:41+09:00"
-        },
-        {
-          "title": "넘겨보던 K웹툰 공연장으로… ‘웹툰 IP’ 뮤지컬화 잇따라 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE03SmZUMkswRW5ZN3pUVnVwbjBrZ0c5aEJnWWtkb3dqeWJyQ2ZGR1ZyR0xBY1VjM2duRDFBaDh0ME5pRVFxX0wtaHN6TFNtdXVJM0hJTQ?oc=5",
-          "source": "v.daum.net",
           "summary": "",
           "published": "2026-07-18",
           "image": "",
@@ -754,15 +754,6 @@
           "published": "2026-07-20",
           "image": "",
           "first_seen": "2026-08-01T06:54:15+09:00"
-        },
-        {
-          "title": "경기문화재단, ‘2026 공연예술 활성화 쇼케이스-스테이G’ 개최 - 경기일보",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBRUU1nN1l3QnBwdjIxek1YcGY0M0ROY2dXNjNxSmVJNjZFQWxsZ2liRG5aN3R1dGY3ZFE5LWhxZ3cyVEx0TkE3c3otSjNVcG92ZjNiWDh4dml2NEk?oc=5",
-          "source": "경기일보",
-          "summary": "",
-          "published": "2026-07-19",
-          "image": "",
-          "first_seen": "2026-07-20T06:38:42+09:00"
         },
         {
           "title": "함안서 서울예술단 창작뮤지컬 ‘청사초롱 불 밝혀라’ 공연 - v.daum.net",
@@ -1467,15 +1458,6 @@
           "first_seen": "2026-07-29T01:04:48+09:00"
         },
         {
-          "title": "안경부터 찻잔까지, 출판사×브랜드 협업 4 - 디자인플러스",
-          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE45bDZkeTdLZmNDRWctVnZ6MVdwa3BSbjR3eDVhUnVLckpvNkFkMkxNc2VKNU8yU0pQbWUwLXA1QmlRNHZseTQ1TVFoX04?oc=5",
-          "source": "디자인플러스",
-          "summary": "",
-          "published": "2026-07-15",
-          "image": "",
-          "first_seen": "2026-07-20T06:38:42+09:00"
-        },
-        {
           "title": "'미감·혁신성' 동시 입증…빅크, 어워즈 2관왕 달성 - 네이트",
           "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1oaU16RE1pck5UVnlyWFB3amdNWVVHbndoajBRQzJYVjZHYXBxNmFLNWZqTXlZaFJ2OFFtOG90Yl9udWdDbWdmM0t2X2czNzR3WkZj?oc=5",
           "source": "네이트",
@@ -1499,6 +1481,15 @@
       "id": "festival",
       "name": "페스티벌",
       "items": [
+        {
+          "title": "2026 국제 스페셜 뮤직&amp;아트 페스티벌 - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5rSGNlMi1CN25xdXlwUlcwUEpYektscG9qd0VsbmtlbmVtNXd4T2xLSTlhZ2o0UkhPQjdyZm9oNUQ3SElJblNqTFo0cnpUQWdOTy0waF9OaVJBcC1nd0tNZ9IBYEFVX3lxTE5rSGNlMi1CN25xdXlwUlcwUEpYektscG9qd0VsbmtlbmVtNXd4T2xLSTlhZ2o0UkhPQjdyZm9oNUQ3SElJblNqTFo0cnpUQWdOTy0waF9OaVJBcC1nd0tNZw?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-08-02",
+          "image": "",
+          "first_seen": "2026-08-03T06:41:59+09:00"
+        },
         {
           "title": "제21회 광화문국제아트페스티벌, 도심 속 열린 광장에서 예술로 숨 쉬다 - 피플투데이",
           "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9PczN3eVoyb1pBM3pGT0NNa3diNjJkMEl5SjZlVGpic29oOEFVdDQwVzl4RFZ0YmhEYmJoZmNDRXVGSDNhdnhlYXI3VExLY1phSnVJZElwU2RnMU42NWthZWJQeWxnYjhEd3E0dGpNWQ?oc=5",
@@ -1759,15 +1750,6 @@
           "published": "2026-07-21",
           "image": "",
           "first_seen": "2026-07-25T00:25:29+09:00"
-        },
-        {
-          "title": "[2026 예술의전당 국제음악제]...케빈 첸·코베키나 등 무대로 - YTN",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE0taHBteWdBVWgwMDVQeWJ4X2pLRGlqd1BKdG1IRC14U3RYY180QWt2cHNqcWNGTDJDQTk2YWZNNUVPZkY4S201SF96T3I4UU5ScXNXeFRKQXZZb1I2bnc?oc=5",
-          "source": "YTN",
-          "summary": "",
-          "published": "2026-07-21",
-          "image": "",
-          "first_seen": "2026-07-27T00:05:33+09:00"
         }
       ]
     }
