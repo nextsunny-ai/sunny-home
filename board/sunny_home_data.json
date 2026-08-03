@@ -1,10 +1,19 @@
 {
-  "updated": "2026-08-04T01:25:30+09:00",
+  "updated": "2026-08-04T06:55:28+09:00",
   "categories": [
     {
       "id": "ai",
       "name": "AI 트렌드",
       "items": [
+        {
+          "title": "신한은행, 부동산 감정평가서 점검하는 'AI 에이전트' 도입 - 이코노미스트",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9Iai1xWnZBM0VNMHdPcUtJVWp1dmFPV3pCVHpKaEZUdUk0ZUZoT0tuUDJJeEFhWHdZbjZnZ0w2d3VVZV9QYU9tbDlOanhRc1ZjNkZuX2Fpc18zc0J1SXpqSVVB?oc=5",
+          "source": "이코노미스트",
+          "summary": "",
+          "published": "2026-08-03",
+          "image": "",
+          "first_seen": "2026-08-04T06:55:28+09:00"
+        },
         {
           "title": "구글, AI 이미지 생성 기능 하루 만에 철회…허위정보 우려 - 아주경제",
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5ibHA0Vks0cGVrVFdOWWczWWlaRjhPLTlKZlJzR3lvN1FteU1FNDFoQUgweGk0ZXJETG5uRFRiWWYtRl9fTTBIa2dKRENxSGdXcTFxSVVJM2FQUdIBWEFVX3lxTE16akkwUEVpVlozWnQtdmsySFpxelpZdFpIWUF1cUZ1QUxmdkhraWxiUjUyN2RUdGdGcGV4LUJfaEk3RmVPbHpSaENjRWJWU2laWjJzVnhTN1o?oc=5",
@@ -265,15 +274,6 @@
           "published": "2026-07-27",
           "image": "",
           "first_seen": "2026-07-29T01:04:48+09:00"
-        },
-        {
-          "title": "“오피스 등에 통합” 마이크로소프트, 이미지 생성 AI 출시 - 스타트업레시피",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBtd2Z1cjRReDE1cVB6LVdTSVVFUlo2aDk1LU53LTBaWWNVdnpSazNNUmkyZ2YyUDg3X1pFaFRYQmZRbEtqUC1rdDAydHJrMVFIbjQwSkRKSDI0MktZbHc?oc=5",
-          "source": "스타트업레시피",
-          "summary": "",
-          "published": "2026-07-27",
-          "image": "",
-          "first_seen": "2026-07-29T01:04:48+09:00"
         }
       ]
     },
@@ -281,6 +281,15 @@
       "id": "content_ip",
       "name": "콘텐츠·IP",
       "items": [
+        {
+          "title": "영화도 뉴스도 스포츠도 OTT…콘텐츠 시장 경계가 허물어졌다 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBqUy05M2pGdEM5em5rQXZBNWdMTHZSSTRZalZRdjJPSkpYR3I5S1VXX19pR0RMMEZDdktxSzNacXlDUkRMN2Qxd21BcExCeUE?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-08-04",
+          "image": "",
+          "first_seen": "2026-08-04T06:55:28+09:00"
+        },
         {
           "title": "네이버웹툰, 인기 웹툰 IP 릴레이 팝업스토어 선보여 - 매일경제",
           "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE80VWRhaVRUbnNvNjZFVF9vQ1hpeHQyQ1k0MWt3RmVNT0pvZDU0LWM5VHhvdWlmZ0ZqX05XWmx4MTU3czNJcU9rLUZrQ3I5Zw?oc=5",
@@ -541,15 +550,6 @@
           "published": "2026-07-20",
           "image": "",
           "first_seen": "2026-07-27T00:05:33+09:00"
-        },
-        {
-          "title": "콘진원, 'K콘텐츠 IP 엑셀레이트 데이 2026' 성료…총 187건 상담 - 뉴스핌",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBRdmgzZW9XaGE3SFRwVDBZRGJHOE5lakFxbFA2V0lyM3pfTjBmT0JBazdZU2tiVzlFRkpXbkN6Tm1rd2RRWGlXN2J2ZUQ5c29UeEJ3RW1hU2hfM2Y1?oc=5",
-          "source": "뉴스핌",
-          "summary": "",
-          "published": "2026-07-20",
-          "image": "",
-          "first_seen": "2026-07-30T00:48:50+09:00"
         }
       ]
     },
@@ -1357,15 +1357,6 @@
           "published": "2026-07-22",
           "image": "",
           "first_seen": "2026-07-25T00:25:29+09:00"
-        },
-        {
-          "title": "디자이너가 이제 '목업'이 아니라 ' 제품'을 만든다 - 브런치",
-          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1WUUtTb0NsVUlzdVIyMURJOGZKZDgzek9WejF6SV8xQTFKcmlyOFF3TkZVYjNhZnVEVHpKcWt2RWY3cEkySXNYUQ?oc=5",
-          "source": "브런치",
-          "summary": "",
-          "published": "2026-07-21",
-          "image": "",
-          "first_seen": "2026-07-21T06:53:50+09:00"
         },
         {
           "title": "세인커뮤니케이션즈, '2026 소상공인 상품개선 지원사업' 수행기관 선정 - 한경매거진&amp;북",
