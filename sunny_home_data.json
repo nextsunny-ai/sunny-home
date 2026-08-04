@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-05T01:11:44+09:00",
+  "updated": "2026-08-05T07:00:20+09:00",
   "categories": [
     {
       "id": "ai",
@@ -13,6 +13,15 @@
           "published": "2026-08-04",
           "image": "",
           "first_seen": "2026-08-05T01:11:44+09:00"
+        },
+        {
+          "title": "[김정호의 AI시대 전략] AI 에이전트 조율할 ‘지휘자형 인재’ 키워야… 대학교육 수술 시급 - 조선일보",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQOV9PLWFoNS1sU1dva3NQV18wTlVzalVzRmhLbDg3NXhLaDlEeHhUYzlLUjRTN1QtTTR6Uk5RdmtXWGJUdU02cDByNXpvS2lrNnFfMXFBZjZBMk5zVTh6ZFZyRjh2YlFoMXZ0UTI1MzUwdjBXaDZFN2ZjMHp1NERpSWpKdmlZVDRTbHNZT19YQno?oc=5",
+          "source": "조선일보",
+          "summary": "",
+          "published": "2026-08-04",
+          "image": "",
+          "first_seen": "2026-08-05T07:00:20+09:00"
         },
         {
           "title": "신한은행, 부동산 감정평가서 점검하는 'AI 에이전트' 도입 - 이코노미스트",
@@ -265,15 +274,6 @@
           "published": "2026-07-29",
           "image": "",
           "first_seen": "2026-07-31T00:51:30+09:00"
-        },
-        {
-          "title": "대전 AI디지털배움터, 생성형 AI 이미지 교육 운영···사진 편집·기록 역량 강화 - 이넷뉴스",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4xQVphOE9tOU1SQnFNWTdfX3Q2VVgxLTUwTHRCY3NFZmt1cUpQdXpQSnRFSnVqcGNRQUk0cDM0cUJmMF9HbjdHMDAwc3Z0WjJHaDFmWTVFM2Y1QXVoZ0lUdHJwM3NZVWZudGlQN9IBcEFVX3lxTE9FX0JjZnFIeF9kcUN2cjBiY1lqZllpMl82MDVBU3NfRVFPOG1DZjZJVnRjWm13M183UFBLeXdkdWQzWEVScUNaLVNSUmhENFI2MV9ScGhIR3Atem1BbmNEQ2tNOVUzcG9ieS1RRl9BdkI?oc=5",
-          "source": "이넷뉴스",
-          "summary": "",
-          "published": "2026-07-29",
-          "image": "",
-          "first_seen": "2026-07-31T00:51:30+09:00"
         }
       ]
     },
@@ -480,6 +480,15 @@
           "first_seen": "2026-08-05T01:11:44+09:00"
         },
         {
+          "title": "엔제리너스, 한국콘텐츠진흥원과 캐릭터 IP 협력…'빵고미' 활용 콘텐츠 확대 - 신아일보",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5TYm1JN2ZvT2diaGh2R2VJY0xyUWVNNld5Tzh1RmtIYjdieEZKODlSMkhVSkU5Mk1sdUlrNFVEa0dobEF4MFY5U2JQeVVubUd1dDlMNDVDVVI0c2VTUXhZMnFaRWVSM0NmNEdtU0RCY1o?oc=5",
+          "source": "신아일보",
+          "summary": "",
+          "published": "2026-07-23",
+          "image": "",
+          "first_seen": "2026-08-05T07:00:20+09:00"
+        },
+        {
           "title": "스텔라앤, COL그룹과 K-웹툰 기반 숏폼 애니메이션 협력 논의 - 세계일보",
           "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1mX2dVXzBqcGl6RFBBZ2REdEJzV0NJcVJvSEIwSEVOZXI5OHIxcHRZNDdVOXVWWGdvZ09Cc0dpd183ZUUza1JrVDhoVWlCQWhfeVVkN2hkV3TSAVRBVV95cUxOMHZpV1Q3RXZzakJjMnRxQ2lPYUdpTU1jcXJBcXBLRF9OVm4zLUZRNHJCb2hRUHNBNVFCVjl5XzRnSVRuaUNhc0dsM2IxaEFKZmw0WkI?oc=5",
           "source": "세계일보",
@@ -541,15 +550,6 @@
           "published": "2026-07-21",
           "image": "",
           "first_seen": "2026-07-23T00:42:54+09:00"
-        },
-        {
-          "title": "OTT에 밀린 영화관...체험형 콘텐츠로 승부수 - :: 위즈경제 ::",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1IekZCX0k4N19BZ3VqaEFldXVoTjc0cDkyNXFiRUF1T0lxZWhIbEVyemlGMFBwdXpULWk3ZFY1MXBOc0g3X0pSWG9yZUpXWFNSSDhLOVZrSzNIZw?oc=5",
-          "source": ":: 위즈경제 ::",
-          "summary": "",
-          "published": "2026-07-21",
-          "image": "",
-          "first_seen": "2026-07-26T00:02:41+09:00"
         }
       ]
     },
@@ -583,6 +583,15 @@
           "published": "2026-08-04",
           "image": "",
           "first_seen": "2026-08-05T01:11:44+09:00"
+        },
+        {
+          "title": "공연의 기억을 굿즈로, ‘서울아트굿즈페스티벌 2026’…“뮤지컬 배우 정원영·홍나현, 스탠드업 코미디언 원소윤 등 참여” - 서울문화투데이",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1VY0wxRGNRSElDa18yaEdNWXgtbUVrbTBQblB5WG11eUhnbDhiREVzempENHE0V09VWDhCUmlGODQzYXU3RDYydmNTMTlBWV83c194Qk9oekdMd0dBa3RPX21ZbkRVZlVCVXc?oc=5",
+          "source": "서울문화투데이",
+          "summary": "",
+          "published": "2026-08-04",
+          "image": "",
+          "first_seen": "2026-08-05T07:00:20+09:00"
         },
         {
           "title": "서울 하늘 위 여름 페스티벌…서울스카이, 주말 릴레이 공연 - 파이낸셜뉴스",
@@ -904,15 +913,6 @@
           "published": "2026-07-23",
           "image": "",
           "first_seen": "2026-08-01T01:01:35+09:00"
-        },
-        {
-          "title": "장애예술계 최초의 미디어아트 전시회… ‘미디어 술래(術來)’ 개막 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5fNmswMkY2blRZZHlWTDNwRXdfZVF6X01xY3ZUdUlhWHAxRkR6a0lIV1JqNUlrUjNDQ1FfaXp4N0JDYXJxYUUyM0hROG1PeS1ENUVabg?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-07-20",
-          "image": "",
-          "first_seen": "2026-07-22T06:51:04+09:00"
         },
         {
           "title": "장애예술계 최초의 미디어아트 전시회… ‘미디어 술래(術來)’ 개막 - v.daum.net",
@@ -1294,6 +1294,15 @@
           "published": "2026-07-31",
           "image": "",
           "first_seen": "2026-08-05T01:11:44+09:00"
+        },
+        {
+          "title": "이노그리드, K-디자인 어워드 수상…클라우드 통합 UI·UX 경쟁력 입증 - 지디넷코리아",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1jcHFoTVZwSkFsMXlhUy1mRU8yMFhoSW9OV3dlVmIwVHNweEJnOV95LTEtMlFGMjcyZXl2N0dWZjRLWlQ3djNlc1NUT2hDUl80VTNDMXRB?oc=5",
+          "source": "지디넷코리아",
+          "summary": "",
+          "published": "2026-07-31",
+          "image": "",
+          "first_seen": "2026-08-05T07:00:20+09:00"
         },
         {
           "title": "UX 디자인과 클로드 5, AI 컨텍스트 엔지니어링 - ditoday.com",
