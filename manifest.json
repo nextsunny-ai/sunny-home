@@ -1,27 +1,32 @@
 {
-  "name": "SUNNY HOME — 대표님 v2",
-  "short_name": "SUNNY",
-  "description": "12명 페르소나 + 텔레그램 봇 통합 PWA. 비용 0 (Pro/Max 정액 안).",
+  "name": "SUNNY HOME — 통합 작업실",
+  "short_name": "써니홈",
+  "description": "코디와 써니팀 16명, LIVE, 캘린더, 뉴스, 유튜브, 산출물을 연결한 대표님 통합 작업실.",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",
-  "theme_color": "#FF8C42",
+  "theme_color": "#D8F36B",
   "icons": [
     {
-      "src": "icon-192.png",
+      "src": "icon-192-v3.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "icon-512.png",
+      "src": "icon-512-v3.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     }
   ],
   "shortcuts": [
+    {
+      "name": "코디",
+      "short_name": "코디",
+      "url": "/?persona=codex"
+    },
     {
       "name": "지니",
       "short_name": "지니",

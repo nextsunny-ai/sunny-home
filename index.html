@@ -1252,13 +1252,27 @@ body {
 }
 </style>
 
-<!-- PWA v2 (2026-05-14): manifest + theme + service worker -->
+<style id="sunny-home-v3-liveboard-theme">
+:root{--orange:#D8F36B;--deep-orange:#35420A;--amber:#D8F36B;--bg:#F1F1EF;--bg-elevated:#FFF;--bg-card:#FFF;--bg-card-hover:#F7FFD9;--border:rgba(20,22,26,.10);--border-accent:rgba(116,142,13,.34);--text:#17191E;--text-sub:#545965;--text-mute:#7D8592;--shadow-sm:0 1px 2px rgba(20,22,26,.03);--shadow-md:0 10px 28px rgba(20,22,26,.06);--shadow-lg:0 18px 44px rgba(20,22,26,.09);--r:14px;--r-lg:20px}
+body{font-family:'Pretendard','Noto Sans KR','Apple SD Gothic Neo',sans-serif;letter-spacing:-.012em}
+.nav{background:rgba(255,255,255,.94);border-bottom:1px solid var(--border);backdrop-filter:blur(18px)}
+.nav-logo,.section-header{font-weight:800;letter-spacing:-.045em}.nav-logo{font-family:var(--font)}.nav-logo .logo-a,.nav-logo .logo-dot{color:var(--text)}
+.nav-item{font-family:var(--mono);font-size:.67rem;font-weight:700;letter-spacing:.04em}.nav-live{background:var(--orange);color:#1A2105!important;border-radius:999px;padding:7px 11px!important}
+.calendar-wrap,.todo-panel,.hero-news-col,.hero-music-col,.hero-english,.mid-col,.prod-card,.admin-card,.persona-card,.ql-tile{border:1px solid var(--border)!important;border-radius:var(--r-lg)!important;box-shadow:none!important;background:#fff!important}
+.section-eyebrow{font-family:var(--mono);font-weight:700;letter-spacing:.12em;color:#737B88}.team-quick .tq-item:first-child{background:#EEFFD0;border:2px solid #BBDD38;border-radius:18px}.team-quick .tq-item:first-child .tq-name{font-weight:800}
+.sunny-control,.outputs-section{padding:56px;max-width:1400px;margin:0 auto}.sunny-control-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:14px}.sunny-panel{background:#fff;border:1px solid var(--border);border-radius:22px;padding:22px}.sunny-panel.live{background:#17191E;color:#fff;border-color:#17191E}.sunny-panel h3{font-size:1.15rem;font-weight:800;letter-spacing:-.035em;margin-bottom:8px}.sunny-panel p{font-size:.78rem;line-height:1.65;color:var(--text-sub)}.sunny-panel.live p{color:#AEB5C0}.sunny-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.sunny-action{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 15px;border-radius:999px;text-decoration:none;font-size:.75rem;font-weight:800;border:1px solid var(--border);background:#fff;color:#17191E}.sunny-action.primary{background:var(--orange);border-color:var(--orange);color:#1A2105}
+.outputs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.output-card{background:#fff;border:1px solid var(--border);border-radius:18px;padding:18px;min-height:132px}.output-meta{font-family:var(--mono);font-size:.6rem;color:var(--text-mute);letter-spacing:.05em}.output-title{font-size:.9rem;font-weight:800;margin:8px 0}.output-path{font-size:.68rem;color:var(--text-sub);word-break:break-all;line-height:1.5}.output-empty{color:var(--text-mute);font-size:.78rem}
+@media(max-width:900px){.sunny-control,.outputs-section{padding:40px 24px}.sunny-control-grid{grid-template-columns:1fr}.outputs-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.nav{padding:0 14px;overflow:hidden}.nav-left{flex:0 0 auto}.nav-logo{margin-right:12px}.nav-center{display:flex;flex:1 1 auto;min-width:0;gap:4px;justify-content:flex-start;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none}.nav-center::-webkit-scrollbar{display:none}.nav-item{flex:0 0 auto;font-size:.61rem;white-space:nowrap;padding-left:10px;padding-right:10px}.nav-greeting,.nav-right{display:none}.sunny-control,.outputs-section{padding:30px 16px}.outputs-grid{grid-template-columns:1fr}.sunny-panel{padding:18px}.sunny-action{flex:1 1 130px}.section-header{font-size:1.55rem}}
+</style>
+
+<!-- PWA v3: manifest + theme + service worker -->
 <link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#FF8C42">
+<meta name="theme-color" content="#D8F36B">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="SUNNY">
-<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192-v3.png">
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
@@ -1284,7 +1298,8 @@ body {
     <span class="nav-item" data-section="mid" role="button" tabindex="0" aria-label="Team 섹션으로 이동">Team</span>
     <span class="nav-item" data-section="quick-links-section" role="button" tabindex="0" aria-label="Quick Links 섹션으로 이동">Quick Links</span>
     <span class="nav-item" data-section="admin-section" role="button" tabindex="0" aria-label="통합 관리 섹션으로 이동">통합 관리</span>
-    <a class="nav-item" href="http://100.123.25.96:8787/live_v4.html" target="_blank" rel="noopener" style="text-decoration:none" aria-label="에이전트 라이브 대시보드 새 탭으로 열기">워크팀 라이브 ↗</a>
+    <a class="nav-item nav-live" href="http://100.123.25.96:8787/live_v9.html" target="_blank" rel="noopener" style="text-decoration:none" aria-label="WORKTEAM LIVE BOARD 새 탭으로 열기">LIVE ↗</a>
+    <span class="nav-item" data-section="outputs-section" role="button" tabindex="0" aria-label="최근 산출물 섹션으로 이동">산출물</span>
     <span class="nav-item nav-design" tabindex="0" aria-haspopup="true" style="position:relative;cursor:pointer">
       Design <span style="font-size:9px;opacity:0.5;margin-left:4px">▾</span>
       <span class="design-dropdown" style="position:absolute;top:100%;right:0;background:var(--bg,#fff);border:1px solid var(--border,#e5e5e7);border-radius:8px;padding:8px;min-width:180px;box-shadow:0 8px 24px rgba(0,0,0,0.08);display:none;flex-direction:column;gap:2px;z-index:100;margin-top:8px">
@@ -1308,6 +1323,29 @@ body {
 </nav>
 
 <main class="main" id="main-content">
+
+  <section class="sunny-control reveal" id="control-section" aria-label="써니팀 통합 작업실">
+    <div class="section-eyebrow">SUNNY TEAM CONTROL ROOM</div>
+    <div class="section-header">보고, 말하고, 확인하는 작업실</div>
+    <div class="sunny-control-grid">
+      <article class="sunny-panel live">
+        <h3>WORKTEAM LIVE BOARD</h3>
+        <p>맥미니·디자인PC·노트북에서 지금 누가 무슨 일을 하는지 확인합니다. 휴대폰에서는 Tailscale을 켠 뒤 열어주세요.</p>
+        <div class="sunny-actions">
+          <a class="sunny-action primary" href="http://100.123.25.96:8787/live_v9.html" target="_blank" rel="noopener">LIVE 열기</a>
+          <a class="sunny-action" href="https://t.me/NextSunnybot" target="_blank" rel="noopener">텔레그램 지시</a>
+        </div>
+      </article>
+      <article class="sunny-panel">
+        <h3>코디 · CODY</h3>
+        <p>3대 PC의 Codex 작업을 연결하는 실행·개발·관제 담당입니다. 팀 목록 첫 번째 코디 카드에서 작업을 요청할 수 있습니다.</p>
+        <div class="sunny-actions">
+          <button class="sunny-action primary" type="button" onclick="openPersonaModal('codex')">코디에게 말하기</button>
+          <a class="sunny-action" href="#outputs-section">최근 산출물</a>
+        </div>
+      </article>
+    </div>
+  </section>
 
   <!-- ═══ HERO ═══ -->
   <section class="hero" id="hero">
@@ -1439,7 +1477,7 @@ body {
   <section class="mid reveal" id="mid">
     <div class="mid-col" id="team-section">
       <div style="display:flex; align-items:baseline; gap:10px;">
-        <div class="section-eyebrow">14 Personas · v2 텔레그램 봇 (비용 0)</div>
+        <div class="section-eyebrow">17 Team Agents · 코디 + 써니팀 16명</div>
       </div>
       <div class="section-header">Team</div>
       <div class="team-quick" id="teamQuick"></div>
@@ -1619,6 +1657,13 @@ body {
 
 
   <!-- ★ 2026-05-14: 옛 NEWS·DEADLINES 섹션 제거 (= 달력·뉴스 = 인트로로 이동) -->
+
+  <section class="outputs-section reveal" id="outputs-section">
+    <div class="section-eyebrow">AUTO REGISTERED</div>
+    <div class="section-header">최근 산출물</div>
+    <div class="prod-sub">에이전트가 만든 최신 결과물 · 버전 · 검토 상태</div>
+    <div class="outputs-grid" id="outputsGrid"><div class="output-empty">산출물을 불러오는 중…</div></div>
+  </section>
 
   <!-- ═══ LIVE STATUS ═══ (★ 대표님 로그인(토큰) 후에만 노출 · 비로그인 숨김, 2026-07-16 리안 v6) -->
   <section class="live-section reveal" id="live-status-section" style="display:none;" aria-hidden="true">
@@ -2396,6 +2441,8 @@ document.querySelectorAll('.nav-item').forEach(item => {
 // ═══ SUNNY TEAM ═══
 // 순서: 1.지니 비서 → 2~5.4사 팀장 → 6.테오·7.리안 (★ 자주) → 8~11.에이전시 → 12.카이
 const TEAM = [
+  { id:'codex', name:'코디', en:'CODY · CODEX', role:'실행·개발·관제', co:'3PC 운영', avatar:'', color:'#D8F36B',
+    sys:'당신은 SUNNY TEAM 코디(CODY), Codex 기반 실행·개발·관제 에이전트. 대표님의 지시를 실제 파일과 검증 증거로 완수하고, 3대 PC 작업 상태·쪽지·LIVE·산출물 자동등록을 관리한다. 기존 팀원의 역할을 가로채지 않고 필요한 담당자와 연결한다. 호칭 "대표님".' },
   { id:'genie', name:'지니', en:'GENIE',role:'대표님 개인 비서',        co:'비서실',    avatar:'avatars/genie.jfif', color:'#34D399',
     sys:'당신은 SUNNY TEAM 지니(GENIE), 대표님 개인 비서. 일정·메일·뉴스·건강·자기개발·영어·브랜딩·개인 재무. 텔레그램 단일 창구. 자동 분배·총괄 X = 명시한 페르소나만 라우팅. 호칭 "대표님". "박다" 금지.' },
   { id:'sera',  name:'세라', en:'SERA', role:'써니엔터 팀장',          co:'써니엔터',  avatar:'avatars/sera.png',   color:'#FF6B9D',
@@ -2414,8 +2461,8 @@ const TEAM = [
     sys:'당신은 SUNNY TEAM 소리(SORI), 시나리오 작가. 트리트먼트·캐릭터·대사·humanizer. AI스러운 표현 체크리스트(번역투 X, 격언체 X, 관념어 X). 호칭 "대표님". "박다" 금지. 한국어.' },
   { id:'maru',  name:'마루', en:'MARU', role:'마케팅',              co:'에이전시',  avatar:'avatars/maru.jfif',  color:'#38BDF8',
     sys:'당신은 SUNNY TEAM 마루(MARU), 마케팅. 제안서·보도자료·SNS·영업·이메일. 자기자랑 X. 기획 중심. 설득 톤. 호칭 "대표님". "박다" 금지.' },
-  { id:'hana',  name:'하나', en:'HANA', role:'회계·법무·세무',         co:'에이전시',  avatar:'avatars/hana.png',   color:'#FB923C',
-    sys:'당신은 SUNNY TEAM 하나(HANA), 회계·법무·세무(변호사·법무사·변리사·회계사). 4사 회계·재무·법무·세무·미수금·사기 방지·계약서 1차 검토. 계약서 없는 거래는 반드시 경고한다. 호칭 "대표님". "박다" 금지.' },
+  { id:'gonggan', name:'공간', en:'GONGGAN', role:'공간 설계',          co:'공간·전시', avatar:'', color:'#A855F7',
+    sys:'당신은 SUNNY TEAM 공간(GONGGAN), 공간·전시 설계 담당. 동선·척도·도면·조감도·설치 경계를 수치와 근거로 설계한다. 호칭 "대표님".' },
   { id:'kai',   name:'카이', en:'KAI',  role:'게임 디렉터',           co:'게임',     avatar:'avatars/kai.jpeg',    color:'#A78BFA',
     sys:'당신은 SUNNY TEAM 카이(KAI), 12번째 페르소나 = 게임 디렉터 (2026-05-11 신설). Phaser·Godot 풀스택 = 코드·디자인·사운드·시나리오·출시 1인 책임. 협업 매트릭스 호출 X = 단독 (= 옛 테오 거짓 협업 사고 반복 X). 디자인 시스템 v1 [15부 게임] 의무. AI 슬롭 체크리스트 [13부] 출시 전 자가검토. Game Feel 7원칙 = Real-time response·Impact freeze·Screen shake·Flash·Particles·Combo·Anticipation. 캐주얼 시장 = 첫 10초 이해·21분 세션·Puzzle/Arcade/Sim 매출 80%·Block Blast 300M DL·여성 73.3% 캐주얼 선호. 첫 출시작 = HANGEUL BLOCK V1 (한지 위 한글 자모 블록 퍼즐, 8x8 그리드, 한지 #F5F1E6 · 먹 #1A1812 · 단청 #C84B3A · 금 #C9A35D, Hahmlet+Pretendard+JetBrains Mono). 자료 풀 분석 후 작업 (= 추측 X). 자기 평가 정확 (= 부풀림 X). 거짓 협업 X. 호칭 "대표님". "박다·박혀·박힘·박았" 표현 금지.' },
   { id:'feder', name:'페더', en:'FEDER', role:'검증관',           co:'품질검증',   avatar:'avatars/feder.png',   color:'#5B9BD5',
@@ -2424,6 +2471,10 @@ const TEAM = [
     sys:'당신은 SUNNY TEAM 누리(NURI), 런처. 만든 것을 세상에 내보내는 담당. 페더 합격 → 도메인·호스팅·스토어·결제·가격·랜딩·공지 준비 → 대표님껜 "고르기만 하면 되는 결정"으로 가져간다. 출시 후 수치 추적. 비용 0 우선(무료 티어). 호칭 "대표님".' },
   { id:'mir',   name:'미르', en:'MIR',  role:'3D·XR 환경',        co:'3D·공간',    avatar:'',                    color:'#7B8FA1',
     sys:'당신은 SUNNY TEAM 미르(MIR), 14번째 = 30년차 3D 전문가 (2026-07-17 신설). 모델링·매핑·리깅·애니메이션, 게임 3D 어셋, 공간 인테리어 3D, 전시공간 시뮬레이션, XR 실사 공간. 기획은 남이 한다 — 리안이 평면·동선·척도를 확정하면 그 수치로 3D를 세운다. 무료 소스 리매핑이 먼저, 처음부터 모델링은 최후 수단. 공포 환경의 룩은 90%가 텍스처(매핑)에서 나온다. XR은 사람이 HMD 쓰고 벽에 코를 대고 보니 텍셀 밀도 일관성이 실사와 가짜를 가른다. "멋지다"는 판정이 아니다 — 실루엣·비례 → 재질 → 폴리시 순으로 본다. AI 3D는 시작점이지 결과물이 아니다(녹은 뒷면·용접된 팔다리=리깅 불가·트라이앵글 수프). 애니메이션은 발 미끄러짐이 아마추어/프로를 가르는 1번 지표 — 0.25배속으로 발만 본다. 어둠·안개는 제약이 아니라 무기(GPU 여유 + 무료 에셋 흠 은폐). Quest 예산: 72fps 최소·베이크 조명 필수·온스크린 350k~1M tris·드로우콜 50~150. 숫자로 재서 보고한다. 호칭 "대표님".' },
+  { id:'peter', name:'피터', en:'PETER', role:'사운드',               co:'사운드', avatar:'', color:'#F97316',
+    sys:'당신은 SUNNY TEAM 피터(PETER), 사운드 담당. 음악·효과음·믹싱·납품 QC를 재현 가능한 기준으로 수행한다. 호칭 "대표님".' },
+  { id:'may', name:'메이', en:'MAY', role:'시스템 유지보수',           co:'운영', avatar:'', color:'#6366F1',
+    sys:'당신은 SUNNY TEAM 메이(MAY), 시스템 유지보수 담당. 3대 PC·자동화·백업·복구·LIVE를 증거 기반으로 관리한다. 호칭 "대표님".' },
 ];
 
 // 진행 중 프로젝트 (= mid col2)
@@ -2825,6 +2876,17 @@ async function pmSend() {
   const inp = document.getElementById('pmInp');
   const t = inp.value.trim();
   if(!t) { alert('메시지를 입력해주세요. (음성 또는 키보드)'); return; }
+  // 코디는 브라우저 안의 일반 Claude 페르소나가 아니라 실제 운영 창구로 보낸다.
+  // iPhone/외부에서도 같은 대화를 이어갈 수 있도록 Telegram 봇에 명시적으로 라우팅한다.
+  if (currentTeamPersona.id === 'codex') {
+    const routed = '[코디 요청] ' + t;
+    window.open('https://t.me/' + TG_BOT_USERNAME + '?text=' + encodeURIComponent(routed), '_blank', 'noopener');
+    pmAppendMsg('user', t);
+    pmAppendMsg('agent', '텔레그램의 코디 작업 창으로 연결했습니다. 전송 버튼을 누르면 외부에서도 같은 요청과 완료 보고를 이어서 확인할 수 있습니다.');
+    inp.value = '';
+    pmAutoGrow(inp);
+    return;
+  }
   const apiKey = getApiKey();
   if(!apiKey) { openKeyModal(); return; }
 
@@ -4874,6 +4936,21 @@ document.getElementById('ytResults')?.addEventListener('keydown', e => {
 updateYtKeyBtn();
 
 renderYt();
+
+async function loadSunnyOutputs(){
+  const grid=document.getElementById('outputsGrid'); if(!grid) return;
+  try{
+    const res=await fetch('data/outputs.json?t='+Date.now(),{cache:'no-store'});
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const data=await res.json(), items=(data.items||[]).slice(0,12);
+    if(!items.length){grid.innerHTML='<div class="output-empty">아직 등록된 산출물이 없습니다.</div>';return;}
+    grid.innerHTML=items.map(function(o){
+      const status=o.status||'등록', title=o.title||o.name||'산출물', path=o.path||o.url||'', who=o.agent||o.owner||'써니팀';
+      return '<article class="output-card"><div class="output-meta">'+escapeHtml(who)+' · '+escapeHtml(status)+'</div><div class="output-title">'+escapeHtml(title)+'</div><div class="output-path">'+escapeHtml(path)+'</div></article>';
+    }).join('');
+  }catch(e){grid.innerHTML='<div class="output-empty">산출물 목록을 불러오지 못했습니다. 새로고침해 주세요.</div>';}
+}
+loadSunnyOutputs();
 </script>
 </body>
 </html>

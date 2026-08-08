@@ -1,14 +1,15 @@
-// SUNNY HOME Service Worker — v2 (2026-05-14)
+// SUNNY HOME Service Worker — v3 (2026-08-08)
 // 오프라인 캐시 + 푸시 알림 (= 미래)
 
-const CACHE_NAME = 'sunny-home-v2-' + new Date().toISOString().split('T')[0];
+const CACHE_NAME = 'sunny-home-v3-20260808-1';
 const CORE = [
   '/',
   '/index.html',
   '/manifest.json',
-  '/icon-192.png',
-  '/icon-512.png',
-  '/sunny_home_data.json'
+  '/icon-192-v3.png',
+  '/icon-512-v3.png',
+  '/sunny_home_data.json',
+  '/data/outputs.json'
 ];
 
 self.addEventListener('install', (e) => {
