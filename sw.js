@@ -1,7 +1,7 @@
 // SUNNY HOME Service Worker — v3 (2026-08-08)
 // 오프라인 캐시 + 푸시 알림 (= 미래)
 
-const CACHE_NAME = 'sunny-home-v3-20260809-9';
+const CACHE_NAME = 'sunny-home-v3-20260809-10';
 const CORE = [
   '/',
   '/index.html',
@@ -36,7 +36,7 @@ self.addEventListener('fetch', (e) => {
   const url = new URL(e.request.url);
   if (url.pathname.match(/\.(html|js|json)$/) || url.pathname === '/') {
     e.respondWith(
-      fetch(e.request)
+      fetch(e.request, { cache: 'no-store' })
         .then((res) => {
           const copy = res.clone();
           caches.open(CACHE_NAME).then((c) => c.put(e.request, copy));

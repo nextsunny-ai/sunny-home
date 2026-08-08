@@ -1278,7 +1278,7 @@ body{font-family:'Pretendard','Noto Sans KR','Apple SD Gothic Neo',sans-serif;le
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
       navigator.serviceWorker.register('sw.js')
-        .then(function(reg) { console.log('[SW] registered:', reg.scope); })
+        .then(function(reg) { reg.update(); console.log('[SW] registered:', reg.scope); })
         .catch(function(err) { console.warn('[SW] register fail:', err); });
     });
   }
@@ -3916,9 +3916,9 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
   }
 
   /* ════ 구글 캘린더 양방향 연동 (Google Identity Services) ════ */
-  const GCAL_CLIENT_ID = '108517220824-vetv6lhf4cs6uu3sihdqj857qissvtde.apps.googleusercontent.com';
-  const LIVE_CLIENT_ID = '108517220824-coqajqglfa03smije3onscatgbukddc8.apps.googleusercontent.com';
-  const GCAL_SCOPE = 'https://www.googleapis.com/auth/calendar';   // 캘린더 목록 + 일정 읽기·쓰기
+  const SUNNY_OAUTH_CLIENT_ID = '108517220824-coqajqglfa03smije3onscatgbukddc8.apps.googleusercontent.com';
+  const USERINFO_SCOPE = 'https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile';
+  const GCAL_SCOPE = 'https://www.googleapis.com/auth/calendar ' + USERINFO_SCOPE;   // 캘린더 + LIVE 본인 확인
   const LS_GCAL = 'sunny_gcal_on';
   const LS_GCAL_CALID = 'sunny_gcal_calid';
   let gcalTokenClient = null;
@@ -3983,7 +3983,7 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     if (!(window.google && google.accounts && google.accounts.oauth2)) return false;
     if (gcalTokenClient) return true;
     gcalTokenClient = google.accounts.oauth2.initTokenClient({
-      client_id: GCAL_CLIENT_ID,
+      client_id: SUNNY_OAUTH_CLIENT_ID,
       scope: GCAL_SCOPE,
       callback: (resp) => {
         if (resp && resp.access_token) {
@@ -4046,8 +4046,8 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     }
     if (!liveTokenClient) {
       liveTokenClient = google.accounts.oauth2.initTokenClient({
-        client_id: LIVE_CLIENT_ID,
-        scope: 'https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile',
+        client_id: SUNNY_OAUTH_CLIENT_ID,
+        scope: USERINFO_SCOPE,
         callback: function(resp) {
           if (resp && resp.access_token) exchangeLiveGoogleToken(resp.access_token);
           else { liveSsoPending = false; alert('구글 로그인이 취소되었거나 실패했습니다.'); }
