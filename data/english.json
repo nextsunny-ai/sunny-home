@@ -1,7 +1,7 @@
 {
-  "updated": "2026-05-18",
+  "updated": "2026-08-09",
   "format": "conversation",
-  "note": "상황별 비즈니스 영어 회화. 클라이언트가 날짜 기준으로 매일 1편을 자동 선택. 각 편 = 상황 설명 + 대화(상대↔나, 내 대사에 핵심 표현) + key 표현. 발음은 브라우저 TTS(speechSynthesis)로 재생. 회화를 늘리려면 conversations 배열에 객체 추가 후 push.",
+  "note": "180일 순환 실전 비즈니스 영어. 사무실 업무부터 출장·공항·호텔·전화·접대·전시·공급 협상까지 포함.",
   "rotation": "daily-by-date",
   "conversations": [
     {
@@ -9,9 +9,21 @@
       "tag": "회의",
       "key": "Let's circle back on that.",
       "lines": [
-        { "who": "상대", "en": "So, should we finalize the launch date now?", "ko": "그럼 출시일을 지금 확정할까요?" },
-        { "who": "나", "en": "Let's circle back on that after we hear from the design team.", "ko": "디자인팀 의견 듣고 나서 그 건은 다시 논의하죠." },
-        { "who": "상대", "en": "Good idea. I'll put it on next week's agenda.", "ko": "좋아요. 다음 주 안건에 올릴게요." }
+        {
+          "who": "상대",
+          "en": "So, should we finalize the launch date now?",
+          "ko": "그럼 출시일을 지금 확정할까요?"
+        },
+        {
+          "who": "나",
+          "en": "Let's circle back on that after we hear from the design team.",
+          "ko": "디자인팀 의견 듣고 나서 그 건은 다시 논의하죠."
+        },
+        {
+          "who": "상대",
+          "en": "Good idea. I'll put it on next week's agenda.",
+          "ko": "좋아요. 다음 주 안건에 올릴게요."
+        }
       ]
     },
     {
@@ -19,9 +31,21 @@
       "tag": "회의",
       "key": "Let's take this offline.",
       "lines": [
-        { "who": "상대", "en": "We could go back and forth on the API design for a while.", "ko": "API 설계는 한참 더 얘기할 수도 있겠네요." },
-        { "who": "나", "en": "Let's take this offline and not hold up the rest of the team.", "ko": "이건 따로 얘기하고, 나머지 팀원들 시간은 뺏지 말죠." },
-        { "who": "상대", "en": "Agreed. I'll set up a quick call.", "ko": "동의해요. 짧게 통화 잡을게요." }
+        {
+          "who": "상대",
+          "en": "We could go back and forth on the API design for a while.",
+          "ko": "API 설계는 한참 더 얘기할 수도 있겠네요."
+        },
+        {
+          "who": "나",
+          "en": "Let's take this offline and not hold up the rest of the team.",
+          "ko": "이건 따로 얘기하고, 나머지 팀원들 시간은 뺏지 말죠."
+        },
+        {
+          "who": "상대",
+          "en": "Agreed. I'll set up a quick call.",
+          "ko": "동의해요. 짧게 통화 잡을게요."
+        }
       ]
     },
     {
@@ -29,9 +53,21 @@
       "tag": "회의",
       "key": "Let's get everyone on the same page.",
       "lines": [
-        { "who": "나", "en": "Before we dive in, let's get everyone on the same page about the deadline.", "ko": "본격적으로 들어가기 전에, 마감일에 대해 다 같이 인식을 맞춰봅시다." },
-        { "who": "상대", "en": "Right — it's the 30th, not the end of the month.", "ko": "맞아요, 말일이 아니라 30일이죠." },
-        { "who": "나", "en": "Exactly. Good that we cleared that up.", "ko": "정확해요. 짚고 넘어가서 다행이네요." }
+        {
+          "who": "나",
+          "en": "Before we dive in, let's get everyone on the same page about the deadline.",
+          "ko": "본격적으로 들어가기 전에, 마감일에 대해 다 같이 인식을 맞춰봅시다."
+        },
+        {
+          "who": "상대",
+          "en": "Right — it's the 30th, not the end of the month.",
+          "ko": "맞아요, 말일이 아니라 30일이죠."
+        },
+        {
+          "who": "나",
+          "en": "Exactly. Good that we cleared that up.",
+          "ko": "정확해요. 짚고 넘어가서 다행이네요."
+        }
       ]
     },
     {
@@ -39,9 +75,21 @@
       "tag": "협상",
       "key": "Is there any wiggle room on the price?",
       "lines": [
-        { "who": "상대", "en": "Our quote for the full package is twelve thousand dollars.", "ko": "전체 패키지 견적은 1만 2천 달러입니다." },
-        { "who": "나", "en": "We love the proposal — is there any wiggle room on the price?", "ko": "제안은 정말 마음에 듭니다. 가격 조정 여지가 좀 있을까요?" },
-        { "who": "상대", "en": "We could offer five percent off if you sign this month.", "ko": "이번 달에 계약하시면 5% 할인은 가능합니다." }
+        {
+          "who": "상대",
+          "en": "Our quote for the full package is twelve thousand dollars.",
+          "ko": "전체 패키지 견적은 1만 2천 달러입니다."
+        },
+        {
+          "who": "나",
+          "en": "We love the proposal — is there any wiggle room on the price?",
+          "ko": "제안은 정말 마음에 듭니다. 가격 조정 여지가 좀 있을까요?"
+        },
+        {
+          "who": "상대",
+          "en": "We could offer five percent off if you sign this month.",
+          "ko": "이번 달에 계약하시면 5% 할인은 가능합니다."
+        }
       ]
     },
     {
@@ -49,9 +97,21 @@
       "tag": "협상",
       "key": "Let's meet in the middle.",
       "lines": [
-        { "who": "상대", "en": "We were hoping for a six-month contract.", "ko": "저희는 6개월 계약을 원했습니다." },
-        { "who": "나", "en": "We had three in mind — let's meet in the middle at four.", "ko": "저흰 3개월을 생각했는데, 4개월로 절충하죠." },
-        { "who": "상대", "en": "That's fair. Let's go with that.", "ko": "합리적이네요. 그렇게 하죠." }
+        {
+          "who": "상대",
+          "en": "We were hoping for a six-month contract.",
+          "ko": "저희는 6개월 계약을 원했습니다."
+        },
+        {
+          "who": "나",
+          "en": "We had three in mind — let's meet in the middle at four.",
+          "ko": "저흰 3개월을 생각했는데, 4개월로 절충하죠."
+        },
+        {
+          "who": "상대",
+          "en": "That's fair. Let's go with that.",
+          "ko": "합리적이네요. 그렇게 하죠."
+        }
       ]
     },
     {
@@ -59,9 +119,21 @@
       "tag": "협상",
       "key": "I'll need to run this by my team.",
       "lines": [
-        { "who": "상대", "en": "Can you give us an answer by today?", "ko": "오늘 안에 답을 주실 수 있나요?" },
-        { "who": "나", "en": "The terms look reasonable, but I'll need to run this by my team first.", "ko": "조건은 합리적으로 보이지만, 먼저 팀과 상의해봐야 합니다." },
-        { "who": "상대", "en": "Of course. Take your time.", "ko": "물론이죠. 천천히 하세요." }
+        {
+          "who": "상대",
+          "en": "Can you give us an answer by today?",
+          "ko": "오늘 안에 답을 주실 수 있나요?"
+        },
+        {
+          "who": "나",
+          "en": "The terms look reasonable, but I'll need to run this by my team first.",
+          "ko": "조건은 합리적으로 보이지만, 먼저 팀과 상의해봐야 합니다."
+        },
+        {
+          "who": "상대",
+          "en": "Of course. Take your time.",
+          "ko": "물론이죠. 천천히 하세요."
+        }
       ]
     },
     {
@@ -69,9 +141,21 @@
       "tag": "발표",
       "key": "Let me give you a quick rundown.",
       "lines": [
-        { "who": "나", "en": "Before the demo, let me give you a quick rundown of what we built.", "ko": "데모 전에, 저희가 만든 것을 간단히 요약해 드리겠습니다." },
-        { "who": "상대", "en": "Sounds good. How long will it take?", "ko": "좋아요. 얼마나 걸릴까요?" },
-        { "who": "나", "en": "Just five minutes, then we'll open it up.", "ko": "5분이면 됩니다, 그 다음 질문 받겠습니다." }
+        {
+          "who": "나",
+          "en": "Before the demo, let me give you a quick rundown of what we built.",
+          "ko": "데모 전에, 저희가 만든 것을 간단히 요약해 드리겠습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Sounds good. How long will it take?",
+          "ko": "좋아요. 얼마나 걸릴까요?"
+        },
+        {
+          "who": "나",
+          "en": "Just five minutes, then we'll open it up.",
+          "ko": "5분이면 됩니다, 그 다음 질문 받겠습니다."
+        }
       ]
     },
     {
@@ -79,9 +163,21 @@
       "tag": "발표",
       "key": "Let's open it up for questions.",
       "lines": [
-        { "who": "나", "en": "That covers our proposal. Let's open it up for questions.", "ko": "저희 제안은 여기까지입니다. 이제 질문 받겠습니다." },
-        { "who": "상대", "en": "What's the timeline for the first phase?", "ko": "1단계 일정은 어떻게 되나요?" },
-        { "who": "나", "en": "Great question — about six weeks from kickoff.", "ko": "좋은 질문이네요. 착수부터 약 6주입니다." }
+        {
+          "who": "나",
+          "en": "That covers our proposal. Let's open it up for questions.",
+          "ko": "저희 제안은 여기까지입니다. 이제 질문 받겠습니다."
+        },
+        {
+          "who": "상대",
+          "en": "What's the timeline for the first phase?",
+          "ko": "1단계 일정은 어떻게 되나요?"
+        },
+        {
+          "who": "나",
+          "en": "Great question — about six weeks from kickoff.",
+          "ko": "좋은 질문이네요. 착수부터 약 6주입니다."
+        }
       ]
     },
     {
@@ -89,9 +185,21 @@
       "tag": "스몰토크",
       "key": "How's your week going so far?",
       "lines": [
-        { "who": "나", "en": "Good to see you. How's your week going so far?", "ko": "만나서 반가워요. 이번 주는 어떻게 보내고 계세요?" },
-        { "who": "상대", "en": "Busy, but good. We just wrapped up a big launch.", "ko": "바쁘지만 좋아요. 큰 출시를 막 끝냈거든요." },
-        { "who": "나", "en": "Congrats — that's no small thing.", "ko": "축하해요, 그거 보통 일 아니죠." }
+        {
+          "who": "나",
+          "en": "Good to see you. How's your week going so far?",
+          "ko": "만나서 반가워요. 이번 주는 어떻게 보내고 계세요?"
+        },
+        {
+          "who": "상대",
+          "en": "Busy, but good. We just wrapped up a big launch.",
+          "ko": "바쁘지만 좋아요. 큰 출시를 막 끝냈거든요."
+        },
+        {
+          "who": "나",
+          "en": "Congrats — that's no small thing.",
+          "ko": "축하해요, 그거 보통 일 아니죠."
+        }
       ]
     },
     {
@@ -99,9 +207,21 @@
       "tag": "스몰토크",
       "key": "We should grab coffee sometime.",
       "lines": [
-        { "who": "상대", "en": "It's been way too long since we caught up.", "ko": "얘기 나눈 지 정말 오래됐네요." },
-        { "who": "나", "en": "It has — we should grab coffee sometime.", "ko": "그러게요. 언제 커피 한잔해요." },
-        { "who": "상대", "en": "I'd love that. Let's find a time next week.", "ko": "좋아요. 다음 주에 시간 잡아봐요." }
+        {
+          "who": "상대",
+          "en": "It's been way too long since we caught up.",
+          "ko": "얘기 나눈 지 정말 오래됐네요."
+        },
+        {
+          "who": "나",
+          "en": "It has — we should grab coffee sometime.",
+          "ko": "그러게요. 언제 커피 한잔해요."
+        },
+        {
+          "who": "상대",
+          "en": "I'd love that. Let's find a time next week.",
+          "ko": "좋아요. 다음 주에 시간 잡아봐요."
+        }
       ]
     },
     {
@@ -109,9 +229,21 @@
       "tag": "전화·화상",
       "key": "Can everyone hear me okay?",
       "lines": [
-        { "who": "나", "en": "Let's get started. Can everyone hear me okay?", "ko": "시작하겠습니다. 다들 제 목소리 잘 들리시나요?" },
-        { "who": "상대", "en": "Loud and clear on my end.", "ko": "저쪽은 아주 잘 들려요." },
-        { "who": "나", "en": "Great. Let's jump in.", "ko": "좋아요. 시작하죠." }
+        {
+          "who": "나",
+          "en": "Let's get started. Can everyone hear me okay?",
+          "ko": "시작하겠습니다. 다들 제 목소리 잘 들리시나요?"
+        },
+        {
+          "who": "상대",
+          "en": "Loud and clear on my end.",
+          "ko": "저쪽은 아주 잘 들려요."
+        },
+        {
+          "who": "나",
+          "en": "Great. Let's jump in.",
+          "ko": "좋아요. 시작하죠."
+        }
       ]
     },
     {
@@ -119,9 +251,21 @@
       "tag": "전화·화상",
       "key": "Sorry, you cut out for a second.",
       "lines": [
-        { "who": "상대", "en": "So the budget will be ready, and then we can start.", "ko": "그래서 예산이 준비될 거고, 그 다음 시작할 수 있어요." },
-        { "who": "나", "en": "Sorry, you cut out for a second — could you say that again?", "ko": "죄송해요, 잠깐 끊겼어요. 다시 말씀해 주실래요?" },
-        { "who": "상대", "en": "No problem. I said the budget is approved.", "ko": "괜찮아요. 예산이 승인됐다고 했어요." }
+        {
+          "who": "상대",
+          "en": "So the budget will be ready, and then we can start.",
+          "ko": "그래서 예산이 준비될 거고, 그 다음 시작할 수 있어요."
+        },
+        {
+          "who": "나",
+          "en": "Sorry, you cut out for a second — could you say that again?",
+          "ko": "죄송해요, 잠깐 끊겼어요. 다시 말씀해 주실래요?"
+        },
+        {
+          "who": "상대",
+          "en": "No problem. I said the budget is approved.",
+          "ko": "괜찮아요. 예산이 승인됐다고 했어요."
+        }
       ]
     },
     {
@@ -129,9 +273,21 @@
       "tag": "피드백",
       "key": "You're on the right track.",
       "lines": [
-        { "who": "상대", "en": "I'm not sure if this layout really works.", "ko": "이 레이아웃이 정말 괜찮은지 모르겠어요." },
-        { "who": "나", "en": "You're on the right track — just tighten the spacing a bit.", "ko": "방향은 잘 잡았어요. 간격만 조금 좁히면 돼요." },
-        { "who": "상대", "en": "Got it. I'll revise it today.", "ko": "알겠어요. 오늘 수정할게요." }
+        {
+          "who": "상대",
+          "en": "I'm not sure if this layout really works.",
+          "ko": "이 레이아웃이 정말 괜찮은지 모르겠어요."
+        },
+        {
+          "who": "나",
+          "en": "You're on the right track — just tighten the spacing a bit.",
+          "ko": "방향은 잘 잡았어요. 간격만 조금 좁히면 돼요."
+        },
+        {
+          "who": "상대",
+          "en": "Got it. I'll revise it today.",
+          "ko": "알겠어요. 오늘 수정할게요."
+        }
       ]
     },
     {
@@ -139,9 +295,21 @@
       "tag": "피드백",
       "key": "I'd push back on that slightly.",
       "lines": [
-        { "who": "상대", "en": "I think we should add more steps to the signup.", "ko": "가입 단계를 더 늘려야 할 것 같아요." },
-        { "who": "나", "en": "I'd push back on that slightly — our users prefer fewer steps.", "ko": "그 부분은 살짝 다르게 봅니다. 사용자들은 단계가 적은 걸 선호해요." },
-        { "who": "상대", "en": "Fair point. Let's keep it short then.", "ko": "일리 있네요. 그럼 짧게 유지하죠." }
+        {
+          "who": "상대",
+          "en": "I think we should add more steps to the signup.",
+          "ko": "가입 단계를 더 늘려야 할 것 같아요."
+        },
+        {
+          "who": "나",
+          "en": "I'd push back on that slightly — our users prefer fewer steps.",
+          "ko": "그 부분은 살짝 다르게 봅니다. 사용자들은 단계가 적은 걸 선호해요."
+        },
+        {
+          "who": "상대",
+          "en": "Fair point. Let's keep it short then.",
+          "ko": "일리 있네요. 그럼 짧게 유지하죠."
+        }
       ]
     },
     {
@@ -149,9 +317,21 @@
       "tag": "메신저",
       "key": "Just a quick heads-up:",
       "lines": [
-        { "who": "나", "en": "Just a quick heads-up: the client moved the review to Friday.", "ko": "미리 알려드립니다: 클라이언트가 리뷰를 금요일로 옮겼어요." },
-        { "who": "상대", "en": "Thanks for the warning. I'll adjust my schedule.", "ko": "알려줘서 고마워요. 일정 조정할게요." },
-        { "who": "나", "en": "No problem. I'll send the details shortly.", "ko": "별말씀을요. 자세한 건 곧 보낼게요." }
+        {
+          "who": "나",
+          "en": "Just a quick heads-up: the client moved the review to Friday.",
+          "ko": "미리 알려드립니다: 클라이언트가 리뷰를 금요일로 옮겼어요."
+        },
+        {
+          "who": "상대",
+          "en": "Thanks for the warning. I'll adjust my schedule.",
+          "ko": "알려줘서 고마워요. 일정 조정할게요."
+        },
+        {
+          "who": "나",
+          "en": "No problem. I'll send the details shortly.",
+          "ko": "별말씀을요. 자세한 건 곧 보낼게요."
+        }
       ]
     },
     {
@@ -159,9 +339,21 @@
       "tag": "회의",
       "key": "Can we park that for now?",
       "lines": [
-        { "who": "상대", "en": "What about redesigning the whole dashboard?", "ko": "대시보드 전체를 다시 디자인하는 건 어때요?" },
-        { "who": "나", "en": "Good point — can we park that for now and finish the launch plan?", "ko": "좋은 지적이에요. 그건 일단 미뤄두고 출시 계획부터 마무리할까요?" },
-        { "who": "상대", "en": "Sure. Let's note it for later.", "ko": "그래요. 나중을 위해 적어두죠." }
+        {
+          "who": "상대",
+          "en": "What about redesigning the whole dashboard?",
+          "ko": "대시보드 전체를 다시 디자인하는 건 어때요?"
+        },
+        {
+          "who": "나",
+          "en": "Good point — can we park that for now and finish the launch plan?",
+          "ko": "좋은 지적이에요. 그건 일단 미뤄두고 출시 계획부터 마무리할까요?"
+        },
+        {
+          "who": "상대",
+          "en": "Sure. Let's note it for later.",
+          "ko": "그래요. 나중을 위해 적어두죠."
+        }
       ]
     },
     {
@@ -169,9 +361,21 @@
       "tag": "협상",
       "key": "What's your bottom line?",
       "lines": [
-        { "who": "나", "en": "We've been going back and forth a while. What's your bottom line?", "ko": "한참 얘기가 오갔네요. 최소 마지노선이 어떻게 되나요?" },
-        { "who": "상대", "en": "We can't go below eight thousand.", "ko": "8천 밑으로는 어렵습니다." },
-        { "who": "나", "en": "Understood. Let me see what I can do.", "ko": "알겠습니다. 제가 뭘 할 수 있을지 보죠." }
+        {
+          "who": "나",
+          "en": "We've been going back and forth a while. What's your bottom line?",
+          "ko": "한참 얘기가 오갔네요. 최소 마지노선이 어떻게 되나요?"
+        },
+        {
+          "who": "상대",
+          "en": "We can't go below eight thousand.",
+          "ko": "8천 밑으로는 어렵습니다."
+        },
+        {
+          "who": "나",
+          "en": "Understood. Let me see what I can do.",
+          "ko": "알겠습니다. 제가 뭘 할 수 있을지 보죠."
+        }
       ]
     },
     {
@@ -179,9 +383,21 @@
       "tag": "발표",
       "key": "The key takeaway is this:",
       "lines": [
-        { "who": "나", "en": "The key takeaway is this: we don't need a bigger team, we need a clearer process.", "ko": "핵심만 짚으면 이렇습니다: 더 큰 팀이 아니라 더 명확한 프로세스가 필요합니다." },
-        { "who": "상대", "en": "That's a strong point. Can you expand on the process?", "ko": "설득력 있네요. 그 프로세스를 더 설명해 주실래요?" },
-        { "who": "나", "en": "Absolutely — let me show you the next slide.", "ko": "물론이죠. 다음 슬라이드를 보여드릴게요." }
+        {
+          "who": "나",
+          "en": "The key takeaway is this: we don't need a bigger team, we need a clearer process.",
+          "ko": "핵심만 짚으면 이렇습니다: 더 큰 팀이 아니라 더 명확한 프로세스가 필요합니다."
+        },
+        {
+          "who": "상대",
+          "en": "That's a strong point. Can you expand on the process?",
+          "ko": "설득력 있네요. 그 프로세스를 더 설명해 주실래요?"
+        },
+        {
+          "who": "나",
+          "en": "Absolutely — let me show you the next slide.",
+          "ko": "물론이죠. 다음 슬라이드를 보여드릴게요."
+        }
       ]
     },
     {
@@ -189,9 +405,21 @@
       "tag": "전화·화상",
       "key": "Let's wrap up here.",
       "lines": [
-        { "who": "나", "en": "I think we've covered everything. Let's wrap up here.", "ko": "다 다룬 것 같네요. 여기서 마무리하죠." },
-        { "who": "상대", "en": "Sounds good. I'll send a summary by email.", "ko": "좋아요. 요약은 이메일로 보낼게요." },
-        { "who": "나", "en": "Perfect. Thanks, everyone.", "ko": "완벽해요. 다들 고마워요." }
+        {
+          "who": "나",
+          "en": "I think we've covered everything. Let's wrap up here.",
+          "ko": "다 다룬 것 같네요. 여기서 마무리하죠."
+        },
+        {
+          "who": "상대",
+          "en": "Sounds good. I'll send a summary by email.",
+          "ko": "좋아요. 요약은 이메일로 보낼게요."
+        },
+        {
+          "who": "나",
+          "en": "Perfect. Thanks, everyone.",
+          "ko": "완벽해요. 다들 고마워요."
+        }
       ]
     },
     {
@@ -199,9 +427,3541 @@
       "tag": "피드백",
       "key": "Great work on this.",
       "lines": [
-        { "who": "나", "en": "Great work on this — the client is going to love it.", "ko": "이거 정말 잘했어요. 클라이언트가 아주 좋아할 거예요." },
-        { "who": "상대", "en": "Thank you. I put a lot into it.", "ko": "감사해요. 공을 많이 들였어요." },
-        { "who": "나", "en": "It shows. Well done.", "ko": "티가 나요. 잘했어요." }
+        {
+          "who": "나",
+          "en": "Great work on this — the client is going to love it.",
+          "ko": "이거 정말 잘했어요. 클라이언트가 아주 좋아할 거예요."
+        },
+        {
+          "who": "상대",
+          "en": "Thank you. I put a lot into it.",
+          "ko": "감사해요. 공을 많이 들였어요."
+        },
+        {
+          "who": "나",
+          "en": "It shows. Well done.",
+          "ko": "티가 나요. 잘했어요."
+        }
+      ]
+    },
+    {
+      "situation": "회의 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "회의",
+      "key": "Could we clarify the objective before we move on?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What do you think we should do next?",
+          "ko": "다음에는 어떻게 하는 게 좋을까요?"
+        },
+        {
+          "who": "나",
+          "en": "Could we clarify the objective before we move on?",
+          "ko": "넘어가기 전에 목표를 명확히 해볼까요?"
+        },
+        {
+          "who": "상대",
+          "en": "That makes sense. Let’s do that.",
+          "ko": "좋습니다. 그렇게 하죠."
+        }
+      ]
+    },
+    {
+      "situation": "회의 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "회의",
+      "key": "Let me make sure I understood you correctly.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What do you think we should do next?",
+          "ko": "다음에는 어떻게 하는 게 좋을까요?"
+        },
+        {
+          "who": "나",
+          "en": "Let me make sure I understood you correctly.",
+          "ko": "제가 정확히 이해했는지 확인하겠습니다."
+        },
+        {
+          "who": "상대",
+          "en": "That makes sense. Let’s do that.",
+          "ko": "좋습니다. 그렇게 하죠."
+        }
+      ]
+    },
+    {
+      "situation": "회의 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "회의",
+      "key": "What would success look like for this project?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What do you think we should do next?",
+          "ko": "다음에는 어떻게 하는 게 좋을까요?"
+        },
+        {
+          "who": "나",
+          "en": "What would success look like for this project?",
+          "ko": "이 프로젝트의 성공 기준은 무엇일까요?"
+        },
+        {
+          "who": "상대",
+          "en": "That makes sense. Let’s do that.",
+          "ko": "좋습니다. 그렇게 하죠."
+        }
+      ]
+    },
+    {
+      "situation": "회의 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "회의",
+      "key": "I think we may be solving the wrong problem.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What do you think we should do next?",
+          "ko": "다음에는 어떻게 하는 게 좋을까요?"
+        },
+        {
+          "who": "나",
+          "en": "I think we may be solving the wrong problem.",
+          "ko": "우리가 잘못된 문제를 풀고 있는 것 같습니다."
+        },
+        {
+          "who": "상대",
+          "en": "That makes sense. Let’s do that.",
+          "ko": "좋습니다. 그렇게 하죠."
+        }
+      ]
+    },
+    {
+      "situation": "회의 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "회의",
+      "key": "Could we hear from the design team first?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What do you think we should do next?",
+          "ko": "다음에는 어떻게 하는 게 좋을까요?"
+        },
+        {
+          "who": "나",
+          "en": "Could we hear from the design team first?",
+          "ko": "디자인팀 의견을 먼저 들어볼까요?"
+        },
+        {
+          "who": "상대",
+          "en": "That makes sense. Let’s do that.",
+          "ko": "좋습니다. 그렇게 하죠."
+        }
+      ]
+    },
+    {
+      "situation": "회의 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "회의",
+      "key": "Let’s keep the discussion focused on the decision.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What do you think we should do next?",
+          "ko": "다음에는 어떻게 하는 게 좋을까요?"
+        },
+        {
+          "who": "나",
+          "en": "Let’s keep the discussion focused on the decision.",
+          "ko": "결정해야 할 사안에 집중해서 논의하죠."
+        },
+        {
+          "who": "상대",
+          "en": "That makes sense. Let’s do that.",
+          "ko": "좋습니다. 그렇게 하죠."
+        }
+      ]
+    },
+    {
+      "situation": "회의 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "회의",
+      "key": "I’d like to add one point before we move on.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What do you think we should do next?",
+          "ko": "다음에는 어떻게 하는 게 좋을까요?"
+        },
+        {
+          "who": "나",
+          "en": "I’d like to add one point before we move on.",
+          "ko": "넘어가기 전에 한 가지 덧붙이고 싶습니다."
+        },
+        {
+          "who": "상대",
+          "en": "That makes sense. Let’s do that.",
+          "ko": "좋습니다. 그렇게 하죠."
+        }
+      ]
+    },
+    {
+      "situation": "회의 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "회의",
+      "key": "Are there any concerns we haven’t addressed?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What do you think we should do next?",
+          "ko": "다음에는 어떻게 하는 게 좋을까요?"
+        },
+        {
+          "who": "나",
+          "en": "Are there any concerns we haven’t addressed?",
+          "ko": "아직 다루지 않은 우려 사항이 있나요?"
+        },
+        {
+          "who": "상대",
+          "en": "That makes sense. Let’s do that.",
+          "ko": "좋습니다. 그렇게 하죠."
+        }
+      ]
+    },
+    {
+      "situation": "회의 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "회의",
+      "key": "Let’s summarize the action items before we close.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What do you think we should do next?",
+          "ko": "다음에는 어떻게 하는 게 좋을까요?"
+        },
+        {
+          "who": "나",
+          "en": "Let’s summarize the action items before we close.",
+          "ko": "마치기 전에 실행 항목을 정리하죠."
+        },
+        {
+          "who": "상대",
+          "en": "That makes sense. Let’s do that.",
+          "ko": "좋습니다. 그렇게 하죠."
+        }
+      ]
+    },
+    {
+      "situation": "회의 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "회의",
+      "key": "Who will take ownership of the next step?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What do you think we should do next?",
+          "ko": "다음에는 어떻게 하는 게 좋을까요?"
+        },
+        {
+          "who": "나",
+          "en": "Who will take ownership of the next step?",
+          "ko": "다음 단계를 누가 책임질까요?"
+        },
+        {
+          "who": "상대",
+          "en": "That makes sense. Let’s do that.",
+          "ko": "좋습니다. 그렇게 하죠."
+        }
+      ]
+    },
+    {
+      "situation": "협상 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "협상",
+      "key": "That figure is outside our current budget.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Can we agree on the current terms?",
+          "ko": "현재 조건으로 합의할 수 있을까요?"
+        },
+        {
+          "who": "나",
+          "en": "That figure is outside our current budget.",
+          "ko": "그 금액은 현재 예산 범위를 벗어납니다."
+        },
+        {
+          "who": "상대",
+          "en": "I understand. Let’s see what we can adjust.",
+          "ko": "이해했습니다. 무엇을 조정할 수 있을지 보죠."
+        }
+      ]
+    },
+    {
+      "situation": "협상 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "협상",
+      "key": "Could you break down the cost for us?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Can we agree on the current terms?",
+          "ko": "현재 조건으로 합의할 수 있을까요?"
+        },
+        {
+          "who": "나",
+          "en": "Could you break down the cost for us?",
+          "ko": "비용 내역을 세부적으로 설명해 주실 수 있나요?"
+        },
+        {
+          "who": "상대",
+          "en": "I understand. Let’s see what we can adjust.",
+          "ko": "이해했습니다. 무엇을 조정할 수 있을지 보죠."
+        }
+      ]
+    },
+    {
+      "situation": "협상 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "협상",
+      "key": "We can move forward if the scope stays the same.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Can we agree on the current terms?",
+          "ko": "현재 조건으로 합의할 수 있을까요?"
+        },
+        {
+          "who": "나",
+          "en": "We can move forward if the scope stays the same.",
+          "ko": "범위가 그대로라면 진행할 수 있습니다."
+        },
+        {
+          "who": "상대",
+          "en": "I understand. Let’s see what we can adjust.",
+          "ko": "이해했습니다. 무엇을 조정할 수 있을지 보죠."
+        }
+      ]
+    },
+    {
+      "situation": "협상 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "협상",
+      "key": "What flexibility do you have on the timeline?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Can we agree on the current terms?",
+          "ko": "현재 조건으로 합의할 수 있을까요?"
+        },
+        {
+          "who": "나",
+          "en": "What flexibility do you have on the timeline?",
+          "ko": "일정에는 어느 정도 조정 여지가 있나요?"
+        },
+        {
+          "who": "상대",
+          "en": "I understand. Let’s see what we can adjust.",
+          "ko": "이해했습니다. 무엇을 조정할 수 있을지 보죠."
+        }
+      ]
+    },
+    {
+      "situation": "협상 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "협상",
+      "key": "We’d need better terms to make this work.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Can we agree on the current terms?",
+          "ko": "현재 조건으로 합의할 수 있을까요?"
+        },
+        {
+          "who": "나",
+          "en": "We’d need better terms to make this work.",
+          "ko": "성사시키려면 더 나은 조건이 필요합니다."
+        },
+        {
+          "who": "상대",
+          "en": "I understand. Let’s see what we can adjust.",
+          "ko": "이해했습니다. 무엇을 조정할 수 있을지 보죠."
+        }
+      ]
+    },
+    {
+      "situation": "협상 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "협상",
+      "key": "Let’s focus on the value, not just the price.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Can we agree on the current terms?",
+          "ko": "현재 조건으로 합의할 수 있을까요?"
+        },
+        {
+          "who": "나",
+          "en": "Let’s focus on the value, not just the price.",
+          "ko": "가격뿐 아니라 가치에 집중해 봅시다."
+        },
+        {
+          "who": "상대",
+          "en": "I understand. Let’s see what we can adjust.",
+          "ko": "이해했습니다. 무엇을 조정할 수 있을지 보죠."
+        }
+      ]
+    },
+    {
+      "situation": "협상 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "협상",
+      "key": "Could we structure this in two phases?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Can we agree on the current terms?",
+          "ko": "현재 조건으로 합의할 수 있을까요?"
+        },
+        {
+          "who": "나",
+          "en": "Could we structure this in two phases?",
+          "ko": "이것을 두 단계로 구성할 수 있을까요?"
+        },
+        {
+          "who": "상대",
+          "en": "I understand. Let’s see what we can adjust.",
+          "ko": "이해했습니다. 무엇을 조정할 수 있을지 보죠."
+        }
+      ]
+    },
+    {
+      "situation": "협상 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "협상",
+      "key": "We’re prepared to commit if you can meet us there.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Can we agree on the current terms?",
+          "ko": "현재 조건으로 합의할 수 있을까요?"
+        },
+        {
+          "who": "나",
+          "en": "We’re prepared to commit if you can meet us there.",
+          "ko": "그 조건을 맞춰주시면 저희도 확약할 준비가 됐습니다."
+        },
+        {
+          "who": "상대",
+          "en": "I understand. Let’s see what we can adjust.",
+          "ko": "이해했습니다. 무엇을 조정할 수 있을지 보죠."
+        }
+      ]
+    },
+    {
+      "situation": "협상 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "협상",
+      "key": "I don’t want price to be the only sticking point.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Can we agree on the current terms?",
+          "ko": "현재 조건으로 합의할 수 있을까요?"
+        },
+        {
+          "who": "나",
+          "en": "I don’t want price to be the only sticking point.",
+          "ko": "가격만 유일한 걸림돌이 되지는 않았으면 합니다."
+        },
+        {
+          "who": "상대",
+          "en": "I understand. Let’s see what we can adjust.",
+          "ko": "이해했습니다. 무엇을 조정할 수 있을지 보죠."
+        }
+      ]
+    },
+    {
+      "situation": "협상 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "협상",
+      "key": "Let me come back with a revised proposal.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Can we agree on the current terms?",
+          "ko": "현재 조건으로 합의할 수 있을까요?"
+        },
+        {
+          "who": "나",
+          "en": "Let me come back with a revised proposal.",
+          "ko": "수정 제안서를 다시 드리겠습니다."
+        },
+        {
+          "who": "상대",
+          "en": "I understand. Let’s see what we can adjust.",
+          "ko": "이해했습니다. 무엇을 조정할 수 있을지 보죠."
+        }
+      ]
+    },
+    {
+      "situation": "발표 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "발표",
+      "key": "Let me start with the problem we’re solving.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Could you walk us through the main point?",
+          "ko": "핵심 내용을 설명해 주시겠어요?"
+        },
+        {
+          "who": "나",
+          "en": "Let me start with the problem we’re solving.",
+          "ko": "우리가 해결하려는 문제부터 말씀드리겠습니다."
+        },
+        {
+          "who": "상대",
+          "en": "That’s clear. Please continue.",
+          "ko": "명확하네요. 계속해 주세요."
+        }
+      ]
+    },
+    {
+      "situation": "발표 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "발표",
+      "key": "There are three things I’d like you to remember.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Could you walk us through the main point?",
+          "ko": "핵심 내용을 설명해 주시겠어요?"
+        },
+        {
+          "who": "나",
+          "en": "There are three things I’d like you to remember.",
+          "ko": "세 가지를 기억해 주셨으면 합니다."
+        },
+        {
+          "who": "상대",
+          "en": "That’s clear. Please continue.",
+          "ko": "명확하네요. 계속해 주세요."
+        }
+      ]
+    },
+    {
+      "situation": "발표 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "발표",
+      "key": "This slide shows the opportunity at a glance.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Could you walk us through the main point?",
+          "ko": "핵심 내용을 설명해 주시겠어요?"
+        },
+        {
+          "who": "나",
+          "en": "This slide shows the opportunity at a glance.",
+          "ko": "이 슬라이드가 기회를 한눈에 보여줍니다."
+        },
+        {
+          "who": "상대",
+          "en": "That’s clear. Please continue.",
+          "ko": "명확하네요. 계속해 주세요."
+        }
+      ]
+    },
+    {
+      "situation": "발표 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "발표",
+      "key": "Let me put that number into perspective.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Could you walk us through the main point?",
+          "ko": "핵심 내용을 설명해 주시겠어요?"
+        },
+        {
+          "who": "나",
+          "en": "Let me put that number into perspective.",
+          "ko": "그 수치가 어떤 의미인지 설명드리겠습니다."
+        },
+        {
+          "who": "상대",
+          "en": "That’s clear. Please continue.",
+          "ko": "명확하네요. 계속해 주세요."
+        }
+      ]
+    },
+    {
+      "situation": "발표 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "발표",
+      "key": "Here’s what makes our approach different.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Could you walk us through the main point?",
+          "ko": "핵심 내용을 설명해 주시겠어요?"
+        },
+        {
+          "who": "나",
+          "en": "Here’s what makes our approach different.",
+          "ko": "저희 접근법의 차별점은 이것입니다."
+        },
+        {
+          "who": "상대",
+          "en": "That’s clear. Please continue.",
+          "ko": "명확하네요. 계속해 주세요."
+        }
+      ]
+    },
+    {
+      "situation": "발표 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "발표",
+      "key": "I’ll walk you through the customer journey.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Could you walk us through the main point?",
+          "ko": "핵심 내용을 설명해 주시겠어요?"
+        },
+        {
+          "who": "나",
+          "en": "I’ll walk you through the customer journey.",
+          "ko": "고객 여정을 차례로 설명드리겠습니다."
+        },
+        {
+          "who": "상대",
+          "en": "That’s clear. Please continue.",
+          "ko": "명확하네요. 계속해 주세요."
+        }
+      ]
+    },
+    {
+      "situation": "발표 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "발표",
+      "key": "The evidence points in the same direction.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Could you walk us through the main point?",
+          "ko": "핵심 내용을 설명해 주시겠어요?"
+        },
+        {
+          "who": "나",
+          "en": "The evidence points in the same direction.",
+          "ko": "근거들은 모두 같은 방향을 가리킵니다."
+        },
+        {
+          "who": "상대",
+          "en": "That’s clear. Please continue.",
+          "ko": "명확하네요. 계속해 주세요."
+        }
+      ]
+    },
+    {
+      "situation": "발표 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "발표",
+      "key": "Let’s look at what happens next.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Could you walk us through the main point?",
+          "ko": "핵심 내용을 설명해 주시겠어요?"
+        },
+        {
+          "who": "나",
+          "en": "Let’s look at what happens next.",
+          "ko": "다음에 어떤 일이 일어나는지 보겠습니다."
+        },
+        {
+          "who": "상대",
+          "en": "That’s clear. Please continue.",
+          "ko": "명확하네요. 계속해 주세요."
+        }
+      ]
+    },
+    {
+      "situation": "발표 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "발표",
+      "key": "I’ll pause here for any questions.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Could you walk us through the main point?",
+          "ko": "핵심 내용을 설명해 주시겠어요?"
+        },
+        {
+          "who": "나",
+          "en": "I’ll pause here for any questions.",
+          "ko": "여기서 잠시 질문을 받겠습니다."
+        },
+        {
+          "who": "상대",
+          "en": "That’s clear. Please continue.",
+          "ko": "명확하네요. 계속해 주세요."
+        }
+      ]
+    },
+    {
+      "situation": "발표 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "발표",
+      "key": "I’ll send the full deck after the meeting.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Could you walk us through the main point?",
+          "ko": "핵심 내용을 설명해 주시겠어요?"
+        },
+        {
+          "who": "나",
+          "en": "I’ll send the full deck after the meeting.",
+          "ko": "회의 후 전체 자료를 보내드리겠습니다."
+        },
+        {
+          "who": "상대",
+          "en": "That’s clear. Please continue.",
+          "ko": "명확하네요. 계속해 주세요."
+        }
+      ]
+    },
+    {
+      "situation": "이메일 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "이메일",
+      "key": "I’m following up on my email from last week.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What should I include in the follow-up?",
+          "ko": "후속 연락에 무엇을 포함할까요?"
+        },
+        {
+          "who": "나",
+          "en": "I’m following up on my email from last week.",
+          "ko": "지난주에 보낸 이메일 건으로 다시 연락드립니다."
+        },
+        {
+          "who": "상대",
+          "en": "Got it. I’ll look out for it.",
+          "ko": "알겠습니다. 확인하겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "이메일 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "이메일",
+      "key": "Please find the revised file attached.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What should I include in the follow-up?",
+          "ko": "후속 연락에 무엇을 포함할까요?"
+        },
+        {
+          "who": "나",
+          "en": "Please find the revised file attached.",
+          "ko": "수정 파일을 첨부했으니 확인 부탁드립니다."
+        },
+        {
+          "who": "상대",
+          "en": "Got it. I’ll look out for it.",
+          "ko": "알겠습니다. 확인하겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "이메일 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "이메일",
+      "key": "Could you confirm receipt when you have a moment?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What should I include in the follow-up?",
+          "ko": "후속 연락에 무엇을 포함할까요?"
+        },
+        {
+          "who": "나",
+          "en": "Could you confirm receipt when you have a moment?",
+          "ko": "시간 되실 때 수신 확인 부탁드립니다."
+        },
+        {
+          "who": "상대",
+          "en": "Got it. I’ll look out for it.",
+          "ko": "알겠습니다. 확인하겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "이메일 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "이메일",
+      "key": "I’ve highlighted the sections that need your review.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What should I include in the follow-up?",
+          "ko": "후속 연락에 무엇을 포함할까요?"
+        },
+        {
+          "who": "나",
+          "en": "I’ve highlighted the sections that need your review.",
+          "ko": "검토가 필요한 부분을 표시해 두었습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Got it. I’ll look out for it.",
+          "ko": "알겠습니다. 확인하겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "이메일 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "이메일",
+      "key": "Please let me know if anything is unclear.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What should I include in the follow-up?",
+          "ko": "후속 연락에 무엇을 포함할까요?"
+        },
+        {
+          "who": "나",
+          "en": "Please let me know if anything is unclear.",
+          "ko": "불명확한 점이 있으면 알려주세요."
+        },
+        {
+          "who": "상대",
+          "en": "Got it. I’ll look out for it.",
+          "ko": "알겠습니다. 확인하겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "이메일 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "이메일",
+      "key": "We’d appreciate your feedback by Thursday.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What should I include in the follow-up?",
+          "ko": "후속 연락에 무엇을 포함할까요?"
+        },
+        {
+          "who": "나",
+          "en": "We’d appreciate your feedback by Thursday.",
+          "ko": "목요일까지 의견을 주시면 감사하겠습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Got it. I’ll look out for it.",
+          "ko": "알겠습니다. 확인하겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "이메일 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "이메일",
+      "key": "I’m copying Mina so she has the full context.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What should I include in the follow-up?",
+          "ko": "후속 연락에 무엇을 포함할까요?"
+        },
+        {
+          "who": "나",
+          "en": "I’m copying Mina so she has the full context.",
+          "ko": "미나도 전체 맥락을 알 수 있도록 참조에 넣습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Got it. I’ll look out for it.",
+          "ko": "알겠습니다. 확인하겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "이메일 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "이메일",
+      "key": "Apologies for the delayed response.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What should I include in the follow-up?",
+          "ko": "후속 연락에 무엇을 포함할까요?"
+        },
+        {
+          "who": "나",
+          "en": "Apologies for the delayed response.",
+          "ko": "답변이 늦어 죄송합니다."
+        },
+        {
+          "who": "상대",
+          "en": "Got it. I’ll look out for it.",
+          "ko": "알겠습니다. 확인하겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "이메일 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "이메일",
+      "key": "Thank you for bringing this to our attention.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What should I include in the follow-up?",
+          "ko": "후속 연락에 무엇을 포함할까요?"
+        },
+        {
+          "who": "나",
+          "en": "Thank you for bringing this to our attention.",
+          "ko": "이 사안을 알려주셔서 감사합니다."
+        },
+        {
+          "who": "상대",
+          "en": "Got it. I’ll look out for it.",
+          "ko": "알겠습니다. 확인하겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "이메일 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "이메일",
+      "key": "I’ll keep you posted as things develop.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What should I include in the follow-up?",
+          "ko": "후속 연락에 무엇을 포함할까요?"
+        },
+        {
+          "who": "나",
+          "en": "I’ll keep you posted as things develop.",
+          "ko": "진행 상황이 생기는 대로 계속 알려드리겠습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Got it. I’ll look out for it.",
+          "ko": "알겠습니다. 확인하겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "일정·납기 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "일정·납기",
+      "key": "We’re still on track for Friday.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Are we still on schedule?",
+          "ko": "아직 일정대로 진행 중인가요?"
+        },
+        {
+          "who": "나",
+          "en": "We’re still on track for Friday.",
+          "ko": "금요일 일정대로 진행 중입니다."
+        },
+        {
+          "who": "상대",
+          "en": "Thanks for the update.",
+          "ko": "상황 알려주셔서 감사합니다."
+        }
+      ]
+    },
+    {
+      "situation": "일정·납기 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "일정·납기",
+      "key": "We may need an extra two days to finish properly.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Are we still on schedule?",
+          "ko": "아직 일정대로 진행 중인가요?"
+        },
+        {
+          "who": "나",
+          "en": "We may need an extra two days to finish properly.",
+          "ko": "제대로 마무리하려면 이틀이 더 필요할 수 있습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Thanks for the update.",
+          "ko": "상황 알려주셔서 감사합니다."
+        }
+      ]
+    },
+    {
+      "situation": "일정·납기 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "일정·납기",
+      "key": "Could we move the review to Monday morning?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Are we still on schedule?",
+          "ko": "아직 일정대로 진행 중인가요?"
+        },
+        {
+          "who": "나",
+          "en": "Could we move the review to Monday morning?",
+          "ko": "리뷰를 월요일 오전으로 옮길 수 있을까요?"
+        },
+        {
+          "who": "상대",
+          "en": "Thanks for the update.",
+          "ko": "상황 알려주셔서 감사합니다."
+        }
+      ]
+    },
+    {
+      "situation": "일정·납기 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "일정·납기",
+      "key": "The delay won’t affect the final delivery date.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Are we still on schedule?",
+          "ko": "아직 일정대로 진행 중인가요?"
+        },
+        {
+          "who": "나",
+          "en": "The delay won’t affect the final delivery date.",
+          "ko": "이번 지연은 최종 납기에는 영향을 주지 않습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Thanks for the update.",
+          "ko": "상황 알려주셔서 감사합니다."
+        }
+      ]
+    },
+    {
+      "situation": "일정·납기 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "일정·납기",
+      "key": "I’d rather reset expectations now than miss the deadline later.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Are we still on schedule?",
+          "ko": "아직 일정대로 진행 중인가요?"
+        },
+        {
+          "who": "나",
+          "en": "I’d rather reset expectations now than miss the deadline later.",
+          "ko": "나중에 기한을 어기기보다 지금 기대치를 조정하는 편이 낫습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Thanks for the update.",
+          "ko": "상황 알려주셔서 감사합니다."
+        }
+      ]
+    },
+    {
+      "situation": "일정·납기 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "일정·납기",
+      "key": "What’s the latest date that would still work for you?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Are we still on schedule?",
+          "ko": "아직 일정대로 진행 중인가요?"
+        },
+        {
+          "who": "나",
+          "en": "What’s the latest date that would still work for you?",
+          "ko": "가능한 가장 늦은 날짜가 언제인가요?"
+        },
+        {
+          "who": "상대",
+          "en": "Thanks for the update.",
+          "ko": "상황 알려주셔서 감사합니다."
+        }
+      ]
+    },
+    {
+      "situation": "일정·납기 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "일정·납기",
+      "key": "We’ll send a progress update by end of day.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Are we still on schedule?",
+          "ko": "아직 일정대로 진행 중인가요?"
+        },
+        {
+          "who": "나",
+          "en": "We’ll send a progress update by end of day.",
+          "ko": "오늘 업무 종료 전 진행 상황을 보내드리겠습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Thanks for the update.",
+          "ko": "상황 알려주셔서 감사합니다."
+        }
+      ]
+    },
+    {
+      "situation": "일정·납기 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "일정·납기",
+      "key": "Let’s build in some buffer for revisions.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Are we still on schedule?",
+          "ko": "아직 일정대로 진행 중인가요?"
+        },
+        {
+          "who": "나",
+          "en": "Let’s build in some buffer for revisions.",
+          "ko": "수정 작업을 위한 여유 시간을 확보하죠."
+        },
+        {
+          "who": "상대",
+          "en": "Thanks for the update.",
+          "ko": "상황 알려주셔서 감사합니다."
+        }
+      ]
+    },
+    {
+      "situation": "일정·납기 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "일정·납기",
+      "key": "The first milestone is scheduled for the 18th.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Are we still on schedule?",
+          "ko": "아직 일정대로 진행 중인가요?"
+        },
+        {
+          "who": "나",
+          "en": "The first milestone is scheduled for the 18th.",
+          "ko": "첫 번째 마일스톤은 18일로 예정되어 있습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Thanks for the update.",
+          "ko": "상황 알려주셔서 감사합니다."
+        }
+      ]
+    },
+    {
+      "situation": "일정·납기 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "일정·납기",
+      "key": "I’ll flag any risk as soon as it comes up.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Are we still on schedule?",
+          "ko": "아직 일정대로 진행 중인가요?"
+        },
+        {
+          "who": "나",
+          "en": "I’ll flag any risk as soon as it comes up.",
+          "ko": "위험 요소가 생기면 즉시 알려드리겠습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Thanks for the update.",
+          "ko": "상황 알려주셔서 감사합니다."
+        }
+      ]
+    },
+    {
+      "situation": "해외클라이언트 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "해외클라이언트",
+      "key": "Could you tell us more about your local audience?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "How should we approach the local market?",
+          "ko": "현지 시장에 어떻게 접근하면 좋을까요?"
+        },
+        {
+          "who": "나",
+          "en": "Could you tell us more about your local audience?",
+          "ko": "현지 고객층에 대해 좀 더 말씀해 주시겠어요?"
+        },
+        {
+          "who": "상대",
+          "en": "That approach works for us.",
+          "ko": "그 접근 방식이 좋습니다."
+        }
+      ]
+    },
+    {
+      "situation": "해외클라이언트 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "해외클라이언트",
+      "key": "We’ll adapt the concept without losing the core idea.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "How should we approach the local market?",
+          "ko": "현지 시장에 어떻게 접근하면 좋을까요?"
+        },
+        {
+          "who": "나",
+          "en": "We’ll adapt the concept without losing the core idea.",
+          "ko": "핵심 아이디어를 잃지 않으면서 현지화하겠습니다."
+        },
+        {
+          "who": "상대",
+          "en": "That approach works for us.",
+          "ko": "그 접근 방식이 좋습니다."
+        }
+      ]
+    },
+    {
+      "situation": "해외클라이언트 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "해외클라이언트",
+      "key": "Are there any cultural sensitivities we should consider?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "How should we approach the local market?",
+          "ko": "현지 시장에 어떻게 접근하면 좋을까요?"
+        },
+        {
+          "who": "나",
+          "en": "Are there any cultural sensitivities we should consider?",
+          "ko": "고려해야 할 문화적 민감성이 있나요?"
+        },
+        {
+          "who": "상대",
+          "en": "That approach works for us.",
+          "ko": "그 접근 방식이 좋습니다."
+        }
+      ]
+    },
+    {
+      "situation": "해외클라이언트 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "해외클라이언트",
+      "key": "We’d like to understand your approval process.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "How should we approach the local market?",
+          "ko": "현지 시장에 어떻게 접근하면 좋을까요?"
+        },
+        {
+          "who": "나",
+          "en": "We’d like to understand your approval process.",
+          "ko": "귀사의 승인 절차를 이해하고 싶습니다."
+        },
+        {
+          "who": "상대",
+          "en": "That approach works for us.",
+          "ko": "그 접근 방식이 좋습니다."
+        }
+      ]
+    },
+    {
+      "situation": "해외클라이언트 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "해외클라이언트",
+      "key": "Who will be our main point of contact?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "How should we approach the local market?",
+          "ko": "현지 시장에 어떻게 접근하면 좋을까요?"
+        },
+        {
+          "who": "나",
+          "en": "Who will be our main point of contact?",
+          "ko": "저희의 주요 연락 담당자는 누구인가요?"
+        },
+        {
+          "who": "상대",
+          "en": "That approach works for us.",
+          "ko": "그 접근 방식이 좋습니다."
+        }
+      ]
+    },
+    {
+      "situation": "해외클라이언트 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "해외클라이언트",
+      "key": "We can provide both Korean and English versions.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "How should we approach the local market?",
+          "ko": "현지 시장에 어떻게 접근하면 좋을까요?"
+        },
+        {
+          "who": "나",
+          "en": "We can provide both Korean and English versions.",
+          "ko": "한국어와 영어 버전을 모두 제공할 수 있습니다."
+        },
+        {
+          "who": "상대",
+          "en": "That approach works for us.",
+          "ko": "그 접근 방식이 좋습니다."
+        }
+      ]
+    },
+    {
+      "situation": "해외클라이언트 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "해외클라이언트",
+      "key": "Let’s confirm the time zone for future calls.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "How should we approach the local market?",
+          "ko": "현지 시장에 어떻게 접근하면 좋을까요?"
+        },
+        {
+          "who": "나",
+          "en": "Let’s confirm the time zone for future calls.",
+          "ko": "향후 통화를 위해 시간대를 확인하죠."
+        },
+        {
+          "who": "상대",
+          "en": "That approach works for us.",
+          "ko": "그 접근 방식이 좋습니다."
+        }
+      ]
+    },
+    {
+      "situation": "해외클라이언트 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "해외클라이언트",
+      "key": "We’ve worked with international partners on similar projects.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "How should we approach the local market?",
+          "ko": "현지 시장에 어떻게 접근하면 좋을까요?"
+        },
+        {
+          "who": "나",
+          "en": "We’ve worked with international partners on similar projects.",
+          "ko": "유사 프로젝트에서 해외 파트너와 협업한 경험이 있습니다."
+        },
+        {
+          "who": "상대",
+          "en": "That approach works for us.",
+          "ko": "그 접근 방식이 좋습니다."
+        }
+      ]
+    },
+    {
+      "situation": "해외클라이언트 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "해외클라이언트",
+      "key": "Could you share a few local references with us?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "How should we approach the local market?",
+          "ko": "현지 시장에 어떻게 접근하면 좋을까요?"
+        },
+        {
+          "who": "나",
+          "en": "Could you share a few local references with us?",
+          "ko": "현지 참고 사례를 몇 가지 공유해 주실 수 있나요?"
+        },
+        {
+          "who": "상대",
+          "en": "That approach works for us.",
+          "ko": "그 접근 방식이 좋습니다."
+        }
+      ]
+    },
+    {
+      "situation": "해외클라이언트 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "해외클라이언트",
+      "key": "We want the final experience to feel authentic.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "How should we approach the local market?",
+          "ko": "현지 시장에 어떻게 접근하면 좋을까요?"
+        },
+        {
+          "who": "나",
+          "en": "We want the final experience to feel authentic.",
+          "ko": "최종 경험이 현지에서 진정성 있게 느껴지길 바랍니다."
+        },
+        {
+          "who": "상대",
+          "en": "That approach works for us.",
+          "ko": "그 접근 방식이 좋습니다."
+        }
+      ]
+    },
+    {
+      "situation": "피드백·리더십 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "피드백·리더십",
+      "key": "The overall direction is strong.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Could you give me your honest feedback?",
+          "ko": "솔직한 피드백을 주시겠어요?"
+        },
+        {
+          "who": "나",
+          "en": "The overall direction is strong.",
+          "ko": "전체적인 방향은 좋습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Understood. I’ll work on that.",
+          "ko": "알겠습니다. 보완하겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "피드백·리더십 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "피드백·리더십",
+      "key": "I’d like to see a bolder first option.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Could you give me your honest feedback?",
+          "ko": "솔직한 피드백을 주시겠어요?"
+        },
+        {
+          "who": "나",
+          "en": "I’d like to see a bolder first option.",
+          "ko": "첫 번째 안은 좀 더 과감했으면 합니다."
+        },
+        {
+          "who": "상대",
+          "en": "Understood. I’ll work on that.",
+          "ko": "알겠습니다. 보완하겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "피드백·리더십 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "피드백·리더십",
+      "key": "This needs another round of refinement.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Could you give me your honest feedback?",
+          "ko": "솔직한 피드백을 주시겠어요?"
+        },
+        {
+          "who": "나",
+          "en": "This needs another round of refinement.",
+          "ko": "이것은 한 차례 더 다듬을 필요가 있습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Understood. I’ll work on that.",
+          "ko": "알겠습니다. 보완하겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "피드백·리더십 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "피드백·리더십",
+      "key": "Can you show me the thinking behind this choice?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Could you give me your honest feedback?",
+          "ko": "솔직한 피드백을 주시겠어요?"
+        },
+        {
+          "who": "나",
+          "en": "Can you show me the thinking behind this choice?",
+          "ko": "이 선택의 배경 논리를 설명해 줄 수 있나요?"
+        },
+        {
+          "who": "상대",
+          "en": "Understood. I’ll work on that.",
+          "ko": "알겠습니다. 보완하겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "피드백·리더십 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "피드백·리더십",
+      "key": "Let’s separate personal preference from the project goal.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Could you give me your honest feedback?",
+          "ko": "솔직한 피드백을 주시겠어요?"
+        },
+        {
+          "who": "나",
+          "en": "Let’s separate personal preference from the project goal.",
+          "ko": "개인 취향과 프로젝트 목표를 구분합시다."
+        },
+        {
+          "who": "상대",
+          "en": "Understood. I’ll work on that.",
+          "ko": "알겠습니다. 보완하겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "피드백·리더십 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "피드백·리더십",
+      "key": "You handled that conversation very well.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Could you give me your honest feedback?",
+          "ko": "솔직한 피드백을 주시겠어요?"
+        },
+        {
+          "who": "나",
+          "en": "You handled that conversation very well.",
+          "ko": "그 대화를 아주 잘 이끌었습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Understood. I’ll work on that.",
+          "ko": "알겠습니다. 보완하겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "피드백·리더십 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "피드백·리더십",
+      "key": "Please raise concerns earlier next time.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Could you give me your honest feedback?",
+          "ko": "솔직한 피드백을 주시겠어요?"
+        },
+        {
+          "who": "나",
+          "en": "Please raise concerns earlier next time.",
+          "ko": "다음에는 우려 사항을 더 일찍 알려주세요."
+        },
+        {
+          "who": "상대",
+          "en": "Understood. I’ll work on that.",
+          "ko": "알겠습니다. 보완하겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "피드백·리더십 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "피드백·리더십",
+      "key": "I trust your judgment on the details.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Could you give me your honest feedback?",
+          "ko": "솔직한 피드백을 주시겠어요?"
+        },
+        {
+          "who": "나",
+          "en": "I trust your judgment on the details.",
+          "ko": "세부 사항은 당신의 판단을 믿겠습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Understood. I’ll work on that.",
+          "ko": "알겠습니다. 보완하겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "피드백·리더십 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "피드백·리더십",
+      "key": "Let’s agree on what “done” means.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Could you give me your honest feedback?",
+          "ko": "솔직한 피드백을 주시겠어요?"
+        },
+        {
+          "who": "나",
+          "en": "Let’s agree on what “done” means.",
+          "ko": "완료의 기준이 무엇인지 합의합시다."
+        },
+        {
+          "who": "상대",
+          "en": "Understood. I’ll work on that.",
+          "ko": "알겠습니다. 보완하겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "피드백·리더십 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "피드백·리더십",
+      "key": "What support do you need from me?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Could you give me your honest feedback?",
+          "ko": "솔직한 피드백을 주시겠어요?"
+        },
+        {
+          "who": "나",
+          "en": "What support do you need from me?",
+          "ko": "저에게 어떤 지원이 필요한가요?"
+        },
+        {
+          "who": "상대",
+          "en": "Understood. I’ll work on that.",
+          "ko": "알겠습니다. 보완하겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "계약·결제 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "계약·결제",
+      "key": "Could you send over the latest version of the contract?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Is everything ready on the contract side?",
+          "ko": "계약 관련 준비는 모두 되었나요?"
+        },
+        {
+          "who": "나",
+          "en": "Could you send over the latest version of the contract?",
+          "ko": "최신 계약서 버전을 보내주시겠어요?"
+        },
+        {
+          "who": "상대",
+          "en": "I’ll confirm that in writing.",
+          "ko": "서면으로 확인드리겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "계약·결제 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "계약·결제",
+      "key": "We need to review the termination clause.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Is everything ready on the contract side?",
+          "ko": "계약 관련 준비는 모두 되었나요?"
+        },
+        {
+          "who": "나",
+          "en": "We need to review the termination clause.",
+          "ko": "해지 조항을 검토해야 합니다."
+        },
+        {
+          "who": "상대",
+          "en": "I’ll confirm that in writing.",
+          "ko": "서면으로 확인드리겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "계약·결제 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "계약·결제",
+      "key": "The payment schedule should match the milestones.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Is everything ready on the contract side?",
+          "ko": "계약 관련 준비는 모두 되었나요?"
+        },
+        {
+          "who": "나",
+          "en": "The payment schedule should match the milestones.",
+          "ko": "지급 일정은 마일스톤과 맞아야 합니다."
+        },
+        {
+          "who": "상대",
+          "en": "I’ll confirm that in writing.",
+          "ko": "서면으로 확인드리겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "계약·결제 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "계약·결제",
+      "key": "Is tax included in the quoted amount?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Is everything ready on the contract side?",
+          "ko": "계약 관련 준비는 모두 되었나요?"
+        },
+        {
+          "who": "나",
+          "en": "Is tax included in the quoted amount?",
+          "ko": "견적 금액에 세금이 포함되어 있나요?"
+        },
+        {
+          "who": "상대",
+          "en": "I’ll confirm that in writing.",
+          "ko": "서면으로 확인드리겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "계약·결제 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "계약·결제",
+      "key": "We require a fifty percent deposit to begin.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Is everything ready on the contract side?",
+          "ko": "계약 관련 준비는 모두 되었나요?"
+        },
+        {
+          "who": "나",
+          "en": "We require a fifty percent deposit to begin.",
+          "ko": "착수하려면 50% 선금이 필요합니다."
+        },
+        {
+          "who": "상대",
+          "en": "I’ll confirm that in writing.",
+          "ko": "서면으로 확인드리겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "계약·결제 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "계약·결제",
+      "key": "The invoice has been approved for payment.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Is everything ready on the contract side?",
+          "ko": "계약 관련 준비는 모두 되었나요?"
+        },
+        {
+          "who": "나",
+          "en": "The invoice has been approved for payment.",
+          "ko": "해당 청구서는 지급 승인되었습니다."
+        },
+        {
+          "who": "상대",
+          "en": "I’ll confirm that in writing.",
+          "ko": "서면으로 확인드리겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "계약·결제 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "계약·결제",
+      "key": "Could you reissue the invoice with the correct company name?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Is everything ready on the contract side?",
+          "ko": "계약 관련 준비는 모두 되었나요?"
+        },
+        {
+          "who": "나",
+          "en": "Could you reissue the invoice with the correct company name?",
+          "ko": "정확한 회사명으로 청구서를 다시 발행해 주시겠어요?"
+        },
+        {
+          "who": "상대",
+          "en": "I’ll confirm that in writing.",
+          "ko": "서면으로 확인드리겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "계약·결제 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "계약·결제",
+      "key": "The usage rights need to be stated more clearly.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Is everything ready on the contract side?",
+          "ko": "계약 관련 준비는 모두 되었나요?"
+        },
+        {
+          "who": "나",
+          "en": "The usage rights need to be stated more clearly.",
+          "ko": "사용 권리를 더 명확하게 기재해야 합니다."
+        },
+        {
+          "who": "상대",
+          "en": "I’ll confirm that in writing.",
+          "ko": "서면으로 확인드리겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "계약·결제 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "계약·결제",
+      "key": "We can sign once the final changes are reflected.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Is everything ready on the contract side?",
+          "ko": "계약 관련 준비는 모두 되었나요?"
+        },
+        {
+          "who": "나",
+          "en": "We can sign once the final changes are reflected.",
+          "ko": "최종 변경 사항이 반영되면 서명할 수 있습니다."
+        },
+        {
+          "who": "상대",
+          "en": "I’ll confirm that in writing.",
+          "ko": "서면으로 확인드리겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "계약·결제 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "계약·결제",
+      "key": "Please confirm the payment date in writing.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Is everything ready on the contract side?",
+          "ko": "계약 관련 준비는 모두 되었나요?"
+        },
+        {
+          "who": "나",
+          "en": "Please confirm the payment date in writing.",
+          "ko": "지급일을 서면으로 확인해 주세요."
+        },
+        {
+          "who": "상대",
+          "en": "I’ll confirm that in writing.",
+          "ko": "서면으로 확인드리겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "위기대응 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "위기대응",
+      "key": "We’ve identified the issue and are working on a fix.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What’s the current status?",
+          "ko": "현재 상황이 어떤가요?"
+        },
+        {
+          "who": "나",
+          "en": "We’ve identified the issue and are working on a fix.",
+          "ko": "문제를 확인했고 해결 중입니다."
+        },
+        {
+          "who": "상대",
+          "en": "Thank you. Keep us updated.",
+          "ko": "감사합니다. 계속 상황을 알려주세요."
+        }
+      ]
+    },
+    {
+      "situation": "위기대응 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "위기대응",
+      "key": "Here’s what we know so far.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What’s the current status?",
+          "ko": "현재 상황이 어떤가요?"
+        },
+        {
+          "who": "나",
+          "en": "Here’s what we know so far.",
+          "ko": "현재까지 파악한 내용은 이렇습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Thank you. Keep us updated.",
+          "ko": "감사합니다. 계속 상황을 알려주세요."
+        }
+      ]
+    },
+    {
+      "situation": "위기대응 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "위기대응",
+      "key": "The impact is limited to a small number of users.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What’s the current status?",
+          "ko": "현재 상황이 어떤가요?"
+        },
+        {
+          "who": "나",
+          "en": "The impact is limited to a small number of users.",
+          "ko": "영향은 소수 사용자에게 제한되어 있습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Thank you. Keep us updated.",
+          "ko": "감사합니다. 계속 상황을 알려주세요."
+        }
+      ]
+    },
+    {
+      "situation": "위기대응 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "위기대응",
+      "key": "We don’t want to speculate before we have the facts.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What’s the current status?",
+          "ko": "현재 상황이 어떤가요?"
+        },
+        {
+          "who": "나",
+          "en": "We don’t want to speculate before we have the facts.",
+          "ko": "사실을 확인하기 전에 추측하지 않겠습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Thank you. Keep us updated.",
+          "ko": "감사합니다. 계속 상황을 알려주세요."
+        }
+      ]
+    },
+    {
+      "situation": "위기대응 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "위기대응",
+      "key": "Our immediate priority is to restore the service.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What’s the current status?",
+          "ko": "현재 상황이 어떤가요?"
+        },
+        {
+          "who": "나",
+          "en": "Our immediate priority is to restore the service.",
+          "ko": "당장의 최우선 과제는 서비스 복구입니다."
+        },
+        {
+          "who": "상대",
+          "en": "Thank you. Keep us updated.",
+          "ko": "감사합니다. 계속 상황을 알려주세요."
+        }
+      ]
+    },
+    {
+      "situation": "위기대응 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "위기대응",
+      "key": "We’ll provide another update in two hours.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What’s the current status?",
+          "ko": "현재 상황이 어떤가요?"
+        },
+        {
+          "who": "나",
+          "en": "We’ll provide another update in two hours.",
+          "ko": "두 시간 후 다시 상황을 알려드리겠습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Thank you. Keep us updated.",
+          "ko": "감사합니다. 계속 상황을 알려주세요."
+        }
+      ]
+    },
+    {
+      "situation": "위기대응 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "위기대응",
+      "key": "We take full responsibility for the mistake.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What’s the current status?",
+          "ko": "현재 상황이 어떤가요?"
+        },
+        {
+          "who": "나",
+          "en": "We take full responsibility for the mistake.",
+          "ko": "이번 실수에 전적으로 책임을 지겠습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Thank you. Keep us updated.",
+          "ko": "감사합니다. 계속 상황을 알려주세요."
+        }
+      ]
+    },
+    {
+      "situation": "위기대응 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "위기대응",
+      "key": "We’ve put safeguards in place to prevent a repeat.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What’s the current status?",
+          "ko": "현재 상황이 어떤가요?"
+        },
+        {
+          "who": "나",
+          "en": "We’ve put safeguards in place to prevent a repeat.",
+          "ko": "재발 방지 장치를 마련했습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Thank you. Keep us updated.",
+          "ko": "감사합니다. 계속 상황을 알려주세요."
+        }
+      ]
+    },
+    {
+      "situation": "위기대응 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "위기대응",
+      "key": "Could we speak privately before responding publicly?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What’s the current status?",
+          "ko": "현재 상황이 어떤가요?"
+        },
+        {
+          "who": "나",
+          "en": "Could we speak privately before responding publicly?",
+          "ko": "공개 대응 전에 비공개로 먼저 이야기할 수 있을까요?"
+        },
+        {
+          "who": "상대",
+          "en": "Thank you. Keep us updated.",
+          "ko": "감사합니다. 계속 상황을 알려주세요."
+        }
+      ]
+    },
+    {
+      "situation": "위기대응 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "위기대응",
+      "key": "Thank you for your patience while we resolve this.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What’s the current status?",
+          "ko": "현재 상황이 어떤가요?"
+        },
+        {
+          "who": "나",
+          "en": "Thank you for your patience while we resolve this.",
+          "ko": "문제를 해결하는 동안 기다려 주셔서 감사합니다."
+        },
+        {
+          "who": "상대",
+          "en": "Thank you. Keep us updated.",
+          "ko": "감사합니다. 계속 상황을 알려주세요."
+        }
+      ]
+    },
+    {
+      "situation": "네트워킹 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "네트워킹",
+      "key": "I’ve heard great things about your work.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "It’s great to meet you.",
+          "ko": "만나서 반갑습니다."
+        },
+        {
+          "who": "나",
+          "en": "I’ve heard great things about your work.",
+          "ko": "하시는 일에 대해 좋은 이야기를 많이 들었습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Likewise. I hope we can talk again soon.",
+          "ko": "저도 반갑습니다. 곧 다시 이야기할 수 있으면 좋겠네요."
+        }
+      ]
+    },
+    {
+      "situation": "네트워킹 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "네트워킹",
+      "key": "What are you working on these days?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "It’s great to meet you.",
+          "ko": "만나서 반갑습니다."
+        },
+        {
+          "who": "나",
+          "en": "What are you working on these days?",
+          "ko": "요즘 어떤 일을 하고 계세요?"
+        },
+        {
+          "who": "상대",
+          "en": "Likewise. I hope we can talk again soon.",
+          "ko": "저도 반갑습니다. 곧 다시 이야기할 수 있으면 좋겠네요."
+        }
+      ]
+    },
+    {
+      "situation": "네트워킹 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "네트워킹",
+      "key": "How did you get involved in this field?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "It’s great to meet you.",
+          "ko": "만나서 반갑습니다."
+        },
+        {
+          "who": "나",
+          "en": "How did you get involved in this field?",
+          "ko": "어떻게 이 분야에서 일하게 되셨나요?"
+        },
+        {
+          "who": "상대",
+          "en": "Likewise. I hope we can talk again soon.",
+          "ko": "저도 반갑습니다. 곧 다시 이야기할 수 있으면 좋겠네요."
+        }
+      ]
+    },
+    {
+      "situation": "네트워킹 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "네트워킹",
+      "key": "I’d love to hear more about that project.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "It’s great to meet you.",
+          "ko": "만나서 반갑습니다."
+        },
+        {
+          "who": "나",
+          "en": "I’d love to hear more about that project.",
+          "ko": "그 프로젝트에 대해 더 듣고 싶습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Likewise. I hope we can talk again soon.",
+          "ko": "저도 반갑습니다. 곧 다시 이야기할 수 있으면 좋겠네요."
+        }
+      ]
+    },
+    {
+      "situation": "네트워킹 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "네트워킹",
+      "key": "There may be a good opportunity for us to collaborate.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "It’s great to meet you.",
+          "ko": "만나서 반갑습니다."
+        },
+        {
+          "who": "나",
+          "en": "There may be a good opportunity for us to collaborate.",
+          "ko": "저희가 협업할 좋은 기회가 있을 것 같습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Likewise. I hope we can talk again soon.",
+          "ko": "저도 반갑습니다. 곧 다시 이야기할 수 있으면 좋겠네요."
+        }
+      ]
+    },
+    {
+      "situation": "네트워킹 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "네트워킹",
+      "key": "Let me introduce you to someone on my team.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "It’s great to meet you.",
+          "ko": "만나서 반갑습니다."
+        },
+        {
+          "who": "나",
+          "en": "Let me introduce you to someone on my team.",
+          "ko": "저희 팀의 한 분을 소개해 드리겠습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Likewise. I hope we can talk again soon.",
+          "ko": "저도 반갑습니다. 곧 다시 이야기할 수 있으면 좋겠네요."
+        }
+      ]
+    },
+    {
+      "situation": "네트워킹 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "네트워킹",
+      "key": "Would you mind if I followed up next week?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "It’s great to meet you.",
+          "ko": "만나서 반갑습니다."
+        },
+        {
+          "who": "나",
+          "en": "Would you mind if I followed up next week?",
+          "ko": "다음 주에 다시 연락드려도 될까요?"
+        },
+        {
+          "who": "상대",
+          "en": "Likewise. I hope we can talk again soon.",
+          "ko": "저도 반갑습니다. 곧 다시 이야기할 수 있으면 좋겠네요."
+        }
+      ]
+    },
+    {
+      "situation": "네트워킹 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "네트워킹",
+      "key": "I’ll send you a link to our recent work.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "It’s great to meet you.",
+          "ko": "만나서 반갑습니다."
+        },
+        {
+          "who": "나",
+          "en": "I’ll send you a link to our recent work.",
+          "ko": "최근 작업 링크를 보내드리겠습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Likewise. I hope we can talk again soon.",
+          "ko": "저도 반갑습니다. 곧 다시 이야기할 수 있으면 좋겠네요."
+        }
+      ]
+    },
+    {
+      "situation": "네트워킹 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "네트워킹",
+      "key": "It was a pleasure finally meeting you in person.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "It’s great to meet you.",
+          "ko": "만나서 반갑습니다."
+        },
+        {
+          "who": "나",
+          "en": "It was a pleasure finally meeting you in person.",
+          "ko": "드디어 직접 만나 뵙게 되어 반가웠습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Likewise. I hope we can talk again soon.",
+          "ko": "저도 반갑습니다. 곧 다시 이야기할 수 있으면 좋겠네요."
+        }
+      ]
+    },
+    {
+      "situation": "네트워킹 상황에서 자연스럽고 분명하게 말해야 할 때",
+      "tag": "네트워킹",
+      "key": "Let’s stay in touch.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "It’s great to meet you.",
+          "ko": "만나서 반갑습니다."
+        },
+        {
+          "who": "나",
+          "en": "Let’s stay in touch.",
+          "ko": "계속 연락하고 지내요."
+        },
+        {
+          "who": "상대",
+          "en": "Likewise. I hope we can talk again soon.",
+          "ko": "저도 반갑습니다. 곧 다시 이야기할 수 있으면 좋겠네요."
+        }
+      ]
+    },
+    {
+      "situation": "출장·공항 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "출장·공항",
+      "key": "I’m here on a business trip.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What can I help you with today?",
+          "ko": "무엇을 도와드릴까요?"
+        },
+        {
+          "who": "나",
+          "en": "I’m here on a business trip.",
+          "ko": "출장차 왔습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Certainly. Let me check that for you.",
+          "ko": "알겠습니다. 확인해 드리겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "출장·공항 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "출장·공항",
+      "key": "Could you tell me where the transfer desk is?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What can I help you with today?",
+          "ko": "무엇을 도와드릴까요?"
+        },
+        {
+          "who": "나",
+          "en": "Could you tell me where the transfer desk is?",
+          "ko": "환승 카운터가 어디인지 알려주시겠어요?"
+        },
+        {
+          "who": "상대",
+          "en": "Certainly. Let me check that for you.",
+          "ko": "알겠습니다. 확인해 드리겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "출장·공항 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "출장·공항",
+      "key": "My flight has been delayed by three hours.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What can I help you with today?",
+          "ko": "무엇을 도와드릴까요?"
+        },
+        {
+          "who": "나",
+          "en": "My flight has been delayed by three hours.",
+          "ko": "제 항공편이 세 시간 지연되었습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Certainly. Let me check that for you.",
+          "ko": "알겠습니다. 확인해 드리겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "출장·공항 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "출장·공항",
+      "key": "Is there an earlier flight available?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What can I help you with today?",
+          "ko": "무엇을 도와드릴까요?"
+        },
+        {
+          "who": "나",
+          "en": "Is there an earlier flight available?",
+          "ko": "더 이른 항공편이 있나요?"
+        },
+        {
+          "who": "상대",
+          "en": "Certainly. Let me check that for you.",
+          "ko": "알겠습니다. 확인해 드리겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "출장·공항 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "출장·공항",
+      "key": "I need a receipt for my company.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What can I help you with today?",
+          "ko": "무엇을 도와드릴까요?"
+        },
+        {
+          "who": "나",
+          "en": "I need a receipt for my company.",
+          "ko": "회사 제출용 영수증이 필요합니다."
+        },
+        {
+          "who": "상대",
+          "en": "Certainly. Let me check that for you.",
+          "ko": "알겠습니다. 확인해 드리겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "출장·공항 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "출장·공항",
+      "key": "Could I have an aisle seat, please?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What can I help you with today?",
+          "ko": "무엇을 도와드릴까요?"
+        },
+        {
+          "who": "나",
+          "en": "Could I have an aisle seat, please?",
+          "ko": "통로 좌석으로 부탁드려도 될까요?"
+        },
+        {
+          "who": "상대",
+          "en": "Certainly. Let me check that for you.",
+          "ko": "알겠습니다. 확인해 드리겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "출장·공항 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "출장·공항",
+      "key": "My checked bag hasn’t arrived.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What can I help you with today?",
+          "ko": "무엇을 도와드릴까요?"
+        },
+        {
+          "who": "나",
+          "en": "My checked bag hasn’t arrived.",
+          "ko": "위탁 수하물이 도착하지 않았습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Certainly. Let me check that for you.",
+          "ko": "알겠습니다. 확인해 드리겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "출장·공항 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "출장·공항",
+      "key": "Where can I get a local SIM card?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What can I help you with today?",
+          "ko": "무엇을 도와드릴까요?"
+        },
+        {
+          "who": "나",
+          "en": "Where can I get a local SIM card?",
+          "ko": "현지 유심은 어디서 살 수 있나요?"
+        },
+        {
+          "who": "상대",
+          "en": "Certainly. Let me check that for you.",
+          "ko": "알겠습니다. 확인해 드리겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "출장·공항 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "출장·공항",
+      "key": "Could you write the address in the local language?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What can I help you with today?",
+          "ko": "무엇을 도와드릴까요?"
+        },
+        {
+          "who": "나",
+          "en": "Could you write the address in the local language?",
+          "ko": "주소를 현지 언어로 적어주시겠어요?"
+        },
+        {
+          "who": "상대",
+          "en": "Certainly. Let me check that for you.",
+          "ko": "알겠습니다. 확인해 드리겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "출장·공항 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "출장·공항",
+      "key": "I have a meeting downtown at two.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What can I help you with today?",
+          "ko": "무엇을 도와드릴까요?"
+        },
+        {
+          "who": "나",
+          "en": "I have a meeting downtown at two.",
+          "ko": "두 시에 시내에서 회의가 있습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Certainly. Let me check that for you.",
+          "ko": "알겠습니다. 확인해 드리겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "호텔·이동 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "호텔·이동",
+      "key": "I have a reservation under the name Ryu.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "How may I assist you?",
+          "ko": "어떻게 도와드릴까요?"
+        },
+        {
+          "who": "나",
+          "en": "I have a reservation under the name Ryu.",
+          "ko": "류라는 이름으로 예약했습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Of course. We’ll arrange that.",
+          "ko": "물론입니다. 준비해 드리겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "호텔·이동 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "호텔·이동",
+      "key": "Could I check in a little early?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "How may I assist you?",
+          "ko": "어떻게 도와드릴까요?"
+        },
+        {
+          "who": "나",
+          "en": "Could I check in a little early?",
+          "ko": "조금 일찍 체크인할 수 있을까요?"
+        },
+        {
+          "who": "상대",
+          "en": "Of course. We’ll arrange that.",
+          "ko": "물론입니다. 준비해 드리겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "호텔·이동 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "호텔·이동",
+      "key": "I need a quiet room with a desk.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "How may I assist you?",
+          "ko": "어떻게 도와드릴까요?"
+        },
+        {
+          "who": "나",
+          "en": "I need a quiet room with a desk.",
+          "ko": "책상이 있는 조용한 방이 필요합니다."
+        },
+        {
+          "who": "상대",
+          "en": "Of course. We’ll arrange that.",
+          "ko": "물론입니다. 준비해 드리겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "호텔·이동 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "호텔·이동",
+      "key": "Could you arrange a taxi for eight tomorrow morning?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "How may I assist you?",
+          "ko": "어떻게 도와드릴까요?"
+        },
+        {
+          "who": "나",
+          "en": "Could you arrange a taxi for eight tomorrow morning?",
+          "ko": "내일 아침 여덟 시에 택시를 불러주시겠어요?"
+        },
+        {
+          "who": "상대",
+          "en": "Of course. We’ll arrange that.",
+          "ko": "물론입니다. 준비해 드리겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "호텔·이동 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "호텔·이동",
+      "key": "How long does it take to get to the convention center?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "How may I assist you?",
+          "ko": "어떻게 도와드릴까요?"
+        },
+        {
+          "who": "나",
+          "en": "How long does it take to get to the convention center?",
+          "ko": "컨벤션 센터까지 얼마나 걸리나요?"
+        },
+        {
+          "who": "상대",
+          "en": "Of course. We’ll arrange that.",
+          "ko": "물론입니다. 준비해 드리겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "호텔·이동 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "호텔·이동",
+      "key": "Could I get a late checkout?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "How may I assist you?",
+          "ko": "어떻게 도와드릴까요?"
+        },
+        {
+          "who": "나",
+          "en": "Could I get a late checkout?",
+          "ko": "늦은 체크아웃이 가능할까요?"
+        },
+        {
+          "who": "상대",
+          "en": "Of course. We’ll arrange that.",
+          "ko": "물론입니다. 준비해 드리겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "호텔·이동 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "호텔·이동",
+      "key": "The Wi-Fi in my room isn’t working.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "How may I assist you?",
+          "ko": "어떻게 도와드릴까요?"
+        },
+        {
+          "who": "나",
+          "en": "The Wi-Fi in my room isn’t working.",
+          "ko": "객실 와이파이가 작동하지 않습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Of course. We’ll arrange that.",
+          "ko": "물론입니다. 준비해 드리겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "호텔·이동 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "호텔·이동",
+      "key": "Could you store my luggage after checkout?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "How may I assist you?",
+          "ko": "어떻게 도와드릴까요?"
+        },
+        {
+          "who": "나",
+          "en": "Could you store my luggage after checkout?",
+          "ko": "체크아웃 후 짐을 맡아주실 수 있나요?"
+        },
+        {
+          "who": "상대",
+          "en": "Of course. We’ll arrange that.",
+          "ko": "물론입니다. 준비해 드리겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "호텔·이동 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "호텔·이동",
+      "key": "Please take me to this address.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "How may I assist you?",
+          "ko": "어떻게 도와드릴까요?"
+        },
+        {
+          "who": "나",
+          "en": "Please take me to this address.",
+          "ko": "이 주소로 가주세요."
+        },
+        {
+          "who": "상대",
+          "en": "Of course. We’ll arrange that.",
+          "ko": "물론입니다. 준비해 드리겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "호텔·이동 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "호텔·이동",
+      "key": "Could you drop me off at the main entrance?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "How may I assist you?",
+          "ko": "어떻게 도와드릴까요?"
+        },
+        {
+          "who": "나",
+          "en": "Could you drop me off at the main entrance?",
+          "ko": "정문에서 내려주시겠어요?"
+        },
+        {
+          "who": "상대",
+          "en": "Of course. We’ll arrange that.",
+          "ko": "물론입니다. 준비해 드리겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "전화·화상 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "전화·화상",
+      "key": "Is now a good time to talk?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Hello, this is Daniel speaking.",
+          "ko": "안녕하세요, 다니엘입니다."
+        },
+        {
+          "who": "나",
+          "en": "Is now a good time to talk?",
+          "ko": "지금 통화 괜찮으신가요?"
+        },
+        {
+          "who": "상대",
+          "en": "Sounds good. I’m ready.",
+          "ko": "좋습니다. 준비됐습니다."
+        }
+      ]
+    },
+    {
+      "situation": "전화·화상 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "전화·화상",
+      "key": "I’m calling regarding our proposal.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Hello, this is Daniel speaking.",
+          "ko": "안녕하세요, 다니엘입니다."
+        },
+        {
+          "who": "나",
+          "en": "I’m calling regarding our proposal.",
+          "ko": "저희 제안서 건으로 전화드렸습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Sounds good. I’m ready.",
+          "ko": "좋습니다. 준비됐습니다."
+        }
+      ]
+    },
+    {
+      "situation": "전화·화상 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "전화·화상",
+      "key": "Could you speak a little more slowly?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Hello, this is Daniel speaking.",
+          "ko": "안녕하세요, 다니엘입니다."
+        },
+        {
+          "who": "나",
+          "en": "Could you speak a little more slowly?",
+          "ko": "조금 천천히 말씀해 주시겠어요?"
+        },
+        {
+          "who": "상대",
+          "en": "Sounds good. I’m ready.",
+          "ko": "좋습니다. 준비됐습니다."
+        }
+      ]
+    },
+    {
+      "situation": "전화·화상 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "전화·화상",
+      "key": "Let me put you on speaker.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Hello, this is Daniel speaking.",
+          "ko": "안녕하세요, 다니엘입니다."
+        },
+        {
+          "who": "나",
+          "en": "Let me put you on speaker.",
+          "ko": "스피커폰으로 전환하겠습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Sounds good. I’m ready.",
+          "ko": "좋습니다. 준비됐습니다."
+        }
+      ]
+    },
+    {
+      "situation": "전화·화상 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "전화·화상",
+      "key": "I’ll share my screen now.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Hello, this is Daniel speaking.",
+          "ko": "안녕하세요, 다니엘입니다."
+        },
+        {
+          "who": "나",
+          "en": "I’ll share my screen now.",
+          "ko": "지금 화면을 공유하겠습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Sounds good. I’m ready.",
+          "ko": "좋습니다. 준비됐습니다."
+        }
+      ]
+    },
+    {
+      "situation": "전화·화상 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "전화·화상",
+      "key": "I think there’s a slight delay on the line.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Hello, this is Daniel speaking.",
+          "ko": "안녕하세요, 다니엘입니다."
+        },
+        {
+          "who": "나",
+          "en": "I think there’s a slight delay on the line.",
+          "ko": "통화에 약간의 지연이 있는 것 같습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Sounds good. I’m ready.",
+          "ko": "좋습니다. 준비됐습니다."
+        }
+      ]
+    },
+    {
+      "situation": "전화·화상 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "전화·화상",
+      "key": "Could you send the link again in the chat?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Hello, this is Daniel speaking.",
+          "ko": "안녕하세요, 다니엘입니다."
+        },
+        {
+          "who": "나",
+          "en": "Could you send the link again in the chat?",
+          "ko": "채팅에 링크를 다시 보내주시겠어요?"
+        },
+        {
+          "who": "상대",
+          "en": "Sounds good. I’m ready.",
+          "ko": "좋습니다. 준비됐습니다."
+        }
+      ]
+    },
+    {
+      "situation": "전화·화상 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "전화·화상",
+      "key": "We seem to have lost your audio.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Hello, this is Daniel speaking.",
+          "ko": "안녕하세요, 다니엘입니다."
+        },
+        {
+          "who": "나",
+          "en": "We seem to have lost your audio.",
+          "ko": "소리가 끊긴 것 같습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Sounds good. I’m ready.",
+          "ko": "좋습니다. 준비됐습니다."
+        }
+      ]
+    },
+    {
+      "situation": "전화·화상 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "전화·화상",
+      "key": "Let me call you back in five minutes.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Hello, this is Daniel speaking.",
+          "ko": "안녕하세요, 다니엘입니다."
+        },
+        {
+          "who": "나",
+          "en": "Let me call you back in five minutes.",
+          "ko": "5분 후에 다시 전화드리겠습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Sounds good. I’m ready.",
+          "ko": "좋습니다. 준비됐습니다."
+        }
+      ]
+    },
+    {
+      "situation": "전화·화상 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "전화·화상",
+      "key": "I’ll send a recap right after this call.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Hello, this is Daniel speaking.",
+          "ko": "안녕하세요, 다니엘입니다."
+        },
+        {
+          "who": "나",
+          "en": "I’ll send a recap right after this call.",
+          "ko": "통화 직후 요약을 보내드리겠습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Sounds good. I’m ready.",
+          "ko": "좋습니다. 준비됐습니다."
+        }
+      ]
+    },
+    {
+      "situation": "식사·접대 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "식사·접대",
+      "key": "Thank you for inviting us to dinner.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "I’m glad we could meet outside the office.",
+          "ko": "사무실 밖에서 뵙게 되어 기쁩니다."
+        },
+        {
+          "who": "나",
+          "en": "Thank you for inviting us to dinner.",
+          "ko": "저녁 식사에 초대해 주셔서 감사합니다."
+        },
+        {
+          "who": "상대",
+          "en": "Likewise. It’s been a pleasure.",
+          "ko": "저도 그렇습니다. 즐거운 시간이었습니다."
+        }
+      ]
+    },
+    {
+      "situation": "식사·접대 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "식사·접대",
+      "key": "Do you have any dietary restrictions?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "I’m glad we could meet outside the office.",
+          "ko": "사무실 밖에서 뵙게 되어 기쁩니다."
+        },
+        {
+          "who": "나",
+          "en": "Do you have any dietary restrictions?",
+          "ko": "식단 제한이 있으신가요?"
+        },
+        {
+          "who": "상대",
+          "en": "Likewise. It’s been a pleasure.",
+          "ko": "저도 그렇습니다. 즐거운 시간이었습니다."
+        }
+      ]
+    },
+    {
+      "situation": "식사·접대 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "식사·접대",
+      "key": "Could you recommend a local specialty?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "I’m glad we could meet outside the office.",
+          "ko": "사무실 밖에서 뵙게 되어 기쁩니다."
+        },
+        {
+          "who": "나",
+          "en": "Could you recommend a local specialty?",
+          "ko": "현지 특선 요리를 추천해 주시겠어요?"
+        },
+        {
+          "who": "상대",
+          "en": "Likewise. It’s been a pleasure.",
+          "ko": "저도 그렇습니다. 즐거운 시간이었습니다."
+        }
+      ]
+    },
+    {
+      "situation": "식사·접대 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "식사·접대",
+      "key": "Shall we order a few dishes to share?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "I’m glad we could meet outside the office.",
+          "ko": "사무실 밖에서 뵙게 되어 기쁩니다."
+        },
+        {
+          "who": "나",
+          "en": "Shall we order a few dishes to share?",
+          "ko": "함께 나눠 먹을 요리를 몇 가지 주문할까요?"
+        },
+        {
+          "who": "상대",
+          "en": "Likewise. It’s been a pleasure.",
+          "ko": "저도 그렇습니다. 즐거운 시간이었습니다."
+        }
+      ]
+    },
+    {
+      "situation": "식사·접대 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "식사·접대",
+      "key": "This has been a very productive visit.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "I’m glad we could meet outside the office.",
+          "ko": "사무실 밖에서 뵙게 되어 기쁩니다."
+        },
+        {
+          "who": "나",
+          "en": "This has been a very productive visit.",
+          "ko": "이번 방문은 매우 생산적이었습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Likewise. It’s been a pleasure.",
+          "ko": "저도 그렇습니다. 즐거운 시간이었습니다."
+        }
+      ]
+    },
+    {
+      "situation": "식사·접대 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "식사·접대",
+      "key": "I’d like to make a toast to our partnership.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "I’m glad we could meet outside the office.",
+          "ko": "사무실 밖에서 뵙게 되어 기쁩니다."
+        },
+        {
+          "who": "나",
+          "en": "I’d like to make a toast to our partnership.",
+          "ko": "저희 파트너십을 위해 건배를 제안하고 싶습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Likewise. It’s been a pleasure.",
+          "ko": "저도 그렇습니다. 즐거운 시간이었습니다."
+        }
+      ]
+    },
+    {
+      "situation": "식사·접대 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "식사·접대",
+      "key": "Please allow us to get the bill.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "I’m glad we could meet outside the office.",
+          "ko": "사무실 밖에서 뵙게 되어 기쁩니다."
+        },
+        {
+          "who": "나",
+          "en": "Please allow us to get the bill.",
+          "ko": "계산은 저희가 하겠습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Likewise. It’s been a pleasure.",
+          "ko": "저도 그렇습니다. 즐거운 시간이었습니다."
+        }
+      ]
+    },
+    {
+      "situation": "식사·접대 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "식사·접대",
+      "key": "Could we have separate receipts?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "I’m glad we could meet outside the office.",
+          "ko": "사무실 밖에서 뵙게 되어 기쁩니다."
+        },
+        {
+          "who": "나",
+          "en": "Could we have separate receipts?",
+          "ko": "영수증을 따로 받을 수 있을까요?"
+        },
+        {
+          "who": "상대",
+          "en": "Likewise. It’s been a pleasure.",
+          "ko": "저도 그렇습니다. 즐거운 시간이었습니다."
+        }
+      ]
+    },
+    {
+      "situation": "식사·접대 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "식사·접대",
+      "key": "I hope we can host you in Seoul next time.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "I’m glad we could meet outside the office.",
+          "ko": "사무실 밖에서 뵙게 되어 기쁩니다."
+        },
+        {
+          "who": "나",
+          "en": "I hope we can host you in Seoul next time.",
+          "ko": "다음에는 서울에서 모실 수 있으면 좋겠습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Likewise. It’s been a pleasure.",
+          "ko": "저도 그렇습니다. 즐거운 시간이었습니다."
+        }
+      ]
+    },
+    {
+      "situation": "식사·접대 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "식사·접대",
+      "key": "Thank you for the wonderful hospitality.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "I’m glad we could meet outside the office.",
+          "ko": "사무실 밖에서 뵙게 되어 기쁩니다."
+        },
+        {
+          "who": "나",
+          "en": "Thank you for the wonderful hospitality.",
+          "ko": "훌륭하게 환대해 주셔서 감사합니다."
+        },
+        {
+          "who": "상대",
+          "en": "Likewise. It’s been a pleasure.",
+          "ko": "저도 그렇습니다. 즐거운 시간이었습니다."
+        }
+      ]
+    },
+    {
+      "situation": "전시·행사 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "전시·행사",
+      "key": "Where is the exhibitor registration desk?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Welcome. Is this your first time at the show?",
+          "ko": "환영합니다. 이 행사에는 처음 오셨나요?"
+        },
+        {
+          "who": "나",
+          "en": "Where is the exhibitor registration desk?",
+          "ko": "참가업체 등록 데스크가 어디인가요?"
+        },
+        {
+          "who": "상대",
+          "en": "Great. I’d love to learn more.",
+          "ko": "좋네요. 더 자세히 듣고 싶습니다."
+        }
+      ]
+    },
+    {
+      "situation": "전시·행사 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "전시·행사",
+      "key": "We’re showcasing an immersive XR experience.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Welcome. Is this your first time at the show?",
+          "ko": "환영합니다. 이 행사에는 처음 오셨나요?"
+        },
+        {
+          "who": "나",
+          "en": "We’re showcasing an immersive XR experience.",
+          "ko": "저희는 몰입형 XR 경험을 선보이고 있습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Great. I’d love to learn more.",
+          "ko": "좋네요. 더 자세히 듣고 싶습니다."
+        }
+      ]
+    },
+    {
+      "situation": "전시·행사 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "전시·행사",
+      "key": "Would you like a quick demonstration?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Welcome. Is this your first time at the show?",
+          "ko": "환영합니다. 이 행사에는 처음 오셨나요?"
+        },
+        {
+          "who": "나",
+          "en": "Would you like a quick demonstration?",
+          "ko": "간단한 시연을 보시겠어요?"
+        },
+        {
+          "who": "상대",
+          "en": "Great. I’d love to learn more.",
+          "ko": "좋네요. 더 자세히 듣고 싶습니다."
+        }
+      ]
+    },
+    {
+      "situation": "전시·행사 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "전시·행사",
+      "key": "Let me scan your badge.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Welcome. Is this your first time at the show?",
+          "ko": "환영합니다. 이 행사에는 처음 오셨나요?"
+        },
+        {
+          "who": "나",
+          "en": "Let me scan your badge.",
+          "ko": "명찰을 스캔하겠습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Great. I’d love to learn more.",
+          "ko": "좋네요. 더 자세히 듣고 싶습니다."
+        }
+      ]
+    },
+    {
+      "situation": "전시·행사 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "전시·행사",
+      "key": "Could we schedule a longer meeting after the show?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Welcome. Is this your first time at the show?",
+          "ko": "환영합니다. 이 행사에는 처음 오셨나요?"
+        },
+        {
+          "who": "나",
+          "en": "Could we schedule a longer meeting after the show?",
+          "ko": "행사 후에 더 긴 미팅을 잡을 수 있을까요?"
+        },
+        {
+          "who": "상대",
+          "en": "Great. I’d love to learn more.",
+          "ko": "좋네요. 더 자세히 듣고 싶습니다."
+        }
+      ]
+    },
+    {
+      "situation": "전시·행사 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "전시·행사",
+      "key": "Our booth is in Hall B, number 214.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Welcome. Is this your first time at the show?",
+          "ko": "환영합니다. 이 행사에는 처음 오셨나요?"
+        },
+        {
+          "who": "나",
+          "en": "Our booth is in Hall B, number 214.",
+          "ko": "저희 부스는 B홀 214번입니다."
+        },
+        {
+          "who": "상대",
+          "en": "Great. I’d love to learn more.",
+          "ko": "좋네요. 더 자세히 듣고 싶습니다."
+        }
+      ]
+    },
+    {
+      "situation": "전시·행사 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "전시·행사",
+      "key": "The next presentation starts in ten minutes.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Welcome. Is this your first time at the show?",
+          "ko": "환영합니다. 이 행사에는 처음 오셨나요?"
+        },
+        {
+          "who": "나",
+          "en": "The next presentation starts in ten minutes.",
+          "ko": "다음 발표는 10분 후 시작합니다."
+        },
+        {
+          "who": "상대",
+          "en": "Great. I’d love to learn more.",
+          "ko": "좋네요. 더 자세히 듣고 싶습니다."
+        }
+      ]
+    },
+    {
+      "situation": "전시·행사 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "전시·행사",
+      "key": "Who should I contact about sponsorship?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Welcome. Is this your first time at the show?",
+          "ko": "환영합니다. 이 행사에는 처음 오셨나요?"
+        },
+        {
+          "who": "나",
+          "en": "Who should I contact about sponsorship?",
+          "ko": "스폰서십은 누구에게 문의해야 하나요?"
+        },
+        {
+          "who": "상대",
+          "en": "Great. I’d love to learn more.",
+          "ko": "좋네요. 더 자세히 듣고 싶습니다."
+        }
+      ]
+    },
+    {
+      "situation": "전시·행사 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "전시·행사",
+      "key": "We’re looking for distribution partners in this region.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Welcome. Is this your first time at the show?",
+          "ko": "환영합니다. 이 행사에는 처음 오셨나요?"
+        },
+        {
+          "who": "나",
+          "en": "We’re looking for distribution partners in this region.",
+          "ko": "이 지역의 유통 파트너를 찾고 있습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Great. I’d love to learn more.",
+          "ko": "좋네요. 더 자세히 듣고 싶습니다."
+        }
+      ]
+    },
+    {
+      "situation": "전시·행사 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "전시·행사",
+      "key": "I’ll send you our digital brochure.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "Welcome. Is this your first time at the show?",
+          "ko": "환영합니다. 이 행사에는 처음 오셨나요?"
+        },
+        {
+          "who": "나",
+          "en": "I’ll send you our digital brochure.",
+          "ko": "디지털 브로슈어를 보내드리겠습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Great. I’d love to learn more.",
+          "ko": "좋네요. 더 자세히 듣고 싶습니다."
+        }
+      ]
+    },
+    {
+      "situation": "구매·공급 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "구매·공급",
+      "key": "What is your minimum order quantity?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What information do you need for the order?",
+          "ko": "주문에 어떤 정보가 필요하신가요?"
+        },
+        {
+          "who": "나",
+          "en": "What is your minimum order quantity?",
+          "ko": "최소 주문 수량이 어떻게 되나요?"
+        },
+        {
+          "who": "상대",
+          "en": "Understood. We’ll include that in our offer.",
+          "ko": "알겠습니다. 제안에 반영하겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "구매·공급 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "구매·공급",
+      "key": "Could you provide a sample before production?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What information do you need for the order?",
+          "ko": "주문에 어떤 정보가 필요하신가요?"
+        },
+        {
+          "who": "나",
+          "en": "Could you provide a sample before production?",
+          "ko": "생산 전에 샘플을 제공해 주실 수 있나요?"
+        },
+        {
+          "who": "상대",
+          "en": "Understood. We’ll include that in our offer.",
+          "ko": "알겠습니다. 제안에 반영하겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "구매·공급 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "구매·공급",
+      "key": "What is the lead time for this item?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What information do you need for the order?",
+          "ko": "주문에 어떤 정보가 필요하신가요?"
+        },
+        {
+          "who": "나",
+          "en": "What is the lead time for this item?",
+          "ko": "이 제품의 리드타임은 얼마나 되나요?"
+        },
+        {
+          "who": "상대",
+          "en": "Understood. We’ll include that in our offer.",
+          "ko": "알겠습니다. 제안에 반영하겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "구매·공급 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "구매·공급",
+      "key": "We need the packaging to meet Korean regulations.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What information do you need for the order?",
+          "ko": "주문에 어떤 정보가 필요하신가요?"
+        },
+        {
+          "who": "나",
+          "en": "We need the packaging to meet Korean regulations.",
+          "ko": "포장이 한국 규정을 충족해야 합니다."
+        },
+        {
+          "who": "상대",
+          "en": "Understood. We’ll include that in our offer.",
+          "ko": "알겠습니다. 제안에 반영하겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "구매·공급 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "구매·공급",
+      "key": "Can you guarantee consistent color across batches?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What information do you need for the order?",
+          "ko": "주문에 어떤 정보가 필요하신가요?"
+        },
+        {
+          "who": "나",
+          "en": "Can you guarantee consistent color across batches?",
+          "ko": "생산 배치마다 색상 일관성을 보장할 수 있나요?"
+        },
+        {
+          "who": "상대",
+          "en": "Understood. We’ll include that in our offer.",
+          "ko": "알겠습니다. 제안에 반영하겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "구매·공급 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "구매·공급",
+      "key": "Please include shipping in the quotation.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What information do you need for the order?",
+          "ko": "주문에 어떤 정보가 필요하신가요?"
+        },
+        {
+          "who": "나",
+          "en": "Please include shipping in the quotation.",
+          "ko": "견적에 배송비를 포함해 주세요."
+        },
+        {
+          "who": "상대",
+          "en": "Understood. We’ll include that in our offer.",
+          "ko": "알겠습니다. 제안에 반영하겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "구매·공급 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "구매·공급",
+      "key": "We’ll need a quality inspection before shipment.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What information do you need for the order?",
+          "ko": "주문에 어떤 정보가 필요하신가요?"
+        },
+        {
+          "who": "나",
+          "en": "We’ll need a quality inspection before shipment.",
+          "ko": "선적 전에 품질 검사가 필요합니다."
+        },
+        {
+          "who": "상대",
+          "en": "Understood. We’ll include that in our offer.",
+          "ko": "알겠습니다. 제안에 반영하겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "구매·공급 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "구매·공급",
+      "key": "Could you offer an exclusive territory?",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What information do you need for the order?",
+          "ko": "주문에 어떤 정보가 필요하신가요?"
+        },
+        {
+          "who": "나",
+          "en": "Could you offer an exclusive territory?",
+          "ko": "독점 판매 지역을 제공할 수 있나요?"
+        },
+        {
+          "who": "상대",
+          "en": "Understood. We’ll include that in our offer.",
+          "ko": "알겠습니다. 제안에 반영하겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "구매·공급 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "구매·공급",
+      "key": "The sample doesn’t match the approved specification.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What information do you need for the order?",
+          "ko": "주문에 어떤 정보가 필요하신가요?"
+        },
+        {
+          "who": "나",
+          "en": "The sample doesn’t match the approved specification.",
+          "ko": "샘플이 승인된 사양과 일치하지 않습니다."
+        },
+        {
+          "who": "상대",
+          "en": "Understood. We’ll include that in our offer.",
+          "ko": "알겠습니다. 제안에 반영하겠습니다."
+        }
+      ]
+    },
+    {
+      "situation": "구매·공급 현장에서 필요한 요청이나 설명을 자연스럽게 전달할 때",
+      "tag": "구매·공급",
+      "key": "Please send the production schedule by Friday.",
+      "lines": [
+        {
+          "who": "상대",
+          "en": "What information do you need for the order?",
+          "ko": "주문에 어떤 정보가 필요하신가요?"
+        },
+        {
+          "who": "나",
+          "en": "Please send the production schedule by Friday.",
+          "ko": "금요일까지 생산 일정을 보내주세요."
+        },
+        {
+          "who": "상대",
+          "en": "Understood. We’ll include that in our offer.",
+          "ko": "알겠습니다. 제안에 반영하겠습니다."
+        }
       ]
     }
   ]
