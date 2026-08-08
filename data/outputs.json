@@ -1,6 +1,24 @@
 {
-  "updated": "2026-08-08T13:40:33+09:00",
+  "updated": "2026-08-08T13:50:38+09:00",
   "items": [
+    {
+      "id": "file-1786164121141000032",
+      "title": "qc well hmd reverse cycles",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/우물광장/01_model/_qc/v48_release/qc_well_hmd_reverse_cycles.png",
+      "modified": "2026-08-08T13:42:01+09:00"
+    },
+    {
+      "id": "file-1786163996111000061",
+      "title": "써니 조선요괴전 우물광장 v48 handoff visibility",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/우물광장/01_model/work/써니_조선요괴전_우물광장_v48_handoff_visibility.blend",
+      "modified": "2026-08-08T13:39:56+09:00"
+    },
     {
       "id": "file-1786163416753000020",
       "title": "qc hmd reverse cycles",
@@ -253,24 +271,6 @@
       "pc": "맥미니",
       "status": "검토대기",
       "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_10.html",
-      "modified": "2026-08-08T13:03:51+09:00"
-    },
-    {
-      "id": "file-1786161831903566970",
-      "title": "cover 06",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_06.html",
-      "modified": "2026-08-08T13:03:51+09:00"
-    },
-    {
-      "id": "file-1786161831903758928",
-      "title": "cover 07 brand intro",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_07_brand_intro.html",
       "modified": "2026-08-08T13:03:51+09:00"
     }
   ]
