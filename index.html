@@ -1439,15 +1439,6 @@ body{font-family:'Pretendard','Noto Sans KR','Apple SD Gothic Neo',sans-serif;le
               <div class="section-eyebrow">YouTube</div>
               <div class="section-header">Music</div>
             </div>
-            <button class="yt-key-btn" id="ytKeyBtn" type="button" title="유튜브 검색 키 설정" aria-label="유튜브 검색 키 설정">🔑</button>
-          </div>
-          <div class="yt-keybox" id="ytKeyBox" style="display:none">
-            <p class="yt-keybox-help">유튜브 검색을 쓰려면 본인 유튜브 API 키가 필요합니다 (각자 무료 발급 · 키는 이 브라우저에만 저장). <a href="https://console.cloud.google.com/apis/credentials" target="_blank" rel="noopener">키 발급 →</a></p>
-            <div class="yt-keybox-row">
-              <input type="password" id="ytKeyInput" class="yt-input" placeholder="API 키 붙여넣기 (AIza…)" autocomplete="off" spellcheck="false">
-              <button class="yt-add-btn" id="ytKeySave" type="button">저장</button>
-            </div>
-            <div class="yt-key-status" id="ytKeyStatus"></div>
           </div>
           <div id="ytStage"></div>
           <div class="yt-search">
@@ -4924,31 +4915,7 @@ document.getElementById('ytAddBtn')?.addEventListener('click', ytAdd);
   if (e.key === 'Enter') { e.preventDefault(); ytAdd(); }
 }));
 
-// ── 유튜브 API 키 (BYOK — 각자 본인 키, 이 브라우저에만 저장) ──
-const YT_APIKEY = 'sunny_yt_apikey';
-function ytGetKey() { try { return localStorage.getItem(YT_APIKEY) || ''; } catch (e) { return ''; } }
-function ytSetKey(k) { try { if (k) localStorage.setItem(YT_APIKEY, k); else localStorage.removeItem(YT_APIKEY); } catch (e) {} }
-function updateYtKeyBtn() {
-  const b = document.getElementById('ytKeyBtn');
-  if (b) b.classList.toggle('has-key', !!ytGetKey());
-}
-document.getElementById('ytKeyBtn')?.addEventListener('click', () => {
-  const box = document.getElementById('ytKeyBox');
-  if (!box) return;
-  const show = box.style.display === 'none';
-  box.style.display = show ? 'block' : 'none';
-  if (show) { const i = document.getElementById('ytKeyInput'); if (i) { i.value = ytGetKey(); i.focus(); } }
-});
-document.getElementById('ytKeySave')?.addEventListener('click', () => {
-  const i = document.getElementById('ytKeyInput');
-  const k = (i.value || '').trim();
-  ytSetKey(k);
-  const st = document.getElementById('ytKeyStatus');
-  if (st) st.textContent = k ? '✓ 키 저장됨 — 이제 검색할 수 있습니다.' : '키를 비웠습니다.';
-  updateYtKeyBtn();
-});
-
-// ── 유튜브 검색 (본인 키로 호출) ──
+// ── 유튜브 검색 (서버 프록시 — API 키는 브라우저에 노출하지 않음) ──
 // YouTube API는 제목을 HTML 인코딩해서 줌 (R&B → R&amp;B) → 디코드 먼저
 function ytDecode(s) { const t = document.createElement('textarea'); t.innerHTML = s || ''; return t.value; }
 async function ytSearch() {
@@ -4956,20 +4923,14 @@ async function ytSearch() {
   const results = document.getElementById('ytResults');
   const q = (inp.value || '').trim();
   if (!q || !results) return;
-  const key = ytGetKey();
-  if (!key) {
-    results.innerHTML = '<div class="yt-results-msg">검색하려면 먼저 🔑 버튼을 눌러 유튜브 API 키를 넣어주세요.</div>';
-    const box = document.getElementById('ytKeyBox'); if (box) box.style.display = 'block';
-    return;
-  }
   results.innerHTML = '<div class="yt-results-msg">검색 중…</div>';
   try {
-    const url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&type=playlist,video&maxResults=12&q='
-      + encodeURIComponent(q) + '&key=' + encodeURIComponent(key);
-    const res = await fetch(url);
+    const url = 'https://dash.sunnytoon.com/api/youtube-search?q=' + encodeURIComponent(q);
+    const res = await fetch(url, {credentials:'omit'});
     const data = await res.json();
-    if (data.error) {
-      results.innerHTML = '<div class="yt-results-msg">검색 실패: ' + escHtml(data.error.message || '키를 확인해 주세요') + '</div>';
+    if (!res.ok || data.error || data.detail) {
+      const message=(data.error&&data.error.message)||data.detail||'잠시 후 다시 시도해 주세요';
+      results.innerHTML = '<div class="yt-results-msg">검색 실패: ' + escHtml(message) + '</div>';
       return;
     }
     const items = (data.items || []).filter(it => it.id && (it.id.playlistId || it.id.videoId));
@@ -5007,8 +4968,6 @@ document.getElementById('ytResults')?.addEventListener('click', e => {
 document.getElementById('ytResults')?.addEventListener('keydown', e => {
   if (e.key === 'Enter' || e.key === ' ') { const r = e.target.closest('.yt-result'); if (r) { e.preventDefault(); ytPickResult(r); } }
 });
-updateYtKeyBtn();
-
 renderYt();
 
 async function loadSunnyOutputs(){
