@@ -372,7 +372,7 @@ body {
 
 /* ─── MID SECTION ─── */
 .mid {
-  display: grid; grid-template-columns: 1fr 1fr 1fr;
+  display: grid; grid-template-columns: minmax(0, 2fr) minmax(18rem, 1fr);
   border-bottom: 1px solid var(--border);
 }
 .mid-col {
@@ -676,8 +676,7 @@ body {
   .hero-left { padding: 56px 36px 48px 44px; }
   .hero-right { padding: 48px 32px 40px 28px; }
   .hero-time { font-size: 5.5rem; }
-  .mid { grid-template-columns: 1fr 1fr; }
-  .mid-col:nth-child(3) { grid-column: span 2; }
+  .mid { grid-template-columns: minmax(0, 1.6fr) minmax(18rem, 1fr); }
   .news-grid { grid-template-columns: repeat(2, 1fr); }
   .news-card:nth-child(4), .news-card:nth-child(7) { grid-column: span 2; }
 }
@@ -1463,7 +1462,7 @@ body{font-family:'Pretendard','Noto Sans KR','Apple SD Gothic Neo',sans-serif;le
     </div>
   </section>
 
-  <!-- ═══ MID ═══ (★ col1 = Team / col2 = Tools / col3 = Projects) -->
+  <!-- ═══ MID ═══ (Team 넓게 / 진행 중) -->
   <section class="mid reveal" id="mid">
     <div class="mid-col" id="team-section">
       <div style="display:flex; align-items:baseline; gap:10px;">
@@ -1484,13 +1483,6 @@ body{font-family:'Pretendard','Noto Sans KR','Apple SD Gothic Neo',sans-serif;le
         <span class="ip-add-icon" aria-hidden="true">+</span>
         <input type="text" id="ipInput" placeholder="회사 프로젝트 추가 후 Enter" maxlength="140" aria-label="진행 중 프로젝트 추가">
         <button class="ip-state-toggle" id="ipStateToggle" type="button" title="상태 전환">Develop</button>
-      </div>
-    </div>
-    <div class="mid-col">
-      <div class="section-eyebrow">GitHub</div>
-      <div class="section-header">Recent Projects</div>
-      <div id="projectsList">
-        <div style="color:var(--text-mute);font-size:0.78rem;">Loading...</div>
       </div>
     </div>
   </section>
@@ -1739,10 +1731,10 @@ body{font-family:'Pretendard','Noto Sans KR','Apple SD Gothic Neo',sans-serif;le
 
 
   <style>
-  /* Team quick (mid col1) — 3컬럼 카드 그리드 */
+  /* Recent Projects 중복 제거 → Team을 가로로 넓게 사용 */
   .team-quick {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 8px;
     margin-bottom: 12px;
   }
@@ -1784,6 +1776,8 @@ body{font-family:'Pretendard','Noto Sans KR','Apple SD Gothic Neo',sans-serif;le
     background: var(--orange-soft); border: 1px solid var(--border-accent);
     border-radius: 8px; transition: all .15s var(--ease);
   }
+  @media (max-width:1200px){.team-quick{grid-template-columns:repeat(4,minmax(0,1fr))}}
+  @media (max-width:640px){.team-quick{grid-template-columns:repeat(3,minmax(0,1fr))}}
   .tq-tg-btn:hover { background: var(--orange); color: #fff; border-color: var(--orange); }
   @media (max-width: 640px) { .tq-tg-btn { min-height: 44px; font-size: 0.7rem; } }
 
@@ -1801,7 +1795,7 @@ body{font-family:'Pretendard','Noto Sans KR','Apple SD Gothic Neo',sans-serif;le
     box-shadow: var(--shadow-sm);
     border: 1px solid var(--border);
   }
-  .mid { display: grid; grid-template-columns: 1.05fr 1fr 1fr; gap: 28px; }
+  .mid { display: grid; grid-template-columns: minmax(0,2fr) minmax(18rem,1fr); gap: 28px; }
 
   /* 유튜브 음악 · 재생목록 위젯 */
   .music-section .section-header { margin-bottom: 14px; }
