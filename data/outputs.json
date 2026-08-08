@@ -1,6 +1,69 @@
 {
-  "updated": "2026-08-08T14:41:02+09:00",
+  "updated": "2026-08-08T14:51:09+09:00",
   "items": [
+    {
+      "id": "file-1786167965691999912",
+      "title": "MUGAN v558 COURTYARD SURFACE VARIATION",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v557_v558_20260808_WIP/MUGAN_v558_COURTYARD_SURFACE_VARIATION.png",
+      "modified": "2026-08-08T14:46:05+09:00"
+    },
+    {
+      "id": "file-1786167953950000047",
+      "title": "MUGAN v558 COURTYARD SURFACE VARIATION",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v557_v558_재질패스_WIP/MUGAN_v558_COURTYARD_SURFACE_VARIATION.blend",
+      "modified": "2026-08-08T14:45:53+09:00"
+    },
+    {
+      "id": "file-1786167863433000087",
+      "title": "MUGAN v557 S BEND REVERSE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v557_v558_20260808_WIP/MUGAN_v557_S_BEND_REVERSE.png",
+      "modified": "2026-08-08T14:44:23+09:00"
+    },
+    {
+      "id": "file-1786167842661999940",
+      "title": "MUGAN v557 S BEND FORWARD",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v557_v558_20260808_WIP/MUGAN_v557_S_BEND_FORWARD.png",
+      "modified": "2026-08-08T14:44:02+09:00"
+    },
+    {
+      "id": "file-1786167814581000089",
+      "title": "MUGAN v557 S BEND MATERIAL GRUNGE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v557_v558_재질패스_WIP/MUGAN_v557_S_BEND_MATERIAL_GRUNGE.blend",
+      "modified": "2026-08-08T14:43:34+09:00"
+    },
+    {
+      "id": "file-1786167554621999979",
+      "title": "MUGAN v556 COURTYARD LAMP LOD",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v556_20260808_WIP/MUGAN_v556_COURTYARD_LAMP_LOD.png",
+      "modified": "2026-08-08T14:39:14+09:00"
+    },
+    {
+      "id": "file-1786167545828999996",
+      "title": "MUGAN v556 COURTYARD LAMP LOD",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v556_통합성능_WIP/MUGAN_v556_COURTYARD_LAMP_LOD.blend",
+      "modified": "2026-08-08T14:39:05+09:00"
+    },
     {
       "id": "file-1786166999582000017",
       "title": "MUGAN v554 COURTYARD THRESHOLD CAMERA",
@@ -25,7 +88,25 @@
       "agent": "써니팀",
       "pc": "맥미니",
       "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v556_20260808_WIP/MUGAN_v552_ALTAR_OFFERING_GROUND_FIX.png",
+      "modified": "2026-08-08T14:26:24+09:00"
+    },
+    {
+      "id": "file-1786166784707999944",
+      "title": "MUGAN v552 ALTAR OFFERING GROUND FIX",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
       "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v549_v554_20260808_WIP/MUGAN_v552_ALTAR_OFFERING_GROUND_FIX.png",
+      "modified": "2026-08-08T14:26:24+09:00"
+    },
+    {
+      "id": "file-1786166784707999944",
+      "title": "MUGAN v552 ALTAR OFFERING GROUND FIX",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v557_v558_20260808_WIP/MUGAN_v552_ALTAR_OFFERING_GROUND_FIX.png",
       "modified": "2026-08-08T14:26:24+09:00"
     },
     {
@@ -38,6 +119,33 @@
       "modified": "2026-08-08T14:26:04+09:00"
     },
     {
+      "id": "file-1786166764187000036",
+      "title": "MUGAN v552 ALTAR OFFERING GROUND FIX",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v557_v558_재질패스_WIP/MUGAN_v552_ALTAR_OFFERING_GROUND_FIX.blend",
+      "modified": "2026-08-08T14:26:04+09:00"
+    },
+    {
+      "id": "file-1786166764187000036",
+      "title": "MUGAN v552 ALTAR OFFERING GROUND FIX",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v556_통합성능_WIP/MUGAN_v552_ALTAR_OFFERING_GROUND_FIX.blend",
+      "modified": "2026-08-08T14:26:04+09:00"
+    },
+    {
+      "id": "file-1786166373519000053",
+      "title": "MUGAN v549 S BEND REVERSE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v556_20260808_WIP/MUGAN_v549_S_BEND_REVERSE.png",
+      "modified": "2026-08-08T14:19:33+09:00"
+    },
+    {
       "id": "file-1786166373519000053",
       "title": "MUGAN v549 S BEND REVERSE",
       "agent": "써니팀",
@@ -45,6 +153,15 @@
       "status": "검토대기",
       "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v549_v554_20260808_WIP/MUGAN_v549_S_BEND_REVERSE.png",
       "modified": "2026-08-08T14:19:33+09:00"
+    },
+    {
+      "id": "file-1786166353556999921",
+      "title": "MUGAN v549 S BEND FORWARD",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v556_20260808_WIP/MUGAN_v549_S_BEND_FORWARD.png",
+      "modified": "2026-08-08T14:19:13+09:00"
     },
     {
       "id": "file-1786166353556999921",
@@ -62,6 +179,15 @@
       "pc": "맥미니",
       "status": "검토대기",
       "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v549_v554_환경통합전_WIP/MUGAN_v549_S_BEND_LIGHT_BALANCE.blend",
+      "modified": "2026-08-08T14:18:50+09:00"
+    },
+    {
+      "id": "file-1786166330959000110",
+      "title": "MUGAN v549 S BEND LIGHT BALANCE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v556_통합성능_WIP/MUGAN_v549_S_BEND_LIGHT_BALANCE.blend",
       "modified": "2026-08-08T14:18:50+09:00"
     },
     {
@@ -119,6 +245,15 @@
       "modified": "2026-08-08T14:03:07+09:00"
     },
     {
+      "id": "file-1786165387686000108",
+      "title": "MUGAN v544 NORMAL CORRIDOR LIGHT RECOVERY",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v556_통합성능_WIP/MUGAN_v544_NORMAL_CORRIDOR_LIGHT_RECOVERY.blend",
+      "modified": "2026-08-08T14:03:07+09:00"
+    },
+    {
       "id": "file-1786165112000000000",
       "title": "MUGAN v542 COURTYARD SUBTLE WET TRACK",
       "agent": "써니팀",
@@ -135,143 +270,6 @@
       "status": "검토대기",
       "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v538_v542_환경3모듈_WIP/MUGAN_v542_COURTYARD_SUBTLE_WET_TRACK.blend",
       "modified": "2026-08-08T13:58:22+09:00"
-    },
-    {
-      "id": "file-1786164872815000057",
-      "title": "MUGAN v540 ALTAR SURFACE CLEANUP",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v538_v542_20260808_WIP/MUGAN_v540_ALTAR_SURFACE_CLEANUP.png",
-      "modified": "2026-08-08T13:54:32+09:00"
-    },
-    {
-      "id": "file-1786164856069000005",
-      "title": "MUGAN v540 ALTAR SURFACE CLEANUP",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v538_v542_환경3모듈_WIP/MUGAN_v540_ALTAR_SURFACE_CLEANUP.blend",
-      "modified": "2026-08-08T13:54:16+09:00"
-    },
-    {
-      "id": "file-1786164643720999956",
-      "title": "MUGAN v538 SEGMENTED MARU REBUILD",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v538_v542_20260808_WIP/MUGAN_v538_SEGMENTED_MARU_REBUILD.png",
-      "modified": "2026-08-08T13:50:43+09:00"
-    },
-    {
-      "id": "file-1786164624799000024",
-      "title": "MUGAN v538 SEGMENTED MARU REBUILD",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v538_v542_환경3모듈_WIP/MUGAN_v538_SEGMENTED_MARU_REBUILD.blend",
-      "modified": "2026-08-08T13:50:24+09:00"
-    },
-    {
-      "id": "file-1786164572825999975",
-      "title": "qc gwana hmd reverse cycles",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/관아마당/01_model/_qc/v88_release/qc_gwana_hmd_reverse_cycles.png",
-      "modified": "2026-08-08T13:49:32+09:00"
-    },
-    {
-      "id": "file-1786164319971999883",
-      "title": "써니 조선요괴전 관아마당 v88 perimeter tree scale",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/관아마당/01_model/work/써니_조선요괴전_관아마당_v88_perimeter_tree_scale.blend",
-      "modified": "2026-08-08T13:45:19+09:00"
-    },
-    {
-      "id": "file-1786164121141000032",
-      "title": "qc well hmd reverse cycles",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/우물광장/01_model/_qc/v48_release/qc_well_hmd_reverse_cycles.png",
-      "modified": "2026-08-08T13:42:01+09:00"
-    },
-    {
-      "id": "file-1786163996111000061",
-      "title": "써니 조선요괴전 우물광장 v48 handoff visibility",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/우물광장/01_model/work/써니_조선요괴전_우물광장_v48_handoff_visibility.blend",
-      "modified": "2026-08-08T13:39:56+09:00"
-    },
-    {
-      "id": "file-1786163416753000020",
-      "title": "qc hmd reverse cycles",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/죽은마을골목/01_model/_qc/v205_release/qc_hmd_reverse_cycles.png",
-      "modified": "2026-08-08T13:30:16+09:00"
-    },
-    {
-      "id": "file-1786163017796999931",
-      "title": "써니 조선요괴전 죽은마을골목 v205 giwa well gate",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/죽은마을골목/01_model/work/써니_조선요괴전_죽은마을골목_v205_giwa_well_gate.blend",
-      "modified": "2026-08-08T13:23:37+09:00"
-    },
-    {
-      "id": "file-1786162488868999958",
-      "title": "qc gwana hmd reverse cycles",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/관아마당/01_model/_qc/v87_release/qc_gwana_hmd_reverse_cycles.png",
-      "modified": "2026-08-08T13:14:48+09:00"
-    },
-    {
-      "id": "file-1786162445532999992",
-      "title": "써니 조선요괴전 관아마당 v87 canopy emission fix",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/관아마당/01_model/work/써니_조선요괴전_관아마당_v87_canopy_emission_fix.blend",
-      "modified": "2026-08-08T13:14:05+09:00"
-    },
-    {
-      "id": "file-1786162306773999929",
-      "title": "qc gwana hmd reverse cycles",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/관아마당/01_model/_qc/v86_release/qc_gwana_hmd_reverse_cycles.png",
-      "modified": "2026-08-08T13:11:46+09:00"
-    },
-    {
-      "id": "file-1786162144221999883",
-      "title": "써니 조선요괴전 관아마당 v86 ground pbr readability",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/관아마당/01_model/work/써니_조선요괴전_관아마당_v86_ground_pbr_readability.blend",
-      "modified": "2026-08-08T13:09:04+09:00"
-    },
-    {
-      "id": "file-1786161930891761496",
-      "title": "icon-192-v3",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토완료",
-      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/icon-192-v3.png",
-      "modified": "2026-08-08T13:05:30+09:00",
-      "reviewed": "2026-08-08T13:25:36+0900",
-      "review_summary": "검토완료 - 정상 PNG, 192×192px, RGB, 파일 손상 없음 - 아이콘 잘림·왜곡·정렬 문제 없음 - 오탈자 해당 없음 - 작은 크기에서도 형태와 대비가 명확함 - 파일은 수정하지 않음"
     }
   ]
 }
