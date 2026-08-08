@@ -3896,6 +3896,7 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
   /* ════ 구글 캘린더 양방향 연동 (Google Identity Services) ════ */
   const GCAL_CLIENT_ID = '108517220824-vetv6lhf4cs6uu3sihdqj857qissvtde.apps.googleusercontent.com';
+  const LIVE_CLIENT_ID = '108517220824-coqajqglfa03smije3onscatgbukddc8.apps.googleusercontent.com';
   const GCAL_SCOPE = 'https://www.googleapis.com/auth/calendar';   // 캘린더 목록 + 일정 읽기·쓰기
   const LS_GCAL = 'sunny_gcal_on';
   const LS_GCAL_CALID = 'sunny_gcal_calid';
@@ -4024,7 +4025,7 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     }
     if (!liveTokenClient) {
       liveTokenClient = google.accounts.oauth2.initTokenClient({
-        client_id: GCAL_CLIENT_ID,
+        client_id: LIVE_CLIENT_ID,
         scope: 'https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile',
         callback: function(resp) {
           if (resp && resp.access_token) exchangeLiveGoogleToken(resp.access_token);
