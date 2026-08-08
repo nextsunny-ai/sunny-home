@@ -1,6 +1,24 @@
 {
-  "updated": "2026-08-08T19:54:13+09:00",
+  "updated": "2026-08-08T20:04:18+09:00",
   "items": [
+    {
+      "id": "file-1786186596780999898",
+      "title": "MUGAN v669 GATE START",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v669_귀문_목재미세편차_WIP/MUGAN_v669_GATE_START.png",
+      "modified": "2026-08-08T19:56:36+09:00"
+    },
+    {
+      "id": "file-1786186595334000110",
+      "title": "MUGAN v669 GATE HERO",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v669_귀문_목재미세편차_WIP/MUGAN_v669_GATE_HERO.png",
+      "modified": "2026-08-08T19:56:35+09:00"
+    },
     {
       "id": "file-1786186327617000102",
       "title": "MUGAN v668 COURTYARD HERO",
@@ -252,24 +270,6 @@
       "status": "검토대기",
       "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v645_정상미로_광원재구축_WIP/MUGAN_v645_MAZE_JUNCTION_PRACTICALS.blend",
       "modified": "2026-08-08T18:50:12+09:00"
-    },
-    {
-      "id": "file-1786181398247999906",
-      "title": "MUGAN v638 ALTAR REVERSE",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v638_제단_입구연결_WIP/MUGAN_v638_ALTAR_REVERSE.png",
-      "modified": "2026-08-08T18:29:58+09:00"
-    },
-    {
-      "id": "file-1786181398463000059",
-      "title": "MUGAN v638 ALTAR ENTRANCE FRAME",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v638_제단_입구연결_WIP/MUGAN_v638_ALTAR_ENTRANCE_FRAME.blend",
-      "modified": "2026-08-08T18:29:58+09:00"
     }
   ]
 }
