@@ -1,7 +1,7 @@
 // SUNNY HOME Service Worker — v3 (2026-08-08)
 // 오프라인 캐시 + 푸시 알림 (= 미래)
 
-const CACHE_NAME = 'sunny-home-v3-20260809-14';
+const CACHE_NAME = 'sunny-home-v3-20260809-15';
 const CORE = [
   '/',
   '/index.html',
