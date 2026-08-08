@@ -1337,29 +1337,6 @@ body{font-family:'Pretendard','Noto Sans KR','Apple SD Gothic Neo',sans-serif;le
 
 <main class="main" id="main-content">
 
-  <section class="sunny-control reveal" id="control-section" aria-label="써니팀 통합 작업실">
-    <div class="section-eyebrow">SUNNY HOME</div>
-    <div class="section-header">작업 관리</div>
-    <div class="sunny-control-grid">
-      <article class="sunny-panel live">
-        <h3>WORKTEAM LIVE BOARD</h3>
-        <p>맥미니 · 디자인PC · 노트북 작업 현황</p>
-        <div class="sunny-actions">
-          <a class="sunny-action primary" href="https://dash.sunnytoon.com/live_v9.html" onclick="openSunnyLive(event)">LIVE 열기</a>
-          <a class="sunny-action" href="https://t.me/NextSunnybot" target="_blank" rel="noopener">텔레그램 지시</a>
-        </div>
-      </article>
-      <article class="sunny-panel">
-        <h3>코디 · CODY</h3>
-        <p>Codex 작업 요청 · 이어서 수정 · 산출물 검토</p>
-        <div class="sunny-actions">
-          <button class="sunny-action primary" type="button" onclick="openPersonaModal('codex')">코디에게 말하기</button>
-          <a class="sunny-action" href="#outputs-section">마스터 리스트</a>
-        </div>
-      </article>
-    </div>
-  </section>
-
   <!-- ═══ HERO ═══ -->
   <section class="hero" id="hero">
     <!-- ★ 2026-05-14: 인트로 = 왼쪽 달력 + 오른쪽 뉴스(탭) -->
@@ -2644,6 +2621,7 @@ function renderRecentChats() {
 
 // 자주 가는 사이트 (= 도구만)
 const QUICK_LINKS = [
+  { name: '텔레그램 지시',       host: '@NextSunnybot',              icon: '↗',  url: 'https://t.me/NextSunnybot' },
   { name: '★★ 통합 관리 (3 프로그램)',  host: 'home.sunnytoon.com/manage', icon: '🎛', url: '/manage.html' },
   { name: '★ 스토리메이커 관리',  host: 'story.sunnytoon.com/manage', icon: '👥', url: 'https://story.sunnytoon.com/manage' },
   { name: 'Claude.ai',          host: 'claude.ai',                icon: '✦',  url: 'https://claude.ai' },
@@ -2689,7 +2667,17 @@ function renderProjects() {
 
 // ★ 2026-05-19: 퀵링크 = 직접 추가·삭제 (QUICK_LINKS = 기본 seed, 이후 브라우저 저장)
 const QL_KEY = 'sunny_quicklinks_v1';
-function qlLoad(){ try{ const s=localStorage.getItem(QL_KEY); if(s) return JSON.parse(s); }catch(e){} return QUICK_LINKS.slice(); }
+function qlLoad(){
+  try{
+    const s=localStorage.getItem(QL_KEY);
+    if(s){
+      const saved=JSON.parse(s), urls=new Set(saved.map(function(x){return x.url;}));
+      QUICK_LINKS.slice().reverse().forEach(function(x){if(!urls.has(x.url)) saved.unshift(x);});
+      return saved;
+    }
+  }catch(e){}
+  return QUICK_LINKS.slice();
+}
 function qlSave(){ try{ localStorage.setItem(QL_KEY, JSON.stringify(quickLinksData)); }catch(e){} }
 let quickLinksData = qlLoad();
 function qlFavicon(url){ try{ return 'https://www.google.com/s2/favicons?domain='+encodeURIComponent(new URL(url, location.href).hostname)+'&sz=64'; }catch(e){ return ''; } }
