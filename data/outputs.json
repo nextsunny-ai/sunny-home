@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-08T13:24:55+09:00",
+  "updated": "2026-08-08T13:26:09+09:00",
   "items": [
     {
       "id": "file-1786162488868999958",
@@ -7,7 +7,7 @@
       "agent": "써니팀",
       "pc": "맥미니",
       "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/관아마당/01_model/_qc/v87_release/qc_gwana_hmd_reverse_cycles.png",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/관아마당/01_model/_qc/v87_release/qc_gwana_hmd_reverse_cycles.png",
       "modified": "2026-08-08T13:14:48+09:00"
     },
     {
@@ -16,7 +16,7 @@
       "agent": "써니팀",
       "pc": "맥미니",
       "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/관아마당/01_model/work/써니_조선요괴전_관아마당_v87_canopy_emission_fix.blend",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/관아마당/01_model/work/써니_조선요괴전_관아마당_v87_canopy_emission_fix.blend",
       "modified": "2026-08-08T13:14:05+09:00"
     },
     {
@@ -25,7 +25,7 @@
       "agent": "써니팀",
       "pc": "맥미니",
       "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/관아마당/01_model/_qc/v86_release/qc_gwana_hmd_reverse_cycles.png",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/관아마당/01_model/_qc/v86_release/qc_gwana_hmd_reverse_cycles.png",
       "modified": "2026-08-08T13:11:46+09:00"
     },
     {
@@ -34,7 +34,7 @@
       "agent": "써니팀",
       "pc": "맥미니",
       "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/관아마당/01_model/work/써니_조선요괴전_관아마당_v86_ground_pbr_readability.blend",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/관아마당/01_model/work/써니_조선요괴전_관아마당_v86_ground_pbr_readability.blend",
       "modified": "2026-08-08T13:09:04+09:00"
     },
     {
@@ -42,9 +42,11 @@
       "title": "icon-192-v3",
       "agent": "써니팀",
       "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/icon-192-v3.png",
-      "modified": "2026-08-08T13:05:30+09:00"
+      "status": "검토완료",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/icon-192-v3.png",
+      "modified": "2026-08-08T13:05:30+09:00",
+      "reviewed": "2026-08-08T13:25:36+0900",
+      "review_summary": "검토완료 - 정상 PNG, 192×192px, RGB, 파일 손상 없음 - 아이콘 잘림·왜곡·정렬 문제 없음 - 오탈자 해당 없음 - 작은 크기에서도 형태와 대비가 명확함 - 파일은 수정하지 않음"
     },
     {
       "id": "file-1786161930824420999",
@@ -52,7 +54,7 @@
       "agent": "써니팀",
       "pc": "맥미니",
       "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/icon-1024-v3.png",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/icon-1024-v3.png",
       "modified": "2026-08-08T13:05:30+09:00"
     },
     {
@@ -61,7 +63,7 @@
       "agent": "써니팀",
       "pc": "맥미니",
       "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/icon-512-v3.png",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/icon-512-v3.png",
       "modified": "2026-08-08T13:05:30+09:00"
     },
     {
@@ -70,7 +72,7 @@
       "agent": "써니팀",
       "pc": "맥미니",
       "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_11_exhibition_proposal.html",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_11_exhibition_proposal.html",
       "modified": "2026-08-08T13:03:51+09:00"
     },
     {
@@ -79,7 +81,7 @@
       "agent": "써니팀",
       "pc": "맥미니",
       "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_07.html",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_07.html",
       "modified": "2026-08-08T13:03:51+09:00"
     },
     {
@@ -88,7 +90,7 @@
       "agent": "써니팀",
       "pc": "맥미니",
       "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_10.html",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_10.html",
       "modified": "2026-08-08T13:03:51+09:00"
     },
     {
@@ -97,7 +99,7 @@
       "agent": "써니팀",
       "pc": "맥미니",
       "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_06.html",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_06.html",
       "modified": "2026-08-08T13:03:51+09:00"
     },
     {
@@ -106,7 +108,7 @@
       "agent": "써니팀",
       "pc": "맥미니",
       "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_07_brand_intro.html",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_07_brand_intro.html",
       "modified": "2026-08-08T13:03:51+09:00"
     },
     {
@@ -115,7 +117,7 @@
       "agent": "써니팀",
       "pc": "맥미니",
       "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_01.html",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_01.html",
       "modified": "2026-08-08T13:03:51+09:00"
     },
     {
@@ -124,7 +126,7 @@
       "agent": "써니팀",
       "pc": "맥미니",
       "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_08_investor_ir.html",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_08_investor_ir.html",
       "modified": "2026-08-08T13:03:51+09:00"
     },
     {
@@ -133,7 +135,7 @@
       "agent": "써니팀",
       "pc": "맥미니",
       "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_03.html",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_03.html",
       "modified": "2026-08-08T13:03:51+09:00"
     },
     {
@@ -142,7 +144,7 @@
       "agent": "써니팀",
       "pc": "맥미니",
       "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_02.html",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_02.html",
       "modified": "2026-08-08T13:03:51+09:00"
     },
     {
@@ -151,7 +153,7 @@
       "agent": "써니팀",
       "pc": "맥미니",
       "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_09.html",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_09.html",
       "modified": "2026-08-08T13:03:51+09:00"
     },
     {
@@ -160,7 +162,7 @@
       "agent": "써니팀",
       "pc": "맥미니",
       "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_10_visual_lookbook.html",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_10_visual_lookbook.html",
       "modified": "2026-08-08T13:03:51+09:00"
     },
     {
@@ -169,7 +171,7 @@
       "agent": "써니팀",
       "pc": "맥미니",
       "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_09_tech_spec.html",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_09_tech_spec.html",
       "modified": "2026-08-08T13:03:51+09:00"
     },
     {
@@ -178,7 +180,7 @@
       "agent": "써니팀",
       "pc": "맥미니",
       "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_05.html",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_05.html",
       "modified": "2026-08-08T13:03:51+09:00"
     },
     {
@@ -187,7 +189,7 @@
       "agent": "써니팀",
       "pc": "맥미니",
       "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_04.html",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_04.html",
       "modified": "2026-08-08T13:03:51+09:00"
     },
     {
@@ -196,7 +198,7 @@
       "agent": "써니팀",
       "pc": "맥미니",
       "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_12_product_catalog.html",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_12_product_catalog.html",
       "modified": "2026-08-08T13:03:51+09:00"
     },
     {
@@ -205,7 +207,7 @@
       "agent": "써니팀",
       "pc": "맥미니",
       "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_08.html",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_08.html",
       "modified": "2026-08-08T13:03:51+09:00"
     },
     {
@@ -214,7 +216,7 @@
       "agent": "써니팀",
       "pc": "맥미니",
       "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_11_exhibition_proposal.html",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_11_exhibition_proposal.html",
       "modified": "2026-08-08T13:03:51+09:00"
     },
     {
@@ -223,7 +225,7 @@
       "agent": "써니팀",
       "pc": "맥미니",
       "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_07.html",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_07.html",
       "modified": "2026-08-08T13:03:51+09:00"
     },
     {
@@ -232,7 +234,7 @@
       "agent": "써니팀",
       "pc": "맥미니",
       "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_10.html",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_10.html",
       "modified": "2026-08-08T13:03:51+09:00"
     },
     {
@@ -241,7 +243,7 @@
       "agent": "써니팀",
       "pc": "맥미니",
       "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_06.html",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_06.html",
       "modified": "2026-08-08T13:03:51+09:00"
     },
     {
@@ -250,7 +252,7 @@
       "agent": "써니팀",
       "pc": "맥미니",
       "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_07_brand_intro.html",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_07_brand_intro.html",
       "modified": "2026-08-08T13:03:51+09:00"
     },
     {
@@ -259,7 +261,7 @@
       "agent": "써니팀",
       "pc": "맥미니",
       "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_01.html",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_01.html",
       "modified": "2026-08-08T13:03:51+09:00"
     },
     {
@@ -268,7 +270,7 @@
       "agent": "써니팀",
       "pc": "맥미니",
       "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_08_investor_ir.html",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_08_investor_ir.html",
       "modified": "2026-08-08T13:03:51+09:00"
     }
   ]
