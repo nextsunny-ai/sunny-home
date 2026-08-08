@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SUNNY HOME</title>
+<script>
+  // 로컬 파일로 열면 Google OAuth의 origin이 file://가 되어 차단된다.
+  if (location.protocol === 'file:') location.replace('https://home.sunnytoon.com/?from=local');
+</script>
 <meta name="description" content="써니 개인 대시보드. 뉴스, 도구, 프로젝트, 마감일을 한 눈에.">
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <link rel="preconnect" href="https://fonts.googleapis.com">
