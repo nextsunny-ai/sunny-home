@@ -1299,7 +1299,7 @@ body{font-family:'Pretendard','Noto Sans KR','Apple SD Gothic Neo',sans-serif;le
     <span class="nav-item" data-section="mid" role="button" tabindex="0" aria-label="Team 섹션으로 이동">Team</span>
     <span class="nav-item" data-section="quick-links-section" role="button" tabindex="0" aria-label="Quick Links 섹션으로 이동">Quick Links</span>
     <span class="nav-item" data-section="admin-section" role="button" tabindex="0" aria-label="통합 관리 섹션으로 이동">통합 관리</span>
-    <a class="nav-item nav-live" href="https://dash.sunnytoon.com/live_v9.html" target="_blank" rel="noopener" style="text-decoration:none" aria-label="WORKTEAM LIVE BOARD 새 탭으로 열기">LIVE ↗</a>
+    <a class="nav-item nav-live" href="https://dash.sunnytoon.com/live_v9.html" onclick="openSunnyLive(event)" style="text-decoration:none" aria-label="WORKTEAM LIVE BOARD 열기">LIVE ↗</a>
     <span class="nav-item" data-section="outputs-section" role="button" tabindex="0" aria-label="최근 산출물 섹션으로 이동">산출물</span>
     <span class="nav-item nav-design" tabindex="0" aria-haspopup="true" style="position:relative;cursor:pointer">
       Design <span style="font-size:9px;opacity:0.5;margin-left:4px">▾</span>
@@ -1333,7 +1333,7 @@ body{font-family:'Pretendard','Noto Sans KR','Apple SD Gothic Neo',sans-serif;le
         <h3>WORKTEAM LIVE BOARD</h3>
         <p>맥미니 · 디자인PC · 노트북 작업 현황</p>
         <div class="sunny-actions">
-          <a class="sunny-action primary" href="https://dash.sunnytoon.com/live_v9.html" target="_blank" rel="noopener">LIVE 열기</a>
+          <a class="sunny-action primary" href="https://dash.sunnytoon.com/live_v9.html" onclick="openSunnyLive(event)">LIVE 열기</a>
           <a class="sunny-action" href="https://t.me/NextSunnybot" target="_blank" rel="noopener">텔레그램 지시</a>
         </div>
       </article>
@@ -3902,6 +3902,7 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
   let gcalTokenClient = null;
   let gcalToken = '';
   let gcalConnected = false;
+  let liveSsoPending = false;
   let gcalSilent = false;       // 자동 재연결(조용히 시도) 중이면 에러 메시지 억제
   let GEVENTS = [];             // 선택된 구글 캘린더에서 가져온 일정
   let gcalCalendars = [];       // 사용자의 구글 캘린더 목록
@@ -3970,6 +3971,7 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
           updateGcalUI();
           gcalStatus('구글 캘린더 목록을 불러오는 중…');
           loadCalendarList().then(loadGoogleEvents);
+          if (liveSsoPending) exchangeLiveGoogleToken();
         } else if (!gcalSilent) {
           gcalStatus('구글 연결이 취소되었거나 실패했습니다.', 'err');
         }
@@ -3991,6 +3993,37 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     gcalStatus('구글 로그인 창을 여는 중…');
     gcalTokenClient.requestAccessToken();
   }
+
+  async function exchangeLiveGoogleToken() {
+    if (!gcalToken) return;
+    try {
+      const res = await fetch('https://dash.sunnytoon.com/sso/google-token', {
+        method: 'POST', credentials: 'include',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({access_token: gcalToken})
+      });
+      if (!res.ok) throw new Error('Google 인증 확인 실패 (' + res.status + ')');
+      liveSsoPending = false;
+      window.location.assign('https://dash.sunnytoon.com/live_v9.html');
+    } catch (e) {
+      liveSsoPending = false;
+      alert('LIVE 연결에 실패했습니다. 구글 계정을 다시 연결한 뒤 시도해 주세요.\n' + e.message);
+    }
+  }
+
+  window.openSunnyLive = function(event) {
+    if (event) event.preventDefault();
+    liveSsoPending = true;
+    if (gcalToken) { exchangeLiveGoogleToken(); return false; }
+    if (!initGcal()) {
+      liveSsoPending = false;
+      alert('구글 로그인 모듈을 불러오는 중입니다. 잠시 후 다시 눌러주세요.');
+      return false;
+    }
+    gcalStatus('LIVE용 구글 인증을 확인하는 중…');
+    gcalTokenClient.requestAccessToken();
+    return false;
+  };
 
   function gcalDisconnect() {
     if (!window.confirm('구글 캘린더 연결을 해제할까요?\n홈 일정은 그대로 남고, 구글 일정 표시만 멈춥니다.')) return;
