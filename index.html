@@ -3900,6 +3900,7 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
   const LS_GCAL = 'sunny_gcal_on';
   const LS_GCAL_CALID = 'sunny_gcal_calid';
   let gcalTokenClient = null;
+  let liveTokenClient = null;
   let gcalToken = '';
   let gcalConnected = false;
   let liveSsoPending = false;
@@ -3994,13 +3995,14 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     gcalTokenClient.requestAccessToken();
   }
 
-  async function exchangeLiveGoogleToken() {
-    if (!gcalToken) return;
+  async function exchangeLiveGoogleToken(token) {
+    token = token || gcalToken;
+    if (!token) return;
     try {
       const res = await fetch('https://dash.sunnytoon.com/sso/google-token', {
         method: 'POST', credentials: 'include',
         headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({access_token: gcalToken})
+        body: JSON.stringify({access_token: token})
       });
       if (!res.ok) throw new Error('Google 인증 확인 실패 (' + res.status + ')');
       liveSsoPending = false;
@@ -4014,14 +4016,28 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
   window.openSunnyLive = function(event) {
     if (event) event.preventDefault();
     liveSsoPending = true;
-    if (gcalToken) { exchangeLiveGoogleToken(); return false; }
-    if (!initGcal()) {
+    if (gcalToken) { exchangeLiveGoogleToken(gcalToken); return false; }
+    if (!(window.google && google.accounts && google.accounts.oauth2)) {
       liveSsoPending = false;
       alert('구글 로그인 모듈을 불러오는 중입니다. 잠시 후 다시 눌러주세요.');
       return false;
     }
+    if (!liveTokenClient) {
+      liveTokenClient = google.accounts.oauth2.initTokenClient({
+        client_id: GCAL_CLIENT_ID,
+        scope: 'openid email profile',
+        callback: function(resp) {
+          if (resp && resp.access_token) exchangeLiveGoogleToken(resp.access_token);
+          else { liveSsoPending = false; alert('구글 로그인이 취소되었거나 실패했습니다.'); }
+        },
+        error_callback: function() {
+          liveSsoPending = false;
+          alert('구글 로그인 창이 닫혔습니다. 다시 시도해 주세요.');
+        }
+      });
+    }
     gcalStatus('LIVE용 구글 인증을 확인하는 중…');
-    gcalTokenClient.requestAccessToken();
+    liveTokenClient.requestAccessToken();
     return false;
   };
 
