@@ -1,6 +1,24 @@
 {
-  "updated": "2026-08-08T20:04:18+09:00",
+  "updated": "2026-08-08T20:14:23+09:00",
   "items": [
+    {
+      "id": "file-1786187050345999956",
+      "title": "MUGAN v672 MAZE BASE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v672_정상미로_회귀복도연장_WIP/MUGAN_v672_MAZE_BASE.png",
+      "modified": "2026-08-08T20:04:10+09:00"
+    },
+    {
+      "id": "file-1786187041040999889",
+      "title": "MUGAN v672 MAZE JUNCTION",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v672_정상미로_회귀복도연장_WIP/MUGAN_v672_MAZE_JUNCTION.png",
+      "modified": "2026-08-08T20:04:01+09:00"
+    },
     {
       "id": "file-1786186596780999898",
       "title": "MUGAN v669 GATE START",
@@ -252,24 +270,6 @@
       "status": "검토대기",
       "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v654_정상미로_T분기보행폭_WIP/MUGAN_v654_MAZE_T_PATHS_WIDENED.blend",
       "modified": "2026-08-08T19:09:34+09:00"
-    },
-    {
-      "id": "file-1786182620846999883",
-      "title": "MUGAN v645 MAZE JUNCTION PRACTICALS",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v645_정상미로_광원재구축_WIP/MUGAN_v645_MAZE_JUNCTION_PRACTICALS.png",
-      "modified": "2026-08-08T18:50:20+09:00"
-    },
-    {
-      "id": "file-1786182612165999889",
-      "title": "MUGAN v645 MAZE JUNCTION PRACTICALS",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v645_정상미로_광원재구축_WIP/MUGAN_v645_MAZE_JUNCTION_PRACTICALS.blend",
-      "modified": "2026-08-08T18:50:12+09:00"
     }
   ]
 }
