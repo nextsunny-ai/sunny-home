@@ -1,0 +1,1638 @@
+{
+  "year": 2026,
+  "source": "accumulated data/outputs.json history",
+  "count": 181,
+  "items": [
+    {
+      "id": "file-1786187050345999956",
+      "title": "MUGAN v672 MAZE BASE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v672_정상미로_회귀복도연장_WIP/MUGAN_v672_MAZE_BASE.png",
+      "modified": "2026-08-08T20:04:10+09:00"
+    },
+    {
+      "id": "file-1786187041040999889",
+      "title": "MUGAN v672 MAZE JUNCTION",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v672_정상미로_회귀복도연장_WIP/MUGAN_v672_MAZE_JUNCTION.png",
+      "modified": "2026-08-08T20:04:01+09:00"
+    },
+    {
+      "id": "file-1786186596780999898",
+      "title": "MUGAN v669 GATE START",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v669_귀문_목재미세편차_WIP/MUGAN_v669_GATE_START.png",
+      "modified": "2026-08-08T19:56:36+09:00"
+    },
+    {
+      "id": "file-1786186595334000110",
+      "title": "MUGAN v669 GATE HERO",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v669_귀문_목재미세편차_WIP/MUGAN_v669_GATE_HERO.png",
+      "modified": "2026-08-08T19:56:35+09:00"
+    },
+    {
+      "id": "file-1786186327617000102",
+      "title": "MUGAN v668 COURTYARD HERO",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v668_귀문마당_실제궁붕괴출구_WIP/MUGAN_v668_COURTYARD_HERO.png",
+      "modified": "2026-08-08T19:52:07+09:00"
+    },
+    {
+      "id": "file-1786186325963000059",
+      "title": "MUGAN v668 COURTYARD REVERSE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v668_귀문마당_실제궁붕괴출구_WIP/MUGAN_v668_COURTYARD_REVERSE.png",
+      "modified": "2026-08-08T19:52:05+09:00"
+    },
+    {
+      "id": "file-1786186324990999937",
+      "title": "MUGAN v668 COURTYARD START",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v668_귀문마당_실제궁붕괴출구_WIP/MUGAN_v668_COURTYARD_START.png",
+      "modified": "2026-08-08T19:52:04+09:00"
+    },
+    {
+      "id": "file-1786185702039000034",
+      "title": "MUGAN v663 COURTYARD REVERSE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v663_귀문마당_붕괴출구연결_WIP/MUGAN_v663_COURTYARD_REVERSE.png",
+      "modified": "2026-08-08T19:41:42+09:00"
+    },
+    {
+      "id": "file-1786185701079999923",
+      "title": "MUGAN v663 COURTYARD HERO",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v663_귀문마당_붕괴출구연결_WIP/MUGAN_v663_COURTYARD_HERO.png",
+      "modified": "2026-08-08T19:41:41+09:00"
+    },
+    {
+      "id": "file-1786185699441999912",
+      "title": "MUGAN v663 COURTYARD MID",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v663_귀문마당_붕괴출구연결_WIP/MUGAN_v663_COURTYARD_MID.png",
+      "modified": "2026-08-08T19:41:39+09:00"
+    },
+    {
+      "id": "file-1786185697927999973",
+      "title": "MUGAN v663 COURTYARD START",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v663_귀문마당_붕괴출구연결_WIP/MUGAN_v663_COURTYARD_START.png",
+      "modified": "2026-08-08T19:41:37+09:00"
+    },
+    {
+      "id": "file-1786185371832000017",
+      "title": "MUGAN v661 ALTAR REVERSE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v661_제단광장_한지표면_WIP/MUGAN_v661_ALTAR_REVERSE.png",
+      "modified": "2026-08-08T19:36:11+09:00"
+    },
+    {
+      "id": "file-1786185357461999893",
+      "title": "MUGAN v661 ALTAR WIDE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v661_제단광장_한지표면_WIP/MUGAN_v661_ALTAR_WIDE.png",
+      "modified": "2026-08-08T19:35:57+09:00"
+    },
+    {
+      "id": "file-1786185341664000034",
+      "title": "MUGAN v661 ALTAR HERO",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v661_제단광장_한지표면_WIP/MUGAN_v661_ALTAR_HERO.png",
+      "modified": "2026-08-08T19:35:41+09:00"
+    },
+    {
+      "id": "file-1786185322045000076",
+      "title": "MUGAN v661 ALTAR HANJI SURFACES",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v661_제단광장_한지표면_WIP/MUGAN_v661_ALTAR_HANJI_SURFACES.blend",
+      "modified": "2026-08-08T19:35:22+09:00"
+    },
+    {
+      "id": "file-1786185140592999935",
+      "title": "MUGAN v660 ALTAR REVERSE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v660_제단광장_공간깊이_WIP/MUGAN_v660_ALTAR_REVERSE.png",
+      "modified": "2026-08-08T19:32:20+09:00"
+    },
+    {
+      "id": "file-1786185126648999929",
+      "title": "MUGAN v660 ALTAR WIDE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v660_제단광장_공간깊이_WIP/MUGAN_v660_ALTAR_WIDE.png",
+      "modified": "2026-08-08T19:32:06+09:00"
+    },
+    {
+      "id": "file-1786185111275000095",
+      "title": "MUGAN v660 ALTAR HERO",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v660_제단광장_공간깊이_WIP/MUGAN_v660_ALTAR_HERO.png",
+      "modified": "2026-08-08T19:31:51+09:00"
+    },
+    {
+      "id": "file-1786185091697000026",
+      "title": "MUGAN v660 ALTAR HALL DEPTH",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v660_제단광장_공간깊이_WIP/MUGAN_v660_ALTAR_HALL_DEPTH.blend",
+      "modified": "2026-08-08T19:31:31+09:00"
+    },
+    {
+      "id": "file-1786184694516999959",
+      "title": "MUGAN v659 MUTATION REVERSE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v659_변이복도_적청분리_WIP/MUGAN_v659_MUTATION_REVERSE.png",
+      "modified": "2026-08-08T19:24:54+09:00"
+    },
+    {
+      "id": "file-1786184684128000020",
+      "title": "MUGAN v659 MUTATION LATE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v659_변이복도_적청분리_WIP/MUGAN_v659_MUTATION_LATE.png",
+      "modified": "2026-08-08T19:24:44+09:00"
+    },
+    {
+      "id": "file-1786184680259999990",
+      "title": "MUGAN v659 MUTATION MID",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v659_변이복도_적청분리_WIP/MUGAN_v659_MUTATION_MID.png",
+      "modified": "2026-08-08T19:24:40+09:00"
+    },
+    {
+      "id": "file-1786184668857000112",
+      "title": "MUGAN v659 MUTATION RED REBALANCED",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v659_변이복도_적청분리_WIP/MUGAN_v659_MUTATION_RED_REBALANCED.blend",
+      "modified": "2026-08-08T19:24:28+09:00"
+    },
+    {
+      "id": "file-1786184474651000022",
+      "title": "MUGAN v658 MUTATION REVERSE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v658_변이복도_후반붕괴강화_WIP/MUGAN_v658_MUTATION_REVERSE.png",
+      "modified": "2026-08-08T19:21:14+09:00"
+    },
+    {
+      "id": "file-1786184467926000118",
+      "title": "MUGAN v658 MUTATION LATE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v658_변이복도_후반붕괴강화_WIP/MUGAN_v658_MUTATION_LATE.png",
+      "modified": "2026-08-08T19:21:07+09:00"
+    },
+    {
+      "id": "file-1786184465108999967",
+      "title": "MUGAN v658 MUTATION MID",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v658_변이복도_후반붕괴강화_WIP/MUGAN_v658_MUTATION_MID.png",
+      "modified": "2026-08-08T19:21:05+09:00"
+    },
+    {
+      "id": "file-1786184456894000053",
+      "title": "MUGAN v658 MUTATION COLLAPSE STRENGTHENED",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v658_변이복도_후반붕괴강화_WIP/MUGAN_v658_MUTATION_COLLAPSE_STRENGTHENED.blend",
+      "modified": "2026-08-08T19:20:56+09:00"
+    },
+    {
+      "id": "file-1786183795334000110",
+      "title": "MUGAN v654 JUNCTION",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v654_정상미로_T분기보행폭_WIP/MUGAN_v654_JUNCTION.png",
+      "modified": "2026-08-08T19:09:55+09:00"
+    },
+    {
+      "id": "file-1786183787063999891",
+      "title": "MUGAN v654 BASE CORRIDOR",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v654_정상미로_T분기보행폭_WIP/MUGAN_v654_BASE_CORRIDOR.png",
+      "modified": "2026-08-08T19:09:47+09:00"
+    },
+    {
+      "id": "file-1786183774746999979",
+      "title": "MUGAN v654 MAZE T PATHS WIDENED",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v654_정상미로_T분기보행폭_WIP/MUGAN_v654_MAZE_T_PATHS_WIDENED.blend",
+      "modified": "2026-08-08T19:09:34+09:00"
+    },
+    {
+      "id": "file-1786182620846999883",
+      "title": "MUGAN v645 MAZE JUNCTION PRACTICALS",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v645_정상미로_광원재구축_WIP/MUGAN_v645_MAZE_JUNCTION_PRACTICALS.png",
+      "modified": "2026-08-08T18:50:20+09:00"
+    },
+    {
+      "id": "file-1786182612165999889",
+      "title": "MUGAN v645 MAZE JUNCTION PRACTICALS",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v645_정상미로_광원재구축_WIP/MUGAN_v645_MAZE_JUNCTION_PRACTICALS.blend",
+      "modified": "2026-08-08T18:50:12+09:00"
+    },
+    {
+      "id": "file-1786181398247999906",
+      "title": "MUGAN v638 ALTAR REVERSE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v638_제단_입구연결_WIP/MUGAN_v638_ALTAR_REVERSE.png",
+      "modified": "2026-08-08T18:29:58+09:00"
+    },
+    {
+      "id": "file-1786181398463000059",
+      "title": "MUGAN v638 ALTAR ENTRANCE FRAME",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v638_제단_입구연결_WIP/MUGAN_v638_ALTAR_ENTRANCE_FRAME.blend",
+      "modified": "2026-08-08T18:29:58+09:00"
+    },
+    {
+      "id": "file-1786181395198999881",
+      "title": "MUGAN v638 ALTAR HERO",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v638_제단_입구연결_WIP/MUGAN_v638_ALTAR_HERO.png",
+      "modified": "2026-08-08T18:29:55+09:00"
+    },
+    {
+      "id": "file-1786180976572999954",
+      "title": "MUGAN v635 ALTAR AGED SCREEN CENTERED",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v635_제단_실제궁병풍_WIP/MUGAN_v635_ALTAR_AGED_SCREEN_CENTERED.png",
+      "modified": "2026-08-08T18:22:56+09:00"
+    },
+    {
+      "id": "file-1786180968392999887",
+      "title": "MUGAN v635 ALTAR AGED SCREEN CENTERED",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v635_제단_실제궁병풍_WIP/MUGAN_v635_ALTAR_AGED_SCREEN_CENTERED.blend",
+      "modified": "2026-08-08T18:22:48+09:00"
+    },
+    {
+      "id": "file-1786179655377000093",
+      "title": "MUGAN v625 MUTATION CEILING REVEAL",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v625_변이복도_단계강화_WIP/MUGAN_v625_MUTATION_CEILING_REVEAL.png",
+      "modified": "2026-08-08T18:00:55+09:00"
+    },
+    {
+      "id": "file-1786179640940000057",
+      "title": "MUGAN v625 MUTATION CEILING REVEAL",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v625_변이복도_단계강화_WIP/MUGAN_v625_MUTATION_CEILING_REVEAL.blend",
+      "modified": "2026-08-08T18:00:40+09:00"
+    },
+    {
+      "id": "file-1786177895750000000",
+      "title": "MUGAN v610 COURTYARD HERO",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/_qc/노트북_v610_20260808_WIP/MUGAN_v610_COURTYARD_HERO.png",
+      "modified": "2026-08-08T17:31:35+09:00"
+    },
+    {
+      "id": "file-1786177895825999975",
+      "title": "MUGAN v610 COURTYARD PROPS PIGMENT BALANCE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v610_귀문마당_생활흔적안료_WIP/MUGAN_v610_COURTYARD_PROPS_PIGMENT_BALANCE.blend",
+      "modified": "2026-08-08T17:31:35+09:00"
+    },
+    {
+      "id": "file-1786177894371000051",
+      "title": "MUGAN v610 COURTYARD WIDE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/_qc/노트북_v610_20260808_WIP/MUGAN_v610_COURTYARD_WIDE.png",
+      "modified": "2026-08-08T17:31:34+09:00"
+    },
+    {
+      "id": "file-1786176086316999912",
+      "title": "MUGAN v598 COURTYARD STABLE A",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/_qc/노트북_v598_20260808_WIP/MUGAN_v598_COURTYARD_STABLE_A.png",
+      "modified": "2026-08-08T17:01:26+09:00"
+    },
+    {
+      "id": "file-1786176081171000003",
+      "title": "MUGAN v598 COURTYARD STABLE SHADOWS",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v598_귀문그림자안정화_WIP/MUGAN_v598_COURTYARD_STABLE_SHADOWS.blend",
+      "modified": "2026-08-08T17:01:21+09:00"
+    },
+    {
+      "id": "file-1786176047443000078",
+      "title": "MUGAN v597 ALTAR STABLE A",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/_qc/노트북_v597_20260808_WIP/MUGAN_v597_ALTAR_STABLE_A.png",
+      "modified": "2026-08-08T17:00:47+09:00"
+    },
+    {
+      "id": "file-1786176039671000003",
+      "title": "MUGAN v597 ALTAR STABLE SHADOWS",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v597_제단그림자안정화_WIP/MUGAN_v597_ALTAR_STABLE_SHADOWS.blend",
+      "modified": "2026-08-08T17:00:39+09:00"
+    },
+    {
+      "id": "file-1786175841303999900",
+      "title": "MUGAN v596 MAZE STABLE A",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/_qc/노트북_v596_20260808_WIP/MUGAN_v596_MAZE_STABLE_A.png",
+      "modified": "2026-08-08T16:57:21+09:00"
+    },
+    {
+      "id": "file-1786175821305000066",
+      "title": "MUGAN v596 MAZE STABLE SHADOWS",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v596_정상미로_배치유지LOD_WIP/MUGAN_v596_MAZE_STABLE_SHADOWS.blend",
+      "modified": "2026-08-08T16:57:01+09:00"
+    },
+    {
+      "id": "file-1786175449628000020",
+      "title": "MUGAN v594 MUTATION FORWARD LOD",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/_qc/노트북_v594_20260808_WIP/MUGAN_v594_MUTATION_FORWARD_LOD.png",
+      "modified": "2026-08-08T16:50:49+09:00"
+    },
+    {
+      "id": "file-1786175427586999893",
+      "title": "MUGAN v594 MUTATION LAYOUT PRESERVED LOD",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v594_변이복도_배치유지LOD_WIP/MUGAN_v594_MUTATION_LAYOUT_PRESERVED_LOD.blend",
+      "modified": "2026-08-08T16:50:27+09:00"
+    },
+    {
+      "id": "file-1786175369391999959",
+      "title": "MUGAN v593 ALTAR LOD",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/_qc/노트북_v593_20260808_WIP/MUGAN_v593_ALTAR_LOD.png",
+      "modified": "2026-08-08T16:49:29+09:00"
+    },
+    {
+      "id": "file-1786175344898999929",
+      "title": "MUGAN v593 ALTAR LAYOUT PRESERVED LOD",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v593_제단_배치유지LOD_WIP/MUGAN_v593_ALTAR_LAYOUT_PRESERVED_LOD.blend",
+      "modified": "2026-08-08T16:49:04+09:00"
+    },
+    {
+      "id": "file-1786175209596999883",
+      "title": "MUGAN v592 COURTYARD WIDE CLEAN",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/_qc/노트북_v592_20260808_WIP/MUGAN_v592_COURTYARD_WIDE_CLEAN.png",
+      "modified": "2026-08-08T16:46:49+09:00"
+    },
+    {
+      "id": "file-1786175200012000083",
+      "title": "MUGAN v592 COURTYARD UNUSED VERTS CLEAN",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v592_귀문마당_배치유지LOD_WIP/MUGAN_v592_COURTYARD_UNUSED_VERTS_CLEAN.blend",
+      "modified": "2026-08-08T16:46:40+09:00"
+    },
+    {
+      "id": "file-1786173100035000085",
+      "title": "MUGAN v587 COURTYARD CAMERA LIGHT STATES",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v587_마당비대칭카메라_WIP/MUGAN_v587_COURTYARD_CAMERA_LIGHT_STATES.blend",
+      "modified": "2026-08-08T16:11:40+09:00"
+    },
+    {
+      "id": "file-1786173093107000112",
+      "title": "MUGAN v587 COURTYARD WIDE CLEAN",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v587_20260808_WIP/MUGAN_v587_COURTYARD_WIDE_CLEAN.png",
+      "modified": "2026-08-08T16:11:33+09:00"
+    },
+    {
+      "id": "file-1786172700325999975",
+      "title": "MUGAN v585 ALTAR PORTAL BALANCE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v585_20260808_WIP/MUGAN_v585_ALTAR_PORTAL_BALANCE.png",
+      "modified": "2026-08-08T16:05:00+09:00"
+    },
+    {
+      "id": "file-1786172673165999889",
+      "title": "MUGAN v585 ALTAR PORTAL BALANCE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v585_제단마당연결_WIP/MUGAN_v585_ALTAR_PORTAL_BALANCE.blend",
+      "modified": "2026-08-08T16:04:33+09:00"
+    },
+    {
+      "id": "file-1786172309109999895",
+      "title": "MUGAN v583 GATE HERO RUNTIME CLEANUP",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v587_20260808_WIP/MUGAN_v583_GATE_HERO_RUNTIME_CLEANUP.png",
+      "modified": "2026-08-08T15:58:29+09:00"
+    },
+    {
+      "id": "file-1786172309109999895",
+      "title": "MUGAN v583 GATE HERO RUNTIME CLEANUP",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v581_v583_20260808_WIP/MUGAN_v583_GATE_HERO_RUNTIME_CLEANUP.png",
+      "modified": "2026-08-08T15:58:29+09:00"
+    },
+    {
+      "id": "file-1786172298311000108",
+      "title": "MUGAN v583 GATE HERO RUNTIME CLEANUP",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v583_마당귀문_HERO_WIP/MUGAN_v583_GATE_HERO_RUNTIME_CLEANUP.blend",
+      "modified": "2026-08-08T15:58:18+09:00"
+    },
+    {
+      "id": "file-1786172114959000110",
+      "title": "MUGAN v581 COURTYARD GATE DEPTH",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v581_v583_20260808_WIP/MUGAN_v581_COURTYARD_GATE_DEPTH.png",
+      "modified": "2026-08-08T15:55:14+09:00"
+    },
+    {
+      "id": "file-1786171701191999912",
+      "title": "MUGAN v578 MUTATION REVERSE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v578_20260808_WIP/MUGAN_v578_MUTATION_REVERSE.png",
+      "modified": "2026-08-08T15:48:21+09:00"
+    },
+    {
+      "id": "file-1786171680157999992",
+      "title": "MUGAN v578 MUTATION FORWARD",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v578_20260808_WIP/MUGAN_v578_MUTATION_FORWARD.png",
+      "modified": "2026-08-08T15:48:00+09:00"
+    },
+    {
+      "id": "file-1786171656966000080",
+      "title": "MUGAN v578 MUTATION NIGHT RED DEPTH",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v578_변이복도_야간적색_WIP/MUGAN_v578_MUTATION_NIGHT_RED_DEPTH.blend",
+      "modified": "2026-08-08T15:47:36+09:00"
+    },
+    {
+      "id": "file-1786171494559999942",
+      "title": "MUGAN v577 MAZE NIGHT BALANCE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v577_20260808_WIP/MUGAN_v577_MAZE_NIGHT_BALANCE.png",
+      "modified": "2026-08-08T15:44:54+09:00"
+    },
+    {
+      "id": "file-1786171449588000059",
+      "title": "MUGAN v577 MAZE NIGHT BALANCE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v577_정상미로_야간조명_WIP/MUGAN_v577_MAZE_NIGHT_BALANCE.blend",
+      "modified": "2026-08-08T15:44:09+09:00"
+    },
+    {
+      "id": "file-1786171074865000009",
+      "title": "MUGAN v575 ALTAR ATMOSPHERE DEPTH",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v575_20260808_WIP/MUGAN_v575_ALTAR_ATMOSPHERE_DEPTH.png",
+      "modified": "2026-08-08T15:37:54+09:00"
+    },
+    {
+      "id": "file-1786171048898999929",
+      "title": "MUGAN v575 ALTAR ATMOSPHERE DEPTH",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v575_제단광장_공기원근_WIP/MUGAN_v575_ALTAR_ATMOSPHERE_DEPTH.blend",
+      "modified": "2026-08-08T15:37:28+09:00"
+    },
+    {
+      "id": "file-1786170456595000028",
+      "title": "MUGAN v572 COURTYARD RUNTIME CLEANUP",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v572_20260808_WIP/MUGAN_v572_COURTYARD_RUNTIME_CLEANUP.png",
+      "modified": "2026-08-08T15:27:36+09:00"
+    },
+    {
+      "id": "file-1786170446773999929",
+      "title": "MUGAN v572 COURTYARD RUNTIME CLEANUP",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v572_마당귀문_달빛_WIP/MUGAN_v572_COURTYARD_RUNTIME_CLEANUP.blend",
+      "modified": "2026-08-08T15:27:26+09:00"
+    },
+    {
+      "id": "file-1786169724460000038",
+      "title": "MUGAN v567 MAZE LAMP LOD",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v567_20260808_WIP/MUGAN_v567_MAZE_LAMP_LOD.png",
+      "modified": "2026-08-08T15:15:24+09:00"
+    },
+    {
+      "id": "file-1786169687500000000",
+      "title": "MUGAN v567 MAZE LAMP LOD",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v567_정상미로_LOD_WIP/MUGAN_v567_MAZE_LAMP_LOD.blend",
+      "modified": "2026-08-08T15:14:47+09:00"
+    },
+    {
+      "id": "file-1786169119782999992",
+      "title": "MUGAN v564 MUTATION TURN OPENING",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v560_v564_20260808_WIP/MUGAN_v564_MUTATION_TURN_OPENING.png",
+      "modified": "2026-08-08T15:05:19+09:00"
+    },
+    {
+      "id": "file-1786169086467000007",
+      "title": "MUGAN v564 MUTATION TURN OPENING",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v560_v564_구조실험_WIP/MUGAN_v564_MUTATION_TURN_OPENING.blend",
+      "modified": "2026-08-08T15:04:46+09:00"
+    },
+    {
+      "id": "file-1786168527769000053",
+      "title": "MUGAN v560 NORMAL CORRIDOR RED TIMBER CEILING",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v560_v564_20260808_WIP/MUGAN_v560_NORMAL_CORRIDOR_RED_TIMBER_CEILING.png",
+      "modified": "2026-08-08T14:55:27+09:00"
+    },
+    {
+      "id": "file-1786168502164000034",
+      "title": "MUGAN v560 NORMAL CORRIDOR RED TIMBER CEILING",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v560_v564_구조실험_WIP/MUGAN_v560_NORMAL_CORRIDOR_RED_TIMBER_CEILING.blend",
+      "modified": "2026-08-08T14:55:02+09:00"
+    },
+    {
+      "id": "file-1786167965691999912",
+      "title": "MUGAN v558 COURTYARD SURFACE VARIATION",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v557_v558_20260808_WIP/MUGAN_v558_COURTYARD_SURFACE_VARIATION.png",
+      "modified": "2026-08-08T14:46:05+09:00"
+    },
+    {
+      "id": "file-1786167953950000047",
+      "title": "MUGAN v558 COURTYARD SURFACE VARIATION",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v557_v558_재질패스_WIP/MUGAN_v558_COURTYARD_SURFACE_VARIATION.blend",
+      "modified": "2026-08-08T14:45:53+09:00"
+    },
+    {
+      "id": "file-1786167863433000087",
+      "title": "MUGAN v557 S BEND REVERSE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v557_v558_20260808_WIP/MUGAN_v557_S_BEND_REVERSE.png",
+      "modified": "2026-08-08T14:44:23+09:00"
+    },
+    {
+      "id": "file-1786167842661999940",
+      "title": "MUGAN v557 S BEND FORWARD",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v557_v558_20260808_WIP/MUGAN_v557_S_BEND_FORWARD.png",
+      "modified": "2026-08-08T14:44:02+09:00"
+    },
+    {
+      "id": "file-1786167814581000089",
+      "title": "MUGAN v557 S BEND MATERIAL GRUNGE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v557_v558_재질패스_WIP/MUGAN_v557_S_BEND_MATERIAL_GRUNGE.blend",
+      "modified": "2026-08-08T14:43:34+09:00"
+    },
+    {
+      "id": "file-1786167554621999979",
+      "title": "MUGAN v556 COURTYARD LAMP LOD",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v556_20260808_WIP/MUGAN_v556_COURTYARD_LAMP_LOD.png",
+      "modified": "2026-08-08T14:39:14+09:00"
+    },
+    {
+      "id": "file-1786167545828999996",
+      "title": "MUGAN v556 COURTYARD LAMP LOD",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v556_통합성능_WIP/MUGAN_v556_COURTYARD_LAMP_LOD.blend",
+      "modified": "2026-08-08T14:39:05+09:00"
+    },
+    {
+      "id": "file-1786166999582000017",
+      "title": "MUGAN v554 COURTYARD THRESHOLD CAMERA",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v549_v554_20260808_WIP/MUGAN_v554_COURTYARD_THRESHOLD_CAMERA.png",
+      "modified": "2026-08-08T14:29:59+09:00"
+    },
+    {
+      "id": "file-1786166989812000036",
+      "title": "MUGAN v554 COURTYARD THRESHOLD CAMERA",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v549_v554_환경통합전_WIP/MUGAN_v554_COURTYARD_THRESHOLD_CAMERA.blend",
+      "modified": "2026-08-08T14:29:49+09:00"
+    },
+    {
+      "id": "file-1786166784707999944",
+      "title": "MUGAN v552 ALTAR OFFERING GROUND FIX",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v556_20260808_WIP/MUGAN_v552_ALTAR_OFFERING_GROUND_FIX.png",
+      "modified": "2026-08-08T14:26:24+09:00"
+    },
+    {
+      "id": "file-1786166784707999944",
+      "title": "MUGAN v552 ALTAR OFFERING GROUND FIX",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v549_v554_20260808_WIP/MUGAN_v552_ALTAR_OFFERING_GROUND_FIX.png",
+      "modified": "2026-08-08T14:26:24+09:00"
+    },
+    {
+      "id": "file-1786166784707999944",
+      "title": "MUGAN v552 ALTAR OFFERING GROUND FIX",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v557_v558_20260808_WIP/MUGAN_v552_ALTAR_OFFERING_GROUND_FIX.png",
+      "modified": "2026-08-08T14:26:24+09:00"
+    },
+    {
+      "id": "file-1786166764187000036",
+      "title": "MUGAN v552 ALTAR OFFERING GROUND FIX",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v549_v554_환경통합전_WIP/MUGAN_v552_ALTAR_OFFERING_GROUND_FIX.blend",
+      "modified": "2026-08-08T14:26:04+09:00"
+    },
+    {
+      "id": "file-1786166764187000036",
+      "title": "MUGAN v552 ALTAR OFFERING GROUND FIX",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v557_v558_재질패스_WIP/MUGAN_v552_ALTAR_OFFERING_GROUND_FIX.blend",
+      "modified": "2026-08-08T14:26:04+09:00"
+    },
+    {
+      "id": "file-1786166764187000036",
+      "title": "MUGAN v552 ALTAR OFFERING GROUND FIX",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v556_통합성능_WIP/MUGAN_v552_ALTAR_OFFERING_GROUND_FIX.blend",
+      "modified": "2026-08-08T14:26:04+09:00"
+    },
+    {
+      "id": "file-1786166373519000053",
+      "title": "MUGAN v549 S BEND REVERSE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v556_20260808_WIP/MUGAN_v549_S_BEND_REVERSE.png",
+      "modified": "2026-08-08T14:19:33+09:00"
+    },
+    {
+      "id": "file-1786166373519000053",
+      "title": "MUGAN v549 S BEND REVERSE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v549_v554_20260808_WIP/MUGAN_v549_S_BEND_REVERSE.png",
+      "modified": "2026-08-08T14:19:33+09:00"
+    },
+    {
+      "id": "file-1786166353556999921",
+      "title": "MUGAN v549 S BEND FORWARD",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v556_20260808_WIP/MUGAN_v549_S_BEND_FORWARD.png",
+      "modified": "2026-08-08T14:19:13+09:00"
+    },
+    {
+      "id": "file-1786166353556999921",
+      "title": "MUGAN v549 S BEND FORWARD",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v549_v554_20260808_WIP/MUGAN_v549_S_BEND_FORWARD.png",
+      "modified": "2026-08-08T14:19:13+09:00"
+    },
+    {
+      "id": "file-1786166330959000110",
+      "title": "MUGAN v549 S BEND LIGHT BALANCE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v549_v554_환경통합전_WIP/MUGAN_v549_S_BEND_LIGHT_BALANCE.blend",
+      "modified": "2026-08-08T14:18:50+09:00"
+    },
+    {
+      "id": "file-1786166330959000110",
+      "title": "MUGAN v549 S BEND LIGHT BALANCE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v556_통합성능_WIP/MUGAN_v549_S_BEND_LIGHT_BALANCE.blend",
+      "modified": "2026-08-08T14:18:50+09:00"
+    },
+    {
+      "id": "file-1786166081915999889",
+      "title": "qc hmd reverse cycles",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/죽은마을골목/01_model/_qc/v212_release/qc_hmd_reverse_cycles.png",
+      "modified": "2026-08-08T14:14:41+09:00"
+    },
+    {
+      "id": "file-1786165816983000040",
+      "title": "MUGAN v546 MUTATION DEPTH BALANCE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v538_v546_20260808_WIP/MUGAN_v546_MUTATION_DEPTH_BALANCE.png",
+      "modified": "2026-08-08T14:10:16+09:00"
+    },
+    {
+      "id": "file-1786165792101999998",
+      "title": "MUGAN v546 MUTATION DEPTH BALANCE",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v538_v546_환경진행_WIP/MUGAN_v546_MUTATION_DEPTH_BALANCE.blend",
+      "modified": "2026-08-08T14:09:52+09:00"
+    },
+    {
+      "id": "file-1786165584144000053",
+      "title": "MUGAN v538 S BEND TOPDOWN WORKBENCH",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v538_v546_20260808_WIP/MUGAN_v538_S_BEND_TOPDOWN_WORKBENCH.png",
+      "modified": "2026-08-08T14:06:24+09:00"
+    },
+    {
+      "id": "file-1786165409299999952",
+      "title": "MUGAN v544 NORMAL CORRIDOR LIGHT RECOVERY",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v538_v546_20260808_WIP/MUGAN_v544_NORMAL_CORRIDOR_LIGHT_RECOVERY.png",
+      "modified": "2026-08-08T14:03:29+09:00"
+    },
+    {
+      "id": "file-1786165387686000108",
+      "title": "MUGAN v544 NORMAL CORRIDOR LIGHT RECOVERY",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v538_v546_환경진행_WIP/MUGAN_v544_NORMAL_CORRIDOR_LIGHT_RECOVERY.blend",
+      "modified": "2026-08-08T14:03:07+09:00"
+    },
+    {
+      "id": "file-1786165387686000108",
+      "title": "MUGAN v544 NORMAL CORRIDOR LIGHT RECOVERY",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v556_통합성능_WIP/MUGAN_v544_NORMAL_CORRIDOR_LIGHT_RECOVERY.blend",
+      "modified": "2026-08-08T14:03:07+09:00"
+    },
+    {
+      "id": "file-1786165112000000000",
+      "title": "MUGAN v542 COURTYARD SUBTLE WET TRACK",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v538_v542_20260808_WIP/MUGAN_v542_COURTYARD_SUBTLE_WET_TRACK.png",
+      "modified": "2026-08-08T13:58:32+09:00"
+    },
+    {
+      "id": "file-1786165102322000026",
+      "title": "MUGAN v542 COURTYARD SUBTLE WET TRACK",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v538_v542_환경3모듈_WIP/MUGAN_v542_COURTYARD_SUBTLE_WET_TRACK.blend",
+      "modified": "2026-08-08T13:58:22+09:00"
+    },
+    {
+      "id": "file-1786164872815000057",
+      "title": "MUGAN v540 ALTAR SURFACE CLEANUP",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v538_v542_20260808_WIP/MUGAN_v540_ALTAR_SURFACE_CLEANUP.png",
+      "modified": "2026-08-08T13:54:32+09:00"
+    },
+    {
+      "id": "file-1786164856069000005",
+      "title": "MUGAN v540 ALTAR SURFACE CLEANUP",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v538_v542_환경3모듈_WIP/MUGAN_v540_ALTAR_SURFACE_CLEANUP.blend",
+      "modified": "2026-08-08T13:54:16+09:00"
+    },
+    {
+      "id": "file-1786164643720999956",
+      "title": "MUGAN v538 SEGMENTED MARU REBUILD",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_qc/노트북_v538_v542_20260808_WIP/MUGAN_v538_SEGMENTED_MARU_REBUILD.png",
+      "modified": "2026-08-08T13:50:43+09:00"
+    },
+    {
+      "id": "file-1786164624799000024",
+      "title": "MUGAN v538 SEGMENTED MARU REBUILD",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v538_v542_환경3모듈_WIP/MUGAN_v538_SEGMENTED_MARU_REBUILD.blend",
+      "modified": "2026-08-08T13:50:24+09:00"
+    },
+    {
+      "id": "file-1786164572825999975",
+      "title": "qc gwana hmd reverse cycles",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/관아마당/01_model/_qc/v88_release/qc_gwana_hmd_reverse_cycles.png",
+      "modified": "2026-08-08T13:49:32+09:00"
+    },
+    {
+      "id": "file-1786164319971999883",
+      "title": "써니 조선요괴전 관아마당 v88 perimeter tree scale",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/관아마당/01_model/work/써니_조선요괴전_관아마당_v88_perimeter_tree_scale.blend",
+      "modified": "2026-08-08T13:45:19+09:00"
+    },
+    {
+      "id": "file-1786164121141000032",
+      "title": "qc well hmd reverse cycles",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/우물광장/01_model/_qc/v48_release/qc_well_hmd_reverse_cycles.png",
+      "modified": "2026-08-08T13:42:01+09:00"
+    },
+    {
+      "id": "file-1786163996111000061",
+      "title": "써니 조선요괴전 우물광장 v48 handoff visibility",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/우물광장/01_model/work/써니_조선요괴전_우물광장_v48_handoff_visibility.blend",
+      "modified": "2026-08-08T13:39:56+09:00"
+    },
+    {
+      "id": "file-1786163416753000020",
+      "title": "qc hmd reverse cycles",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/죽은마을골목/01_model/_qc/v205_release/qc_hmd_reverse_cycles.png",
+      "modified": "2026-08-08T13:30:16+09:00"
+    },
+    {
+      "id": "file-1786163017796999931",
+      "title": "써니 조선요괴전 죽은마을골목 v205 giwa well gate",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/죽은마을골목/01_model/work/써니_조선요괴전_죽은마을골목_v205_giwa_well_gate.blend",
+      "modified": "2026-08-08T13:23:37+09:00"
+    },
+    {
+      "id": "file-1786162488868999958",
+      "title": "qc gwana hmd reverse cycles",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/관아마당/01_model/_qc/v87_release/qc_gwana_hmd_reverse_cycles.png",
+      "modified": "2026-08-08T13:14:48+09:00"
+    },
+    {
+      "id": "file-1786162488868999958",
+      "title": "qc gwana hmd reverse cycles",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/관아마당/01_model/_qc/v87_release/qc_gwana_hmd_reverse_cycles.png",
+      "modified": "2026-08-08T13:14:48+09:00"
+    },
+    {
+      "id": "file-1786162445532999992",
+      "title": "써니 조선요괴전 관아마당 v87 canopy emission fix",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/관아마당/01_model/work/써니_조선요괴전_관아마당_v87_canopy_emission_fix.blend",
+      "modified": "2026-08-08T13:14:05+09:00"
+    },
+    {
+      "id": "file-1786162445532999992",
+      "title": "써니 조선요괴전 관아마당 v87 canopy emission fix",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/관아마당/01_model/work/써니_조선요괴전_관아마당_v87_canopy_emission_fix.blend",
+      "modified": "2026-08-08T13:14:05+09:00"
+    },
+    {
+      "id": "file-1786162306773999929",
+      "title": "qc gwana hmd reverse cycles",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/관아마당/01_model/_qc/v86_release/qc_gwana_hmd_reverse_cycles.png",
+      "modified": "2026-08-08T13:11:46+09:00"
+    },
+    {
+      "id": "file-1786162306773999929",
+      "title": "qc gwana hmd reverse cycles",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/관아마당/01_model/_qc/v86_release/qc_gwana_hmd_reverse_cycles.png",
+      "modified": "2026-08-08T13:11:46+09:00"
+    },
+    {
+      "id": "file-1786162144221999883",
+      "title": "써니 조선요괴전 관아마당 v86 ground pbr readability",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/관아마당/01_model/work/써니_조선요괴전_관아마당_v86_ground_pbr_readability.blend",
+      "modified": "2026-08-08T13:09:04+09:00"
+    },
+    {
+      "id": "file-1786162144221999883",
+      "title": "써니 조선요괴전 관아마당 v86 ground pbr readability",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/관아마당/01_model/work/써니_조선요괴전_관아마당_v86_ground_pbr_readability.blend",
+      "modified": "2026-08-08T13:09:04+09:00"
+    },
+    {
+      "id": "file-1786161930891761496",
+      "title": "icon-192-v3",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토완료",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/icon-192-v3.png",
+      "modified": "2026-08-08T13:05:30+09:00",
+      "reviewed": "2026-08-08T13:25:36+0900",
+      "review_summary": "검토완료 - 정상 PNG, 192×192px, RGB, 파일 손상 없음 - 아이콘 잘림·왜곡·정렬 문제 없음 - 오탈자 해당 없음 - 작은 크기에서도 형태와 대비가 명확함 - 파일은 수정하지 않음"
+    },
+    {
+      "id": "file-1786161930824420999",
+      "title": "icon-1024-v3",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/icon-1024-v3.png",
+      "modified": "2026-08-08T13:05:30+09:00"
+    },
+    {
+      "id": "file-1786161930864451706",
+      "title": "icon-512-v3",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/icon-512-v3.png",
+      "modified": "2026-08-08T13:05:30+09:00"
+    },
+    {
+      "id": "file-1786161930891761496",
+      "title": "icon-192-v3",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/icon-192-v3.png",
+      "modified": "2026-08-08T13:05:30+09:00"
+    },
+    {
+      "id": "file-1786161930824420999",
+      "title": "icon-1024-v3",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/icon-1024-v3.png",
+      "modified": "2026-08-08T13:05:30+09:00"
+    },
+    {
+      "id": "file-1786161930864451706",
+      "title": "icon-512-v3",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/icon-512-v3.png",
+      "modified": "2026-08-08T13:05:30+09:00"
+    },
+    {
+      "id": "file-1786161831912339720",
+      "title": "cover 11 exhibition proposal",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_11_exhibition_proposal.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831911643470",
+      "title": "cover 07",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_07.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831912161678",
+      "title": "cover 10",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_10.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831911575553",
+      "title": "cover 06",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_06.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831911788261",
+      "title": "cover 07 brand intro",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_07_brand_intro.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831911172595",
+      "title": "cover 01",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_01.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831911929720",
+      "title": "cover 08 investor ir",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_08_investor_ir.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831911327178",
+      "title": "cover 03",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_03.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831911259511",
+      "title": "cover 02",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_02.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831912007720",
+      "title": "cover 09",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_09.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831912245803",
+      "title": "cover 10 visual lookbook",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_10_visual_lookbook.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831912078678",
+      "title": "cover 09 tech spec",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_09_tech_spec.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831911498303",
+      "title": "cover 05",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_05.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831911404428",
+      "title": "cover 04",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_04.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831912441511",
+      "title": "cover 12 product catalog",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_12_product_catalog.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831911847178",
+      "title": "cover 08",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_08.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831904342720",
+      "title": "cover 11 exhibition proposal",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_11_exhibition_proposal.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831903646178",
+      "title": "cover 07",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_07.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831904160262",
+      "title": "cover 10",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_10.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831903566970",
+      "title": "cover 06",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_06.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831903758928",
+      "title": "cover 07 brand intro",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_07_brand_intro.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831903058678",
+      "title": "cover 01",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_01.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831903919178",
+      "title": "cover 08 investor ir",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_08_investor_ir.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831912339720",
+      "title": "cover 11 exhibition proposal",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_11_exhibition_proposal.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831911643470",
+      "title": "cover 07",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_07.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831912161678",
+      "title": "cover 10",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_10.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831911575553",
+      "title": "cover 06",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_06.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831911788261",
+      "title": "cover 07 brand intro",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_07_brand_intro.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831911172595",
+      "title": "cover 01",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_01.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831911929720",
+      "title": "cover 08 investor ir",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_08_investor_ir.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831911327178",
+      "title": "cover 03",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_03.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831911259511",
+      "title": "cover 02",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_02.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831912007720",
+      "title": "cover 09",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_09.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831912245803",
+      "title": "cover 10 visual lookbook",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_10_visual_lookbook.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831912078678",
+      "title": "cover 09 tech spec",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_09_tech_spec.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831911498303",
+      "title": "cover 05",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_05.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831911404428",
+      "title": "cover 04",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_04.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831912441511",
+      "title": "cover 12 product catalog",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_12_product_catalog.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831911847178",
+      "title": "cover 08",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/design/previews/cover_08.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831904342720",
+      "title": "cover 11 exhibition proposal",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_11_exhibition_proposal.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831903646178",
+      "title": "cover 07",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_07.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831904160262",
+      "title": "cover 10",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_10.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831903566970",
+      "title": "cover 06",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_06.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831903758928",
+      "title": "cover 07 brand intro",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_07_brand_intro.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831903058678",
+      "title": "cover 01",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_01.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831903919178",
+      "title": "cover 08 investor ir",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "검토대기",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_08_investor_ir.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831903280720",
+      "title": "cover 03",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "자동등록",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_03.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831903174345",
+      "title": "cover 02",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "자동등록",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_02.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831903995803",
+      "title": "cover 09",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "자동등록",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_09.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    },
+    {
+      "id": "file-1786161831904242428",
+      "title": "cover 10 visual lookbook",
+      "agent": "써니팀",
+      "pc": "맥미니",
+      "status": "자동등록",
+      "path": "SUNNY_TEAM/프로젝트/02_SaaS제품/sunny-home-v2_20260808/birch-design/previews/cover_10_visual_lookbook.html",
+      "modified": "2026-08-08T13:03:51+09:00"
+    }
+  ]
+}

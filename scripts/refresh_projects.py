@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Fetch nextsunny-ai 레포 메타 12개 = data/projects.json 에 적재.
+Fetch nextsunny-ai 레포 중 올해 작업된 전체 메타 = data/projects.json 에 적재.
 GitHub Action 에서 GH_TOKEN 환경변수로 인증.
 """
 import json
@@ -27,13 +27,16 @@ def gh_get(path):
 
 
 def main():
-    repos = gh_get(f"/users/{OWNER}/repos?sort=pushed&per_page=12")
+    repos = gh_get(f"/users/{OWNER}/repos?sort=pushed&per_page=100")
     if not isinstance(repos, list):
         print("unexpected response:", repos, file=sys.stderr)
         sys.exit(1)
 
     out = []
-    for r in repos[:12]:
+    current_year = str(datetime.now(timezone.utc).year)
+    for r in repos:
+        if not str(r.get("pushed_at") or "").startswith(current_year):
+            continue
         out.append({
             "name": r.get("name"),
             "description": r.get("description") or "",

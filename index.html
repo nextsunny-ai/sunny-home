@@ -4656,7 +4656,6 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
   /* ════════ 진행 중 — 하이브리드 (GitHub 최근 push 자동 + 회사 프로젝트 수동) ════════ */
   const INPROGRESS_PATH = 'data/inprogress.json';
   const IP_STATES = ['Develop', 'Live', 'Pending', 'Watch'];
-  const PROJ_AUTO_MAX = 6;
 
   function relTime(iso) {
     const diff = Date.now() - new Date(iso).getTime();
@@ -4730,7 +4729,7 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
       e.textContent = '아직 불러온 저장소가 없습니다.';
       list.appendChild(e);
     } else {
-      projAuto.slice(0, PROJ_AUTO_MAX).forEach((r) => {
+      projAuto.forEach((r) => {
         const a = document.createElement('a');
         a.className = 'ipa-item';
         a.href = r.pages_url || r.html_url || '#';
@@ -5011,15 +5010,30 @@ renderYt();
 async function loadSunnyOutputs(){
   const grid=document.getElementById('outputsGrid'); if(!grid) return;
   try{
-    const res=await fetch('data/outputs.json?t='+Date.now(),{cache:'no-store'});
-    if(!res.ok) throw new Error('HTTP '+res.status);
-    const data=await res.json(), items=(data.items||[]).slice(0,12);
+    const responses=await Promise.all([
+      fetch('data/outputs.json?t='+Date.now(),{cache:'no-store'}),
+      fetch('data/outputs_2026.json?t='+Date.now(),{cache:'no-store'})
+    ]);
+    if(!responses[0].ok) throw new Error('HTTP '+responses[0].status);
+    const current=await responses[0].json();
+    const archive=responses[1].ok?await responses[1].json():{items:[]};
+    const merged=[...(current.items||[]),...(archive.items||[])];
+    const seen=new Set();
+    const items=merged.filter(function(o){
+      const date=String(o.modified||o.created||o.date||'');
+      const key=o.path||o.url||o.id||o.title;
+      if(!key||seen.has(key)||!date.startsWith('2026')) return false;
+      seen.add(key); return true;
+    }).sort(function(a,b){return String(b.modified||b.created||b.date||'').localeCompare(String(a.modified||a.created||a.date||''));});
     if(!items.length){grid.innerHTML='<div class="output-empty">아직 등록된 산출물이 없습니다.</div>';return;}
+    const heading=document.querySelector('#outputs-section .section-header');
+    if(heading) heading.textContent='2026 산출물 전체 · '+items.length+'개';
     grid.innerHTML=items.map(function(o){
       const status=o.status||'검토대기', title=o.title||o.name||'산출물', path=o.path||o.url||'', who=o.agent||o.owner||'써니팀';
+      const date=String(o.modified||o.created||o.date||'').slice(0,10);
       const statusClass=status==='검토완료'?'done':(status==='확인필요'?'warn':'');
       const reviewUrl='https://t.me/'+TG_BOT_USERNAME+'?text='+encodeURIComponent('[코디 요청] [산출물 검토] '+path);
-      return '<article class="output-card"><div class="output-meta">'+escapeHtml(who)+'</div><div class="output-status '+statusClass+'">'+escapeHtml(status)+'</div><div class="output-title">'+escapeHtml(title)+'</div><div class="output-path">'+escapeHtml(path)+'</div><div class="output-review"><a href="'+reviewUrl+'" target="_blank" rel="noopener">코디 검토 요청</a></div></article>';
+      return '<article class="output-card"><div class="output-meta">'+escapeHtml(who)+(date?' · '+escapeHtml(date):'')+'</div><div class="output-status '+statusClass+'">'+escapeHtml(status)+'</div><div class="output-title">'+escapeHtml(title)+'</div><div class="output-path">'+escapeHtml(path)+'</div><div class="output-review"><a href="'+reviewUrl+'" target="_blank" rel="noopener">코디 검토 요청</a></div></article>';
     }).join('');
   }catch(e){grid.innerHTML='<div class="output-empty">산출물 목록을 불러오지 못했습니다. 새로고침해 주세요.</div>';}
 }
