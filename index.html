@@ -186,46 +186,50 @@ body {
 
 /* English = 상황별 비즈니스 영어 회화 (대화 + 발음 재생) */
 .hero-english {
-  margin-top: 28px; padding: 16px 0 14px;
-  border-top: 1px dashed var(--border);
-  border-bottom: 1px dashed var(--border);
-  /* ★ 2026-05-19: 칼럼을 채워 To-do 아래와 라인 정렬 */
-  flex: 1; display: flex; flex-direction: column;
+  margin-top: 28px; padding: 22px;
+  border: 1px solid var(--border); border-radius: 20px;
+  background: linear-gradient(145deg,#fff 0%,#fbfaf7 100%);
+  flex: 1; display: flex; flex-direction: column; overflow: hidden;
 }
-.he-top { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.he-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; margin-bottom: 16px; }
+.he-title-group{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.he-controls{display:flex;align-items:center;justify-content:flex-end;gap:6px;flex-wrap:wrap}
 .hero-english .he-label {
-  font-size: 0.55rem; text-transform: uppercase; letter-spacing: 0.14em;
-  color: var(--deep-orange); font-weight: 700;
-  padding: 3px 8px; background: var(--orange-soft); border-radius: 4px;
+  font-family:var(--mono);font-size: 0.58rem; text-transform: uppercase; letter-spacing: 0.13em;
+  color: #535a66; font-weight: 800;
 }
 .hero-english .he-tag {
-  font-size: 0.6rem; font-weight: 700; color: var(--teal);
-  padding: 2px 8px; background: rgba(13,148,136,0.1); border-radius: var(--r-pill);
+  font-size: 0.6rem; font-weight: 800; color: #295d64;
+  padding: 4px 9px; background: #dff4f3; border-radius: var(--r-pill);
 }
+.he-progress{font-family:var(--mono);font-size:.56rem;color:var(--text-mute);letter-spacing:.08em}
 .he-play-all {
-  font-size: 0.62rem; font-weight: 600;
-  color: var(--text-sub); background: var(--bg); border: 1px solid var(--border);
-  border-radius: var(--r-pill); padding: 3px 10px; cursor: pointer;
+  min-height:32px;font-size: 0.62rem; font-weight: 750;
+  color: var(--text-sub); background: #fff; border: 1px solid var(--border);
+  border-radius: var(--r-pill); padding: 6px 11px; cursor: pointer;
   transition: all .12s var(--ease);
 }
 .he-play-all:hover { border-color: var(--orange); color: var(--deep-orange); }
+.he-nav{width:32px;padding:0;font-size:.8rem}
 .hero-english .he-situation {
-  font-size: 0.74rem; color: var(--text-mute); line-height: 1.5; margin-bottom: 10px;
+  font-size: 0.74rem; color: var(--text-sub); line-height: 1.55; margin-bottom: 12px;
+  padding:10px 12px;border-radius:10px;background:#f2f3f5;
 }
-.he-convo { display: flex; flex-direction: column; gap: 8px; flex: 1; justify-content: space-evenly; min-height: 0; }
-.he-line { display: flex; gap: 8px; }
+.he-situation::before{content:'SCENARIO';font-family:var(--mono);font-size:.52rem;font-weight:800;letter-spacing:.12em;color:#8b93a0;margin-right:10px}
+.he-convo { display: flex; flex-direction: column; gap: 10px; flex: 1; min-height: 0; }
+.he-line { display: flex; gap: 8px;align-items:flex-start;max-width:92%; }
+.he-line.me{align-self:flex-end;flex-direction:row-reverse}
 .he-who {
-  flex-shrink: 0; width: 30px; font-size: 0.58rem; font-weight: 700;
-  color: var(--text-mute); padding-top: 3px; letter-spacing: 0.02em;
+  flex-shrink: 0; min-width:42px;font-family:var(--mono);font-size: 0.52rem; font-weight: 800;
+  color: #69717d; padding:7px 0 0; letter-spacing: 0.06em;text-transform:uppercase;
 }
-.he-line.me .he-who { color: var(--deep-orange); }
+.he-line.me .he-who { color: #627514;text-align:right }
 .he-line-body {
-  flex: 1; min-width: 0; padding: 7px 10px; border-radius: 9px;
-  background: var(--bg); border: 1px solid var(--border);
+  flex: 1; min-width: 0; padding: 12px 13px; border-radius: 14px 14px 14px 4px;
+  background: #f0f1f3; border: 1px solid #e0e2e5;
 }
-.he-line.me .he-line-body { background: var(--orange-soft); border-color: var(--border-accent); }
+.he-line.me .he-line-body { background: #efffbc; border-color: #cfe76c;border-radius:14px 14px 4px 14px; }
 .he-en-row { display: flex; align-items: flex-start; gap: 6px; }
-.he-en { flex: 1; min-width: 0; font-size: 0.8rem; font-weight: 600; line-height: 1.45; color: var(--text); }
+.he-en { flex: 1; min-width: 0; font-size: 0.82rem; font-weight: 700; line-height: 1.5; color: var(--text); }
 .he-speak {
   flex-shrink: 0; width: 22px; height: 22px; padding: 0; cursor: pointer;
   border: 1px solid var(--border); border-radius: 6px; background: var(--bg-elevated);
@@ -233,17 +237,19 @@ body {
 }
 .he-speak:hover { border-color: var(--orange); background: var(--orange-soft); }
 .he-speak.speaking { border-color: var(--orange); background: var(--orange); }
-.he-ko { display: block; font-size: 0.68rem; color: var(--text-mute); line-height: 1.5; margin-top: 3px; }
+.he-ko { display: block; font-size: 0.68rem; color: var(--text-mute); line-height: 1.5; margin-top: 5px; }
+.hero-english.hide-ko .he-ko{display:none}
 .he-key {
-  margin-top: 12px; padding: 8px 11px; border-radius: 9px;
-  background: rgba(13,148,136,0.07); border: 1px solid rgba(13,148,136,0.18);
+  margin:0 0 14px; padding: 11px 13px; border-radius: 11px;
+  background: #17191e; border: 1px solid #17191e;color:#fff;
   display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap;
 }
 .he-key-label {
   font-size: 0.54rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em;
-  color: var(--teal); flex-shrink: 0;
+  color: #d8f36b; flex-shrink: 0;
 }
-.he-key-text { font-size: 0.78rem; font-weight: 700; color: var(--text); line-height: 1.4; }
+.he-key-text { font-size: 0.84rem; font-weight: 750; color: #fff; line-height: 1.4; }
+@media(max-width:700px){.hero-english{padding:16px}.he-top{flex-direction:column}.he-controls{justify-content:flex-start}.he-line{max-width:100%}.he-play-all{padding:6px 9px}}
 .hero-greeting {
   font-size: 0.9rem;
   font-weight: 300; margin-top: 8px; color: var(--text-mute);
@@ -1456,17 +1462,26 @@ body{font-family:'Pretendard','Noto Sans KR','Apple SD Gothic Neo',sans-serif;le
       <!-- English = 상황별 비즈니스 영어 회화 + 발음 재생(브라우저 TTS) -->
       <div class="hero-english" id="heroEnglish" style="margin-top:22px;">
         <div class="he-top">
-          <span class="he-label">오늘의 비즈니스 영어</span>
-          <span class="he-tag" id="engTag"></span>
-          <button class="he-play-all" id="engPlayAll" type="button">▶ 전체 듣기</button>
-          <button class="he-play-all" id="engStop" type="button">■ 정지</button>
+          <div class="he-title-group">
+            <span class="he-label">Business English · Daily Roleplay</span>
+            <span class="he-tag" id="engTag"></span>
+            <span class="he-progress" id="engProgress"></span>
+          </div>
+          <div class="he-controls">
+            <button class="he-play-all he-nav" id="engPrev" type="button" aria-label="이전 회화">←</button>
+            <button class="he-play-all" id="engPlayAll" type="button">▶ 전체 듣기</button>
+            <button class="he-play-all" id="engSlow" type="button">0.75× 천천히</button>
+            <button class="he-play-all" id="engToggleKo" type="button">한국어 숨기기</button>
+            <button class="he-play-all" id="engStop" type="button">■ 정지</button>
+            <button class="he-play-all he-nav" id="engNext" type="button" aria-label="다음 회화">→</button>
+          </div>
         </div>
         <p class="he-situation" id="engSituation">—</p>
-        <div class="he-convo" id="engConvo"></div>
         <div class="he-key">
           <span class="he-key-label">핵심 표현</span>
           <span class="he-key-text" id="engKey"></span>
         </div>
+        <div class="he-convo" id="engConvo"></div>
       </div>
     </div>
   </section>
@@ -3384,6 +3399,8 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
   /* ════ 영어 — 상황별 비즈니스 영어 회화, 날짜 기반 매일 로테이션 + 발음 재생 ════ */
   let CURRENT_ENG = null;   // 오늘 선택된 회화 (전체 듣기에서 사용)
+  let ENGLISH_CONVOS = [];
+  let CURRENT_ENG_INDEX = 0;
   const DEFAULT_ENGLISH = [{
     situation: '회의에서 한 안건을 지금 정하지 말고 나중에 다시 보고 싶을 때',
     tag: '회의', key: "Let's circle back on that.",
@@ -3408,14 +3425,14 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     window.speechSynthesis.speak(u);
   }
   // 대화 전체를 순서대로 재생
-  function speakConversation(convo) {
+  function speakConversation(convo, rate) {
     if (!('speechSynthesis' in window) || !convo) return;
     window.speechSynthesis.cancel();
     (convo.lines || []).forEach((ln) => {
       if (!ln.en) return;
       const u = new SpeechSynthesisUtterance(ln.en);
       u.lang = 'en-US';
-      u.rate = 0.95;
+      u.rate = rate || 0.95;
       window.speechSynthesis.speak(u);
     });
   }
@@ -3424,6 +3441,7 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     CURRENT_ENG = c;
     if (!c) return;
     if ($('engTag')) $('engTag').textContent = c.tag || '';
+    if ($('engProgress')) $('engProgress').textContent = ENGLISH_CONVOS.length ? String(CURRENT_ENG_INDEX + 1).padStart(2,'0') + ' / ' + String(ENGLISH_CONVOS.length).padStart(2,'0') : '';
     if ($('engSituation')) $('engSituation').textContent = c.situation || '';
     if ($('engKey')) $('engKey').textContent = c.key || '';
     const wrap = $('engConvo');
@@ -3434,7 +3452,7 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
       row.className = 'he-line' + (ln.who === '나' ? ' me' : '');
       const who = document.createElement('span');
       who.className = 'he-who';
-      who.textContent = ln.who || '';
+      who.textContent = ln.who === '나' ? 'YOU' : 'PARTNER';
       const body = document.createElement('div');
       body.className = 'he-line-body';
       const enRow = document.createElement('div');
@@ -3471,7 +3489,9 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     // KST 기준 일(日) 번호로 deterministic 선택 → 하루 동안 고정, 매일 변경
     const epochDay = Math.floor((Date.now() + 9 * 3600000) / 86400000);
     // 영어 회화 렌더도 격리한다 — 데이터 형식 이상으로 throw 나도 다른 섹션은 살아있게.
-    try { renderEnglish(convos[epochDay % convos.length]); }
+    ENGLISH_CONVOS = convos;
+    CURRENT_ENG_INDEX = epochDay % convos.length;
+    try { renderEnglish(ENGLISH_CONVOS[CURRENT_ENG_INDEX]); }
     catch (e) { console.error('[loadEnglish] renderEnglish 실패:', e); }
   }
 
@@ -4612,6 +4632,21 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
   if ($('calGcalSelect')) $('calGcalSelect').addEventListener('change', onGcalSelect);
   // 영어 회화 — 대화 전체 발음 재생
   if ($('engPlayAll')) $('engPlayAll').addEventListener('click', () => speakConversation(CURRENT_ENG));
+  if ($('engSlow')) $('engSlow').addEventListener('click', () => speakConversation(CURRENT_ENG, 0.75));
+  if ($('engPrev')) $('engPrev').addEventListener('click', () => {
+    if (!ENGLISH_CONVOS.length) return;
+    CURRENT_ENG_INDEX = (CURRENT_ENG_INDEX - 1 + ENGLISH_CONVOS.length) % ENGLISH_CONVOS.length;
+    renderEnglish(ENGLISH_CONVOS[CURRENT_ENG_INDEX]);
+  });
+  if ($('engNext')) $('engNext').addEventListener('click', () => {
+    if (!ENGLISH_CONVOS.length) return;
+    CURRENT_ENG_INDEX = (CURRENT_ENG_INDEX + 1) % ENGLISH_CONVOS.length;
+    renderEnglish(ENGLISH_CONVOS[CURRENT_ENG_INDEX]);
+  });
+  if ($('engToggleKo')) $('engToggleKo').addEventListener('click', () => {
+    const hidden = $('heroEnglish').classList.toggle('hide-ko');
+    $('engToggleKo').textContent = hidden ? '한국어 보기' : '한국어 숨기기';
+  });
   if ($('engStop')) $('engStop').addEventListener('click', () => {
     if ('speechSynthesis' in window) window.speechSynthesis.cancel();
     document.querySelectorAll('.he-speak.speaking').forEach((b) => b.classList.remove('speaking'));
