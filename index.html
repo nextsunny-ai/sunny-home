@@ -1271,7 +1271,7 @@ body{font-family:'Pretendard','Noto Sans KR','Apple SD Gothic Neo',sans-serif;le
 .calendar-wrap,.todo-panel,.hero-news-col,.hero-music-col,.hero-english,.mid-col,.prod-card,.admin-card,.persona-card,.ql-tile{border:1px solid var(--border)!important;border-radius:var(--r-lg)!important;box-shadow:none!important;background:#fff!important}
 .section-eyebrow{font-family:var(--mono);font-weight:700;letter-spacing:.12em;color:#737B88}.team-quick .tq-item:first-child{background:#EEFFD0;border:2px solid #BBDD38;border-radius:18px}.team-quick .tq-item:first-child .tq-name{font-weight:800}
 .sunny-control,.outputs-section{padding:56px;max-width:1400px;margin:0 auto}.sunny-control-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:14px}.sunny-panel{background:#fff;border:1px solid var(--border);border-radius:22px;padding:22px}.sunny-panel.live{background:#17191E;color:#fff;border-color:#17191E}.sunny-panel h3{font-size:1.15rem;font-weight:800;letter-spacing:-.035em;margin-bottom:8px}.sunny-panel p{font-size:.78rem;line-height:1.65;color:var(--text-sub)}.sunny-panel.live p{color:#AEB5C0}.sunny-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.sunny-action{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 15px;border-radius:999px;text-decoration:none;font-size:.75rem;font-weight:800;border:1px solid var(--border);background:#fff;color:#17191E}.sunny-action.primary{background:var(--orange);border-color:var(--orange);color:#1A2105}
-.outputs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.output-card{background:#fff;border:1px solid var(--border);border-radius:18px;padding:18px;min-height:132px;display:flex;flex-direction:column}.output-meta{font-family:var(--mono);font-size:.6rem;color:var(--text-mute);letter-spacing:.05em}.output-status{display:inline-flex;width:max-content;margin-top:10px;padding:5px 8px;border-radius:999px;background:#F1F2F4;color:#626976;font-family:var(--mono);font-size:.58rem;font-weight:800}.output-status.done{background:#EAFBC0;color:#35420A}.output-status.warn{background:#FFE8D8;color:#8A3F12}.output-title{font-size:.9rem;font-weight:800;margin:8px 0}.output-path{font-size:.68rem;color:var(--text-sub);word-break:break-all;line-height:1.5}.output-review{margin-top:auto;padding-top:14px}.output-review a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 12px;border-radius:999px;background:#17191E;color:#fff;text-decoration:none;font-size:.68rem;font-weight:800}.output-empty{color:var(--text-mute);font-size:.78rem}
+.outputs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.output-card{background:#fff;border:1px solid var(--border);border-radius:18px;padding:18px;min-height:132px;display:flex;flex-direction:column}.output-meta{font-family:var(--mono);font-size:.6rem;color:var(--text-mute);letter-spacing:.05em}.output-status{display:inline-flex;width:max-content;margin-top:10px;padding:5px 8px;border-radius:999px;background:#F1F2F4;color:#626976;font-family:var(--mono);font-size:.58rem;font-weight:800}.output-status.done{background:#EAFBC0;color:#35420A}.output-status.warn{background:#FFE8D8;color:#8A3F12}.output-title{font-size:.9rem;font-weight:800;margin:8px 0}.output-path{font-size:.68rem;color:var(--text-sub);word-break:break-all;line-height:1.5}.output-review{margin-top:auto;padding-top:14px}.output-review a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 12px;border-radius:999px;background:#17191E;color:#fff;text-decoration:none;font-size:.68rem;font-weight:800}.output-empty{color:var(--text-mute);font-size:.78rem}.outputs-more-btn{display:block;margin:18px auto 0;min-height:44px;padding:10px 18px;border:1px solid var(--border);border-radius:999px;background:#fff;color:#17191E;font-size:.72rem;font-weight:800;cursor:pointer}.outputs-more-btn[hidden]{display:none}.outputs-more-btn:hover{background:#F4F5F6}
 @media(max-width:900px){.sunny-control,.outputs-section{padding:40px 24px}.sunny-control-grid{grid-template-columns:1fr}.outputs-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:640px){.nav{padding:0 14px;overflow:hidden}.nav-left{flex:0 0 auto}.nav-logo{margin-right:12px}.nav-center{display:flex;flex:1 1 auto;min-width:0;gap:4px;justify-content:flex-start;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none}.nav-center::-webkit-scrollbar{display:none}.nav-item{flex:0 0 auto;font-size:.61rem;white-space:nowrap;padding-left:10px;padding-right:10px}.nav-greeting,.nav-right{display:none}.sunny-control,.outputs-section{padding:30px 16px}.outputs-grid{grid-template-columns:1fr}.sunny-panel{padding:18px}.sunny-action{flex:1 1 130px}.section-header{font-size:1.55rem}}
 </style>
@@ -1308,9 +1308,9 @@ body{font-family:'Pretendard','Noto Sans KR','Apple SD Gothic Neo',sans-serif;le
     <span class="nav-item active" data-section="hero" role="button" tabindex="0" aria-label="Today 섹션으로 이동">Today</span>
     <span class="nav-item" data-section="mid" role="button" tabindex="0" aria-label="Team 섹션으로 이동">Team</span>
     <span class="nav-item" data-section="quick-links-section" role="button" tabindex="0" aria-label="Quick Links 섹션으로 이동">Quick Links</span>
-    <span class="nav-item" data-section="admin-section" role="button" tabindex="0" aria-label="통합 관리 섹션으로 이동">통합 관리</span>
+    <span class="nav-item" data-section="admin-section" role="button" tabindex="0" aria-label="통합 운영 섹션으로 이동">통합 운영</span>
     <a class="nav-item nav-live" href="https://dash.sunnytoon.com/live_v9.html" onclick="openSunnyLive(event)" style="text-decoration:none" aria-label="WORKTEAM LIVE BOARD 열기">LIVE ↗</a>
-    <span class="nav-item" data-section="outputs-section" role="button" tabindex="0" aria-label="최근 산출물 섹션으로 이동">산출물</span>
+    <span class="nav-item" data-section="outputs-section" role="button" tabindex="0" aria-label="마스터 리스트 섹션으로 이동">마스터 리스트</span>
     <div class="nav-design" style="position:relative;display:flex;align-items:center">
       <a class="nav-item nav-design-home" href="https://home.sunnytoon.com/design/" style="text-decoration:none;padding-right:3px" aria-label="디자인 MD 전체 모음 열기">Design</a>
       <button class="design-toggle" type="button" aria-label="회사별 디자인 메뉴" aria-haspopup="true" aria-expanded="false">▾</button>
@@ -1354,7 +1354,7 @@ body{font-family:'Pretendard','Noto Sans KR','Apple SD Gothic Neo',sans-serif;le
         <p>Codex 작업 요청 · 이어서 수정 · 산출물 검토</p>
         <div class="sunny-actions">
           <button class="sunny-action primary" type="button" onclick="openPersonaModal('codex')">코디에게 말하기</button>
-          <a class="sunny-action" href="#outputs-section">최근 산출물</a>
+          <a class="sunny-action" href="#outputs-section">마스터 리스트</a>
         </div>
       </article>
     </div>
@@ -1672,10 +1672,11 @@ body{font-family:'Pretendard','Noto Sans KR','Apple SD Gothic Neo',sans-serif;le
   <!-- ★ 2026-05-14: 옛 NEWS·DEADLINES 섹션 제거 (= 달력·뉴스 = 인트로로 이동) -->
 
   <section class="outputs-section reveal" id="outputs-section">
-    <div class="section-eyebrow">AUTO REGISTERED</div>
-    <div class="section-header">최근 산출물</div>
-    <div class="prod-sub">파일 · 버전 · 검토 상태</div>
-    <div class="outputs-grid" id="outputsGrid"><div class="output-empty">산출물을 불러오는 중…</div></div>
+    <div class="section-eyebrow">MASTER LIST</div>
+    <div class="section-header">마스터 리스트</div>
+    <div class="prod-sub">최종 납품본만 집계합니다. WIP·미리보기·QC 파일은 제외됩니다.</div>
+    <div class="outputs-grid" id="outputsGrid"><div class="output-empty">마스터 리스트를 불러오는 중…</div></div>
+    <button class="outputs-more-btn" id="outputsMoreBtn" type="button" hidden>전체 마스터 보기</button>
   </section>
 
   <!-- ═══ LIVE STATUS ═══ (★ 대표님 로그인(토큰) 후에만 노출 · 비로그인 숨김, 2026-07-16 리안 v6) -->
@@ -1702,8 +1703,8 @@ body{font-family:'Pretendard','Noto Sans KR','Apple SD Gothic Neo',sans-serif;le
 
   <!-- ═══ ADMIN HUB ═══ (= 3 프로그램 관리 진입 + 페르소나, 디자인 토큰 일관) -->
   <section class="admin-section reveal" id="admin-section">
-    <div class="section-eyebrow">Admin Hub</div>
-    <div class="section-header">통합 관리</div>
+    <div class="section-eyebrow">Operations Hub</div>
+    <div class="section-header">통합 운영</div>
     <div style="color:var(--text-mute);font-size:0.78rem;margin-top:-22px;margin-bottom:4px;">SUNNY 3 프로그램 + 페르소나 공개 설정 · 한 곳 진입</div>
 
     <div class="admin-grid">
@@ -5009,14 +5010,13 @@ renderYt();
 async function loadSunnyOutputs(){
   const grid=document.getElementById('outputsGrid'); if(!grid) return;
   try{
-    const responses=await Promise.all([
-      fetch('data/outputs.json?t='+Date.now(),{cache:'no-store'}),
-      fetch('data/outputs_2026.json?t='+Date.now(),{cache:'no-store'})
-    ]);
-    if(!responses[0].ok) throw new Error('HTTP '+responses[0].status);
-    const current=await responses[0].json();
-    const archive=responses[1].ok?await responses[1].json():{items:[]};
-    const merged=[...(current.items||[]),...(archive.items||[])];
+    const response=await fetch('data/outputs.json?t='+Date.now(),{cache:'no-store'});
+    if(!response.ok) throw new Error('HTTP '+response.status);
+    const current=await response.json();
+    const merged=(current.items||[]).filter(function(o){
+      const text=String(o.status||'')+' '+String(o.title||'')+' '+String(o.path||'');
+      return o.master===true || /(마스터|master|최종|final|deliverable)/i.test(text);
+    });
     const seen=new Set();
     const items=merged.filter(function(o){
       const date=String(o.modified||o.created||o.date||'');
@@ -5024,18 +5024,32 @@ async function loadSunnyOutputs(){
       if(!key||seen.has(key)||!date.startsWith('2026')) return false;
       seen.add(key); return true;
     }).sort(function(a,b){return String(b.modified||b.created||b.date||'').localeCompare(String(a.modified||a.created||a.date||''));});
-    if(!items.length){grid.innerHTML='<div class="output-empty">아직 등록된 산출물이 없습니다.</div>';return;}
+    if(!items.length){grid.innerHTML='<div class="output-empty">아직 등록된 마스터 산출물이 없습니다.</div>';return;}
     const heading=document.querySelector('#outputs-section .section-header');
-    if(heading) heading.textContent='2026 산출물 전체 · '+items.length+'개';
-    grid.innerHTML=items.map(function(o){
+    if(heading) heading.textContent='2026 마스터 리스트 · '+items.length+'개';
+    const moreBtn=document.getElementById('outputsMoreBtn');
+    let expanded=false;
+    function drawMasterList(){
+      const visible=expanded?items:items.slice(0,6);
+      grid.innerHTML=visible.map(function(o){
       const status=o.status||'검토대기', title=o.title||o.name||'산출물', path=o.path||o.url||'', who=o.agent||o.owner||'써니팀';
       const date=String(o.modified||o.created||o.date||'').slice(0,10);
       const statusClass=status==='검토완료'?'done':(status==='확인필요'?'warn':'');
       const reviewUrl='https://t.me/'+TG_BOT_USERNAME+'?text='+encodeURIComponent('[코디 요청] [산출물 검토] '+path);
-      return '<article class="output-card"><div class="output-meta">'+escapeHtml(who)+(date?' · '+escapeHtml(date):'')+'</div><div class="output-status '+statusClass+'">'+escapeHtml(status)+'</div><div class="output-title">'+escapeHtml(title)+'</div><div class="output-path">'+escapeHtml(path)+'</div><div class="output-review"><a href="'+reviewUrl+'" target="_blank" rel="noopener">코디 검토 요청</a></div></article>';
-    }).join('');
+        return '<article class="output-card"><div class="output-meta">'+escapeHtml(who)+(date?' · '+escapeHtml(date):'')+'</div><div class="output-status '+statusClass+'">'+escapeHtml(status)+'</div><div class="output-title">'+escapeHtml(title)+'</div><div class="output-path">'+escapeHtml(path)+'</div><div class="output-review"><a href="'+reviewUrl+'" target="_blank" rel="noopener">코디 검토 요청</a></div></article>';
+      }).join('');
+      if(moreBtn){
+        moreBtn.hidden=items.length<=6;
+        moreBtn.textContent=expanded?'최근 6개만 보기':'전체 마스 보기 · '+items.length+'개';
+      }
+    }
+    if(moreBtn) moreBtn.onclick=function(){expanded=!expanded;drawMasterList();};
+    drawMasterList();
   }catch(e){grid.innerHTML='<div class="output-empty">산출물 목록을 불러오지 못했습니다. 새로고침해 주세요.</div>';}
 }
+const adminSection=document.getElementById('admin-section');
+const outputsSection=document.getElementById('outputs-section');
+if(adminSection&&outputsSection) outputsSection.before(adminSection);
 loadSunnyOutputs();
 </script>
 </body>

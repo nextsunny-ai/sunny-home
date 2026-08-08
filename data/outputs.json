@@ -1,275 +1,113 @@
 {
-  "updated": "2026-08-08T20:14:23+09:00",
+  "updated": "2026-08-09T01:57:00+09:00",
   "items": [
     {
-      "id": "file-1786187050345999956",
-      "title": "MUGAN v672 MAZE BASE",
+      "id": "file-1786190225733000040",
+      "title": "MUGAN v688 MASTER OVERHEAD",
       "agent": "써니팀",
       "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v672_정상미로_회귀복도연장_WIP/MUGAN_v672_MAZE_BASE.png",
-      "modified": "2026-08-08T20:04:10+09:00"
+      "status": "마스터",
+      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/_중간확인렌더/2026-08-08_v1/05_전체부감/MUGAN_v688_MASTER_OVERHEAD.png",
+      "modified": "2026-08-08T20:57:05+09:00"
     },
     {
-      "id": "file-1786187041040999889",
-      "title": "MUGAN v672 MAZE JUNCTION",
-      "agent": "써니팀",
+      "id": "file-1785861843371272254",
+      "title": "SUNNY TEAM 마스터 운영로드맵 실행본 v2 2026-08-05",
+      "agent": "코디",
       "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v672_정상미로_회귀복도연장_WIP/MUGAN_v672_MAZE_JUNCTION.png",
-      "modified": "2026-08-08T20:04:01+09:00"
+      "status": "마스터",
+      "path": "SUNNY_TEAM/에이전트시스템/codex/outputs/019fcd81-roadmap/SUNNY_TEAM_마스터_운영로드맵_실행본_v2_2026-08-05.xlsx",
+      "modified": "2026-08-05T01:44:03+09:00"
     },
     {
-      "id": "file-1786186596780999898",
-      "title": "MUGAN v669 GATE START",
+      "id": "file-1785653879803999900",
+      "title": "KB 2 final",
       "agent": "써니팀",
       "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v669_귀문_목재미세편차_WIP/MUGAN_v669_GATE_START.png",
-      "modified": "2026-08-08T19:56:36+09:00"
+      "status": "마스터",
+      "path": "SUNNY_TEAM/프로젝트/일본게임리메이크/게임_닌자자자마루_리메이크/★애니메이션_V5_2026-08-02/FBX/KB_2_final.fbx",
+      "modified": "2026-08-02T15:57:59+09:00"
     },
     {
-      "id": "file-1786186595334000110",
-      "title": "MUGAN v669 GATE HERO",
+      "id": "file-1785653879767999887",
+      "title": "OY 2 final",
       "agent": "써니팀",
       "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v669_귀문_목재미세편차_WIP/MUGAN_v669_GATE_HERO.png",
-      "modified": "2026-08-08T19:56:35+09:00"
+      "status": "마스터",
+      "path": "SUNNY_TEAM/프로젝트/일본게임리메이크/게임_닌자자자마루_리메이크/★애니메이션_V5_2026-08-02/FBX/OY_2_final.fbx",
+      "modified": "2026-08-02T15:57:59+09:00"
     },
     {
-      "id": "file-1786186327617000102",
-      "title": "MUGAN v668 COURTYARD HERO",
+      "id": "file-1785653879730999946",
+      "title": "JJ 3 final",
       "agent": "써니팀",
       "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v668_귀문마당_실제궁붕괴출구_WIP/MUGAN_v668_COURTYARD_HERO.png",
-      "modified": "2026-08-08T19:52:07+09:00"
+      "status": "마스터",
+      "path": "SUNNY_TEAM/프로젝트/일본게임리메이크/게임_닌자자자마루_리메이크/★애니메이션_V5_2026-08-02/FBX/JJ_3_final.fbx",
+      "modified": "2026-08-02T15:57:59+09:00"
     },
     {
-      "id": "file-1786186325963000059",
-      "title": "MUGAN v668 COURTYARD REVERSE",
+      "id": "file-1784734165716639678",
+      "title": "★쟈쟈마루군 티져 마스터 48초 나레이션없음",
       "agent": "써니팀",
       "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v668_귀문마당_실제궁붕괴출구_WIP/MUGAN_v668_COURTYARD_REVERSE.png",
-      "modified": "2026-08-08T19:52:05+09:00"
+      "status": "마스터",
+      "path": "SUNNY_TEAM/프로젝트/일본게임리메이크/게임_닌자자자마루_리메이크/★쇼케이스_2026-07-22/티져 동영상/마스터/★쟈쟈마루군_티져_마스터_48초_나레이션없음.mp4",
+      "modified": "2026-07-23T00:29:25+09:00"
     },
     {
-      "id": "file-1786186324990999937",
-      "title": "MUGAN v668 COURTYARD START",
+      "id": "file-1784734165767697485",
+      "title": "쟈쟈마루군 티져 마스터 타이틀16초 나레이션",
       "agent": "써니팀",
       "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v668_귀문마당_실제궁붕괴출구_WIP/MUGAN_v668_COURTYARD_START.png",
-      "modified": "2026-08-08T19:52:04+09:00"
+      "status": "마스터",
+      "path": "SUNNY_TEAM/프로젝트/일본게임리메이크/게임_닌자자자마루_리메이크/★쇼케이스_2026-07-22/티져 동영상/마스터/쟈쟈마루군_티져_마스터_타이틀16초_나레이션.mp4",
+      "modified": "2026-07-23T00:29:25+09:00"
     },
     {
-      "id": "file-1786185702039000034",
-      "title": "MUGAN v663 COURTYARD REVERSE",
+      "id": "file-1784734165757379190",
+      "title": "쟈쟈마루군 티져 마스터 타이틀16초 나레이션없음",
       "agent": "써니팀",
       "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v663_귀문마당_붕괴출구연결_WIP/MUGAN_v663_COURTYARD_REVERSE.png",
-      "modified": "2026-08-08T19:41:42+09:00"
+      "status": "마스터",
+      "path": "SUNNY_TEAM/프로젝트/일본게임리메이크/게임_닌자자자마루_리메이크/★쇼케이스_2026-07-22/티져 동영상/마스터/쟈쟈마루군_티져_마스터_타이틀16초_나레이션없음.mp4",
+      "modified": "2026-07-23T00:29:25+09:00"
     },
     {
-      "id": "file-1786185701079999923",
-      "title": "MUGAN v663 COURTYARD HERO",
+      "id": "file-1784734165745756341",
+      "title": "★쟈쟈마루군 티져 마스터 48초 나레이션",
       "agent": "써니팀",
       "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v663_귀문마당_붕괴출구연결_WIP/MUGAN_v663_COURTYARD_HERO.png",
-      "modified": "2026-08-08T19:41:41+09:00"
+      "status": "마스터",
+      "path": "SUNNY_TEAM/프로젝트/일본게임리메이크/게임_닌자자자마루_리메이크/★쇼케이스_2026-07-22/티져 동영상/마스터/★쟈쟈마루군_티져_마스터_48초_나레이션.mp4",
+      "modified": "2026-07-23T00:29:25+09:00"
     },
     {
-      "id": "file-1786185699441999912",
-      "title": "MUGAN v663 COURTYARD MID",
+      "id": "file-1784483086786000013",
+      "title": "GL master v2",
       "agent": "써니팀",
       "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v663_귀문마당_붕괴출구연결_WIP/MUGAN_v663_COURTYARD_MID.png",
-      "modified": "2026-08-08T19:41:39+09:00"
+      "status": "마스터",
+      "path": "SUNNY_TEAM/프로젝트/일본게임리메이크/게임_닌자자자마루_리메이크/월드요괴얼라이언스_대륙별기획_2026-07-20/_v2_원형검증/_검증생성_참고/GL_master_v2.png",
+      "modified": "2026-07-20T02:44:46+09:00"
     },
     {
-      "id": "file-1786185697927999973",
-      "title": "MUGAN v663 COURTYARD START",
+      "id": "file-1784480200266000032",
+      "title": "GL digital master",
       "agent": "써니팀",
       "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v663_귀문마당_붕괴출구연결_WIP/MUGAN_v663_COURTYARD_START.png",
-      "modified": "2026-08-08T19:41:37+09:00"
+      "status": "마스터",
+      "path": "SUNNY_TEAM/프로젝트/일본게임리메이크/게임_닌자자자마루_리메이크/월드요괴얼라이언스_대륙별기획_2026-07-20/_v2_원형검증/_검증생성_참고/GL_digital_master.png",
+      "modified": "2026-07-20T01:56:40+09:00"
     },
     {
-      "id": "file-1786185371832000017",
-      "title": "MUGAN v661 ALTAR REVERSE",
+      "id": "file-1784252666119999885",
+      "title": "final check 00001 ",
       "agent": "써니팀",
       "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v661_제단광장_한지표면_WIP/MUGAN_v661_ALTAR_REVERSE.png",
-      "modified": "2026-08-08T19:36:11+09:00"
-    },
-    {
-      "id": "file-1786185357461999893",
-      "title": "MUGAN v661 ALTAR WIDE",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v661_제단광장_한지표면_WIP/MUGAN_v661_ALTAR_WIDE.png",
-      "modified": "2026-08-08T19:35:57+09:00"
-    },
-    {
-      "id": "file-1786185341664000034",
-      "title": "MUGAN v661 ALTAR HERO",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v661_제단광장_한지표면_WIP/MUGAN_v661_ALTAR_HERO.png",
-      "modified": "2026-08-08T19:35:41+09:00"
-    },
-    {
-      "id": "file-1786185322045000076",
-      "title": "MUGAN v661 ALTAR HANJI SURFACES",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v661_제단광장_한지표면_WIP/MUGAN_v661_ALTAR_HANJI_SURFACES.blend",
-      "modified": "2026-08-08T19:35:22+09:00"
-    },
-    {
-      "id": "file-1786185140592999935",
-      "title": "MUGAN v660 ALTAR REVERSE",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v660_제단광장_공간깊이_WIP/MUGAN_v660_ALTAR_REVERSE.png",
-      "modified": "2026-08-08T19:32:20+09:00"
-    },
-    {
-      "id": "file-1786185126648999929",
-      "title": "MUGAN v660 ALTAR WIDE",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v660_제단광장_공간깊이_WIP/MUGAN_v660_ALTAR_WIDE.png",
-      "modified": "2026-08-08T19:32:06+09:00"
-    },
-    {
-      "id": "file-1786185111275000095",
-      "title": "MUGAN v660 ALTAR HERO",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v660_제단광장_공간깊이_WIP/MUGAN_v660_ALTAR_HERO.png",
-      "modified": "2026-08-08T19:31:51+09:00"
-    },
-    {
-      "id": "file-1786185091697000026",
-      "title": "MUGAN v660 ALTAR HALL DEPTH",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v660_제단광장_공간깊이_WIP/MUGAN_v660_ALTAR_HALL_DEPTH.blend",
-      "modified": "2026-08-08T19:31:31+09:00"
-    },
-    {
-      "id": "file-1786184694516999959",
-      "title": "MUGAN v659 MUTATION REVERSE",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v659_변이복도_적청분리_WIP/MUGAN_v659_MUTATION_REVERSE.png",
-      "modified": "2026-08-08T19:24:54+09:00"
-    },
-    {
-      "id": "file-1786184684128000020",
-      "title": "MUGAN v659 MUTATION LATE",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v659_변이복도_적청분리_WIP/MUGAN_v659_MUTATION_LATE.png",
-      "modified": "2026-08-08T19:24:44+09:00"
-    },
-    {
-      "id": "file-1786184680259999990",
-      "title": "MUGAN v659 MUTATION MID",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v659_변이복도_적청분리_WIP/MUGAN_v659_MUTATION_MID.png",
-      "modified": "2026-08-08T19:24:40+09:00"
-    },
-    {
-      "id": "file-1786184668857000112",
-      "title": "MUGAN v659 MUTATION RED REBALANCED",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v659_변이복도_적청분리_WIP/MUGAN_v659_MUTATION_RED_REBALANCED.blend",
-      "modified": "2026-08-08T19:24:28+09:00"
-    },
-    {
-      "id": "file-1786184474651000022",
-      "title": "MUGAN v658 MUTATION REVERSE",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v658_변이복도_후반붕괴강화_WIP/MUGAN_v658_MUTATION_REVERSE.png",
-      "modified": "2026-08-08T19:21:14+09:00"
-    },
-    {
-      "id": "file-1786184467926000118",
-      "title": "MUGAN v658 MUTATION LATE",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v658_변이복도_후반붕괴강화_WIP/MUGAN_v658_MUTATION_LATE.png",
-      "modified": "2026-08-08T19:21:07+09:00"
-    },
-    {
-      "id": "file-1786184465108999967",
-      "title": "MUGAN v658 MUTATION MID",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v658_변이복도_후반붕괴강화_WIP/MUGAN_v658_MUTATION_MID.png",
-      "modified": "2026-08-08T19:21:05+09:00"
-    },
-    {
-      "id": "file-1786184456894000053",
-      "title": "MUGAN v658 MUTATION COLLAPSE STRENGTHENED",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v658_변이복도_후반붕괴강화_WIP/MUGAN_v658_MUTATION_COLLAPSE_STRENGTHENED.blend",
-      "modified": "2026-08-08T19:20:56+09:00"
-    },
-    {
-      "id": "file-1786183795334000110",
-      "title": "MUGAN v654 JUNCTION",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v654_정상미로_T분기보행폭_WIP/MUGAN_v654_JUNCTION.png",
-      "modified": "2026-08-08T19:09:55+09:00"
-    },
-    {
-      "id": "file-1786183787063999891",
-      "title": "MUGAN v654 BASE CORRIDOR",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v654_정상미로_T분기보행폭_WIP/MUGAN_v654_BASE_CORRIDOR.png",
-      "modified": "2026-08-08T19:09:47+09:00"
-    },
-    {
-      "id": "file-1786183774746999979",
-      "title": "MUGAN v654 MAZE T PATHS WIDENED",
-      "agent": "써니팀",
-      "pc": "맥미니",
-      "status": "검토대기",
-      "path": "SUNNY_TEAM/프로젝트/조선요괴전 XR/_제작/03_asset/env/무간회랑/01_model/work/노트북_v654_정상미로_T분기보행폭_WIP/MUGAN_v654_MAZE_T_PATHS_WIDENED.blend",
-      "modified": "2026-08-08T19:09:34+09:00"
+      "status": "마스터",
+      "path": "SUNNY_TEAM/프로젝트/ANIMATION/_수신함/기타/final_check_00001_.png",
+      "modified": "2026-07-17T10:44:26+09:00"
     }
   ]
 }
