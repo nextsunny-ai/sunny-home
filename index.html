@@ -1301,18 +1301,22 @@ body{font-family:'Pretendard','Noto Sans KR','Apple SD Gothic Neo',sans-serif;le
     <span class="nav-item" data-section="admin-section" role="button" tabindex="0" aria-label="통합 관리 섹션으로 이동">통합 관리</span>
     <a class="nav-item nav-live" href="https://dash.sunnytoon.com/live_v9.html" onclick="openSunnyLive(event)" style="text-decoration:none" aria-label="WORKTEAM LIVE BOARD 열기">LIVE ↗</a>
     <span class="nav-item" data-section="outputs-section" role="button" tabindex="0" aria-label="최근 산출물 섹션으로 이동">산출물</span>
-    <span class="nav-item nav-design" tabindex="0" aria-haspopup="true" style="position:relative;cursor:pointer">
-      Design <span style="font-size:9px;opacity:0.5;margin-left:4px">▾</span>
-      <span class="design-dropdown" style="position:absolute;top:100%;right:0;background:var(--bg,#fff);border:1px solid var(--border,#e5e5e7);border-radius:8px;padding:8px;min-width:180px;box-shadow:0 8px 24px rgba(0,0,0,0.08);display:none;flex-direction:column;gap:2px;z-index:100;margin-top:8px">
-        <a href="/design/" style="display:block;padding:8px 12px;text-decoration:none;color:inherit;border-radius:4px;font-size:0.85rem">Sunny <span style="opacity:0.5;font-size:0.75rem">— 대표님</span></a>
-        <a href="/birch-design/" style="display:block;padding:8px 12px;text-decoration:none;color:inherit;border-radius:4px;font-size:0.85rem">Birch Sound <span style="opacity:0.5;font-size:0.75rem">— 버치</span></a>
-        <a href="/nextart-design/" style="display:block;padding:8px 12px;text-decoration:none;color:inherit;border-radius:4px;font-size:0.85rem">Nextart <span style="opacity:0.5;font-size:0.75rem">— 넥스트아트</span></a>
-      </span>
-    </span>
+    <div class="nav-design" style="position:relative;display:flex;align-items:center">
+      <a class="nav-item nav-design-home" href="https://home.sunnytoon.com/design/" style="text-decoration:none;padding-right:3px" aria-label="디자인 MD 전체 모음 열기">Design</a>
+      <button class="design-toggle" type="button" aria-label="회사별 디자인 메뉴" aria-haspopup="true" aria-expanded="false">▾</button>
+      <div class="design-dropdown" style="position:absolute;top:100%;right:0;background:var(--bg,#fff);border:1px solid var(--border,#e5e5e7);border-radius:8px;padding:8px;min-width:210px;box-shadow:0 8px 24px rgba(0,0,0,0.08);display:none;flex-direction:column;gap:2px;z-index:100;margin-top:8px">
+        <a href="https://home.sunnytoon.com/design/" style="display:block;padding:8px 12px;text-decoration:none;color:inherit;border-radius:4px;font-size:0.85rem;font-weight:800">디자인 MD 전체 모음</a>
+        <a href="https://home.sunnytoon.com/design/" style="display:block;padding:8px 12px;text-decoration:none;color:inherit;border-radius:4px;font-size:0.85rem">Sunny <span style="opacity:0.5;font-size:0.75rem">— 대표님</span></a>
+        <a href="https://home.sunnytoon.com/birch-design/" style="display:block;padding:8px 12px;text-decoration:none;color:inherit;border-radius:4px;font-size:0.85rem">Birch Sound <span style="opacity:0.5;font-size:0.75rem">— 버치</span></a>
+        <a href="https://home.sunnytoon.com/nextart-design/" style="display:block;padding:8px 12px;text-decoration:none;color:inherit;border-radius:4px;font-size:0.85rem">Nextart <span style="opacity:0.5;font-size:0.75rem">— 넥스트아트</span></a>
+      </div>
+    </div>
   </div>
   <style>
+    .design-toggle{border:0;background:transparent;color:inherit;font-size:10px;opacity:.58;padding:12px 8px 12px 3px;cursor:pointer}
     .nav-design:hover .design-dropdown,
-    .nav-design:focus-within .design-dropdown { display:flex !important; }
+    .nav-design:focus-within .design-dropdown,
+    .nav-design.is-open .design-dropdown { display:flex !important; }
     .design-dropdown a:hover { background:rgba(0,0,0,0.04); color:var(--text-sub,#666) !important; }
   </style>
   <div class="nav-group nav-right">
@@ -2437,6 +2441,25 @@ document.querySelectorAll('.nav-item').forEach(item => {
     if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); item.click(); }
   });
 });
+
+// Design 메뉴: hover가 없는 아이폰·확장 브라우저에서도 클릭으로 고정한다.
+const designNav = document.querySelector('.nav-design');
+const designToggle = document.querySelector('.design-toggle');
+if (designNav && designToggle) {
+  designToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const open = designNav.classList.toggle('is-open');
+    designToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  designNav.querySelectorAll('.design-dropdown a').forEach((link) => {
+    link.addEventListener('click', (e) => e.stopPropagation());
+  });
+  document.addEventListener('click', (e) => {
+    if (designNav.contains(e.target)) return;
+    designNav.classList.remove('is-open');
+    designToggle.setAttribute('aria-expanded', 'false');
+  });
+}
 
 // ═══ SUNNY TEAM ═══
 // 순서: 1.지니 비서 → 2~5.4사 팀장 → 6.테오·7.리안 (★ 자주) → 8~11.에이전시 → 12.카이
