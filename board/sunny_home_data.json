@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-09T23:34:12+09:00",
+  "updated": "2026-08-10T06:18:56+09:00",
   "categories": [
     {
       "id": "ai",
@@ -58,6 +58,24 @@
           "published": "2026-08-06",
           "image": "",
           "first_seen": "2026-08-07T09:58:51+09:00"
+        },
+        {
+          "title": "미토스를 해부했는가, 클로드 코드를 해부했는가 - 하이테크정보",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE92ZjFPUzNkMmRncWdMRURjTkxOeVllTUFuVkFSTGg0X1RkcXpTTjVKYUFodmk5Z01xWGtURmxPVWJWNk9COXZWMkZhUG9uM3hPV3diRkhHaVVuZGU3Yk52SjRtZFhldFo00gFsQVVfeXFMTi1WSGxtcnFjcnFzbDAtRS1zU1h1TjFjTGxVRnlsZ2JEa2dhWGlzazAwQUp3RWRucEN3emhGVGZ2eWxRbHNZV1ZCTjFPSm5TQ29PWmphRHcxM0UzOFQyWDRqLWhNUEhXNjB1eWxI?oc=5",
+          "source": "하이테크정보",
+          "summary": "",
+          "published": "2026-08-06",
+          "image": "",
+          "first_seen": "2026-08-10T06:18:56+09:00"
+        },
+        {
+          "title": "차세대 모델 GPT-5.6 Sol 미리 살펴보기 - openai.com",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1JY2x2cXlzYVI5aEZQZDEyeVIyUVJ1c002c0IzdWxVeGxnM2FkNmhtNnFPb2F5ZUNGQ2lPRnlWN1drSmhaUWFPM1ZVQUk4WmFpUDdTeWdBaXdla2V2SXNqR0hCc0Q?oc=5",
+          "source": "openai.com",
+          "summary": "",
+          "published": "2026-08-06",
+          "image": "",
+          "first_seen": "2026-08-10T06:18:56+09:00"
         },
         {
           "title": "픽스AI, 이미지 생성 넘어 ‘AI 콘텐츠 제작 파이프라인’으로… 통합형 창작 도구 ‘PixAI Studio’ 정식 출시 - 뉴스와이어",
@@ -256,24 +274,6 @@
           "published": "2026-07-31",
           "image": "",
           "first_seen": "2026-08-01T01:01:35+09:00"
-        },
-        {
-          "title": "[게시판] 일레븐랩스, 기업용 AI 에이전트에 고객상담 채널 확대 등 단신 - AI타임스",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBkcnlXZWxNVkN3Nm5Pemw5WTMta0VCeWMwdUg0Tm9URDRDenNtZ1plX004Q1UxaHlsZ2UtVW5CVndIMThXSnhoZzA4NUw2XzNlamRaYzkwVXItU2pmWU1VOEo2M0Npblhrc0E?oc=5",
-          "source": "AI타임스",
-          "summary": "",
-          "published": "2026-07-31",
-          "image": "",
-          "first_seen": "2026-08-04T01:25:30+09:00"
-        },
-        {
-          "title": "GPT-5.6으로 가격 대비 성능의 새로운 기준 제시 - OpenAI",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQWl9zQWdmSWdwc0tzdGdnQnJMeWQ2R1RpTktQcGRDd2JkSk5IM2hubGJfQ3NrRlBrT2hxQWgyS1Z2WXZDVXRzVzZVSE1oZnFnRHB6Y05KaWFzbm93RWo0alNKNjBqYTRpdWxyOUFiVzdoWUtrWk00cUlnV2NHQVE0VGZjRlJUejRlbkNlZVVn?oc=5",
-          "source": "OpenAI",
-          "summary": "",
-          "published": "2026-07-31",
-          "image": "",
-          "first_seen": "2026-08-05T01:11:44+09:00"
         }
       ]
     },
@@ -289,6 +289,15 @@
           "published": "2026-08-09",
           "image": "",
           "first_seen": "2026-08-09T23:34:12+09:00"
+        },
+        {
+          "title": "OTT, 콘텐츠 확보에서 '발견'으로…취향 저격이 이탈 막는다 - 전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9lSmd6RW1BSFBldjRoeGtuWWg0TW9xaVhiRzBsQUlpSHVTSnllaTlUeDdWOHBjQWNlcjJqZ1ljQThQdS1VTmpVMktDX0RVQQ?oc=5",
+          "source": "전자신문",
+          "summary": "",
+          "published": "2026-08-07",
+          "image": "",
+          "first_seen": "2026-08-10T06:18:56+09:00"
         },
         {
           "title": "“종주국 안주했다간 공멸합니다, 진짜 메가 IP 되려면요…” - fortunekorea.co.kr",
@@ -487,15 +496,6 @@
           "published": "2026-07-27",
           "image": "",
           "first_seen": "2026-08-07T09:58:51+09:00"
-        },
-        {
-          "title": "경콘진, OTT 콘텐츠 지원 사업 안내 캠페인 ‘PLAY GCA!’로 맞춤형 선택 돕는다 - 경기신문",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE00YWVfdC1UQTFOYTNUdXpkNEhCLWxXQXNvR1NTb0xLalFSMGR2NC1DdThMRlN2S2hYekV6QWViVFpNRlhTQnRwLU1WNWUydDdrWTdjV1lHMXJTZjcxMmRXUTdB?oc=5",
-          "source": "경기신문",
-          "summary": "",
-          "published": "2026-07-26",
-          "image": "",
-          "first_seen": "2026-07-27T00:05:33+09:00"
         },
         {
           "title": "경콘진, OTT형 'PLAY GCA!'로 콘텐츠 지원 3개 트랙 안내 - 전자신문",
@@ -808,15 +808,6 @@
           "published": "2026-07-20",
           "image": "",
           "first_seen": "2026-08-01T06:54:15+09:00"
-        },
-        {
-          "title": "[공연소식] 세종문화회관, 8월 수원시향과 '누구나 클래식' 공연 - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9YYVh6a1VJMktaVkpmZ1U2Vms0QVlJMGJZWHZwMVZINVZtaXI1R0JTM1lSY3VfWFBGTjk3RjdEVi1ZaEh3b01vSWlEdEI1M2pmZUx1dXJsMFJQamfSAWBBVV95cUxQVVJLSG02Q3h4dHRrWFR6Y1Y5WG1sN1lFMzRmbEppSFlOSlZURjBXenhvTksxUmNSdkZTMjQzaXN1czNaSS02ZURhdlFXQWZ1TXlLanFQSUJ3dzlpTkhfZjQ?oc=5",
-          "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-07-13",
-          "image": "",
-          "first_seen": "2026-07-27T00:05:33+09:00"
         }
       ]
     },
@@ -967,15 +958,6 @@
           "published": "2026-07-26",
           "image": "",
           "first_seen": "2026-08-07T09:58:51+09:00"
-        },
-        {
-          "title": "조선 거장들이 빛과 영상으로 되살아난다, 서산문화회관, 여름방학 특별 미디어아트 전시 개막 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9DX0tWQ1RjQjhRdElETmlXcWtOSE9heVBkaGItc25xWnZSVTJ4V1h0Y0pVNHFzWnEwY1JMTVdoWVVieVBISmNnS0ZtSXFIV1E?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-07-25",
-          "image": "",
-          "first_seen": "2026-07-27T00:05:33+09:00"
         },
         {
           "title": "몰입형 미디어아트 전시 '빛의 지층(The Stratum of Light): 화성, 억겁 위에 피어나다' 동탄중앙도서관 지식의 숲에서 8월 1일 개최 - 화성인터넷신문",
@@ -1491,6 +1473,15 @@
       "name": "페스티벌",
       "items": [
         {
+          "title": "호찌민시, '2026 사이공 국제 기타 페스티벌’ 개최…한국 기타리스트도 참여 - Thông tấn xã Việt Nam",
+          "url": "https://news.google.com/rss/articles/CBMi0gZBVV95cUxNLWl5ZEtJMGo5bm9KaHVRYTRtZXYwOHNHcjhIV3ZzcnJDSkNtdV9ZbHM3Y0RvQ0tlLXhwcmlad3pkZ1lGSU5QM3JLNnNxRmRVQW1pYTA3UTZBUWFVUVV0ZlVaeWFEWTh0N2tEZnZwNDcxc2kzcUhZLUVJaU54aXI2S0JMdWhmdFQ4Q19nUnhoRVZBQzlteXVDV0RadnJqWUFlVU93Sm9paGJNa1dNYmxMRjJ0TmF4S2I2d1VJSjg1RlVDeWdqalNqX2lYR2V1Y2VhZG54SmpIT2lBSzk2MjJnREdMOS1FWkZDd3ZZRVZIVHhldlp3dGlUVTVqdVRoMUtQV1hqZGlIUVl5T25PZkRCeXVIM3lEVkdCYUw3YlB5Z1JFYkFhZUNOWXQ1cWEtSzFaQ0dZcXRlSnpMRXZVc2V3WTZqYzJXaXMyV1dvdnF2ZmE2a2toWmpkMVNvUE44MGt5NXRvZ0FfUjVxWlc1eW9GRGl1NFJrSlh0a0wzLW9rekphaE13YmozNlBIWXg5WVZPQXJuUTB2UFpmU3RVdUdYaXh4aWQtWFJfU3d1S0MyNzcxVzJmYmh6NEVQWEhnQUQ1V2RzZ1l3YUF2bWpNYzIzY29BLUtHbkZkbU9pYmJOSXlOXzlhY1Q3bFZodXoxUmdZeFNUMHpHX0hLZG9RSHhldFNuUXNzaEY2bS1kYlBTaVRBNWZZZ3NrYVBHM2VCbjNXcEJvOWV1LUk1OGFCR0JXTl9mT1pqaTBFTTJ5SkwwaUkxYnRpaVlSVUE4VWNrRzJ2OW1xbVBOd2R4Q0VBTF9WMTk3TkpnUi1Ca2NUMU9JS3Z3ckI3ZzVIajMtVy1WSkMtVm8yaUhhRkhwTG80SjBEbDV5V1J5MUFYS2xEV3lOMjlFNmFCWG9neVlCX0NORUFkRFRoZktCV2Uta2VjTnpzV1JtOFE3MHk1Zy1PNHRTcEF5WDVvNkE3Nm5UbzhBUUpRS1p0Y0FOcVpnY1lrdElHTnVHU2Y2aU1aR0ZsTjh6ZkhNT3pmdlhkbEZlVFlsaUpzYW5EQXh0T24xNmNWTGQ1R000aFJiRE4zMVo5V3VndGpsaXY5NG1vcjdfR0I4dVhON3poWUdwSW9yTDgxbGNLdEF3?oc=5",
+          "source": "Thông tấn xã Việt Nam",
+          "summary": "",
+          "published": "2026-08-09",
+          "image": "",
+          "first_seen": "2026-08-10T06:18:56+09:00"
+        },
+        {
           "title": "음악으로 세계를 잇는 글로벌 축제!🌏 2026 인천펜타포트 락 페스티벌😎 : 네이버 블로그 - Naver Blog",
           "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQR3NpSXBUWG5iUEFYLTNocXk0NTZOMHRxRmQtd0JuVFNFVWd0MzF2M3pONXpkMHI5dF9NVE1RQ0xCakJYYl94amY5TFo1RXVUemQ4dDlodkM1TU9GLU14SFhuekw4b3pjX1hGLUVsVUVRdzl2Z01PY3hCcjBkYmx4NG9qMEd2dHRxVE92RjFlbVk?oc=5",
           "source": "Naver Blog",
@@ -1746,15 +1737,6 @@
           "title": "한국컴패션, '블루웨이브 뮤직페스티벌 2026' 개최… 음악으로 어린이에게 희망 전한다 - 뉴스인",
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5LR2VmdUVId0hjNGRiaGs5eFE1TF8xUlk4dUIwWUhjNDhReDU0ZkNFU0ZYaWdRUXNiWGtDbEstSzFRdHBfRzlEbngwRXk4N29VRENKYUpZU1NVbEwtZWF5UjFYMXFLbnh2WGJN?oc=5",
           "source": "뉴스인",
-          "summary": "",
-          "published": "2026-07-27",
-          "image": "",
-          "first_seen": "2026-07-28T01:19:54+09:00"
-        },
-        {
-          "title": "음악으로 전하는 희망…'블루웨이브 뮤직페스티벌' 열린다 - 데일리굿뉴스",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB6R0NYN0N5Slp3a3ZFT1o4TlMzX3h6alRXQVB1U3Ixd2FiVk1rb2FIYW4ydEhrNDdmbURoTnNjZVB6VmxQcG1SMVdlVTBNU1JUZi1FcXN5aUR5M2FfVXFsblRMbFQySE91UUk0c1FyYXXSAXBBVV95cUxQekdDWDdDeUpad2t2RU9aOE5TM194empUV0FQdVNyMXdhYlZNa29hSGFuMnRIazQ3Zm1EaE5zY2VQelZsUHBtUjFXZVUwTVNSVGYtRXFzeWlEeTNhX1VxbG5UTGxUMkhPdVFJNHNRcmF1?oc=5",
-          "source": "데일리굿뉴스",
           "summary": "",
           "published": "2026-07-27",
           "image": "",
