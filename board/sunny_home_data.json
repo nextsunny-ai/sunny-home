@@ -1,10 +1,19 @@
 {
-  "updated": "2026-08-09T06:16:51+09:00",
+  "updated": "2026-08-09T23:34:12+09:00",
   "categories": [
     {
       "id": "ai",
       "name": "AI 트렌드",
       "items": [
+        {
+          "title": "스페이스XAI, ‘이매진 이미지 2.0’ 공개...생성 넘어 정밀 편집·일관성 집중 - AI타임스",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9hY3BuUWxrdEtkN056bEdOdjFtVzdYelc2RTloZGtEeVg5a1dmZlpCRjVjMDlVR0hrVmJNS2JickczNWVTWHBBb0J0em1NNndvU3pHT3JmWkRBVHh3alZoS2RiSzI1UkMxeUE?oc=5",
+          "source": "AI타임스",
+          "summary": "",
+          "published": "2026-08-09",
+          "image": "",
+          "first_seen": "2026-08-09T23:34:12+09:00"
+        },
         {
           "title": "[기획] 9초 만에 회사 DB 삭제한 AI… “AI 에이전트, 책임은 누구에게” - 법조신문",
           "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBaamk1Smw0OENkVUNjN09vdGtxWTRVajNRb3hxTnNnUkRvT3JzNWlpU1p6VG4zOXp2WmNIb1MwXzlERzlIVzUwenhxendLbENYeHZKU0c0RWVrdk1XUlotQ3V5NHRNb0xQdEM3dmlTZw?oc=5",
@@ -265,15 +274,6 @@
           "published": "2026-07-31",
           "image": "",
           "first_seen": "2026-08-05T01:11:44+09:00"
-        },
-        {
-          "title": "오픈AI, 전 세계 ‘학술 연구자 위한 챗GPT’ 무료 제공…2027년까지 최대 10만 명 지원 - 인공지능신문",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE51TXl4TUdFUEdGR0YwaDc0X1JoQzVhMVJ4LVhoc19fT0pYUVJTWFBuWGxxSjNQeTkyREpzMmRoeVM4dDV3dmkzM3RCV0hSV25CaV9HUVdzMGxiVUxuOER3ZnBGN1V1X28?oc=5",
-          "source": "인공지능신문",
-          "summary": "",
-          "published": "2026-07-31",
-          "image": "",
-          "first_seen": "2026-08-09T06:16:51+09:00"
         }
       ]
     },
@@ -281,6 +281,15 @@
       "id": "content_ip",
       "name": "콘텐츠·IP",
       "items": [
+        {
+          "title": "[기획] 세계로 뻗는 K콘텐츠… 中企 성장 열쇠는 ‘IP 확보’ - m-i.kr",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFAzUTZMLXFLUU1jZTkza0RJRzdRbFZNZFRvejZuaGpnbld0WUVuLTBIR0hsSjVJNW1mbGx1bDM4Z1dOX21wU3JlNkNkZDdGV2gySC03bGFraDB4TzVsNmtydjk2YXU?oc=5",
+          "source": "m-i.kr",
+          "summary": "",
+          "published": "2026-08-09",
+          "image": "",
+          "first_seen": "2026-08-09T23:34:12+09:00"
+        },
         {
           "title": "“종주국 안주했다간 공멸합니다, 진짜 메가 IP 되려면요…” - fortunekorea.co.kr",
           "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBacGxtMUhDOGdZQ3diZWJFUGRxXzM4anJWSThBZ2hLdTZVUGZlZkt0dEwtNlNnRUlKUVdNVkNYbGhLS3FoNkk4aWdGZnJGdEF5d0x4RTNwSGxkX3djOWlkYkRsUFd2Zzd1MHh6a1QwNHlYZ9IBdkFVX3lxTE80QkxheWlVRExqRXBJWVZGMlQ1NF8tNTlac1Z0SzI2aGRyeXh4eXY5NVBRUmJTRG1Hbm5qb29WeFhMcHFod1o5WUVOczVQRVBSS2J3R2dseVFNVGczX2FlYWxOcmk2cWZERS1mTU1jc0tVNGZ2M2c?oc=5",
@@ -541,15 +550,6 @@
           "published": "2026-07-23",
           "image": "",
           "first_seen": "2026-08-01T06:54:15+09:00"
-        },
-        {
-          "title": "K-콘텐츠 IP 영토 넓힌 '캐릭터 라이선싱 페어 2026'…콘진원, 367억 비즈니스 성과 - g-enews.com",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQUXdxMXdscDlna1lxc1BqeG9SNnctRHNIYWVSMVNIUkk1eGR4SW93Mm9OaGxUbmdIemZoazFta2tlSkpOSGo4eG14QklXbW9iUTRfREQ1cVBHV2VTSXgwazF1YVhiMEF3M2hvZldSUEQ0X1F0ZXhjOUJVZlNfQTZ3Qm5SV0sxRThZSWc?oc=5",
-          "source": "g-enews.com",
-          "summary": "",
-          "published": "2026-07-23",
-          "image": "",
-          "first_seen": "2026-08-05T01:11:44+09:00"
         }
       ]
     },
@@ -825,6 +825,24 @@
       "name": "전시",
       "items": [
         {
+          "title": "대구 엑스코서 ‘반려견 감각 설계형’ 미디어아트 전시 열린다 - 경북신문",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE13VXFaMEJ2NjU0SW53Z1hncVVLWmxuLUxsczdmdTItUjVEdVhQZVRCQjBrRGx5MXNsbWhuaHVIbVZhcklTWU5xSzIyTmpkNkNhWG55U29naVc?oc=5",
+          "source": "경북신문",
+          "summary": "",
+          "published": "2026-08-09",
+          "image": "",
+          "first_seen": "2026-08-09T23:34:12+09:00"
+        },
+        {
+          "title": "빛·영상·음악으로 물드는 문경…몰입형 미디어아트 ‘활짝’ - kyongbuk.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE44dUd4MDdZcTlGOTR4ODhPZkJOLVRBQUFkYlRDVlBVMV91b2lfRmhoWC1hU19KOHliN3ZHYmpDZzBiUDF3RHVENmx6TXRHQ3dJVGJ0NjBTd0xRUGJpOENfVTd4Vm9BbkhoX0VvM2xRYw?oc=5",
+          "source": "kyongbuk.co.kr",
+          "summary": "",
+          "published": "2026-08-09",
+          "image": "",
+          "first_seen": "2026-08-09T23:34:12+09:00"
+        },
+        {
           "title": "서울예대 - 청강문화산업대, 융복합 미디어아트 전시 ‘UNDEFINED’ 개최 - 한국대학신문",
           "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE43UXhWZzlrWm8zQkEyajRPVTZSdFdlcnZIUXh3eGo0SnZGRXlOczdPY0VzQkVLY0pRQUJjLUQybTk0OWQwZ2pEN3V4bmtnbGRqOHlZcU04N29oNTQ2NDBnSlVmZXJIUQ?oc=5",
           "source": "한국대학신문",
@@ -859,6 +877,15 @@
           "published": "2026-08-05",
           "image": "",
           "first_seen": "2026-08-08T23:31:29+09:00"
+        },
+        {
+          "title": "이 더위가 지나면…거물들이 밀려온다 - 경향신문",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE50QUNiV2JrTzZWTWpOTGN3VGRrSVdOeWNUMVhaMW5wVkpFemZ0LXJKaHFyZlM1UnRlRnpoTXJReWVSVElFQm1CbmF5NGNrNW1pM1FaZFRwcU81UdIBX0FVX3lxTFBvbnc4UkFObExackZrd2xZVHNwQUVSMUp4MWhpWGRCbkNXSmd1NmtzZUk4UDdmM2poNEdkeXBrYld3WDlCMHBqZ1NmenYySFVSVF9sSFFMdVh2SldDc0xj?oc=5",
+          "source": "경향신문",
+          "summary": "",
+          "published": "2026-08-05",
+          "image": "",
+          "first_seen": "2026-08-09T23:34:12+09:00"
         },
         {
           "title": "성동미술협회, 문화예술 축제의 새로운 시작 '2026 서울숲 국제 아트 페스타' 개최 - 아트코리아방송",
@@ -960,15 +987,6 @@
           "first_seen": "2026-08-03T00:01:55+09:00"
         },
         {
-          "title": "사라진 흔적부터 AI로 재구성한 역사까지…'올해의 작가상 2026' - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE90eVZUd3hNQWp0Vm9uSUxEazVvbmxEcTZTYjVsNmRBeUJXRGRCbExaTHRpRVVwNnhFMXlCZE9pT213ekJvTDdZQS1SckpVVzhfbndIbWZ2TFJmTk3SAWBBVV95cUxNZ1NKbTA4Q3Uzc3NJTXF3UDk2OUNzUFV6eHpBSzgyX1J2ZGxhb2d1UEdqSFNaWkdFSTNxby0ySXhpTS1aUkMyQl80TXFhYkxhcGlqZmhLSS1fNnQ1NGpMRWc?oc=5",
-          "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-07-23",
-          "image": "",
-          "first_seen": "2026-07-26T06:41:42+09:00"
-        },
-        {
           "title": "'얼굴 없는 예술가' 뱅크시, 서울서 대규모 전시…작품 진짜일까 - 한국경제",
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8tVzBjaXJvX21RQV9zT1pHM3JTNFo4QWZ2bmJRLVdWcDBKZGt5cjA5cXdQR3h0QjFYSkxCNWhoemFGWGN0RWlCM002Nm4zRXBqbUtYVHAtSmRsZw?oc=5",
           "source": "한국경제",
@@ -1018,6 +1036,15 @@
           "published": "2026-08-08",
           "image": "",
           "first_seen": "2026-08-09T06:16:51+09:00"
+        },
+        {
+          "title": "K-디저트 리얼리티 '바이트 미 스위트', 아시아 주요 OTT 상위권 기록 - 한국경제",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5VczUtNkI2djFqTDBvaktKVWc5VUMwXzNuNEMySzVqNTRxTzJiaG8zOUV3X3h3X04tQVgwWEVQOXpSOW04RURiNi1qWlNQSEFKZlhCTjlfVV9ZQQ?oc=5",
+          "source": "한국경제",
+          "summary": "",
+          "published": "2026-08-08",
+          "image": "",
+          "first_seen": "2026-08-09T23:34:12+09:00"
         },
         {
           "title": "현대백화점, 한국콘텐츠진흥원과 K패션 해외 진출 맞손 - 브레이크뉴스",
@@ -1191,6 +1218,15 @@
           "first_seen": "2026-08-08T23:31:29+09:00"
         },
         {
+          "title": "식약처, 생성형 AI 해썹 영상 공모…총상금 750만원 - SBS Biz",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE4wTjJvdUNrUmRQV3lwUXlGNkpZRDl5T2ZORzFOVEVjckFMaHB5c2NUME1NdnkwZE92akJMODczQjVBT0hDa0RiOWM4MkJrSWN2SnM40gFYQVVfeXFMUDJkYWE0ZjVEdWpYMWdYdnBxcnFpMzZQZ2Q1OGxlNXIxcEhYYmhqMURrSFpNTlR3ajdRdkl2S3kyUVFNR19iT2ZQMVdzSzBhRTUyckhNalBGUQ?oc=5",
+          "source": "SBS Biz",
+          "summary": "",
+          "published": "2026-08-03",
+          "image": "",
+          "first_seen": "2026-08-09T23:34:12+09:00"
+        },
+        {
           "title": "‘제대로, 제로로!’ 에이즈 예방 숏폼 영상 콘텐츠 공모전 개최 - 대구뉴스",
           "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9YdTBNb3hWUnJaME1lSFJPTVF0c25iaVlsMk90XzFRV3ByS21wQmIyY2g1OUVKWDgwOGJMZFlsOERWSEQ5akViMVhQN2xqdXZzaTdQZUlYVE4zUWY1U1AtTU1SVUt2czRN0gFsQVVfeXFMT0VFUkJmQm5OVlJXODZ0R1VzMENjSXdpSzl3dlhVbzlvbTRPTDZ5TzdGeTlheDJiVElLX0otWlRZeS0wal8tSE5HWEVGLU5XMWlkY1lsbXVWQTFWaFE2bC1PS1cyeTd2Y0xuSHBt?oc=5",
           "source": "대구뉴스",
@@ -1252,24 +1288,6 @@
           "published": "2026-07-30",
           "image": "",
           "first_seen": "2026-07-31T00:51:30+09:00"
-        },
-        {
-          "title": "해양수산부, 제12회 섬 여행 영상공모전 개최 - 소셜포커스",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE43TWN6QnNNWkVoMFFlYkU1YTEzTkg0QXU2VEd0V1AtSzByX0pnMXB2d1NMeTZXRTRnaXVlbHJhRDRqWElIQmx5MVNkX3dMZ1JhcGhUMXdvSkVQTXdPRC15eUx4YUQ5OENKN2NVQ1JYMzc?oc=5",
-          "source": "소셜포커스",
-          "summary": "",
-          "published": "2026-07-30",
-          "image": "",
-          "first_seen": "2026-07-31T00:51:30+09:00"
-        },
-        {
-          "title": "한국콘텐츠진흥원, 방송영상 제작사와 현장 간담회 개최 'K-콘텐츠 제작 생태계 회복 방안 모색' - 한국강사신문",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5VWlg4cl9KZktuOTB1TnE5eFlFdW8xc1JsaUh5RHppWUJlSG41eHBtNXg2RGFISnZRTGE5aUZWRlZYaE00ZzNJeUZra2Z3V3lvTFNBbFNzTU9xRDdWRXRDXzZpYjNQSE9XMnpJX2lxYTM?oc=5",
-          "source": "한국강사신문",
-          "summary": "",
-          "published": "2026-07-28",
-          "image": "",
-          "first_seen": "2026-07-29T01:04:48+09:00"
         }
       ]
     },
@@ -1277,6 +1295,15 @@
       "id": "design",
       "name": "디자인",
       "items": [
+        {
+          "title": "[\"피그마만 할 줄 알면 끝?\"…2026년 UI/UX 디자이너의 생존 조건은 '연구와 문제 해결'] 경력 수준, 학습 스타일, 그리고 구체적인 목표에 따라 최적의 선택지는 완전히 달라진다. 다음은 2026년 현재 가장 주목받는 6가지 UI/UX 교육 - AI넷",
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFBFSVVmeVlaTGZPTDc1V3FhRGdHWk1pZ3NwWUZLaDRFbVJfM2laUm5XSnNBb3pPcjNERVl1ZUNiQVI?oc=5",
+          "source": "AI넷",
+          "summary": "",
+          "published": "2026-08-09",
+          "image": "",
+          "first_seen": "2026-08-09T23:34:12+09:00"
+        },
         {
           "title": "다이닝브랜즈그룹, 창고43 리브랜딩으로 '레드닷 디자인 어워드' 본상 - 전자신문",
           "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE82aEIyYktrWUFiVGlfdEU3WWxUU0xab3FuLUxhWmdLUnk2WVhMNWpHNGc3WHBFUUcwVUxFU2N4WVhHWGtrYmk2U2xtRzEwUQ?oc=5",
