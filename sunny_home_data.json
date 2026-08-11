@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-11T23:57:15+09:00",
+  "updated": "2026-08-12T06:32:38+09:00",
   "categories": [
     {
       "id": "ai",
@@ -67,6 +67,15 @@
           "published": "2026-08-10",
           "image": "",
           "first_seen": "2026-08-11T23:57:15+09:00"
+        },
+        {
+          "title": "스스로 진화하는 'AI 에이전트 시대'가 열렸다 - OhmyNews",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNRF9ka01WRUxYWVpEX3NRaHlHM3JQTUNKSzl6NTBRNXZXQkRqWGtiaUx0bkZ6eEdrS2V1Ukc1bjA2Sl9tYnlWWnNTMkRmaG5rTjNhM1lnWjg2N3hoQVV1cUZ3S2ZZNDQ4dEkwZ3Fsb3p0bThuZllkbTF3cHprRFBQMjB0dUxYSDVHMkE?oc=5",
+          "source": "OhmyNews",
+          "summary": "",
+          "published": "2026-08-10",
+          "image": "",
+          "first_seen": "2026-08-12T06:32:38+09:00"
         },
         {
           "title": "스페이스XAI, ‘이매진 이미지 2.0’ 공개...생성 넘어 정밀 편집·일관성 집중 - AI타임스",
@@ -168,6 +177,15 @@
           "first_seen": "2026-08-10T23:58:03+09:00"
         },
         {
+          "title": "美 오픈AI, 챗GPT ‘Health 기능’ 출시 - 데일리메디",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9ySkJVS3h3TDdMaDZwRXA4TjQxTmN1b2V3RUc2RUIxNVNQTDBIMFFoaXQ4aW1UNm81Y2RkUnJMVjB2RllfQmFVWkNmano0dFBqQjFwU1lZbVdXZ0YwSmsydkxmREVHc1czRkVKajcxa1hHUQ?oc=5",
+          "source": "데일리메디",
+          "summary": "",
+          "published": "2026-08-06",
+          "image": "",
+          "first_seen": "2026-08-12T06:32:38+09:00"
+        },
+        {
           "title": "픽스AI, 이미지 생성 넘어 ‘AI 콘텐츠 제작 파이프라인’으로… 통합형 창작 도구 ‘PixAI Studio’ 정식 출시 - 뉴스와이어",
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9HSURYd1F3djdKVWcyc1h1UmhnVHl4b0pHVU5TaGJCSEJ1TlNPOUhWeTFBTnd3N0JvVFRfOHVOekxJelcybjRkWkUyUVZtXzlpMEVnUFAyeXV2VllzRGFr?oc=5",
           "source": "뉴스와이어",
@@ -256,24 +274,6 @@
           "published": "2026-08-02",
           "image": "",
           "first_seen": "2026-08-03T06:41:59+09:00"
-        },
-        {
-          "title": "AI 에이전트가 스테이블코인으로 자동 결제… 초당 30건 처리 - 조선비즈 - Chosunbiz",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQTk5ZZkd3RDNGdUw1cldKWHhTZmxDUktZcTAweHpTR3dkNlFlYzI0QU9WZ2lUZnp6R003eHFPckt1OHhEemFCaU5tNmRSbEJnZnhwbWQxQ0lSVV82T1JsVzBvQWJ5Q2pfdlJlOXRReGdYM1hJV1liRjhWUW5RNWdHV9IBlAFBVV95cUxOZ3loOHFwUGxRRHgyS2lhUVlXSlJLSkpIVG5QNUNRNmZrTUlxUUw1Wk5ESHlHdU1pQ1ZUTUsyblRMYkM0OVdvZHFHWUtPdW1TS1YtQjlzV09pS1ZCaEpwSGFPR0dtLUoxMXFjTnByRklEWW9XcDN5MThrREV3OEhvN2w4UE5jWlFCbDRneE56b19rYkxO?oc=5",
-          "source": "Chosunbiz",
-          "summary": "",
-          "published": "2026-08-02",
-          "image": "",
-          "first_seen": "2026-08-05T01:11:44+09:00"
-        },
-        {
-          "title": "앤트로픽, 테스트 오류로 인한 자사 AI 해킹 사실 공개 - VOA 한국어 홈페이지",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1td2twb3h2aFRVOXF0VnVKV0JXRVk2S0hGVzNYNV9vcU92aWxIaEVobE53aTU1QWdLTGk0MEEwQl9zR2c1NXBETGR2V2pFSFYzbGJkempTZVdORHJxalB2eXhaVzlXODRXenktdmFyWmpZVjlBemFKMGQzWFBHc1XSAX9BVV95cUxNbXdrcG94dmhUVTlxdFZ1SldCV0VZNktIRlczWDVfb3FPdmlsSGhFaGxOd2k1NUFnS0xpNDBBMEJfc0dnNTVwRExkdldqRUhWM2xiZHpqU2VXTkRycWpQdnl4Wlc5Vzg0V3p5LXZhclpqWVY5QXphSjBkM1hQR3NV?oc=5",
-          "source": "VOA 한국어 홈페이지",
-          "summary": "",
-          "published": "2026-08-01",
-          "image": "",
-          "first_seen": "2026-08-01T06:54:15+09:00"
         }
       ]
     },
@@ -487,15 +487,6 @@
           "published": "2026-07-29",
           "image": "",
           "first_seen": "2026-08-04T01:25:30+09:00"
-        },
-        {
-          "title": "이통3사, ‘갤럭시Z8’ 사전 판매 돌입…\"OTT·콘텐츠 혜택 가득\" - 뉴시안",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1OZGNjMUtxeDFJZWFoempwTGxSZXJIUzVORkI0MXRRLTRWSUxGRm55WVlXMHVTLTNyVWhuS25kaTVHUGdCNHhHRVV3SG5rakJuc3Rib1NFVnpsRkRhX1o0Z3lvbXRNSmtPRlE?oc=5",
-          "source": "뉴시안",
-          "summary": "",
-          "published": "2026-07-28",
-          "image": "",
-          "first_seen": "2026-07-29T01:04:48+09:00"
         },
         {
           "title": "[취준생을 위하여(308)] 한국콘텐츠진흥원, K-콘텐츠의 글로벌 경쟁력 지원할 '융합형 인재' 필요...다양성 고민도 필요 - 뉴스투데이",
@@ -765,15 +756,6 @@
           "first_seen": "2026-07-29T06:53:22+09:00"
         },
         {
-          "title": "창작무용부터 마당극까지…'아르코 썸 페스타' 9월까지 이어져 - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1Sc1MxblVDNXlaUk12ZXRqZEtmcW1vdnZiRlNRX0UxbFgxUzhzbUNINzF0cXdXdlVvVUZqZnRCcnJRem0zQ1JPNGRsUkxfcmp3dEVuaDZ2dWN5T1HSAWBBVV95cUxNZFpNdU05bDBXX241VDhRSFE3MlkzSU1wS04xR2ZuR2NKX1k3bmxEVlVqbG80RnB5d2tON05KZExvU0hQQzhndVZ2OWRvTjc1a3IxVWRzSEdid2ZzZjJmcTQ?oc=5",
-          "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-07-21",
-          "image": "",
-          "first_seen": "2026-07-29T01:04:48+09:00"
-        },
-        {
           "title": "춘천공연예술제, 축제 특화 예매 플랫폼 ‘북온’ 첫선 - v.daum.net",
           "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1UblFPQnozSjVBdGpYMU0xdU9XN1Jzb2hVTTc1ZkNaUmJuMGtnb0ZwVElBZWRMRmxMdDdZQVNieUZ1Znc5SWc?oc=5",
           "source": "v.daum.net",
@@ -1020,6 +1002,15 @@
           "first_seen": "2026-08-11T23:57:15+09:00"
         },
         {
+          "title": "K-콘텐츠 세계화 앞장선다…문체부-유튜브 협력 약속 - yna.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1HTmpmRzNXYjlYX09teWdHOUhEcWtLdVRYZWhfc2t1MmxkV1Rhb3VySVpQTzBQd1YwLXpKbFJZdS1xSmZPZW43QlVfeXhzV2RDeHRPdnZGT1p5MzFZaTVQSNIBYEFVX3lxTE1HTmpmRzNXYjlYX09teWdHOUhEcWtLdVRYZWhfc2t1MmxkV1Rhb3VySVpQTzBQd1YwLXpKbFJZdS1xSmZPZW43QlVfeXhzV2RDeHRPdnZGT1p5MzFZaTVQSA?oc=5",
+          "source": "yna.co.kr",
+          "summary": "",
+          "published": "2026-08-10",
+          "image": "",
+          "first_seen": "2026-08-12T06:32:38+09:00"
+        },
+        {
           "title": "상상을 현실로, 효율적으로! 카펜스트리트 x 한국콘텐츠진흥원 - blog.naver.com",
           "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNb3VpUlhBZnpHMVlWaFd6MXVOWlRwdGtXWThsZjlPVkY4NG43SWZET3AzaTlYX1NHMUkwQVRxR21naVVWUElMcFlHa2JrRWk5dFhma2E3ME8yWHEwUk9GTHFqbk9QTmFlcll5S2FmWWZJVlBwYk5kdHZldndGZGtnZlBzT3hXcnlmWEp2ZFkyNjA?oc=5",
           "source": "blog.naver.com",
@@ -1261,15 +1252,6 @@
           "published": "2026-08-03",
           "image": "",
           "first_seen": "2026-08-10T23:58:03+09:00"
-        },
-        {
-          "title": "‘제대로, 제로로!’ 에이즈 예방 숏폼 영상 콘텐츠 공모전 개최 - 대구뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9YdTBNb3hWUnJaME1lSFJPTVF0c25iaVlsMk90XzFRV3ByS21wQmIyY2g1OUVKWDgwOGJMZFlsOERWSEQ5akViMVhQN2xqdXZzaTdQZUlYVE4zUWY1U1AtTU1SVUt2czRN0gFsQVVfeXFMT0VFUkJmQm5OVlJXODZ0R1VzMENjSXdpSzl3dlhVbzlvbTRPTDZ5TzdGeTlheDJiVElLX0otWlRZeS0wal8tSE5HWEVGLU5XMWlkY1lsbXVWQTFWaFE2bC1PS1cyeTd2Y0xuSHBt?oc=5",
-          "source": "대구뉴스",
-          "summary": "",
-          "published": "2026-08-02",
-          "image": "",
-          "first_seen": "2026-08-03T00:01:55+09:00"
         }
       ]
     },
@@ -1447,15 +1429,6 @@
           "published": "2026-07-24",
           "image": "",
           "first_seen": "2026-08-06T01:00:58+09:00"
-        },
-        {
-          "title": "헤리티지 스낵의 디자인 반란, 꼬깔콘 패키지 리뉴얼 - 디자인플러스",
-          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1oSTlrR1JGQUhCdXBrYndsWUNNQlBmN0dXUlY3U2s5Q2RaTnFUMHBPdEx1Y05sajVkUlZYczF6YXF4c3gwNHE2aEZZY08?oc=5",
-          "source": "디자인플러스",
-          "summary": "",
-          "published": "2026-07-16",
-          "image": "",
-          "first_seen": "2026-07-29T01:04:48+09:00"
         }
       ]
     },
@@ -1723,15 +1696,6 @@
           "published": "2026-07-29",
           "image": "",
           "first_seen": "2026-07-30T00:48:50+09:00"
-        },
-        {
-          "title": "한국컴패션, ‘블루웨이브 뮤직페스티벌 2026’ 개최…음악으로 어린이에게 희망 전한다 - 고신뉴스 KNC",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFAtbmFkYVFjU0d6amdwTzRNSjE0TWYzLXRtUkZqMXVOSE10dmZNTTNDTHNPazk5dUxpYWNUTUI4eDNNNnVvd0Z3dEdEdGY4dnNjVkMteGdaNnBST3ZmZ3MwaEg3Tlp5bzVaN05V?oc=5",
-          "source": "고신뉴스 KNC",
-          "summary": "",
-          "published": "2026-07-28",
-          "image": "",
-          "first_seen": "2026-07-29T01:04:48+09:00"
         }
       ]
     }
