@@ -1,10 +1,28 @@
 {
-  "updated": "2026-08-11T06:29:13+09:00",
+  "updated": "2026-08-11T23:57:15+09:00",
   "categories": [
     {
       "id": "ai",
       "name": "AI 트렌드",
       "items": [
+        {
+          "title": "AI 에이전트: 에이전틱 AI 아키텍처와 거버넌스 가이드 - Snowflake",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBrU0hwWEpQZXVWRDFSNmJWV1g1MjR2X3VGNEFPLU83amhVczY0WDBkaVpaMGg4dlREeFEtUWRaaFRKMUZNYnVmTlFDWHdBSUNZNWw2d01pS3VVc0xhV2RrNWJiSHdocWJzZHBoSw?oc=5",
+          "source": "Snowflake",
+          "summary": "",
+          "published": "2026-08-11",
+          "image": "",
+          "first_seen": "2026-08-11T23:57:15+09:00"
+        },
+        {
+          "title": "생성형 AI 이미지 - 전자신문",
+          "url": "https://news.google.com/rss/articles/CBMipARBVV95cUxOcy1kU2hTakdZUXotSGRuX1piVTk5d2ZsWDFpelI0U1gteDRLTTE4VFE5b0RVWm1fUU9DWnVYNm9uUm82N2lKUDdSZUt3Yi1JZXBzeFlGVWZiYnZ6MkNuRWtJUXU1MXI3UDNlRkFXaURWa3JRSmgwYzk0c3dpOW1NTFFpd3ZLdmVhMXZIT2VCYzdYLTA0NEJmUV9WWU9FSm95TzFpWkJpTGhvZUhBY2M4ZG1Cb1JiWDRXc0pvSVdUblYyaEFNVTRPemQ3MWJIbDFERGtZMWpJenZYWnp4eXNZY1hCVlFuQkxuSWJCT016d0lSekcwZmJBcnlucS1JOS1TaFl2OWdLS0lqdC1MQmRySGFNQ29pUFlHTGtLR21JSmJicVBSeFpZV2xpS0tOZ2ZJY2Y3U2M4d3U5bmhGdmdxRnZxTWhEdXQ4VW1xOXlWTmx6clpKUS01ejZWdS1XUDNVZjROaG0yUVZtWGJvXy1ucmU3X2JxbEJReXJMSWsxa2xnZGNreVppdDRnNGd4UWdINW1VYkZycG51MkpQa2IyWEtyX0o1NVRDWm9ieFotMkZkMHBYeEZ6RmFwbjFrVzRaVXYwQVVMTEg0SE82VE1MZTlGNENoRnc3aVVza2FnREFxRkI5SF9xcFJfWERHZTJ5UkRrTkVZd1JkWHlXNDVDU2E4UDNiY2ROSXpjUmU0Wk1XelNpS2xTUWFSVW9KUFA3SXhuTQ?oc=5",
+          "source": "전자신문",
+          "summary": "",
+          "published": "2026-08-11",
+          "image": "",
+          "first_seen": "2026-08-11T23:57:15+09:00"
+        },
         {
           "title": "MS&amp;AD, AI 이미지 탐지기술 보험금 심사에 도입 - 한국보험신문",
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE02bTFsWGpvejFiT3RlWTdzNjRoaDBxZ3NLajhrc0ZSalZ1ZmhINlY4THp4LUVadEJ5MUxKQTdlMFZvbmRLXzl4eFZrYkRiUWFWOG8wcjJhYWRWUUtTUUZRLWU5blJDcXRrRWdv0gFvQVVfeXFMTm9WTU9GTXR2cVlucTRFaHEwZ0JaalNPS0l2RGJGZXI3MnJCMG5YaUNTRjFSN0xncXprdThLYkF0WlY1WnhoNUZjdjRlZ3hZMDVDa0NFQWlkSE1Md2M2QUtHWFM5U1NMaG9hS1J0dDRj?oc=5",
@@ -40,6 +58,15 @@
           "published": "2026-08-10",
           "image": "",
           "first_seen": "2026-08-11T06:29:13+09:00"
+        },
+        {
+          "title": "'동시 소통' AI 에이전트 등장…단일 '클로드 오퍼스 4.8' 성적 뛰어넘었다 - AI타임스",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8yT1JuejQ4eVpmVXBHS3NoTU0wajY2MjhWZGUwak1oRVZucjR3UDRiUWcxUURtazlrR0lxWTA1ZjlkXzZiZG1Gek45cDZrV0hJRjA3LWhpd2d5NlhfeW5yazRycW5hRGR3UXc?oc=5",
+          "source": "AI타임스",
+          "summary": "",
+          "published": "2026-08-10",
+          "image": "",
+          "first_seen": "2026-08-11T23:57:15+09:00"
         },
         {
           "title": "스페이스XAI, ‘이매진 이미지 2.0’ 공개...생성 넘어 정밀 편집·일관성 집중 - AI타임스",
@@ -247,33 +274,6 @@
           "published": "2026-08-01",
           "image": "",
           "first_seen": "2026-08-01T06:54:15+09:00"
-        },
-        {
-          "title": "AI 이미지 생성 기능 추가한 구글 어스, 가짜 위성 사진 소굴 되나 - 파이낸셜뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4xbFYzUUhRaDNNa3RtWlJlQlRFaDlTWFRiUk1CUWNiZDNVNHlYb0piTTFSV0dHanJwMWdFRXNyb01IQ3ZqVHNJYkRTOHRHQk5UaW5nUUdvVVVaUQ?oc=5",
-          "source": "파이낸셜뉴스",
-          "summary": "",
-          "published": "2026-08-01",
-          "image": "",
-          "first_seen": "2026-08-01T06:54:15+09:00"
-        },
-        {
-          "title": "가짜 위성사진 우려에…구글어스 AI 이미지 생성 하루 만에 중단 - 뉴스1",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5wOVN2NkRMZHB0U20yRlRad1Z6eGVaTWZuYXp2U196R1hxd044VWxlVU9fZzJrZ3pkTlI4ZE10TVNFd1pjRmhfOUMxY3JiR2ZpRU11WHd4X2Y?oc=5",
-          "source": "뉴스1",
-          "summary": "",
-          "published": "2026-08-01",
-          "image": "",
-          "first_seen": "2026-08-02T00:00:28+09:00"
-        },
-        {
-          "title": "허위정보 우려에…구글, '항공·위성사진 AI편집' 하루만에 철회 - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE56UzZFaUNDMWN2MjEwVUhWMEJDd2p6VUV6UWtRd3l6TVN5Y25yOUFoZU8wUTQxVXpBaklydDBqcGVXVUZ6dk5uMTNpaVBWaTdLWTFZN3VfNmk2X2_SAWBBVV95cUxPSXFXMnVqZ0NBc0luTklHLUdhVmVhblZnZVZ3a0ZNeFRaZmVZMG00eHVKV2lFOEEwcmRBTkJFZ3VUZ2JhWVh2U1o0ZXFZcTFGN0RwVHlWNnlsVWNmRDA2NEQ?oc=5",
-          "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-08-01",
-          "image": "",
-          "first_seen": "2026-08-02T00:00:28+09:00"
         }
       ]
     },
@@ -558,6 +558,15 @@
           "first_seen": "2026-08-11T06:29:13+09:00"
         },
         {
+          "title": "9월, 서울 거리 곳곳 공연의 향기로 물든다 - 한겨레",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFAzVUlIckw3VGlPZ3h1MDhRUkVJeDlCVUlsNjlkMDdOc3Z5UXBhNnJrV09TRFVIZ1M2MUVOQU52VlJ2QWU3eGZ0TDdsYkR0Y1VtTDNDLXVUY3lxUGRVUnk5YTZnY19Mby1zTnVSQ1NpZlZrZw?oc=5",
+          "source": "한겨레",
+          "summary": "",
+          "published": "2026-08-11",
+          "image": "",
+          "first_seen": "2026-08-11T23:57:15+09:00"
+        },
+        {
           "title": "‘축제의 압도적 완성’ 2026 서울어텀페스타 뜬다 - 매일일보",
           "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE00NGk0QllHMTQycWQxWWl0YWlrMXk4Y0RPTXcwOWpzYzRWcnZGdVV6VjA0bWFfSks0MS1Hb01DMUZOQ1lpakpvdzgzRmhudUs3d0drSUREazFHdDI4MmItSV94RlQ?oc=5",
           "source": "매일일보",
@@ -738,15 +747,6 @@
           "first_seen": "2026-07-30T00:48:50+09:00"
         },
         {
-          "title": "명지대 공연예술학부 이언정 교수, 서울국제실험영화페스티벌 공식 개·폐막식 사회 맡아 - 중앙일보",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9qelBvbW0yeEhDbG1hNjNadDVuMklGUklCT2lGRkItcVVmOFhSVzduR3ZGV21rODBqYWtLNEpnRllwZEJWc1JFbjBOcnlxcnpFUEhlWHVB?oc=5",
-          "source": "중앙일보",
-          "summary": "",
-          "published": "2026-07-27",
-          "image": "",
-          "first_seen": "2026-07-28T06:54:28+09:00"
-        },
-        {
           "title": "여름 축제, 진짜가 나타났다! '한강 페스티벌' 개막 - 서울특별시",
           "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1GTzVReUhFWWlxMlRTUEd1NVBwZVg4LTRUeE9PclpYNGprVnV0RU5LaDI0dXM3NS1la1R1RE13cEVockxrYnBNWGZYa1JTSXNCMFpuUC1pa2s?oc=5",
           "source": "서울특별시",
@@ -797,6 +797,15 @@
       "id": "exhibition",
       "name": "전시",
       "items": [
+        {
+          "title": "김포미디어아트센터, K-콘텐츠 미디어아트 전시 《영원한 안녕》 10월까지 개최 - 한국사회복지저널",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9UQTRpQTdTS1lDZkNNa3FHRVZjc05Md1NCaEJWOUFybjhFbEo0amwySDU5bjhwc3B1b2FOYWE4UUVGOVZBUjZCSE9NWGttUzR4MV9mY2ZYa25KU2pNZU1yRVNXQ3FrTmlOR2dr?oc=5",
+          "source": "한국사회복지저널",
+          "summary": "",
+          "published": "2026-08-11",
+          "image": "",
+          "first_seen": "2026-08-11T23:57:15+09:00"
+        },
         {
           "title": "서울예대·청강문화산업대, 퍼포먼스 더한 융복합 미디어아트 전시 ‘UNDEFINED’ 개최 - 매드클럽",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9RbjhFNHJHS2x4THoxTHFUdlB3LWpBeG5xUUNZRTRkT3U1YTlDaVdoSzVJc00zNDlYaDRhUGZpZ0R0Mk9XQXBWMmVNT09sUkZSWTk2MkRHWS14eFhxZS1NQnFybEswR2lvN3fSAW5BVV95cUxPejRPeDJ6SmcwaUQ3d2p2SEI4QjNVeGZ5TE4tU0hfaEpRNlljTW1VZkxNcG9ZUUcyTEtMbG8wc0FQN19EY0JTcmZnSk9oM0g5dmRNcUFMNDgzMGl5bWFqaGtJNEhhX2xZYTdwVHEzQQ?oc=5",
@@ -1002,6 +1011,15 @@
           "first_seen": "2026-08-11T06:29:13+09:00"
         },
         {
+          "title": "K-콘텐츠 세계화 앞장선다…문체부-유튜브 협력 약속 - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBlWW9Va2lIa3dXLWxxU19xcElHWU1WMHZWZ3BHbjU4RlBpd3ZxbHBBZHRoTzgzZFJTMU5QejlraUlSNXZvSzh2bzZIWUpqajd0bFJPMzZOckRNVmPSAWBBVV95cUxNR05qZkczV2I5WF9PbXlnRzlIRHFrS3VUWGVoX3NrdTJsZFdUYW91cklaUE8wUHdWMC16SmxSWXUtcUpmT2VuN0JVX3l4c1dkQ3h0T3Z2Rk9aeTMxWWk1UEg?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-08-10",
+          "image": "",
+          "first_seen": "2026-08-11T23:57:15+09:00"
+        },
+        {
           "title": "상상을 현실로, 효율적으로! 카펜스트리트 x 한국콘텐츠진흥원 - blog.naver.com",
           "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNb3VpUlhBZnpHMVlWaFd6MXVOWlRwdGtXWThsZjlPVkY4NG43SWZET3AzaTlYX1NHMUkwQVRxR21naVVWUElMcFlHa2JrRWk5dFhma2E3ME8yWHEwUk9GTHFqbk9QTmFlcll5S2FmWWZJVlBwYk5kdHZldndGZGtnZlBzT3hXcnlmWEp2ZFkyNjA?oc=5",
           "source": "blog.naver.com",
@@ -1054,6 +1072,15 @@
           "published": "2026-08-07",
           "image": "",
           "first_seen": "2026-08-08T23:31:29+09:00"
+        },
+        {
+          "title": "케이-문화·체육·관광으로 ‘대체불가 문화강국’ 도약!✨│문체부 2026 하반기 업무보고 : 네이버 블로그 - blog.naver.com",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE0wR1Y3WHhueHBZMnZyZE5kU1Ytd2R6c3VCLXplMHcxcEs1Z2ZzbkstWDRqanZfS2FFYkFOUHJtdFB3MktHOWFjOWpKZ1NXWTZ1VktLZjZURnY?oc=5",
+          "source": "blog.naver.com",
+          "summary": "",
+          "published": "2026-08-07",
+          "image": "",
+          "first_seen": "2026-08-11T23:57:15+09:00"
         },
         {
           "title": "AI시대에도 다큐는 유효할까... 제23회 EIDF, ‘진실성’을 질문하다 - 여성신문",
@@ -1243,24 +1270,6 @@
           "published": "2026-08-02",
           "image": "",
           "first_seen": "2026-08-03T00:01:55+09:00"
-        },
-        {
-          "title": "뮤지컬 ‘정글에서 살아남기’, 5월 전국 투어 실시 - 쿠키뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE41OFlUemtYMWY1ZmNOS1NSanp4N2tUc2FsS0Q5Q0NtNlQ5SzBMTFo3eFZZTmVnVVgyQlZudnBZbmxGcmdxeHplMm1waGRXS2RRS24wbGJmMU1UeGdaTlZRVTVLbw?oc=5",
-          "source": "쿠키뉴스",
-          "summary": "",
-          "published": "2026-08-02",
-          "image": "",
-          "first_seen": "2026-08-04T01:25:30+09:00"
-        },
-        {
-          "title": "윤시윤→차주완 '바이트 미 스위트', 인도네시아·홍콩 OTT 휩쓸었다 - 네이트",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1nNWttTF9ySl9yX1pTYlVXU2xTMEpyenh2a21TRGxESGl1Z1FxUjVPTUxWSE00ZjROQkpaV296Wk5LeGZ1SmVZcHk5eWpldlNYdDFVaEhOSmpmVG4xVVNsUEJ2NXpSdVF2a056V0E4SmtVNmppeUVj?oc=5",
-          "source": "네이트",
-          "summary": "",
-          "published": "2026-07-31",
-          "image": "",
-          "first_seen": "2026-08-01T01:01:35+09:00"
         }
       ]
     },
@@ -1563,6 +1572,15 @@
           "first_seen": "2026-08-04T01:25:30+09:00"
         },
         {
+          "title": "2026 국제 스페셜 뮤직&amp;아트 페스티벌 - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1FbWRXNEZCM3d6M05Ceks5dEJYY2g4RTY3bzJGeWZIVDVRVnVwWnI4RnpsVU5yeVY5MVQtZG1GczlnWjJ5UFRTN0JDWEhDakZJYzFVaUF4b3dZYzDSAWBBVV95cUxNa3ZFcURKZU05NGtCRUhZSFg4VklmUnZPanpOWVZFRGdfbnFmbnp5QklrT1VxTVVpWTBsb2NGZDRXcUlQbm9tYnVYaGt5THFfUTB4ZnVUQ1ZSWldEZlZ3c3c?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-08-02",
+          "image": "",
+          "first_seen": "2026-08-11T23:57:15+09:00"
+        },
+        {
           "title": "제21회 광화문국제아트페스티벌, 도심 속 열린 광장에서 예술로 숨 쉬다 - 피플투데이",
           "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9PczN3eVoyb1pBM3pGT0NNa3diNjJkMEl5SjZlVGpic29oOEFVdDQwVzl4RFZ0YmhEYmJoZmNDRXVGSDNhdnhlYXI3VExLY1phSnVJZElwU2RnMU42NWthZWJQeWxnYjhEd3E0dGpNWQ?oc=5",
           "source": "피플투데이",
@@ -1710,15 +1728,6 @@
           "title": "한국컴패션, ‘블루웨이브 뮤직페스티벌 2026’ 개최…음악으로 어린이에게 희망 전한다 - 고신뉴스 KNC",
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFAtbmFkYVFjU0d6amdwTzRNSjE0TWYzLXRtUkZqMXVOSE10dmZNTTNDTHNPazk5dUxpYWNUTUI4eDNNNnVvd0Z3dEdEdGY4dnNjVkMteGdaNnBST3ZmZ3MwaEg3Tlp5bzVaN05V?oc=5",
           "source": "고신뉴스 KNC",
-          "summary": "",
-          "published": "2026-07-28",
-          "image": "",
-          "first_seen": "2026-07-29T01:04:48+09:00"
-        },
-        {
-          "title": "음악으로 잇는 로컬과 글로벌! 2026 ROUND MUSIC FORUM 개최 - MyloveKBS",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNek1OLVdrQ1ZJN1RFc093TDFvc0p3c1ZURWdzTjJVN3owT3g5RFNhWHJHamcxc1dRdTJsZ0gxblRLSzExTXNXT0R1ZFFyZlhhYlgzY0VtWnJFSHlJbHRJdmhvaWJacmxYWWoyS0liSkc1NEkzcnZzdzRRUG1WV1ZNOHFXUzRYRUNvRGRFUFRnVTByN2VCWlUwNTd2Tjc5Ym1HZ1JpejcxTVpZZWo1Y1E?oc=5",
-          "source": "MyloveKBS",
           "summary": "",
           "published": "2026-07-28",
           "image": "",
