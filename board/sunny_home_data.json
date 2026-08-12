@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-12T23:56:44+09:00",
+  "updated": "2026-08-13T06:31:42+09:00",
   "categories": [
     {
       "id": "ai",
@@ -22,6 +22,15 @@
           "published": "2026-08-12",
           "image": "",
           "first_seen": "2026-08-12T23:56:44+09:00"
+        },
+        {
+          "title": "사무직 AI 에이전트, 인도 외주보다 싸져… 단순 업무 대체 눈앞 - 조선일보",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNMEZHSFdQMnlWTjJvZWhPWFBOU25GWEtXaEc5VEJBcm1tSjdjYmpjVmVLRC1seUc4ZzVtNmRJNnR5MGtNcWdDSGxVOXRjWkpWeUtDaXpzbGNveENXNU5aYzdLUGlqZERxdXg4STVHanNUSG9oYjdzS3V0MWVxUTh2bDlEYw?oc=5",
+          "source": "조선일보",
+          "summary": "",
+          "published": "2026-08-12",
+          "image": "",
+          "first_seen": "2026-08-13T06:31:42+09:00"
         },
         {
           "title": "AI 에이전트: 에이전틱 AI 아키텍처와 거버넌스 가이드 - Snowflake",
@@ -265,15 +274,6 @@
           "published": "2026-08-03",
           "image": "",
           "first_seen": "2026-08-08T06:25:27+09:00"
-        },
-        {
-          "title": "AI로 이미지 생성 - 전자신문",
-          "url": "https://news.google.com/rss/articles/CBMipARBVV95cUxPZVpTT0NBN1VPbEtnQ1lKc1lXVk1vdGp5Z3JsekFkaUhFVS14VS1FR19YZkljNm9QcjVrNjJYdmxFcnBwSHVvTEF2aG5sOFdlZ2FhaU5ONW4xVWFUN29iQmtxTndyWUwtWUZWNHpNYnBReXRMem5XZk8tY1ozZC1STFpmNTh1VjJIcnhvMFMtUmxNdjNzQlk0dFJjY2szMDJBeTM0Z095eXZWanFpVU9QVU5wNmROV2FDNVU2LTRVQUJFNVI1ckNveVVXRFQ4NklsTGUxRjI5NGI5dkpNOUVjM21uc1lBZ2d5SDZXM0lWTjlXVEZ6M3RSTXZzWkVfYzMxbjhXRFF0bmptVnAxRWlPQnZNZ0djNjRxcjZXNWpfdVlmNkg2dWszaGtMSnZpekRGNGNaTW1LczYyLUpqZE9GX2p6V01rRHU4cl9BSVBOTDU5Q1YyTXQxSXJSN3VabW4yVVZ3dGxhdXFhbzlGLXo3X0RKNXltVFBfRVd5TFozeEdrV2Q2ZGdXb1BOM0FrLVVZSk41cjFPRjJiMUJVNmxpZlJud1J0bldNbVRFMHlWVXRWZFljSWwzQWF1RnZOT2tJZUNtb084Y0dCRHAyNWhaeWFqSy1GM2gyZERucG94aDFneWJNY1RFRzVUQ3hmWEtMcHZXVDVSanVnTFpCZUVlNEwyREQ0VjUwZi1NRVBEUktNRmQwbWhGa25XRElIWFlxNGpwTg?oc=5",
-          "source": "전자신문",
-          "summary": "",
-          "published": "2026-08-03",
-          "image": "",
-          "first_seen": "2026-08-08T23:31:29+09:00"
         }
       ]
     },
@@ -507,15 +507,6 @@
           "first_seen": "2026-08-08T23:31:29+09:00"
         },
         {
-          "title": "웹툰IP창업지원센터 입주기업 ‘우리나비’, 『신들의 섬』 출간·『낙원』 유럽 진출로 웹툰 IP 사업화 성과 - 생생부천",
-          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPSHdRMUUwVXlKeXJRUGN3RURCM0x2X1h5a2ZRN0JJU1BQM3hkOUdKRVpueTg1dmlnWEFtcHRxakJ2Ym5HTGlQV1Yxd2dTcXVwYVc2Wk9KRzlwVEhzTVR6TFFlRGVLRTVXTXVpYTVyUlBjNy1WTmhsQ1gycFBhOElsVEdVVVp1T0NBUWs4NGZxNk42NXpSMm5YMzlwX21HY1BPTDN6RDhEYkxVTV9PRmQzaU9zMnZucHA1VDV1MmNucHdncmRzWng0NWVDdG8tZG5aOHN2OHhUT2tWLVJrV0Ew?oc=5",
-          "source": "생생부천",
-          "summary": "",
-          "published": "2026-07-29",
-          "image": "",
-          "first_seen": "2026-07-30T00:48:50+09:00"
-        },
-        {
           "title": "인천서 ‘제5회 청룡시리즈어워즈’ 개최…OTT 콘텐츠 성과 조명 - 파이낸스투데이",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5WaWRBeFZBZDBIc3dZVGF0LVl2U1FnbDlLVGJKdWFHd3I2ZmFMbWJmbVhYZjM1UGxzSUtNNXBjU01OQm5nUGtHb3FwbjJMRGNYNTB5RVRzd25uQWtiTXV0MzZ1LTlyU3UyV000SA?oc=5",
           "source": "파이낸스투데이",
@@ -557,6 +548,15 @@
       "id": "performance",
       "name": "공연",
       "items": [
+        {
+          "title": "서울예술대 창작뮤지컬 ‘너울’, 2026년 8월 안산서 3회 무료 공연 확정 - 교수신문",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBLMkMyT1k2WU1PcUZ6QVJONWQ2OVhxZ0FFdGtvTG0wUGJVTmtoamh4SUZyWVJlXzk2R2JPSUVXWFk0UkF4bFNMSi1HalVQRG5NWnVuaW9uTWRkdmd2VG5NZkx0OUJPaHM?oc=5",
+          "source": "교수신문",
+          "summary": "",
+          "published": "2026-08-12",
+          "image": "",
+          "first_seen": "2026-08-13T06:31:42+09:00"
+        },
         {
           "title": "38개 축제·478개 공연이 ‘서울어텀페스타’에 모인다 - 조선일보",
           "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOeGpETVlfTXlKZFVXSnZlYlR0M19KWm5TcGY0Y2l1S2NJSEhtQnFuSmo4YVhnQU9kNVlNNnN6VVN5UWNOUzFqLXN1UmN2bm5oZ3M5QVAxU1VyNzRQOWM0YUdFcGtLbDB0dFloRVBoUFM0V2dZNHE0SEFBZ3FPeTVjQW1Ub3UteS1wMnJMWWRQdXZRVTRfQ1E?oc=5",
@@ -745,24 +745,6 @@
           "published": "2026-07-31",
           "image": "",
           "first_seen": "2026-08-12T23:56:44+09:00"
-        },
-        {
-          "title": "청송군, 2026 공연예술 지역 유통지원 사업 선정작 뮤지컬 '슈퍼루나틱' 개최 - 경북신문",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE42Q191UTktd0lkMTVncTc2c3UzVV9EX0pQbEhVa0gxY3hrcFppX3FiYU8xTFdockdhYVVHVExLWS0tay0xQnFWci1OcU03UUYtWmgyMHZaQTg?oc=5",
-          "source": "경북신문",
-          "summary": "",
-          "published": "2026-07-29",
-          "image": "",
-          "first_seen": "2026-07-30T00:48:50+09:00"
-        },
-        {
-          "title": "뮤지컬 '겨울왕국 2026' 한국 초연 연습실 스케치 - 서울자치신문",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBsc1ozYkd2d0JpV05XTUdMYjRBSG00alJVZV91SU5ZZ0pudW1NdTdpRlk0dTl2Mm5KNEZXSUR2NHBUOXdYMkdyZHY3T0RaZmxrbTh5N0hBMVMyMXNrZWlXUmUwRVRva2pL?oc=5",
-          "source": "서울자치신문",
-          "summary": "",
-          "published": "2026-07-29",
-          "image": "",
-          "first_seen": "2026-07-30T00:48:50+09:00"
         },
         {
           "title": "춘천공연예술제, 축제 특화 예매 플랫폼 ‘북온’ 첫선 - v.daum.net",
@@ -976,24 +958,6 @@
           "published": "2026-07-23",
           "image": "",
           "first_seen": "2026-08-01T01:01:35+09:00"
-        },
-        {
-          "title": "장애예술계 최초의 미디어아트 전시회… ‘미디어 술래(術來)’ 개막 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9rdVBCZE5MYzBfbEdnTEZxUUszdVp6b2NSa3VlVlNISl8zRGxhOWpQTHJvRk5OOWNqZ0lSeUYyRnczbFhGaXU3bWtuOTlza1k?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-07-20",
-          "image": "",
-          "first_seen": "2026-07-30T00:48:50+09:00"
-        },
-        {
-          "title": "하나은행, 디지털 미디어아트 페스타 2026 개최 - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4zeVppdHZRYmdkd1lZUnhiZzY2aElpbGdEUXRzaFFUVXpyZ0Z1Q0s2VlNfZXlsdnkxTGFMTXVWVE4tRDhVZGtYZ1dxUU5KdjU2RDJtdGpBb05xb0nSAWBBVV95cUxNLWdxeXJCcE9HbVg2QnE0V21sdW8wZk5XQ21EbHV2aXZBdE85R09QV2NnQldhakQ0WTFnY0pXdWFWYkJlY1pkcDU1dUt4LVdsSXdPUXRsNjNqTmVBcE9MTVI?oc=5",
-          "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-07-16",
-          "image": "",
-          "first_seen": "2026-07-30T00:48:50+09:00"
         }
       ]
     },
@@ -1027,6 +991,15 @@
           "published": "2026-08-12",
           "image": "",
           "first_seen": "2026-08-12T23:56:44+09:00"
+        },
+        {
+          "title": "청년 문화예술인 11명 한자리에…문체부, 현장 중심 지원체계 모색 - 데일리연합",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1Ed25CTmlaLVAzdHl2aHJMVFdiUUtocWYydlFXYjZISTkwSlJQN0plcFJORi1pTGNsM2I5c2lJd183eTlrUklQbzdJeWVOZkVKdzlXSkhhYWxveDg?oc=5",
+          "source": "데일리연합",
+          "summary": "",
+          "published": "2026-08-12",
+          "image": "",
+          "first_seen": "2026-08-13T06:31:42+09:00"
         },
         {
           "title": "총 1.2억 지원…유진이엔티, 영상 콘텐츠 공모전 'EUCON' 개최 - 더팩트",
@@ -1261,15 +1234,6 @@
           "published": "2026-08-03",
           "image": "",
           "first_seen": "2026-08-06T01:00:58+09:00"
-        },
-        {
-          "title": "[바이오스냅] 식약처, 해썹 AI 콘텐츠 공모전 진행 - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBIUnFQZTkxUmtJSzhjcTV1UEoyNjR5UUF4ci1idkhqTDFKNXhYVzRybVFUQWtNZG9RdzhaR0xKX21FN3pjeFhpbmFRSHBzWXFya1pwazhCbGx6WGfSAWBBVV95cUxPUEZ1TU9oRkhlNk9Fc2lTeHI4RVZUTVk5N2lCX01HLVpnYkFfQVVsTVFPTzJqWTlNb3NKZHdTUG0wbGVwZVVRTTJ4LVI5cTVpSHlsYXJlcFlPTnhEanh6YTg?oc=5",
-          "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-08-03",
-          "image": "",
-          "first_seen": "2026-08-06T01:00:58+09:00"
         }
       ]
     },
@@ -1498,6 +1462,15 @@
           "published": "2026-08-07",
           "image": "",
           "first_seen": "2026-08-08T06:25:27+09:00"
+        },
+        {
+          "title": "이 조합을 한국서 본다고?…한일 스타 총출동한 인천 ‘이곳’ - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB4eVBpV3hoaHdESVhidXp6TEFYb251ZHU0NzktaG43M25EOTNTTl9zZWZNZkRDcUt6SnNIenhNQkFIcnlLUTRsTVFQdw?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-08-07",
+          "image": "",
+          "first_seen": "2026-08-13T06:31:42+09:00"
         },
         {
           "title": "아도·윤하·YB 파라다이스시티 뜬다…한일 음악축제 ‘XMF 2026’ - 뉴스탭",
@@ -1732,15 +1705,6 @@
           "published": "2026-07-30",
           "image": "",
           "first_seen": "2026-08-10T23:58:03+09:00"
-        },
-        {
-          "title": "355명의 아티스트가 펼치는 축제… ‘어반브레이크 &amp; 토이콘 서울 2026’ - K스피릿",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5zanlEbVNLZE11UFZUOTdTYllGQnFYRE5aMWd1dDNaX05SN0F4M3lQLWVKX1daU2xwYUdseVkxenFGVTZ0MTNSMFFFVWExNklOTnA2Zm9KaDRlY3cxdml2ekFaMmp0VzRFUC14dmRuVlFhT1XSAXNBVV95cUxOc2p5RG1TS2RNdVBWVDk3U2JZRkJxWEROWjFndXQzWl9OUjdBeDN5UC1lSl9XWlNscGFHbHlZMXpxRlU2dDEzUjBRRVVhMTZJTk5wNmZvSmg0ZWN3MXZpdnpBWjJqdFc0RVAteHZkblZRYU9V?oc=5",
-          "source": "K스피릿",
-          "summary": "",
-          "published": "2026-07-29",
-          "image": "",
-          "first_seen": "2026-07-30T00:48:50+09:00"
         }
       ]
     }
