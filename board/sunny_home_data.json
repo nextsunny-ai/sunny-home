@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-15T23:22:19+09:00",
+  "updated": "2026-08-16T06:08:56+09:00",
   "categories": [
     {
       "id": "ai",
@@ -94,6 +94,15 @@
           "published": "2026-08-13",
           "image": "",
           "first_seen": "2026-08-15T23:22:19+09:00"
+        },
+        {
+          "title": "딥시크, AI에이전트 시대의 룰메이커가 될 것인가 - OhmyNews",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPZDgxRVIwZ1NFdHk0d3phbU5vUFF4WUJtZGJrSWd4cFRHLXF5N2xBOS1tdnlQa0hBV09xWDQ0QXZiajRVZDJHZmNYVlY1UXE4akl0WW80YzlZY2g2Wl9WeGNKQklJRzJLVmpodzVQcTlYeDlobmYwRW5ucDRPdmNHS055NWY2ejJ1MGc?oc=5",
+          "source": "OhmyNews",
+          "summary": "",
+          "published": "2026-08-13",
+          "image": "",
+          "first_seen": "2026-08-16T06:08:56+09:00"
         },
         {
           "title": "미소정보기술, 노코드 AI ‘디파이’로 대학생 AI 에이전트 개발 생태계 확장 - 인공지능신문",
@@ -265,15 +274,6 @@
           "published": "2026-08-07",
           "image": "",
           "first_seen": "2026-08-10T23:58:03+09:00"
-        },
-        {
-          "title": "AI 에이전트를 개발하지 않고 조립한다 — Amazon Bedrock AgentCore 기반 엔터프라이즈 에이전트 플랫폼 - aws.amazon.com",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE0yNTBfVXNHbkQyRll1LS05Y1pOMVAzaExFWWl4b3FTZEpQNmhVOGZSeVhzUWxqNjlPTUI5RE00c2JQTTV0VHRVcjNvbDJwTDNWbklSSDk5aVBRS2YyRFllVU43TG0wMnVadDVkM1hSa1BWdVhSbk1xaHJKTGk?oc=5",
-          "source": "aws.amazon.com",
-          "summary": "",
-          "published": "2026-08-06",
-          "image": "",
-          "first_seen": "2026-08-07T09:58:51+09:00"
         }
       ]
     },
@@ -516,15 +516,6 @@
           "first_seen": "2026-08-10T23:58:03+09:00"
         },
         {
-          "title": "네이버웹툰, 인기 웹툰 IP 릴레이 팝업스토어 선보여 - 매일경제",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE80VWRhaVRUbnNvNjZFVF9vQ1hpeHQyQ1k0MWt3RmVNT0pvZDU0LWM5VHhvdWlmZ0ZqX05XWmx4MTU3czNJcU9rLUZrQ3I5Zw?oc=5",
-          "source": "매일경제",
-          "summary": "",
-          "published": "2026-07-31",
-          "image": "",
-          "first_seen": "2026-08-02T00:00:28+09:00"
-        },
-        {
           "title": "전남콘텐츠코리아랩, 콘텐츠 IP 기업 10개사와 팝업스토어 본격 준비 - 전자신문",
           "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9kaXIzSDRKb1Vhb2NDREd4UXVYMFhzeFNXUXA5LXM3dkRuTGkxRWNUZ3ozOTN3WWMwdmF5NlF5Ql95Q0xuLVpLMU9BbGI4QQ?oc=5",
           "source": "전자신문",
@@ -736,24 +727,6 @@
           "published": "2026-08-03",
           "image": "",
           "first_seen": "2026-08-14T23:51:26+09:00"
-        },
-        {
-          "title": "[르포] 도심 속에서 공연·맥주 즐긴다...'DDP 바캉스' 북적 - newspim.com",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBGRFYtejRRdDR4YkR2bm16eVhQMksyV2hNOWFfbXFZcFBQa2lVZ2pQLXdETFFCVUpWeG9ZeUFXZ3hnLWlaMllvUU1Bb3lmdEhOc3QyVXVPeW83OGxz?oc=5",
-          "source": "newspim.com",
-          "summary": "",
-          "published": "2026-08-01",
-          "image": "",
-          "first_seen": "2026-08-02T00:00:28+09:00"
-        },
-        {
-          "title": "2026 상반기 공연시장 8000억 돌파…지각변동 일으킨 ‘대형 연극’ - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9yRWVTODBaNk5kVDNFcl9lZDByVTVzTXMyMVVNcHF1Sjg0ZEstcGJ0T01pbnJKajR1QnNJX1pzcVplM1ZIVXRlTzhoSm00YzV6UDc5RA?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-07-31",
-          "image": "",
-          "first_seen": "2026-08-02T00:00:28+09:00"
         },
         {
           "title": "2026 상반기 공연시장 8000억 돌파…지각변동 일으킨 ‘대형 연극’ - v.daum.net",
@@ -1065,6 +1038,15 @@
           "first_seen": "2026-08-15T23:22:19+09:00"
         },
         {
+          "title": "중앙대, 소이랩엑스와 국비 지원 'AI 크리에이터' 2기 모집 … 1기 경쟁률 12.7대1 - 뉴데일리",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOWXpEMkZGQmRVOUhoanVGVmpsMUluR2doOFR0WThUOFk2SVhYYzZZZFlsY2N3bmllb0dSbVc3TjBRWkRLRW56V21QMkU0UzFkRFE1Smp3RVY1dVBlVU5lWVpHX1NaTlBKU0paa1pkWGtEbm54SzY5WDhPcWJLVWJsTdIBgAFBVV95cUxOWXpEMkZGQmRVOUhoanVGVmpsMUluR2doOFR0WThUOFk2SVhYYzZZZFlsY2N3bmllb0dSbVc3TjBRWkRLRW56V21QMkU0UzFkRFE1Smp3RVY1dVBlVU5lWVpHX1NaTlBKU0paa1pkWGtEbm54SzY5WDhPcWJLVWJsTQ?oc=5",
+          "source": "뉴데일리",
+          "summary": "",
+          "published": "2026-08-11",
+          "image": "",
+          "first_seen": "2026-08-16T06:08:56+09:00"
+        },
+        {
           "title": "총 1.2억 지원…유진이엔티, 영상 콘텐츠 공모전 'EUCON' 개최 - 더팩트",
           "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBRcWZKaDB6OU1faHRRbk1vamFFWGljQ2pUS2pPa19TOVlmcXZnRk1iSXdBSlFtSWdnN2hCMF9vMjJWU0R2MDhMMk5ETzRxcC1hZVVuZ9IBVEFVX3lxTFBRcWZKaDB6OU1faHRRbk1vamFFWGljQ2pUS2pPa19TOVlmcXZnRk1iSXdBSlFtSWdnN2hCMF9vMjJWU0R2MDhMMk5ETzRxcC1hZVVuZw?oc=5",
           "source": "더팩트",
@@ -1261,15 +1243,6 @@
           "published": "2026-08-05",
           "image": "",
           "first_seen": "2026-08-08T06:25:27+09:00"
-        },
-        {
-          "title": "문화체육관광부, 2026년 하반기 6대 핵심 과제 발표… 예술인 지원·K-컬처 육성 강화 - 디스커버리뉴스(DISCOVERYNEWS)",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9zZnpjUHhKM0g1UkxZcmtnRURzbldObHZxRDd4WWNGVjlHNjRESXJPdUZlZ2hBOV9WTFdCNlBtUnRTQnF0REhJdm1ieHMxcGR2cUxsaFE5ZWNZU1FOd0RqbGdVVkJlcFk2eVlzQ3BKY2tKZw?oc=5",
-          "source": "디스커버리뉴스(DISCOVERYNEWS)",
-          "summary": "",
-          "published": "2026-08-05",
-          "image": "",
-          "first_seen": "2026-08-08T06:25:27+09:00"
         }
       ]
     },
@@ -1438,24 +1411,6 @@
           "published": "2026-08-03",
           "image": "",
           "first_seen": "2026-08-06T07:02:43+09:00"
-        },
-        {
-          "title": "이노그리드, K-디자인 어워드 수상…클라우드 통합 UI·UX 경쟁력 입증 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1BRTR4NF9ScG93Ylo2bl9KOWJEdzlScDJzX1NzZzUzUTlIUWhDMzNkMGtHZWl4bDlhTEF0ZXhnUHhNU0lwMkE?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-07-31",
-          "image": "",
-          "first_seen": "2026-08-02T00:00:28+09:00"
-        },
-        {
-          "title": "이노그리드 '원 UI·UX', K-디자인 어워드 2026 수상 - 네이트",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1SVWxCTTFqX3ZpcnM0QXhYN1pTaUNQRzFjckNsb3RfanptbGM0LTBoa3lMa2pHZFBLaG1jN25Ta05DbWlEU1UzbkR4b2ZZSWIxVksw?oc=5",
-          "source": "네이트",
-          "summary": "",
-          "published": "2026-07-31",
-          "image": "",
-          "first_seen": "2026-08-02T00:00:28+09:00"
         },
         {
           "title": "이노그리드, K-디자인 어워드 수상…클라우드 통합 UI·UX 경쟁력 입증 - v.daum.net",
@@ -1669,15 +1624,6 @@
           "published": "2026-08-02",
           "image": "",
           "first_seen": "2026-08-11T23:57:15+09:00"
-        },
-        {
-          "title": "제21회 광화문국제아트페스티벌, 도심 속 열린 광장에서 예술로 숨 쉬다 - 피플투데이",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9PczN3eVoyb1pBM3pGT0NNa3diNjJkMEl5SjZlVGpic29oOEFVdDQwVzl4RFZ0YmhEYmJoZmNDRXVGSDNhdnhlYXI3VExLY1phSnVJZElwU2RnMU42NWthZWJQeWxnYjhEd3E0dGpNWQ?oc=5",
-          "source": "피플투데이",
-          "summary": "",
-          "published": "2026-08-01",
-          "image": "",
-          "first_seen": "2026-08-02T00:00:28+09:00"
         },
         {
           "title": "YB·윤하·아도 등 출연…'XMF 2026' 1차 라인업 공개 - 전자신문",
