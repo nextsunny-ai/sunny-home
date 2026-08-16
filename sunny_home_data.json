@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-16T06:08:56+09:00",
+  "updated": "2026-08-16T23:22:17+09:00",
   "categories": [
     {
       "id": "ai",
@@ -49,6 +49,15 @@
           "published": "2026-08-14",
           "image": "",
           "first_seen": "2026-08-15T23:22:19+09:00"
+        },
+        {
+          "title": "AI 에이전트 함께 일하게 했더니 ‘영역 다툼’...계정 잠그고 악성코드 심어 - 조선일보",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPUGE3cjZRRTl3alRqdnRwNkluTm5Vam9OOVhmNWtJWkVKUGVSX0xpOWJhNmlMQlFuYjM3eVF0S3BvNlVtWFZIN3liMjdLYVZHVUFqOG5Gb2xJUzlPYjk2Rzd1NlFhVnl1WWd4OHRzbUxZOW5LQ01pelJhTmdodEEyS0ExVQ?oc=5",
+          "source": "조선일보",
+          "summary": "",
+          "published": "2026-08-14",
+          "image": "",
+          "first_seen": "2026-08-16T23:22:17+09:00"
         },
         {
           "title": "딥시크 ‘V4 프로’ 정식 출시…AI 에이전트 강화·가격 인상 예고 - 연합뉴스TV",
@@ -159,6 +168,15 @@
           "first_seen": "2026-08-11T23:57:15+09:00"
         },
         {
+          "title": "AI도 말하지 않는 속마음이 있다고? - 조선일보",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPWXVHZ3BfZlZ0UmE4Unp2UE5xZ1RSSGx4YmF0OUVRRFVFd0RoTnZmbXR3VUw5WE5JQzNCV0FjS0dOamJ2OTF5ZHdYYjNDT09qZFN4dThBZ3VIMkFWVEhoMDVHYlBIMi10c2RBbGdCb2JUaFhGN20xZk56dE5mVF9LRXhJa1BXaURmaFUyUGw0VDc4TXNv?oc=5",
+          "source": "조선일보",
+          "summary": "",
+          "published": "2026-08-11",
+          "image": "",
+          "first_seen": "2026-08-16T23:22:17+09:00"
+        },
+        {
           "title": "MS&amp;AD, AI 이미지 탐지기술 보험금 심사에 도입 - 한국보험신문",
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE02bTFsWGpvejFiT3RlWTdzNjRoaDBxZ3NLajhrc0ZSalZ1ZmhINlY4THp4LUVadEJ5MUxKQTdlMFZvbmRLXzl4eFZrYkRiUWFWOG8wcjJhYWRWUUtTUUZRLWU5blJDcXRrRWdv0gFvQVVfeXFMTm9WTU9GTXR2cVlucTRFaHEwZ0JaalNPS0l2RGJGZXI3MnJCMG5YaUNTRjFSN0xncXprdThLYkF0WlY1WnhoNUZjdjRlZ3hZMDVDa0NFQWlkSE1Md2M2QUtHWFM5U1NMaG9hS1J0dDRj?oc=5",
           "source": "한국보험신문",
@@ -256,24 +274,6 @@
           "published": "2026-08-07",
           "image": "",
           "first_seen": "2026-08-08T06:25:27+09:00"
-        },
-        {
-          "title": "카카오, 과기정통부 ‘AI 에이전트 마켓플레이스 개발 지원 사업’ 선정...에이전틱 AI 유통 생태계 기반 마련 - 인공지능신문",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5Kc0hoMDZlV0JNb1dpejRnUlJwbWNXTGJjMzluMmoydWFVUFJ3TExGQVZCZ0g0NGtWQk9tX25qSlYtaGFDTmx4a2ZnaFVnLWVKYllkZnFBWmtCZTJGZzM4Mjc5WXM2eVk?oc=5",
-          "source": "인공지능신문",
-          "summary": "",
-          "published": "2026-08-07",
-          "image": "",
-          "first_seen": "2026-08-08T06:25:27+09:00"
-        },
-        {
-          "title": "[DEF CON 34] 에이전트들만의 해킹대회 열린다... AI로 물드는 데프콘 - 보안뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBxSVJfd2F0SDB1c3UwY1o2cHo3dXlmYUJTMi1pRUR5RENhWFhnX2tfZENJQ0Fkd3hLbUU0WDE1Y1A2NXh0NlFBRFZQNUpmUC1CT2pYdkJBVW9lM0Q1OG53?oc=5",
-          "source": "보안뉴스",
-          "summary": "",
-          "published": "2026-08-07",
-          "image": "",
-          "first_seen": "2026-08-10T23:58:03+09:00"
         }
       ]
     },
@@ -281,6 +281,24 @@
       "id": "content_ip",
       "name": "콘텐츠·IP",
       "items": [
+        {
+          "title": "'재혼황후'·'21세기 대군부인'…디즈니서 주목받은 K-콘텐츠 - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1NN21jWkhwQllpblk3M3luc3JMSlVCMFoyVGJael93NXNlWERxaE1TY0ZfLXF0SkdHOEJGVDJnX3Y1b2R5WnpEQTJFZFNoQk9qeU1WZi1fSlhiSUlnd2ZMddIBYEFVX3lxTE1NN21jWkhwQllpblk3M3luc3JMSlVCMFoyVGJael93NXNlWERxaE1TY0ZfLXF0SkdHOEJGVDJnX3Y1b2R5WnpEQTJFZFNoQk9qeU1WZi1fSlhiSUlnd2ZMdQ?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-08-16",
+          "image": "",
+          "first_seen": "2026-08-16T23:22:17+09:00"
+        },
+        {
+          "title": "'안나'부터 '파친코'까지…TV로 돌아온 OTT 오리지널 드라마 - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBzOU9BUDU2bktNeXRZMTdPMUJjOFdTU19sTWdNNi15RjYxcmJxdjdqVlM1TEVuTF84SE9Qd01hRlhNWXI2OVpDSlZtdTBhQU5IWktjdThwZ0p0Rl8xaUFlWdIBYEFVX3lxTFBzOU9BUDU2bktNeXRZMTdPMUJjOFdTU19sTWdNNi15RjYxcmJxdjdqVlM1TEVuTF84SE9Qd01hRlhNWXI2OVpDSlZtdTBhQU5IWktjdThwZ0p0Rl8xaUFlWQ?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-08-16",
+          "image": "",
+          "first_seen": "2026-08-16T23:22:17+09:00"
+        },
         {
           "title": "천만영화 '파묘'부터 SF '경성크리처'까지...광복절 볼 만한 OTT 콘텐츠 5선 - 지디넷코리아",
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8zaUdEYm5jcHdlNkk0TDV6QzhXM255dkVuNUhjQ29DaHhNb2E3LWRFaEVUNjRCVWhIVGtTU3Z4TlprLVYtRE5JdkN1ZGEtbGwzYUNRRXlB?oc=5",
@@ -507,6 +525,15 @@
           "first_seen": "2026-08-12T23:56:44+09:00"
         },
         {
+          "title": "한번 만든 콘텐츠로 계속 돈 번다…CJ ENM, IP 가치 재창출 - 지디넷코리아",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5HZmM2NXlBX2hZTFRqemU0VVBKUlVYQlpOTjc2MmRnT19uSjZfMnFMOW9fVF9ZdkFlaVNzMWpHcEp1TTkza0hCd08wZzRZNGJCNndPaGJ3?oc=5",
+          "source": "지디넷코리아",
+          "summary": "",
+          "published": "2026-08-03",
+          "image": "",
+          "first_seen": "2026-08-16T23:22:17+09:00"
+        },
+        {
           "title": "K콘텐츠 대국의 그림자…‘넷플릭스 10년’이 만든 황금기의 역설 - 시사저널",
           "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB3NHl6VnExWmpoeXVZM0c1Y28zZllCMHlUdC03QnlHWWFNXzBLVWRhekNoN1ZHU21mdjV5WUNPaXJRamFUTEM0ZGJ4azVSUVFXLTJWRTZRaFR3eXRRclVEZzNKd29QWXdnbmhLRUpvRdIBc0FVX3lxTE03Qm9TUFRvOS1qcGl3MVoyVHFHUm1McGRvTHQzR1VGVGRUR0VrS2ZkMUlqdUhrZFBCc1JNQlJ6T0pCNTBtLUJrZXZYaFFMRjNJWmx1NVZ2NkZMbE9oalgtNHhIemJib0MyU01yN0dCWm5lTHM?oc=5",
           "source": "시사저널",
@@ -523,24 +550,6 @@
           "published": "2026-07-31",
           "image": "",
           "first_seen": "2026-08-04T01:25:30+09:00"
-        },
-        {
-          "title": "웨이브, 국내 OTT 첫 오디오 모드 '듣폼' 출시 - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5veXYyNEZvVksxaDE2djRtTG13RmN3M1d6VnVvWm1CNW5xZnZaWFpWcHd3TXVYdk95RnI5OHJMMzVMaklmRVRUSXM4TXRqV3JaZ1V1V0lKSkRiU2fSAWBBVV95cUxQTVBwVEh1WEVwUklfNFZBc09KbXVOa1RHdXlsSThCMlhUNTNzYXdOMVFFXzZaT19vZDlKVlV1c04yOExHN2dMNEt1SWQ2NnVMYXFJVWI3YXBJWDRSWlhVWUQ?oc=5",
-          "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-07-31",
-          "image": "",
-          "first_seen": "2026-08-05T01:11:44+09:00"
-        },
-        {
-          "title": "전남콘텐츠코리아랩, 콘텐츠 IP 기업 10개사와 팝업스토어 본격 준비 - AI포스트",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5SeUt2dU9HUTM3VDhtdmhkODJRVW93UUpOakdLLUgyenFMTmJsY0U4ZkRmMUNIR0EtY2VfWTItMnYyREFwU1NITThmSkk4OFpDUTh3RlhtaFB5MVBWWi0zVW5vLW01cF8wZjNvOHVB0gFyQVVfeXFMUEYxdkE1d24yZmJaUi1yTlBWb1RIQXItcWRjOUlhQnRHbGJKR3FpVXVpU08wazRybk9iN2g2cU9Yd3VLTGlxUktBWXhIcXV5ZDR0d1BUX29tOHNCc25hTEJZSXBOby1Wb2l4N0pzRUtXS0tB?oc=5",
-          "source": "AI포스트",
-          "summary": "",
-          "published": "2026-07-31",
-          "image": "",
-          "first_seen": "2026-08-07T09:58:51+09:00"
         }
       ]
     },
@@ -752,6 +761,15 @@
       "id": "exhibition",
       "name": "전시",
       "items": [
+        {
+          "title": "청계천 미디어아트 전시 관람객 참여형 인어가 헤엄치는 밤 이벤트 개최 - 이트레블뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE12TjFPUkhuMWtQWHV3RW5lcHBhUGpIVEVOeERKZS04YkR5TFlDaWRZMlU2NTBwcFM2N2tUUlBDeF9Tb0JZ?oc=5",
+          "source": "이트레블뉴스",
+          "summary": "",
+          "published": "2026-08-16",
+          "image": "",
+          "first_seen": "2026-08-16T23:22:17+09:00"
+        },
         {
           "title": "[영상] 빛과 AI로 다시 태어난 도시...‘수원 빛으로 물들다’ 미디어아트 전시 - v.daum.net",
           "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBGZm9odDB0emZ3ekpEc2ZBWDc3WkFxQ1ZOc2t0NmhyT3cxWDZMcmJBai1xSy1nVUVrU0lja1JwTEg4TlRHU0VyZzdidWdMMEU?oc=5",
@@ -1395,6 +1413,15 @@
           "first_seen": "2026-08-14T06:32:13+09:00"
         },
         {
+          "title": "국보디자인, 창립 43주년 새 BI 공개…'경험 설계자'로 정체성 확장 - 한경매거진&amp;북",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4wMFMwZkdhQXhFSVRweDhxazhYMXJQbTZ3YW42WTFiakpyWVdQelFocXUyRzR5RzM2Q1IwU3N0QV9lVVNyR2JybmVzMDZ4cU03ZXRKdnJhekJGazN1V3Y5eGlXbXdySGZQUmpWRg?oc=5",
+          "source": "한경매거진&amp;북",
+          "summary": "",
+          "published": "2026-08-05",
+          "image": "",
+          "first_seen": "2026-08-16T23:22:17+09:00"
+        },
+        {
           "title": "디자이너들이 주목하는 새로운 UX/UI 트렌드 - brunch.co.kr",
           "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9Cb2Y4dXVSZWNmYUwzMVNpWjZEY2hPWUJoc2NxZkhfNGRPU2VUbFhJNkc0OXBocmNlcXZ2bEIyQnZhNFZ3Z3JCUzN6WDFRbzB2bmc?oc=5",
           "source": "brunch.co.kr",
@@ -1462,6 +1489,15 @@
           "published": "2026-08-15",
           "image": "",
           "first_seen": "2026-08-15T23:22:19+09:00"
+        },
+        {
+          "title": "어린이와 예술이 만나는 '울주 키즈 아트 페스티벌' 18일 개막 - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5IU1NMd29IUjlTYUlDdTNfZGxxLUV1azZDUzZ0NnBFX3dpcTJwMmk0ZldfQ2Zod2Z2VnVHc3pZOU5kTDkySTlKNnprQllvTlN0R3NNaE0weDJHTDDSAWBBVV95cUxPUGlRQVd1WDFJT2VHZ2dLek9wbDVNRUFJb0tYaEExblFiR0JNWFhqUUI3Rlh2TWJ3a3VhY3JFYXh3akFXeUlkLWJNTjRqWUxyMmVzbTZZSVdpUVJVRzhHdGI?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-08-15",
+          "image": "",
+          "first_seen": "2026-08-16T23:22:17+09:00"
         },
         {
           "title": "호찌민시, '2026 사이공 국제 기타 페스티벌’ 개최…한국 기타리스트도 참여 - Thông tấn xã Việt Nam",
