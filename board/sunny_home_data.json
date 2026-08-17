@@ -1,10 +1,37 @@
 {
-  "updated": "2026-08-17T06:08:08+09:00",
+  "updated": "2026-08-17T23:27:19+09:00",
   "categories": [
     {
       "id": "ai",
       "name": "AI 트렌드",
       "items": [
+        {
+          "title": "SBVA, 젠스파크 CTO 초청 파이어사이드 챗… AI 에이전트 미래 논의 - 인공지능신문",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBFUThPZ0Vtc0ZwXzV1Yi00aGc4UFBkWDdfNU1KbHcxTTJtRGYtMWd6NHhMb3lnbDljRklrOHU2WkhuNl9pcDRqcGJXUVBvVllFbklCemwtVVVQYkM1TzNjNV8tZHBsRW8?oc=5",
+          "source": "인공지능신문",
+          "summary": "",
+          "published": "2026-08-17",
+          "image": "",
+          "first_seen": "2026-08-17T23:27:19+09:00"
+        },
+        {
+          "title": "Anthropic은 Claude의 텍스트에 미묘한 지문을 남겨 AI가 생성한 콘텐츠의 투명성을 높이는 데 도움을 줍니다. - Vietnam.vn",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQVlzejJCbUR3bWV2eXJVM1RlWkhJZExqYWdUN3JkM0pod2hETHRGaUJNYnZPTGNnOFhKVnN6Ujd3MGxvc3otUFJkUHhaWTg2SnRSTzJfY2NsOTcyallld1hWeDZXRV9yZ0xibEx1TWUyR2tLcllmVFBXeTBQM0lralJXdUZlblRjWnRKZG5hTHlMWngzMFRfZndoc0g1LXlOcl9LTkYwVkhVWTBNY1FJdXNjRl9jZXFlcmZV?oc=5",
+          "source": "Vietnam.vn",
+          "summary": "",
+          "published": "2026-08-17",
+          "image": "",
+          "first_seen": "2026-08-17T23:27:19+09:00"
+        },
+        {
+          "title": "AI가 알아서 처리한다…앤트로픽, 클로드 코드 자동 모드 기본 탑재 - 지디넷코리아",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE96NWg2UlRnNkdpTzd3VTBIeWZMMmpnd2p5NUJpdVZzOUNtSWNaVWpmLUJwX1BTclZGVXZrUXViUlpJSUg2cVh0TkNKUFoyNWlzMzNWcS13?oc=5",
+          "source": "지디넷코리아",
+          "summary": "",
+          "published": "2026-08-17",
+          "image": "",
+          "first_seen": "2026-08-17T23:27:19+09:00"
+        },
         {
           "title": "챗GPT에 '전여친 살해계획' 털어논 美남성, 오픈AI 신고로 체포 - yna.co.kr",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5NcVBpYW5CaDFhMWlrNWNzdVhHU3FhYzVjVVRPN29ORTVxWnZxZEdTRkh3aUZWLU9HajYySGZ0Tng2QzBKUFZwamJmMC1FeFhXSW85cTBhQktmaTjSAWBBVV95cUxPVmVHT1hJYVZHckZ2Rlh1TF9qWE9LWXVLSXNJbU5ZX1dCOW5fVWdEYm5nTDc5Z0ZvR2kwcm9hTGxlU1l0dUgyVndUYTRTb2MxM2JLcEduNEUzZTNvQjdZZXA?oc=5",
@@ -13,6 +40,15 @@
           "published": "2026-08-15",
           "image": "",
           "first_seen": "2026-08-15T23:22:19+09:00"
+        },
+        {
+          "title": "챗GPT에 “전 여친 죽이겠다” 총 자랑까지…오픈AI 신고로 ‘쇠고랑’ - hani.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1yZTJtcGRSdlNpS0VlMmpKNjRDXzJ0TTFmU3BlMk92eEVtU2U0R1gyY1NLVUh3Tzc5U210dEJQVEJTVUVOejhNMlJxenhPQlZsNU9qWnpqNGFDUzh1NXRDWEFIYTdINjRhdzRCeG10WQ?oc=5",
+          "source": "hani.co.kr",
+          "summary": "",
+          "published": "2026-08-15",
+          "image": "",
+          "first_seen": "2026-08-17T23:27:19+09:00"
         },
         {
           "title": "[비즈톡톡] 자체 개발 ‘챗봇’으로는 한계… AI 에이전트 전환에 빗장 푸는 제조사들 - 조선비즈 - Chosunbiz",
@@ -114,6 +150,15 @@
           "first_seen": "2026-08-16T06:08:56+09:00"
         },
         {
+          "title": "차세대 모델 GPT-5.6 Sol 미리 살펴보기 - OpenAI",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1JY2x2cXlzYVI5aEZQZDEyeVIyUVJ1c002c0IzdWxVeGxnM2FkNmhtNnFPb2F5ZUNGQ2lPRnlWN1drSmhaUWFPM1ZVQUk4WmFpUDdTeWdBaXdla2V2SXNqR0hCc0Q?oc=5",
+          "source": "OpenAI",
+          "summary": "",
+          "published": "2026-08-13",
+          "image": "",
+          "first_seen": "2026-08-17T23:27:19+09:00"
+        },
+        {
           "title": "미소정보기술, 노코드 AI ‘디파이’로 대학생 AI 에이전트 개발 생태계 확장 - 인공지능신문",
           "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9mRThrUUZUeFJfdzN3dEdNS1VzeUxfTnZtVlBkdW1GaWFYWjliUnVsSkxzTWZjblR3bjFpOEdMOGplMlAxSHBHREJMN0xYdlhSUHNDRTNheXowWWZiaEtNcXM4RlF3aXM?oc=5",
           "source": "인공지능신문",
@@ -150,6 +195,15 @@
           "first_seen": "2026-08-13T23:57:20+09:00"
         },
         {
+          "title": "EU 투명성 규정 따라… 앤트로픽, 클로드 생성 텍스트에 ‘보이지 않는 워터마크’ 도입에 이용자 반발 - Yellow.com",
+          "url": "https://news.google.com/rss/articles/CBMi1wNBVV95cUxPUXFvOW01b0paTWtqSmUxY1QzMTNTSjE0a2c3VlNwbkZFc0VJOWVPWnNQVmZMX1lnejlsR1h3VkZSNUFSV2lIRkRYTjl4RHZDMkcwS3dEM3ozLWdqRDdSaExQVDlwdlRZTUU5VXliN1hWOHQ4dmEwbVJYbXQySTBISjhJVXRxSlhMZ0JxWF9oOXlHdjZNVW9TR2loWnAyN3ZaLWl1ZVlibnFEcmpLTnBaU3hUMmFSTGdCMmk1VzZzQllPTGVuMnVfUXdSc21JUU1iWTlqQUNPa0RCMU1DNEJTYXlKRlNoazJFanZtSGtFaGJzUXlOcjB0UVJyQ1dGSGJ1NXJUclhBbUxneFY3ZG1WZGZmMG01V2x3cjZlSzI3eERUdEJtcGZnaTZycW1HZ1c1R20tSTNZVkRnQ2JCVUlrV0F3RnFVOXNxcHMyd05oaWUySDFLNWNreU5lQlgxOE9LdHZKQXpfZ0lhaG5qaDN4Zmh0MEZlX1FRbUZ3Z1ExdWItd1hUR3hxVU8ta3dNQ0x6cTFyRnd5RW1LVjhiOHpnQnZrb2Vpc1Z3V1pReG56ZEZXcGVpcXBndzBMX2cxOHZVZk5GcHhXVmJ6WEtUaW10V2hzX1UyRVk?oc=5",
+          "source": "Yellow.com",
+          "summary": "",
+          "published": "2026-08-12",
+          "image": "",
+          "first_seen": "2026-08-17T23:27:19+09:00"
+        },
+        {
           "title": "AI 에이전트: 에이전틱 AI 아키텍처와 거버넌스 가이드 - Snowflake",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBrU0hwWEpQZXVWRDFSNmJWV1g1MjR2X3VGNEFPLU83amhVczY0WDBkaVpaMGg4dlREeFEtUWRaaFRKMUZNYnVmTlFDWHdBSUNZNWw2d01pS3VVc0xhV2RrNWJiSHdocWJzZHBoSw?oc=5",
           "source": "Snowflake",
@@ -175,6 +229,15 @@
           "published": "2026-08-11",
           "image": "",
           "first_seen": "2026-08-16T23:22:17+09:00"
+        },
+        {
+          "title": "\"AI 에이전트 위협 본격화\"…미국 주요 보안주 일제히 급등 - AI타임스",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9jTmNXVkt2dkZMbXRORERMOVpEaWIwa0lrN2lEX2hxeFJpR05sU0VXM2RkQXB1Zkh1a0IyMXFKR0l1VkUxckN3WTRiaE1meGliRktSajM4NWRQZWUyM3hPSG9iemFYa3hYT2c?oc=5",
+          "source": "AI타임스",
+          "summary": "",
+          "published": "2026-08-11",
+          "image": "",
+          "first_seen": "2026-08-17T23:27:19+09:00"
         },
         {
           "title": "MS&amp;AD, AI 이미지 탐지기술 보험금 심사에 도입 - 한국보험신문",
@@ -211,69 +274,6 @@
           "published": "2026-08-10",
           "image": "",
           "first_seen": "2026-08-11T06:29:13+09:00"
-        },
-        {
-          "title": "'동시 소통' AI 에이전트 등장…단일 '클로드 오퍼스 4.8' 성적 뛰어넘었다 - AI타임스",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8yT1JuejQ4eVpmVXBHS3NoTU0wajY2MjhWZGUwak1oRVZucjR3UDRiUWcxUURtazlrR0lxWTA1ZjlkXzZiZG1Gek45cDZrV0hJRjA3LWhpd2d5NlhfeW5yazRycW5hRGR3UXc?oc=5",
-          "source": "AI타임스",
-          "summary": "",
-          "published": "2026-08-10",
-          "image": "",
-          "first_seen": "2026-08-11T23:57:15+09:00"
-        },
-        {
-          "title": "스스로 진화하는 'AI 에이전트 시대'가 열렸다 - OhmyNews",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNRF9ka01WRUxYWVpEX3NRaHlHM3JQTUNKSzl6NTBRNXZXQkRqWGtiaUx0bkZ6eEdrS2V1Ukc1bjA2Sl9tYnlWWnNTMkRmaG5rTjNhM1lnWjg2N3hoQVV1cUZ3S2ZZNDQ4dEkwZ3Fsb3p0bThuZllkbTF3cHprRFBQMjB0dUxYSDVHMkE?oc=5",
-          "source": "OhmyNews",
-          "summary": "",
-          "published": "2026-08-10",
-          "image": "",
-          "first_seen": "2026-08-12T06:32:38+09:00"
-        },
-        {
-          "title": "호반문화재단, '넥스트 아트 AI' 개최…생성형 AI 이미지·영상 공모 - 뉴스1",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1aLUlILS1KMjlELTNZcHA0Sk1zRFg5TnlSbWMxTWtqNnA2eGV3R1Z2LXJIOFBUVlY3VEZwZXR1bzltVXNzUmtPWTdsNXFOaUF4Z1ZFdlU4cmtzR00?oc=5",
-          "source": "뉴스1",
-          "summary": "",
-          "published": "2026-08-10",
-          "image": "",
-          "first_seen": "2026-08-13T23:57:20+09:00"
-        },
-        {
-          "title": "스페이스XAI, ‘이매진 이미지 2.0’ 공개...생성 넘어 정밀 편집·일관성 집중 - AI타임스",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9hY3BuUWxrdEtkN056bEdOdjFtVzdYelc2RTloZGtEeVg5a1dmZlpCRjVjMDlVR0hrVmJNS2JickczNWVTWHBBb0J0em1NNndvU3pHT3JmWkRBVHh3alZoS2RiSzI1UkMxeUE?oc=5",
-          "source": "AI타임스",
-          "summary": "",
-          "published": "2026-08-09",
-          "image": "",
-          "first_seen": "2026-08-09T23:34:12+09:00"
-        },
-        {
-          "title": "챗GPT 무료 이용자도 최신 모델 쓴다…GPT-5.6 ‘루나’ 개방 - 경향신문",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE11VTFSd2Z0NFhhcDFJMTRyMXZzMkJhZ19LdjJpVWkzYThYS0t0X3RScGhFSjI3ZVJybVhYZnd2ZGgxOURVODBsVjlTSGgzZG5iRjZ6MV9OU2FpZ9IBX0FVX3lxTE9Va3ZpRXRMVnZfYmZ0eFd3aDc3c3kxMWZJRmFpSV91ekhVZG1vLTdWMVFnQXFPb2txLVpKdzgzcWgwbkwzN1NlcUtJQkxnWFYzdTFra3BwN1hBZVBqYURj?oc=5",
-          "source": "경향신문",
-          "summary": "",
-          "published": "2026-08-08",
-          "image": "",
-          "first_seen": "2026-08-11T06:29:13+09:00"
-        },
-        {
-          "title": "OpenAI는 8월 8일부터 ChatGPT용 GPT-5.6 Luna 모델을 사용하여 무제한 무료 메시지 서비스를 제공합니다. - Vietnam.vn",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNR0xUd0dKX1NRcG1hRTNMZnc4OF9OM0dRUzVhZWU4REg0akNhQlJXOFFVZVFyc0xRZmVnQ25XQWgxdElGc3piMUdYNGsxRGdGQVZXTjEtSmdTNEF4ZlNiLVVXSmlPUWtpbVdkLWg3TmVGV21UN1NyMlo0ZllYWVIwZHpnQjZIQnE4VDRadEZRT2p2b0Frc2JNMXdnRjdNdVM0NUo0M3JRWnpBeDVhX0ppM1NqaHc?oc=5",
-          "source": "Vietnam.vn",
-          "summary": "",
-          "published": "2026-08-08",
-          "image": "",
-          "first_seen": "2026-08-13T23:57:20+09:00"
-        },
-        {
-          "title": "[기획] 9초 만에 회사 DB 삭제한 AI… “AI 에이전트, 책임은 누구에게” - 법조신문",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBaamk1Smw0OENkVUNjN09vdGtxWTRVajNRb3hxTnNnUkRvT3JzNWlpU1p6VG4zOXp2WmNIb1MwXzlERzlIVzUwenhxendLbENYeHZKU0c0RWVrdk1XUlotQ3V5NHRNb0xQdEM3dmlTZw?oc=5",
-          "source": "법조신문",
-          "summary": "",
-          "published": "2026-08-07",
-          "image": "",
-          "first_seen": "2026-08-08T06:25:27+09:00"
         }
       ]
     },
@@ -281,6 +281,15 @@
       "id": "content_ip",
       "name": "콘텐츠·IP",
       "items": [
+        {
+          "title": "[조현래의 콘텐츠 脈] 〈16〉문화자산과 콘텐츠 IP - 전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE8wZTg2ekhtS29RSkw1azF3R0N5azY3amFSakYwWjZJcGw3czhSdlFYcEJJQ3lXaUladFdQY3llRGYzbDJsZEUtZDRWaTc5Zw?oc=5",
+          "source": "전자신문",
+          "summary": "",
+          "published": "2026-08-17",
+          "image": "",
+          "first_seen": "2026-08-17T23:27:19+09:00"
+        },
         {
           "title": "'재혼황후'·'21세기 대군부인'…디즈니서 주목받은 K-콘텐츠 - 연합뉴스",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1NN21jWkhwQllpblk3M3luc3JMSlVCMFoyVGJael93NXNlWERxaE1TY0ZfLXF0SkdHOEJGVDJnX3Y1b2R5WnpEQTJFZFNoQk9qeU1WZi1fSlhiSUlnd2ZMddIBYEFVX3lxTE1NN21jWkhwQllpblk3M3luc3JMSlVCMFoyVGJael93NXNlWERxaE1TY0ZfLXF0SkdHOEJGVDJnX3Y1b2R5WnpEQTJFZFNoQk9qeU1WZi1fSlhiSUlnd2ZMdQ?oc=5",
@@ -316,6 +325,15 @@
           "published": "2026-08-14",
           "image": "",
           "first_seen": "2026-08-14T23:51:26+09:00"
+        },
+        {
+          "title": "와이랩 투자분석 2026. 08. 14 - 주달",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1qenJwV1U5TDhQQTIzeTMtSEgyNDdZRHY0a1FuczcwZmVMQ2FUZk1TMHJteXBraVZhSTJoR0FfdkZub0piVTA4NHBlVXpuYmtvcnJPQjRSSDFSQVpUYzBLSFdkRzhXallaQk1rTy1PTjYzNDA?oc=5",
+          "source": "주달",
+          "summary": "",
+          "published": "2026-08-14",
+          "image": "",
+          "first_seen": "2026-08-17T23:27:19+09:00"
         },
         {
           "title": "“OTT 콘텐츠도 4DX로”…CJ 4DPLEX, 디즈니+ ‘킬러들의 쇼핑몰 시즌2’ 4DX 특별상영 - CJ 뉴스룸",
@@ -532,24 +550,6 @@
           "published": "2026-08-03",
           "image": "",
           "first_seen": "2026-08-16T23:22:17+09:00"
-        },
-        {
-          "title": "K콘텐츠 대국의 그림자…‘넷플릭스 10년’이 만든 황금기의 역설 - 시사저널",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB3NHl6VnExWmpoeXVZM0c1Y28zZllCMHlUdC03QnlHWWFNXzBLVWRhekNoN1ZHU21mdjV5WUNPaXJRamFUTEM0ZGJ4azVSUVFXLTJWRTZRaFR3eXRRclVEZzNKd29QWXdnbmhLRUpvRdIBc0FVX3lxTE03Qm9TUFRvOS1qcGl3MVoyVHFHUm1McGRvTHQzR1VGVGRUR0VrS2ZkMUlqdUhrZFBCc1JNQlJ6T0pCNTBtLUJrZXZYaFFMRjNJWmx1NVZ2NkZMbE9oalgtNHhIemJib0MyU01yN0dCWm5lTHM?oc=5",
-          "source": "시사저널",
-          "summary": "",
-          "published": "2026-08-01",
-          "image": "",
-          "first_seen": "2026-08-10T23:58:03+09:00"
-        },
-        {
-          "title": "전남콘텐츠코리아랩, 콘텐츠 IP 기업 10개사와 팝업스토어 본격 준비 - 전자신문",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9kaXIzSDRKb1Vhb2NDREd4UXVYMFhzeFNXUXA5LXM3dkRuTGkxRWNUZ3ozOTN3WWMwdmF5NlF5Ql95Q0xuLVpLMU9BbGI4QQ?oc=5",
-          "source": "전자신문",
-          "summary": "",
-          "published": "2026-07-31",
-          "image": "",
-          "first_seen": "2026-08-04T01:25:30+09:00"
         }
       ]
     },
@@ -565,6 +565,15 @@
           "published": "2026-08-13",
           "image": "",
           "first_seen": "2026-08-15T23:22:19+09:00"
+        },
+        {
+          "title": "한강 ‘작별하지 않는다’ 무대에…서울국제공연예술제 10월 개막 - nongmin.com",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5ZWjRoUUZ5VTB4SUJ0MDlQQWRlTWZpaHZ2eFBKUlVDSXdVNWJZLUdPeEx1NV9JMjFOSUo3UWFmbTlkeHoxaGM1TkNjbXZwSDNFNGZSX3UydTJ6QQ?oc=5",
+          "source": "nongmin.com",
+          "summary": "",
+          "published": "2026-08-13",
+          "image": "",
+          "first_seen": "2026-08-17T23:27:19+09:00"
         },
         {
           "title": "서울예술대 창작뮤지컬 ‘너울’, 2026년 8월 안산서 3회 무료 공연 확정 - 교수신문",
@@ -610,6 +619,15 @@
           "published": "2026-08-06",
           "image": "",
           "first_seen": "2026-08-08T06:25:27+09:00"
+        },
+        {
+          "title": "하나은행, 어린이 경제 뮤지컬 공연 - 뉴스핌",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5KYzU0U21WY1E0WllhWTFIRlQtTW56ZE9telBXYm5sVzdZeVFMN2RyeUR0eEk0SGtvSm9GOFY2V0dXRWhTSS1oS1ZoUjUxUTdSenJHUlVwZ0FkQm0w?oc=5",
+          "source": "뉴스핌",
+          "summary": "",
+          "published": "2026-08-06",
+          "image": "",
+          "first_seen": "2026-08-17T23:27:19+09:00"
         },
         {
           "title": "뮤지컬은 뒷걸음, 연극은 두 배…2026 상반기 공연시장 8094억의 엇갈린 성적표 - 이슈인사이트",
@@ -761,6 +779,33 @@
       "id": "exhibition",
       "name": "전시",
       "items": [
+        {
+          "title": "[전시] 디지털 미디어아트로 다시 읽는 민화와 백남준, 도심을 밝히다 - 한국보험신문",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE90REF4eTZGYkowNFNfN3RMOWNpdnJneDcwT3djN2NZX3dOUkNfa3N2MHU4VEp2RXNVY0FCUVlGSVFubXFsRjdXQ0lXVTY5YWZrcEozQTlwZXd0QmE4dEtTTlRCTE9vdVM3MzdnazZvQdIBb0FVX3lxTE90REF4eTZGYkowNFNfN3RMOWNpdnJneDcwT3djN2NZX3dOUkNfa3N2MHU4VEp2RXNVY0FCUVlGSVFubXFsRjdXQ0lXVTY5YWZrcEozQTlwZXd0QmE4dEtTTlRCTE9vdVM3MzdnazZvQQ?oc=5",
+          "source": "한국보험신문",
+          "summary": "",
+          "published": "2026-08-17",
+          "image": "",
+          "first_seen": "2026-08-17T23:27:19+09:00"
+        },
+        {
+          "title": "송파구, '호수동물아트전' 개최…어린이 눈높이 맞춘 현대미술 전시 - 신아일보",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBtTnRYRFJxNzZvN1BZSlc2OXU2T0ROMWgwcG5YdVRkd0pwSUVZX21zOGFmSllvcnp6VjJrQ2tIdXQ5dGpFZHJ5UGFtcXpaU2d5TnVoelFJQ1BLYjhMQ1NHOGdOcDB0dmlSWi1Vdzc3bEk?oc=5",
+          "source": "신아일보",
+          "summary": "",
+          "published": "2026-08-17",
+          "image": "",
+          "first_seen": "2026-08-17T23:27:19+09:00"
+        },
+        {
+          "title": "피비갤러리, 프리즈 서울 2026서 한국현대미술의 확장성 조명 - 아트코리아방송",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1BV3liMXVKU1RfRF9PLVF0VzJobVRBcmZyUEpGLW91Z1g5M0tvVjhXOFVOVDVCTjRVOU5QMzZQNzFMR3FaOVdRbXFqOW80RTNHNTluX3djd1FjTEJUWDhxN29PMXM5SHBlbmRoemJB?oc=5",
+          "source": "아트코리아방송",
+          "summary": "",
+          "published": "2026-08-17",
+          "image": "",
+          "first_seen": "2026-08-17T23:27:19+09:00"
+        },
         {
           "title": "청계천 미디어아트 전시 관람객 참여형 인어가 헤엄치는 밤 이벤트 개최 - 이트레블뉴스",
           "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE12TjFPUkhuMWtQWHV3RW5lcHBhUGpIVEVOeERKZS04YkR5TFlDaWRZMlU2NTBwcFM2N2tUUlBDeF9Tb0JZ?oc=5",
@@ -983,6 +1028,15 @@
       "id": "grants",
       "name": "지원사업",
       "items": [
+        {
+          "title": "\"AI로 영상 만들어 보세요\"…해썹 콘텐츠 개최 - 뉴시스",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0zVEl5WFkyMC1DWFotRkIxaldpamFhOGlFenY2RmNuSWs4SGJwYlVzR29PZk41TWNaRXJFYlhVSy05eWNzckVDWlpZQzY2VXpaTldScHctV0pCZ29MbTZRWVRFbWpYWU5CZFpjY2N3elZhcE1MbDYydNIBeEFVX3lxTE0zVEl5WFkyMC1DWFotRkIxaldpamFhOGlFenY2RmNuSWs4SGJwYlVzR29PZk41TWNaRXJFYlhVSy05eWNzckVDWlpZQzY2VXpaTldScHctV0pCZ29MbTZRWVRFbWpYWU5CZFpjY2N3elZhcE1MbDYydA?oc=5",
+          "source": "뉴시스",
+          "summary": "",
+          "published": "2026-08-17",
+          "image": "",
+          "first_seen": "2026-08-17T23:27:19+09:00"
+        },
         {
           "title": "한터글로벌, 51억 규모 ‘K컬처 파워 인덱스’ 만든다... 문체부도 지원 - 일간스포츠",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8zb3o5TVZYZVN1OVN2bHJsX0tOcFZxQjBpRF9vb2NQU0pyQm1jM0JqZjFTZU1QUXhkQ2FBa1dUVXFMTFhFQzdQQ2tDV21ZSkRXV2dVbXBJTjNZSWs?oc=5",
@@ -1243,15 +1297,6 @@
           "published": "2026-08-05",
           "image": "",
           "first_seen": "2026-08-07T09:58:51+09:00"
-        },
-        {
-          "title": "예술인 지원 늘리고, 콘텐츠 투자 확대…문화강국 K컬처 집중 육성 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBaMGRZaURBVk5kMVFaaFRZajh4LW9BZ3BpVDdDazgyU3hGNFFjbGJONDBmT3hqcHpmQmIyS2x0bFJpS3cwWFE?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-08-05",
-          "image": "",
-          "first_seen": "2026-08-08T06:25:27+09:00"
         }
       ]
     },
@@ -1624,15 +1669,6 @@
           "published": "2026-08-03",
           "image": "",
           "first_seen": "2026-08-10T23:58:03+09:00"
-        },
-        {
-          "title": "2026 국제 스페셜 뮤직&amp;아트 페스티벌 - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5rSGNlMi1CN25xdXlwUlcwUEpYektscG9qd0VsbmtlbmVtNXd4T2xLSTlhZ2o0UkhPQjdyZm9oNUQ3SElJblNqTFo0cnpUQWdOTy0waF9OaVJBcC1nd0tNZ9IBYEFVX3lxTE5rSGNlMi1CN25xdXlwUlcwUEpYektscG9qd0VsbmtlbmVtNXd4T2xLSTlhZ2o0UkhPQjdyZm9oNUQ3SElJblNqTFo0cnpUQWdOTy0waF9OaVJBcC1nd0tNZw?oc=5",
-          "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-08-02",
-          "image": "",
-          "first_seen": "2026-08-03T06:41:59+09:00"
         },
         {
           "title": "인천펜타포트 5.18 광주를 노래하다··· 폐막 15만명 운집 - 인천투데이",

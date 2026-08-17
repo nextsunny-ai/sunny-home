@@ -1,14 +1,36 @@
 {
-  "updated": "2026-08-16T21:08:15.815259+00:00",
+  "updated": "2026-08-17T14:27:27.165298+00:00",
   "source": "github.com/nextsunny-ai",
   "repos": [
+    {
+      "name": "claude-clean",
+      "description": "Claude Code got slow and nobody can say which part did it. Finds what grew - CLAUDE.md, agent definitions, duplicated sync snapshots, build leftovers - and helps you take it back out. Reversible staging; refuses cloud-backed folders.",
+      "html_url": "https://github.com/nextsunny-ai/claude-clean",
+      "homepage": "",
+      "language": "Python",
+      "pushed_at": "2026-08-17T12:19:13Z",
+      "has_pages": true,
+      "pages_url": "https://nextsunny-ai.github.io/claude-clean/",
+      "stars": 0
+    },
+    {
+      "name": "slide-design-cards",
+      "description": "Nine design briefs you paste into Claude or ChatGPT to get slides that don't look AI-generated. Exact hex, type scale, 1920x1080 grid, and what's forbidden in each style.",
+      "html_url": "https://github.com/nextsunny-ai/slide-design-cards",
+      "homepage": "",
+      "language": "",
+      "pushed_at": "2026-08-17T05:35:35Z",
+      "has_pages": false,
+      "pages_url": "",
+      "stars": 0
+    },
     {
       "name": "sunny-home",
       "description": "Sunny personal home",
       "html_url": "https://github.com/nextsunny-ai/sunny-home",
       "homepage": "",
       "language": "HTML",
-      "pushed_at": "2026-08-16T14:22:25Z",
+      "pushed_at": "2026-08-16T21:08:16Z",
       "has_pages": true,
       "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
       "stars": 0
