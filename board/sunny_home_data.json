@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-17T23:27:19+09:00",
+  "updated": "2026-08-18T06:13:38+09:00",
   "categories": [
     {
       "id": "ai",
@@ -31,6 +31,15 @@
           "published": "2026-08-17",
           "image": "",
           "first_seen": "2026-08-17T23:27:19+09:00"
+        },
+        {
+          "title": "AI로 만든 ‘美 헬기 격추’ 이미지 1면에… 신문윤리위 ‘주의’ - 미디어오늘",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBUNHFYd0ljMHJQaG5BRDNKMWxiMzNZVzZPQnFpV1dzb2tDRWZvVkNGT2ZfX3Z4Y2hPZndjTnNEVzV6UTFhWXdkaVZQUW1SR3N1YjVqQXk3S1hiTDUwTVdKeVRBSG9QN2hkNVZzUG9vX0Y?oc=5",
+          "source": "미디어오늘",
+          "summary": "",
+          "published": "2026-08-17",
+          "image": "",
+          "first_seen": "2026-08-18T06:13:38+09:00"
         },
         {
           "title": "챗GPT에 '전여친 살해계획' 털어논 美남성, 오픈AI 신고로 체포 - yna.co.kr",
@@ -240,6 +249,15 @@
           "first_seen": "2026-08-17T23:27:19+09:00"
         },
         {
+          "title": "스페이스XAI, ‘이매진 이미지 2.0’ 공개...생성 넘어 정밀 편집·일관성 집중 - AI타임스",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9hY3BuUWxrdEtkN056bEdOdjFtVzdYelc2RTloZGtEeVg5a1dmZlpCRjVjMDlVR0hrVmJNS2JickczNWVTWHBBb0J0em1NNndvU3pHT3JmWkRBVHh3alZoS2RiSzI1UkMxeUE?oc=5",
+          "source": "AI타임스",
+          "summary": "",
+          "published": "2026-08-11",
+          "image": "",
+          "first_seen": "2026-08-18T06:13:38+09:00"
+        },
+        {
           "title": "MS&amp;AD, AI 이미지 탐지기술 보험금 심사에 도입 - 한국보험신문",
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE02bTFsWGpvejFiT3RlWTdzNjRoaDBxZ3NLajhrc0ZSalZ1ZmhINlY4THp4LUVadEJ5MUxKQTdlMFZvbmRLXzl4eFZrYkRiUWFWOG8wcjJhYWRWUUtTUUZRLWU5blJDcXRrRWdv0gFvQVVfeXFMTm9WTU9GTXR2cVlucTRFaHEwZ0JaalNPS0l2RGJGZXI3MnJCMG5YaUNTRjFSN0xncXprdThLYkF0WlY1WnhoNUZjdjRlZ3hZMDVDa0NFQWlkSE1Md2M2QUtHWFM5U1NMaG9hS1J0dDRj?oc=5",
           "source": "한국보험신문",
@@ -256,24 +274,6 @@
           "published": "2026-08-10",
           "image": "",
           "first_seen": "2026-08-10T23:58:03+09:00"
-        },
-        {
-          "title": "와이즈넛, AI 에이전트로 조달청 디지털서비스몰 판매 1위 - AI타임스",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5jNndPMmZMN212LUhHR1FteGFrbXAwUUtkcTE1dXRMLU16V3JyUVppVDJpQ1E5RmIzaXFqRWF2ckc4UGkyVVdLOUc0M1hOZklTQl9Yb1hFRk9oNFN5Z19hUUwtd1YxR1ZteVE?oc=5",
-          "source": "AI타임스",
-          "summary": "",
-          "published": "2026-08-10",
-          "image": "",
-          "first_seen": "2026-08-11T06:29:13+09:00"
-        },
-        {
-          "title": "금융권 AI 경쟁, '모델'서 '통제권'으로 - 전자신문",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1CR3R3ZExGaTdOcXBNSmRSSDhjVlpoUjlFOWlaQzJ0aGFxRTgtVVZvaXl1Z1dyVmVYODcxM19wcjZpa2dKLUQ2d01jNGxGZw?oc=5",
-          "source": "전자신문",
-          "summary": "",
-          "published": "2026-08-10",
-          "image": "",
-          "first_seen": "2026-08-11T06:29:13+09:00"
         }
       ]
     },
@@ -738,15 +738,6 @@
           "first_seen": "2026-08-13T23:57:20+09:00"
         },
         {
-          "title": "서울 하늘 위 여름 페스티벌…서울스카이, 주말 릴레이 공연 - 파이낸셜뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBlaTNqUDQ0cE1NU1NTTkRDZzRBZnBoVi0xNU5nWlkySnRUbmYyOFRkbUt6TW5DMWJhZXNHZlBxRHBCRXE5T2Fxc25zQkQ3Q3JNc202UVBUUkxYQQ?oc=5",
-          "source": "파이낸셜뉴스",
-          "summary": "",
-          "published": "2026-08-03",
-          "image": "",
-          "first_seen": "2026-08-04T01:25:30+09:00"
-        },
-        {
           "title": "청송군, 2026 공연예술 지역 유통지원 사업 선정작 뮤지컬‘슈퍼루나틱’공연 개최 - csynews.com",
           "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA4TFBjZk8tVnpYRFY5MDZnaVFOOXdtSlI3U2ZhSzBkeHlUZUdGZWFxLUtkMzkxRHdTR3NqcU11ejlxRnUtbFU0VG01ay1vWTVBbDZpUndYYUR2cVJKbklMaXRjYnM5cnNIcjNPRXp2VGs4SHZISVR0Sg?oc=5",
           "source": "csynews.com",
@@ -985,24 +976,6 @@
           "published": "2026-08-04",
           "image": "",
           "first_seen": "2026-08-07T09:58:51+09:00"
-        },
-        {
-          "title": "경일대 학생들, 서울 디지털미디어아트페스티벌서 작품 전시 - kyongbuk.co.kr",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9IS1JhMGpLeWJoZ29JcjQ1d1VxbUNISHdLTnBtVjJjWExTSUVVb1lHTm9aTDN4bW9ucTNhS0Zta0x6Vkg0QnRWUWR3a0lBSnJ0MEtzUmJDV09raGhNTEk2RVJXcktSOGMyc2VEMXpRZw?oc=5",
-          "source": "kyongbuk.co.kr",
-          "summary": "",
-          "published": "2026-08-03",
-          "image": "",
-          "first_seen": "2026-08-04T01:25:30+09:00"
-        },
-        {
-          "title": "MMCA서울, 김 크리스틴 선의 소리와 언어를 ‘보는’ 전시 - d-art.co.kr",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE51bU9oV242eE9Ta1pVLUR1ZHA1bndiWEZ5dzZWWlFRR0xQYTFzU3dsWG9KNzJ5cXRDN19ONGxjYlk2N0hLT09SaWNZQlhkOVJYaG5USDhBQl9mRHlmWnhHS1luVmpFRmM?oc=5",
-          "source": "d-art.co.kr",
-          "summary": "",
-          "published": "2026-08-03",
-          "image": "",
-          "first_seen": "2026-08-04T01:25:30+09:00"
         },
         {
           "title": "여름방학 맞아 경기도 찾은 해외 거장들의 전시 - v.daum.net",
@@ -1458,15 +1431,6 @@
           "first_seen": "2026-08-16T23:22:17+09:00"
         },
         {
-          "title": "디자이너들이 주목하는 새로운 UX/UI 트렌드 - brunch.co.kr",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9Cb2Y4dXVSZWNmYUwzMVNpWjZEY2hPWUJoc2NxZkhfNGRPU2VUbFhJNkc0OXBocmNlcXZ2bEIyQnZhNFZ3Z3JCUzN6WDFRbzB2bmc?oc=5",
-          "source": "brunch.co.kr",
-          "summary": "",
-          "published": "2026-08-03",
-          "image": "",
-          "first_seen": "2026-08-04T01:25:30+09:00"
-        },
-        {
           "title": "명품 디자이너 초청한 HD건설기계…브랜드·디자인 혁신 가속화 - 뉴시스",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9NVHk1b3FjcWI4OXRsVTNyRmg3NXZXWEZBdlpmR1VrbXRRaGlVbUlyVHctMkc3LXR4VHpKeFplN01LTXhVZnQzc2JjdVFvdllQY2I1MnYyU2k3NVFpX2RyatIBeEFVX3lxTE10aEVaWThoVjRvblVVejVyd3BoTDZjYVhneDhkWDNtUC1helZKd3ZOTnE0Qm9ZVlYtYjFmV0dlS21FRmdNYVU1U1dnMDRYS0QyWXFrR0R3YVl2a1B0MW5COWpvS0Zfak5CV1RXS2ozZ1BBQktJSml1eA?oc=5",
           "source": "뉴시스",
@@ -1618,24 +1582,6 @@
         },
         {
           "title": "한일 합동 음악 페스티벌 XMF 2026 라인업 공개…파라다이스시티, 10월 3~4일 음악 페스티벌 개최 - 디지틀조선일보",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5hNVNlLVE2TTBWY0FIckllZHBvNDFZZUVYem1MUE5FQUgxWWFpTnp1ZnJtb0x1TWJvRDhiTF9wSmxVVGFjXzJUcHViV1MxNURvX25nYkpZbXFackdWel9CZkZPSnBtT1BEZzNlemZ4c0lrTTFmNi00a0pJNNIBe0FVX3lxTE5hNVNlLVE2TTBWY0FIckllZHBvNDFZZUVYem1MUE5FQUgxWWFpTnp1ZnJtb0x1TWJvRDhiTF9wSmxVVGFjXzJUcHViV1MxNURvX25nYkpZbXFackdWel9CZkZPSnBtT1BEZzNlemZ4c0lrTTFmNi00a0pJNA?oc=5",
-          "source": "디지틀조선일보",
-          "summary": "",
-          "published": "2026-08-03",
-          "image": "",
-          "first_seen": "2026-08-04T01:25:30+09:00"
-        },
-        {
-          "title": "경일대 학생들, 서울 디지털미디어아트페스티벌서 작품 전시 - kyongbuk.co.kr",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9IS1JhMGpLeWJoZ29JcjQ1d1VxbUNISHdLTnBtVjJjWExTSUVVb1lHTm9aTDN4bW9ucTNhS0Zta0x6Vkg0QnRWUWR3a0lBSnJ0MEtzUmJDV09raGhNTEk2RVJXcktSOGMyc2VEMXpRZw?oc=5",
-          "source": "kyongbuk.co.kr",
-          "summary": "",
-          "published": "2026-08-03",
-          "image": "",
-          "first_seen": "2026-08-04T01:25:30+09:00"
-        },
-        {
-          "title": "한일 합동 음악 페스티벌 XMF 2026 라인업 공개…파라다이스시티, 10월 3~4일 음악 페스티벌 개최 - 디지틀조선일보",
           "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQSTY0UzNyM1ZYcXAwNUVURlpNY1JqNmU1VGNNWWFIWmRuNjFVV3dua25FazdsZTAtTndpanFjdHJudDlOM09hX213S1NQaUpwUHRkS3NsbnZvQ081QjhJcURNYU05a2NCTTNSelBfbFpTU2NGQVFMcDhxaVN5eEFDc0xlT0JWOWvSAXtBVV95cUxOYTVTZS1RNk0wVmNBSHJJZWRwbzQxWWVFWHptTFBORUFIMVlhaU56dWZybW9MdU1ib0Q4YkxfcEpsVVRhY18yVHB1YldTMTVEb19uZ2JKWW1xWnJHVnpfQmZGT0pwbU9QRGczZXpmeHNJa00xZjYtNGtKSTQ?oc=5",
           "source": "디지틀조선일보",
           "summary": "",
@@ -1669,24 +1615,6 @@
           "published": "2026-08-03",
           "image": "",
           "first_seen": "2026-08-10T23:58:03+09:00"
-        },
-        {
-          "title": "인천펜타포트 5.18 광주를 노래하다··· 폐막 15만명 운집 - 인천투데이",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9uU01DV1VmSWZqLWowQzdqWWFmZHlucGZFLUN1SU9GT2lOWldkb0xnczFfR1M0YjZjanVQQWRqWjhZTVA2RVZFRnBVTlN1Y0RzM1hkX0pJZ2pGMWdCNUdSb2cxcWdmWmVEMGJKV3llOW8?oc=5",
-          "source": "인천투데이",
-          "summary": "",
-          "published": "2026-08-02",
-          "image": "",
-          "first_seen": "2026-08-04T01:25:30+09:00"
-        },
-        {
-          "title": "2026 국제 스페셜 뮤직&amp;아트 페스티벌 - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1xWFFjY01YUzZFaE16RHRmd2VrTm51cWFVMjJzdDVOV3U0UmJjbUpmOEFPc28zTFI0OGFINXJZWVFLYXlCRnVrdW1mYkI1XzZwcmo4dXJySjBuS0HSAWBBVV95cUxOa0hjZTItQjducXV5cFJXMFBKWHpLbHBvandFbG5rZW5lbTV3eE9sS0k5YWdqNFJIT0I3cmZvaDVEN0hJSW5TakxaNHJ6VEFnTk8tMGhfTmlSQXAtZ3dLTWc?oc=5",
-          "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-08-02",
-          "image": "",
-          "first_seen": "2026-08-04T01:25:30+09:00"
         },
         {
           "title": "2026 국제 스페셜 뮤직&amp;아트 페스티벌 - 연합뉴스",

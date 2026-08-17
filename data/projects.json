@@ -1,16 +1,16 @@
 {
-  "updated": "2026-08-17T14:27:27.165298+00:00",
+  "updated": "2026-08-17T21:13:48.016176+00:00",
   "source": "github.com/nextsunny-ai",
   "repos": [
     {
-      "name": "claude-clean",
-      "description": "Claude Code got slow and nobody can say which part did it. Finds what grew - CLAUDE.md, agent definitions, duplicated sync snapshots, build leftovers - and helps you take it back out. Reversible staging; refuses cloud-backed folders.",
-      "html_url": "https://github.com/nextsunny-ai/claude-clean",
+      "name": "sunny-home",
+      "description": "Sunny personal home",
+      "html_url": "https://github.com/nextsunny-ai/sunny-home",
       "homepage": "",
-      "language": "Python",
-      "pushed_at": "2026-08-17T12:19:13Z",
+      "language": "HTML",
+      "pushed_at": "2026-08-17T14:27:28Z",
       "has_pages": true,
-      "pages_url": "https://nextsunny-ai.github.io/claude-clean/",
+      "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
       "stars": 0
     },
     {
@@ -22,17 +22,6 @@
       "pushed_at": "2026-08-17T05:35:35Z",
       "has_pages": false,
       "pages_url": "",
-      "stars": 0
-    },
-    {
-      "name": "sunny-home",
-      "description": "Sunny personal home",
-      "html_url": "https://github.com/nextsunny-ai/sunny-home",
-      "homepage": "",
-      "language": "HTML",
-      "pushed_at": "2026-08-16T21:08:16Z",
-      "has_pages": true,
-      "pages_url": "https://nextsunny-ai.github.io/sunny-home/",
       "stars": 0
     },
     {
