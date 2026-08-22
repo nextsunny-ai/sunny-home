@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-22T06:11:25+09:00",
+  "updated": "2026-08-22T23:20:41+09:00",
   "categories": [
     {
       "id": "ai",
@@ -267,13 +267,13 @@
           "first_seen": "2026-08-16T23:22:17+09:00"
         },
         {
-          "title": "딥시크 ‘V4 프로’ 정식 출시…AI 에이전트 강화·가격 인상 예고 - 연합뉴스TV",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE8zcER0UTQ3a1JFYk00TkZURXg2RnVFVTAyMnFFd0hPNzlBWVp6Qk5fTTJNVktSbHJEMFFDUmJ3QnV4MUVSN2x0bkZyc0p5S3A1c0V2ejUzSkhqbjBoOHJjWmNRWUZNeG8?oc=5",
-          "source": "연합뉴스TV",
+          "title": "NVIDIA NeMo Switchyard로 AI 에이전트 워크로드를 여러 모델에 분산 라우팅하기 - NVIDIA Developer",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbk5tOUpORkVtcTZpaU9YUHRsd3EwUWJ2NUpVU1JBZXRGX3VtSWtkQ2VZVEZ1Z3FZcVFRRlNtR1pZbjFncFAxZXRkRDRFZ3cwOU9PbnpGeTFxQl9qd0dlUFdMcmFCVTVTM0UtcWNKdzYtbnp4cjZIdXZIV3dva3NsQ3EwSU9VNHVoeE1vTkpZenMzdjAweHNhcjRzU3luejlWRG5HNkVBX1N4bkE?oc=5",
+          "source": "NVIDIA Developer",
           "summary": "",
-          "published": "2026-08-13",
+          "published": "2026-08-14",
           "image": "",
-          "first_seen": "2026-08-13T23:57:20+09:00"
+          "first_seen": "2026-08-22T23:20:41+09:00"
         }
       ]
     },
@@ -684,15 +684,6 @@
           "first_seen": "2026-08-19T06:11:02+09:00"
         },
         {
-          "title": "하나은행, 2026 여름방학 맞이 어린이 경제 뮤지컬 '재크의 요술지갑' 개최 - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8xSjE0dHdWSlRjdXhzRlZnWmJTajBBNDJBMWRmZFR3azh3VlF5MVhUck1hMVRxVUpRdjRkNlp4bzZGbW80ZUJOVXhZME5IblVEVVI3c3daZ2p1NDg?oc=5",
-          "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-08-06",
-          "image": "",
-          "first_seen": "2026-08-08T06:25:27+09:00"
-        },
-        {
           "title": "하나은행, 어린이 경제 뮤지컬 공연 - 뉴스핌",
           "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5KYzU0U21WY1E0WllhWTFIRlQtTW56ZE9telBXYm5sVzdZeVFMN2RyeUR0eEk0SGtvSm9GOFY2V0dXRWhTSS1oS1ZoUjUxUTdSenJHUlVwZ0FkQm0w?oc=5",
           "source": "뉴스핌",
@@ -718,15 +709,6 @@
           "published": "2026-08-05",
           "image": "",
           "first_seen": "2026-08-19T06:11:02+09:00"
-        },
-        {
-          "title": "“공연의 감동을 일상으로”…‘서울아트굿즈페스티벌 2026’ 9월 개최 - 데일리안",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1tTmw4S3lFaVo3VTJadHNZMmtVNkUwbnJsSDdnVW1iV3BkVEtLT1NDYncyQXYtUFY0d0NUdTl5end3TE9VRHZONUkzbnBiRzBaS0pINkZOU3c1aGlpSG84LUZn?oc=5",
-          "source": "데일리안",
-          "summary": "",
-          "published": "2026-08-04",
-          "image": "",
-          "first_seen": "2026-08-08T06:25:27+09:00"
         },
         {
           "title": "공연 굿즈 한자리에…세종문화회관 ‘서울아트굿즈페스티벌’ - v.daum.net",
@@ -789,6 +771,15 @@
       "name": "전시",
       "items": [
         {
+          "title": "경남산림박물관, 21일부터 '전통의 빛' 미디어아트 전시회 - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9vTGJJblNROS03bG83WlVfV2J2MFNBaFhUY0F1a19LNVZUN0NVbUxRcXhKYWk1RzhCcEdXaTlSQmtRU1I0Q2UyUnA3Z3gyZFVGWlBaYXZFbGxlcGvSAWBBVV95cUxOVmpiRUdPMkR4LUJkVHpPTi05bGg4b0Z2c2NJZ3FrQnNXRnRXMzBmVG9WNjktM3NVZ3pOQU5mMHhzTmVza25UVnM0MFVPdEtBT1lWNDQxY3FGa3BUcFMyRFM?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-08-20",
+          "image": "",
+          "first_seen": "2026-08-22T23:20:41+09:00"
+        },
+        {
           "title": "‘이것은 개념미술이 (아니)다’...생각하는 미술, 한국 개념미술의 발자취를 따라가다 - 휴먼에이드포스트",
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5OME1SV0tRUDBESzBGSGZRRFN4ajl0MFhpRXNWTHo1OXVsdU5xV3VUczktUkx2N2oybFVjMTAzOFNETGUyLXdHc0cxUjJETVFyMHRERlJuU1FBMng0RVBST3dlZXVhODlhWEtleU93?oc=5",
           "source": "휴먼에이드포스트",
@@ -814,6 +805,15 @@
           "published": "2026-08-19",
           "image": "",
           "first_seen": "2026-08-20T23:35:47+09:00"
+        },
+        {
+          "title": "프리즈 서울 2026에서 놓칠 수 없는 하이라이트 - Frieze",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9sYjlwWW9GREtLUHFzcUg2SWdnamxkSHlwZHBKZkViQVNLSnNFcW9NS1E0SDBhc01KZEluZFEyYWFCVzQ0dnpLdWpMYlZ2aWZkLXNaODd0N0lNbGxNcGRVZFNDeEJXSExHXzd1bjUtaw?oc=5",
+          "source": "Frieze",
+          "summary": "",
+          "published": "2026-08-19",
+          "image": "",
+          "first_seen": "2026-08-22T23:20:41+09:00"
         },
         {
           "title": "울산서 회화부터 인터랙티브 미디어아트까지…다채로운 전시 잇따라 - iusm.co.kr",
@@ -987,15 +987,6 @@
           "first_seen": "2026-08-21T06:15:56+09:00"
         },
         {
-          "title": "서울예대 - 청강문화산업대, 융복합 미디어아트 전시 ‘UNDEFINED’ 개최 - 한국대학신문",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE43UXhWZzlrWm8zQkEyajRPVTZSdFdlcnZIUXh3eGo0SnZGRXlOczdPY0VzQkVLY0pRQUJjLUQybTk0OWQwZ2pEN3V4bmtnbGRqOHlZcU04N29oNTQ2NDBnSlVmZXJIUQ?oc=5",
-          "source": "한국대학신문",
-          "summary": "",
-          "published": "2026-08-07",
-          "image": "",
-          "first_seen": "2026-08-08T06:25:27+09:00"
-        },
-        {
           "title": "예술을 위해서라면 동물을 죽여도 되나 - 단비뉴스",
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1IQ3JCNVNBaW42YmtrTHhINXo0TEtnWVRsbllCcHg3YWw0UlFjOWw3RTFfU1hDS0lEelItQng2OG9rMWo5OFMwZEYtbGdZaHVYbm5EZGVUaXJMNXN0b1E0YWEwSS1GbkRtSkNN?oc=5",
           "source": "단비뉴스",
@@ -1046,6 +1037,15 @@
       "id": "grants",
       "name": "지원사업",
       "items": [
+        {
+          "title": "K-인디 경쟁력과 미래 게임산업 주역을 한자리에… KOCCA, ‘BIC 2026’참가 - 인디게임닷컴",
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9BMGtzNEkwczRlX2NkdmxKX0FiV09RMnV3b2hZM0VQSV93eE90TzMwWWdIVTYyU01uZVMtbXUwOFBJRnFqdF9tZXZscmU?oc=5",
+          "source": "인디게임닷컴",
+          "summary": "",
+          "published": "2026-08-22",
+          "image": "",
+          "first_seen": "2026-08-22T23:20:41+09:00"
+        },
         {
           "title": "문체부, K-컬처 소재 메타버스 콘텐츠 제작 지원 - 전자신문",
           "url": "https://news.google.com/rss/articles/CBMi8gRBVV95cUxONkZIMDlUZWxLTzBselQyTFpoWEVOZVE1Y0kyeDFSU3VuQm84VlZYb09XcHhFVG9ZR2xtSVgzcWNpblNlNzY2RzRIQVRGTVdoLU5PZHVjZDRPdDNILWtpSHJ2Y0VXX1RpdVh0QUZMSDZnNklYbTZ2TXZiM2Zpb1hNS3VCU0JDMGEyeGVFOTdyLVZyRWNLSV9UcFpHUjJ0Y0k5OFBBbFp2UGk3SWZIRVN3cEt6eExVSndlTGdabzFxXzI2T2ZON2E2NkRxdzhnNlREWFF1d0JmOXd1MEpDZW9hdGFqeDlrWjJ2Tmc0YS03OEljZlYxdW1jSUcxYTRqNU92Qkk1ZkRtVEZ0UUJtZjdia2I5Q0Rndm5pWGU2WE42TDRVWTVybnNDWGFPa01NVVVGbmcwbnlGR29HQmNBYTFSV3hJdVFLd3EwUHRyUkpkXzBUTWhOcUV4a0JObDhETkk1eTgwUFNIYXkyWWJKTTYzM2xoYk52WkZnRDluUTZJeS1vUXVYa2hUVURoWTdjUjE1X2hBcWdYTTlSWVYxb1BpMnZnVzN6d2RmbUExN1doWEVVX3ZSaWJxLWU0elFabjBqX0Z2QmhBNE9tdW5MaDVsTFJXSEhqcWI2eXRqU0pxZkZTYlNNd2hPV2E2SGFMMkxjQkpLRnpqaWxhNXZScHJDemdLUzR1anZRNXp1dER5RVBjRmlOanY4WC1jb1BFVjNsRmVsV2RJQWI5ZUpaZFRlOVFjcUthMWpsaWtRUGJ5dmhWQjFmc1FyVk5mOG96SVBXaHFQenRvN1d4LUU5VGJuUzJ5M2x2WUpmZDdGUDZ6Q3RzQQ?oc=5",
@@ -1218,6 +1218,15 @@
           "first_seen": "2026-08-22T06:11:25+09:00"
         },
         {
+          "title": "최휘영 장관, 청년 문화예술인 만난다…현장 목소리 청취 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBjMG5ROEtVVGhnSG1IeF8wSmpkU3YyRi11THBXT0YtVjBlcUt4ek5rZW5TRjd4cEpsUzRIN053bjlHMXhfT0NOUVlIVWFOeHM?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-08-12",
+          "image": "",
+          "first_seen": "2026-08-22T23:20:41+09:00"
+        },
+        {
           "title": "중앙대, 소이랩엑스와 국비 지원 'AI 크리에이터' 2기 모집 … 1기 경쟁률 12.7대1 - 뉴데일리",
           "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOWXpEMkZGQmRVOUhoanVGVmpsMUluR2doOFR0WThUOFk2SVhYYzZZZFlsY2N3bmllb0dSbVc3TjBRWkRLRW56V21QMkU0UzFkRFE1Smp3RVY1dVBlVU5lWVpHX1NaTlBKU0paa1pkWGtEbm54SzY5WDhPcWJLVWJsTdIBgAFBVV95cUxOWXpEMkZGQmRVOUhoanVGVmpsMUluR2doOFR0WThUOFk2SVhYYzZZZFlsY2N3bmllb0dSbVc3TjBRWkRLRW56V21QMkU0UzFkRFE1Smp3RVY1dVBlVU5lWVpHX1NaTlBKU0paa1pkWGtEbm54SzY5WDhPcWJLVWJsTQ?oc=5",
           "source": "뉴데일리",
@@ -1297,24 +1306,6 @@
           "published": "2026-08-08",
           "image": "",
           "first_seen": "2026-08-08T23:31:29+09:00"
-        },
-        {
-          "title": "‘K-디저트’ 예능 ‘바이트 미 스위트’ 동남아·홍콩서 흥행… OTT 롱런, SNS로 확산 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9RZWZYSUliTkhERk11YzJjcUdWWEk3RDFhOTFHMVZrb0YwQ0xwZ2N1YXhLcnRWeE5mQmdJSFBwdkQzbnR5dlVCOXN2OA?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-08-08",
-          "image": "",
-          "first_seen": "2026-08-09T06:16:51+09:00"
-        },
-        {
-          "title": "K-디저트 리얼리티 '바이트 미 스위트', 아시아 주요 OTT 상위권 기록 - 한국경제",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5VczUtNkI2djFqTDBvaktKVWc5VUMwXzNuNEMySzVqNTRxTzJiaG8zOUV3X3h3X04tQVgwWEVQOXpSOW04RURiNi1qWlNQSEFKZlhCTjlfVV9ZQQ?oc=5",
-          "source": "한국경제",
-          "summary": "",
-          "published": "2026-08-08",
-          "image": "",
-          "first_seen": "2026-08-09T23:34:12+09:00"
         }
       ]
     },
@@ -1476,24 +1467,6 @@
           "first_seen": "2026-08-09T23:34:12+09:00"
         },
         {
-          "title": "다이닝브랜즈그룹, 창고43 리브랜딩으로 '레드닷 디자인 어워드' 본상 - 전자신문",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE82aEIyYktrWUFiVGlfdEU3WWxUU0xab3FuLUxhWmdLUnk2WVhMNWpHNGc3WHBFUUcwVUxFU2N4WVhHWGtrYmk2U2xtRzEwUQ?oc=5",
-          "source": "전자신문",
-          "summary": "",
-          "published": "2026-08-07",
-          "image": "",
-          "first_seen": "2026-08-08T06:25:27+09:00"
-        },
-        {
-          "title": "다이닝브랜즈그룹 '창고43' 리브랜딩, 레드닷 디자인 어워드 본상 수상 - 파이낸셜신문",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9heFpHcUg2MFktbnZvTDB3UFotSURmU3FlTFpGNF9HblBQaHN5MndVR2pZdXJ1NG9LNUVmckUxT3U0T1Q4Wl85azJRSl9aZG1IRlo3QzF1YkRGSTU3RWliLTRKUUo1Z2xHQndr?oc=5",
-          "source": "파이낸셜신문",
-          "summary": "",
-          "published": "2026-08-07",
-          "image": "",
-          "first_seen": "2026-08-08T06:25:27+09:00"
-        },
-        {
           "title": "August, 2026 - 디자인플러스",
           "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5UMV84YzBxV2dHS1pzVGlnRkFQSFlTZklnVlBkdjRvZ2pFMDFSRmdGbElYdXM5Wkh0LWdkTUtXeTNHZS1NYXdrcnQ4bw?oc=5",
           "source": "디자인플러스",
@@ -1608,6 +1581,15 @@
           "first_seen": "2026-08-18T23:33:05+09:00"
         },
         {
+          "title": "공연, 전시, 체험 한자리 ‘어린이 복합 예술 축제’ - iusm.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1OQ0F5aGQwNmcxekxCRFcyR3ZPTGI5Ui1oZ3RXeldlR1o1b2FaWnhiUGpsMkxVbG92YXdNQmFiOEZBOF9VR0hVVkltbU5yZ2hFbkNqWENVVmJ3WUZJVllDSzl3d2NZNHBTVGfSAW5BVV95cUxNSEQ0TGFkZ0Eyc1F1YmVrZHM0M1JTU2t2QzdSQXROTzh2TFU4Z25MSU9mX3dxVS1fNlhsdlZ0U3lUZ0NZOTFzWjd1ZWFWcjRMSVZjWVE1eFdqSE9VczBnbmpIcHpSWG9TZXBMVExyZw?oc=5",
+          "source": "iusm.co.kr",
+          "summary": "",
+          "published": "2026-08-17",
+          "image": "",
+          "first_seen": "2026-08-22T23:20:41+09:00"
+        },
+        {
           "title": "서울주문화센터, 18일부터 ‘울주 키즈아트페스티벌’ 연다 - 잉크뉴스",
           "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA5MkpNYktfQkpXYVJnZzViZTMwZ1N2eTNhWGxSR3NPaW1XSVJSMFhPbXdyUVQ5SjRSQ2w5RUlBYXZ6Um5HbzBUNUlidllOTFNKZVdsZzhPeFZXNExkM3cxczh6TUEwQQ?oc=5",
           "source": "잉크뉴스",
@@ -1680,15 +1662,6 @@
           "first_seen": "2026-08-13T23:57:20+09:00"
         },
         {
-          "title": "음악으로 세계를 잇는 글로벌 축제!🌏 2026 인천펜타포트 락 페스티벌😎 : 네이버 블로그 - Naver Blog",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQR3NpSXBUWG5iUEFYLTNocXk0NTZOMHRxRmQtd0JuVFNFVWd0MzF2M3pONXpkMHI5dF9NVE1RQ0xCakJYYl94amY5TFo1RXVUemQ4dDlodkM1TU9GLU14SFhuekw4b3pjX1hGLUVsVUVRdzl2Z01PY3hCcjBkYmx4NG9qMEd2dHRxVE92RjFlbVk?oc=5",
-          "source": "Naver Blog",
-          "summary": "",
-          "published": "2026-08-07",
-          "image": "",
-          "first_seen": "2026-08-08T06:25:27+09:00"
-        },
-        {
           "title": "이 조합을 한국서 본다고?…한일 스타 총출동한 인천 ‘이곳’ - v.daum.net",
           "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB4eVBpV3hoaHdESVhidXp6TEFYb251ZHU0NzktaG43M25EOTNTTl9zZWZNZkRDcUt6SnNIenhNQkFIcnlLUTRsTVFQdw?oc=5",
           "source": "v.daum.net",
@@ -1732,15 +1705,6 @@
           "published": "2026-08-02",
           "image": "",
           "first_seen": "2026-08-11T23:57:15+09:00"
-        },
-        {
-          "title": "韓日 음악 페스티벌 'XMF 2026', 1차 라인업 구성 - AP신문",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9Ndy1jVGNSWUd0Q0R6QlEwM1FqanB3VlNTT0VGbDZhaGhFY3IyemxscEFZSzA5RW43aDZIYzlBSndQb0RPc3ZBczJVUkJ3WmRnbFZBb1N5aVFtZUFGZmt5a1lBdDdGN2J10gFsQVVfeXFMT2RHcWhmVmM2bTh4M3hndzAyMmZ0T3h6S3F6TFZRNmtQZk5JTU42aHc0NnduREJCT25rUUd6WVhOWFN5Q210blNlYm9xUmFBTDJvYzZXWHFnWFpCbndFRFJpNDhYYXBPT2pjUU0y?oc=5",
-          "source": "AP신문",
-          "summary": "",
-          "published": "2026-08-01",
-          "image": "",
-          "first_seen": "2026-08-08T06:25:27+09:00"
         }
       ]
     }
