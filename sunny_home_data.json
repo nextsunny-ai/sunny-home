@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-23T06:09:22+09:00",
+  "updated": "2026-08-23T23:22:51+09:00",
   "categories": [
     {
       "id": "ai",
@@ -13,6 +13,33 @@
           "published": "2026-08-21",
           "image": "",
           "first_seen": "2026-08-21T23:34:36+09:00"
+        },
+        {
+          "title": "서울대병원, ‘1인 1 AI 에이전트’ 병원 실험…“출근하면 스누하이부터 켠다” - MEDI:GATE NEWS",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5qZFVrb0w5T0pMQ2NRa3JWX0dWLVJDaUEtTXBqV2dodGZ1aUw0MU9oVTRxM1k4WXpCZXFrVnVvbk5pQ1dBcjROTG9pMFFVUFV5Z1dtYTg5dw?oc=5",
+          "source": "MEDI:GATE NEWS",
+          "summary": "",
+          "published": "2026-08-21",
+          "image": "",
+          "first_seen": "2026-08-23T23:22:51+09:00"
+        },
+        {
+          "title": "AI 생성 이미지 저작권 인정될까…日 제작사 '무단사용' 소송 - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5uSWFOTEp4MGk4YjUzeXc5emxvZkRnRzJ2VG5YeGhOOVlDaHFVbUE2Ny04ZkU4ZkZQOFJGWXJYZnVvTlZIekM3MUw1M3EyV2RUaUJRZnJBNXNQY0XSAWBBVV95cUxOVUFKeWxWTzh0MWtBZ2pjS0hYRUN4UVlGVVdDWS1DUlpfaU02MmxZNDZhMUtNWWpKdkxOTlhoMG41NW9iSzBXbGg2TFB1cVZ6OEJMODZpQ0otNVEwZ1dqbXI?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-08-21",
+          "image": "",
+          "first_seen": "2026-08-23T23:22:51+09:00"
+        },
+        {
+          "title": "AI 이미지 베끼면 저작권 침해?…日서 2억원 손배소 - 뉴시스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE02bnpqTVByOFlHQmdJSmJfNUE4cnd6aUJMUC1uTHdMQlBNZDh0YS01WjY1dm96ODRMU1VSWEhBR2FwcWt4VG9sRVpmSGNpRlpORFdFOUI5NExER3E3SDZxN9IBeEFVX3lxTE10RGJVSWFqQk1fbUlTcy1WbEtkc0xnMHlUVlFKcGppRFpxZi1QMmxpYnF0bTQ2NFhKUEJiSWJxdFlCcEhpeUVjWXo3bmVsTXBJQ05VOW4xeE92bUk4cFBnTVM2eW1BaTFnWUt1VDVWODlZQ3ZlUHltXw?oc=5",
+          "source": "뉴시스",
+          "summary": "",
+          "published": "2026-08-21",
+          "image": "",
+          "first_seen": "2026-08-23T23:22:51+09:00"
         },
         {
           "title": "라이너, 리벨리온과 MOU…\"국산 반도체-AI 에이전트 결합\" - AI타임스",
@@ -141,6 +168,15 @@
           "first_seen": "2026-08-20T23:35:47+09:00"
         },
         {
+          "title": "챗GPT가 내 PC 기록을 기억한다…'컴퓨터 히스토리'의 두 얼굴 - 지디넷코리아",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBPWEpNbS0yWkowc2J5VjhOUWU4M1B0ZlNXc3hhWFVwWjhRLXBBWDRWc1ZNRkZxM0FFTmx5bG53R2xKcWpheW15bXdqc040U2p1a1JhcWhB?oc=5",
+          "source": "지디넷코리아",
+          "summary": "",
+          "published": "2026-08-18",
+          "image": "",
+          "first_seen": "2026-08-23T23:22:51+09:00"
+        },
+        {
           "title": "SBVA, 젠스파크 CTO 초청 파이어사이드 챗… AI 에이전트 미래 논의 - 인공지능신문",
           "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBFUThPZ0Vtc0ZwXzV1Yi00aGc4UFBkWDdfNU1KbHcxTTJtRGYtMWd6NHhMb3lnbDljRklrOHU2WkhuNl9pcDRqcGJXUVBvVllFbklCemwtVVVQYkM1TzNjNV8tZHBsRW8?oc=5",
           "source": "인공지능신문",
@@ -238,42 +274,6 @@
           "published": "2026-08-14",
           "image": "",
           "first_seen": "2026-08-14T23:51:26+09:00"
-        },
-        {
-          "title": "[AI써봄] 카카오톡 챗GPT, PC 버전으로 확대···모바일 대화 그대로 이어질까 - 동아일보",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBQQWVIMXh6bmdFYmg5b2dTdUZ2c3VEQmtDZWNVMnMtcW9idjR5WVpfdDl0WXREN2JqTFdlU1dCN3NNdGdXcXFFanVmc25UQ1o5RS0wTU9fNGdTVzlPbDZWczFqNHk4UdIBZkFVX3lxTFBQQWVIMXh6bmdFYmg5b2dTdUZ2c3VEQmtDZWNVMnMtcW9idjR5WVpfdDl0WXREN2JqTFdlU1dCN3NNdGdXcXFFanVmc25UQ1o5RS0wTU9fNGdTVzlPbDZWczFqNHk4UQ?oc=5",
-          "source": "동아일보",
-          "summary": "",
-          "published": "2026-08-14",
-          "image": "",
-          "first_seen": "2026-08-14T23:51:26+09:00"
-        },
-        {
-          "title": "‘AI가 알아서 처리한다’…앤트로픽, 클로드 코드 자동 모드 기본 탑재 - AI 매터스",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFAtYlVEMFhKcmk0RER3TW9oUWtadWZuTWFINkVudGlDbThJWkUzamx6ZlcwcTViUDFPdlZ5bTJYMXowaG1PVU9QTE1iLXNSbmdKcVZwMA?oc=5",
-          "source": "AI 매터스",
-          "summary": "",
-          "published": "2026-08-14",
-          "image": "",
-          "first_seen": "2026-08-15T23:22:19+09:00"
-        },
-        {
-          "title": "AI 에이전트 함께 일하게 했더니 ‘영역 다툼’...계정 잠그고 악성코드 심어 - 조선일보",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPUGE3cjZRRTl3alRqdnRwNkluTm5Vam9OOVhmNWtJWkVKUGVSX0xpOWJhNmlMQlFuYjM3eVF0S3BvNlVtWFZIN3liMjdLYVZHVUFqOG5Gb2xJUzlPYjk2Rzd1NlFhVnl1WWd4OHRzbUxZOW5LQ01pelJhTmdodEEyS0ExVQ?oc=5",
-          "source": "조선일보",
-          "summary": "",
-          "published": "2026-08-14",
-          "image": "",
-          "first_seen": "2026-08-16T23:22:17+09:00"
-        },
-        {
-          "title": "NVIDIA NeMo Switchyard로 AI 에이전트 워크로드를 여러 모델에 분산 라우팅하기 - NVIDIA Developer",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbk5tOUpORkVtcTZpaU9YUHRsd3EwUWJ2NUpVU1JBZXRGX3VtSWtkQ2VZVEZ1Z3FZcVFRRlNtR1pZbjFncFAxZXRkRDRFZ3cwOU9PbnpGeTFxQl9qd0dlUFdMcmFCVTVTM0UtcWNKdzYtbnp4cjZIdXZIV3dva3NsQ3EwSU9VNHVoeE1vTkpZenMzdjAweHNhcjRzU3luejlWRG5HNkVBX1N4bkE?oc=5",
-          "source": "NVIDIA Developer",
-          "summary": "",
-          "published": "2026-08-14",
-          "image": "",
-          "first_seen": "2026-08-22T23:20:41+09:00"
         }
       ]
     },
@@ -594,6 +594,15 @@
           "first_seen": "2026-08-19T06:11:02+09:00"
         },
         {
+          "title": "뮤지컬 '시카고' 공연 후 인사하는 아이비와 배우들 - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0yX19CUnZLVEI2MzYzdUEyUWZpSkpTS0syc0VNZWUtVlF2eDBLMG1iTTVGTWRsRnlaNm5wOEVTZEt4ejREZjFOVVY3M1l6bzM3a21BVnhXT3kyX2PSAWBBVV95cUxORDE5V3kyTS0tOXV6UWpXRTR0eDNhNnE1SUg4THM2TnFMTGxkTHltOFpSbHVmRGhhcndEbkNVcTJmd2ZkN0EtdVgxMTRYWFdLNkgxSGtGM01wVGNNTzcyQ1g?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-08-18",
+          "image": "",
+          "first_seen": "2026-08-23T23:22:51+09:00"
+        },
+        {
           "title": "38개 축제·478개 공연...가을, 서울 전역이 예술 무대가 된다 - 한국경제",
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE40V1RRNF84S2xLM1hvcmZIX21xY2FlbFpVZ2NkTThlVlF4SG9JZ1ZEQlFGTVpwSEl2MDlDb0dVVjBDOXNZajZQbVM4WVBTSzdqOWJkbnE1UmlSQQ?oc=5",
           "source": "한국경제",
@@ -712,15 +721,6 @@
         },
         {
           "title": "공연 굿즈 한자리에…세종문화회관 ‘서울아트굿즈페스티벌’ - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1VSklkQThnSjY3NDNZM3BKeW84RFU4TXJLSDEzSkZveGFyUW1jNU5ubGNBd09VaWxQWWhIZnlKWDNtS0dlYzhmTmVDaw?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-08-04",
-          "image": "",
-          "first_seen": "2026-08-09T06:16:51+09:00"
-        },
-        {
-          "title": "공연 굿즈 한자리에…세종문화회관 ‘서울아트굿즈페스티벌’ - v.daum.net",
           "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9Qdm9FMUJiWm9iaHRiOFVVeGRPMUVKM1dENGV5OEV4YVh6WEdLYnV1YWMyMkRvVno5Z0Jzb0NlS1hNOFlxajEzb2VtU3dybjBlb2tSQw?oc=5",
           "source": "v.daum.net",
           "summary": "",
@@ -745,15 +745,6 @@
           "published": "2026-08-03",
           "image": "",
           "first_seen": "2026-08-14T23:51:26+09:00"
-        },
-        {
-          "title": "2026 상반기 공연시장 8000억 돌파…지각변동 일으킨 ‘대형 연극’ - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE10Z1RGMmFSdUZKOVhpNDViVjRqTERhcC1tZVZjcW1rNnJYclJ0Mlp1azRQM0FCdFdydXZfVVVGYnFnM082Q3hCRXlOYw?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-07-31",
-          "image": "",
-          "first_seen": "2026-08-09T06:16:51+09:00"
         },
         {
           "title": "2026 상반기 공연시장 8000억 돌파…지각변동 일으킨 ‘대형 연극’ - 국민일보",
@@ -1279,6 +1270,15 @@
           "published": "2026-08-10",
           "image": "",
           "first_seen": "2026-08-18T23:33:05+09:00"
+        },
+        {
+          "title": "총 1.2억 지원…유진이엔티, 영상 콘텐츠 공모전 'EUCON' 개최 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBmSWJnSVN6YmtaLTBpaGJoMWNIQnR2U0xUdXVLbXVYbG1oOVNOUTVJeVMwaWJJRTBKcWpwM2xYWDg2SzU5amc?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-08-10",
+          "image": "",
+          "first_seen": "2026-08-23T23:22:51+09:00"
         }
       ]
     },
@@ -1509,6 +1509,15 @@
       "name": "페스티벌",
       "items": [
         {
+          "title": "“커피 향 함께하는 클래식”…수원음협, 2026 수원뮤직페스티벌 개최 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9xSk1qMEdqUEd6dzAwOVF5NFk1RTR5eWh3d2NTVXR6bGxLVWI5VjRzbWFHUk1SdmowQW1IZTY1YWpKb3pKTE1XT3Zqa00zM28?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-08-23",
+          "image": "",
+          "first_seen": "2026-08-23T23:22:51+09:00"
+        },
+        {
           "title": "[가요소식] 11월 킨텍스서 음악 페스티벌 '원더리벳 2026' - 연합뉴스",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5YdERJWkZTRjdpeFY4Y2l3ODRJVzBPTUZQM3d4VHpzRzdaOFVSSHVXYVNLc1VmdDZadlNvSWpST1RVYnNQQ0hVTmlNR0ZUQkx2WV9OYkJJdVdRT00?oc=5",
           "source": "연합뉴스",
@@ -1516,6 +1525,15 @@
           "published": "2026-08-21",
           "image": "",
           "first_seen": "2026-08-21T23:34:36+09:00"
+        },
+        {
+          "title": "[가요소식] 11월 킨텍스서 음악 페스티벌 '원더리벳 2026' - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5YdERJWkZTRjdpeFY4Y2l3ODRJVzBPTUZQM3d4VHpzRzdaOFVSSHVXYVNLc1VmdDZadlNvSWpST1RVYnNQQ0hVTmlNR0ZUQkx2WV9OYkJJdVdRT03SAWBBVV95cUxNa1JpbzR3U2pmWVE3Y0FSSHBiVFdNVWFDVVUyTExwdTZoR2dwXzk2M0FzX0JJWlNZVUgyaE1WYjlOck96d25GNVBsTVpaMzVscnFrTjFBcVlDWkFmR1B6TC0?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-08-21",
+          "image": "",
+          "first_seen": "2026-08-23T23:22:51+09:00"
         },
         {
           "title": "'2026 라라라온', 전국 12개 공연장 수놓는다…9월 1차 라인업 공개 - v.daum.net",
@@ -1606,6 +1624,15 @@
           "published": "2026-08-10",
           "image": "",
           "first_seen": "2026-08-21T06:15:56+09:00"
+        },
+        {
+          "title": "YB·넬·새소년 한 무대에… ‘2026 경기인디뮤직페스티벌’ 최종 라인업 공개 - 뉴스앤넷",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA5ZG9vOFJfMi0tM0VQMTBWLTdQMXBGVEFNemktcU1LS1JRRWtQQ2tPUHBaTkN0Y3Bza0Z1azh3bGdMb2NQaXdqMjRFelR5dlhXRGVRUGw3N1FzYUJTcFlTbGNBRk5Lb1pyd3c?oc=5",
+          "source": "뉴스앤넷",
+          "summary": "",
+          "published": "2026-08-10",
+          "image": "",
+          "first_seen": "2026-08-23T23:22:51+09:00"
         },
         {
           "title": "호찌민시, '2026 사이공 국제 기타 페스티벌’ 개최…한국 기타리스트도 참여 - Thông tấn xã Việt Nam",
