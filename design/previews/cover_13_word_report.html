@@ -2,22 +2,22 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8" />
-<title>13 — Word Report (Mono Document) · 4 pages</title>
+<title>13 — Word Report (Mono Document) · 6 pages</title>
 <style>
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
 
 /* ===========================================================
    13 · 워드 보고서 (Mono Document)
    실측 기준: Letter 8.5×11in 세로 · 여백 상하 0.90in / 좌우 0.97in
-   화면 표시 배율: 페이지 폭 = 뷰포트의 78.125% (1920 기준 1500px)
-   1pt = 0.12766vw  → 어느 폭에서든 문서 비율 유지
+   화면 표시 배율: 페이지 폭 = 뷰포트의 86.5% (1920 기준 1661px)
+   1pt = 0.14134vw  → 어느 폭에서든 문서 비율 유지
    모든 치수는 pt 기준 calc() = 인쇄 시 실제 문서와 동일 비율
    =========================================================== */
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --pt: 0.12766vw;             /* 1920 뷰포트에서 2.451px = 1500px ÷ 8.5in ÷ 72pt */
+  --pt: 0.14134vw;             /* 1920 뷰포트에서 2.714px = 1661px ÷ 8.5in ÷ 72pt */
 
   --ink:        #111111;   /* 제목 · 표 헤더 배경 · PART 바 */
   --body:       #242424;   /* 본문 */
@@ -45,7 +45,7 @@ body {
 
 /* ── 페이지 ───────────────────────────────────────────── */
 .page {
-  width: 78.125%;                                  /* 1500 / 1920 */
+  width: 86.5%;                                    /* 1661 / 1920 */
   aspect-ratio: 8.5 / 11;
   flex: 0 0 auto;
   background: var(--paper);
@@ -330,7 +330,17 @@ td.num { text-align: right; font-variant-numeric: tabular-nums; }
     <li>입장 수익 — 회차당 정원 00명 · 일 0회차 기준. 점유율이 손익을 좌우한다.</li>
     <li>굿즈 — 객단가 0,000원 · 구매 전환 00% 가정. 재고 부담이 함께 발생한다.</li>
     <li>협찬 — 단발성. 계약이 확정되기 전에는 계획 수치로 잡지 않는다.</li>
+    <li>대관 — 비수기 평일에 한정. 운영 인력을 그대로 쓰므로 한계이익이 높다.</li>
   </ul>
+  <table class="mt-s">
+    <thead><tr><th style="width:34%">수익원</th><th style="width:22%">비중 (계획)</th><th style="width:22%">반복성</th><th>변동 요인</th></tr></thead>
+    <tbody>
+      <tr><td>입장</td><td class="num">62%</td><td>높음</td><td>회차 점유율</td></tr>
+      <tr><td>굿즈</td><td class="num">24%</td><td>보통</td><td>구매 전환 · 재고</td></tr>
+      <tr><td>협찬</td><td class="num">9%</td><td>낮음</td><td>계약 성사 여부</td></tr>
+      <tr><td>대관</td><td class="num">5%</td><td>낮음</td><td>비수기 수요</td></tr>
+    </tbody>
+  </table>
 
   <div class="quote mt-m">이 모델은 콘텐츠를 계속 갱신할 수 있을 때만 작동한다. 갱신이 끊기면 재방문이 사라지고 고정비만 남는다.</div>
 
@@ -340,6 +350,7 @@ td.num { text-align: right; font-variant-numeric: tabular-nums; }
     <li>고정 인건비 — 상시 인력 00명 기준 연 00억원. 거점 증가와 직결된다.</li>
     <li>콘텐츠 사용료 — 매출 연동 00%. 총이익을 구조적으로 압박한다.</li>
     <li>임차료 — 입지 조건에 따라 편차가 크다. 유동인구와 임차료는 대체로 비례한다.</li>
+    <li>유지보수 — 체험 장비는 회차 수에 비례해 마모된다. 연 00% 를 예비비로 잡는다.</li>
   </ol>
 
   <div class="h"><span class="h__num">06</span><span class="h__text">재무 개요</span></div>
@@ -351,8 +362,15 @@ td.num { text-align: right; font-variant-numeric: tabular-nums; }
       <tr><td>영업이익률 (추정)</td><td class="num">약 0%</td></tr>
       <tr><td>초기 투자</td><td class="num">약 00억원</td></tr>
       <tr><td>회수 기간</td><td class="num">약 00개월</td></tr>
+      <tr><td>손익분기 점유율</td><td class="num">약 00%</td></tr>
+      <tr><td>고정비 비중</td><td class="num">약 00%</td></tr>
     </tbody>
   </table>
+  <ul class="list mt-s">
+    <li>과거 정점 — 유사 사례 기준 개점 첫해가 가장 높고, 2년차에 00% 수준으로 내려온다.</li>
+    <li>현재 — 손익분기는 점유율 00%에서 형성된다. 그 아래로는 고정비가 그대로 남는다.</li>
+    <li>민감도 — 점유율이 10%p 내려가면 영업이익은 00%p 감소한다. 굿즈 전환은 영향이 작다.</li>
+  </ul>
 
   <div class="page__footer">
     <span>보고서 제목 v1.0 · 대외비</span>
@@ -374,26 +392,116 @@ td.num { text-align: right; font-variant-numeric: tabular-nums; }
       <tr><td>계약 안정성</td><td>주의</td><td>갱신 조건이 상대방 편의에 따라 달라질 수 있다</td></tr>
       <tr><td>고정비 구조</td><td>주의</td><td>거점 증가와 인건비가 연동된다</td></tr>
       <tr><td>회수 가능성</td><td>조건부</td><td>점유율 00% 이상 유지가 전제다</td></tr>
+      <tr><td>운영 난이도</td><td>보통</td><td>회차제라 인력 배치가 예측 가능하다</td></tr>
+      <tr><td>확장 가능성</td><td>조건부</td><td>1거점 실적이 전제치를 넘어야 의미가 있다</td></tr>
     </tbody>
   </table>
 
   <div class="h"><span class="h__num">08</span><span class="h__text">검토 의견</span></div>
   <p>확보해야 할 것은 운영 역량이 아니라 계약 조건이다. 콘텐츠 사용료율과 갱신 기간을 먼저 고정한 뒤 거점 수를 정하는 순서가 맞다. 순서가 뒤집히면 고정비가 먼저 늘어난다.</p>
   <p>단계적 진입을 권한다. 1거점에서 00개월 실적을 확인하고, 점유율과 객단가가 전제치를 넘은 뒤 2거점 이후를 결정한다.</p>
+  <p>거점을 동시에 늘리면 고정비가 실적보다 먼저 확정된다. 회수 기간이 길어지는 대부분의 원인이 여기에 있다.</p>
 
   <div class="quote mt-m">결론 — 조건부 추진. 콘텐츠 사용료율 00% 이하 · 갱신 기간 00년 이상이 확보되면 1거점부터 착수한다.</div>
 
   <div class="h"><span class="h__num">09</span><span class="h__text">다음 단계</span></div>
-  <ul class="list">
-    <li>콘텐츠 공급사와 사용료율 · 갱신 조건 협의 (0월)</li>
-    <li>1거점 후보지 3곳 임차 조건 비교 (0월)</li>
-    <li>파일럿 실적 기준 재검토 (0월)</li>
-  </ul>
+  <table>
+    <thead><tr><th style="width:44%">할 일</th><th style="width:16%">시기</th><th style="width:18%">담당</th><th>산출물</th></tr></thead>
+    <tbody>
+      <tr><td>콘텐츠 사용료율 · 갱신 조건 협의</td><td>0월</td><td>사업</td><td>협의 요약</td></tr>
+      <tr><td>1거점 후보지 3곳 임차 조건 비교</td><td>0월</td><td>사업</td><td>비교표</td></tr>
+      <tr><td>파일럿 실적 재집계</td><td>0월</td><td>운영</td><td>실적 자료</td></tr>
+      <tr><td>손익 모델 재작성</td><td>0월</td><td>재무</td><td>추정 손익</td></tr>
+      <tr><td>착수 여부 보고</td><td>0월</td><td>사업</td><td>본 보고서 v2.0</td></tr>
+    </tbody>
+  </table>
 
   <div class="page__footer">
     <span>보고서 제목 v1.0 · 대외비</span>
     <span>작성자 · 소속</span>
     <span>4</span>
+  </div>
+</section>
+
+<!-- ═══════════ p.5 — 시장 · 경쟁 ═══════════ -->
+<section class="page">
+  <div class="h"><span class="h__num">10</span><span class="h__text">시장</span></div>
+  <p>수요 자체는 확인된다. 다만 성장분이 어디로 귀속되는지를 먼저 보아야 한다.</p>
+  <table class="mt-s">
+    <thead><tr><th style="width:34%">구분</th><th style="width:26%">규모</th><th>비고</th></tr></thead>
+    <tbody>
+      <tr><td>전체 시장 (추정)</td><td class="num">약 0,000억원</td><td>공개 자료 기준</td></tr>
+      <tr><td>수도권 비중</td><td class="num">약 00%</td><td>거점 선정의 근거</td></tr>
+      <tr><td>연 성장률 (추정)</td><td class="num">약 0%</td><td>3개년 평균</td></tr>
+      <tr><td>1인 지출액</td><td class="num">약 00,000원</td><td>입장 + 굿즈 합산</td></tr>
+      <tr><td>재방문율 (추정)</td><td class="num">약 00%</td><td>유사 사례 기준</td></tr>
+      <tr><td>단체 비중</td><td class="num">약 00%</td><td>학교 · 기업 포함</td></tr>
+    </tbody>
+  </table>
+  <div class="quote mt-m">시장이 커져도 그 가치는 대부분 콘텐츠를 가진 쪽에 귀속된다. 운영만 맡는 위치에서는 성장분을 나눠 갖기 어렵다.</div>
+
+  <div class="h"><span class="h__num">11</span><span class="h__text">경쟁</span></div>
+  <p>같은 형태의 사업자만 경쟁자가 아니다. 실제로는 같은 시간과 지출을 두고 다투는 모든 여가 선택지가 경쟁 상대다.</p>
+  <table class="mt-s">
+    <thead><tr><th style="width:30%">경쟁 축</th><th style="width:22%">밀도</th><th>우리 위치</th></tr></thead>
+    <tbody>
+      <tr><td>동일 형태 전시</td><td>보통</td><td>차별 요소는 콘텐츠 IP 하나뿐</td></tr>
+      <tr><td>대형 테마파크</td><td>높음</td><td>가격과 체류 시간에서 분리된다</td></tr>
+      <tr><td>온라인 여가</td><td>매우 높음</td><td>현장에서만 되는 경험이 있어야 한다</td></tr>
+      <tr><td>지역 축제 · 행사</td><td>보통</td><td>계절 수요를 나눠 갖는다</td></tr>
+      <tr><td>상설 전시관</td><td>낮음</td><td>가격대가 달라 직접 경쟁은 아니다</td></tr>
+    </tbody>
+  </table>
+  <p class="mt-s">경쟁 밀도가 높은 축일수록 가격이 아니라 경험의 종류로 갈린다. 같은 값에 무엇을 하러 오게 만들 것인지가 실제 경쟁 지점이다.</p>
+
+  <div class="page__footer">
+    <span>보고서 제목 v1.0 · 대외비</span>
+    <span>작성자 · 소속</span>
+    <span>5</span>
+  </div>
+</section>
+
+<!-- ═══════════ p.6 — 전제와 근거 ═══════════ -->
+<section class="page">
+  <div class="h"><span class="h__num">12</span><span class="h__text">전제 조건</span></div>
+  <p>아래 수치가 무너지면 앞의 판단도 함께 무너진다. 착수 전에 확인해야 할 항목이다.</p>
+  <table class="mt-s">
+    <thead><tr><th style="width:36%">전제</th><th style="width:22%">기준값</th><th>확인 방법</th></tr></thead>
+    <tbody>
+      <tr><td>회차 점유율</td><td class="num">00% 이상</td><td>파일럿 00일 실적</td></tr>
+      <tr><td>콘텐츠 사용료율</td><td class="num">00% 이하</td><td>공급사 협의</td></tr>
+      <tr><td>갱신 기간</td><td class="num">00년 이상</td><td>계약서 조항</td></tr>
+      <tr><td>굿즈 구매 전환</td><td class="num">00% 이상</td><td>파일럿 결제 데이터</td></tr>
+      <tr><td>임차료 비중</td><td class="num">매출 00% 이하</td><td>후보지 3곳 비교</td></tr>
+      <tr><td>운영 인력</td><td class="num">회차당 0명</td><td>파일럿 운영 기록</td></tr>
+      <tr><td>재방문율</td><td class="num">00% 이상</td><td>2년차 실적</td></tr>
+    </tbody>
+  </table>
+  <div class="quote mt-m">전제 가운데 하나라도 확인되지 않은 상태에서 착수하면, 그 항목이 그대로 회수 기간을 늘리는 원인이 된다.</div>
+
+  <div class="h"><span class="h__num">13</span><span class="h__text">자료 출처</span></div>
+  <ul class="list">
+    <li>공개 재무 자료 — 0000년 0월 기준</li>
+    <li>유사 사례 현장 조사 — 0개소, 0000년 0월</li>
+    <li>파일럿 운영 실적 — 내부 자료</li>
+    <li>임차 조건 — 후보지 3곳 중개 자료, 0000년 0월</li>
+    <li>콘텐츠 사용료 조건 — 공급사 제시안, 0000년 0월</li>
+  </ul>
+  <div class="h"><span class="h__num">14</span><span class="h__text">용어</span></div>
+  <table>
+    <thead><tr><th style="width:30%">용어</th><th>뜻</th></tr></thead>
+    <tbody>
+      <tr><td>회차 점유율</td><td>회차 정원 대비 실제 입장 인원의 비율</td></tr>
+      <tr><td>객단가</td><td>1인이 입장과 굿즈에 지출한 금액의 합</td></tr>
+      <tr><td>한계이익</td><td>매출에서 변동비만 뺀 금액. 고정비 회수분</td></tr>
+    </tbody>
+  </table>
+  <p class="caption mt-s">본 보고서의 수치 가운데 「추정」으로 표기한 항목은 공개 자료에서 산출한 참고치다. 계약·내부 회계자료와 다를 수 있다.</p>
+
+  <div class="page__footer">
+    <span>보고서 제목 v1.0 · 대외비</span>
+    <span>작성자 · 소속</span>
+    <span>6</span>
   </div>
 </section>
 

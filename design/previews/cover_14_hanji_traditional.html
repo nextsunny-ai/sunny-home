@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8" />
-<title>14 — Hanji Traditional · 4 slides</title>
+<title>14 — Hanji Traditional · 5 slides</title>
 <style>
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
@@ -10,15 +10,16 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --paper:  #F2EADB;   /* 한지 */
-  --paper2: #EAE0CE;   /* 한지 그늘 */
-  --ink:    #1F1B16;   /* 먹 */
+  --paper:  #F2EADB;
+  --paper2: #EAE0CE;
+  --ink:    #1F1B16;
+  --ink-72: rgba(31, 27, 22, 0.72);
   --ink-60: rgba(31, 27, 22, 0.60);
   --ink-35: rgba(31, 27, 22, 0.35);
   --ink-14: rgba(31, 27, 22, 0.14);
-  --red:    #A8342A;   /* 적 · 낙관 */
-  --blue:   #2B5A7E;   /* 청 */
-  --gold:   #C8A02E;   /* 황 */
+  --red:    #A8342A;
+  --blue:   #2B5A7E;
+  --gold:   #C8A02E;
 }
 
 body {
@@ -32,10 +33,8 @@ body {
   max-width: 1920px;
   aspect-ratio: 16 / 9;
   margin: 0 auto;
-  padding: 64px 88px;
   position: relative;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  overflow: hidden;
   background:
     radial-gradient(120% 90% at 15% 0%, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0) 55%),
     repeating-linear-gradient(90deg, rgba(31,27,22,0.030) 0 1px, rgba(31,27,22,0) 1px 7px),
@@ -44,318 +43,501 @@ body {
 }
 .slide + .slide { margin-top: 24px; }
 
+.pad {
+  position: absolute; inset: 0;
+  padding: 60px 88px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  z-index: 3;
+}
+
 /* ── 머리·꼬리 ─────────────────────────────── */
 .head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: flex; justify-content: space-between; align-items: center;
   border-bottom: 1px solid var(--ink-14);
-  padding-bottom: 16px;
+  padding-bottom: 15px;
 }
-.head__brand {
-  font-family: 'Nanum Myeongjo', serif;
-  font-size: 19px;
-  letter-spacing: 0.42em;
-  color: var(--ink-60);
-}
-.head__tag {
-  font-size: 14px;
-  letter-spacing: 0.30em;
-  color: var(--ink-35);
-}
+.head__brand { font-family: 'Nanum Myeongjo', serif; font-size: 19px; letter-spacing: 0.42em; color: var(--ink-60); }
+.head__tag   { font-size: 14px; letter-spacing: 0.30em; color: var(--ink-35); }
 .foot {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: flex; justify-content: space-between; align-items: center;
   border-top: 1px solid var(--ink-14);
-  padding-top: 16px;
-  font-size: 14px;
-  letter-spacing: 0.16em;
-  color: var(--ink-35);
+  padding-top: 15px;
+  font-size: 14px; letter-spacing: 0.16em; color: var(--ink-35);
+}
+.head--light, .foot--light { border-color: rgba(247,242,231,0.22); }
+.head--light .head__brand { color: rgba(247,242,231,0.82); }
+.head--light .head__tag,
+.foot--light { color: rgba(247,242,231,0.55); }
+
+/* ═══ 산수 배경 ═══ */
+.sansu { position: absolute; inset: 0; overflow: hidden; z-index: 1; }
+.sansu__sky {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, #16130F 0%, #241E17 42%, #3A3025 72%, #574733 100%);
+}
+.sansu__moon {
+  position: absolute; top: 15%; left: 62%;
+  width: 176px; height: 176px; border-radius: 50%;
+  background: #F4EEDF;
+  box-shadow: 0 0 90px 40px rgba(244,238,223,0.20), 0 0 200px 90px rgba(244,238,223,0.10);
+}
+.ridge { position: absolute; left: -8%; right: -8%; border-radius: 50% 50% 0 0; }
+.ridge--5 { bottom: 30%; height: 22%; background: rgba(31,27,22,0.22); left: 28%;  right: -34%; }
+.ridge--4 { bottom: 26%; height: 26%; background: rgba(31,27,22,0.32); left: -30%; right: 34%; }
+.ridge--3 { bottom: 20%; height: 30%; background: rgba(31,27,22,0.52); left: 12%;  right: -22%; }
+.ridge--2 { bottom: 8%; height: 38%; background: rgba(31,27,22,0.74); left: -26%; right: 30%; }
+.ridge--1 { bottom: -6%; height: 34%; background: #14110D; }
+.mist {
+  position: absolute; left: -5%; right: -5%; height: 92px;
+  background: linear-gradient(180deg, rgba(244,238,223,0) 0%, rgba(244,238,223,0.26) 50%, rgba(244,238,223,0) 100%);
+  filter: blur(2px);
+}
+.mist--a { bottom: 34%; }
+.mist--b { bottom: 22%; height: 66px; opacity: 0.7; }
+.bird { position: absolute; width: 26px; height: 9px; border-top: 2px solid rgba(244,238,223,0.5); border-radius: 50%; }
+.bird--a { top: 26%; left: 24%; }
+.bird--b { top: 30%; left: 29%; width: 18px; opacity: 0.7; }
+.bird--c { top: 23%; left: 33%; width: 14px; opacity: 0.5; }
+/* 한지 결을 배경 위에 덧입힘 */
+.grain {
+  position: absolute; inset: 0; z-index: 2; pointer-events: none;
+  background:
+    repeating-linear-gradient(90deg, rgba(242,234,219,0.055) 0 1px, rgba(0,0,0,0) 1px 7px),
+    repeating-linear-gradient(0deg,  rgba(242,234,219,0.040) 0 1px, rgba(0,0,0,0) 1px 9px);
 }
 
 /* ── 표지 ──────────────────────────────────── */
-.cover { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 60px; }
+.cover { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 60px; padding-bottom: 22px; }
 .cover__eyebrow {
   font-family: 'Nanum Myeongjo', serif;
-  font-size: 24px;
-  letter-spacing: 0.40em;
-  color: var(--red);
-  margin-bottom: 34px;
+  font-size: 23px; letter-spacing: 0.40em;
+  color: #D9A79C; margin-bottom: 26px;
 }
 .cover__title {
-  font-family: 'Nanum Myeongjo', serif;
-  font-weight: 800;
-  font-size: 150px;
-  line-height: 1.06;
-  letter-spacing: -0.02em;
+  font-family: 'Nanum Myeongjo', serif; font-weight: 800;
+  font-size: 148px; line-height: 1.05; letter-spacing: -0.02em;
+  color: #F4EEDF;
+  text-shadow: 0 2px 40px rgba(0,0,0,0.45);
 }
-.cover__title em { font-style: normal; color: var(--red); }
-.cover__rule {
-  width: 190px;
-  height: 3px;
-  background: var(--ink);
-  margin: 40px 0 30px;
-}
-.cover__sub {
-  font-size: 27px;
-  color: var(--ink-60);
-  line-height: 1.7;
-}
+.cover__title em { font-style: normal; color: #E8B4A6; }
+.cover__rule { width: 190px; height: 3px; background: #F4EEDF; margin: 34px 0 26px; opacity: 0.85; }
+.cover__sub { font-size: 26px; color: rgba(244,238,223,0.78); line-height: 1.7; }
 .seal {
-  width: 168px;
-  height: 168px;
-  background: var(--red);
-  color: #F7F2E7;
-  font-family: 'Nanum Myeongjo', serif;
-  font-weight: 700;
-  font-size: 44px;
-  line-height: 1.18;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  letter-spacing: 0.04em;
+  width: 158px; height: 158px; background: var(--red); color: #F7F2E7;
+  font-family: 'Nanum Myeongjo', serif; font-weight: 700; font-size: 42px; line-height: 1.18;
+  display: grid; place-items: center; text-align: center; letter-spacing: 0.04em;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.35);
 }
 
-/* ── 목차 ──────────────────────────────────── */
-.toc { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 80px; align-content: center; }
+/* ── 목차 + 편액 ───────────────────────────── */
+.toc-wrap { display: grid; grid-template-columns: 1fr 268px; gap: 74px; align-content: center; }
+.toc { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 68px; }
 .toc__item {
-  display: grid;
-  grid-template-columns: 92px 1fr;
-  align-items: baseline;
-  gap: 20px;
-  padding: 28px 0;
-  border-bottom: 1px solid var(--ink-14);
+  display: grid; grid-template-columns: 84px 1fr; align-items: baseline; gap: 18px;
+  padding: 24px 0; border-bottom: 1px solid var(--ink-14);
 }
-.toc__num {
-  font-family: 'Nanum Myeongjo', serif;
-  font-size: 42px;
-  color: var(--gold);
-}
-.toc__name { font-family: 'Nanum Myeongjo', serif; font-size: 36px; }
-.toc__desc { grid-column: 2; font-size: 18px; color: var(--ink-60); margin-top: 8px; }
+.toc__num  { font-family: 'Nanum Myeongjo', serif; font-size: 40px; color: var(--gold); }
+.toc__name { font-family: 'Nanum Myeongjo', serif; font-size: 34px; }
+.toc__desc { grid-column: 2; font-size: 17px; color: var(--ink-60); margin-top: 7px; }
 
-/* ── 본문 2단 ──────────────────────────────── */
-.two { display: grid; grid-template-columns: 1.05fr 1fr; gap: 66px; align-content: center; }
-.h2 {
-  font-family: 'Nanum Myeongjo', serif;
-  font-size: 62px;
-  line-height: 1.22;
-  margin-bottom: 26px;
-}
-.lead { font-size: 22px; line-height: 1.85; color: var(--ink-60); }
-.tags { display: flex; gap: 12px; margin-top: 34px; flex-wrap: wrap; }
-.tag {
-  font-size: 16px;
-  letter-spacing: 0.10em;
-  padding: 9px 20px;
+/* 세로 편액 */
+.plaque {
   border: 1px solid var(--ink-14);
-  color: var(--ink-60);
+  background: rgba(255,255,255,0.30);
+  padding: 30px 0;
+  display: grid; justify-items: center; align-content: start; gap: 22px;
 }
-.tag--red  { border-color: var(--red);  color: var(--red); }
-.tag--blue { border-color: var(--blue); color: var(--blue); }
-
-/* 먹 프레임 (이미지 자리) */
-.plate {
-  border: 1px solid var(--ink-14);
-  padding: 18px;
-  background: rgba(255,255,255,0.34);
-}
-.plate__in {
-  aspect-ratio: 4 / 3;
-  position: relative;
-  overflow: hidden;
-  background:
-    radial-gradient(70% 55% at 50% 100%, rgba(31,27,22,0.30) 0%, rgba(31,27,22,0) 70%),
-    linear-gradient(180deg, #EFE6D4 0%, #E2D6BE 100%);
-}
-.plate__moon {
-  position: absolute; top: 16%; left: 50%; transform: translateX(-50%);
-  width: 150px; height: 150px; border-radius: 50%;
-  background: #F7F2E7;
-  box-shadow: 0 0 0 1px var(--ink-14);
-}
-.plate__ridge {
-  position: absolute; left: -6%; right: -6%; bottom: -22%;
-  height: 60%; border-radius: 50% 50% 0 0;
-  background: rgba(31,27,22,0.72);
-}
-.plate__ridge--far {
-  bottom: -6%; height: 44%; left: -18%; right: 26%;
-  background: rgba(31,27,22,0.36);
-}
-.plate__cap { margin-top: 14px; font-size: 15px; letter-spacing: 0.14em; color: var(--ink-35); }
-
-/* ── 표 ────────────────────────────────────── */
-.tbl { width: 100%; border-collapse: collapse; font-size: 19px; }
-.tbl thead th {
-  text-align: left;
+.plaque__col {
   font-family: 'Nanum Myeongjo', serif;
-  font-size: 20px;
-  font-weight: 700;
-  padding: 16px 20px;
-  border-top: 2px solid var(--ink);
-  border-bottom: 1px solid var(--ink);
-  letter-spacing: 0.06em;
-}
-.tbl tbody td {
-  padding: 18px 20px;
-  border-bottom: 1px solid var(--ink-14);
+  writing-mode: vertical-rl;
+  font-size: 46px; line-height: 1.5; letter-spacing: 0.14em;
   color: var(--ink);
 }
+.plaque__seal {
+  width: 54px; height: 54px; background: var(--red); color: #F7F2E7;
+  font-family: 'Nanum Myeongjo', serif; font-size: 22px;
+  display: grid; place-items: center;
+}
+
+/* ── 마당 4분할 ────────────────────────────── */
+.yards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; align-content: center; }
+.yard { border: 1px solid var(--ink-14); background: rgba(255,255,255,0.28); padding: 14px; }
+.yard__in { aspect-ratio: 3 / 4; position: relative; overflow: hidden; }
+.yard__no {
+  position: absolute; top: 12px; left: 12px; z-index: 4;
+  font-family: 'Nanum Myeongjo', serif; font-size: 26px; color: #F4EEDF;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.6);
+}
+.yard__name { margin-top: 13px; font-family: 'Nanum Myeongjo', serif; font-size: 27px; }
+.yard__meta { margin-top: 5px; font-size: 15px; color: var(--ink-35); letter-spacing: 0.08em; }
+.yard__desc { margin-top: 9px; font-size: 16px; line-height: 1.6; color: var(--ink-60); }
+
+.fig { position: absolute; }
+.person {
+  position: absolute; bottom: 13%; width: 20px; height: 54px;
+  background: #14110D; border-radius: 10px 10px 2px 2px;
+}
+.person--s { width: 15px; height: 40px; opacity: 0.75; }
+.ground { position: absolute; left: 0; right: 0; bottom: 0; height: 16%; background: rgba(20,17,13,0.9); }
+
+.y1 { background: linear-gradient(180deg, #3A2A1B 0%, #6B4A26 55%, #8A6231 100%); }
+.lantern {
+  position: absolute; width: 26px; height: 34px; border-radius: 12px;
+  background: #F6D79A; box-shadow: 0 0 26px 12px rgba(246,215,154,0.42);
+}
+.y2 { background: linear-gradient(180deg, #1A1712 0%, #2C251C 100%); }
+.wall { position: absolute; top: 0; bottom: 0; width: 15%; background: rgba(10,8,6,0.92); }
+.shaft {
+  position: absolute; top: 0; bottom: 0; width: 8%;
+  background: linear-gradient(180deg, rgba(246,215,154,0.30) 0%, rgba(246,215,154,0.02) 100%);
+}
+.y3 { background: linear-gradient(180deg, #16202A 0%, #24384A 60%, #3C5B72 100%); }
+.water {
+  position: absolute; left: 0; right: 0; bottom: 0; height: 42%;
+  background: linear-gradient(180deg, rgba(180,210,230,0.30) 0%, rgba(120,160,190,0.10) 100%);
+}
+.ripple { position: absolute; left: 12%; right: 12%; height: 1px; background: rgba(220,235,245,0.42); }
+.y4 { background: linear-gradient(180deg, #2A2A33 0%, #6E6255 55%, #C7A67F 100%); }
+.dawn {
+  position: absolute; left: 50%; bottom: 14%; transform: translateX(-50%);
+  width: 150px; height: 150px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,238,205,0.95) 0%, rgba(255,238,205,0) 70%);
+}
+
+/* ── 평면도 ────────────────────────────────── */
+.plan-wrap { display: grid; grid-template-columns: 1.35fr 1fr; gap: 56px; align-content: center; }
+.plan {
+  position: relative; aspect-ratio: 4 / 3;
+  border: 1px solid var(--ink);
+  background: rgba(255,255,255,0.34);
+}
+.room { position: absolute; border: 1px solid var(--ink-72); }
+.room span {
+  position: absolute; top: 12px; left: 14px;
+  font-family: 'Nanum Myeongjo', serif; font-size: 24px; color: var(--ink-72);
+}
+.room small { position: absolute; bottom: 12px; left: 14px; font-size: 14px; color: var(--ink-35); letter-spacing: 0.08em; }
+.r1 { left: 5%;  top: 6%;  width: 40%; height: 40%; }
+.r2 { left: 49%; top: 6%;  width: 46%; height: 26%; }
+.r3 { left: 49%; top: 36%; width: 46%; height: 58%; }
+.r4 { left: 5%;  top: 50%; width: 40%; height: 44%; }
+.route { position: absolute; border-top: 1px dashed var(--red); }
+.route--a { left: 18%; top: 46%; width: 34%; }
+.route--b { left: 52%; top: 46%; width: 0; height: 30%; border-top: 0; border-left: 1px dashed var(--red); }
+.entry {
+  position: absolute; left: 2%; top: 44%;
+  width: 26px; height: 26px; border-radius: 50%; background: var(--red);
+  color: #F7F2E7; font-size: 13px; display: grid; place-items: center;
+}
+.scale { position: absolute; right: 16px; bottom: 12px; font-size: 13px; color: var(--ink-35); letter-spacing: 0.14em; }
+
+.tbl { width: 100%; border-collapse: collapse; font-size: 18px; }
+.tbl thead th {
+  text-align: left; font-family: 'Nanum Myeongjo', serif; font-size: 19px; font-weight: 700;
+  padding: 14px 16px; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--ink); letter-spacing: 0.06em;
+}
+.tbl tbody td { padding: 15px 16px; border-bottom: 1px solid var(--ink-14); }
 .tbl tbody tr:last-child td { border-bottom: 2px solid var(--ink); }
 .tbl .c-blue { color: var(--blue); }
 .tbl .c-red  { color: var(--red); }
+.tbl .tot td { font-weight: 600; }
 .note {
-  margin-top: 26px;
-  border-left: 3px solid var(--red);
-  padding: 4px 0 4px 20px;
-  font-size: 19px;
-  color: var(--ink-60);
-  line-height: 1.7;
+  margin-top: 22px; border-left: 3px solid var(--red);
+  padding: 4px 0 4px 18px; font-size: 18px; color: var(--ink-60); line-height: 1.7;
 }
-.section-title {
-  font-family: 'Nanum Myeongjo', serif;
-  font-size: 46px;
-  margin-bottom: 30px;
+.section-title { font-family: 'Nanum Myeongjo', serif; font-size: 42px; margin-bottom: 24px; }
+
+/* ── 일정 · 예산 ───────────────────────────── */
+.two-col { display: grid; grid-template-columns: 1.25fr 1fr; gap: 60px; align-content: center; }
+.gantt { border-top: 1px solid var(--ink-14); }
+.gantt__months {
+  display: grid; grid-template-columns: 150px repeat(6, 1fr);
+  font-size: 14px; color: var(--ink-35); letter-spacing: 0.10em;
+  padding: 12px 0; border-bottom: 1px solid var(--ink-14);
 }
-.body-wrap { align-content: start; display: grid; padding-top: 26px; }
+.gantt__row {
+  display: grid; grid-template-columns: 150px repeat(6, 1fr);
+  align-items: center; padding: 15px 0; border-bottom: 1px solid var(--ink-14);
+  font-size: 18px;
+}
+.gantt__bar { grid-column: span 1; height: 10px; background: var(--ink-14); }
+.gantt__bar--on   { background: var(--ink); }
+.gantt__bar--red  { background: var(--red); }
+.gantt__bar--gold { background: var(--gold); }
+.budget { display: grid; align-content: start; gap: 0; }
+.bud {
+  display: grid; grid-template-columns: 1fr auto; align-items: baseline;
+  padding: 16px 0; border-bottom: 1px solid var(--ink-14); font-size: 19px;
+}
+.bud__pct { height: 8px; background: var(--ink); margin-top: 10px; grid-column: 1 / -1; }
+.bud__pct--2 { background: var(--ink-72); }
+.bud__pct--3 { background: var(--gold); }
+.bud__pct--4 { background: var(--ink-35); }
 </style>
 </head>
 <body>
 
-<!-- 1 · 표지 -->
+<!-- 1 · 표지 (풀블리드 산수) -->
 <section class="slide">
-  <div class="head">
-    <div class="head__brand">기 획 제 안</div>
-    <div class="head__tag">2026</div>
+  <div class="sansu">
+    <div class="sansu__sky"></div>
+    <div class="sansu__moon"></div>
+    <div class="bird bird--a"></div><div class="bird bird--b"></div><div class="bird bird--c"></div>
+    <div class="ridge ridge--5"></div>
+    <div class="ridge ridge--4"></div>
+    <div class="mist mist--a"></div>
+    <div class="ridge ridge--3"></div>
+    <div class="mist mist--b"></div>
+    <div class="ridge ridge--2"></div>
+    <div class="ridge ridge--1"></div>
   </div>
+  <div class="grain"></div>
 
-  <div class="cover">
-    <div>
-      <div class="cover__eyebrow">전 통 문 화 콘 텐 츠</div>
-      <div class="cover__title">달빛 아래<br /><em>옛 이야기</em></div>
-      <div class="cover__rule"></div>
-      <div class="cover__sub">조선의 밤을 걷는 체험형 전시 · 상설관 기획안</div>
+  <div class="pad">
+    <div class="head head--light">
+      <div class="head__brand">기 획 제 안</div>
+      <div class="head__tag">2026</div>
     </div>
-    <div class="seal">기획<br />제안</div>
-  </div>
 
-  <div class="foot">
-    <span>SUNNY ENTERTAINMENT</span>
-    <span>01</span>
+    <div class="cover">
+      <div>
+        <div class="cover__eyebrow">전 통 문 화 콘 텐 츠</div>
+        <div class="cover__title">달빛 아래<br /><em>옛 이야기</em></div>
+        <div class="cover__rule"></div>
+        <div class="cover__sub">조선의 밤을 걷는 체험형 전시 · 상설관 기획안</div>
+      </div>
+      <div class="seal">기획<br />제안</div>
+    </div>
+
+    <div class="foot foot--light">
+      <span>SUNNY ENTERTAINMENT</span>
+      <span>01</span>
+    </div>
   </div>
 </section>
 
-<!-- 2 · 목차 -->
+<!-- 2 · 목차 + 편액 -->
 <section class="slide">
-  <div class="head">
-    <div class="head__brand">차 례</div>
-    <div class="head__tag">CONTENTS</div>
-  </div>
+  <div class="pad">
+    <div class="head">
+      <div class="head__brand">차 례</div>
+      <div class="head__tag">CONTENTS</div>
+    </div>
 
-  <div class="toc">
-    <div class="toc__item">
-      <div class="toc__num">壹</div>
-      <div class="toc__name">기획 배경</div>
-      <div class="toc__desc">무엇을 왜 지금 하는가</div>
-    </div>
-    <div class="toc__item">
-      <div class="toc__num">貳</div>
-      <div class="toc__name">이야기 구조</div>
-      <div class="toc__desc">관람객이 따라 걷는 서사</div>
-    </div>
-    <div class="toc__item">
-      <div class="toc__num">參</div>
-      <div class="toc__name">공간 구성</div>
-      <div class="toc__desc">존 배치 · 동선 · 체류 시간</div>
-    </div>
-    <div class="toc__item">
-      <div class="toc__num">肆</div>
-      <div class="toc__name">운영 계획</div>
-      <div class="toc__desc">일정 · 인력 · 예산 구조</div>
-    </div>
-    <div class="toc__item">
-      <div class="toc__num">伍</div>
-      <div class="toc__name">연출 자료</div>
-      <div class="toc__desc">조명 · 소리 · 재료</div>
-    </div>
-    <div class="toc__item">
-      <div class="toc__num">陸</div>
-      <div class="toc__name">기대 효과</div>
-      <div class="toc__desc">지역 · 관람객 · 확장</div>
-    </div>
-  </div>
+    <div class="toc-wrap">
+      <div class="toc">
+        <div class="toc__item">
+          <div class="toc__num">壹</div><div class="toc__name">기획 배경</div>
+          <div class="toc__desc">무엇을 왜 지금 하는가</div>
+        </div>
+        <div class="toc__item">
+          <div class="toc__num">貳</div><div class="toc__name">이야기 구조</div>
+          <div class="toc__desc">관람객이 따라 걷는 서사</div>
+        </div>
+        <div class="toc__item">
+          <div class="toc__num">參</div><div class="toc__name">공간 구성</div>
+          <div class="toc__desc">마당 배치 · 동선 · 체류 시간</div>
+        </div>
+        <div class="toc__item">
+          <div class="toc__num">肆</div><div class="toc__name">운영 계획</div>
+          <div class="toc__desc">일정 · 인력 · 예산 구조</div>
+        </div>
+        <div class="toc__item">
+          <div class="toc__num">伍</div><div class="toc__name">연출 자료</div>
+          <div class="toc__desc">조명 · 소리 · 재료</div>
+        </div>
+        <div class="toc__item">
+          <div class="toc__num">陸</div><div class="toc__name">기대 효과</div>
+          <div class="toc__desc">지역 · 관람객 · 확장</div>
+        </div>
+      </div>
 
-  <div class="foot">
-    <span>SUNNY ENTERTAINMENT</span>
-    <span>02</span>
-  </div>
-</section>
-
-<!-- 3 · 본문 2단 -->
-<section class="slide">
-  <div class="head">
-    <div class="head__brand">이 야 기 구 조</div>
-    <div class="head__tag">貳</div>
-  </div>
-
-  <div class="two">
-    <div>
-      <div class="h2">밤을 건너는<br />네 개의 마당</div>
-      <p class="lead">
-        관람객은 초저녁에 들어와 새벽에 나온다. 시간의 흐름이 곧 동선이며,
-        마당마다 빛의 색이 달라진다. 설명하지 않고 보여주는 방식으로 구성한다.
-      </p>
-      <div class="tags">
-        <span class="tag tag--red">체류 45분</span>
-        <span class="tag tag--blue">회차 20인</span>
-        <span class="tag">전 연령</span>
+      <div class="plaque">
+        <div class="plaque__col">달빛 아래 옛 이야기</div>
+        <div class="plaque__seal">印</div>
       </div>
     </div>
 
-    <div class="plate">
-      <div class="plate__in">
-        <div class="plate__moon"></div>
-        <div class="plate__ridge plate__ridge--far"></div>
-        <div class="plate__ridge"></div>
-      </div>
-      <div class="plate__cap">넷째 마당 — 새벽 · 연출 이미지</div>
+    <div class="foot">
+      <span>SUNNY ENTERTAINMENT</span>
+      <span>02</span>
     </div>
-  </div>
-
-  <div class="foot">
-    <span>SUNNY ENTERTAINMENT</span>
-    <span>03</span>
   </div>
 </section>
 
-<!-- 4 · 표 -->
+<!-- 3 · 마당 4분할 -->
 <section class="slide">
-  <div class="head">
-    <div class="head__brand">공 간 구 성</div>
-    <div class="head__tag">參</div>
-  </div>
+  <div class="pad">
+    <div class="head">
+      <div class="head__brand">이 야 기 구 조</div>
+      <div class="head__tag">貳 · 네 개의 마당</div>
+    </div>
 
-  <div class="body-wrap">
-    <div class="section-title">마당별 구성과 체류</div>
-    <table class="tbl">
-      <thead>
-        <tr><th style="width:12%">마당</th><th style="width:24%">이름</th><th style="width:22%">연출</th><th style="width:18%">면적</th><th>체류</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>壹</td><td>초저녁 마당</td><td class="c-red">등불 · 소리</td><td>66㎡</td><td>8분</td></tr>
-        <tr><td>貳</td><td>골목 마당</td><td>그림자 · 미로</td><td>92㎡</td><td>12분</td></tr>
-        <tr><td>參</td><td>강가 마당</td><td class="c-blue">물빛 · 안개</td><td>110㎡</td><td>15분</td></tr>
-        <tr><td>肆</td><td>새벽 마당</td><td>여명 · 정적</td><td>74㎡</td><td>10분</td></tr>
-      </tbody>
-    </table>
-    <p class="note">면적과 체류 시간은 기획 기준이며, 현장 실측 후 조정한다.</p>
-  </div>
+    <div class="yards">
+      <article class="yard">
+        <div class="yard__in y1">
+          <span class="yard__no">壹</span>
+          <div class="lantern" style="top:22%; left:18%"></div>
+          <div class="lantern" style="top:34%; left:62%; width:20px; height:26px"></div>
+          <div class="ground"></div>
+          <div class="person" style="left:44%"></div>
+        </div>
+        <div class="yard__name">초저녁 마당</div>
+        <div class="yard__meta">등불 · 소리 &nbsp;·&nbsp; 8분</div>
+        <div class="yard__desc">문을 열면 등이 하나씩 켜진다. 소리가 먼저 도착한다.</div>
+      </article>
 
-  <div class="foot">
-    <span>SUNNY ENTERTAINMENT</span>
-    <span>04</span>
+      <article class="yard">
+        <div class="yard__in y2">
+          <span class="yard__no">貳</span>
+          <div class="wall" style="left:0"></div>
+          <div class="shaft" style="left:26%"></div>
+          <div class="wall" style="left:46%; width:10%"></div>
+          <div class="shaft" style="left:70%"></div>
+          <div class="ground"></div>
+          <div class="person person--s" style="left:36%"></div>
+        </div>
+        <div class="yard__name">골목 마당</div>
+        <div class="yard__meta">그림자 · 미로 &nbsp;·&nbsp; 12분</div>
+        <div class="yard__desc">벽 사이로 빛이 새어 든다. 길은 한 번만 갈라진다.</div>
+      </article>
+
+      <article class="yard">
+        <div class="yard__in y3">
+          <span class="yard__no">參</span>
+          <div class="water"></div>
+          <div class="ripple" style="bottom:30%"></div>
+          <div class="ripple" style="bottom:23%; left:20%; right:20%"></div>
+          <div class="ripple" style="bottom:17%; left:28%; right:28%"></div>
+          <div class="person" style="left:30%"></div>
+          <div class="person person--s" style="left:58%"></div>
+        </div>
+        <div class="yard__name">강가 마당</div>
+        <div class="yard__meta">물빛 · 안개 &nbsp;·&nbsp; 15분</div>
+        <div class="yard__desc">발밑에서 물이 번진다. 건너편이 보이지 않는다.</div>
+      </article>
+
+      <article class="yard">
+        <div class="yard__in y4">
+          <span class="yard__no">肆</span>
+          <div class="dawn"></div>
+          <div class="ground"></div>
+          <div class="person" style="left:46%"></div>
+        </div>
+        <div class="yard__name">새벽 마당</div>
+        <div class="yard__meta">여명 · 정적 &nbsp;·&nbsp; 10분</div>
+        <div class="yard__desc">아무 소리도 나지 않는다. 문이 열리고 밖이 밝다.</div>
+      </article>
+    </div>
+
+    <div class="foot">
+      <span>SUNNY ENTERTAINMENT</span>
+      <span>03</span>
+    </div>
+  </div>
+</section>
+
+<!-- 4 · 평면도 + 표 -->
+<section class="slide">
+  <div class="pad">
+    <div class="head">
+      <div class="head__brand">공 간 구 성</div>
+      <div class="head__tag">參 · 배치와 동선</div>
+    </div>
+
+    <div class="plan-wrap">
+      <div class="plan">
+        <div class="entry">入</div>
+        <div class="room r1"><span>壹</span><small>초저녁 · 66㎡</small></div>
+        <div class="room r2"><span>貳</span><small>골목 · 92㎡</small></div>
+        <div class="room r3"><span>參</span><small>강가 · 110㎡</small></div>
+        <div class="room r4"><span>肆</span><small>새벽 · 74㎡</small></div>
+        <div class="route route--a"></div>
+        <div class="route route--b"></div>
+        <div class="scale">SCALE 1 : 200</div>
+      </div>
+
+      <div>
+        <div class="section-title">마당별 구성</div>
+        <table class="tbl">
+          <thead>
+            <tr><th style="width:14%">마당</th><th style="width:34%">연출</th><th style="width:26%">면적</th><th>체류</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>壹</td><td class="c-red">등불 · 소리</td><td>66㎡</td><td>8분</td></tr>
+            <tr><td>貳</td><td>그림자 · 미로</td><td>92㎡</td><td>12분</td></tr>
+            <tr><td>參</td><td class="c-blue">물빛 · 안개</td><td>110㎡</td><td>15분</td></tr>
+            <tr><td>肆</td><td>여명 · 정적</td><td>74㎡</td><td>10분</td></tr>
+            <tr class="tot"><td>합</td><td>—</td><td>342㎡</td><td>45분</td></tr>
+          </tbody>
+        </table>
+        <p class="note">면적과 체류 시간은 기획 기준이며, 현장 실측 후 조정한다. 회차 정원 20인.</p>
+      </div>
+    </div>
+
+    <div class="foot">
+      <span>SUNNY ENTERTAINMENT</span>
+      <span>04</span>
+    </div>
+  </div>
+</section>
+
+<!-- 5 · 일정 + 예산 -->
+<section class="slide">
+  <div class="pad">
+    <div class="head">
+      <div class="head__brand">운 영 계 획</div>
+      <div class="head__tag">肆 · 일정과 예산</div>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <div class="section-title">추진 일정</div>
+        <div class="gantt">
+          <div class="gantt__months">
+            <span>단계</span><span>3월</span><span>4월</span><span>5월</span><span>6월</span><span>7월</span><span>8월</span>
+          </div>
+          <div class="gantt__row">
+            <span>기본 설계</span>
+            <span class="gantt__bar gantt__bar--on"></span><span class="gantt__bar gantt__bar--on"></span>
+            <span class="gantt__bar"></span><span class="gantt__bar"></span><span class="gantt__bar"></span><span class="gantt__bar"></span>
+          </div>
+          <div class="gantt__row">
+            <span>연출 · 콘텐츠</span>
+            <span class="gantt__bar"></span><span class="gantt__bar gantt__bar--gold"></span>
+            <span class="gantt__bar gantt__bar--gold"></span><span class="gantt__bar gantt__bar--gold"></span>
+            <span class="gantt__bar"></span><span class="gantt__bar"></span>
+          </div>
+          <div class="gantt__row">
+            <span>시공</span>
+            <span class="gantt__bar"></span><span class="gantt__bar"></span><span class="gantt__bar"></span>
+            <span class="gantt__bar gantt__bar--on"></span><span class="gantt__bar gantt__bar--on"></span><span class="gantt__bar"></span>
+          </div>
+          <div class="gantt__row">
+            <span>시운전 · 개관</span>
+            <span class="gantt__bar"></span><span class="gantt__bar"></span><span class="gantt__bar"></span>
+            <span class="gantt__bar"></span><span class="gantt__bar"></span><span class="gantt__bar gantt__bar--red"></span>
+          </div>
+        </div>
+        <p class="note">시공 착수는 기본 설계 승인 이후로 잡았다. 개관은 8월 하순을 목표로 한다.</p>
+      </div>
+
+      <div>
+        <div class="section-title">예산 구조</div>
+        <div class="budget">
+          <div class="bud"><span>공간 시공</span><span>42%</span><span class="bud__pct" style="width:42%"></span></div>
+          <div class="bud"><span>연출 · 콘텐츠</span><span>28%</span><span class="bud__pct bud__pct--2" style="width:28%"></span></div>
+          <div class="bud"><span>운영 준비</span><span>18%</span><span class="bud__pct bud__pct--3" style="width:18%"></span></div>
+          <div class="bud"><span>예비비</span><span>12%</span><span class="bud__pct bud__pct--4" style="width:12%"></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot">
+      <span>SUNNY ENTERTAINMENT</span>
+      <span>05</span>
+    </div>
   </div>
 </section>
 
