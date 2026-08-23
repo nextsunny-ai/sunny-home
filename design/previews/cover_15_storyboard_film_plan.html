@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>15 — Storyboard · Film Plan · 4 slides</title>
+<style>
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:      #F4F4F2;   /* 워크시트 */
+  --sheet:   #FFFFFF;
+  --line:    #D9D9D4;
+  --line-2:  #EBEBE7;
+  --ink:     #1A1A1A;
+  --muted:   #7A7A74;
+  --accent:  #2F6B63;   /* 필름 그린 */
+  --frame:   #E7E7E2;   /* 컷 프레임 바탕 */
+}
+
+body {
+  background: #E6E6E3;
+  font-family: 'Pretendard Variable', Pretendard, sans-serif;
+  color: var(--ink);
+}
+
+.slide {
+  width: 100%;
+  max-width: 1920px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  background: var(--bg);
+  padding: 52px 72px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 30px;
+}
+.slide + .slide { margin-top: 24px; }
+
+/* ── 상·하단 바 ────────────────────────────── */
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  letter-spacing: 0.20em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 14px;
+}
+.bar strong { color: var(--ink); font-weight: 500; }
+.bar__dot {
+  display: inline-block;
+  width: 9px; height: 9px;
+  background: var(--accent);
+  margin-right: 12px;
+}
+.bar--foot { border-bottom: 0; border-top: 1px solid var(--line); padding: 14px 0 0; }
+
+/* ── 표지 ──────────────────────────────────── */
+.cover { display: grid; grid-template-columns: 1.25fr 1fr; gap: 64px; align-items: center; }
+.cover__kicker {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 15px;
+  letter-spacing: 0.28em;
+  color: var(--accent);
+  margin-bottom: 26px;
+}
+.cover__title {
+  font-size: 118px;
+  font-weight: 800;
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+}
+.cover__sub { margin-top: 26px; font-size: 24px; color: var(--muted); line-height: 1.65; }
+
+.slate { background: var(--ink); color: #FFFFFF; padding: 34px 36px; }
+.slate__top {
+  display: flex; gap: 4px; margin-bottom: 26px;
+}
+.slate__stripe { height: 22px; flex: 1; background: #FFFFFF; }
+.slate__stripe:nth-child(even) { background: var(--ink); box-shadow: inset 0 0 0 1px rgba(255,255,255,0.6); }
+.slate__row {
+  display: grid;
+  grid-template-columns: 116px 1fr;
+  gap: 16px;
+  padding: 13px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.16);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 17px;
+}
+.slate__row:last-child { border-bottom: 0; }
+.slate__k { color: rgba(255,255,255,0.52); letter-spacing: 0.14em; font-size: 14px; }
+.slate__v { color: #FFFFFF; }
+.slate__v em { font-style: normal; color: #7FD1C5; }
+
+/* ── 씬 리스트 표 ──────────────────────────── */
+.sheet { background: var(--sheet); border: 1px solid var(--line); }
+.tbl { width: 100%; border-collapse: collapse; font-size: 19px; }
+.tbl thead th {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.20em;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--muted);
+  padding: 16px 22px;
+  border-bottom: 1px solid var(--line);
+  background: #FAFAF8;
+}
+.tbl tbody td { padding: 17px 22px; border-bottom: 1px solid var(--line-2); }
+.tbl tbody tr:last-child td { border-bottom: 0; }
+.tbl .mono { font-family: 'JetBrains Mono', monospace; font-size: 17px; }
+.tbl .n-cut { color: var(--accent); font-weight: 600; }
+.title-l { font-size: 44px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 22px; }
+
+/* ── 요약 3칸 ─────────────────────────────── */
+.sum { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; margin-top: 26px; }
+.sum__box { background: var(--sheet); border: 1px solid var(--line); padding: 24px 26px; }
+.sum__k {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px; letter-spacing: 0.20em; text-transform: uppercase; color: var(--muted);
+}
+.sum__v { margin-top: 12px; font-size: 38px; font-weight: 700; letter-spacing: -0.02em; }
+.sum__v em { font-style: normal; color: var(--accent); }
+.sum__n { margin-top: 8px; font-size: 16px; color: var(--muted); }
+
+/* ── 콘티 시트 ─────────────────────────────── */
+.board { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+.cut {
+  background: var(--sheet);
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+}
+.cut__frame {
+  aspect-ratio: 16 / 9;
+  background: var(--frame);
+  border-bottom: 1px solid var(--line);
+  position: relative;
+  overflow: hidden;
+}
+.cut__no {
+  position: absolute; top: 10px; left: 12px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  background: var(--ink);
+  color: #FFFFFF;
+  padding: 3px 9px;
+  z-index: 2;
+}
+.cut__meta {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  padding: 12px 14px 0;
+}
+.cut__meta b { color: var(--accent); font-weight: 500; }
+.cut__desc { padding: 8px 14px 16px; font-size: 16px; line-height: 1.55; color: var(--ink); }
+
+/* 프레임 안 도형 = 구도 표시 */
+.fig { position: absolute; }
+.fig--horizon { left: 0; right: 0; top: 62%; border-top: 1px solid rgba(26,26,26,0.22); }
+.fig--sky { left: 0; right: 0; top: 0; height: 62%; background: linear-gradient(180deg, #F1F1EE 0%, #E2E2DD 100%); }
+.fig--ground { left: 0; right: 0; top: 62%; bottom: 0; background: #DCDCD6; }
+.fig--person { bottom: 14%; width: 26px; height: 62px; background: rgba(26,26,26,0.72); border-radius: 13px 13px 2px 2px; }
+.fig--person.p1 { left: 22%; }
+.fig--person.p2 { left: 62%; height: 44px; opacity: 0.5; }
+.fig--sun { top: 16%; right: 18%; width: 62px; height: 62px; border-radius: 50%; background: rgba(47,107,99,0.28); }
+.fig--box { left: 14%; right: 14%; top: 22%; bottom: 22%; border: 2px solid rgba(47,107,99,0.55); }
+.fig--arrow { left: 30%; top: 50%; width: 40%; height: 2px; background: var(--accent); }
+.fig--arrow::after {
+  content: ''; position: absolute; right: -2px; top: -5px;
+  border-left: 12px solid var(--accent);
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+
+/* ── 컷 상세 ───────────────────────────────── */
+.detail { display: grid; grid-template-columns: 1.5fr 1fr; gap: 34px; }
+.detail__frame {
+  background: var(--frame);
+  border: 1px solid var(--line);
+  position: relative;
+  overflow: hidden;
+}
+.spec { background: var(--sheet); border: 1px solid var(--line); padding: 28px 30px; }
+.spec__row {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 16px;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--line-2);
+  font-size: 19px;
+}
+.spec__row:last-child { border-bottom: 0; }
+.spec__k {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding-top: 3px;
+}
+.spec__v { line-height: 1.55; }
+.spec__v em { font-style: normal; color: var(--accent); font-weight: 600; }
+</style>
+</head>
+<body>
+
+<!-- 1 · 표지 -->
+<section class="slide">
+  <div class="bar">
+    <span><span class="bar__dot"></span><strong>STORYBOARD</strong> · FILM PLAN</span>
+    <span>DRAFT 01</span>
+  </div>
+
+  <div class="cover">
+    <div>
+      <div class="cover__kicker">S H O R T &nbsp; F I L M &nbsp;/&nbsp; 0 8 : 0 0</div>
+      <div class="cover__title">돌아오는<br />길</div>
+      <div class="cover__sub">단편 애니메이션 · 콘티 및 연출 기획서<br />컷 구성 · 카메라 · 사운드 설계</div>
+    </div>
+
+    <div class="slate">
+      <div class="slate__top">
+        <span class="slate__stripe"></span><span class="slate__stripe"></span>
+        <span class="slate__stripe"></span><span class="slate__stripe"></span>
+        <span class="slate__stripe"></span><span class="slate__stripe"></span>
+      </div>
+      <div class="slate__row"><span class="slate__k">TITLE</span><span class="slate__v">돌아오는 길</span></div>
+      <div class="slate__row"><span class="slate__k">FORMAT</span><span class="slate__v">2D · 16:9 · FHD</span></div>
+      <div class="slate__row"><span class="slate__k">RUNTIME</span><span class="slate__v"><em>08 : 00</em></span></div>
+      <div class="slate__row"><span class="slate__k">SCENES</span><span class="slate__v">06 scenes · <em>84 cuts</em></span></div>
+      <div class="slate__row"><span class="slate__k">DIRECTOR</span><span class="slate__v">—</span></div>
+    </div>
+  </div>
+
+  <div class="bar bar--foot">
+    <span>SUNNY ENTERTAINMENT</span>
+    <span>01 / 04</span>
+  </div>
+</section>
+
+<!-- 2 · 씬 리스트 -->
+<section class="slide">
+  <div class="bar">
+    <span><span class="bar__dot"></span><strong>SCENE LIST</strong></span>
+    <span>06 SCENES · 84 CUTS</span>
+  </div>
+
+  <div>
+    <div class="title-l">씬 구성</div>
+    <div class="sheet">
+      <table class="tbl">
+        <thead>
+          <tr><th style="width:9%">SC</th><th style="width:26%">장소</th><th style="width:13%">시간</th><th style="width:11%">컷</th><th style="width:13%">길이</th><th>핵심</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="mono">S01</td><td>바닷가 · 모래언덕</td><td class="mono">새벽</td><td class="mono n-cut">12</td><td class="mono">01:10</td><td>혼자 걷는 아이</td></tr>
+          <tr><td class="mono">S02</td><td>마당 · 대문 앞</td><td class="mono">아침</td><td class="mono n-cut">18</td><td class="mono">01:40</td><td>도착한 상자</td></tr>
+          <tr><td class="mono">S03</td><td>방 안</td><td class="mono">낮</td><td class="mono n-cut">15</td><td class="mono">01:25</td><td>열어보는 손</td></tr>
+          <tr><td class="mono">S04</td><td>마당 · 담장</td><td class="mono">해질녘</td><td class="mono n-cut">21</td><td class="mono">02:05</td><td>커지는 그림자</td></tr>
+          <tr><td class="mono">S05</td><td>바닷가 · 물가</td><td class="mono">밤</td><td class="mono n-cut">14</td><td class="mono">01:15</td><td>마주 서는 둘</td></tr>
+          <tr><td class="mono">S06</td><td>모래언덕 · 능선</td><td class="mono">새벽</td><td class="mono n-cut">04</td><td class="mono">00:25</td><td>남는 발자국</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="sum">
+      <div class="sum__box">
+        <div class="sum__k">Total cuts</div>
+        <div class="sum__v"><em>84</em></div>
+        <div class="sum__n">평균 4.9초 · 최장 12초</div>
+      </div>
+      <div class="sum__box">
+        <div class="sum__k">Runtime</div>
+        <div class="sum__v">08 : 00</div>
+        <div class="sum__n">엔드 크레딧 20초 포함</div>
+      </div>
+      <div class="sum__box">
+        <div class="sum__k">Locations</div>
+        <div class="sum__v">03</div>
+        <div class="sum__n">바닷가 · 마당 · 방</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bar bar--foot">
+    <span>SUNNY ENTERTAINMENT</span>
+    <span>02 / 04</span>
+  </div>
+</section>
+
+<!-- 3 · 콘티 시트 -->
+<section class="slide">
+  <div class="bar">
+    <span><span class="bar__dot"></span><strong>S04</strong> · 마당 · 담장 · 해질녘</span>
+    <span>CUT 041 — 046</span>
+  </div>
+
+  <div class="board">
+    <article class="cut">
+      <div class="cut__frame">
+        <span class="cut__no">041</span>
+        <div class="fig fig--sky"></div><div class="fig fig--ground"></div><div class="fig fig--horizon"></div>
+        <div class="fig fig--person p1"></div>
+      </div>
+      <div class="cut__meta"><span>WIDE</span><b>03s</b></div>
+      <div class="cut__desc">담장 앞에 선 아이. 화면 왼쪽에 치우쳐 세운다.</div>
+    </article>
+
+    <article class="cut">
+      <div class="cut__frame">
+        <span class="cut__no">042</span>
+        <div class="fig fig--sky"></div><div class="fig fig--ground"></div><div class="fig fig--horizon"></div>
+        <div class="fig fig--box"></div>
+      </div>
+      <div class="cut__meta"><span>CLOSE</span><b>02s</b></div>
+      <div class="cut__desc">상자 표면의 눌린 자국. 초점만 이동.</div>
+    </article>
+
+    <article class="cut">
+      <div class="cut__frame">
+        <span class="cut__no">043</span>
+        <div class="fig fig--sky"></div><div class="fig fig--ground"></div><div class="fig fig--horizon"></div>
+        <div class="fig fig--sun"></div><div class="fig fig--person p2"></div>
+      </div>
+      <div class="cut__meta"><span>O.S.</span><b>04s</b></div>
+      <div class="cut__desc">어깨 너머로 보이는 해. 역광으로 실루엣만.</div>
+    </article>
+
+    <article class="cut">
+      <div class="cut__frame">
+        <span class="cut__no">044</span>
+        <div class="fig fig--sky"></div><div class="fig fig--ground"></div><div class="fig fig--horizon"></div>
+        <div class="fig fig--arrow"></div>
+      </div>
+      <div class="cut__meta"><span>PAN →</span><b>05s</b></div>
+      <div class="cut__desc">담장을 따라 오른쪽으로 팬. 그림자가 늘어난다.</div>
+    </article>
+
+    <article class="cut">
+      <div class="cut__frame">
+        <span class="cut__no">045</span>
+        <div class="fig fig--sky"></div><div class="fig fig--ground"></div><div class="fig fig--horizon"></div>
+        <div class="fig fig--person p1"></div><div class="fig fig--person p2"></div>
+      </div>
+      <div class="cut__meta"><span>TWO SHOT</span><b>06s</b></div>
+      <div class="cut__desc">둘이 한 프레임에 처음 들어온다. 간격을 넓게.</div>
+    </article>
+
+    <article class="cut">
+      <div class="cut__frame">
+        <span class="cut__no">046</span>
+        <div class="fig fig--sky"></div><div class="fig fig--ground"></div><div class="fig fig--horizon"></div>
+      </div>
+      <div class="cut__meta"><span>EMPTY</span><b>03s</b></div>
+      <div class="cut__desc">아무도 없는 담장. 소리만 남긴다.</div>
+    </article>
+  </div>
+
+  <div class="bar bar--foot">
+    <span>SUNNY ENTERTAINMENT</span>
+    <span>03 / 04</span>
+  </div>
+</section>
+
+<!-- 4 · 컷 상세 -->
+<section class="slide">
+  <div class="bar">
+    <span><span class="bar__dot"></span><strong>CUT 045</strong> · TWO SHOT</span>
+    <span>S04 · 해질녘</span>
+  </div>
+
+  <div class="detail">
+    <div class="detail__frame">
+      <div class="fig fig--sky"></div>
+      <div class="fig fig--ground"></div>
+      <div class="fig fig--horizon"></div>
+      <div class="fig fig--sun"></div>
+      <div class="fig fig--person p1" style="height:150px;width:62px;bottom:12%;"></div>
+      <div class="fig fig--person p2" style="height:112px;width:48px;bottom:12%;left:64%;"></div>
+    </div>
+
+    <div class="spec">
+      <div class="spec__row"><span class="spec__k">Length</span><span class="spec__v"><em>06초</em></span></div>
+      <div class="spec__row"><span class="spec__k">Lens</span><span class="spec__v">35mm 상당 · 눈높이보다 조금 낮게</span></div>
+      <div class="spec__row"><span class="spec__k">Move</span><span class="spec__v">고정. 인물만 움직인다</span></div>
+      <div class="spec__row"><span class="spec__k">Light</span><span class="spec__v">역광 · 윤곽만 남기고 얼굴은 어둡게</span></div>
+      <div class="spec__row"><span class="spec__k">Sound</span><span class="spec__v">파도 멀리 · 발소리 없음</span></div>
+      <div class="spec__row"><span class="spec__k">Note</span><span class="spec__v">둘 사이 간격이 좁아지지 않게. 다음 컷에서 붙인다</span></div>
+    </div>
+  </div>
+
+  <div class="bar bar--foot">
+    <span>SUNNY ENTERTAINMENT</span>
+    <span>04 / 04</span>
+  </div>
+</section>
+
+</body>
+</html>

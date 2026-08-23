@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>13 — Word Report (Mono Document) · 4 pages</title>
+<style>
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+
+/* ===========================================================
+   13 · 워드 보고서 (Mono Document)
+   실측 기준: Letter 8.5×11in 세로 · 여백 상하 0.90in / 좌우 0.97in
+   화면 표시 배율: 페이지 폭 = 뷰포트의 78.125% (1920 기준 1500px)
+   1pt = 0.12766vw  → 어느 폭에서든 문서 비율 유지
+   모든 치수는 pt 기준 calc() = 인쇄 시 실제 문서와 동일 비율
+   =========================================================== */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --pt: 0.12766vw;             /* 1920 뷰포트에서 2.451px = 1500px ÷ 8.5in ÷ 72pt */
+
+  --ink:        #111111;   /* 제목 · 표 헤더 배경 · PART 바 */
+  --body:       #242424;   /* 본문 */
+  --quote:      #303030;   /* 인용 박스 텍스트 */
+  --gray:       #767676;   /* 라벨 · 부제 */
+  --gray-light: #9A9A9A;   /* 섹션 번호 · 캡션 · 푸터 */
+  --rule:       #E3E3E3;   /* 얇은 구분선 */
+  --zebra:      #F5F5F5;   /* 표 짝수행 · 인용 박스 배경 */
+  --paper:      #FFFFFF;
+}
+
+body {
+  background: #DCDCDE;
+  font-family: 'Pretendard Variable', Pretendard, 'Malgun Gothic', sans-serif;
+  color: var(--body);
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: calc(13 * var(--pt)) 0 calc(26 * var(--pt));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(13 * var(--pt));
+}
+
+/* ── 페이지 ───────────────────────────────────────────── */
+.page {
+  width: 78.125%;                                  /* 1500 / 1920 */
+  aspect-ratio: 8.5 / 11;
+  flex: 0 0 auto;
+  background: var(--paper);
+  padding: calc(65 * var(--pt)) calc(70 * var(--pt));
+  position: relative;
+  box-shadow: 0 0.16% 1% rgba(0, 0, 0, 0.16);
+  display: flex;
+  flex-direction: column;
+}
+
+.page__footer {
+  position: absolute;
+  left: calc(70 * var(--pt));
+  right: calc(70 * var(--pt));
+  bottom: calc(34 * var(--pt));
+  display: flex;
+  justify-content: space-between;
+  font-size: calc(8 * var(--pt));
+  color: var(--gray-light);
+}
+
+/* ── 표지 ─────────────────────────────────────────────── */
+.cover__label {
+  margin-top: calc(55 * var(--pt));
+  font-size: calc(8.5 * var(--pt));
+  color: var(--gray);
+  letter-spacing: 0.34em;
+  padding-bottom: calc(4.5 * var(--pt));
+  border-bottom: calc(2.75 * var(--pt)) solid var(--ink);
+}
+.cover__title {
+  margin-top: calc(22 * var(--pt));
+  font-size: calc(42 * var(--pt));
+  font-weight: 900;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  line-height: 1.18;
+}
+.cover__subtitle {
+  margin-top: calc(1.5 * var(--pt));
+  font-size: calc(21 * var(--pt));
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+.cover__line1 {
+  margin-top: calc(8.5 * var(--pt));
+  font-size: calc(11.5 * var(--pt));
+  color: var(--gray);
+}
+.cover__line2 {
+  margin-top: calc(3 * var(--pt));
+  font-size: calc(9.5 * var(--pt));
+  color: var(--gray-light);
+}
+.cover__divider {
+  margin-top: calc(92 * var(--pt));
+  border-top: calc(0.75 * var(--pt)) solid var(--rule);
+}
+.cover__meta {
+  margin-top: calc(30 * var(--pt));
+  display: grid;
+  grid-template-columns: calc(53 * var(--pt)) 1fr;
+  row-gap: calc(9 * var(--pt));
+  align-items: baseline;
+}
+.cover__meta dt {
+  font-size: calc(9 * var(--pt));
+  color: var(--gray);
+}
+.cover__meta dd {
+  font-size: calc(10 * var(--pt));
+  font-weight: 600;
+  color: var(--ink);
+}
+
+/* ── PART 바 ──────────────────────────────────────────── */
+.part {
+  background: var(--ink);
+  color: #FFFFFF;
+  font-size: calc(15 * var(--pt));
+  font-weight: 600;
+  padding: calc(6.5 * var(--pt)) calc(11.5 * var(--pt));
+  letter-spacing: -0.01em;
+}
+.part + * { margin-top: calc(21 * var(--pt)); }
+
+/* ── 섹션 제목 ────────────────────────────────────────── */
+.h {
+  display: flex;
+  align-items: baseline;
+  gap: calc(7 * var(--pt));
+  padding-bottom: calc(3.5 * var(--pt));
+  border-bottom: calc(0.75 * var(--pt)) solid var(--rule);
+  margin-top: calc(18.5 * var(--pt));
+}
+.h:first-child { margin-top: 0; }
+.h__num {
+  font-size: calc(14 * var(--pt));
+  font-weight: 600;
+  color: var(--gray-light);
+}
+.h__text {
+  font-size: calc(12.5 * var(--pt));
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+.h + * { margin-top: calc(10 * var(--pt)); }
+
+/* ── 본문 ─────────────────────────────────────────────── */
+p {
+  font-size: calc(10.5 * var(--pt));
+  line-height: 1.62;
+  color: var(--body);
+}
+p + p { margin-top: calc(6.5 * var(--pt)); }
+p.strong { font-weight: 600; }
+
+/* ── 리스트 ───────────────────────────────────────────── */
+.list { list-style: none; }
+.list li {
+  font-size: calc(10.5 * var(--pt));
+  line-height: 1.62;
+  color: var(--body);
+  padding-left: calc(18.5 * var(--pt));
+  position: relative;
+}
+.list li + li { margin-top: calc(5 * var(--pt)); }
+.list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--gray);
+}
+.list--num { counter-reset: n; }
+.list--num li::before {
+  content: counter(n) '.';
+  counter-increment: n;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+/* ── 표 ───────────────────────────────────────────────── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: calc(1 * var(--pt)) solid var(--ink);
+  border-bottom: calc(1 * var(--pt)) solid var(--ink);
+  font-size: calc(9.5 * var(--pt));
+}
+thead th {
+  background: var(--ink);
+  color: #FFFFFF;
+  font-weight: 600;
+  text-align: left;
+  padding: calc(5 * var(--pt)) calc(8.5 * var(--pt));
+}
+tbody td {
+  padding: calc(5 * var(--pt)) calc(8.5 * var(--pt));
+  color: var(--body);
+  border-top: calc(0.25 * var(--pt)) solid var(--rule);
+  line-height: 1.5;
+}
+tbody tr:nth-child(even) td { background: var(--zebra); }
+td.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* ── 인용 · 판단 박스 ─────────────────────────────────── */
+.quote {
+  background: var(--zebra);
+  border-left: calc(2.75 * var(--pt)) solid var(--ink);
+  padding: calc(9 * var(--pt)) calc(13 * var(--pt));
+  font-size: calc(10.5 * var(--pt));
+  line-height: 1.6;
+  color: var(--quote);
+  font-style: italic;
+}
+
+/* ── 캡션 ─────────────────────────────────────────────── */
+.caption {
+  font-size: calc(9 * var(--pt));
+  color: var(--gray-light);
+  font-style: italic;
+}
+
+.mt-s { margin-top: calc(8.5 * var(--pt)); }
+.mt-m { margin-top: calc(13 * var(--pt)); }
+
+/* ── 인쇄 (Ctrl+P → PDF) ─────────────────────────────── */
+@page { size: Letter; margin: 0; }
+@media print {
+  :root { --pt: 1px; }                 /* 인쇄 시 pt 원단위 */
+  body { background: #FFFFFF; width: auto; max-width: none; padding: 0; gap: 0; display: block; }
+  .page {
+    width: 8.5in; height: 11in; aspect-ratio: auto;
+    padding: 0.9in 0.97in;
+    box-shadow: none;
+    break-after: page;
+  }
+  .page:last-child { break-after: auto; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════ p.1 — 표지 ═══════════ -->
+<section class="page">
+  <div class="cover__label">C O N F I D E N T I A L &nbsp;·&nbsp; B U S I N E S S &nbsp; R E V I E W</div>
+
+  <div class="cover__title">신규 사업</div>
+  <div class="cover__subtitle">검토 보고서</div>
+  <div class="cover__line1">체험형 전시 · 지역 거점 사업 &nbsp;‘샘플 프로젝트’</div>
+  <div class="cover__line2">시장 · 경쟁 구조 · 수익 모델 분석과 검토 의견</div>
+
+  <div class="cover__divider"></div>
+
+  <dl class="cover__meta">
+    <dt>작성</dt><dd>작성자 직함 &nbsp;·&nbsp; 소속</dd>
+    <dt>버전</dt><dd>1.0 &nbsp;(최초 보고)</dd>
+    <dt>일자</dt><dd>2026. 00. 00</dd>
+    <dt>분류</dt><dd>대외비 — 내부 보고용</dd>
+    <dt>범위</dt><dd>시장 · 경쟁 구조 · 수익 모델 (수치는 공개 자료 기준)</dd>
+  </dl>
+
+  <div class="page__footer">
+    <span>보고서 제목 v1.0 · 대외비</span>
+    <span>작성자 · 소속</span>
+    <span>1</span>
+  </div>
+</section>
+
+<!-- ═══════════ p.2 — PART 1 + 개요 표 ═══════════ -->
+<section class="page">
+  <div class="part">PART 1. &nbsp;조사</div>
+
+  <div class="h"><span class="h__num">01</span><span class="h__text">사업 개요</span></div>
+  <table>
+    <thead><tr><th style="width:30%">항목</th><th>내용</th></tr></thead>
+    <tbody>
+      <tr><td>대상</td><td>샘플 프로젝트 (Sample Project)</td></tr>
+      <tr><td>형태</td><td>상설 체험 전시 + 온라인 채널 병행</td></tr>
+      <tr><td>운영 기간</td><td>2026년 하반기 ~ (연 단위 갱신)</td></tr>
+      <tr><td>거점</td><td>수도권 1 · 지역 2 (검토 단계)</td></tr>
+      <tr><td>인력</td><td>상시 00명 · 회차 운영 인력 별도</td></tr>
+      <tr><td>추정 매출</td><td>연 00억원 (공개 자료 기준 추정)</td></tr>
+      <tr><td>투자 규모</td><td>초기 00억원 · 회수 기간 00개월 추정</td></tr>
+    </tbody>
+  </table>
+
+  <p class="strong mt-m">한 줄 요약 — 시장은 성장 중이나 수익의 대부분이 IP 보유자에게 귀속되는 구조다. 진입 시 확보해야 할 것은 채널이 아니라 IP 계약 조건이다.</p>
+
+  <div class="h"><span class="h__num">02</span><span class="h__text">추진 주체 · 조직</span></div>
+  <ul class="list">
+    <li>주관 — 사업 총괄과 운영을 분리한 2본부 체계. 전시 기획과 시공을 내부에서 소화한다.</li>
+    <li>협력 — 콘텐츠 공급사 0개사, 시공 협력사 0개사와 기본 협약 체결(예정).</li>
+    <li>조직 특성 — 거점별 개별 운영 인력을 두는 구조라 거점이 늘수록 고정비가 함께 증가한다.</li>
+  </ul>
+
+  <div class="h"><span class="h__num">03</span><span class="h__text">연혁</span></div>
+  <table>
+    <thead><tr><th style="width:22%">시기</th><th>내용</th></tr></thead>
+    <tbody>
+      <tr><td>2024.03</td><td>사전 조사 착수 · 유사 사례 현장 방문</td></tr>
+      <tr><td>2024.11</td><td>파일럿 운영 (00일 · 방문 0,000명)</td></tr>
+      <tr><td>2025.06</td><td>콘텐츠 공급사 기본 협약</td></tr>
+      <tr><td>2026.02</td><td>본 검토 착수</td></tr>
+    </tbody>
+  </table>
+
+  <div class="page__footer">
+    <span>보고서 제목 v1.0 · 대외비</span>
+    <span>작성자 · 소속</span>
+    <span>2</span>
+  </div>
+</section>
+
+<!-- ═══════════ p.3 — 본문 · 인용 박스 ═══════════ -->
+<section class="page">
+  <div class="h"><span class="h__num">04</span><span class="h__text">수익 구조</span></div>
+  <p>매출은 입장 수익 · 굿즈 · 기업 협찬 세 갈래로 나뉜다. 이 가운데 반복성이 있는 것은 입장 수익뿐이며, 나머지는 회차와 시즌에 따라 변동 폭이 크다.</p>
+  <ul class="list mt-s">
+    <li>입장 수익 — 회차당 정원 00명 · 일 0회차 기준. 점유율이 손익을 좌우한다.</li>
+    <li>굿즈 — 객단가 0,000원 · 구매 전환 00% 가정. 재고 부담이 함께 발생한다.</li>
+    <li>협찬 — 단발성. 계약이 확정되기 전에는 계획 수치로 잡지 않는다.</li>
+  </ul>
+
+  <div class="quote mt-m">이 모델은 콘텐츠를 계속 갱신할 수 있을 때만 작동한다. 갱신이 끊기면 재방문이 사라지고 고정비만 남는다.</div>
+
+  <div class="h"><span class="h__num">05</span><span class="h__text">원가 구조</span></div>
+  <ol class="list list--num">
+    <li>초기 시공 — 거점당 00억원. 회수 기간을 결정하는 가장 큰 변수다.</li>
+    <li>고정 인건비 — 상시 인력 00명 기준 연 00억원. 거점 증가와 직결된다.</li>
+    <li>콘텐츠 사용료 — 매출 연동 00%. 총이익을 구조적으로 압박한다.</li>
+    <li>임차료 — 입지 조건에 따라 편차가 크다. 유동인구와 임차료는 대체로 비례한다.</li>
+  </ol>
+
+  <div class="h"><span class="h__num">06</span><span class="h__text">재무 개요</span></div>
+  <p class="caption">아래는 공개 자료 기준 참고치이며, 상세 손익은 내부 회계자료에 따른다.</p>
+  <table class="mt-s">
+    <thead><tr><th style="width:46%">지표</th><th>수치 (공개 자료 기준)</th></tr></thead>
+    <tbody>
+      <tr><td>연매출 (추정)</td><td class="num">약 00억원</td></tr>
+      <tr><td>영업이익률 (추정)</td><td class="num">약 0%</td></tr>
+      <tr><td>초기 투자</td><td class="num">약 00억원</td></tr>
+      <tr><td>회수 기간</td><td class="num">약 00개월</td></tr>
+    </tbody>
+  </table>
+
+  <div class="page__footer">
+    <span>보고서 제목 v1.0 · 대외비</span>
+    <span>작성자 · 소속</span>
+    <span>3</span>
+  </div>
+</section>
+
+<!-- ═══════════ p.4 — PART 2 판단 ═══════════ -->
+<section class="page">
+  <div class="part">PART 2. &nbsp;판단</div>
+
+  <div class="h"><span class="h__num">07</span><span class="h__text">쟁점 정리</span></div>
+  <table>
+    <thead><tr><th style="width:26%">쟁점</th><th style="width:16%">판정</th><th>근거</th></tr></thead>
+    <tbody>
+      <tr><td>시장 성장성</td><td>양호</td><td>수요는 확인되나 성장분이 IP 보유자에게 귀속된다</td></tr>
+      <tr><td>진입 장벽</td><td>낮음</td><td>제작 단가 하락으로 후발 진입이 쉬워졌다</td></tr>
+      <tr><td>계약 안정성</td><td>주의</td><td>갱신 조건이 상대방 편의에 따라 달라질 수 있다</td></tr>
+      <tr><td>고정비 구조</td><td>주의</td><td>거점 증가와 인건비가 연동된다</td></tr>
+      <tr><td>회수 가능성</td><td>조건부</td><td>점유율 00% 이상 유지가 전제다</td></tr>
+    </tbody>
+  </table>
+
+  <div class="h"><span class="h__num">08</span><span class="h__text">검토 의견</span></div>
+  <p>확보해야 할 것은 운영 역량이 아니라 계약 조건이다. 콘텐츠 사용료율과 갱신 기간을 먼저 고정한 뒤 거점 수를 정하는 순서가 맞다. 순서가 뒤집히면 고정비가 먼저 늘어난다.</p>
+  <p>단계적 진입을 권한다. 1거점에서 00개월 실적을 확인하고, 점유율과 객단가가 전제치를 넘은 뒤 2거점 이후를 결정한다.</p>
+
+  <div class="quote mt-m">결론 — 조건부 추진. 콘텐츠 사용료율 00% 이하 · 갱신 기간 00년 이상이 확보되면 1거점부터 착수한다.</div>
+
+  <div class="h"><span class="h__num">09</span><span class="h__text">다음 단계</span></div>
+  <ul class="list">
+    <li>콘텐츠 공급사와 사용료율 · 갱신 조건 협의 (0월)</li>
+    <li>1거점 후보지 3곳 임차 조건 비교 (0월)</li>
+    <li>파일럿 실적 기준 재검토 (0월)</li>
+  </ul>
+
+  <div class="page__footer">
+    <span>보고서 제목 v1.0 · 대외비</span>
+    <span>작성자 · 소속</span>
+    <span>4</span>
+  </div>
+</section>
+
+</body>
+</html>

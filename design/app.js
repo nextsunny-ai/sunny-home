@@ -184,6 +184,51 @@ const STYLES = [
       '레이아웃': '모듈러 그리드 (피처드 2×2 + 1×1) · 스펙 라인',
       '용도': '굿즈 · IP 상품 카탈로그'
     }
+  },
+  {
+    id: '13',
+    name: '워드 보고서',
+    subName: 'Word Report',
+    desc: '워드 문서형 (A4/Letter 세로). 무채색 + 검정 PART 바 + 검정 헤더 표.',
+    cover: 'previews/cover_13_word_report.html',
+    meta: {
+      '배경': '#FFFFFF (흰 종이)',
+      '텍스트': '#242424 · 제목 #111111',
+      '액센트': '무채색만 (액센트 컬러 없음)',
+      '폰트': 'Pretendard · SemiBold · Black',
+      '레이아웃': 'Letter 세로 · PART 바 · 번호 섹션 · 검정 헤더 표',
+      '용도': '인수 검토 · 사업 검토 · 시장 조사 · 내부 보고'
+    }
+  },
+  {
+    id: '14',
+    name: '한지 전통',
+    subName: 'Hanji Traditional',
+    desc: '한지 배경 + 먹 + 오방색. 명조 세리프. 사극 · 문화재 · 지자체 제안.',
+    cover: 'previews/cover_14_hanji_traditional.html',
+    meta: {
+      '배경': '#F2EADB (한지 질감 CSS)',
+      '텍스트': '#1F1B16 (먹)',
+      '액센트': '적 #A8342A · 청 #2B5A7E · 황 #C8A02E — 슬라이드당 1색',
+      '폰트': 'Nanum Myeongjo · Pretendard',
+      '레이아웃': '먹선 머리·꼬리 · 낙관 · 한자 목차 · 먹 프레임',
+      '용도': '전통문화 · 사극 IP · 문화재 · 지자체 · 축제'
+    }
+  },
+  {
+    id: '15',
+    name: '스토리보드 · 영상 기획',
+    subName: 'Storyboard Film Plan',
+    desc: '워크시트 콘티 시트. 컷 프레임 그리드 + 슬레이트 + 씬 리스트.',
+    cover: 'previews/cover_15_storyboard_film_plan.html',
+    meta: {
+      '배경': '#F4F4F2 · 카드 #FFFFFF',
+      '텍스트': '#1A1A1A',
+      '액센트': '#2F6B63 (필름 그린 — 숫자에만)',
+      '폰트': 'JetBrains Mono · Pretendard',
+      '레이아웃': '3열 컷 프레임 · 검정 슬레이트 · 씬 리스트 표 · 스펙 시트',
+      '용도': '애니 · 영상 · 광고 콘티 · 연출 기획서'
+    }
   }
 ];
 
@@ -275,6 +320,8 @@ const previewObserver = new IntersectionObserver((entries) => {
     iframe.setAttribute('aria-hidden', 'true');
     iframe.addEventListener('load', () => el.classList.remove('is-loading'));
     el.appendChild(iframe);
+    // ResizeObserver 초기 콜백은 iframe 생성 전에 끝나므로 여기서 한 번 맞춘다
+    iframe.style.transform = `scale(${el.clientWidth / 1920})`;
     previewObserver.unobserve(el);
   });
 }, { rootMargin: '200px' });

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>14 — Hanji Traditional · 4 slides</title>
+<style>
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --paper:  #F2EADB;   /* 한지 */
+  --paper2: #EAE0CE;   /* 한지 그늘 */
+  --ink:    #1F1B16;   /* 먹 */
+  --ink-60: rgba(31, 27, 22, 0.60);
+  --ink-35: rgba(31, 27, 22, 0.35);
+  --ink-14: rgba(31, 27, 22, 0.14);
+  --red:    #A8342A;   /* 적 · 낙관 */
+  --blue:   #2B5A7E;   /* 청 */
+  --gold:   #C8A02E;   /* 황 */
+}
+
+body {
+  background: var(--paper2);
+  font-family: 'Pretendard Variable', Pretendard, sans-serif;
+  color: var(--ink);
+}
+
+.slide {
+  width: 100%;
+  max-width: 1920px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  padding: 64px 88px;
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background:
+    radial-gradient(120% 90% at 15% 0%, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0) 55%),
+    repeating-linear-gradient(90deg, rgba(31,27,22,0.030) 0 1px, rgba(31,27,22,0) 1px 7px),
+    repeating-linear-gradient(0deg,  rgba(31,27,22,0.022) 0 1px, rgba(31,27,22,0) 1px 9px),
+    var(--paper);
+}
+.slide + .slide { margin-top: 24px; }
+
+/* ── 머리·꼬리 ─────────────────────────────── */
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--ink-14);
+  padding-bottom: 16px;
+}
+.head__brand {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 19px;
+  letter-spacing: 0.42em;
+  color: var(--ink-60);
+}
+.head__tag {
+  font-size: 14px;
+  letter-spacing: 0.30em;
+  color: var(--ink-35);
+}
+.foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--ink-14);
+  padding-top: 16px;
+  font-size: 14px;
+  letter-spacing: 0.16em;
+  color: var(--ink-35);
+}
+
+/* ── 표지 ──────────────────────────────────── */
+.cover { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 60px; }
+.cover__eyebrow {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 24px;
+  letter-spacing: 0.40em;
+  color: var(--red);
+  margin-bottom: 34px;
+}
+.cover__title {
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: 800;
+  font-size: 150px;
+  line-height: 1.06;
+  letter-spacing: -0.02em;
+}
+.cover__title em { font-style: normal; color: var(--red); }
+.cover__rule {
+  width: 190px;
+  height: 3px;
+  background: var(--ink);
+  margin: 40px 0 30px;
+}
+.cover__sub {
+  font-size: 27px;
+  color: var(--ink-60);
+  line-height: 1.7;
+}
+.seal {
+  width: 168px;
+  height: 168px;
+  background: var(--red);
+  color: #F7F2E7;
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.18;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+/* ── 목차 ──────────────────────────────────── */
+.toc { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 80px; align-content: center; }
+.toc__item {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  align-items: baseline;
+  gap: 20px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--ink-14);
+}
+.toc__num {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 42px;
+  color: var(--gold);
+}
+.toc__name { font-family: 'Nanum Myeongjo', serif; font-size: 36px; }
+.toc__desc { grid-column: 2; font-size: 18px; color: var(--ink-60); margin-top: 8px; }
+
+/* ── 본문 2단 ──────────────────────────────── */
+.two { display: grid; grid-template-columns: 1.05fr 1fr; gap: 66px; align-content: center; }
+.h2 {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 62px;
+  line-height: 1.22;
+  margin-bottom: 26px;
+}
+.lead { font-size: 22px; line-height: 1.85; color: var(--ink-60); }
+.tags { display: flex; gap: 12px; margin-top: 34px; flex-wrap: wrap; }
+.tag {
+  font-size: 16px;
+  letter-spacing: 0.10em;
+  padding: 9px 20px;
+  border: 1px solid var(--ink-14);
+  color: var(--ink-60);
+}
+.tag--red  { border-color: var(--red);  color: var(--red); }
+.tag--blue { border-color: var(--blue); color: var(--blue); }
+
+/* 먹 프레임 (이미지 자리) */
+.plate {
+  border: 1px solid var(--ink-14);
+  padding: 18px;
+  background: rgba(255,255,255,0.34);
+}
+.plate__in {
+  aspect-ratio: 4 / 3;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(70% 55% at 50% 100%, rgba(31,27,22,0.30) 0%, rgba(31,27,22,0) 70%),
+    linear-gradient(180deg, #EFE6D4 0%, #E2D6BE 100%);
+}
+.plate__moon {
+  position: absolute; top: 16%; left: 50%; transform: translateX(-50%);
+  width: 150px; height: 150px; border-radius: 50%;
+  background: #F7F2E7;
+  box-shadow: 0 0 0 1px var(--ink-14);
+}
+.plate__ridge {
+  position: absolute; left: -6%; right: -6%; bottom: -22%;
+  height: 60%; border-radius: 50% 50% 0 0;
+  background: rgba(31,27,22,0.72);
+}
+.plate__ridge--far {
+  bottom: -6%; height: 44%; left: -18%; right: 26%;
+  background: rgba(31,27,22,0.36);
+}
+.plate__cap { margin-top: 14px; font-size: 15px; letter-spacing: 0.14em; color: var(--ink-35); }
+
+/* ── 표 ────────────────────────────────────── */
+.tbl { width: 100%; border-collapse: collapse; font-size: 19px; }
+.tbl thead th {
+  text-align: left;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 16px 20px;
+  border-top: 2px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  letter-spacing: 0.06em;
+}
+.tbl tbody td {
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--ink-14);
+  color: var(--ink);
+}
+.tbl tbody tr:last-child td { border-bottom: 2px solid var(--ink); }
+.tbl .c-blue { color: var(--blue); }
+.tbl .c-red  { color: var(--red); }
+.note {
+  margin-top: 26px;
+  border-left: 3px solid var(--red);
+  padding: 4px 0 4px 20px;
+  font-size: 19px;
+  color: var(--ink-60);
+  line-height: 1.7;
+}
+.section-title {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 46px;
+  margin-bottom: 30px;
+}
+.body-wrap { align-content: start; display: grid; padding-top: 26px; }
+</style>
+</head>
+<body>
+
+<!-- 1 · 표지 -->
+<section class="slide">
+  <div class="head">
+    <div class="head__brand">기 획 제 안</div>
+    <div class="head__tag">2026</div>
+  </div>
+
+  <div class="cover">
+    <div>
+      <div class="cover__eyebrow">전 통 문 화 콘 텐 츠</div>
+      <div class="cover__title">달빛 아래<br /><em>옛 이야기</em></div>
+      <div class="cover__rule"></div>
+      <div class="cover__sub">조선의 밤을 걷는 체험형 전시 · 상설관 기획안</div>
+    </div>
+    <div class="seal">기획<br />제안</div>
+  </div>
+
+  <div class="foot">
+    <span>SUNNY ENTERTAINMENT</span>
+    <span>01</span>
+  </div>
+</section>
+
+<!-- 2 · 목차 -->
+<section class="slide">
+  <div class="head">
+    <div class="head__brand">차 례</div>
+    <div class="head__tag">CONTENTS</div>
+  </div>
+
+  <div class="toc">
+    <div class="toc__item">
+      <div class="toc__num">壹</div>
+      <div class="toc__name">기획 배경</div>
+      <div class="toc__desc">무엇을 왜 지금 하는가</div>
+    </div>
+    <div class="toc__item">
+      <div class="toc__num">貳</div>
+      <div class="toc__name">이야기 구조</div>
+      <div class="toc__desc">관람객이 따라 걷는 서사</div>
+    </div>
+    <div class="toc__item">
+      <div class="toc__num">參</div>
+      <div class="toc__name">공간 구성</div>
+      <div class="toc__desc">존 배치 · 동선 · 체류 시간</div>
+    </div>
+    <div class="toc__item">
+      <div class="toc__num">肆</div>
+      <div class="toc__name">운영 계획</div>
+      <div class="toc__desc">일정 · 인력 · 예산 구조</div>
+    </div>
+    <div class="toc__item">
+      <div class="toc__num">伍</div>
+      <div class="toc__name">연출 자료</div>
+      <div class="toc__desc">조명 · 소리 · 재료</div>
+    </div>
+    <div class="toc__item">
+      <div class="toc__num">陸</div>
+      <div class="toc__name">기대 효과</div>
+      <div class="toc__desc">지역 · 관람객 · 확장</div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span>SUNNY ENTERTAINMENT</span>
+    <span>02</span>
+  </div>
+</section>
+
+<!-- 3 · 본문 2단 -->
+<section class="slide">
+  <div class="head">
+    <div class="head__brand">이 야 기 구 조</div>
+    <div class="head__tag">貳</div>
+  </div>
+
+  <div class="two">
+    <div>
+      <div class="h2">밤을 건너는<br />네 개의 마당</div>
+      <p class="lead">
+        관람객은 초저녁에 들어와 새벽에 나온다. 시간의 흐름이 곧 동선이며,
+        마당마다 빛의 색이 달라진다. 설명하지 않고 보여주는 방식으로 구성한다.
+      </p>
+      <div class="tags">
+        <span class="tag tag--red">체류 45분</span>
+        <span class="tag tag--blue">회차 20인</span>
+        <span class="tag">전 연령</span>
+      </div>
+    </div>
+
+    <div class="plate">
+      <div class="plate__in">
+        <div class="plate__moon"></div>
+        <div class="plate__ridge plate__ridge--far"></div>
+        <div class="plate__ridge"></div>
+      </div>
+      <div class="plate__cap">넷째 마당 — 새벽 · 연출 이미지</div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span>SUNNY ENTERTAINMENT</span>
+    <span>03</span>
+  </div>
+</section>
+
+<!-- 4 · 표 -->
+<section class="slide">
+  <div class="head">
+    <div class="head__brand">공 간 구 성</div>
+    <div class="head__tag">參</div>
+  </div>
+
+  <div class="body-wrap">
+    <div class="section-title">마당별 구성과 체류</div>
+    <table class="tbl">
+      <thead>
+        <tr><th style="width:12%">마당</th><th style="width:24%">이름</th><th style="width:22%">연출</th><th style="width:18%">면적</th><th>체류</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>壹</td><td>초저녁 마당</td><td class="c-red">등불 · 소리</td><td>66㎡</td><td>8분</td></tr>
+        <tr><td>貳</td><td>골목 마당</td><td>그림자 · 미로</td><td>92㎡</td><td>12분</td></tr>
+        <tr><td>參</td><td>강가 마당</td><td class="c-blue">물빛 · 안개</td><td>110㎡</td><td>15분</td></tr>
+        <tr><td>肆</td><td>새벽 마당</td><td>여명 · 정적</td><td>74㎡</td><td>10분</td></tr>
+      </tbody>
+    </table>
+    <p class="note">면적과 체류 시간은 기획 기준이며, 현장 실측 후 조정한다.</p>
+  </div>
+
+  <div class="foot">
+    <span>SUNNY ENTERTAINMENT</span>
+    <span>04</span>
+  </div>
+</section>
+
+</body>
+</html>
