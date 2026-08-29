@@ -1,10 +1,19 @@
 {
-  "updated": "2026-08-29T08:25:41+09:00",
+  "updated": "2026-08-29T11:55:34+09:00",
   "categories": [
     {
       "id": "ai",
       "name": "AI 트렌드",
       "items": [
+        {
+          "title": "비디오 생성 AI ‘제미나이 옴니 1.1 플래시’ 공개… “4K 업스케일링 및 제어 기능 강화” - 인공지능신문",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE84TVYwcWFmYjNlMVhiOXB4UzVlMDZlMUdMNzVOV2tNZTJ1VWlYNnY4c0ZKekw1Q1FnM3RMUWk5aXAyZ25HY1Q4ZXpXQUdhVjNyekVMUU9TQUdvWVVRY0stTDFmU2NyMzQ?oc=5",
+          "source": "인공지능신문",
+          "summary": "",
+          "published": "2026-08-29",
+          "image": "",
+          "first_seen": "2026-08-29T11:55:34+09:00"
+        },
         {
           "title": "SAP 전환, AI 에이전트로 비용 60% 줄일 수 있다 - SAP News Center",
           "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPQmhzTGZxTGlOVm1XNkdTdXVBQlJuWnE3OTBFLVRmMElRRDlJd3B5dHZUSTZ5NUUxeXU4UTR4Rm1rZk1rY0lWc2FuU18wMWhqSTRlT1l0T2tHaVI1WFQ5MVN6VC1odDBWOUZLUDU3OUxQcS1FUFgtSVR5VWpvS1pZcmRzLTBOZTE2QzRYSVpaQVNvNjE3OUVaV3I2M2RxeEFycVBtc2JRbklNTUxjSnhRV2VFa19jUlBkN21UVUN6MThxemFEQUpJMjNCZWtuTFRvRVczTm4xTGFXZU81RS1RMllDUFZWV195bDFSWlBiQkNLRkZaWjAteGduaVcxbGJsd0stZm93VUo?oc=5",
@@ -76,6 +85,15 @@
           "published": "2026-08-27",
           "image": "",
           "first_seen": "2026-08-29T08:25:41+09:00"
+        },
+        {
+          "title": "오픈AI \"에이전트 1200개 집단 행동 확인\"…허깅페이스 해킹 전말 공개 - AI타임스",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB1SlNWRmVRNkZDd0xPRU5fQzlRQVhTZGF6aV9kV2VmbFJwdTMwU0ZIbkh2eHIySmc0S3hUT0k4aXFZd2lyR3gxcjhIdHZYdzJLUXBHeFRSdm9MNWozbDFvYmVuY3VCUUFfSnc?oc=5",
+          "source": "AI타임스",
+          "summary": "",
+          "published": "2026-08-27",
+          "image": "",
+          "first_seen": "2026-08-29T11:55:34+09:00"
         },
         {
           "title": "AI로 이미지 생성 - 전자신문",
@@ -256,24 +274,6 @@
           "published": "2026-08-20",
           "image": "",
           "first_seen": "2026-08-20T23:35:47+09:00"
-        },
-        {
-          "title": "서울대병원, ‘1인 1 AI 에이전트’ 병원 실험…“출근하면 스누하이부터 켠다” - MEDI:GATE NEWS",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBpYUQwRC1wNE90OTJlVlU3SFdHcHJQZzdwWmh2YlpBU2RfVzA4Tm8wX3dnbTdZTGR2MWJtbmdQeVZlSk53c2lrcUVDT2tzZHhNeDlRUg?oc=5",
-          "source": "MEDI:GATE NEWS",
-          "summary": "",
-          "published": "2026-08-20",
-          "image": "",
-          "first_seen": "2026-08-21T23:34:36+09:00"
-        },
-        {
-          "title": "오픈AI, 청소년용 챗GPT 출시…안전장치·공부모드 대폭 강화 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE55RVZfUGRpWnJKQm1XTVdRaHFDMVUwaElEMlZlYkFDaTVTUDVFcnJuM1lMQ0F1NkhxQnVncjJCajZBQ3hhdVZ0MXpjVEU5ZlU?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-08-19",
-          "image": "",
-          "first_seen": "2026-08-19T06:11:02+09:00"
         }
       ]
     },
@@ -565,6 +565,15 @@
           "published": "2026-08-28",
           "image": "",
           "first_seen": "2026-08-29T08:25:41+09:00"
+        },
+        {
+          "title": "강남구, '2026 찾아가는 생명존중 뮤지컬'로 초등학생과 직접 소통한다! - 문화매일신문",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBTQm4yN2JzWFRTTTB6N21qR3NpVlIxNTVwRzg2VGVVMlpqcld6cFR5V0wxbEJoaWlVRmFLUnMtLWpFNE9odkZpOXJ4SQ?oc=5",
+          "source": "문화매일신문",
+          "summary": "",
+          "published": "2026-08-28",
+          "image": "",
+          "first_seen": "2026-08-29T11:55:34+09:00"
         },
         {
           "title": "“맛의 서사가 완성된다”... 뮤지컬‘2026 조선셰프 한상궁’전주 공연 개막 - 전북금강일보",
@@ -1332,6 +1341,15 @@
           "first_seen": "2026-08-29T08:25:41+09:00"
         },
         {
+          "title": "GS건설, ‘제품·브랜드 디자인’으로 세계 3대 디자인상 잇달아 수상 - 이코노미톡뉴스",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9sQW9Ra1NvTXY0b2pHTDVTcUpRVklXSWlqNHMwY0tsTWRHM19xel9Hclp1VWxBamtoVnhiRWVwaEdXb19pZEs1Ym1taWlnOUs1SUVGaEJKLXZiUGtFNkRCaHhDZFR2VkdNQ3hCMw?oc=5",
+          "source": "이코노미톡뉴스",
+          "summary": "",
+          "published": "2026-08-25",
+          "image": "",
+          "first_seen": "2026-08-29T11:55:34+09:00"
+        },
+        {
           "title": "피그마는 왜 AI 시대에 종이 잡지를 출간했을까? - 디지털 인사이트 DIGITAL iNSIGHT",
           "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNQUFvZElXUjFkbnlCSFdmT3NuNnc2NExlWUUzZ2ZrV1U4SXgycm1GckcxaGRKekUxZ2RxeVBIaHFPaXBMZFJRQWtteWRKRUhsLTNPYzVja25IcHkzYnFmNl9sUGFfbkpYdDhBcXVMTHhmSng0SzhtLXppM3RaTllWbUI5a29WOTdLLTM4QTZUWUhyVnU3YjdlYnFJQXJvN3JyRUZIdXZINVA3YnVZSU4zeHNEOEVsb3NNVEJjUllVUlhQcXBpcVBubE1fUTVMZHlIVnQ4VmZTN2JDSDdsR29GaGV3aGtfeDhLWHRQZkctR1B3S052djhndXZmTTNVWTJKektkdGtHUVBCYWV2NmJV?oc=5",
           "source": "디지털 인사이트 DIGITAL iNSIGHT",
@@ -1481,6 +1499,15 @@
       "id": "festival",
       "name": "페스티벌",
       "items": [
+        {
+          "title": "을지로 심야 전시 '오프닝나잇'…미술 축제 '서울아트위크' 개막 - 서울특별시",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1XcGN1b2pyb18tMmN4ZW53SURud1lQcWUyY1haOEljb29KLVozSVZxd1c1YjdvZEhUSW5pZXZnQzVGU0pVbk51SmVjLXhhdHJsR0J0cUh3Z0w?oc=5",
+          "source": "서울특별시",
+          "summary": "",
+          "published": "2026-08-27",
+          "image": "",
+          "first_seen": "2026-08-29T11:55:34+09:00"
+        },
         {
           "title": "[서울25]서초구, 고속터미널 광장에서 뮤직앤아트페스티벌 - 경향신문",
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1iMVA5dHZyeHNfRXdXT2VkbTRxZHhsZF9QcmZrRjlONFh0Ui1Sc01WX2FtcEo4dEhrX19iRDJGRF9JREFUbkdEaEZJMDZRb29NVmNxeGtKNHo2QdIBX0FVX3lxTE1lWExBdVVsemVvUmtfRUxtUGtxaWtUNTJ3R1lyNWRBOG13cGd0ckdGeEh2VkRlSVU0aVJlNkF0b1RWWHlWTlV1LWxlblZwbV8wbFFkRFpPY1dlZENjY2hV?oc=5",
