@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-30T02:31:30+09:00",
+  "updated": "2026-08-30T07:51:36+09:00",
   "categories": [
     {
       "id": "ai",
@@ -22,6 +22,33 @@
           "published": "2026-08-29",
           "image": "",
           "first_seen": "2026-08-30T02:31:30+09:00"
+        },
+        {
+          "title": "“AI 에이전트 시대, '토큰 거버넌스' 필요”…SK, '토큰 이코노미' 사내서 낸다 - 전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9nNWhiNTYwTGJxT0M0WVVSYnJzNGZfS3l4aTh5V0RTZFlTdEI4VE92OWZ6cmY1VHNZX2VXME9YcWlxc2pJUVdlc0ZsWXlYdw?oc=5",
+          "source": "전자신문",
+          "summary": "",
+          "published": "2026-08-29",
+          "image": "",
+          "first_seen": "2026-08-30T07:51:36+09:00"
+        },
+        {
+          "title": "GeeLark, 유료 전용이던 AI 영상·이미지 생성 기능 무료 사용자에도 전면 개방 - 위키트리",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE83YmxTLWl6RFFpRXJzejlEaXlpemhFLW5FMk02Qk55ZXFfTEoyZmFkOU1yX1VYSUtGVFB4SGlpdGxRLUZiSVRxbzhwd1dtNnJ2OFBUakp3?oc=5",
+          "source": "위키트리",
+          "summary": "",
+          "published": "2026-08-29",
+          "image": "",
+          "first_seen": "2026-08-30T07:51:36+09:00"
+        },
+        {
+          "title": "AI로 이미지 생성 - 전자신문",
+          "url": "https://news.google.com/rss/articles/CBMipARBVV95cUxQM280U1JRcGxJZXo1S1VfV1ZQdndqMVVJdUhjeHo0aGVNcTMwNmlsakQ5UlRwb0laSXFJNlNRbll1MzhBazFJcV9Dc1B0eC1RQml4ZmlDTGx4STluOC1nUi1ERE04ZGFlVk9ua2E2a2FGZHZrN1RmcDB2Q2pPUFlOYXJEWDZTcWR4UHI2WEVTelNiR05PN1pXM0JWdUszRFJUcGl3bW9IY2tkZkd4YjU0bDYyOXJLTV9NWEJENVV4R3A1eHRmdjFSUjNvTU00ZHVULWxuWUNlY29XUXd2TTJyampuWGdtZjg1TlN4QXRZZmg0UzE4Mm9xazI1SHl0bkE5UjE2MlhKM1JVZ05WQ0d3cEpUQXlibE0xRE9IaklUR2s2eFc4ZUNXUDRwNGlySW50UGdHMnNDN0Y2ay1GZklLTDczRnQzTFRxREw4U0NQdVpNNFByQ0NlREw3enlQSDN0MXpreERTWWdyQ29VOGFSWVpyVkVmNUhQbHVyTGZhOWNXMmpwWlg2Y0FMREFaaUUyUTVZZ21Vdy0wZ0E4Yk9kOE9fWjUwTHMya2dEckNCWGMzMlFNYm4wMEd2ZXlKdUJseThwbVBpRjZDTFJWRUxVd21yNUZJU2NtS2xrc1ZucXc3a0gtcFBCTHgxY2otVGNOXzZDMzBOOHJ5UVRNbHlUMTFTNVdTVzJJU0FiZ1J4d2lCZzhDQ3EyQ0UyMGgyMTZIajdFNw?oc=5",
+          "source": "전자신문",
+          "summary": "",
+          "published": "2026-08-29",
+          "image": "",
+          "first_seen": "2026-08-30T07:51:36+09:00"
         },
         {
           "title": "SAP 전환, AI 에이전트로 비용 60% 줄일 수 있다 - SAP News Center",
@@ -112,6 +139,15 @@
           "published": "2026-08-27",
           "image": "",
           "first_seen": "2026-08-29T11:55:34+09:00"
+        },
+        {
+          "title": "앤트로픽서 유행하는 클로드 코드 ‘/eli5’ 스킬...\"코드를 그림으로 설명\" - AI타임스",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAybHVJLWw5UE5uV3JpMHNlRXYtdWZ1S3pHRnJmNTBSQmxObGMtR2p1TUhuM2dDTGdMWU1uejFnOWJDbTRmR2pzNWc0UXZaMm9IRmRIeHFyUFNtRXlZajZvM18wQzBGUHFXaXc?oc=5",
+          "source": "AI타임스",
+          "summary": "",
+          "published": "2026-08-27",
+          "image": "",
+          "first_seen": "2026-08-30T07:51:36+09:00"
         },
         {
           "title": "AI로 이미지 생성 - 전자신문",
@@ -238,42 +274,6 @@
           "published": "2026-08-21",
           "image": "",
           "first_seen": "2026-08-21T23:34:36+09:00"
-        },
-        {
-          "title": "서울대병원, ‘1인 1 AI 에이전트’ 병원 실험…“출근하면 스누하이부터 켠다” - MEDI:GATE NEWS",
-          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5qZFVrb0w5T0pMQ2NRa3JWX0dWLVJDaUEtTXBqV2dodGZ1aUw0MU9oVTRxM1k4WXpCZXFrVnVvbk5pQ1dBcjROTG9pMFFVUFV5Z1dtYTg5dw?oc=5",
-          "source": "MEDI:GATE NEWS",
-          "summary": "",
-          "published": "2026-08-21",
-          "image": "",
-          "first_seen": "2026-08-23T23:22:51+09:00"
-        },
-        {
-          "title": "AI 생성 이미지 저작권 인정될까…日 제작사 '무단사용' 소송 - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5uSWFOTEp4MGk4YjUzeXc5emxvZkRnRzJ2VG5YeGhOOVlDaHFVbUE2Ny04ZkU4ZkZQOFJGWXJYZnVvTlZIekM3MUw1M3EyV2RUaUJRZnJBNXNQY0XSAWBBVV95cUxOVUFKeWxWTzh0MWtBZ2pjS0hYRUN4UVlGVVdDWS1DUlpfaU02MmxZNDZhMUtNWWpKdkxOTlhoMG41NW9iSzBXbGg2TFB1cVZ6OEJMODZpQ0otNVEwZ1dqbXI?oc=5",
-          "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-08-21",
-          "image": "",
-          "first_seen": "2026-08-23T23:22:51+09:00"
-        },
-        {
-          "title": "AI 이미지 베끼면 저작권 침해?…日서 2억원 손배소 - 뉴시스",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE02bnpqTVByOFlHQmdJSmJfNUE4cnd6aUJMUC1uTHdMQlBNZDh0YS01WjY1dm96ODRMU1VSWEhBR2FwcWt4VG9sRVpmSGNpRlpORFdFOUI5NExER3E3SDZxN9IBeEFVX3lxTE10RGJVSWFqQk1fbUlTcy1WbEtkc0xnMHlUVlFKcGppRFpxZi1QMmxpYnF0bTQ2NFhKUEJiSWJxdFlCcEhpeUVjWXo3bmVsTXBJQ05VOW4xeE92bUk4cFBnTVM2eW1BaTFnWUt1VDVWODlZQ3ZlUHltXw?oc=5",
-          "source": "뉴시스",
-          "summary": "",
-          "published": "2026-08-21",
-          "image": "",
-          "first_seen": "2026-08-23T23:22:51+09:00"
-        },
-        {
-          "title": "AI 생성 이미지도 창작물?…일본서 첫 저작권 침해 소송 - 연합뉴스TV",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBlelJGcUtWdWdZamZYNmtfaGp3WTRuNGRuYmprRTlHbExOTlFsc192WVRxdTdid0ZrdTlPRVVOcWJxcXR3V2Z5UmYxdUVDX0g2ZUs0ZTJVTm1VaXhKekJGMGMwZnpqSG8?oc=5",
-          "source": "연합뉴스TV",
-          "summary": "",
-          "published": "2026-08-21",
-          "image": "",
-          "first_seen": "2026-08-24T06:09:20+09:00"
         }
       ]
     },
@@ -1236,15 +1236,6 @@
           "first_seen": "2026-08-22T23:20:41+09:00"
         },
         {
-          "title": "중앙대, 소이랩엑스와 국비 지원 'AI 크리에이터' 2기 모집 … 1기 경쟁률 12.7대1 - 뉴데일리",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOWXpEMkZGQmRVOUhoanVGVmpsMUluR2doOFR0WThUOFk2SVhYYzZZZFlsY2N3bmllb0dSbVc3TjBRWkRLRW56V21QMkU0UzFkRFE1Smp3RVY1dVBlVU5lWVpHX1NaTlBKU0paa1pkWGtEbm54SzY5WDhPcWJLVWJsTdIBgAFBVV95cUxOWXpEMkZGQmRVOUhoanVGVmpsMUluR2doOFR0WThUOFk2SVhYYzZZZFlsY2N3bmllb0dSbVc3TjBRWkRLRW56V21QMkU0UzFkRFE1Smp3RVY1dVBlVU5lWVpHX1NaTlBKU0paa1pkWGtEbm54SzY5WDhPcWJLVWJsTQ?oc=5",
-          "source": "뉴데일리",
-          "summary": "",
-          "published": "2026-08-11",
-          "image": "",
-          "first_seen": "2026-08-16T06:08:56+09:00"
-        },
-        {
           "title": "중앙대, '넥스트K코어: AI 크리에이터 THE CLASS' 2기 교육생 모집 - 대학IN",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9jd001c3NVR3hzeElLYVpNeFJGR3VBNVdCdURndkNhQ3ZRZEo0WjBHS1F2WkRwMmszd3lOMk9LN3EwNUIySDNidlFrUVUwdnR6cnQ3WndnNFVZeDJLOUozNWRKRnRqcV9XbVhvWdIBcEFVX3lxTE0ycXZYalBYRGh0M25pckM3TXMzSjRxSVl0dXg0NU9oSGFSenhtRm1MNGJIYlE0eGU1WF9mV3cyNlNjTS1rMkFzTlVnRkFwU1F2ZmpwODBXanZtaF9vbmVINEVhZUZ0b0pnWTZNRG1qZFU?oc=5",
           "source": "대학IN",
@@ -1570,6 +1561,15 @@
           "published": "2026-08-25",
           "image": "",
           "first_seen": "2026-08-30T02:31:30+09:00"
+        },
+        {
+          "title": "고터 광장서 케이팝·패션 어우러진 ‘서초뮤직앤아트페스티벌’ 열린다[서울25] - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE0yWVoyWjBqQm8zanc5NzlnTXc3b0VWdUVxa0VxVDk4QlVDZlFKZWN0VmlOZmpBMjdoY1NBampfMl9XdUZxakE?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-08-25",
+          "image": "",
+          "first_seen": "2026-08-30T07:51:36+09:00"
         },
         {
           "title": "전국 청년 2만 명 공주로…‘2026 피크타임 페스티벌’ 9월 12일 개최 - newskorea.ne.kr",
