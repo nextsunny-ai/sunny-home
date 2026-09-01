@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-02T02:38:45+09:00",
+  "updated": "2026-09-02T07:51:53+09:00",
   "categories": [
     {
       "id": "ai",
@@ -22,6 +22,15 @@
           "published": "2026-09-01",
           "image": "",
           "first_seen": "2026-09-02T02:38:45+09:00"
+        },
+        {
+          "title": "'대학생 AI 에이전트' 튜링, 70억 시리즈B 투자 유치 - AI타임스",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5LVzRlcy1CZ21XcURUZldudGs1WE5NMDdiZTBXM2ltUDBFcWROTXFDMlc0cklNeFZxM0U2d3dDWVoyekVmZjEtUzJlU2trS2ZDZEUwNW11RDVLb18yQUJycGx2OFZnWUlZWHc?oc=5",
+          "source": "AI타임스",
+          "summary": "",
+          "published": "2026-09-01",
+          "image": "",
+          "first_seen": "2026-09-02T07:51:53+09:00"
         },
         {
           "title": "솔트룩스, ‘모두의 AI’ KT 컨소시엄 참여…공공 에이전트 구축 담당 - AI타임스",
@@ -265,15 +274,6 @@
           "published": "2026-08-25",
           "image": "",
           "first_seen": "2026-08-25T23:44:26+09:00"
-        },
-        {
-          "title": "솔트룩스 '구버', 1분 만에 나만의 AI 에이전트 만든다…'AI 버디' 출시 - AI타임스",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE43aUhudi1Hbk4xcnF0bXJQLVd3a2ozX2ZaaWhtUW13TzZSLWdVT3IwamdLdVZ5WWd2LXdmRVptS1FOVUZnRFN0dF9oZVZveGI4Nks4anNKdDNudGhCcWNwaVNlOWJCY01Ecmc?oc=5",
-          "source": "AI타임스",
-          "summary": "",
-          "published": "2026-08-25",
-          "image": "",
-          "first_seen": "2026-08-28T08:38:05+09:00"
         }
       ]
     },
@@ -541,15 +541,6 @@
           "published": "2026-08-19",
           "image": "",
           "first_seen": "2026-08-31T02:57:12+09:00"
-        },
-        {
-          "title": "엑스텐스튜디오, 크릿벤처스서 투자 유치… 웹툰 영상화 나선다 - 플래텀(Platum)",
-          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFA5QWZtblNZUTk3OUpXOV9lLVM4bFlEZVE5clpiaFNFczNPMzJIRkpET1FhTFl3eXRpay1mUUdkeEdTTkZIZUN1OQ?oc=5",
-          "source": "플래텀(Platum)",
-          "summary": "",
-          "published": "2026-08-18",
-          "image": "",
-          "first_seen": "2026-08-19T06:11:02+09:00"
         }
       ]
     },
@@ -565,6 +556,24 @@
           "published": "2026-09-01",
           "image": "",
           "first_seen": "2026-09-02T02:38:45+09:00"
+        },
+        {
+          "title": "연극·뮤지컬 등 1만원 싸게 본다…'공연 할인권' 22만장 배포 - 뉴데일리",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPOEpyZGpGOUtXMFF0V053bmdrU2RiS1dlbmhBclJVeUdDS18xTDU2S3Ztb2hPRXRKMzJfOWxqSHFaVFh2dFJqamlhUmphT0hCMWZ5Rm5JM1RsOExIWDc5TEdubS1OUkNpN3hmR3dpbHZ1ZDdOZmlhSDV3VVVzdzFUVdIBgAFBVV95cUxPOEpyZGpGOUtXMFF0V053bmdrU2RiS1dlbmhBclJVeUdDS18xTDU2S3Ztb2hPRXRKMzJfOWxqSHFaVFh2dFJqamlhUmphT0hCMWZ5Rm5JM1RsOExIWDc5TEdubS1OUkNpN3hmR3dpbHZ1ZDdOZmlhSDV3VVVzdzFUVQ?oc=5",
+          "source": "뉴데일리",
+          "summary": "",
+          "published": "2026-09-01",
+          "image": "",
+          "first_seen": "2026-09-02T07:51:53+09:00"
+        },
+        {
+          "title": "가을밤 어디서 즐길까…서울시, 가을축제 한눈에 보는 발간 - 한국방송뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5BTWFPNFQwOTVqVDZ2WDIzZ2dGMWZOSjA4UW02UmdXUFJmcXpaYnJMSUtWMDNONXROSWhlOURaTHB1enVJN0YyVXFpTktNVG9zWWEzcUlRWkt2WUE3NWc?oc=5",
+          "source": "한국방송뉴스",
+          "summary": "",
+          "published": "2026-09-01",
+          "image": "",
+          "first_seen": "2026-09-02T07:51:53+09:00"
         },
         {
           "title": "[공연소식] 뮤지컬 '두 도시 이야기' 11월 개막…12년 만에 공연 - yna.co.kr",
@@ -792,15 +801,6 @@
           "first_seen": "2026-08-20T23:35:47+09:00"
         },
         {
-          "title": "지난해 호평받은 뮤지컬 ‘거제도’, 2026년 다시 무대에 오른다 - 거제매일뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBoVXEzYzdiU2hNbGxnMFo4VzdCSXlmOFdPTElCSTR5eURGb1B1MUotS2xrWXdpQm1kV3FQb196Z0kwR25ONzI0aHE1VWJ2OVZhX2Fqd0xLZWZnYXpGZUxja1FpeXBVWHds?oc=5",
-          "source": "거제매일뉴스",
-          "summary": "",
-          "published": "2026-08-18",
-          "image": "",
-          "first_seen": "2026-08-19T06:11:02+09:00"
-        },
-        {
           "title": "뮤지컬 '시카고' 공연 후 인사하는 아이비와 배우들 - 연합뉴스",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0yX19CUnZLVEI2MzYzdUEyUWZpSkpTS0syc0VNZWUtVlF2eDBLMG1iTTVGTWRsRnlaNm5wOEVTZEt4ejREZjFOVVY3M1l6bzM3a21BVnhXT3kyX2PSAWBBVV95cUxORDE5V3kyTS0tOXV6UWpXRTR0eDNhNnE1SUg4THM2TnFMTGxkTHltOFpSbHVmRGhhcndEbkNVcTJmd2ZkN0EtdVgxMTRYWFdLNkgxSGtGM01wVGNNTzcyQ1g?oc=5",
           "source": "연합뉴스",
@@ -817,15 +817,6 @@
           "published": "2026-08-18",
           "image": "",
           "first_seen": "2026-08-25T23:44:26+09:00"
-        },
-        {
-          "title": "제26회 서울국제공연예술제, '예술의 다중우주'로 10월 개막 - 아트코리아방송",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE96bm5ucmtzemtFNklBaGRyXzNhWk1xTFoxTXZ3Y1F2VV84QmlDVFVvOTBISWlSdWVMWG4zQ1dOVHpyNFdyemN2ZXNPVFlaNjVOWkxvQ3ZhVnF0YWp0SGlnbENoVmd6RkVaRjhyWFJB?oc=5",
-          "source": "아트코리아방송",
-          "summary": "",
-          "published": "2026-08-17",
-          "image": "",
-          "first_seen": "2026-08-24T23:41:22+09:00"
         }
       ]
     },
@@ -987,15 +978,6 @@
           "first_seen": "2026-08-24T23:41:22+09:00"
         },
         {
-          "title": "울산서 회화부터 인터랙티브 미디어아트까지…다채로운 전시 잇따라 - iusm.co.kr",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1kRXZyN0I4bVdqcVIwYkZZUDd5VUdvQlhXMmJYQmQwbUZ0QTdfM2k5THp6T2EyZkRBWU1uLW8xLUtNMmJlYUoxRXp5UFFtWHpLWi1JSW1oSU5SWkRyUkR0N1VLaXNUX1J3WmfSAW5BVV95cUxOTmg2UTFLX0ZsaVh0OUprTkF5ZDBOX1dya1RCX0ZCS0lveF8zc2VSLVo3SUVpNk8ta1V1U0lySVNlUmRITGhTZTBiZzFiTEtONjhJY3BHaENGZm5CamYwZVVuVjdMMW96QXVyNk9QUQ?oc=5",
-          "source": "iusm.co.kr",
-          "summary": "",
-          "published": "2026-08-18",
-          "image": "",
-          "first_seen": "2026-08-19T06:11:02+09:00"
-        },
-        {
           "title": "제주현대미술관, 리조트서 야외 미디어아트 전시 - 뉴시스",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE40VHVXbTZkN1R1TGdTdE4tbmdvUGk5ZDZteEt1S3B3TUxBZ1RRZUNqc29ZWXdLZjFXRFRjZTFUOVRnRFJ3VmkxbDlqWmFUYlNVVVJOdExkOHVZMWpZQ3VxYtIBeEFVX3lxTE9vNmxVWEs4amRYbWx4dDNTaThfUUJBc2VSdTc3YjJRNkpPNEkyZWY5OUlQSlYyUmF0M2hmN0VnY2ZCOEpUX09XN1RBdERhZkRLM0JVNld0SlFfczhxeVpjUWtvNnQtMUtkdkNwd2kxTEoxNmc2c1AwSQ?oc=5",
           "source": "뉴시스",
@@ -1063,6 +1045,15 @@
           "published": "2026-08-31",
           "image": "",
           "first_seen": "2026-09-01T04:50:49+09:00"
+        },
+        {
+          "title": "‘2026 올해의 양성평등문화인상’에 윤가은 감독 - 여성신문",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1oUGMzZUdseUlsYVkwWm9kYS01YVZDR1JPc1NtaTdMR1ByMGtBY3N2VmU1TlZTZHEtNnBCM3FtalJ1UkJqNHJmRE42dS1zcEFfWGR1RHROVHlyZWk0cFpvMjhBUlpUOVB3M3hnMFJfOHA1UVXSAXNBVV95cUxNaFBjM2VHbHlJbGFZMFpvZGEtNWFWQ0dST3NTbWk3TEdQcjBrQWNzdlZlNU5WU2RxLTZwQjNxbWpSdVJCajRyZkRONnUtc3BBX1hkdUR0TlR5cmVpNHBabzI4QVJaVDlQdzN4ZzBSXzhwNVFV?oc=5",
+          "source": "여성신문",
+          "summary": "",
+          "published": "2026-08-31",
+          "image": "",
+          "first_seen": "2026-09-02T07:51:53+09:00"
         },
         {
           "title": "문화산업 펀드 규모 1조 원 돌파 - 대한민국 정책브리핑",
@@ -1162,15 +1153,6 @@
           "published": "2026-08-19",
           "image": "",
           "first_seen": "2026-08-29T08:25:41+09:00"
-        },
-        {
-          "title": "6․10만세운동 100주년 기념 콘텐츠 공모전 개최 - 구미뉴스",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9ZR0ZndGVTMy0yeFd0Nks1Z0NxMXp4czRMUDlWR1o1bEpUdTNyNWRaa0kzcjExbzZPa3dfM1BkcnYzbHd3U3VRT1FtYjhpdkRqYkZwM2ZPQnY3cl9SNS1wTjBiRXlzUktpcGpQdTN4Q1g3dlpu?oc=5",
-          "source": "구미뉴스",
-          "summary": "",
-          "published": "2026-08-18",
-          "image": "",
-          "first_seen": "2026-08-19T06:11:02+09:00"
         },
         {
           "title": "경북도, 6․10만세운동 100주년 기념 콘텐츠 공모 - 경북신문",
@@ -1393,6 +1375,15 @@
           "published": "2026-08-25",
           "image": "",
           "first_seen": "2026-08-29T11:55:34+09:00"
+        },
+        {
+          "title": "\"기업의 브랜딩·디자인 허들 낮춘다\"…미리디-스터닝, B2B 공략 - 머니투데이 - 머니투데이",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFB0OXVVOGNIMVNQbm54S3FCUVJpaTVOZ3czUjVfd1hQVXpVYnhpemxBSGJYcUJZN09EQklvOG9oQ3RtQ3R2bGtlUGZxcEN0WmVBVmYtWXZtd3F1UlRxVGZ5QXlNdE8ta0ZwN2JySTlpWjBHM054ZlBj0gF8QVVfeXFMTlV1ZTBzdDJHSmw4b0V6YjhaeW1uVVpyTUF0M25pb2xXRXRRTmNCMThBU3JKN3Q3WkpudGNKM0xYMWpFV1ZWNFlKZzlzRy1MOHB3bEtBUUZQbnhwOU9KSnRtS3pibUhFdGtyQkVKMkZXS28xb0lkMEFVS1ZpSA?oc=5",
+          "source": "머니투데이",
+          "summary": "",
+          "published": "2026-08-25",
+          "image": "",
+          "first_seen": "2026-09-02T07:51:53+09:00"
         },
         {
           "title": "피그마는 왜 AI 시대에 종이 잡지를 출간했을까? - 디지털 인사이트 DIGITAL iNSIGHT",
@@ -1723,6 +1714,15 @@
           "published": "2026-08-20",
           "image": "",
           "first_seen": "2026-09-02T02:38:45+09:00"
+        },
+        {
+          "title": "'2026 라라라온', 전국 12개 공연장 수놓는다…9월 1차 라인업 공개 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBOVWphR2ZOR2JoSlp4UlFjVUR0TjFsY21TSFhkbGZqUUN4R0xEQkdyTUVXbTRQbE9NY0tGRlp0Nl9aU3g5RVRVNXowYw?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-08-20",
+          "image": "",
+          "first_seen": "2026-09-02T07:51:53+09:00"
         },
         {
           "title": "울주문화재단 29일까지 ‘키즈 아트 페스티벌’ 개최 - 소년한국일보",
