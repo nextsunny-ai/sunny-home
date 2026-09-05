@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-05T07:35:25+09:00",
+  "updated": "2026-09-06T01:33:57+09:00",
   "categories": [
     {
       "id": "ai",
@@ -13,6 +13,24 @@
           "published": "2026-09-05",
           "image": "",
           "first_seen": "2026-09-05T07:35:25+09:00"
+        },
+        {
+          "title": "오픈AI 에이전트, 독일 개발자 위키 사이트 장악... 통제 벗어난 AI 논란 재점화 - 보안뉴스",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBjbmdwTG9VMFdpa1g4M3VCeTNiQ3RjcXpKREE5YXNNWHBndEhKOGR6cHhLdG1OX19fU2RWRWVMN0tEdWVpUlhvc0FkSmM4cnJBdnB0SnJvUW1qS3ZGZFJwM21YNWo1UEVvbjRR?oc=5",
+          "source": "보안뉴스",
+          "summary": "",
+          "published": "2026-09-05",
+          "image": "",
+          "first_seen": "2026-09-06T01:33:57+09:00"
+        },
+        {
+          "title": "오픈AI '불량 에이전트', 독일 사이트 장악 사실 뒤늦게 밝혀져 - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0wU3FDcy1udy1CSFBXLUp6d2lOVGQ2eTAwTkVKUnM5bnIwVzdwSDFJbFltYUU2RG5vUXNER3Q4cmpfTnZoMHB2dzQ5RFR1TUhOTEdISElDUTAtR0HSAWBBVV95cUxORlYySWVzWWZWUWd2NG1Dczl6X01XWkhIU1o2T2lVZ3BGeGJYc1RUUU0tZjNGa3VnWDlfZzhOLTVyTFV2U19jZGJ4cmllaXl5WFdxZUV0WW9YdUV6ZXBheWs?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-09-05",
+          "image": "",
+          "first_seen": "2026-09-06T01:33:57+09:00"
         },
         {
           "title": "AI 에이전트부터 국가 AI 보안까지, 프라이빗에이아이가 말하는 “AI 시대 리스크 관리” - 보안뉴스",
@@ -94,6 +112,15 @@
           "published": "2026-09-02",
           "image": "",
           "first_seen": "2026-09-05T07:35:25+09:00"
+        },
+        {
+          "title": "앤트로픽, 국내 파트너 채널 영업 강화…'韓 글로벌 파트너 프로그램' 시험대로 [fn마켓워치] - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE05ZElyNUVla0ZPMXRPaUFNZjNxU25WTy1TQzVnSXhMNnU4Qk5FYlIwakNQUTNDX3puWWIyUnJPNkVMUEdMQVJZV1BEYw?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-09-02",
+          "image": "",
+          "first_seen": "2026-09-06T01:33:57+09:00"
         },
         {
           "title": "LGU+, 어라이즈 AI와 AI 에이전트 성능·안전성 관리 협력 - 연합뉴스",
@@ -222,6 +249,15 @@
           "first_seen": "2026-09-04T07:51:45+09:00"
         },
         {
+          "title": "오픈AI, 챗GPT 워크·코덱스에 ‘관리자 플러그인’ 도입...대화로 워크스페이스 관리 - AI타임스",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5QakYzR2hjMVQyTVpiU0RCRU4wNjdDWjF5XzB0bEJYc2RRRHZYZnhCZzV3VlA3VEx4aXhlYlgtcUk3RzF1a25OZW0tSExoZ041LWJlMnQ0UF9Udi1yaks0MVFkYWk2Wk14N2c?oc=5",
+          "source": "AI타임스",
+          "summary": "",
+          "published": "2026-08-31",
+          "image": "",
+          "first_seen": "2026-09-06T01:33:57+09:00"
+        },
+        {
           "title": "생성형 AI 이미지 - 전자신문",
           "url": "https://news.google.com/rss/articles/CBMipARBVV95cUxQNmhMdFdhOHc0TjRfSUlRdDI1NWdyV2xoUW1iQy1yaWJnQkc1UHM2QlRfaHVNb29XRWp6VDZiOHBwVmJfSk5BYnBWMkxEdklNQkNiamR2Vl81LU9WU2RaVzNuRjlQNW1xcTJnTTVFZC1wc05lMTBiTGdSZUp6R1hqeFlaN1AzVGctY0w3V2xMR1dNa0Q1NFlUUU5tV2VaUjVkcTlLNTRoX3VpODY4TFhEX0ZVZnlIWUNmbmcxNnBlejI3SnotZEo5dFpNdFdrNnV5bFc5WDNPZWRyR0tIWTBHOFRxLWlabk5vaDI2MlRQNjhzZW96ZkU4QUZvT3E4TVdtSmstTFVHaHF3MERhN3JxaG14S0JmUDN3cmE5TnBKR3JuX25nNFNoMnltQXJhUFFVS3FnQ2NabTNRUUJVTkdKalV6dGpwMGJPZ1lPTDF0b2hBb0psRkZMelJBOGt4RmgzcUdTdWhQcW5FbTZHWm9rdmhwLUVPMkNJalNFcVRUeTFQVFA3WW13NUNhbXVoY3lJeXFqX2I5LVNLSmV3Z3FDcW1qZ0lXS2FVOUxpN3VEbmlqSjhqcDFhdDJ4VFNmcFVvcXJhSnpkdGIxbm9FLXQ2V3JoN3NhV2ZzWTd5cG5xMHZ6cDZVMkt1cHFtS1ZQR0tIUXRoMFk0eTRITXBRV0xfZ2VNMTFSY1hqdGVySThlZmJZYXF1X0FWMGY2Ri1QamNldkZWSw?oc=5",
           "source": "전자신문",
@@ -238,42 +274,6 @@
           "published": "2026-08-29",
           "image": "",
           "first_seen": "2026-08-29T11:55:34+09:00"
-        },
-        {
-          "title": "생성형 AI 이미지 - 전자신문",
-          "url": "https://news.google.com/rss/articles/CBMipARBVV95cUxPMEJDXzR0UGZOSlkySGhGTDU4MmdCdmRrcGpENEpXX1VHX3FmeEozWXM5Zk56aWdDUjRWbGZSLVdxcDlTUGtjYXNvNEUwRXpTSktiN000MjRTSlVKUjFrc1FVQ1hzSVJyc3lGWFBmdUp6aE5QLWZGQlNxMUhySmVMRU5ob01GTjRFbHhON1drNHVKZ2NtWlpUdHhidTZzVm9KOHIxenN0eWdtMUNxOFI3bXNhbHhIZTJBeFp4cjFHbmU1N2JKUjBTVVVCcFFERUJ1azBXLXBfR0E3OVFvQWR3VEZHUDZJNmhOaDdTSHc1bF9McHFlZWQ3VFRybEZ1LUxNMU43QXBYX2lfRnZnT0M0SXdsVllaRGlacVYzX2ZqMEFnbFBBNEYyV2RRN0poM2g3MW5aWFZnM3Z3amtpaWZwbmROa0pfaVZ2dmp2TDZpREQtaDdhXzVFVFlJS0F4aVlGTm5fRFhQYkJ0MEFuaUdxbFFLUkF5WUxDTU1BS0llcGhIa1ZSbmlrRmVSOEdIVmJtYXM2Y3c0TXFvbWxOcUdhZlNMTkdVbnJwQl9KZ2hIWHU5aDduRG43RUxjLUZWLTBkVWVHckVROFAwZENNYnRCM01ZNzVYdXdhRFFoSENMalZZWlVRMmh1bFhIcGdkaG4tUjhCMnZ0OEk2SlpRbVIwRTdwUWhKbG1lZVFxYlNzVExycDhnbjVyTFF0ZjRacTQ3VUhCTQ?oc=5",
-          "source": "전자신문",
-          "summary": "",
-          "published": "2026-08-29",
-          "image": "",
-          "first_seen": "2026-08-30T02:31:30+09:00"
-        },
-        {
-          "title": "“AI 에이전트 시대, '토큰 거버넌스' 필요”…SK, '토큰 이코노미' 사내서 낸다 - 전자신문",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9nNWhiNTYwTGJxT0M0WVVSYnJzNGZfS3l4aTh5V0RTZFlTdEI4VE92OWZ6cmY1VHNZX2VXME9YcWlxc2pJUVdlc0ZsWXlYdw?oc=5",
-          "source": "전자신문",
-          "summary": "",
-          "published": "2026-08-29",
-          "image": "",
-          "first_seen": "2026-08-30T07:51:36+09:00"
-        },
-        {
-          "title": "GeeLark, 유료 전용이던 AI 영상·이미지 생성 기능 무료 사용자에도 전면 개방 - 위키트리",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE83YmxTLWl6RFFpRXJzejlEaXlpemhFLW5FMk02Qk55ZXFfTEoyZmFkOU1yX1VYSUtGVFB4SGlpdGxRLUZiSVRxbzhwd1dtNnJ2OFBUakp3?oc=5",
-          "source": "위키트리",
-          "summary": "",
-          "published": "2026-08-29",
-          "image": "",
-          "first_seen": "2026-08-30T07:51:36+09:00"
-        },
-        {
-          "title": "AI로 이미지 생성 - 전자신문",
-          "url": "https://news.google.com/rss/articles/CBMipARBVV95cUxQM280U1JRcGxJZXo1S1VfV1ZQdndqMVVJdUhjeHo0aGVNcTMwNmlsakQ5UlRwb0laSXFJNlNRbll1MzhBazFJcV9Dc1B0eC1RQml4ZmlDTGx4STluOC1nUi1ERE04ZGFlVk9ua2E2a2FGZHZrN1RmcDB2Q2pPUFlOYXJEWDZTcWR4UHI2WEVTelNiR05PN1pXM0JWdUszRFJUcGl3bW9IY2tkZkd4YjU0bDYyOXJLTV9NWEJENVV4R3A1eHRmdjFSUjNvTU00ZHVULWxuWUNlY29XUXd2TTJyampuWGdtZjg1TlN4QXRZZmg0UzE4Mm9xazI1SHl0bkE5UjE2MlhKM1JVZ05WQ0d3cEpUQXlibE0xRE9IaklUR2s2eFc4ZUNXUDRwNGlySW50UGdHMnNDN0Y2ay1GZklLTDczRnQzTFRxREw4U0NQdVpNNFByQ0NlREw3enlQSDN0MXpreERTWWdyQ29VOGFSWVpyVkVmNUhQbHVyTGZhOWNXMmpwWlg2Y0FMREFaaUUyUTVZZ21Vdy0wZ0E4Yk9kOE9fWjUwTHMya2dEckNCWGMzMlFNYm4wMEd2ZXlKdUJseThwbVBpRjZDTFJWRUxVd21yNUZJU2NtS2xrc1ZucXc3a0gtcFBCTHgxY2otVGNOXzZDMzBOOHJ5UVRNbHlUMTFTNVdTVzJJU0FiZ1J4d2lCZzhDQ3EyQ0UyMGgyMTZIajdFNw?oc=5",
-          "source": "전자신문",
-          "summary": "",
-          "published": "2026-08-29",
-          "image": "",
-          "first_seen": "2026-08-30T07:51:36+09:00"
         }
       ]
     },
@@ -282,6 +282,15 @@
       "name": "콘텐츠·IP",
       "items": [
         {
+          "title": "시청률 23% 찍던 '김부장', 게임으로 나올까…게임사들 \"K-웹툰 모셔라\" - 뉴시스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB4UG8xbjFyRTBTRzBOUG5RVDNfalBnbmZmS1k1d19yTDd4ay1pZDd3TXJYUWJQUF9DR1gzcktCQmpuQl9DNHRycEM5NTNQRFBjUDNmQlhCM3lxWTcyZnZleNIBeEFVX3lxTFBOaVYtZXBzekxyVmJwazE0TFhpb0VSdC1MSklTWFFCVzJERE5GQmxtbTVRYnA5dUdjQ1RPNHliNUIza2Y4VWRRVFhvSmpwVWd0YVVSOWxnVXg1NFJ2cXE2dWNQbngwSzk0ODJBNFAyWDdIS1h1czFwaQ?oc=5",
+          "source": "뉴시스",
+          "summary": "",
+          "published": "2026-09-05",
+          "image": "",
+          "first_seen": "2026-09-06T01:33:57+09:00"
+        },
+        {
           "title": "한국콘텐츠진흥원, K-콘텐츠 14.7억 인도 시장 진출 본격화 - 뉴스후플러스",
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5JT3hnUGdMU0dRSXJVNnNsd2k5S2dzeERZTm95TzFMZ0NvWWJidzFNODZWTXNVUzFTNGxwTEJpeklFbVlRSEZ0RHQ2ZXp3cUpjTkhpdjEtcHBmTFhYOF93UGxRQ3FIZXVZUTJlNjBB?oc=5",
           "source": "뉴스후플러스",
@@ -289,6 +298,33 @@
           "published": "2026-09-04",
           "image": "",
           "first_seen": "2026-09-05T07:35:25+09:00"
+        },
+        {
+          "title": "K-콘텐츠, 14.7억 인도 시장 공략 본격화…수출 상담 329건·MOU 31건 - 스타트업엔(StartupN)",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5COGEtRWMwWHhKMTloempacE5zWG1xRk8zXzJvVndWVDZNWXdiNGJ1YXBQckdKYXlvWmhNWEgtaGFVTjQ3aHZOUm9RcWoyckRTVkt4Xzkybk9pQ1pTcGI4Qm83Yi04UHA10gFsQVVfeXFMTXQ0UjMzUmNna3VGLTllSW1iWGNXWEJGNDNvX19uWWpxTUxmOUlQWTFmUThZMHdsbmcxc0d5N3B2VExVTzBUcG03Nl9DdHltdUxJektTSUdGeXM2V0F3cERDTWV0UDZlcGN1eG53?oc=5",
+          "source": "스타트업엔(StartupN)",
+          "summary": "",
+          "published": "2026-09-04",
+          "image": "",
+          "first_seen": "2026-09-06T01:33:57+09:00"
+        },
+        {
+          "title": "“14억 인도 시장 잡아라”…K-콘텐츠, 3천만 달러 ‘수출 ’ - 재외동포신문",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5UajQwOUJUZUxVME9QT05YbFQxMldza0oxMXA4dk1GaHhkanZOWVFEZ0JCSHhicl94NENWMXA1TG1nbWVqNTVPQTRya2YtWlVqLU12blMwRWQ1NDF2SnVEa0JSSjBCTUJ4akNCeg?oc=5",
+          "source": "재외동포신문",
+          "summary": "",
+          "published": "2026-09-04",
+          "image": "",
+          "first_seen": "2026-09-06T01:33:57+09:00"
+        },
+        {
+          "title": "[ET단상] K콘텐츠를 위해 K-OTT가 필요한 이유 - 전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1aXzFCckJHb2hmTTl5a2xPd1I4bXlTQnExYTlIaVRBMEVzWS1qeEZDWm16RmVEaVZ3SDlmNG5mZ0JHbkNjVGFxT2x0YTZ2dw?oc=5",
+          "source": "전자신문",
+          "summary": "",
+          "published": "2026-09-02",
+          "image": "",
+          "first_seen": "2026-09-06T01:33:57+09:00"
         },
         {
           "title": "지역 콘텐츠 IP, 시민 앞에서 시장성 확인… 전남콘텐츠코리아랩 ‘주말의 광장’ 팝업스토어 성료 - 에이빙",
@@ -514,42 +550,6 @@
           "published": "2026-08-25",
           "image": "",
           "first_seen": "2026-08-28T08:38:05+09:00"
-        },
-        {
-          "title": "세종대, 일본 대학생 초청 ‘K-웹툰’ 집중교육 진행… 한일 고등교육 교류 확대 - 한겨레",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9WOGZUazRvWEJXRzJkMmJfdER2c0Q3Z3QtN2pQTmpqcjlTYi1mWUlrNnBxX3RTeE1hVnB5SjV2UGtETnEta1RJMld4YnlFRlQyN3p3SnB2ak1iakdFT2xVNWpDb3VuWTA?oc=5",
-          "source": "한겨레",
-          "summary": "",
-          "published": "2026-08-25",
-          "image": "",
-          "first_seen": "2026-08-28T08:38:05+09:00"
-        },
-        {
-          "title": "IP 기획부터 원고 제작까지…일본 대학생 20명, 세종대서 K-웹툰 배웠다 - 미주중앙일보",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBFVFUySnFEYkh6U2lHcENBUzJlYllpWE0tUEk5UEswTkFkWmNwaktadjZQNGJ0VERsWFREaFJZOFNERk53MTVzR0hRV2VQN2ZlZlRza0lEWjNRc3Facmo0TDR3?oc=5",
-          "source": "미주중앙일보",
-          "summary": "",
-          "published": "2026-08-25",
-          "image": "",
-          "first_seen": "2026-09-02T02:38:45+09:00"
-        },
-        {
-          "title": "경북콘텐츠진흥원 애니 ‘강치아일랜드’, 용산 어린이정원 실감콘텐츠 체험관 진출 - hidomin.com",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBIV0ZXUk5wTWhhR1lBTHJjOUEwYmdUYV9FYUxnc2VZTVJOVGQyTE12bURSdW1lckhnRUdjaTZRN0R1UnF2MHZaOWlObE9CVVFqb3FjZVEzNVJPb3pmY01LNDBZWFBmbFNoS3c?oc=5",
-          "source": "hidomin.com",
-          "summary": "",
-          "published": "2026-08-24",
-          "image": "",
-          "first_seen": "2026-08-28T08:38:05+09:00"
-        },
-        {
-          "title": "원니스코리아, 록토나와 일본 IP 기반 콘텐츠 사업 협력 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9qTlVhVmw5bUltX1hnLTNBZjVyUmZEcFBUX1NZZjl2OFdVZEsyLWk4MGdpdExGNEhhVHRISlQwelEyTldKdVlKWnE5TG1PU3M?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-08-20",
-          "image": "",
-          "first_seen": "2026-08-23T06:09:22+09:00"
         }
       ]
     },
@@ -601,6 +601,15 @@
           "published": "2026-09-02",
           "image": "",
           "first_seen": "2026-09-05T07:35:25+09:00"
+        },
+        {
+          "title": "뮤지컬 40주년 기념 공연 12월 개막 - 더뮤지컬",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9LRjQ4aXpmbjVhWERjbEdEbFBReEhMdkw3XzYxMVRRUmlTRFlQLV9RYm1YaF9pclVHaHVhak1VN0RMYXhYSllaUEt0Y2RkSzQxXzFoNzZBdmdWTTJuTE4w?oc=5",
+          "source": "더뮤지컬",
+          "summary": "",
+          "published": "2026-09-02",
+          "image": "",
+          "first_seen": "2026-09-06T01:33:57+09:00"
         },
         {
           "title": "연극·뮤지컬 등 1만원 싸게 본다…'공연 할인권' 22만장 배포 - 뉴데일리",
@@ -817,15 +826,6 @@
           "published": "2026-08-28",
           "image": "",
           "first_seen": "2026-08-30T02:31:30+09:00"
-        },
-        {
-          "title": "강서구, 9월 4~6일 문화예술페스티벌…공연·전시·체험 한자리 - 신아일보",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0ybW10TzZvNC01Z09YZWNLcUxzbzZMcHhxZFNWQnUxWWxCSlJMX0xZamVMYWN2QXNjc1dFS2tEYjZZdWNFWnVDbkdNbGNmcDRNSDBYTlBCVkRaZW5nbzZKdjNYWkNvTWFSb1VremJIdTU?oc=5",
-          "source": "신아일보",
-          "summary": "",
-          "published": "2026-08-28",
-          "image": "",
-          "first_seen": "2026-08-31T02:57:12+09:00"
         }
       ]
     },
@@ -850,6 +850,15 @@
           "published": "2026-09-03",
           "image": "",
           "first_seen": "2026-09-04T07:51:45+09:00"
+        },
+        {
+          "title": "'올해의 작가상 2026'에서 살펴본 '한국현대미술'의 흐름 - 대한민국 정책브리핑",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE85YmJuaExmMkU5cjV6QlpqRy1sWE4wNXlqb1ZYanVXRU5KSkYzY1lMSmQ0alh1Y19GUEQzc19HSlQ1SlE1ekRZaDVUMUZtQUtLakl5dmZXX2tzWHk1R3dDMWxObkdTc0JTRXc?oc=5",
+          "source": "대한민국 정책브리핑",
+          "summary": "",
+          "published": "2026-09-03",
+          "image": "",
+          "first_seen": "2026-09-06T01:33:57+09:00"
         },
         {
           "title": "낮엔 ‘키아프리즈’, 밤엔 갤러리 탐방… 서울 전체가 거대한 미술관 - 조선일보",
@@ -1050,24 +1059,6 @@
           "first_seen": "2026-08-26T23:43:21+09:00"
         },
         {
-          "title": "경남산림박물관, 21일부터 '전통의 빛' 미디어아트 전시회 - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9vTGJJblNROS03bG83WlVfV2J2MFNBaFhUY0F1a19LNVZUN0NVbUxRcXhKYWk1RzhCcEdXaTlSQmtRU1I0Q2UyUnA3Z3gyZFVGWlBaYXZFbGxlcGvSAWBBVV95cUxOVmpiRUdPMkR4LUJkVHpPTi05bGg4b0Z2c2NJZ3FrQnNXRnRXMzBmVG9WNjktM3NVZ3pOQU5mMHhzTmVza25UVnM0MFVPdEtBT1lWNDQxY3FGa3BUcFMyRFM?oc=5",
-          "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-08-20",
-          "image": "",
-          "first_seen": "2026-08-22T23:20:41+09:00"
-        },
-        {
-          "title": "프리즈 서울 2026에서 놓칠 수 없는 하이라이트 - Frieze",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9sYjlwWW9GREtLUHFzcUg2SWdnamxkSHlwZHBKZkViQVNLSnNFcW9NS1E0SDBhc01KZEluZFEyYWFCVzQ0dnpLdWpMYlZ2aWZkLXNaODd0N0lNbGxNcGRVZFNDeEJXSExHXzd1bjUtaw?oc=5",
-          "source": "Frieze",
-          "summary": "",
-          "published": "2026-08-19",
-          "image": "",
-          "first_seen": "2026-08-22T23:20:41+09:00"
-        },
-        {
           "title": "프리즈 서울 2026에서 놓칠 수 없는 하이라이트 - Frieze",
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1hYjdHNDVfSFY4d09zNmxlejJHcno4c0d4cUstTjMxa3NSQnFrMnFBT3FGaldqRjJxM1ktQlZvWWhzYUh1clZuZ1BfbXV6SHZYbFBVck9IbFZJaEpza2w1TmNRUlduRTFadno2X0Nn?oc=5",
           "source": "Frieze",
@@ -1171,6 +1162,15 @@
           "published": "2026-09-03",
           "image": "",
           "first_seen": "2026-09-05T07:35:25+09:00"
+        },
+        {
+          "title": "콘텐츠 인재·기업 잇는다…참여기업 모집 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE4yR05QYl84ZnprYk9rUUY0QzVxemFqa0tFZE9fbWxJa2tWbkxTQTZIM1VIbldzQWxmRkdhRm9zdDB2WEpqQ1E?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-09-03",
+          "image": "",
+          "first_seen": "2026-09-06T01:33:57+09:00"
         },
         {
           "title": "콘진원, 케이녹으로 K콘텐츠 투자 물꼬 텄다 - v.daum.net",
@@ -1342,15 +1342,6 @@
           "published": "2026-08-25",
           "image": "",
           "first_seen": "2026-08-31T02:57:12+09:00"
-        },
-        {
-          "title": "K-인디 경쟁력과 미래 게임산업 주역을 한자리에… KOCCA, ‘BIC 2026’참가 - 인디게임닷컴",
-          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9BMGtzNEkwczRlX2NkdmxKX0FiV09RMnV3b2hZM0VQSV93eE90TzMwWWdIVTYyU01uZVMtbXUwOFBJRnFqdF9tZXZscmU?oc=5",
-          "source": "인디게임닷컴",
-          "summary": "",
-          "published": "2026-08-22",
-          "image": "",
-          "first_seen": "2026-08-22T23:20:41+09:00"
         },
         {
           "title": "콘진원, '해외 비즈니스센터 청렴·인권 서약식' 개최…글로벌 신뢰 제고 - 지디넷코리아",
