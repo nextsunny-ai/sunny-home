@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-06T01:33:57+09:00",
+  "updated": "2026-09-06T07:24:17+09:00",
   "categories": [
     {
       "id": "ai",
@@ -231,6 +231,15 @@
           "first_seen": "2026-09-05T07:35:25+09:00"
         },
         {
+          "title": "AI '클로드' 사용자 노린 해킹 주의보…앤트로픽 사용자, 정보 탈취 공격 및 세션 도용 피해 입어 - 프리진뉴스",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBScWhLUVBVbUJiel85Q1RVb3RCeGNmdGVaYTRhbTFQcklJa3h6V3dMZ0s2Q2MtWjlvcml1bE5JZFFGbzM0aE8zWHVnd3J1b3pvUWJ2bC1QQUJycFAxdWRyNGk5MVRsT0ZKelIxaGtGMA?oc=5",
+          "source": "프리진뉴스",
+          "summary": "",
+          "published": "2026-09-01",
+          "image": "",
+          "first_seen": "2026-09-06T07:24:17+09:00"
+        },
+        {
           "title": "솔트룩스, ‘모두의 AI’ KT 컨소시엄 참여…공공 에이전트 구축 담당 - AI타임스",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5yUXF3NkQtWmNrVVYxMlVjT3Z5X2RFeC1WV0NCZ0JiLTVJZXpQQ1ozMk02Q211WEREZDZZTEtzT3JFZGNwQ2dQSExQTVZRSVo0STRzb2Q4MGVLd1B2VTFfbDZLaEVGQktDNHc?oc=5",
           "source": "AI타임스",
@@ -265,15 +274,6 @@
           "published": "2026-08-30",
           "image": "",
           "first_seen": "2026-08-31T02:57:12+09:00"
-        },
-        {
-          "title": "비디오 생성 AI ‘제미나이 옴니 1.1 플래시’ 공개… “4K 업스케일링 및 제어 기능 강화” - 인공지능신문",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE84TVYwcWFmYjNlMVhiOXB4UzVlMDZlMUdMNzVOV2tNZTJ1VWlYNnY4c0ZKekw1Q1FnM3RMUWk5aXAyZ25HY1Q4ZXpXQUdhVjNyekVMUU9TQUdvWVVRY0stTDFmU2NyMzQ?oc=5",
-          "source": "인공지능신문",
-          "summary": "",
-          "published": "2026-08-29",
-          "image": "",
-          "first_seen": "2026-08-29T11:55:34+09:00"
         }
       ]
     },
@@ -498,6 +498,15 @@
           "first_seen": "2026-09-04T07:51:45+09:00"
         },
         {
+          "title": "국내 성장판 닫힌 K게임…'슈퍼IP'로 세계 홀려야 산다 - 한국경제",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9QZUM5eXpMV3U3Q0g4VTdVc2E0WDlrU0pTODNpdndoZjNqM0h3V012ZkJhakIxalRDZmFwUm5nWkRzRkE3T3hvUXJDZWEyLTJ6OENjaHV4UHVRQQ?oc=5",
+          "source": "한국경제",
+          "summary": "",
+          "published": "2026-08-26",
+          "image": "",
+          "first_seen": "2026-09-06T07:24:17+09:00"
+        },
+        {
           "title": "IP 기획부터 원고 제작까지…일본 대학생 20명, 세종대서 K-웹툰 배웠다 - 중앙일보",
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9zTVVVR0xXSlVwSUlJMG10TEpEYXNoQTd0UmpxeDAtWTdiYUlWYUdZSzJxcFJLREFzT0Y3VWFjajBYZVlGME5PNlZTSnVyUkFhSzJVSDVR?oc=5",
           "source": "중앙일보",
@@ -541,15 +550,6 @@
           "published": "2026-08-25",
           "image": "",
           "first_seen": "2026-08-25T23:44:26+09:00"
-        },
-        {
-          "title": "세종대, 일본 대학생 초청 'K-웹툰' 집중교육 진행… 한일 고등교육 교류 확대 - 전자신문",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBEbXNCOUNyTEVBMzRKeEQxYkxnTm1jck1fVGw1cjlhNFFLbnBfTEhoZkhKaXZEREtybTF0YmhDTW1aY3dWVHV5bl96TjJ3QQ?oc=5",
-          "source": "전자신문",
-          "summary": "",
-          "published": "2026-08-25",
-          "image": "",
-          "first_seen": "2026-08-28T08:38:05+09:00"
         }
       ]
     },
@@ -557,6 +557,15 @@
       "id": "performance",
       "name": "공연",
       "items": [
+        {
+          "title": "73일이 하나의 무대가 된다 - '2026 서울어텀페스타’ - thepreview.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9nanZzb2ZSbDVSYXg1cndyTkZKQnZJbXVPVGVoWENrc1ZFNFNSX3FoaTl0eFdwVjhQYk0zM05UZjZkbUNsUnRqYWw1YUhGVDRCSldPdThLSm9VeEs2dXZYVXZwd25nT1BwdjVucXlR?oc=5",
+          "source": "thepreview.co.kr",
+          "summary": "",
+          "published": "2026-09-06",
+          "image": "",
+          "first_seen": "2026-09-06T07:24:17+09:00"
+        },
         {
           "title": "73일간의 서울 공연축제 '2026 서울어텀페스타' 18일 개막 - 매일일보",
           "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBwck5ZZUhOQ0RvaUNBOTVyd1VBV080NnNvSEdWMWVBSk11VUdBY095elp4NklJTVY1WU9wdzhnUktFOXF4TUNhME95MEc1MmlDZWlfbHk5M05nVFhCc052X2dQNnHSAWhBVV95cUxPWE5rOE8xdm5jckxobk1uQVh4RjBhYmo1QTd1U2VFN3dTQmFUbWsxMVoxcHhmRUhpM2xpb2FDbDY2VjhPUzVCMHN2a1Y3eWJfUllvWEhlbDJPYVJNLURLbTVpSUZraUFtSQ?oc=5",
@@ -813,15 +822,6 @@
           "title": "한국 공연예술, 유통·교류 넓혀 세계 무대로 ‘2026 서울아트마켓’ 10월 13일 개막 - 스포츠경향",
           "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9XQ3VuUHhpOE1rTmpxMjJodGI4b21pNE1WSkhIc2J2N2w5a09jQjRTbUlSMTN5M05adzlYQXVCakJqQk5vNDdib204Tnh5UGY1dzJzb2lOa01hS1VmZXFZZUFnWdIBY0FVX3lxTE9XQ3VuUHhpOE1rTmpxMjJodGI4b21pNE1WSkhIc2J2N2w5a09jQjRTbUlSMTN5M05adzlYQXVCakJqQk5vNDdib204Tnh5UGY1dzJzb2lOa01hS1VmZXFZZUFnWQ?oc=5",
           "source": "스포츠경향",
-          "summary": "",
-          "published": "2026-08-28",
-          "image": "",
-          "first_seen": "2026-08-30T02:31:30+09:00"
-        },
-        {
-          "title": "2026년 서울시 민간축제 지원 육성 사업 선정 프로젝트 제4회 '서울 두드림 페스티벌' - 뉴스인",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5BYTdZNmxoNHVCX2FtUktCTHBKNGJVXzNZMTd1dmlyTkowZ0R1NU5kQmxsVC1YbU5maVRpeFUtc213WDBvLW5ENUczUk56SGp6MHJwdjFxU1BpY3R4NjBYOWhjRnMyN0V1QTVN?oc=5",
-          "source": "뉴스인",
           "summary": "",
           "published": "2026-08-28",
           "image": "",
@@ -1582,15 +1582,6 @@
           "published": "2026-08-21",
           "image": "",
           "first_seen": "2026-09-03T07:53:06+09:00"
-        },
-        {
-          "title": "Grok 4.6모델로 UX/UI 디자인하기 - 브런치",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBSRmNkRWVPZU5LMTdkV1p5S3ladlMwSmVyU0VaUlVXQXZfbDVoTW55cWYtOXpVWWZtQ0lqMi1UTUVqaEdJV1A2YkNVSExFdw?oc=5",
-          "source": "브런치",
-          "summary": "",
-          "published": "2026-08-20",
-          "image": "",
-          "first_seen": "2026-08-23T06:09:22+09:00"
         },
         {
           "title": "메이크샵쇼핑몰제작 알아보기 - 무진장인터넷뉴스",
