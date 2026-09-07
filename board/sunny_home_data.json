@@ -1,10 +1,19 @@
 {
-  "updated": "2026-09-08T03:36:57+09:00",
+  "updated": "2026-09-08T08:05:25+09:00",
   "categories": [
     {
       "id": "ai",
       "name": "AI 트렌드",
       "items": [
+        {
+          "title": "[한선화의 과학산책] 큰 충격을 준 AI 에이전트의 일탈 - 중앙일보",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE85OHZzWU43cUxMSk10amtzaWZ6d09DeTEyYVVsTVNzbEMtVUFDem9PdGNTZ25ERGdVMDVCYXlyTWt3anJscXZoM2lkZmVyWEtrclcyVXBR?oc=5",
+          "source": "중앙일보",
+          "summary": "",
+          "published": "2026-09-08",
+          "image": "",
+          "first_seen": "2026-09-08T08:05:25+09:00"
+        },
         {
           "title": "“AI 도입보다 통제권 확보가 먼저”... AI 에이전트 위협 막으려면 - 보안뉴스",
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE0tVXNWU3kzU1B5MlFrZ3RfZ2Y3cUtEN1VCTEtQOHdyV19RWmUyaFd4aVRxa2dFN1NPU3YxN3AtcTVkSW5QX3liYnJVS0JjQzFBY3M5bnQ0NDQzaF9saXQ0eDBnUHBrWjk2Y3hz?oc=5",
@@ -265,15 +274,6 @@
           "published": "2026-09-01",
           "image": "",
           "first_seen": "2026-09-03T07:53:06+09:00"
-        },
-        {
-          "title": "앤트로픽, 클로드 페이블 5.1 및 미소스 5.1 출시, 다수 지표에서 전작을 능가하며 캐시 읽기 수수료 75% 인하 - TradingKey",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOTksxQWhtaU15cklfZFVNck5WRzdzQno0S2VieUw0emxSeXRWVmVLYzd0VEJmLWNSaE90N3dJMW9iN2tpQlg3eTVwNl9ZTWtnb2JpMlJ5UFBFNHF6Y1NXcGNTenBFVWZhYUdCa2ZFeG9RZUk0Q3d6SkRUTjBQdFhWRzJVRjV4NHJ6UUlTdGNqOHpZVUtDSDU1RWtUbl80Y1BnMDFmVm5yZmNWYUlSQUN0N0l0TG1BenBSSDVtQ1FJeFdfb1lZcmJydUZ3TTBQN00?oc=5",
-          "source": "TradingKey",
-          "summary": "",
-          "published": "2026-09-01",
-          "image": "",
-          "first_seen": "2026-09-04T02:33:21+09:00"
         }
       ]
     },
