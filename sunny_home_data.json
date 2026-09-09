@@ -1,10 +1,46 @@
 {
-  "updated": "2026-09-09T08:01:16+09:00",
+  "updated": "2026-09-10T02:37:09+09:00",
   "categories": [
     {
       "id": "ai",
       "name": "AI 트렌드",
       "items": [
+        {
+          "title": "이메일 쓰고 쇼핑 결제까지…메타, AI에이전트 '뮤즈' 출시 - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9zbXJyc1NjMDNsYUg5dmVRVk9TZ2lDN3dUOW4yRWlRN3lTdmVwS2daQnlRbFdGTmczbzlHd0t5TFppcTRCbzh6cDA3Y1B0dkR1QmZqYkhsZnN0NGNINEFrZ9IBYEFVX3lxTE9zbXJyc1NjMDNsYUg5dmVRVk9TZ2lDN3dUOW4yRWlRN3lTdmVwS2daQnlRbFdGTmczbzlHd0t5TFppcTRCbzh6cDA3Y1B0dkR1QmZqYkhsZnN0NGNINEFrZw?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-09-09",
+          "image": "",
+          "first_seen": "2026-09-10T02:37:09+09:00"
+        },
+        {
+          "title": "GPT-5.6 솔, 양자컴퓨터 실험 자동화…AI 에이전트가 측정부터 분석·다음 실험까지 수행 - 인공지능신문",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9wenBfUHFrVHo4UzVibU1uaDVQLUhVdERDYXpYNm8xczlMZmRNelp1SjMtdk40WXdZWEFTNHdDR3J5ejcwLW5TWWRKMVZ4REhuX3Q4N09WUGM1akVaUjNNeHNWbWx1ekU?oc=5",
+          "source": "인공지능신문",
+          "summary": "",
+          "published": "2026-09-09",
+          "image": "",
+          "first_seen": "2026-09-10T02:37:09+09:00"
+        },
+        {
+          "title": "오픈AI, ‘챗GPT 이미지 2.5’ 공개…이미지 생성 속도 최대 50% 빨라졌다 - 인공지능신문",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBUam40QXpXMjdVbWxPT2pwckxIZ2trdmxra2JOazQ0VmJOUlEtX2p3MlVXck1Ca2ctOGRuV1JVclYwMlJya1did2dpX1BIanZLY05uRURzSXkwazZmS0REUXd4MHVLVVk?oc=5",
+          "source": "인공지능신문",
+          "summary": "",
+          "published": "2026-09-09",
+          "image": "",
+          "first_seen": "2026-09-10T02:37:09+09:00"
+        },
+        {
+          "title": "원본 살리고 원하는 곳만 고친다…오픈AI, 이미지 2.5 공개 - 지디넷코리아",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBJYU9JVFI2bTgxQUFpVkpnc1M0MGpva2JCQkhDUEdxUjlzQnhRX3Z1Y3p0NU95ZjByNm1CWVNlcGJOdVZ3ZGtuYW9ybXA3ZEpCbllvMVpn?oc=5",
+          "source": "지디넷코리아",
+          "summary": "",
+          "published": "2026-09-09",
+          "image": "",
+          "first_seen": "2026-09-10T02:37:09+09:00"
+        },
         {
           "title": "[한선화의 과학산책] 큰 충격을 준 AI 에이전트의 일탈 - 중앙일보",
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE85OHZzWU43cUxMSk10amtzaWZ6d09DeTEyYVVsTVNzbEMtVUFDem9PdGNTZ25ERGdVMDVCYXlyTWt3anJscXZoM2lkZmVyWEtrclcyVXBR?oc=5",
@@ -177,6 +213,15 @@
           "first_seen": "2026-09-07T01:43:42+09:00"
         },
         {
+          "title": "“수학자들이 수년 걸릴 일, AI는 11일 만에 끝냈다…클로드, ‘페르마의 마지막 정리’ 완전 검증 - 인공지능신문",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4wS0NNQlFFX2hZQ0tSTi1QeHVCUXhKM0xnSDNtVXJKSFJ2MnBJLWp2eWxMU3Q1M0E5UVRLWkVVaFZaVDZzTXZWXy1jRkpYVUkyVVBjZE5uelJlNnVvZGREblctRHVJVEE?oc=5",
+          "source": "인공지능신문",
+          "summary": "",
+          "published": "2026-09-04",
+          "image": "",
+          "first_seen": "2026-09-10T02:37:09+09:00"
+        },
+        {
           "title": "옐로우박스, 이미지 제작 플랫폼 'Clor AI' 정식 출시 - 뉴스핌",
           "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBNRkROeUhMT0s2SFJNMjlkdW1Fb1NpOGpqb1pEd1ZoT29jbF8zSDRpS0d6YURzSjhmd0ViNWZDN0V4YVBnVmpFMUhCb2J4UFF5Y2pZNndNZEtvWDhU?oc=5",
           "source": "뉴스핌",
@@ -229,51 +274,6 @@
           "published": "2026-09-02",
           "image": "",
           "first_seen": "2026-09-03T02:38:47+09:00"
-        },
-        {
-          "title": "앤트로픽, 국내 파트너 채널 영업 강화…'韓 글로벌 파트너 프로그램' 시험대로 [fn마켓워치] - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBWejFMRl95N3ZCeDMyaDk5dTNBQ3otLTk5ejhFUzFmeEdCMEQzUlhkM3dHaFVfTUgwbllHcmhMSXR6djRsN2x3RGpnM0NkWmZRVHlWWg?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-09-02",
-          "image": "",
-          "first_seen": "2026-09-05T07:35:25+09:00"
-        },
-        {
-          "title": "앤트로픽, 국내 파트너 채널 영업 강화…'韓 글로벌 파트너 프로그램' 시험대로 [fn마켓워치] - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE05ZElyNUVla0ZPMXRPaUFNZjNxU25WTy1TQzVnSXhMNnU4Qk5FYlIwakNQUTNDX3puWWIyUnJPNkVMUEdMQVJZV1BEYw?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-09-02",
-          "image": "",
-          "first_seen": "2026-09-06T01:33:57+09:00"
-        },
-        {
-          "title": "LGU+, 어라이즈 AI와 AI 에이전트 성능·안전성 관리 협력 - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB4RHhJd2EzNXhGQWZyWWp0cVhHeEgwblduWXExeDJCTy1iNml1WFlhOGNFS0QxSjRKMWNCMlAzX21vbmM4RHdqdHRZNFlQRFNaRUtTUVFWalNKck1UbUFxR9IBYEFVX3lxTFB4RHhJd2EzNXhGQWZyWWp0cVhHeEgwblduWXExeDJCTy1iNml1WFlhOGNFS0QxSjRKMWNCMlAzX21vbmM4RHdqdHRZNFlQRFNaRUtTUVFWalNKck1UbUFxRw?oc=5",
-          "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-09-01",
-          "image": "",
-          "first_seen": "2026-09-02T02:38:45+09:00"
-        },
-        {
-          "title": "“거짓 답변 원천 차단”... LG U+, AI 에이전트 오류 잡는 글로벌 기술 접목 - 보안뉴스",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE43eXNWeVFsdXRsQVptM2pqZmFFY18wQklScmk1WjYtbnBQY3ZrTjFtZms1bm4wanc2ZUJsTmdkYjNwSjdzdm9vNmxCUC05dEhDejYtaGxjbDFNVERpOXRna3hsU2xEX1dLNkRV?oc=5",
-          "source": "보안뉴스",
-          "summary": "",
-          "published": "2026-09-01",
-          "image": "",
-          "first_seen": "2026-09-02T02:38:45+09:00"
-        },
-        {
-          "title": "'대학생 AI 에이전트' 튜링, 70억 시리즈B 투자 유치 - AI타임스",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5LVzRlcy1CZ21XcURUZldudGs1WE5NMDdiZTBXM2ltUDBFcWROTXFDMlc0cklNeFZxM0U2d3dDWVoyekVmZjEtUzJlU2trS2ZDZEUwNW11RDVLb18yQUJycGx2OFZnWUlZWHc?oc=5",
-          "source": "AI타임스",
-          "summary": "",
-          "published": "2026-09-01",
-          "image": "",
-          "first_seen": "2026-09-02T07:51:53+09:00"
         }
       ]
     },
@@ -300,6 +300,15 @@
           "first_seen": "2026-09-09T02:46:29+09:00"
         },
         {
+          "title": "한국만화스토리협회, ‘K-스토리 : 원작 IP의 2차 콘텐츠 확장 전략 세미나’ 성료 - 오늘의한국",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1GbFUtRU9xVUxFOTNNMWlJZy03NmM5NUtoWWEzY0lSLTNvdVJUU1Rnd1NZa3g0OGFmVnRGTkFCd0xWRTBSMXZrckEwT3RydzRQVVJNeDFzV3MxTENSdGFhVERlUDcydnM0?oc=5",
+          "source": "오늘의한국",
+          "summary": "",
+          "published": "2026-09-07",
+          "image": "",
+          "first_seen": "2026-09-10T02:37:09+09:00"
+        },
+        {
           "title": "“K-웹툰 8만 건 훔쳐 전 세계 뿌렸다”... 북아프리카 불법사이트 3곳 ‘철퇴’ - 특허뉴스",
           "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9Jci1JTzRweEVqV3FsdkhXMjBmcjY4VHdheUpTU1NmMkRZZnhWRDFubTdDV1A0UlhsRDEtcXZ1T0ZpUldzYmwzQQ?oc=5",
           "source": "특허뉴스",
@@ -316,6 +325,15 @@
           "published": "2026-09-06",
           "image": "",
           "first_seen": "2026-09-09T02:46:29+09:00"
+        },
+        {
+          "title": "OTT 드라마가 안방극장에…흐려지는 플랫폼 경계 - 연합뉴스TV",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE16alMyNkdfdmtOb1k2MVRsVnVkNGNFN0ZrLUxpSFFVNjlFNUg1LVRsVmtoa0RFcUlzZVFQS2FaZzRYVkdNZE9OSlFZQmxEbTdNeTR1R1A3N2RBYWU0STlDU1FoQ3pTcWM?oc=5",
+          "source": "연합뉴스TV",
+          "summary": "",
+          "published": "2026-09-06",
+          "image": "",
+          "first_seen": "2026-09-10T02:37:09+09:00"
         },
         {
           "title": "시청률 23% 찍던 '김부장', 게임으로 나올까…게임사들 \"K-웹툰 모셔라\" - 뉴시스",
@@ -532,15 +550,6 @@
           "published": "2026-08-26",
           "image": "",
           "first_seen": "2026-09-04T07:51:45+09:00"
-        },
-        {
-          "title": "국내 성장판 닫힌 K게임…'슈퍼IP'로 세계 홀려야 산다 - 한국경제",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9QZUM5eXpMV3U3Q0g4VTdVc2E0WDlrU0pTODNpdndoZjNqM0h3V012ZkJhakIxalRDZmFwUm5nWkRzRkE3T3hvUXJDZWEyLTJ6OENjaHV4UHVRQQ?oc=5",
-          "source": "한국경제",
-          "summary": "",
-          "published": "2026-08-26",
-          "image": "",
-          "first_seen": "2026-09-06T07:24:17+09:00"
         }
       ]
     },
@@ -548,6 +557,15 @@
       "id": "performance",
       "name": "공연",
       "items": [
+        {
+          "title": "뮤지컬 '하트비트 : 심폐소생일지' 2026년 공연 및 캐스팅 공개! - 서울자치신문",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5SMFQ4YmtLaU4ySFZXS3VuVzFHMnB3enRIbklVQ3UyUkgwWWpfRVo2eEk0UDNIUjFtWjFmdzlnUU10MTdvVmp4dGFOMW40eExaLXFJc0xBbGhkdWVPdDFwQVctb244V1BP?oc=5",
+          "source": "서울자치신문",
+          "summary": "",
+          "published": "2026-09-09",
+          "image": "",
+          "first_seen": "2026-09-10T02:37:09+09:00"
+        },
         {
           "title": "73일이 하나의 무대가 된다 - '2026 서울어텀페스타’ - thepreview.co.kr",
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9nanZzb2ZSbDVSYXg1cndyTkZKQnZJbXVPVGVoWENrc1ZFNFNSX3FoaTl0eFdwVjhQYk0zM05UZjZkbUNsUnRqYWw1YUhGVDRCSldPdThLSm9VeEs2dXZYVXZwd25nT1BwdjVucXlR?oc=5",
@@ -808,15 +826,6 @@
           "published": "2026-08-28",
           "image": "",
           "first_seen": "2026-08-29T08:25:41+09:00"
-        },
-        {
-          "title": "강남구, '2026 찾아가는 생명존중 뮤지컬'로 초등학생과 직접 소통한다! - 문화매일신문",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBTQm4yN2JzWFRTTTB6N21qR3NpVlIxNTVwRzg2VGVVMlpqcld6cFR5V0wxbEJoaWlVRmFLUnMtLWpFNE9odkZpOXJ4SQ?oc=5",
-          "source": "문화매일신문",
-          "summary": "",
-          "published": "2026-08-28",
-          "image": "",
-          "first_seen": "2026-08-29T11:55:34+09:00"
         }
       ]
     },
@@ -1032,15 +1041,6 @@
           "first_seen": "2026-09-04T07:51:45+09:00"
         },
         {
-          "title": "`빅뱅`의 우주, 데뷔 20주년 미디어아트 전시 - 매일신문",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9rcDZWUlk5bkpFcjBRSzl5ZmNqbGJLWmpVYXN3MDlfUmhmTFc4NGQ5TlpPN1R6WTFnV1BVV2JMMXhra19kTldzTnd4d1FmdHVmVzZGTkJMQkZaanNfeDJJRkJB?oc=5",
-          "source": "매일신문",
-          "summary": "",
-          "published": "2026-08-26",
-          "image": "",
-          "first_seen": "2026-08-26T23:43:21+09:00"
-        },
-        {
           "title": "서울·뉴욕·런던을 건너온 ‘집’…서도호, 13년 만에 MMCA 서울로 - BRIQUE MAGAZINE",
           "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAzZFRBejRuTFgzNzlySWxER1k3RFlZN1JPRElmU3NWSlFRQmxuRFd6ZnI1d3pDcGNzRW9WbWlnNHRPdVluQ2RoeTFWLW96dHBJa1dxWGpJbklUUmNVLWRURURrNzVBeFBz?oc=5",
           "source": "BRIQUE MAGAZINE",
@@ -1077,15 +1077,6 @@
           "first_seen": "2026-09-01T04:50:49+09:00"
         },
         {
-          "title": "[인터뷰] 김보성 경희대학원 교수 “수원 전체를 거대한 미디어아트 전시장으로” - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5GaHNiQVVnVy1nMGJTa21STU1uSnk1WWk3NkszYmZoal9VaUZJUDVfVm9UT3lWbVM5cm5udmJqMXVlOHZHU0Z6c0R4eS1zTHc?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-08-23",
-          "image": "",
-          "first_seen": "2026-08-26T23:43:21+09:00"
-        },
-        {
           "title": "제주현대미술관, 리조트서 야외 미디어아트 전시 - 뉴시스",
           "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE01aUc0UVFtdkZWRHpQOHIxOWNBemppc1VKbGhLc0JOSU1WMlBUX241RmlSQ0FnTGxiMlFBdzVKd3I4MnloMk40MFVEc3p5aVlBazZCRnlZODh3bzJ0X2lGRzJR?oc=5",
           "source": "뉴시스",
@@ -1117,6 +1108,15 @@
           "published": "2026-09-08",
           "image": "",
           "first_seen": "2026-09-09T02:46:29+09:00"
+        },
+        {
+          "title": "빈 상가 K-콘텐츠로 채운다…문체부·국토부·중기부, '원도심 리코어 프로젝트' 추진 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5TYmFybGtjVTluR1M3TjAyVzNDaFhIamNDSS1aMzdaUlJzeVhyZ1BrMXBDS0FEQ09pOGdReXlSTmhuSzBtMnc?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-09-08",
+          "image": "",
+          "first_seen": "2026-09-10T02:37:09+09:00"
         },
         {
           "title": "[분석] 문체부 2027년 예산안…‘K-콘텐츠’ 게임 산업 지원 향방은? - 더리브스",
@@ -1360,15 +1360,6 @@
           "published": "2026-08-31",
           "image": "",
           "first_seen": "2026-09-01T04:50:49+09:00"
-        },
-        {
-          "title": "“예산의 매력 60초에 담아주세요”… 예산군 숏폼 콘텐츠 공모전 개최 - 굿뉴스365",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1ZTW14ZnRyMWNSQnZubVR2N0ZQclV2RjJNS1ZGcUFRYTZQY1VOR3lwZk4yMzJ2UUJiX0JWWEFrTFJKV2FRcm5ucVdmd1hFVTc1MWkzNkR1SW1Ya1JDc2U4RG5id01QSVVtZGIzYkE5dl9TSmlfWmc?oc=5",
-          "source": "굿뉴스365",
-          "summary": "",
-          "published": "2026-08-31",
-          "image": "",
-          "first_seen": "2026-09-01T04:50:49+09:00"
         }
       ]
     },
@@ -1377,6 +1368,24 @@
       "name": "디자인",
       "items": [
         {
+          "title": "천안시, 상명대와 '빵빵데이 천안' 축제 브랜딩 디자인 개발 - 축제뉴스",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBJRVNpX2w3el80Rk9kQXVtYXBja2NjMEhBUGJwdmtXeWMydFhQZmxJOFRJM0RsbTJfZDNmbTFtUUJBSHNYemk3STZXQ1FSMmhtZEJOY2tpVi1BRGYtdjV1VG5SOGpPdUlPdm93bQ?oc=5",
+          "source": "축제뉴스",
+          "summary": "",
+          "published": "2026-09-09",
+          "image": "",
+          "first_seen": "2026-09-10T02:37:09+09:00"
+        },
+        {
+          "title": "메이크샵쇼핑몰제작 알아보기 - 무진장인터넷뉴스",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQaTJXSGV5ejhPejZMQ1ItZ05RZXpDeXZieVBsMWlJektCeVRkSG50TEVmUUthckVhTG1rdkFhdXBpdjlHMEpVZWJyNkFzTGl1RC1Pb3p4WFgyY1RrUXcwbm9HZDMzalAtMVc2bEY2eVY2NDJUdGR4UDY0VzFDS0pQeS1tRE1iMlpDN0ZiMG1Pd25HblVTaS1aOHpCZWM5anE1WTZsUUZzc3hxczF3cUNJMjV3?oc=5",
+          "source": "무진장인터넷뉴스",
+          "summary": "",
+          "published": "2026-09-08",
+          "image": "",
+          "first_seen": "2026-09-10T02:37:09+09:00"
+        },
+        {
           "title": "게임 시작화면 디자인 : 학습 전략과 자원 - 최신 트렌드 - Histoire pour tous",
           "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPLThrQlcxZVhjNk9SMFNUQ2NMSV9jVDl5ZWt5TEptb200N2dpZUlvTXJRRXh1ZlFYRWF2cllZWVcwU3BCM1VHTUFqX3Q3V0s2cnViOTNKYk1FbzFpSDdhRW9IZnZjcGdkTnRZalphb0VYbFhZaFFteU44VUJaYXNDSkJqZTkxS29NYWwtb0RoeWdoQ0lzRGgtRkQxY0s2QjctZGpBWmdrUXZYRWt3YWV6am5oMERDdmtHTVBnTjZrU2toVWZpbF9qSWR4anA?oc=5",
           "source": "Histoire pour tous",
@@ -1384,6 +1393,15 @@
           "published": "2026-09-07",
           "image": "",
           "first_seen": "2026-09-09T02:46:29+09:00"
+        },
+        {
+          "title": "천안시, 상명대와 '빵빵데이 천안' 축제 브랜딩 디자인 개발 - 중도일보",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB4bmZKZC1JRGhRQV85NWJxdDdKeGRrX1oxTnc5ZWMtSTBRdWN2d3RjekxZT2ZOXy1HbTI5WjRVOVVCa1hQb25sVEFNajZLWUp3Mk5kVTluRGRWekRHN0l5NGdQalU?oc=5",
+          "source": "중도일보",
+          "summary": "",
+          "published": "2026-09-06",
+          "image": "",
+          "first_seen": "2026-09-10T02:37:09+09:00"
         },
         {
           "title": "천안시, 상명대와 ‘빵빵데이 천안’ 브랜딩 디자인 개발 - 전국매일신문",
@@ -1599,6 +1617,24 @@
       "name": "페스티벌",
       "items": [
         {
+          "title": "라이브 뮤직 페스티벌 ‘2026 라라라온’, 본격적인 대장정 첫 포문 - 스포츠경향",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9Pb3A5Zld2QklXT2c3a3FEZXZpRTdSRXVTaEw0emJ3UG1jaUk3TEVvZDlRb1VmanVwNlptd2FXc0p2T2xiTnB5cm9fTTNWUG5KTlZsTHVOWjQ1eENWcVHSAWNBVV95cUxQdmxfZ2xBdGhyT2wwb2hvVnY5a1pOazdsYlYwbWJUSXJOc1UySWtzRUpHRDZhbjhVUm1kcTFCX2FTU0ItSlpOcnFhVUlPekdNTEZCUERGUk0ybTRxc2tzWkE4NlU?oc=5",
+          "source": "스포츠경향",
+          "summary": "",
+          "published": "2026-09-10",
+          "image": "",
+          "first_seen": "2026-09-10T02:37:09+09:00"
+        },
+        {
+          "title": "라이브 뮤직 페스티벌 ‘2026 라라라온’ 9일 서울서 개막 - 스페셜타임스",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBTSlJfRGhMY1Zucmx3cEU4WS1JT1hldG84dVdsQmVoWHFpTFJKTUF1LVBhZmpPMmtYUmYyV1pFRkZlMUlfMXNnVUhFejREUEdxTnB2MjlETHBFbGJiQUY2NUZfTm1mZG1ZYUZBRFZaakhhbUk?oc=5",
+          "source": "스페셜타임스",
+          "summary": "",
+          "published": "2026-09-09",
+          "image": "",
+          "first_seen": "2026-09-10T02:37:09+09:00"
+        },
+        {
           "title": "스트레이 키즈, 美 ‘거버너스 볼 2026’ 헤드라이너로 피날레 불태웠다 - 마리끌레르 코리아",
           "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBtQkFvaGgyQ3VsUWtjdFY1d0o1Ynd0ajRtVFhUMDV5V2lYTWstSlVQbkRUWHdiNzgtN0xvcXJYNUl0UGRWRnV1bzdJY0NFLUN0YmhrbDZJQXN4bGJzUU1VQS1XWXdBN0JwQVZuTF90QVpKUQ?oc=5",
           "source": "마리끌레르 코리아",
@@ -1795,15 +1831,6 @@
           "published": "2026-08-25",
           "image": "",
           "first_seen": "2026-09-03T07:53:06+09:00"
-        },
-        {
-          "title": "[포토] 음악과 초신선 생맥주 함께… '2026 카스쿨 페스티벌' 즐기는 관객들 - 전자신문",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5ialVzYnREaWtCcEw4cTFYcmw3RkhCWE9qLU5DRHhnTXpzM2RxZzFHUFQwdndSNEhsU0l6QWM3N01tRVJlRDU3OUJOQ2owZw?oc=5",
-          "source": "전자신문",
-          "summary": "",
-          "published": "2026-08-24",
-          "image": "",
-          "first_seen": "2026-08-26T23:43:21+09:00"
         },
         {
           "title": "\"음악·워터쇼·맥주 한자리에\"… 카스, '2026 카스쿨 페스티벌' 성료 - 한국경제",
