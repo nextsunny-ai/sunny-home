@@ -1,10 +1,19 @@
 {
-  "updated": "2026-09-10T02:37:09+09:00",
+  "updated": "2026-09-10T07:48:18+09:00",
   "categories": [
     {
       "id": "ai",
       "name": "AI 트렌드",
       "items": [
+        {
+          "title": "8x8, AI 스튜디오 베타 출시 10주 만에 3200개 에이전트 구축 - 매일경제 마켓",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE56azBLaUNWQVprTmMwV0FseExCU3R1TENsclZTajBuSEdCQXkzV1JkNXhuQ1JUeThaTEZXNHZ0LUVWQmJESkhtbmZnVFpyWkxOM2c?oc=5",
+          "source": "매일경제 마켓",
+          "summary": "",
+          "published": "2026-09-10",
+          "image": "",
+          "first_seen": "2026-09-10T07:48:18+09:00"
+        },
         {
           "title": "이메일 쓰고 쇼핑 결제까지…메타, AI에이전트 '뮤즈' 출시 - 연합뉴스",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9zbXJyc1NjMDNsYUg5dmVRVk9TZ2lDN3dUOW4yRWlRN3lTdmVwS2daQnlRbFdGTmczbzlHd0t5TFppcTRCbzh6cDA3Y1B0dkR1QmZqYkhsZnN0NGNINEFrZ9IBYEFVX3lxTE9zbXJyc1NjMDNsYUg5dmVRVk9TZ2lDN3dUOW4yRWlRN3lTdmVwS2daQnlRbFdGTmczbzlHd0t5TFppcTRCbzh6cDA3Y1B0dkR1QmZqYkhsZnN0NGNINEFrZw?oc=5",
@@ -265,15 +274,6 @@
           "published": "2026-09-03",
           "image": "",
           "first_seen": "2026-09-09T02:46:29+09:00"
-        },
-        {
-          "title": "구글, 워크스페이스에 AI 이미지 제작 도구 '구글 픽스' 추가 - digitaltoday.co.kr",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE04blY1d0F5WnlEbEU5OE5UM2VuY2Rid3E1bF83VmRDVDJEZ3ZyZ1FPNkxyVWE4aTdUQjNtc24waHlFRXBuSVNHLVFZS1RMd2dXZWU4QWxYVmMtVEJiajZ2XzRYckhoc29zWFY3ZG8yU181UU0?oc=5",
-          "source": "digitaltoday.co.kr",
-          "summary": "",
-          "published": "2026-09-02",
-          "image": "",
-          "first_seen": "2026-09-03T02:38:47+09:00"
         }
       ]
     },
@@ -281,6 +281,15 @@
       "id": "content_ip",
       "name": "콘텐츠·IP",
       "items": [
+        {
+          "title": "종합세트보다 ‘취향 저격’… 버티컬 OTT 찾는 시청자 - 조선일보",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQVFRhTm5HTGUtbExjZnFTRS1lLWN3SVV1ZkxlNHBRNW1CWGF6TGlsaFluRk9QQU5PN0tIMTZhNnZhTVZNUDVxZElSbGl2YnBzdWxhRV9XLW95SERDR3Z2NURrejBuclRpdGEwUlZqZ2JMRWF0OHl0WnN3T0pVeTlPQmpSUQ?oc=5",
+          "source": "조선일보",
+          "summary": "",
+          "published": "2026-09-10",
+          "image": "",
+          "first_seen": "2026-09-10T07:48:18+09:00"
+        },
         {
           "title": "글로벌 흥행은 나왔지만 IP 키울 ‘허리’가 얇다 [韓콘텐츠 IP의 빈칸③] - IT조선",
           "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9oSXlqSHV0X0tSbVJwVElWcWpOQjdId2FCaS1LY0wwSmp6OW1WcVNVVFNPZDNiNTdRSkY4c2R0cXZac0tvM3E3a2Q4dFJPQ1UzYUxZYVVPTlhuQzU1Nm9LUzZpY0hvM3VEX2JBYzVnbGLSAXRBVV95cUxPTUdMM2VGX3QtanZSWmZHUnprVmtqX0NXQlZWZGRDN2FzVXJLNFNoMFdHdlRGcGt3cEZCVUt1c3JScmpWVnZ5azNJUUw1b05jYjM4a1FHR3NUOElOQm5xNVVIZnctbzRBV0wwU011a3FlbWdHWg?oc=5",
@@ -541,15 +550,6 @@
           "published": "2026-08-26",
           "image": "",
           "first_seen": "2026-09-03T02:38:47+09:00"
-        },
-        {
-          "title": "세종대, 이창길 교수 '영화 속 조직 이야기' 출간...일본 대학생 'K-웹툰' 교육 진행...제84회 후기 학위수여식 개최 - 여성소비자신문",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBQd3FLbW93dHZ1WGJaZ0tYQ3JDXzlHVEhOVHlJcmd1TkgwN0gxaXlKRXdNdEtUZ196UW51eVR2VWFNbm51Y2hHeURKeXMwTFVhTnhKSmNJZWpsbFlqZTBKVDRRdw?oc=5",
-          "source": "여성소비자신문",
-          "summary": "",
-          "published": "2026-08-26",
-          "image": "",
-          "first_seen": "2026-09-04T07:51:45+09:00"
         }
       ]
     },
@@ -1624,6 +1624,15 @@
           "published": "2026-09-10",
           "image": "",
           "first_seen": "2026-09-10T02:37:09+09:00"
+        },
+        {
+          "title": "라이브 뮤직 페스티벌 ‘2026 라라라온’, 본격적인 대장정 첫 포문 - 스포츠경향",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB2bF9nbEF0aHJPbDBvaG9WdjlrWk5rN2xiVjBtYlRJck5zVTJJa3NFSkdENmFuOFVSbWRxMUJfYVNTQi1KWk5ycWFVSU96R01MRkJQREZSTTJtNHFza3NaQTg2VdIBY0FVX3lxTFB2bF9nbEF0aHJPbDBvaG9WdjlrWk5rN2xiVjBtYlRJck5zVTJJa3NFSkdENmFuOFVSbWRxMUJfYVNTQi1KWk5ycWFVSU96R01MRkJQREZSTTJtNHFza3NaQTg2VQ?oc=5",
+          "source": "스포츠경향",
+          "summary": "",
+          "published": "2026-09-10",
+          "image": "",
+          "first_seen": "2026-09-10T07:48:18+09:00"
         },
         {
           "title": "라이브 뮤직 페스티벌 ‘2026 라라라온’ 9일 서울서 개막 - 스페셜타임스",
