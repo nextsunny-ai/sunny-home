@@ -1,10 +1,19 @@
 {
-  "updated": "2026-09-11T02:30:03+09:00",
+  "updated": "2026-09-11T07:49:14+09:00",
   "categories": [
     {
       "id": "ai",
       "name": "AI 트렌드",
       "items": [
+        {
+          "title": "OpenAI, GPT-6 Astra 탑재 금융 서비스용 ChatGPT 출시 - Investing.com 한국어",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1HNm1tTTg3R1JGazBDbTBfU3VwNmJ0dWxySF8wYXNtNElqdk1LN1kwc29hNi1NRlFJSWczSDlybjRRb3lzWTBUS05YSUhvTktOODd6bDBvOUhkQXlvc01YM1gxcGJfcTktTGRPenMwRDYtNHB5N0dv?oc=5",
+          "source": "Investing.com 한국어",
+          "summary": "",
+          "published": "2026-09-11",
+          "image": "",
+          "first_seen": "2026-09-11T07:49:14+09:00"
+        },
         {
           "title": "8x8, AI 스튜디오 베타 출시 10주 만에 3200개 에이전트 구축 - 매일경제 마켓",
           "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE56azBLaUNWQVprTmMwV0FseExCU3R1TENsclZTajBuSEdCQXkzV1JkNXhuQ1JUeThaTEZXNHZ0LUVWQmJESkhtbmZnVFpyWkxOM2c?oc=5",
@@ -265,15 +274,6 @@
           "published": "2026-09-03",
           "image": "",
           "first_seen": "2026-09-04T07:51:45+09:00"
-        },
-        {
-          "title": "챗GPT, 클로드, 그록 같은 날 장애 발생, 클라우드 인프라 안정성 우려 제기 - tradingkey.com",
-          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPb3dyNXV1dElxV191OUItZTduQXNKZUg1TDhkWFhpbndxVjBHZDB5STJuY1pBcXVtbkYtRUJyQVQyUG5WenI3bEVfVlJ3Q0V3WVkzcXlkWXVDejFYZHlNcWdCd2M4QVRfQzRvSTZ2blpxTFNYNG51YnViTnNSMXlWMVNxRDZGbm5yZUJDN3gwdlpMb19UWUk4bks5TVVBclZZYXJrUjF1MlBJd0ctaUN3UGVDX0FxUXdzYVJ5eXpnMUpXUUFIMVZnOTBqXzNTRXliWGRKRTh6LUFHYS1TWl9Jd1lR?oc=5",
-          "source": "tradingkey.com",
-          "summary": "",
-          "published": "2026-09-03",
-          "image": "",
-          "first_seen": "2026-09-05T07:35:25+09:00"
         }
       ]
     },
@@ -834,6 +834,15 @@
       "name": "전시",
       "items": [
         {
+          "title": "예술이 농익는 가을… 전시로 물드는 서울 - 문화일보",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE85RkNGTEc2cHBJSkU3RXpvcE9NUHVsZ1RNSUI5SW1xSVlEaVRCV1VIR2Y3c0lhd1BGRUViczVBa2JlYzRJdVE4aDZod2xvT1VL?oc=5",
+          "source": "문화일보",
+          "summary": "",
+          "published": "2026-09-09",
+          "image": "",
+          "first_seen": "2026-09-11T07:49:14+09:00"
+        },
+        {
           "title": "대구발달장애인예술협회, 미디어아트 전시 ‘신천: 흐르는 상상’ 10월 14∼19일 개최 - 에이블뉴스",
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE03WWVrQmpkLWRTYWNyM2ZpdnAxbFpVdUpBV0dIUzdYb081YTdqNXFsWEVHdU44b0VXa1FmMVlBZnhTM3A3WTUySnJxTXczUmRNaGNNcmlkNnZ6X3dDY01LdHA3NWRrNm54VmNna1dB0gFyQVVfeXFMT2hPWkxTTzh6LXlOcXJwT0dSSk0yV3hnVmdNb0RqWkw0X0ktTEszVmZFd0EwZy0tanVQR3dSMGRLal9qM1g1d1JPY3NvNjdzMXRVY014TGJ5eDFCQlY0Nl9LckhvNlFDb1ZjXy1QRDdZdTRn?oc=5",
           "source": "에이블뉴스",
@@ -841,6 +850,15 @@
           "published": "2026-09-08",
           "image": "",
           "first_seen": "2026-09-09T02:46:29+09:00"
+        },
+        {
+          "title": "울림있는 첫걸음 ③ 국립현대미술관(서울) 청년인턴 현장 이야기🖼 : 네이버 블로그 - Naver Blog",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQeWRHNEVHVG1CTXJYN2ZrMFhBRnpXamZhUVRmbnh3ajdtajFhQWl2TmR6YzJTNGRfRUdKVFFpV2Z4Unp5TGw5UWRWc0JUbUpKUjY2ZUs3bEJIbUhPcWFVcnVhTWJvVDJZSWtCMVoxQTNLdm1uS3ZXLU54NU94NXRqdmFXZ1ktbE5VMHYtYlBaSTQ?oc=5",
+          "source": "Naver Blog",
+          "summary": "",
+          "published": "2026-09-08",
+          "image": "",
+          "first_seen": "2026-09-11T07:49:14+09:00"
         },
         {
           "title": "매시 43분, 광화문이 거대한 미술관으로! 야외 미디어아트 특별전 개최 - 서울특별시",
@@ -1404,6 +1422,15 @@
           "first_seen": "2026-09-11T02:30:03+09:00"
         },
         {
+          "title": "김포시농업기술센터, 청년농업인 브랜드·디자인 개발 성과보고회 개최 - newszoom.kr",
+          "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9IOUNYcFdjbUFxQVFrU0F0bndRQW9fNHVWN2Vjb1UzY3dzdlZoZEtGME1tSFdjc0k3cUZQUmlOY1dyNWh6?oc=5",
+          "source": "newszoom.kr",
+          "summary": "",
+          "published": "2026-09-08",
+          "image": "",
+          "first_seen": "2026-09-11T07:49:14+09:00"
+        },
+        {
           "title": "게임 시작화면 디자인 : 학습 전략과 자원 - 최신 트렌드 - Histoire pour tous",
           "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPLThrQlcxZVhjNk9SMFNUQ2NMSV9jVDl5ZWt5TEptb200N2dpZUlvTXJRRXh1ZlFYRWF2cllZWVcwU3BCM1VHTUFqX3Q3V0s2cnViOTNKYk1FbzFpSDdhRW9IZnZjcGdkTnRZalphb0VYbFhZaFFteU44VUJaYXNDSkJqZTkxS29NYWwtb0RoeWdoQ0lzRGgtRkQxY0s2QjctZGpBWmdrUXZYRWt3YWV6am5oMERDdmtHTVBnTjZrU2toVWZpbF9qSWR4anA?oc=5",
           "source": "Histoire pour tous",
@@ -1618,15 +1645,6 @@
           "published": "2026-08-20",
           "image": "",
           "first_seen": "2026-08-30T02:31:30+09:00"
-        },
-        {
-          "title": "난초의 눈으로 세상을 경영하다-12 - 브런치",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5jOFo3cTJPaHNRZkduN24taWRiMm5HSUMyOHVJVDFtdG9FREtlbFBZbVhaS1lTanZQWjlMT2tla1NWLU13Ylp1WjM0Q1RLWi1EZlE?oc=5",
-          "source": "브런치",
-          "summary": "",
-          "published": "2026-08-18",
-          "image": "",
-          "first_seen": "2026-08-28T08:38:05+09:00"
         }
       ]
     },
@@ -1716,6 +1734,15 @@
           "first_seen": "2026-09-08T03:36:57+09:00"
         },
         {
+          "title": "국내 대표 음악축제 ‘사운드 플래닛 페스티벌 2026’ 인천 상륙 - 정필",
+          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE02MXFGT3JNUDdUUm5YcGZUd19WUjZVOUlZeWZkUmRpLVhXTHhsdVZDZ3N2YkxKZVRYX2ZjU19MazZiZDJLTU1V?oc=5",
+          "source": "정필",
+          "summary": "",
+          "published": "2026-09-03",
+          "image": "",
+          "first_seen": "2026-09-11T07:49:14+09:00"
+        },
+        {
           "title": "경기도, '2026 경기인디뮤직페스티벌' 9월 4일 일반예매 시작 - 연합뉴스",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5MSkpIamsxNnpPVFBVMlZqWXYySnpNUDYwZjlnOUV4SDl3QkRVSFFaT3FtclJfMERyX2VjLUpzU1o3SHRNTXNJOHBPdld5X0VuZGVWRzZlMWpLWjA?oc=5",
           "source": "연합뉴스",
@@ -1743,6 +1770,15 @@
           "first_seen": "2026-09-09T02:46:29+09:00"
         },
         {
+          "title": "백남준아트센터-서울예대 맞손…미래 예술인재 현장 교육 강화 - 아시아경제",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA2T1RjMFdBalBqTm81UDlra19IRHVDT1o0ZkdvUXpKOGRkNmpldmhRX2Zpc0xjNmdfMHJyVEFlY1JSSWppNkxzTXRfUW1JUHhPTGxZU0RhN1FoRGlWYUkxVw?oc=5",
+          "source": "아시아경제",
+          "summary": "",
+          "published": "2026-09-02",
+          "image": "",
+          "first_seen": "2026-09-11T07:49:14+09:00"
+        },
+        {
           "title": "‘2026 서초뮤직앤아트페스티벌’ 국내외 7500명 찾았다 - Korearetro",
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9vX29ZLXhvZk96UDRDSnMwWEVFMnJ0RGdPdVRlbEhFb244ZHlHWl9IVDFKVHRpeFpmdW9Sb3dET0RBYU5hUnRuRFYtMWd5YlZlU05Nb1Q3T2JiVUwwNHd2VWpCSzlQdllVekhF?oc=5",
           "source": "Korearetro",
@@ -1768,6 +1804,15 @@
           "published": "2026-08-31",
           "image": "",
           "first_seen": "2026-08-31T07:57:35+09:00"
+        },
+        {
+          "title": "고터세빛서 열린 ‘서초뮤직앤아트페스티벌’ 국내외 관광객 7500명 찾아 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBYcWN6aTJxNFRQYXRyUG9fMzRUcThTU05VaU9YNU5kclhoQzBlWXBfWEdRMlQya2t1Y0FQdjBUVzllLVgzZ3o5Nm9ZSQ?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-08-31",
+          "image": "",
+          "first_seen": "2026-09-11T07:49:14+09:00"
         },
         {
           "title": "가을 바람 타고 밤까지 쭈욱! 9월 문화행사 한눈에 - 서울특별시",
@@ -1876,33 +1921,6 @@
           "published": "2026-08-24",
           "image": "",
           "first_seen": "2026-08-28T08:38:05+09:00"
-        },
-        {
-          "title": "“커피 향 함께하는 클래식”…수원음협, 2026 수원뮤직페스티벌 개최 - 경기일보",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE11Ul9LUTkyVURYWE0yTlI0TnBsdGlxLTBIZ0cteW8zZXV5T3hIOHkwQWpobGh4dktJUWlucTdSS0ZSM2E5LXBwMm9lNE9PRmotdWw2RmRxSm1NakE?oc=5",
-          "source": "경기일보",
-          "summary": "",
-          "published": "2026-08-23",
-          "image": "",
-          "first_seen": "2026-09-04T02:33:21+09:00"
-        },
-        {
-          "title": "'2026 라라라온', 전국 12개 공연장 수놓는다…9월 1차 라인업 공개 - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5wTU9UX2tTYW8xNGtYMm1YME5mMFN3X01iMGdiYllCOFdSajAtM0J0bFpLWXZVcFRsNExfYWgtb3NzeTR2clE?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-08-20",
-          "image": "",
-          "first_seen": "2026-09-01T04:50:49+09:00"
-        },
-        {
-          "title": "부락페와 XMF가 같은 날? 올가을 나 빼고 다 가는 '이 페스티벌' - esquirekorea.co.kr",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB5c3hyOWRlbkhUXzBMQTd0ZF9sZEZMVU5BSWptMjU0NUZ1c0R5bjdJRmh5cnBnc2s4c2g2Y3JGb3JFMlNtR2VsMUZnX0NHR2g2Z1Z0RElwbWtBdw?oc=5",
-          "source": "esquirekorea.co.kr",
-          "summary": "",
-          "published": "2026-08-20",
-          "image": "",
-          "first_seen": "2026-09-02T02:38:45+09:00"
         }
       ]
     }
