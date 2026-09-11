@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-11T07:49:14+09:00",
+  "updated": "2026-09-12T02:34:36+09:00",
   "categories": [
     {
       "id": "ai",
@@ -13,6 +13,15 @@
           "published": "2026-09-11",
           "image": "",
           "first_seen": "2026-09-11T07:49:14+09:00"
+        },
+        {
+          "title": "[AI픽] AI 에이전트가 금융상품 고른다…'앱 락인' 경쟁 흔들 - 연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8yZmlDSUpUb1VOXzN5REV5blkzdTY5UlpHOFlrTktuVVN5NXQxN1Y5QXRPTGdLZWx1NkhiS20zVkxVUThfbkJpYmwwRTBvc09fbFdBTHlxbGdvSkHSAWBBVV95cUxQcy1lbVJmeVd0aG50RnhCa2Y5Ulk5anFIREJHVUNDUjIxWnZ6Zy1EWkx1R1U4RHplN1JkalZweU1BeXJENWppbnEzNUpzLVprVU9Zc0hWS1cyTEFtcDEydFI?oc=5",
+          "source": "연합뉴스",
+          "summary": "",
+          "published": "2026-09-11",
+          "image": "",
+          "first_seen": "2026-09-12T02:34:36+09:00"
         },
         {
           "title": "8x8, AI 스튜디오 베타 출시 10주 만에 3200개 에이전트 구축 - 매일경제 마켓",
@@ -265,15 +274,6 @@
           "published": "2026-09-03",
           "image": "",
           "first_seen": "2026-09-04T02:33:21+09:00"
-        },
-        {
-          "title": "뉴욕시, 초·중학생 교실 내 생성형 AI 1년간 금지 - 전자신문",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBkMnNJM1NpUWhjdXk2TUwwc05wSmRQc2s1bk95ZGx6MmxXX3RqODNDaG54OU5DSGNMZTJaNW9leTFtdTBFbHRFZ0Ztckp2Zw?oc=5",
-          "source": "전자신문",
-          "summary": "",
-          "published": "2026-09-03",
-          "image": "",
-          "first_seen": "2026-09-04T07:51:45+09:00"
         }
       ]
     },
@@ -281,6 +281,15 @@
       "id": "content_ip",
       "name": "콘텐츠·IP",
       "items": [
+        {
+          "title": "K웹툰 원작 드라마 올해만 86편… K콘텐츠의 새 엔진으로 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9kQ3dpelVXVzl5bU9zck9ZVGVKMkJoR2o2NkZMWWdSSklzYXAyeTZNS3ZfOXEwNUczMlp6OTFUeHRiYV9pUVpJNjVBTjNIWVE?oc=5",
+          "source": "v.daum.net",
+          "summary": "",
+          "published": "2026-09-12",
+          "image": "",
+          "first_seen": "2026-09-12T02:34:36+09:00"
+        },
         {
           "title": "종합세트보다 ‘취향 저격’… 버티컬 OTT 찾는 시청자 - 조선일보",
           "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQVFRhTm5HTGUtbExjZnFTRS1lLWN3SVV1ZkxlNHBRNW1CWGF6TGlsaFluRk9QQU5PN0tIMTZhNnZhTVZNUDVxZElSbGl2YnBzdWxhRV9XLW95SERDR3Z2NURrejBuclRpdGEwUlZqZ2JMRWF0OHl0WnN3T0pVeTlPQmpSUQ?oc=5",
@@ -408,6 +417,15 @@
           "first_seen": "2026-09-06T01:33:57+09:00"
         },
         {
+          "title": "문체부, K콘텐츠에 1.8조 투입... 게임 대작 키우고 OTT 종속 낮춘다 - 전자신문",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1zRFFmQzRjNVh6V2Q5UzVBMnJodDJDdkVHV3BjdUk5bjZadUpBZFBFSzdIZkRxTUJKSlRqTi15TUtuWm0yb1ozaWxIUVRydw?oc=5",
+          "source": "전자신문",
+          "summary": "",
+          "published": "2026-09-04",
+          "image": "",
+          "first_seen": "2026-09-12T02:34:36+09:00"
+        },
+        {
           "title": "[ET단상] K콘텐츠를 위해 K-OTT가 필요한 이유 - 전자신문",
           "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1aXzFCckJHb2hmTTl5a2xPd1I4bXlTQnExYTlIaVRBMEVzWS1qeEZDWm16RmVEaVZ3SDlmNG5mZ0JHbkNjVGFxT2x0YTZ2dw?oc=5",
           "source": "전자신문",
@@ -525,31 +543,13 @@
           "first_seen": "2026-09-04T07:51:45+09:00"
         },
         {
-          "title": "신화는 인류 최초의 콘텐츠 IP였다 [이지효 교수의 한국사람 사는 이야기] - Radio Seoul",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1mOXJ4OFJkWUc3X202NktwcHp5cmh3WmdyTE1fX3FMWEtxNGxpZ0FtdUs3NWFoMF95Ti0yVnpGYllBQ1hXRjhTTXQ5TV9NTm40VWNra3BrQkhmUQ?oc=5",
-          "source": "Radio Seoul",
+          "title": "지상파로 '역진출'하는 OTT 오리지널 콘텐츠 [N초점] - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5Cand6X1NaUzhSWVRnZnUyd21NSWlYN2JLOEc4a1hDa3FQWTRJeldEQ1pIaDJyS2h0MTNzZmYtSXNTQ2pscFE?oc=5",
+          "source": "v.daum.net",
           "summary": "",
-          "published": "2026-08-29",
+          "published": "2026-08-30",
           "image": "",
-          "first_seen": "2026-08-29T08:25:41+09:00"
-        },
-        {
-          "title": "골라보던 OTT, 다시 ‘틀어놓는 TV’로…24시간 채널 키운다 - 에너지경제신문",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE94RFFWcEhmSVliS3lGMVhpdU44NHBBMnJCZWstZ3d1c28wcVZod3FfUmRGWXA5SWkwTE82OUpxSlI3LXM5QVhlYWFtY1JaTDhvS2U0S2NqaFlTZ0otU1ZOSXJhSQ?oc=5",
-          "source": "에너지경제신문",
-          "summary": "",
-          "published": "2026-08-29",
-          "image": "",
-          "first_seen": "2026-08-29T08:25:41+09:00"
-        },
-        {
-          "title": "골라보던 OTT, 다시 ‘틀어놓는 TV’로…24시간 채널 키운다 - 에너지경제신문",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA4MHNGVGUtUXN4dHBwbENfVVFRTm9pRGVLbjR3NVNVczhCLW5iYURwdjZMdUFqRTBkQ3BiMGtZNWJnUDFHS0hXM1ZCN2xTaGpxaVp1WG9iWGY3WG8?oc=5",
-          "source": "에너지경제신문",
-          "summary": "",
-          "published": "2026-08-29",
-          "image": "",
-          "first_seen": "2026-08-30T02:31:30+09:00"
+          "first_seen": "2026-09-12T02:34:36+09:00"
         }
       ]
     },
@@ -557,6 +557,15 @@
       "id": "performance",
       "name": "공연",
       "items": [
+        {
+          "title": "청양군, 내달 1일 뮤지컬 판타지로맨스 ‘시간을 넘어서’ 공연 선봬 - 주간한국",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5vM3cyZi1IRW5DaVYtQjZyMjN0Z29zUGpwRE1hSHlrbE1KbTZ4SFh4ZHVTMFV0VW1KQU9pMjBrZENsSDhJYWR6dUVoQzYyb19WU0dORHlhajhvT205aHBydG5xeWtZMzdvVkJ3ZWxiWHFpcUlM0gF0QVVfeXFMTm8zdzJmLUhFbkNpVi1CNnIyM3Rnb3NQanBETWFIeWtsTUptNnhIWHhkdVMwVXRVbUpBT2kyMGtkQ2xIOElhZHp1RWhDNjJvX1ZTR05EeWFqOG9PbTlocHJ0bnF5a1kzN29WQndlbGJYcWlxSUw?oc=5",
+          "source": "주간한국",
+          "summary": "",
+          "published": "2026-09-11",
+          "image": "",
+          "first_seen": "2026-09-12T02:34:36+09:00"
+        },
         {
           "title": "뮤지컬 '하트비트 : 심폐소생일지' 2026년 공연 및 캐스팅 공개! - 서울자치신문",
           "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5SMFQ4YmtLaU4ySFZXS3VuVzFHMnB3enRIbklVQ3UyUkgwWWpfRVo2eEk0UDNIUjFtWjFmdzlnUU10MTdvVmp4dGFOMW40eExaLXFJc0xBbGhkdWVPdDFwQVctb244V1BP?oc=5",
@@ -817,15 +826,6 @@
           "published": "2026-08-29",
           "image": "",
           "first_seen": "2026-09-02T02:38:45+09:00"
-        },
-        {
-          "title": "강남구, ‘2026 찾아가는 생명존중 뮤지컬’로 초등학생과 직접 소통한다! - 미디어써치",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9lTGcyWEYxYVNqQno3WUU2QmlyQmtwclNDeldoZ0V2REJNUmIwRU5reGNKYmlpM3Rpd0s3dXI4Wjl3U0YxT1JPeHJGVHYyLXEzMXBYVURwcFlHY0d6dEZSMldMQjZPcXVicFdWSE9hZ2s?oc=5",
-          "source": "미디어써치",
-          "summary": "",
-          "published": "2026-08-28",
-          "image": "",
-          "first_seen": "2026-08-29T08:25:41+09:00"
         }
       ]
     },
@@ -1021,15 +1021,6 @@
           "published": "2026-08-29",
           "image": "",
           "first_seen": "2026-08-29T08:25:41+09:00"
-        },
-        {
-          "title": "서울·뉴욕·런던의 ‘집’을 옮겨오다 - MMCA서울, 서도호가 쌓아온 기억의 공간 - d-art.co.kr",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5PdWNBWVBrbnktaUpuRTRHcEswZ0JUZU9wRlFoeEkyaWlCbGotLXpUaXItTVE3U2x5SHlKM1FRU0JCemdoZktCY0hKWW9TX2s1M3cwLWpIXzlrSzdQT09rZ2dsWENLNW8?oc=5",
-          "source": "d-art.co.kr",
-          "summary": "",
-          "published": "2026-08-28",
-          "image": "",
-          "first_seen": "2026-08-28T08:38:05+09:00"
         },
         {
           "title": "진킴 작가, ‘2026 서울로미디어캔버스’ 선정… 평면 두들링에서 대형 미디어아트로 확장 - 브랜드뉴스",
@@ -1575,15 +1566,6 @@
           "first_seen": "2026-08-29T08:25:41+09:00"
         },
         {
-          "title": "안혜현 광주대 교수, 국제 디지털 디자인 컨퍼런스 '디자인 매터스 26' 연사 선정 - 전자신문",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE50bWc0OTJDcGRMdVVUS3F0NTJER3dhMG0zald4N1cybnJkaUhXc0p5UjIwSTNwZm1yUVZHS0htdjJwRTdtd245d08ydkhWQQ?oc=5",
-          "source": "전자신문",
-          "summary": "",
-          "published": "2026-08-27",
-          "image": "",
-          "first_seen": "2026-08-28T08:38:05+09:00"
-        },
-        {
           "title": "\"기업의 브랜딩·디자인 허들 낮춘다\"…미리디-스터닝, B2B 공략 - 머니투데이 - 머니투데이",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8yQktNbllXNUYwc0lpYmZDeVAzbmNNNkNHR1ZrcmMtVVdFTFlfbFJiUTBtUUw3d09feUMwSUkwU0FFblF5c1VoWWMwQTg0SDBuSE8zc3dUUDJDa2FmdGxkaEUzeUROXy10U0HSAW9BVV95cUxPMFp2SjBORHpoS1FrazA5RnI1c1VkWXZuUkkxUGU5ckc0OHVualBfeHlVcTJieGVJblk5RXNMbDQwUUxzYUNSLXJOZTFjQldYS0xwWFhuQUU1YUZuU0pmSzJNT3lvWDJVRzllYjV6Rk0?oc=5",
           "source": "머니투데이",
@@ -1652,6 +1634,15 @@
       "id": "festival",
       "name": "페스티벌",
       "items": [
+        {
+          "title": "삼성카드, '서울아트굿즈페스티벌 2026' 메인 스폰서로 참여 - newspim.com",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE05VzRUb25iT1BQOXBrM09Qb0FpeHRtZE1URGo1MHlFVWJDX1NQb19CYkNMVzlXeDBabVJQc3JLc3Z6NGJ0Y1hXZDlUQ2w2NXhVZ3BCcnRPbUduTjVT?oc=5",
+          "source": "newspim.com",
+          "summary": "",
+          "published": "2026-09-11",
+          "image": "",
+          "first_seen": "2026-09-12T02:34:36+09:00"
+        },
         {
           "title": "라이브 뮤직 페스티벌 ‘2026 라라라온’, 본격적인 대장정 첫 포문 - 스포츠경향",
           "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9Pb3A5Zld2QklXT2c3a3FEZXZpRTdSRXVTaEw0emJ3UG1jaUk3TEVvZDlRb1VmanVwNlptd2FXc0p2T2xiTnB5cm9fTTNWUG5KTlZsTHVOWjQ1eENWcVHSAWNBVV95cUxQdmxfZ2xBdGhyT2wwb2hvVnY5a1pOazdsYlYwbWJUSXJOc1UySWtzRUpHRDZhbjhVUm1kcTFCX2FTU0ItSlpOcnFhVUlPekdNTEZCUERGUk0ybTRxc2tzWkE4NlU?oc=5",
@@ -1860,24 +1851,6 @@
           "first_seen": "2026-09-03T07:53:06+09:00"
         },
         {
-          "title": "(라이프) 가을바람 속으로...대자연의 캠핑부터 록·EDM 열기까지, 올가을 주목해야 할 뮤직 페스티벌 - 전기신문",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBHcDlXa0F1bVF0djZVN1hxMUVFQVpjMVpOYU9qa0YtUElCQWNrbWFiODRabWtYdV9CUTRLbElOVTg1WnliZ0hEVGlRMnlVRGNZczRCeVdKemZpc0JzWjVOcWlWU0FENTNnaUVtbjFGNnPSAXBBVV95cUxQR3A5V2tBdW1RdHY2VTdYcTFFRUFaYzFaTmFPamtGLVBJQkFja21hYjg0Wm1rWHVfQlE0S2xJTlU4NVp5YmdIRFRpUTJ5VURjWXM0QnlXSnpmaXNCc1o1TnFpVlNBRDUzZ2lFbW4xRjZz?oc=5",
-          "source": "전기신문",
-          "summary": "",
-          "published": "2026-08-25",
-          "image": "",
-          "first_seen": "2026-08-28T08:38:05+09:00"
-        },
-        {
-          "title": "고터 광장서 케이팝·패션 어우러진 ‘서초뮤직앤아트페스티벌’ 열린다[서울25] - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1RMkROdERnaFYxdHFTX00wRHExcUllSTBZcnZjTjV0X1pjVHNBQlV1Zk9jbDU4S2FFOTFfbHJka1BsenZET1pBSUhrcy1YMXE1RFRQVA?oc=5",
-          "source": "v.daum.net",
-          "summary": "",
-          "published": "2026-08-25",
-          "image": "",
-          "first_seen": "2026-08-28T08:38:05+09:00"
-        },
-        {
           "title": "주말 고터광장서 K컬처 한마당 '서초뮤직앤아트페스티벌' - 연합뉴스",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBsYzNMamJQY0lBV0wwWGRwS3ZUVnBXR3h4a04zME83NC1WZWRLNERDdHRsVDFtSFBzU2RiMEFUUXpBREF2S3JnWTM0Z05yeDY1MWxVN19lUFViZ1nSAWBBVV95cUxNUmhuUm9Ib0dFNXVCbDJNZ3dUNDBBMzNwWmNUcjc2MUk3QWhBcENZZmRBTVIyT0laUWtQUVhLSGctX3JjNi1QSXFEU2RBNklyeWMtWG51REhZZVN2cnJRVlQ?oc=5",
           "source": "연합뉴스",
@@ -1912,15 +1885,6 @@
           "published": "2026-08-25",
           "image": "",
           "first_seen": "2026-09-03T07:53:06+09:00"
-        },
-        {
-          "title": "\"음악·워터쇼·맥주 한자리에\"… 카스, '2026 카스쿨 페스티벌' 성료 - 한국경제",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8taTdSeFJITFhGczMxWHROd2Rkb3FmTElDQzlxNjI0QTRFM0VxOW9mMGtnQTU4bURnMFM2YVQ4NUVsUHhwMmdHTGF4X2pnUWdTUHg5ZE1yOG0xdw?oc=5",
-          "source": "한국경제",
-          "summary": "",
-          "published": "2026-08-24",
-          "image": "",
-          "first_seen": "2026-08-28T08:38:05+09:00"
         }
       ]
     }
