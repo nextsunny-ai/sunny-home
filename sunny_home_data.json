@@ -1,10 +1,28 @@
 {
-  "updated": "2026-09-13T01:47:12+09:00",
+  "updated": "2026-09-13T07:40:41+09:00",
   "categories": [
     {
       "id": "ai",
       "name": "AI 트렌드",
       "items": [
+        {
+          "title": "GPT-6 Astra: 새로운 세대의 지능 - OpenAI",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9DdWlyc0FQSDFUeE8tblc2YzdaNHNXX29uNkxXbFFlbVF3MXZYU3JSd2NDOFVyUHNXdVowekdEU2NYY1daZlhuLXBzMUxkdmZnU2lfdXhB?oc=5",
+          "source": "OpenAI",
+          "summary": "",
+          "published": "2026-09-13",
+          "image": "",
+          "first_seen": "2026-09-13T07:40:41+09:00"
+        },
+        {
+          "title": "[미국 특징주] 앤스로픽 \"이란·러시아·중국·예멘서 '클로드' 군사적 오용 잇따라\" - 뉴스핌",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE0wbm1xTFBZa0dIcTFlUWFuZlh3MUZ4eFFEbzQtNy0wcy1HejVEaklnTVRDandnT09HOTBjZUVTcWVzb21Fdk9XZ2IxaVg1MjFWcUpRMG4wZXVBcDZz?oc=5",
+          "source": "뉴스핌",
+          "summary": "",
+          "published": "2026-09-12",
+          "image": "",
+          "first_seen": "2026-09-13T07:40:41+09:00"
+        },
         {
           "title": "OpenAI, GPT-6 Astra 탑재 금융 서비스용 ChatGPT 출시 - Investing.com 한국어",
           "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1HNm1tTTg3R1JGazBDbTBfU3VwNmJ0dWxySF8wYXNtNElqdk1LN1kwc29hNi1NRlFJSWczSDlybjRRb3lzWTBUS05YSUhvTktOODd6bDBvOUhkQXlvc01YM1gxcGJfcTktTGRPenMwRDYtNHB5N0dv?oc=5",
@@ -256,24 +274,6 @@
           "published": "2026-09-04",
           "image": "",
           "first_seen": "2026-09-07T01:43:42+09:00"
-        },
-        {
-          "title": "“수학자들이 수년 걸릴 일, AI는 11일 만에 끝냈다…클로드, ‘페르마의 마지막 정리’ 완전 검증 - 인공지능신문",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4wS0NNQlFFX2hZQ0tSTi1QeHVCUXhKM0xnSDNtVXJKSFJ2MnBJLWp2eWxMU3Q1M0E5UVRLWkVVaFZaVDZzTXZWXy1jRkpYVUkyVVBjZE5uelJlNnVvZGREblctRHVJVEE?oc=5",
-          "source": "인공지능신문",
-          "summary": "",
-          "published": "2026-09-04",
-          "image": "",
-          "first_seen": "2026-09-10T02:37:09+09:00"
-        },
-        {
-          "title": "옐로우박스, 이미지 제작 플랫폼 'Clor AI' 정식 출시 - 뉴스핌",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBNRkROeUhMT0s2SFJNMjlkdW1Fb1NpOGpqb1pEd1ZoT29jbF8zSDRpS0d6YURzSjhmd0ViNWZDN0V4YVBnVmpFMUhCb2J4UFF5Y2pZNndNZEtvWDhU?oc=5",
-          "source": "뉴스핌",
-          "summary": "",
-          "published": "2026-09-03",
-          "image": "",
-          "first_seen": "2026-09-04T02:33:21+09:00"
         }
       ]
     },
@@ -543,13 +543,13 @@
           "first_seen": "2026-09-04T07:51:45+09:00"
         },
         {
-          "title": "지상파로 '역진출'하는 OTT 오리지널 콘텐츠 [N초점] - v.daum.net",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1CT0tpUE5MbE5KRGdHSmdKN08xVGpmT2thekluQVNDQnZodTZmdDdkS2Q0Z3Z4UmR2WTMxTEFTdllBS2o1Q2xyR2U5WTJOcEE?oc=5",
+          "title": "서브컬처 콘텐츠·IP 세계로…'일러스타 월드' 조직위 출범 - v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1FdW9ueVJFc1VrVVozcGJjcEZoaXNfYmpMdWxnX0QtYk9kNUNxcnlSSk9uUEtGUkhWTjNDVk9fRF9USEZUNkE?oc=5",
           "source": "v.daum.net",
           "summary": "",
-          "published": "2026-08-30",
+          "published": "2026-08-31",
           "image": "",
-          "first_seen": "2026-09-02T02:38:45+09:00"
+          "first_seen": "2026-09-13T07:40:41+09:00"
         }
       ]
     },
@@ -1057,15 +1057,6 @@
           "published": "2026-08-25",
           "image": "",
           "first_seen": "2026-09-01T04:50:49+09:00"
-        },
-        {
-          "title": "제주현대미술관, 리조트서 야외 미디어아트 전시 - 뉴시스",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE01aUc0UVFtdkZWRHpQOHIxOWNBemppc1VKbGhLc0JOSU1WMlBUX241RmlSQ0FnTGxiMlFBdzVKd3I4MnloMk40MFVEc3p5aVlBazZCRnlZODh3bzJ0X2lGRzJR?oc=5",
-          "source": "뉴시스",
-          "summary": "",
-          "published": "2026-08-18",
-          "image": "",
-          "first_seen": "2026-08-30T02:31:30+09:00"
         }
       ]
     },
@@ -1564,15 +1555,6 @@
           "published": "2026-08-21",
           "image": "",
           "first_seen": "2026-09-03T07:53:06+09:00"
-        },
-        {
-          "title": "디자인 자산 된 억새·돌리네…정선 민둥산 공공디자인 장관상 - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBXTUpnbkRtWVJmS0dpdEE5NGlYU3lZMV9vWjAzbTYyaGhXODNxbVN5OGFwbFVESzhVR0FGYXNrLWY1OHBXOHlBaWY4TjRqdGRSNDB5T09MQ0ctR2fSAWBBVV95cUxQSGNRQm5ocFA3VmNCdGl0Mm50OTQxVEt5V1pOTmMyMkFEd1VaWlYyanN0Y3c1QlcxemZ4MHNCOWl0TjJFbGpNWC1kdWZhMmJCaFlBTmdhQTVPN3hVTUtzc1I?oc=5",
-          "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-08-20",
-          "image": "",
-          "first_seen": "2026-08-30T02:31:30+09:00"
         }
       ]
     },
@@ -1813,15 +1795,6 @@
           "published": "2026-08-26",
           "image": "",
           "first_seen": "2026-09-03T07:53:06+09:00"
-        },
-        {
-          "title": "주말 고터광장서 K컬처 한마당 '서초뮤직앤아트페스티벌' - 연합뉴스",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBsYzNMamJQY0lBV0wwWGRwS3ZUVnBXR3h4a04zME83NC1WZWRLNERDdHRsVDFtSFBzU2RiMEFUUXpBREF2S3JnWTM0Z05yeDY1MWxVN19lUFViZ1nSAWBBVV95cUxNUmhuUm9Ib0dFNXVCbDJNZ3dUNDBBMzNwWmNUcjc2MUk3QWhBcENZZmRBTVIyT0laUWtQUVhLSGctX3JjNi1QSXFEU2RBNklyeWMtWG51REhZZVN2cnJRVlQ?oc=5",
-          "source": "연합뉴스",
-          "summary": "",
-          "published": "2026-08-25",
-          "image": "",
-          "first_seen": "2026-08-30T02:31:30+09:00"
         },
         {
           "title": "고터 광장서 케이팝·패션 어우러진 ‘서초뮤직앤아트페스티벌’ 열린다[서울25] - v.daum.net",
